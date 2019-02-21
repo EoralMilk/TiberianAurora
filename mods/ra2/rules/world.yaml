@@ -193,7 +193,6 @@
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems
-	CliffBackImpassabilityLayer:
 
 World:
 	Inherits: ^BaseWorld
