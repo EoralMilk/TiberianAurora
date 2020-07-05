@@ -62,3 +62,5 @@ temp.s
 # SublimeText
 *.sublime-project
 *.sublime-workspace
+
+!curl.exe
