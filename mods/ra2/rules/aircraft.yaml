@@ -42,8 +42,6 @@ shad:
 		IdleBehavior: Land
 		Crushes: crate
 	RenderSprites:
-	WithVoxelHelicopterBody:
-		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 		BobDistance: -45
@@ -139,7 +137,7 @@ zephusk:
 		Speed: 25
 	FallsToEarth:
 		Explosion: KirovExplode
-		Spins: False # TODO: In the original they did spin, but that just looks weird.
+		MaximumSpinSpeed: 0 # TODO: In the original they did spin, but that just looks weird.
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
@@ -319,9 +317,6 @@ hornet:
 		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
 	HitShape:
-	CarrierChild:
-		LandingDistance: 8c0
-		DamageTypes: DefaultDeath
 	Rearmable:
 		RearmActors: carrier
 
@@ -380,8 +375,6 @@ asw:
 		Actor: aswhusk
 	-Selectable:
 	-ActorLostNotification:
-	CarrierChild:
-		LandingDistance: 8c0
 	HitShape:
 	Interactable:
 	RenderVoxels:

@@ -1,6 +1,5 @@
 Container@DEBUG_PANEL:
 	Logic: DebugMenuLogic
-	Y: 10
 	Width: PARENT_RIGHT
 	Height: PARENT_BOTTOM
 	Children:
@@ -54,34 +53,30 @@ Container@DEBUG_PANEL:
 			Text: Disable Visibility Checks
 		Button@GIVE_CASH:
 			X: 90
-			Y: 150
+			Y: 145
 			Width: 140
-			Height: 30
-			Font: Bold
+			Height: 35
 			Text: Give $20,000
 		Button@GROW_RESOURCES:
 			X: 271
-			Y: 150
+			Y: 145
 			Width: 140
-			Height: 30
-			Font: Bold
+			Height: 35
 			Text: Grow Resources
 		Button@GIVE_EXPLORATION:
 			X: 90
-			Y: 200
+			Y: 195
 			Width: 140
-			Height: 30
-			Font: Bold
+			Height: 35
 			Text: Clear Shroud
 		Button@RESET_EXPLORATION:
 			X: 271
-			Y: 200
+			Y: 195
 			Width: 140
-			Height: 30
-			Font: Bold
+			Height: 35
 			Text: Reset Shroud
 		Label@VISUALIZATIONS_TITLE:
-			Y: 255
+			Y: 256
 			Font: Bold
 			Text: Visualizations
 			Align: Center
@@ -107,13 +102,6 @@ Container@DEBUG_PANEL:
 			Width: 200
 			Font: Regular
 			Text: Show Actor Tags
-		Checkbox@SHOW_DEPTH_PREVIEW:
-			X: 45
-			Y: 365
-			Height: 20
-			Width: 200
-			Font: Regular
-			Text: Show Depth Data
 		Checkbox@SHOW_COMBATOVERLAY:
 			X: 290
 			Y: 275

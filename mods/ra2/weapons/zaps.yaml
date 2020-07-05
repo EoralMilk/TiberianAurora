@@ -19,7 +19,7 @@ AssaultBolt:
 	Range: 2c0
 	Report: iteschaa.wav
 	ValidTargets: TeslaBoost
-	Projectile: ElectricBolt
+	Projectile: InstantHit
 		Colors: FFFF54, FFFF54, FFFFFF
 		ZOffset: 2047
 	Warhead@charge: GrantExternalCondition
@@ -42,7 +42,7 @@ OPCoilBolt:
 	Inherits: CoilBolt
 	Range: 8c512
 	Report: btesat2a.wav
-	Projectile: ElectricBolt
+	Projectile: InstantHit
 		Colors: FFFF54, FFFF54, FFFFFF
 		ZOffset: 2047
 	Warhead@1Dam: SpreadDamage
@@ -177,7 +177,7 @@ RadBeamWeapon:
 	Range: 6c0
 	ReloadDelay: 100
 	Report: idesat1a.wav
-	Projectile: RadBeam
+	Projectile: LaserZap
 		Amplitude: 476
 		WaveLength: 384
 		ZOffset: 2047
@@ -215,18 +215,13 @@ CRRadBeamWeapon:
 RadEruptionWeapon:
 	ReloadDelay: 60
 	Report: idesat2a.wav
-	Warhead@1Radiation: CreateTintedCells
-		Spread: 2c0
-		Falloff: 100, 75, 50, 25, 0
-		Level: 250
-		MaxLevel: 500
 
 NeutronRifle:
 	ValidTargets: Ground
 	ReloadDelay: 120
 	Range: 5c0
 	Report: ichratta.wav
-	Projectile: RadBeam
+	Projectile: LaserZap
 		Amplitude: 476
 		WaveLength: 384
 		Color: 80C8FF

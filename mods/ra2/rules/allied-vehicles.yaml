@@ -62,10 +62,6 @@ cmin:
 		SearchFromHarvesterRadius: 12
 		HarvestVoice: Move
 		DeliverVoice: Move
-	ChronoResourceDelivery:
-		WarpInSequence: warpout
-		WarpInSound: vchrtele.wav
-		WarpOutSound: vchrtele.wav
 	Health:
 		HP: 1000
 	Armor:
@@ -418,16 +414,6 @@ mgtk:
 	Tooltip:
 		Name: Mirage Tank
 		RequiresCondition: !tree
-	MirageTooltip@Tree:
-		Name: Mirage Tank
-		GenericName: Tree
-		GenericVisibility: Enemy, Neutral
-		RequiresCondition: tree
-	Mirage:
-		RequiresCondition: !chronodisable
-		RevealOn: Attack, Move
-		MirageCondition: tree
-		DefaultTargetTypes: tree01, tree02, tree03, tree04
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	Health:
@@ -460,8 +446,6 @@ mgtk:
 		EmptyWeapon: UnitExplodeSmall
 	RenderSprites:
 		Palette: terrain
-	WithMirageSpriteBody:
-		RequiresCondition: tree
 	RenderVoxels:
 	WithVoxelBody:
 		RequiresCondition: !tree

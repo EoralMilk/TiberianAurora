@@ -204,11 +204,6 @@ NukePayload:
 		Explosions: nuke_explosion
 		ImpactSounds: snukexpl.wav
 		ValidTargets: Ground, Water, Air
-	Warhead@4Radiation: CreateTintedCells
-		Spread: 2c512
-		Falloff: 100, 75, 50, 25, 0
-		Level: 750
-		MaxLevel: 2500
 
 atomic:
 	Inherits: NukePayload
@@ -225,8 +220,6 @@ atomic:
 		Delay: 25
 		ValidTargets: Ground, Water, Air
 	Warhead@4Smu_areanuke: LeaveSmudge
-		Delay: 25
-	Warhead@5Radiation: CreateTintedCells
 		Delay: 25
 
 demobomb:
@@ -319,9 +312,6 @@ demobomb:
 		SmudgeType: LargeScorch
 		Size: 2
 		Delay: 15
-	Warhead@12Radiation: CreateTintedCells
-		Spread: 1c256
-		Level: 325
 
 Demolish:
 	Warhead@1Dam: SpreadDamage

@@ -49,6 +49,8 @@ nacnst:
 		CargoType: Vehicle
 		Voice: Move
 		RequiresForceMove: true
+	TransformsIntoTransforms:
+		RequiresCondition: factundeploy && build-incomplete
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
@@ -69,9 +71,6 @@ nacnst:
 	SpawnActorsOnSell@soviets:
 		ActorTypes: e2, e2, e2, e2, engineer
 		Factions: cuba, libya, iraq, russia
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: engineer, e2, e2, e2, e2, e2, e2
 
 napowr:
 	Inherits: ^BaseBuilding
@@ -114,9 +113,6 @@ napowr:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2
 
 nahand:
 	Inherits: ^BaseBuilding
@@ -192,7 +188,6 @@ nahand:
 		PrimaryCondition: primary
 		SelectionNotification: PrimaryBuildingSelected
 	RallyPoint:
-		Offset: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
 	WithTextDecoration@primary:
@@ -211,9 +206,6 @@ nahand:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2
 
 narefn:
 	Inherits: ^BaseBuilding
@@ -271,9 +263,6 @@ narefn:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2
 
 naradr:
 	Inherits: ^BaseBuilding
@@ -316,9 +305,6 @@ naradr:
 		Types: SpyInfiltrate
 	Power:
 		Amount: -50
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2, e2
 
 naweap:
 	Inherits: ^BaseBuilding
@@ -351,7 +337,6 @@ naweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
-		Offset: 6,1
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
@@ -379,12 +364,6 @@ naweap:
 		Condition: roof-open
 		Duration: 100
 		ShowSelectionBar: false
-	WithExitOverlay@door:
-		Sequence: build-door
-		RequiresCondition: !roof-open && !build-incomplete
-	WithExitOverlay@top-vehicles:
-		Sequence: build-top
-		RequiresCondition: !roof-open && !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		RequiresCondition: !build-incomplete
@@ -404,9 +383,6 @@ naweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2, e2, e2, e2
 
 nayard:
 	Inherits: ^BaseBuilding
@@ -514,7 +490,6 @@ nayard:
 		ZOffset: 256
 		RequiresCondition: primary
 	RallyPoint:
-		Offset: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:
@@ -586,9 +561,6 @@ nadept:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2
 
 nanrct:
 	Inherits: ^BaseBuilding
@@ -635,9 +607,6 @@ nanrct:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2, e2, e2
 
 natech:
 	Inherits: ^BaseBuilding
@@ -670,9 +639,6 @@ natech:
 		Proxy: soviets.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
 
 naclon:
 	Inherits: ^BaseBuilding
@@ -739,15 +705,9 @@ naclon:
 	Production:
 		Produces: Dummy
 	RallyPoint:
-		Offset: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
-	ClonesProducedUnits:
-		CloneableTypes: infantry
 	AcceptsDeliveredCash:
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2, e2
 
 napsis:
 	Inherits: ^BaseBuilding
@@ -784,9 +744,6 @@ napsis:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2
 
 nairon:
 	Inherits: ^BaseBuilding
@@ -832,9 +789,6 @@ nairon:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2, e2, e2, e2, e2
 
 namisl:
 	Inherits: ^BaseBuilding
@@ -897,9 +851,6 @@ namisl:
 		PauseOnCondition: lowpower
 		SelectTargetSpeechNotification: SelectTarget
 	WithNukeLaunchAnimation:
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e2, e2, e2, e2, e2, e2, e2
 
 nawall:
 	Inherits: ^Wall

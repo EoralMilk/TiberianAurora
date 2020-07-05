@@ -79,11 +79,6 @@ dest:
 	Armament@asw:
 		Name: asw
 		Weapon: ASWLauncher
-	CarrierParent:
-		Actors: asw
-		RespawnTicks: 300
-		ArmamentNames: asw
-		LoadedCondition: loaded
 	Exit:
 		SpawnOffset: 768,0,0
 	AttackFrontal:
@@ -271,10 +266,6 @@ carrier:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 	HitShape:
-	CarrierParent:
-		Actors: hornet, hornet, hornet
-		RespawnTicks: 300
-		SpawnAllAtOnce: true
 	Exit@0:
 		SpawnOffset: 0,0,0
 		Facing: 0

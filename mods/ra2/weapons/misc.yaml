@@ -58,7 +58,7 @@ MindControl:
 	ReloadDelay: 200
 	Range: 7c0
 	ValidTargets: MindControl
-	Projectile: ArcLaserZap
+	Projectile: Bullet
 		UsePlayerColor: true
 		Width: 63
 		Angle: 120

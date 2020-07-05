@@ -110,50 +110,45 @@ Assemblies:
 	ra2|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	ra2|chrome/assetbrowser.yaml
-	ra2|chrome/ingame-player.yaml
-	common|chrome/mainmenu.yaml
-	ra2|chrome/mainmenu-prerelease-notification.yaml
-	common|chrome/ingame-infoobjectives.yaml
-	common|chrome/ingame-infostats.yaml
-	common|chrome/musicplayer.yaml
-	common|chrome/tooltips.yaml
-	common|chrome/ingame.yaml
-	common|chrome/ingame-observer.yaml
-	common|chrome/ingame-chat.yaml
-	common|chrome/ingame-fmvplayer.yaml
-	common|chrome/ingame-menu.yaml
-	common|chrome/ingame-info.yaml
-	common|chrome/ingame-infoscripterror.yaml
-	common|chrome/ingame-infobriefing.yaml
+	ra2|chrome/mainmenu.yaml
+	ra2|chrome/mainmenu-prompts.yaml
+	ra2|chrome/playerprofile.yaml
+	ra2|chrome/multiplayer-browser.yaml
+	ra2|chrome/multiplayer-browserpanels.yaml
+	ra2|chrome/multiplayer-createserver.yaml
+	ra2|chrome/multiplayer-directconnect.yaml
+	ra2|chrome/lobby.yaml
+	ra2|chrome/lobby-mappreview.yaml
+	ra2|chrome/lobby-players.yaml
+	ra2|chrome/lobby-options.yaml
+	ra2|chrome/lobby-music.yaml
+	ra2|chrome/lobby-servers.yaml
+	ra2|chrome/lobby-kickdialogs.yaml
+	ra2|chrome/connection.yaml
+	ra2|chrome/color-picker.yaml
+	ra2|chrome/mapchooser.yaml
+	ra2|chrome/replaybrowser.yaml
+	ra2|chrome/gamesave-browser.yaml
+	ra2|chrome/gamesave-loading.yaml
+	ra2|chrome/ingame.yaml
+	ra2|chrome/ingame-chat.yaml
+	ra2|chrome/ingame-menu.yaml
 	ra2|chrome/ingame-debug.yaml
-	common|chrome/ingame-perf.yaml
-	common|chrome/ingame-infochat.yaml
-	common|chrome/settings.yaml
-	common|chrome/credits.yaml
-	common|chrome/lobby.yaml
-	common|chrome/lobby-players.yaml
-	common|chrome/lobby-options.yaml
-	common|chrome/lobby-music.yaml
-	common|chrome/lobby-mappreview.yaml
-	common|chrome/lobby-servers.yaml
-	common|chrome/lobby-kickdialogs.yaml
-	common|chrome/multiplayer-browser.yaml
-	common|chrome/multiplayer-browserpanels.yaml
-	common|chrome/multiplayer-createserver.yaml
-	common|chrome/multiplayer-directconnect.yaml
-	common|chrome/map-chooser.yaml
-	common|chrome/connection.yaml
-	common|chrome/replaybrowser.yaml
-	common|chrome/missionbrowser.yaml
-	common|chrome/confirmation-dialogs.yaml
-	common|chrome/color-picker.yaml
-	common|chrome/dropdowns.yaml
-	common|chrome/editor.yaml
-	common|chrome/playerprofile.yaml
-	common|chrome/gamesave-browser.yaml
-	common|chrome/gamesave-loading.yaml
-	common|chrome/ingame-debuginfo.yaml
+	ra2|chrome/ingame-infochat.yaml
+	ra2|chrome/ingame-info.yaml
+	ra2|chrome/ingame-infobriefing.yaml
+	ra2|chrome/ingame-infoscripterror.yaml
+	ra2|chrome/ingame-infoobjectives.yaml
+	ra2|chrome/ingame-infostats.yaml
+	ra2|chrome/ingame-debuginfo.yaml
+	ra2|chrome/music.yaml
+	ra2|chrome/settings.yaml
+	ra2|chrome/credits.yaml
+	ra2|chrome/dialogs.yaml
+	ra2|chrome/tooltips.yaml
+	ra2|chrome/assetbrowser.yaml
+	ra2|chrome/missionbrowser.yaml
+	ra2|chrome/editor.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml
@@ -251,6 +246,9 @@ SupportsMapsFrom: ra2
 SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+
+AssetBrowser:
+	SupportedExtensions: .shp, .tem, .urb, .sno
 
 SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 	TilesetExtensions:

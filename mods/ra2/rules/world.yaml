@@ -240,13 +240,12 @@ World:
 		SmokeType: largesmoke
 		Sequence: largecraters
 	ResourceLayer:
+	ResourceRenderer:
+		RenderTypes: Ore, Gems
 	ResourceClaimLayer:
 	BridgeLayer:
 	WarheadDebugOverlay:
 	CustomTerrainDebugOverlay:
-	TintedCellsLayer@radiation:
-		Darkest: 32
-		Brightest: 128
 	SpawnMapActors:
 	MapBuildRadius:
 		AllyBuildRadiusCheckboxDisplayOrder: 4
@@ -347,7 +346,7 @@ World:
 	ObjectivesPanel:
 		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
-		ShellmapRoot: MAINMENU_PRERELEASE_NOTIFICATION
+		ShellmapRoot: MENU_BACKGROUND
 	TimeLimitManager:
 		TimeLimitDisplayOrder: 1
 		TimeLimitWarnings:
@@ -362,6 +361,8 @@ World:
 EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
+	EditorCursorLayer:
 	EditorResourceLayer:
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
+	EditorActionManager:

@@ -47,6 +47,8 @@ gacnst:
 		CargoType: Vehicle
 		Voice: Move
 		RequiresForceMove: true
+	TransformsIntoTransforms:
+		RequiresCondition: factundeploy && build-incomplete
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
@@ -78,9 +80,6 @@ gacnst:
 	SpawnActorsOnSell@soviets:
 		ActorTypes: e2, e2, e2, e2, engineer
 		Factions: cuba, libya, iraq, russia
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: engineer, e1, e1, e1, e1
 
 gapowr:
 	Inherits: ^BaseBuilding
@@ -123,9 +122,6 @@ gapowr:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1, e1
 
 gapile:
 	Inherits: ^BaseBuilding
@@ -157,7 +153,6 @@ gapile:
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
-		Offset: 2,3
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@0_n1:
@@ -195,9 +190,6 @@ gapile:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1
 
 garefn:
 	Inherits: ^BaseBuilding
@@ -255,9 +247,6 @@ garefn:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1
 
 gaairc:
 	Inherits: ^BaseBuilding
@@ -346,9 +335,6 @@ gaairc:
 		RequiresCondition: primary
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1
 
 amradr:
 	Inherits: gaairc
@@ -401,7 +387,6 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
-		Offset: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
@@ -439,12 +424,6 @@ gaweap:
 		Condition: roof-open
 		Duration: 100
 		ShowSelectionBar: false
-	WithExitOverlay@top-vehicles:
-		Sequence: build-top
-		RequiresCondition: !roof-open && !build-incomplete
-	WithExitOverlay@ramp:
-		Sequence: build-ramp
-		RequiresCondition: !roof-open && !build-incomplete
 	WithIdleOverlay@air-open:
 		Sequence: build-air-open
 		RequiresCondition: roof-open && !build-incomplete
@@ -458,9 +437,6 @@ gaweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1, e1, e1
 
 gayard:
 	Inherits: ^BaseBuilding
@@ -568,7 +544,6 @@ gayard:
 		ZOffset: 256
 		RequiresCondition: primary
 	RallyPoint:
-		Offset: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:
@@ -637,9 +612,6 @@ gadept:
 		Amount: -25
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1
 
 gatech:
 	Inherits: ^BaseBuilding
@@ -675,9 +647,6 @@ gatech:
 		Proxy: allies.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1, e1, e1
 
 gawall:
 	Inherits: ^Wall
@@ -874,9 +843,6 @@ gaorep:
 		Modifier: 25
 	Power:
 		Amount: -200
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1, e1
 
 gaspysat:
 	Inherits: ^BaseBuilding
@@ -912,9 +878,6 @@ gaspysat:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -944,9 +907,6 @@ gagap:
 	RenderShroudCircle:
 	Power:
 		Amount: -100
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1
 
 gaweat:
 	Inherits: ^BaseBuilding
@@ -977,28 +937,6 @@ gaweat:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
-	WeatherControlSupportPower@LightningStorm:
-		OrderName: WeatherControlDevice
-		ChargeInterval: 15000
-		Icon: lightningstorm
-		Description: Weather Storm
-		LongDesc: Control the weather to destroy enemy forces.
-		InsufficientPowerSpeechNotification: WeathercontrolDeviceOffline
-		EndChargeSpeechNotification: LightningStormReady
-		SelectTargetSpeechNotification: SelectTarget
-		LaunchSpeechNotification: LightningStormCreated
-		LaunchSound: sweaintr.wav
-		IncomingSpeechNotification: WeathercontrolDeviceDetected
-		DisplayTimerStances: Ally, Neutral, Enemy
-		DisplayBeacon: true
-		DisplayRadarPing: true
-		Weapon: LightningStorm
-		PauseOnCondition: lowpower
-		Cursor: weatherstorm
-		PaletteEffectType: LightningStorm
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1, e1, e1, e1
 
 gacsph:
 	Inherits: ^BaseBuilding
@@ -1051,9 +989,6 @@ gacsph:
 		TargetCursor: chronosphere
 		TargetOverlayPalette: effect75alpha
 		PauseOnCondition: lowpower
-	SpawnSurvivors:
-		DeathTypes: ExplosionDeath, BulletDeath
-		Actors: e1, e1, e1, e1, e1
 
 atesla:
 	Inherits: ^SupportBuilding

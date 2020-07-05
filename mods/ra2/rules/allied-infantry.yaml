@@ -183,7 +183,6 @@ e1:
 	WithSpriteTurret:
 		Sequence: deployed
 		RequiresCondition: !undeployed && editorhack
-	WithTurretDeployAnimation:
 	WithTurretAttackAnimation:
 		Sequence: shoot-deployed
 		Armament: deployed
@@ -421,12 +420,6 @@ ptroop:
 	Demolition:
 		Voice: Attack
 	WithMuzzleOverlay:
-	MindController:
-		ControllingCondition: controlling
-		Sounds: iyurat1a.wav
-	WithMindControlArc:
-		UsePlayerColor: true
-		Offset: 0,0,960
 	AttackMove:
 		-AssaultMoveCondition:
 	AutoTarget:
@@ -570,8 +563,6 @@ jumpjet:
 	Targetable@ground:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 		RequiresCondition: !airborne
-	DamagedByTintedCells:
-		RequiresCondition: !airborne
 	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
@@ -639,10 +630,3 @@ cleg:
 		Voice: Attack
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-	ChronoshiftableWithSpriteEffect:
-		Image: chrono
-		WarpInSequence: warpin
-		WarpOutSequence: warpout
-		ChronoshiftSound: schrmov.wav
-		ReturnToOrigin: false
-		ExplodeInstead: false

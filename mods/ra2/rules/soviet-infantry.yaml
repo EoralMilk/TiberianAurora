@@ -243,7 +243,6 @@ deso:
 		Type: Plate
 	Targetable@RadiationImmunity:
 		TargetTypes: ImmuneToRadiation
-	-DamagedByTintedCells:
 	-Crushable:
 	Passenger:
 		PipType: Red
@@ -260,9 +259,6 @@ deso:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: undeployed
-	PeriodicExplosion:
-		Weapon: RadEruptionWeapon
-		RequiresCondition: deployed
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
@@ -389,20 +385,6 @@ yuri:
 		Type: None
 	Passenger:
 		PipType: Red
-	PeriodicExplosion:
-		Weapon: PsiWave
-		LocalOffset: 0,0,128
-		RequiresCondition: deployed
-	GrantTimedConditionOnDeploy:
-		DeployedTicks: 50
-		CooldownTicks: 0
-		Facing: 96
-		DeployedCondition: deployed
-		DeployingCondition: deploying
-		DeployAnimation: deploy
-		UndeployAnimation: undeploy
-		ShowSelectionBar: false
-		Voice:
 	TakeCover:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -421,12 +403,6 @@ yuri:
 		LocalOffset: 0,0,960
 		PauseOnCondition: deployed
 	WithMuzzleOverlay:
-	MindController:
-		ControllingCondition: controlling
-		Sounds: iyurat1a.wav
-	WithMindControlArc:
-		UsePlayerColor: true
-		Offset: 0,0,960
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: MindControl
