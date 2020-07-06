@@ -1,4 +1,4 @@
-# Travis-CI Build for OpenRA/ra2
+# Travis-CI Build for OpenRA/ta
 # see travis-ci.org for details
 
 language: csharp

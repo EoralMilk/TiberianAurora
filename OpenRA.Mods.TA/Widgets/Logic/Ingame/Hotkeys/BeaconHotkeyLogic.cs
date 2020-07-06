@@ -15,7 +15,7 @@ using OpenRA.Widgets;
 using OpenRA.Mods.Common.Orders;
 using OpenRA.Mods.Common.Widgets.Logic;
 
-namespace OpenRA.Mods.RA2.Widgets.Logic.Ingame
+namespace OpenRA.Mods.TA.Widgets.Logic.Ingame
 {
 	[ChromeLogicArgsHotkeys("PlaceBeaconKey")]
 	public class BeaconHotkeyLogic : SingleHotkeyBaseLogic

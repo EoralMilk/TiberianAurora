@@ -1,7 +1,5 @@
-# Red Alert 2 mod for OpenRA
+# OpenRA: Tiberian Aurora
 
-[![Build Status](https://travis-ci.org/OpenRA/ra2.svg?branch=master)](https://travis-ci.org/OpenRA/ra2)
+Tiberian Aurora是一个基于Openra引擎开发的Mod。致力于制作一个TS视角的TD，尽量尊重原设的同时将原本不合理的地方加以修改。全部建筑和单位素材都将重制，届时将为大家展现一个全新体验的TD。
 
-Consult the [wiki](https://github.com/OpenRA/ra2/wiki) for instructions on how to install and use this.
-
-[![Bountysource](https://api.bountysource.com/badge/tracker?tracker_id=27677844)](https://www.bountysource.com/teams/openra/issues?tracker_ids=27677844)
+- 目前TA尚在开发中。

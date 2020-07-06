@@ -1,0 +1,308 @@
+Metadata:
+	Title: Tiberian Aurora
+	Description: Kane Lives!!!
+	Version: {DEV_VERSION}
+	Author: The Tiberian Aurora authors
+
+ModCredits:
+	ModTabTitle: Red Alert 2
+	ModCreditsFile: ta|AUTHORS.RA2 # TODO rename to AUTHORS as stated in the .cs files when OpenRA#17460 is available
+
+PackageFormats: Mix, AudioBag
+
+Packages:
+	~^Content/ra2
+	.
+	$ta: ta
+	./mods/common: common
+	~ra2.mix
+	~language.mix
+	~multi.mix
+	~audio.mix
+	~cache.mix
+	~cameo.mix
+	~conquer.mix: conquer
+	~generic.mix
+	~isogen.mix
+	~isosnow.mix
+	~isotemp.mix
+	~isourb.mix
+	~load.mix
+	~local.mix
+	~neutral.mix
+	~sidec01.mix
+	~sidec02.mix
+	~sno.mix
+	~snow.mix
+	~tem.mix
+	~temperat.mix
+	~theme.mix
+	~urb.mix
+	~urban.mix
+	~audio.bag
+	ta|bits
+	ta|bits/cameos
+	ta|bits/structures
+	ta|bits/animations
+	ta|bits/projectiles
+	ta|uibits
+
+MapFolders:
+	ta|maps: System
+	~^maps/ta/{DEV_VERSION}: User
+
+Rules:
+	ta|rules/proxy-actors.yaml
+	ta|rules/misc.yaml
+	ta|rules/ai.yaml
+	ta|rules/player.yaml
+	ta|rules/world.yaml
+	ta|rules/palettes.yaml
+	ta|rules/defaults.yaml
+	ta|rules/allied-infantry.yaml
+	ta|rules/soviet-infantry.yaml
+	ta|rules/civilians.yaml
+	ta|rules/bridges.yaml
+	ta|rules/animals.yaml
+	ta|rules/allied-structures.yaml
+	ta|rules/soviet-structures.yaml
+	ta|rules/civilian-structures.yaml
+	ta|rules/tech-structures.yaml
+	ta|rules/allied-vehicles.yaml
+	ta|rules/soviet-vehicles.yaml
+	ta|rules/civilian-vehicles.yaml
+	ta|rules/allied-naval.yaml
+	ta|rules/soviet-naval.yaml
+	ta|rules/aircraft.yaml
+	ta|rules/civilian-props.yaml
+	ta|rules/trees.yaml
+	ta|rules/civilian-naval.yaml
+
+Sequences:
+	ta|sequences/aircraft.yaml
+	ta|sequences/allied-infantry.yaml
+	ta|sequences/allied-structures.yaml
+	ta|sequences/animals.yaml
+	ta|sequences/bridges.yaml
+	ta|sequences/civilians.yaml
+	ta|sequences/civilian-props.yaml
+	ta|sequences/civilian-structures.yaml
+	ta|sequences/defaults.yaml
+	ta|sequences/misc.yaml
+	ta|sequences/soviet-infantry.yaml
+	ta|sequences/soviet-structures.yaml
+	ta|sequences/tech-structures.yaml
+	ta|sequences/trees.yaml
+	ta|sequences/vehicles.yaml
+
+ModelSequences:
+	ta|sequences/voxels.yaml
+
+Cursors:
+	ta|cursors.yaml
+
+Chrome:
+	ta|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	common|OpenRA.Mods.Cnc.dll
+	ta|OpenRA.Mods.TA.dll
+
+ChromeLayout:
+	ta|chrome/mainmenu.yaml
+	ta|chrome/mainmenu-prompts.yaml
+	ta|chrome/playerprofile.yaml
+	ta|chrome/multiplayer-browser.yaml
+	ta|chrome/multiplayer-browserpanels.yaml
+	ta|chrome/multiplayer-createserver.yaml
+	ta|chrome/multiplayer-directconnect.yaml
+	ta|chrome/lobby.yaml
+	ta|chrome/lobby-mappreview.yaml
+	ta|chrome/lobby-players.yaml
+	ta|chrome/lobby-options.yaml
+	ta|chrome/lobby-music.yaml
+	ta|chrome/lobby-servers.yaml
+	ta|chrome/lobby-kickdialogs.yaml
+	ta|chrome/connection.yaml
+	ta|chrome/color-picker.yaml
+	ta|chrome/mapchooser.yaml
+	ta|chrome/replaybrowser.yaml
+	ta|chrome/gamesave-browser.yaml
+	ta|chrome/gamesave-loading.yaml
+	ta|chrome/ingame.yaml
+	ta|chrome/ingame-chat.yaml
+	ta|chrome/ingame-menu.yaml
+	ta|chrome/ingame-debug.yaml
+	ta|chrome/ingame-infochat.yaml
+	ta|chrome/ingame-info.yaml
+	ta|chrome/ingame-infobriefing.yaml
+	ta|chrome/ingame-infoscripterror.yaml
+	ta|chrome/ingame-infoobjectives.yaml
+	ta|chrome/ingame-infostats.yaml
+	ta|chrome/ingame-debuginfo.yaml
+	ta|chrome/music.yaml
+	ta|chrome/settings.yaml
+	ta|chrome/credits.yaml
+	ta|chrome/dialogs.yaml
+	ta|chrome/tooltips.yaml
+	ta|chrome/assetbrowser.yaml
+	ta|chrome/missionbrowser.yaml
+	ta|chrome/editor.yaml
+
+Weapons:
+	ta|weapons/bullets.yaml
+	ta|weapons/defaults.yaml
+	ta|weapons/explosions.yaml
+	ta|weapons/flaks.yaml
+	ta|weapons/melee.yaml
+	ta|weapons/mgs.yaml
+	ta|weapons/misc.yaml
+	ta|weapons/missiles.yaml
+	ta|weapons/zaps.yaml
+
+Voices:
+	ta|audio/voices.yaml
+
+Notifications:
+	ta|audio/notifications.yaml
+
+TileSets:
+	ta|tilesets/temperat.yaml
+	ta|tilesets/snow.yaml
+	ta|tilesets/urban.yaml
+
+MapGrid:
+	Type: RectangularIsometric
+	TileSize: 60,30
+	EnableDepthBuffer: true
+	SubCellOffsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
+	DefaultSubCell: 2
+	MaximumTerrainHeight: 16
+
+Music:
+	ta|audio/music.yaml
+
+Translations:
+	ta|languages/english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+	common|hotkeys/observer.yaml
+	common|hotkeys/production-common.yaml
+	common|hotkeys/supportpowers.yaml
+	common|hotkeys/viewport.yaml
+	ta|hotkeys.yaml
+
+LoadScreen: LogoStripeLoadScreen
+	Image: ta|uibits/loadscreen.png
+	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+
+ChromeMetrics:
+	common|metrics.yaml
+	ta|metrics.yaml
+
+Fonts:
+	Regular:
+		Font: common|FreeSans.ttf
+		Size: 14
+		Ascender: 11
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+	Title:
+		Font: common|FreeSansBold.ttf
+		Size: 32
+		Ascender: 24
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size: 24
+		Ascender: 18
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size: 18
+		Ascender: 14
+	Small:
+		Font: common|FreeSans.ttf
+		Size: 12
+		Ascender: 9
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size: 10
+		Ascender: 8
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size: 10
+		Ascender: 8
+
+SupportsMapsFrom: ra2
+
+SoundFormats: Aud, Wav
+
+SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+
+AssetBrowser:
+	SupportedExtensions: .shp, .tem, .urb, .sno
+
+SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERATE: .tem
+		SNOW: .sno
+		URBAN: .urb
+	TilesetCodes:
+		GENERIC: g
+		SNOW: a
+		TEMPERATE: t
+		URBAN: u
+	TilesetSuffixes:
+		SNOW: a
+
+ModelSequenceFormat: VoxelModelSequence
+
+GameSpeeds:
+	slowest:
+		Name: Slowest
+		Timestep: 80
+		OrderLatency: 2
+	slower:
+		Name: Slower
+		Timestep: 50
+		OrderLatency: 3
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
+	fast:
+		Name: Fast
+		Timestep: 35
+		OrderLatency: 4
+	faster:
+		Name: Faster
+		Timestep: 30
+		OrderLatency: 4
+	fastest:
+		Name: Fastest
+		Timestep: 20
+		OrderLatency: 6
+
+ModContent:
+	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
+	HeaderMessage: The original game content must be copied from an original game disc.
+	Packages:
+		base: Base Game Files
+			TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
+			Sources: ra2, origin, tfd
+			Required: true
+		music: Base Game Music
+			TestFiles: ^Content/ra2/theme.mix
+			Sources: ra2, origin, tfd
+	Sources:
+		ta|installer/ra2.yaml
+		ta|installer/origin.yaml
+		ta|installer/firstdecade.yaml

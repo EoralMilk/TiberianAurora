@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.RA2", "OpenRA.Mods.RA2\OpenRA.Mods.RA2.csproj", "{C1D526FE-C83A-4B6A-BB57-3443A8DA3968}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.TA", "OpenRA.Mods.TA\OpenRA.Mods.TA.csproj", "{C1D526FE-C83A-4B6A-BB57-3443A8DA3968}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.Common", "engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj", "{20034360-3638-489C-80E1-0A1104DBBCE9}"
 EndProject

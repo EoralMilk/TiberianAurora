@@ -14,7 +14,7 @@ using System.Linq;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
 
-namespace OpenRA.Mods.RA2.Graphics
+namespace OpenRA.Mods.TA.Graphics
 {
 	public class ExtendedTilesetSpecificSpriteSequenceLoader : DefaultSpriteSequenceLoader
 	{

@@ -25,16 +25,16 @@ _ReSharper.*/
 /*.pdb
 /*.mdb
 *.mmdb.gz
-/mods/ra2/*.dll
-/mods/ra2/*.dll.config
-/mods/ra2/*.pdb
-/mods/ra2/*.mdb
-/mods/ra2/*.exe
-/mods/ra2/*.exe.config
-/mods/ra2/*.deps.json
+/mods/ta/*.dll
+/mods/ta/*.dll.config
+/mods/ta/*.pdb
+/mods/ta/*.mdb
+/mods/ta/*.exe
+/mods/ta/*.exe.config
+/mods/ta/*.deps.json
 
 # TODO: Compiling creates a /mods/common folder with dlls and pdbs
-OpenRA.Mods.RA2/mods/*
+OpenRA.Mods.TA/mods/*
 mods/common/*
 
 # StyleCop
