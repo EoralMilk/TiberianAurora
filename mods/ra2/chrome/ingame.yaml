@@ -1578,14 +1578,14 @@ Container@PLAYER_WIDGETS:
 									Y: 2
 									ImageCollection: chrome-button
 									ImageName: separator
-						WorldButton@BEACON_BUTTON:
-							Logic: BeaconOrderButtonLogic, AddFactionSuffixLogic
+						WorldButton@POWER_BUTTON:
+							Logic: PowerdownOrderButtonLogic, AddFactionSuffixLogic
 							X: 58
 							Width: 28
 							Height: 26
 							Background: chrome-button-background
-							Key: PlaceBeacon
-							TooltipText: Place Beacon
+							Key: PowerDown
+							TooltipText: Power Down
 							TooltipContainer: TOOLTIP_CONTAINER
 							TooltipTemplate: BUTTON_TOOLTIP_FACTIONSUFFIX
 							VisualHeight: 0
