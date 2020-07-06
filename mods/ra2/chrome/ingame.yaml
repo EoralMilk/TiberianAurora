@@ -1711,17 +1711,27 @@ Container@PLAYER_WIDGETS:
 							ImageCollection: cash-icons
 							ImageName: cash-normal
 		Container@SIDEBAR_PRODUCTION:
-			Logic: ClassicProductionLogic
+			Logic: ClassicProductionLogic, ProductionPaletteBackgroundLogic
 			X: WINDOW_RIGHT - WIDTH + 13
 			Y: 272
 			Width: 230
 			Height: 291
 			Children:
+				Container@PRODUCTION_BACKGROUND:
+					X: 0
+					Y: 26
+					Children:
+						Background@ICON_TEMPLATE:
+							Logic: AddFactionSuffixLogic
+							Width: 66
+							Height: 50
+							Background: panel-black
 				LogicTicker@PRODUCTION_TICKER:
 				ProductionPalette@PRODUCTION_PALETTE:
-					X: 0
+					X: 1
 					Y: 27
 					Width: 192
+					IconSize: 64, 48
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: PRODUCTION_TOOLTIP_FACTIONSUFFIX
 					ReadyText: Ready
