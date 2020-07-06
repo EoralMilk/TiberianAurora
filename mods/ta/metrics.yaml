@@ -12,6 +12,8 @@ Metrics:
 	FactionSuffix-cuba: nod
 	FactionSuffix-iraq: nod
 	FactionSuffix-russia: nod
+	FactionSuffix-gdi: gdi
+	FactionSuffix-nod: nod
 	IncompatibleVersionColor: D3D3D3
 	IncompatibleProtectedGameColor: B22222
 	ChatLineSound: ChatLine

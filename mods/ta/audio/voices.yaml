@@ -19,6 +19,8 @@ EngineerVoice:
 		libya: iens
 		iraq: iens
 		russia: iens
+		gdi: iena
+		nod: iens
 	Voices:
 		Select: sea, seb, sec, sed
 		Move: moa, mob, moc

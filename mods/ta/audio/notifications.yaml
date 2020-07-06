@@ -10,6 +10,8 @@ Speech:
 		cuba: csof
 		iraq: csof
 		russia: csof
+		gdi: ceva
+		nod: csof
 	Notifications:
 		AllianceBroken: 044
 		AllianceFormed: 043

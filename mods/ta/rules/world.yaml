@@ -113,8 +113,8 @@
 	Faction@random:
 		Name: Random
 		InternalName: Random
-		RandomFactionMembers: random-allies, random-soviets
-		Side: Randoms
+		RandomFactionMembers: nod, gdi
+		Side: TA Faction
 		Description: Random Country\nA random country will be chosen when the game starts.
 	Faction@allies:
 		Name: Allies
@@ -173,6 +173,16 @@
 		InternalName: russia
 		Side: Soviets
 		Description: Russia\nSpecial Vehicle: Tesla Tank
+	Faction@gdi:
+		Name: GDI
+		InternalName: gdi
+		Side: TA Faction
+		Description: Global Defense Initiative\nThe GDI is an international military branch of the United Nations tasked\nwith keeping world peace. Commanding the combined forces of the world's\nmost powerful nations, they possess an unmatched arsenal of high-tech weaponry.
+	Faction@nod:
+		Name: Nod
+		InternalName: nod
+		Side: TA Faction
+		Description: Brotherhood of Nod\nThe Brotherhood is a religious cult centered around their leader Kane\nand the alien substance Tiberium. They utilize stealth technology\nand guerilla tactics to defeat those who oppose them.
 	ResourceType@Ore:
 		ResourceType: 1
 		Palette: resource
@@ -322,6 +332,78 @@ World:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: soviets, cuba, libya, iraq, russia
+		BaseActor: smcv
+		BaseActorFacing: 224
+		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
+		SupportActorsFacing: 224
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@gdimcv:
+		Class: none
+		ClassName: MCV Only
+		Factions: gdi
+		BaseActor: amcv
+		BaseActorFacing: 224
+	MPStartUnits@gdilight:
+		Class: light
+		ClassName: Light Support
+		Factions: gdi
+		BaseActor: amcv
+		BaseActorFacing: 224
+		SupportActors: dog,e1,e1
+		SupportActorsFacing: 224
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@gdimedium:
+		Class: medium
+		ClassName: Medium Support
+		Factions: gdi
+		BaseActor: amcv
+		BaseActorFacing: 224
+		SupportActors: dog,e1,e1,e1,mtnk,engineer
+		SupportActorsFacing: 224
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@gdiheavy:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: gdi
+		BaseActor: amcv
+		BaseActorFacing: 224
+		SupportActors: dog,e1,e1,e1,e1,mtnk,mtnk,fv,engineer
+		SupportActorsFacing: 224
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@nodmcv:
+		Class: none
+		ClassName: MCV Only
+		Factions: nod
+		BaseActor: smcv
+		BaseActorFacing: 224
+	MPStartUnits@nodlight:
+		Class: light
+		ClassName: Light Support
+		Factions: nod
+		BaseActor: smcv
+		BaseActorFacing: 224
+		SupportActors: dog,e2,e2,e2
+		SupportActorsFacing: 224
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@nodmedium:
+		Class: medium
+		ClassName: Medium Support
+		Factions: nod
+		BaseActor: smcv
+		BaseActorFacing: 224
+		SupportActors: dog,e2,e2,e2,e2,htnk,engineer
+		SupportActorsFacing: 224
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@nodheavy:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: nod
 		BaseActor: smcv
 		BaseActorFacing: 224
 		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
