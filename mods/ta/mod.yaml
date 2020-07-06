@@ -196,7 +196,7 @@ Hotkeys:
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ta|uibits/loadscreen.png
-	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
+	Text: 祈祷中......
 
 ServerTraits:
 	LobbyCommands
