@@ -389,3 +389,13 @@ SecretServiceVoice:
 		Move: isecmoa, isecmob, isecmoc, isecmod
 		Attack: isecata, isecatb, isecatc, isecatd, isecate
 		Die: isecdia, isecdib, isecdic
+
+# TD 语音
+VehicleVoice:
+	Variants:
+		nod: .v00,.v02
+		gdi: .v00,.v02
+	Voices:
+		Select: vehic1,yessir1,report1,await1,unit1
+		Move: ackno,affirm1,movout1
+		Unload: movout1	# TODO: 验证是否无用

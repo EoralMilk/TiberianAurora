@@ -342,7 +342,7 @@ World:
 		Class: none
 		ClassName: MCV Only
 		Factions: gdi
-		BaseActor: amcv
+		BaseActor: gdimcv
 		BaseActorFacing: 224
 	MPStartUnits@gdilight:
 		Class: light

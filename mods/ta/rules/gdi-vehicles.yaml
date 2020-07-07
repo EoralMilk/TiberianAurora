@@ -1,0 +1,40 @@
+# gdi mcv
+gdimcv:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 80
+		Prerequisites: ~gaweap, gadept	# TODO:设置gdimcv的建造条件
+		Description: Deploys into a Construction Yard.\n	Unarmed
+	Valued:
+		Cost: 3500
+	Tooltip:
+		Name: Mobile Construction Vehicle
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 1000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 71
+		Locomotor: heavytracked
+	RevealsShroud:
+		Range: 8c0
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	Transforms:
+		Voice: Move
+		IntoActor: gdifact
+		Offset: -1,-1
+		Facing: 96
+		TransformSounds: constru2.aud, hvydoor1.aud
+		NoTransformNotification: BuildingCannotPlaceAudio
+	RenderSprites:
+		Image: amcv
+	RenderVoxels: # TODO: 素材..
+		Image: amcv
+	WithVoxelBody:
+	HitShape:

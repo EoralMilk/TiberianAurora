@@ -1,0 +1,85 @@
+# gdi 建造厂
+gdifact:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^4x4Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+		Description: Builds structures
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4,4
+	Selectable:
+		Bounds: 220, 155, 0, -20
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 10c0
+	Valued:
+		Cost: 3500
+	Production:
+		Produces: Building,Support
+	Tooltip:
+		Name: Construction Yard
+	BaseBuilding:
+	BaseProvider:
+		Range: 0
+	Transforms:
+		IntoActor: gdimcv
+		Offset: 1,1
+		Facing: 96
+		DeployCursor: undeploy
+		RequiresCondition: factundeploy && !build-incomplete
+	TransformsIntoMobile:
+		RequiresCondition: factundeploy
+		Locomotor: heavytracked
+		Voice: Move
+		RequiresForceMove: true
+	TransformsIntoRepairable:
+		RequiresCondition: factundeploy
+		RepairActors: gadept, nadept, caoutp
+		Voice: Move
+		RequiresForceMove: true
+	TransformsIntoPassenger:
+		RequiresCondition: factundeploy
+		CargoType: Vehicle
+		Voice: Move
+		RequiresForceMove: true
+	TransformsIntoTransforms:
+		RequiresCondition: factundeploy && build-incomplete
+	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
+		Condition: factundeploy
+		Prerequisites: global-factundeploy
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Support:
+		ProductionType: Support
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	WithIdleOverlay@fans:
+		Sequence: idle-fans
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	WithBuildingPlacedOverlay:
+	ProvidesPrerequisite:
+		Prerequisite: structures.gdi
+	Power:
+		Amount: 0
+	SpawnActorsOnSell@allies: # TIDO: 移除多余的出售单位
+		ActorTypes: e1, e1, e1, engineer
+		Factions: america, germany, england, france, korea
+	SpawnActorsOnSell@soviets:
+		ActorTypes: e2, e2, e2, e2, engineer
+		Factions: cuba, libya, iraq, russia
+	SpawnActorsOnSell@gdi:
+		ActorTypes: e1, e1, e1, engineer, gdimcv
+		Factions: gdi
+	SpawnActorsOnSell@nod:
+		ActorTypes: e2, e2, e2, e2, engineer
+		Factions: nod
+	RenderSprites:  # TODO: 素材..
+		Image: gacnst
