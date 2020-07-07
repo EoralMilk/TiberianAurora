@@ -335,8 +335,8 @@
 	Building:
 		Dimensions: 1,1
 		Footprint: x
-		BuildSounds: uplace.wav
-		UndeploySounds: uselbuil.wav
+		BuildSounds: constru2.aud, hvydoor1.aud
+		UndeploySounds: cashturn.aud
 		TerrainTypes: Clear, Road, DirtRoad, Rough
 	FrozenUnderFog:
 	Capturable:
@@ -502,7 +502,7 @@
 	Building:
 		Dimensions: 1,1
 		Footprint: x
-		BuildSounds: uplace.wav
+		BuildSounds: hvydoor1.aud
 		TerrainTypes: Clear, Rough, Road, DirtRoad
 	FootprintPlaceBuildingPreview:
 		Palette: effect75alpha
@@ -862,6 +862,8 @@
 		VoiceSet: AlliedVehicleVoice
 	MapEditorData:
 		Categories: Vehicle
+	Voiced:
+		VoiceSet: VehicleVoice
 
 ^CivVehicle:
 	Inherits: ^Vehicle

@@ -12,9 +12,12 @@ PackageFormats: Mix, AudioBag
 
 Packages:
 	~^Content/ra2
+	~^Content/cnc
 	.
 	$ta: ta
 	./mods/common: common
+	~sounds.mix
+
 	~ra2.mix
 	~language.mix
 	~multi.mix
@@ -46,6 +49,9 @@ Packages:
 	ta|bits/animations
 	ta|bits/projectiles
 	ta|uibits
+
+	# ta
+	ta|speechs
 
 MapFolders:
 	ta|maps: System
@@ -301,7 +307,16 @@ ModContent:
 			Required: true
 		music: Base Game Music
 			TestFiles: ^Content/ra2/theme.mix
-			Sources: ra2, origin, tfd
+			Sources: ra2, origin, tfd		
+		cncbase: CNC Base Game Files
+			TestFiles: ^Content/cnc/conquer.mix, ^Content/cnc/desert.mix, ^Content/cnc/sounds.mix, ^Content/cnc/speech.mix, ^Content/cnc/temperat.mix, ^Content/cnc/tempicnh.mix, ^Content/cnc/winter.mix
+			Required: true
+			Download: basefiles
+		cncmusic: CNC Base Game Music
+			TestFiles: ^Content/cnc/scores.mix
+			Download: music
+	Downloads:
+		ta|installer/downloads.yaml
 	Sources:
 		ta|installer/ra2.yaml
 		ta|installer/origin.yaml

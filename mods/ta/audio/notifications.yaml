@@ -1,150 +1,186 @@
 Speech:
 	DefaultVariant: .wav
-	Prefixes:
-		america: ceva
-		korea: ceva
-		france: ceva
-		germany: ceva
-		england: ceva
-		libya: csof
-		cuba: csof
-		iraq: csof
-		russia: csof
-		gdi: ceva
-		nod: csof
 	Notifications:
-		AllianceBroken: 044
-		AllianceFormed: 043
-		AllianceRequested: 101
-		ArmorUpgraded: 067
-		ArmorTechnologyStolen: 082
-		AtomBombDetected: 001
-		AtomBombLaunchDetected: 002
-		AtomBombReady: 003
-		BaseAttack: 054
-		BeaconDetected: 041
-		BeaconPlaced: 042
-		BaseDefensesOffline: 059
-		Building: 052
-		BuildingCannotPlaceAudio: 063
-		BuildingCaptured: 072
-		BuildingInfiltrated: 073
-		BuildingInfiltratedCashStolen: 090
-		BuildingInfiltratedPowerSabotaged: 091
-		BuildingInfiltratedRadarSabotaged: 089
-		BuildingInfiltratedTechnologyStolen: 088
-		BuildingOffline: 061
-		BuildingOnline: 060
-		BridgeRepaired: 046
-		Cancelled: 051
-		CashStolen: 094
-		ChronominerOffline: 109
-		ChronosphereActivated: 008
-		ChronosphereDetected: 007
-		ChronosphereReady: 009
-		ConstructionComplete: 048
-		CreditsStolen: 094
-		CriticalUnitLost: 020
-		CriticalStructureLost: 021
-		EnemyAllianceFormed: 103
-		EnemyAirArmadaDetected: 096
-		EnemyArmorBattalionDetected: 098
-		EnemyBasePoweredDown: 075
-		EnemyFleetDetected: 097
-		EnemyInfantryBattalionDetected: 099
-		EnemyPowerRestored: 087
-		EstablishingBattlefieldcontrolStandBy: 016
-		FirepowerUpgraded: 068
-		FirepowerTechnologyStolen: 081
-		FiveMinutesRemaining: 029
-		FourMinutesRemaining: 030
+		# TODO: 替换无用语音
+		AllianceBroken: ceva044.wav
+		AllianceFormed: ceva043.wav
+		AllianceRequested: ceva101.wav
+		ArmorUpgraded: ceva067.wav
+		ArmorTechnologyStolen: ceva082.wav
+		AtomBombDetected: ceva001.wav
+		AtomBombLaunchDetected: ceva002.wav
+		AtomBombReady: ceva003.wav
+		BeaconDetected: ceva041.wav
+		BeaconPlaced: ceva042.wav
+		BaseDefensesOffline: ceva059.wav
+		BuildingInfiltrated: ceva073.wav
+		BuildingInfiltratedCashStolen: ceva090.wav
+		BuildingInfiltratedPowerSabotaged: ceva091.wav
+		BuildingInfiltratedRadarSabotaged: ceva089.wav
+		BuildingInfiltratedTechnologyStolen: ceva088.wav
+		BuildingOffline: ceva061.wav
+		BuildingOnline: ceva060.wav
+		BridgeRepaired: ceva046.wav
+		CashStolen: ceva094.wav
+		ChronominerOffline: ceva109.wav
+		ChronosphereActivated: ceva008.wav
+		ChronosphereDetected: ceva007.wav
+		ChronosphereReady: ceva009.wav
+		CreditsStolen: ceva094.wav
+		CriticalUnitLost: ceva020.wav
+		CriticalStructureLost: ceva021.wav
+		EnemyAllianceFormed: ceva103.wav
+		EnemyAirArmadaDetected: ceva096.wav
+		EnemyArmorBattalionDetected: ceva098.wav
+		EnemyBasePoweredDown: ceva075.wav
+		EnemyFleetDetected: ceva097.wav
+		EnemyInfantryBattalionDetected: ceva099.wav
+		EnemyPowerRestored: ceva087.wav
+		EstablishingBattlefieldcontrolStandBy: ceva016.wav
+		FirepowerUpgraded: ceva068.wav
+		FirepowerTechnologyStolen: ceva081.wav
+		FiveMinutesRemaining: ceva029.wav
+		FourMinutesRemaining: ceva030.wav
+		IncomingTransmission: ceva040.wav
+		InsufficientFunds: ceva050.wav
+		IronCurtainActivated: ceva005.wav
+		IronCurtainDetected: ceva004.wav
+		IronCurtainReady: ceva006.wav
+		LightningStormCreated: ceva011.wav
+		LightningStormReady: ceva012.wav
+		NewMissionObjectiveReceived: ceva083.wav
+		NewObjectiveReceived: ceva104.wav
+		NewTechnologyAquired: ceva074.wav
+		NewTerrainDiscovered: ceva039.wav
+		NewRallyPointEstablished: ceva100.wav
+		NuclearMissileLaunched: ceva002.wav
+		NuclearMissileReady: ceva002.wav
+		NuclearSiloDetected: ceva001.wav
+		OneMinuteRemaining: ceva033.wav
+		OreMinerOffline: ceva086.wav
+		OreMinerUnderAttack: ceva037.wav
+		OurAllyIsUnderAttack: ceva045.wav
+		PlayerDefeated: ceva026.wav
+		PlayerResigned: ceva025.wav
+		PowerSabotaged: ceva095.wav
+		PrimaryObjectiveAchieved: ceva017.wav
+		RadarSabotaged: ceva093.wav
+		ReinforcementsArrived: ceva038.wav
+		ReinforcementsReady: ceva121.wav
+		Resign: ceva024.wav
+		RequestingAlliance: ceva102.wav
+		SecondObjectiveAchieved: ceva018.wav
+		SpeedUpgraded: ceva069.wav
+		StructureAbandoned: ceva108.wav
+		StructureGarrisoned: ceva107.wav
+		StructureSold: ceva058.wav
+		TechBuildingCaptured: ceva105.wav
+		TechBuildingLost: ceva106.wav
+		TechnologyStolen: ceva092.wav
+		TenMinutesRemaining: ceva028.wav
+		TertiaryObjectiveAchieved: ceva019.wav
+		ThreeMinutesRemaining: ceva031.wav
+		TimerStarted: ceva035.wav
+		TimerStopped: ceva036.wav
+		TwentyMinutesRemaining: ceva027.wav
+		TwoMinutesRemaining: ceva032.wav
+		UnitArmorUpgraded: ceva077.wav
+		UnitFirepowerUpgraded: ceva076.wav
+		UnitPromoted: ceva079.wav
+		UnitRepaired: ceva070.wav
+		UnitSold: ceva071.wav
+		UnitSpeedUpgraded: ceva078.wav
+		UnitUpgraded: ceva080.wav
+		UpradeComplete: ceva085.wav
+		UpgradeInProgress: ceva084.wav
+		WeathercontrolDeviceDetected: ceva010.wav
+		WeathercontrolDeviceOffline: ceva122.wav
+
+
+		# TODO: 移除无用语音
+		AirstrikeReady: airredy1 #
+		BaseAttack: baseatk1
+		Building: bldging1
+		BuildingCannotPlaceAudio: deploy1
+		BuildingCaptured: capt1
+		BuildingInProgress: bldg1 #
+		BuildingLost: strclost #
+		Cancelled: cancel1
+		CivilianBuildingCaptured: civcapt1 #
+		CivilianKilled: civdead1 #
+		ConstructionComplete: constru1
+		EnemyUnitsApproaching: enmyunit #
+		EnemyStructureDestroyed: estrucx #
+		EnemyPlanesApproaching: enemya #
+		HarvesterAttack: #
+		InsufficientPower: nopower1 #
+		IonCannonCharging: ionchrg1 #
+		IonCannonReady: ionredy1 #
+		Leave: batlcon1
+		Lose: fail1
+		LowPower: lopower1
+		MissionAccomplished: accom1
+		MissionFailed: fail1
+		NewOptions: newopt1
+		NoBuild: nobuild1
+		NodStructureDestroyed: nstruc1 #
+		NotReady: noredy1 #
+		NuclearWarheadApproaching: nuke1 #
+		NuclearWeaponAvailable: nukavail #
+		NuclearWeaponLaunched: nuklnch1 #
+		OnHold: onhold1
+		PrimaryBuildingSelected: pribldg1
+		Reinforce: reinfor1 #
+		Repairing: repair1
+		SelectTarget: select1
+		SilosNeeded: silos1 #
+		StartGame: 
 		GameLoaded:
 		GameSaved:
-		IncomingTransmission: 040
-		InsufficientFunds: 050
-		IronCurtainActivated: 005
-		IronCurtainDetected: 004
-		IronCurtainReady: 006
-		Leave: 015
-		LightningStormCreated: 011
-		LightningStormReady: 012
-		Lose: 023
-		LowPower: 053
-		MissionAccomplished: 013
-		MissionFailed: 014
-		NewMissionObjectiveReceived: 083
-		NewObjectiveReceived: 104
-		NewOptions: 049
-		NewTechnologyAquired: 074
-		NewTerrainDiscovered: 039
-		NewRallyPointEstablished: 100
-		NoBuild: 047
-		NuclearMissileLaunched: 002
-		NuclearMissileReady: 002
-		NuclearSiloDetected: 001
-		OneMinuteRemaining: 033
-		OnHold: 056
-		OreMinerOffline: 086
-		OreMinerUnderAttack: 037
-		OurAllyIsUnderAttack: 045
-		PlayerDefeated: 026
-		PlayerResigned: 025
-		PowerSabotaged: 095
-		PrimaryBuildingSelected: 055
-		PrimaryObjectiveAchieved: 017
-		RadarSabotaged: 093
-		ReinforcementsArrived: 038
-		ReinforcementsReady: 121
-		Repairing: 057
-		Resign: 024
-		RequestingAlliance: 102
-		SecondObjectiveAchieved: 018
-		SelectTarget: 065
-		SpeedUpgraded: 069
-		StartGame: 120
-		StructureAbandoned: 108
-		StructureGarrisoned: 107
-		StructureSold: 058
-		TechBuildingCaptured: 105
-		TechBuildingLost: 106
-		TechnologyStolen: 092
-		TenMinutesRemaining: 028
-		TertiaryObjectiveAchieved: 019
-		ThreeMinutesRemaining: 031
-		TimerStarted: 035
-		TimerStopped: 036
-		Training: 066
-		TwentyMinutesRemaining: 027
-		TwoMinutesRemaining: 032
-		UnitArmorUpgraded: 077
-		UnitFirepowerUpgraded: 076
-		UnitLost: 064
-		UnitPromoted: 079
-		UnitReady: 062
-		UnitRepaired: 070
-		UnitSold: 071
-		UnitSpeedUpgraded: 078
-		UnitUpgraded: 080
-		UpradeComplete: 085
-		UpgradeInProgress: 084
-		WeathercontrolDeviceDetected: 010
-		WeathercontrolDeviceOffline: 122
-		Win: 022
+		Training: bldging1
+		UnitDestroyed: dead1 #
+		UnitLost: unitlost
+		UnitReady: unitredy
+		Win: accom1
 
 Sounds:
-	DefaultVariant: .wav
 	Notifications:
-		RadarUp: uradaron
-		RadarDown: uradarof
-		CashTickUp: ucredup
-		CashTickDown: ucreddn
-		LevelUp: gupgrad1
-		DisablePower: gpowof
-		EnablePower: gpowon
-		ChatLine: umessage
-		BuildPaletteOpen: uslide1
-		BuildPaletteClose: uslide2
-		TabClick: utab
-		ClickSound: umenucl1
-		ClickDisabledSound: ugamclos
-		Beacon: ubeacon
+		BuildPaletteOpen: uslide1.wav
+		BuildPaletteClose: uslide2.wav
+		TabClick: utab.wav
+		
+		Appear: appear1
+		Beacon: bleep2
+		Beepy2: beepy2
+		Beepy3: beepy3
+		Beepy6: beepy6
+		CashTickDown: tone16
+		CashTickUp: tone15
+			VolumeModifier: 0.33
+		ChatLine: scold1
+		ClickDisabledSound: scold2
+		ClickSound: button
+		Cloak: trans1
+		Clock: clock1
+		Construction: constru2
+		Country1: country1
+		Country4: country4
+		DisablePower: bleep11
+		EnablePower: bleep12
+		HeavyDoor: hvydoor1
+		Keystroke: keystrok
+		LevelUp: text2
+		NewTarget: newtarg1
+		RadarDown: powrdn1
+		RadarUp: comcntr1
+		Sell: cashturn
+		SignalFlare: flare1
+		SignalFlareEast: flaree1
+		SignalFlareNorth: flaren1
+		SignalFlareSouth: flares1
+		SignalFlareWest: flarew1
+		Target1: target1
+		Target2: target2
+		Target3: target3
+		Text: text2
+		World: world2
