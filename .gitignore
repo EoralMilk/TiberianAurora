@@ -64,3 +64,5 @@ temp.s
 *.sublime-workspace
 
 !curl.exe
+
+.idea
