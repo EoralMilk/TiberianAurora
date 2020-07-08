@@ -87,6 +87,8 @@ Rules:
 	ta|rules/common-vehicles.yaml
 	ta|rules/common-structures.yaml
 
+	ta|rules/gdi-structures.yaml
+
 Sequences:
 	ta|sequences/aircraft.yaml
 	ta|sequences/allied-infantry.yaml
