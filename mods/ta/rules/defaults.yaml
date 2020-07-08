@@ -546,15 +546,12 @@
 		DamagedSounds: gblacrua.wav, gblacrub.wav
 		DestroyedSounds: gblacrua.wav, gblacrub.wav
 
-^DamagedByRadiation:
-
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
-	Inherits@6: ^DamagedByRadiation
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -621,9 +618,6 @@
 	DeathSounds@zapped:
 		Voice: Zapped
 		DeathTypes: ElectroDeath
-	DeathSounds@radiation:
-		Voice: Melted
-		DeathTypes: RadiationDeath
 	MustBeDestroyed:
 	Cloneable:
 		Types: infantry
