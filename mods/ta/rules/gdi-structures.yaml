@@ -88,3 +88,45 @@ fact:
 		Factions: nod
 	RenderSprites:  # TODO: 素材..
 		Image: gacnst
+
+gapowr:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^2x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: fact
+		Description: Generates power
+	Selectable:
+		Bounds: 96, 98, -2, -24
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Power Plant
+	ProvidesPrerequisite:
+		Prerequisite: power
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 750
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@glow:
+		Sequence: idle-glow
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: 100
+		RequiresCondition: !power-outage
+	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
+	AffectedByPowerOutage:
+		Condition: power-outage
+	ScalePowerWithHealth:
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:  # TODO: 素材..
+		Image: gapowr
