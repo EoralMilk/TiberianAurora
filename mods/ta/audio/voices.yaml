@@ -399,3 +399,17 @@ VehicleVoice:
 		Select: vehic1,yessir1,report1,await1,unit1
 		Move: ackno,affirm1,movout1
 		Unload: movout1	# TODO: 验证是否无用
+
+GenericVoice:
+	Variants:
+		nod: .v01,.v03
+		gdi: .v01,.v03
+	Voices:
+		Select: await1,ready,report1,yessir1
+		Move: ackno,affirm1,noprob,ritaway,roger,ugotit
+		Attack: ackno,affirm1,noprob,ritaway,roger,ugotit
+		Die: nuyell1,nuyell4,nuyell5,nuyell6
+		Burned: yell1
+		Zapped: nuyell3
+		Poisoned: nuyell12
+	DisableVariants: Die, Burned, Zapped, Poisoned

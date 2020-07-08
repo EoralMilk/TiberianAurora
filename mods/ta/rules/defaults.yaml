@@ -622,7 +622,7 @@
 	Cloneable:
 		Types: infantry
 	Voiced:
-		VoiceSet: GIVoice
+		VoiceSet: GenericVoice
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	Repairable:
