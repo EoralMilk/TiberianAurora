@@ -1,0 +1,41 @@
+mngunner:
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.any
+		BuildPaletteOrder: 10
+		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Minigunner
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+		Voice: Attack
+	Armament@primary: # TODO: 武器修改
+		Weapon: M1Carbine
+		RequiresCondition: !rank-elite
+	Armament@elite: # TODO: 武器修改
+		Weapon: M1CarbineE
+		RequiresCondition: rank-elite
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	AutoTarget:
+		ScanRadius: 4
+	RenderSprites:  # TODO: 素材..
+		Image: e2
