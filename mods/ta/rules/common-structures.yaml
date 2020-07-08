@@ -71,7 +71,8 @@ fact:
 	ProvidesPrerequisite@nod:
 		Factions: nod
 		Prerequisite: structures.nod
-	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: structures.any
 	Power:
 		Amount: 0
 	SpawnActorsOnSell@allies: # TIDO: 移除多余的出售单位
@@ -95,7 +96,7 @@ gapowr:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
-		Prerequisites: fact
+		Prerequisites: structures.any
 		Description: Generates power
 	Selectable:
 		Bounds: 96, 98, -2, -24
