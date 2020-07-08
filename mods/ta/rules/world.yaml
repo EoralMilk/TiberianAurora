@@ -342,13 +342,13 @@ World:
 		Class: none
 		ClassName: MCV Only
 		Factions: gdi
-		BaseActor: gdimcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 	MPStartUnits@gdilight:
 		Class: light
 		ClassName: Light Support
 		Factions: gdi
-		BaseActor: amcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 		SupportActors: dog,e1,e1
 		SupportActorsFacing: 224
@@ -358,7 +358,7 @@ World:
 		Class: medium
 		ClassName: Medium Support
 		Factions: gdi
-		BaseActor: amcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 		SupportActors: dog,e1,e1,e1,mtnk,engineer
 		SupportActorsFacing: 224
@@ -368,7 +368,7 @@ World:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: gdi
-		BaseActor: amcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 		SupportActors: dog,e1,e1,e1,e1,mtnk,mtnk,fv,engineer
 		SupportActorsFacing: 224
@@ -378,13 +378,13 @@ World:
 		Class: none
 		ClassName: MCV Only
 		Factions: nod
-		BaseActor: smcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 	MPStartUnits@nodlight:
 		Class: light
 		ClassName: Light Support
 		Factions: nod
-		BaseActor: smcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 		SupportActors: dog,e2,e2,e2
 		SupportActorsFacing: 224
@@ -394,7 +394,7 @@ World:
 		Class: medium
 		ClassName: Medium Support
 		Factions: nod
-		BaseActor: smcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 		SupportActors: dog,e2,e2,e2,e2,htnk,engineer
 		SupportActorsFacing: 224
@@ -404,7 +404,7 @@ World:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: nod
-		BaseActor: smcv
+		BaseActor: mcv
 		BaseActorFacing: 224
 		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
 		SupportActorsFacing: 224

@@ -1,5 +1,5 @@
-# gdi mcv
-gdimcv:
+# mcv
+mcv:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
@@ -27,7 +27,7 @@ gdimcv:
 	BaseBuilding:
 	Transforms:
 		Voice: Move
-		IntoActor: gdifact
+		IntoActor: fact
 		Offset: -1,-1
 		Facing: 96
 		TransformSounds: constru2.aud, hvydoor1.aud

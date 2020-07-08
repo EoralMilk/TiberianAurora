@@ -1,5 +1,5 @@
-# gdi 建造厂
-gdifact:
+# 建造厂
+fact:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
 	Buildable:
@@ -21,14 +21,14 @@ gdifact:
 	Valued:
 		Cost: 3500
 	Production:
-		Produces: Building,Support
+		Produces: Building, Support
 	Tooltip:
 		Name: Construction Yard
 	BaseBuilding:
 	BaseProvider:
 		Range: 0
 	Transforms:
-		IntoActor: gdimcv
+		IntoActor: mcv
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
@@ -38,7 +38,7 @@ gdifact:
 		Locomotor: heavytracked
 		Voice: Move
 		RequiresForceMove: true
-	TransformsIntoRepairable:
+	TransformsIntoRepairable:	# 修改修复平台名称
 		RequiresCondition: factundeploy
 		RepairActors: gadept, nadept, caoutp
 		Voice: Move
@@ -65,8 +65,12 @@ gdifact:
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	WithBuildingPlacedOverlay:
-	ProvidesPrerequisite:
+	ProvidesPrerequisite@gdi:
+		Factions: gdi
 		Prerequisite: structures.gdi
+	ProvidesPrerequisite@nod:
+		Factions: nod
+		Prerequisite: structures.nod
 	Power:
 		Amount: 0
 	SpawnActorsOnSell@allies: # TIDO: 移除多余的出售单位
@@ -76,7 +80,7 @@ gdifact:
 		ActorTypes: e2, e2, e2, e2, engineer
 		Factions: cuba, libya, iraq, russia
 	SpawnActorsOnSell@gdi:
-		ActorTypes: e1, e1, e1, engineer, gdimcv
+		ActorTypes: e1, e1, e1, engineer
 		Factions: gdi
 	SpawnActorsOnSell@nod:
 		ActorTypes: e2, e2, e2, e2, engineer
