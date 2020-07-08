@@ -84,8 +84,8 @@ Rules:
 	ta|rules/trees.yaml
 	ta|rules/civilian-naval.yaml
 
-	ta|rules/gdi-vehicles.yaml
-	ta|rules/gdi-structures.yaml
+	ta|rules/common-vehicles.yaml
+	ta|rules/common-structures.yaml
 
 Sequences:
 	ta|sequences/aircraft.yaml
