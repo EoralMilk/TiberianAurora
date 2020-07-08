@@ -71,6 +71,7 @@ fact:
 	ProvidesPrerequisite@nod:
 		Factions: nod
 		Prerequisite: structures.nod
+	ProvidesPrerequisite@buildingname:
 	Power:
 		Amount: 0
 	SpawnActorsOnSell@allies: # TIDO: 移除多余的出售单位
