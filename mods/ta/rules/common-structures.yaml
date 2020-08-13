@@ -90,16 +90,16 @@ fact:
 	RenderSprites:  # TODO: 素材..
 		Image: gacnst
 
-gapowr:
+power:
 	Inherits: ^BaseBuilding
-	Inherits@shape: ^2x2Shape
+	Inherits@shape: ^4x6Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: structures.any
 		Description: Generates power
 	Selectable:
-		Bounds: 96, 98, -2, -24
+		Bounds: 252, 188, 4, -32
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -107,8 +107,8 @@ gapowr:
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
+		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
+		Dimensions: 4,6
 	Health:
 		HP: 750
 	Armor:
@@ -129,5 +129,6 @@ gapowr:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	RenderSprites:  # TODO: 素材..
-		Image: gapowr
+	RenderSprites:
+		Image: power
+		PlayerPalette: green_unit
