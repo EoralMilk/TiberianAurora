@@ -52,6 +52,7 @@ Packages:
 
 	# ta
 	ta|speechs
+	ta|content/expandmd80.mix
 
 MapFolders:
 	ta|maps: System
