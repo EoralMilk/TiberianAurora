@@ -52,6 +52,8 @@ Packages:
 
 	# ta
 	ta|speechs
+	ta|content
+	ta|content/pwrplt
 	ta|content/expandmd80.mix
 
 MapFolders:
