@@ -1,0 +1,33 @@
+power:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 30, -90, 90
+		DepthSprite: isodepth.shp
+	idle: pwrplt.shp
+		UseTilesetCode: false
+		AddExtension: false
+	damaged-idle: pwrplt.shp
+		UseTilesetCode: false
+		AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+	idle-glow: pwrplt_anim.shp
+		UseTilesetCode: false
+		AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 150
+	damaged-idle-glow: pwrplt_de_anim.shp
+		UseTilesetCode: false
+		AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 150
+	make: pwrplt_mkup.shp
+		UseTilesetCode: false
+		AddExtension: false
+		Length: 51
+		ShadowStart: 51
+		Tick: 20
+	icon: powricon

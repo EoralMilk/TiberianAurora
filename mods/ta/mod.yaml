@@ -110,6 +110,8 @@ Sequences:
 	ta|sequences/trees.yaml
 	ta|sequences/vehicles.yaml
 
+	ta|sequences/common-structures.yaml
+
 ModelSequences:
 	ta|sequences/voxels.yaml
 
