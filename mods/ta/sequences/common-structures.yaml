@@ -1,9 +1,46 @@
-power:
+# power:
+# 	Inherits: ^Structure
+# 	Defaults:
+# 		Offset: 30, -90, 90
+# 		DepthSprite: isodepth.shp
+# 	idle: pwrplt.shp
+# 		UseTilesetCode: false
+# 		AddExtension: false
+# 	damaged-idle: pwrplt.shp
+# 		UseTilesetCode: false
+# 		AddExtension: false
+# 		Length: 1
+# 		Start: 1
+# 		ShadowStart: 4
+# 	idle-glow: pwrplt_anim.shp
+# 		UseTilesetCode: false
+# 		AddExtension: false
+# 		Length: 30
+# 		ShadowStart: 30
+# 		Tick: 150
+# 	damaged-idle-glow: pwrplt_de_anim.shp
+# 		UseTilesetCode: false
+# 		AddExtension: false
+# 		Length: 30
+# 		ShadowStart: 30
+# 		Tick: 150
+# 	make: pwrplt_mkup.shp
+# 		UseTilesetCode: false
+# 		AddExtension: false
+# 		Length: 51
+# 		ShadowStart: 51
+# 		Tick: 20
+# 	icon: powricon
+
+
+	
+pwrplt:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 30, -90, 90
-		DepthSprite: isodepth.shp
+		Offset: 15, -37, 90
+		UseTilesetCode: true
 	idle: pwrplt.shp
+		ShadowStart: 3
 		UseTilesetCode: false
 		AddExtension: false
 	damaged-idle: pwrplt.shp
@@ -12,6 +49,13 @@ power:
 		Length: 1
 		Start: 1
 		ShadowStart: 4
+	dead: pwrplt.shp
+		UseTilesetCode: false
+		AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
 	idle-glow: pwrplt_anim.shp
 		UseTilesetCode: false
 		AddExtension: false
@@ -30,4 +74,104 @@ power:
 		Length: 51
 		ShadowStart: 51
 		Tick: 20
-	icon: powricon
+	icon: pwrplt_icon.png
+
+
+
+hq:
+	Inherits: ^Structure
+	Defaults:
+		Offset: -5, -40, 120
+		UseTilesetCode: true
+	idle: hq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ShadowStart: 3
+	damaged-idle: hq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+	dead: hq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 140
+	damaged-idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 140
+	idle-dish: hq_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 160
+	damaged-idle-dish: hq_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 160
+	make: hq_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 43
+		ShadowStart: 43
+	icon: hq_icon.png
+
+
+
+
+advpwr:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 0, -45, 90
+		UseTilesetCode: true
+	idle: advpwr.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ShadowStart: 3
+	damaged-idle: advpwr.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		ShadowStart: 4
+	dead: advpwr.shp
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-glow: advpwr_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 200
+	damaged-idle-glow: advpwr_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 200
+	make: advpwr_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 51
+		ShadowStart: 51
+	icon: advpwr_icon.png

@@ -53,7 +53,9 @@ Packages:
 	# ta
 	ta|speechs
 	ta|content
-	ta|content/pwrplt
+	ta|content/a_pwrplt
+	ta|content/a_advpwr
+	ta|content/a_hq
 	ta|content/expandmd80.mix
 
 MapFolders:
