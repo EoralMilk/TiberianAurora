@@ -106,28 +106,28 @@ hq:
 		Length: 6
 		ShadowStart: 6
 		Tick: 120
-		Offset: -5, -40, 140
+		Offset: -5, -40, 42
 	damaged-idle-fans: hq_anim_b.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		Length: 6
 		ShadowStart: 6
 		Tick: 120
-		Offset: -5, -40, 140
+		Offset: -5, -40, 42
 	idle-dish: hq_anim.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		Length: 30
 		ShadowStart: 30
 		Tick: 120
-		Offset: -5, -40, 160
+		Offset: -5, -40, 46
 	damaged-idle-dish: hq_de_anim.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		Length: 30
 		ShadowStart: 30
 		Tick: 120
-		Offset: -5, -40, 160
+		Offset: -5, -40, 46
 	make: hq_mkup.shp
 		UseTilesetCode: false
 	 	AddExtension: false
