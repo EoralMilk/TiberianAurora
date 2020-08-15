@@ -33,11 +33,11 @@
 # 	icon: powricon
 
 
-	
+
 pwrplt:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 15, -37, 90
+		Offset: 15, -37, 40
 		UseTilesetCode: true
 	idle: pwrplt.shp
 		ShadowStart: 3
@@ -74,14 +74,14 @@ pwrplt:
 		Length: 51
 		ShadowStart: 51
 		Tick: 20
-	icon: pwrplt_icon.png
+	icon: pwrplt_icon
 
 
 
 hq:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -5, -40, 120
+		Offset: -5, -40, 40
 		UseTilesetCode: true
 	idle: hq.shp
 		UseTilesetCode: false
@@ -133,15 +133,14 @@ hq:
 	 	AddExtension: false
 		Length: 43
 		ShadowStart: 43
-	icon: hq_icon.png
-
+	icon: hq_icon
 
 
 
 advpwr:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45, 90
+		Offset: 0, -45, 40
 		UseTilesetCode: true
 	idle: advpwr.shp
 		UseTilesetCode: false
@@ -174,4 +173,4 @@ advpwr:
 	 	AddExtension: false
 		Length: 51
 		ShadowStart: 51
-	icon: advpwr_icon.png
+	icon: advpwr_icon

@@ -90,25 +90,25 @@ fact:
 	RenderSprites:  # TODO: 素材..
 		Image: gacnst
 
-power:
+pwrplt:
 	Inherits: ^BaseBuilding
-	Inherits@shape: ^4x6Shape
+	Inherits@shape: ^2x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: structures.any
-		Description: Generates power
+		Description: 基础发电设施
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Power Plant
+		Name: 发电厂
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
-		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
-		Dimensions: 4,6
+		Footprint: xx xx xx
+		Dimensions: 2,3
 	Health:
 		HP: 750
 	Armor:
@@ -130,5 +130,94 @@ power:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: power
+		Image: pwrplt
+		PlayerPalette: green_unit
+
+advpwr:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: structures.any
+		Description: 高级发电设施
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: 高级发电厂
+	ProvidesPrerequisite:
+		Prerequisite: power
+	Building:
+		Footprint: xx= xxx =x=
+		Dimensions: 3,3
+	Health:
+		HP: 1250
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@glow:
+		Sequence: idle-glow
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: 200
+		RequiresCondition: !power-outage
+	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
+	AffectedByPowerOutage:
+		Condition: power-outage
+	ScalePowerWithHealth:
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: advpwr
+		PlayerPalette: green_unit
+
+hq:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: structures.any
+		Description: 开启雷达并提供T2科技
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: 指挥中心
+	ProvidesPrerequisite:
+		Prerequisite: power
+	Building:
+		Footprint: =x= xxx =x=
+		Dimensions: 3,3
+	Health:
+		HP: 1250
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@fans:
+		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: 100
+		RequiresCondition: !power-outage
+	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
+	AffectedByPowerOutage:
+		Condition: power-outage
+	ScalePowerWithHealth:
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: hq
 		PlayerPalette: green_unit
