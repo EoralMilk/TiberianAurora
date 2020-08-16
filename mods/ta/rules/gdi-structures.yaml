@@ -56,6 +56,7 @@ pyle:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	Power:
 		Amount: -20
 	Targetable:

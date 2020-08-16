@@ -62,7 +62,7 @@ fact:
 		ValidPowerStates: Low, Critical
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
-		PauseOnCondition: lowpower
+		PauseOnCondition: lowpower || build-incomplete
 		RequiresCondition: !build-incomplete
 	WithBuildingPlacedOverlay:
 	ProvidesPrerequisite@gdi:
@@ -118,6 +118,7 @@ pwrplt:
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	Power:
 		Amount: 100
 		RequiresCondition: !power-outage
@@ -161,6 +162,7 @@ advpwr:
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	Power:
 		Amount: 200
 		RequiresCondition: !power-outage
@@ -204,9 +206,11 @@ hq:
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	Power:
 		Amount: 100
 		RequiresCondition: !power-outage
@@ -251,9 +255,11 @@ advhq:
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	Power:
 		Amount: 100
 		RequiresCondition: !power-outage
@@ -298,12 +304,15 @@ refinery:
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	WithIdleOverlay@liquid:
 		Sequence: idle-liquid
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	WithIdleOverlay@arrow:
 		Sequence: idle-arrow
 		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	Power:
 		Amount: 200
 		RequiresCondition: !power-outage
