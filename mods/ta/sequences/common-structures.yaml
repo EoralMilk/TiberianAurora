@@ -74,7 +74,9 @@ pwrplt:
 		Length: 51
 		ShadowStart: 51
 		Tick: 20
-	icon: pwrplt_icon
+	icon: pwrplt_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
 
 
 
@@ -133,8 +135,70 @@ hq:
 	 	AddExtension: false
 		Length: 43
 		ShadowStart: 43
-	icon: hq_icon
+	icon: hq_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
 
+
+
+advhq:
+	Inherits: ^Structure
+	Defaults:
+		Offset: -5, -40, 40
+		UseTilesetCode: true
+	idle: advhq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ShadowStart: 3
+	damaged-idle: advhq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+	dead: advhq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 42
+	damaged-idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 42
+	idle-dish: advhq_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 46
+	damaged-idle-dish: advhq_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 46
+	make: advhq_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 46
+		ShadowStart: 46
+	icon: advhq_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
 
 
 advpwr:
@@ -173,4 +237,6 @@ advpwr:
 	 	AddExtension: false
 		Length: 51
 		ShadowStart: 51
-	icon: advpwr_icon
+	icon: advpwr_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false

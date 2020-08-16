@@ -221,3 +221,51 @@ hq:
 	RenderSprites:
 		Image: hq
 		PlayerPalette: green_unit
+
+
+advhq:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: structures.any
+		Description: 开启雷达并提供T3科技
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: 高级指挥中心
+	ProvidesPrerequisite:
+		Prerequisite: power
+	Building:
+		Footprint: =x= xxx =x=
+		Dimensions: 3,3
+	Health:
+		HP: 2000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@fans:
+		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: 100
+		RequiresCondition: !power-outage
+	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
+	AffectedByPowerOutage:
+		Condition: power-outage
+	ScalePowerWithHealth:
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: advhq
+		PlayerPalette: green_unit
+
