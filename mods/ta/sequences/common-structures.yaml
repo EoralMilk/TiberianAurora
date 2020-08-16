@@ -240,3 +240,68 @@ advpwr:
 	icon: advpwr_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
+
+
+refinery:
+	Inherits: ^Structure
+	Defaults:
+		Offset: 15, -50, 60
+		UseTilesetCode: true
+	idle: refinery.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ShadowStart: 3
+	damaged-idle: refinery.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		ShadowStart: 4
+	dead: refinery.shp
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-lights: refinery_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 15
+		ShadowStart: 15
+		Tick: 200
+	damaged-idle-lights: refinery_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 15
+		ShadowStart: 15
+		Tick: 200
+	idle-liquid: refinery_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 20
+		ShadowStart: 20
+		Tick: 200
+	damaged-idle-liquid: refinery_de_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 20
+		ShadowStart: 20
+		Tick: 170
+	idle-arrow: refinery_anim_d.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 18
+		ShadowStart: 18
+		Tick: 170
+	damaged-idle-arrow: refinery_anim_d.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 18
+		ShadowStart: 18
+		Tick: 200
+	make: refinery_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 55
+		ShadowStart: 55
+	icon: refinery_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
