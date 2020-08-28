@@ -1,0 +1,118 @@
+^WithClouds:
+	CloudSpawner@1:
+		SpawnInterval: 1800
+		InitialSpawnDelay: 0
+		Image: cloud
+		Sequences: cloud1
+		Palette: player
+		WindDirection: 8
+		Speed: 10
+		CruiseAltitude: 10000
+	CloudSpawner@2:
+		SpawnInterval: 1900
+		InitialSpawnDelay: 5
+		Image: cloud
+		Sequences: cloud2
+		Palette: player
+		WindDirection: 8
+		Speed: 8
+		CruiseAltitude: 10000
+	CloudSpawner@3:
+		SpawnInterval: 2000
+		InitialSpawnDelay: 10
+		Image: cloud
+		Sequences: cloud3
+		Palette: player
+		WindDirection: 8
+		Speed: 6
+		CruiseAltitude: 10000
+	CloudSpawner@4:
+		SpawnInterval: 2200
+		InitialSpawnDelay: 15
+		Image: cloud
+		Sequences: cloud4
+		Palette: player
+		WindDirection: 8
+		Speed: 6
+		CruiseAltitude: 10000
+	CloudSpawner@5:
+		SpawnInterval: 1600
+		InitialSpawnDelay: 20
+		Image: cloud
+		Sequences: cloud5
+		Palette: player
+		WindDirection: 8
+		Speed: 12
+		CruiseAltitude: 10000
+	CloudSpawner@6:
+		SpawnInterval: 1400
+		InitialSpawnDelay: 25
+		Image: cloud
+		Sequences: cloud6
+		Palette: player
+		WindDirection: 8
+		Speed: 14
+		CruiseAltitude: 10000
+	CloudSpawner@7:
+		SpawnInterval: 1400
+		InitialSpawnDelay: 30
+		Image: cloud
+		Sequences: cloud7
+		Palette: player
+		WindDirection: 8
+		Speed: 14
+		CruiseAltitude: 10000
+	CloudSpawner@8:
+		SpawnInterval: 1600
+		InitialSpawnDelay: 35
+		Image: cloud
+		Sequences: cloud8
+		Palette: player
+		WindDirection: 8
+		Speed: 12
+		CruiseAltitude: 10000
+	CloudSpawner@9:
+		SpawnInterval: 1400
+		InitialSpawnDelay: 40
+		Image: cloud
+		Sequences: cloud9
+		Palette: player
+		WindDirection: 8
+		Speed: 14
+		CruiseAltitude: 10000
+	CloudSpawner@10:
+		SpawnInterval: 2100
+		InitialSpawnDelay: 45
+		Image: cloud
+		Sequences: cloud10
+		Palette: player
+		WindDirection: 8
+		Speed: 9
+		CruiseAltitude: 10000
+	CloudSpawner@11:
+		SpawnInterval: 1900
+		InitialSpawnDelay: 50
+		Image: cloud
+		Sequences: cloud11
+		Palette: player
+		WindDirection: 8
+		Speed: 8
+		CruiseAltitude: 10000
+	CloudSpawner@12:
+		SpawnInterval: 1700
+		InitialSpawnDelay: 55
+		Image: cloud
+		Sequences: cloud12
+		Palette: player
+		WindDirection: 8
+		Speed: 11
+		CruiseAltitude: 10000
+	CloudSpawner@13:
+		SpawnInterval: 1800
+		InitialSpawnDelay: 60
+		Image: cloud
+		Sequences: cloud13
+		Palette: player
+		WindDirection: 8
+		Speed: 10
+		CruiseAltitude: 10000

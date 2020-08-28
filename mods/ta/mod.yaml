@@ -93,6 +93,8 @@ Rules:
 	ta|rules/trees.yaml
 	ta|rules/civilian-naval.yaml
 
+	ta|rules/clouds.yaml
+
 	ta|rules/common-vehicles.yaml
 	ta|rules/common-structures.yaml
 	ta|rules/common-infantry.yaml
