@@ -56,7 +56,6 @@ namespace OpenRA.Mods.TA.Traits
 
 		[Desc("Should we pre-spawn clouds covers the map?")]
 		public readonly bool ShouldPrespawn = true;
-
 		public object Create(ActorInitializer init) { return new CloudSpawner(this); }
 	}
 
@@ -113,37 +112,49 @@ namespace OpenRA.Mods.TA.Traits
 			var delta = new WVec(0, -1024, 0).Rotate(WRot.FromFacing(facing));
 
 			/*
-			 * The folloing codes find the middle point in map. The paths of cloud which cover
-			 * this point will always be the longest path.
+			 * The following codes find the middle point in map. Because clouds must
+			 * start from an edge to another edge, the paths of clouds
+			 * which contain this point will always be the longest path no matter the direction,
+			 * as long as the map is a symmetrical shape.
 			 *
-			 * By using this longest path, we can figure out how many clouds should
-			 * spawn when a cloud go over a completely longest path, which should be
-			 * neither too little nor too many compared with the clouds per map-cell later.
+			 * For example, the middle point in map is "@", @ is (u = X/2, v = Y/2)
+			 * You can imagine any wind direction with all edges clouds possibly spawn.
 			 *
+			 *              ___X___
+             *              |	  |
+             *              |	  |
+             *              |  @  | Y
+             *              |	  |
+             *              |_____|
+			 *
+			 * By using this longest path, we can figure out the number of clouds should
+			 * spawn when a certain cloud completely goes over a longest path, which should be
+			 * neither too little nor too big compared with the clouds per map-cell later
+			 * spawned by `SpawnCloud`.
 			 */
-			var lPosition = new MPos(world.Map.MapSize.X / 2, world.Map.MapSize.Y / 2);
-			var lTarget = world.Map.CenterOfCell(lPosition.ToCPos(world.Map));
+			var middlePoint = new MPos(world.Map.MapSize.X / 2, world.Map.MapSize.Y / 2);
+			var middlePointTarget = world.Map.CenterOfCell(middlePoint.ToCPos(world.Map));
 
 			// lDistance and averageSpeed used are for loop condition below.
-			var lDistance = System.Math.Abs(
-				(world.Map.DistanceToEdge(lTarget, -delta) + info.Cordon).Length
-				+ (world.Map.DistanceToEdge(lTarget, delta) + info.Cordon).Length);
-			var averageSpeed = System.Math.Abs((int)info.Speed.Average(s => s.Length));
+			var longestCloudDistance = System.Math.Abs(
+				(world.Map.DistanceToEdge(middlePointTarget, -delta) + info.Cordon).Length
+				+ (world.Map.DistanceToEdge(middlePointTarget, delta) + info.Cordon).Length);
+			var averageCloudSpeed = System.Math.Abs((int)info.Speed.Average(s => s.Length));
 
-			var step = averageSpeed * info.SpawnInterval;
-			var stepVector = step * delta / 1024;
+			var stepPerSpawn = averageCloudSpeed * info.SpawnInterval;
+			var stepPerSpawnVector = stepPerSpawn * delta / 1024;
 
 			/*
 			 * Spawn clouds.
 			 *
-			 * Try to make clouds spawnning cover the entire map, meanwhile
-			 * with some randomlization. Choose random spawning point and
+			 * Try to make clouds spawning cover the entire map, meanwhile
+			 * with some randomization. Choose random spawning point and
 			 * find startEdge, then add offset to let they go further to cover
-			 * the map. Offset will increase, just like the cloud already float
-			 * that distance.
+			 * the map. The offset will be increased to simulate the movement
+			 * the cloud would have made otherwise.
 			 */
 			var offset = WVec.Zero;
-			while (lDistance > 0)
+			while (longestCloudDistance > 0)
 			{
 				var position = world.Map.ChooseRandomCell(world.SharedRandom);
 				var target = world.Map.CenterOfCell(position) + new WVec(0, 0, info.CruiseAltitude.Length);
@@ -157,8 +168,8 @@ namespace OpenRA.Mods.TA.Traits
 
 				world.AddFrameEndTask(w => w.Add(new Cloud(world, animation, startEdge, finishEdge, facing, info)));
 
-				offset += stepVector;
-				lDistance -= step;
+				offset += stepPerSpawnVector;
+				longestCloudDistance -= stepPerSpawn;
 			}
 		}
 	}
