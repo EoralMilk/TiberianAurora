@@ -235,8 +235,8 @@ advpwr:
 	make: advpwr_mkup.shp
 		UseTilesetCode: false
 	 	AddExtension: false
-		Length: 51
-		ShadowStart: 51
+		Length: 50
+		ShadowStart: 50
 	icon: advpwr_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
