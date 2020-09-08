@@ -60,6 +60,7 @@ Packages:
 	ta|content/structures/g_advhq
 	ta|content/structures/a_refinery
 	ta|content/structures/a_repairdepot
+	ta|content/structures/a_helipad
 	ta|content/expandmd80.mix
 
 MapFolders:
