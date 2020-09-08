@@ -60,6 +60,7 @@ Packages:
 	ta|content/structures/a_repairdepot
 	ta|content/structures/a_hq
 	ta|content/structures/a_helipad
+	ta|content/structures/a_silo
 	ta|content/structures/g_barracks
 	ta|content/structures/g_advhq
 	ta|content/expandmd80.mix
