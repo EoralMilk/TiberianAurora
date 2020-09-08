@@ -63,6 +63,8 @@ Packages:
 	ta|content/structures/a_silo
 	ta|content/structures/g_barracks
 	ta|content/structures/g_advhq
+	ta|content/structures/g_warfactory
+
 	ta|content/expandmd80.mix
 
 MapFolders:
