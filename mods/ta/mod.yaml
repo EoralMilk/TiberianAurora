@@ -64,6 +64,8 @@ Packages:
 	ta|content/structures/g_barracks
 	ta|content/structures/g_advhq
 	ta|content/structures/g_warfactory
+	ta|content/structures/g_guntower
+
 
 	ta|content/expandmd80.mix
 
