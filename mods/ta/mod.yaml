@@ -82,31 +82,7 @@ MapFolders:
 	~^maps/ta/{DEV_VERSION}: User
 
 Rules:
-	ta|rules/proxy-actors.yaml
-	ta|rules/misc.yaml
 	ta|rules/ai.yaml
-	ta|rules/player.yaml
-	ta|rules/world.yaml
-	ta|rules/palettes.yaml
-	ta|rules/defaults.yaml
-	ta|rules/allied-infantry.yaml
-	ta|rules/soviet-infantry.yaml
-	ta|rules/civilians.yaml
-	ta|rules/bridges.yaml
-	ta|rules/animals.yaml
-	ta|rules/allied-structures.yaml
-	ta|rules/soviet-structures.yaml
-	ta|rules/civilian-structures.yaml
-	ta|rules/tech-structures.yaml
-	ta|rules/allied-vehicles.yaml
-	ta|rules/soviet-vehicles.yaml
-	ta|rules/civilian-vehicles.yaml
-	ta|rules/allied-naval.yaml
-	ta|rules/soviet-naval.yaml
-	ta|rules/aircraft.yaml
-	ta|rules/civilian-props.yaml
-	ta|rules/trees.yaml
-	ta|rules/civilian-naval.yaml
 
 	ta|rules/common-vehicles.yaml
 	ta|rules/common-structures.yaml
@@ -114,27 +90,55 @@ Rules:
 	
 	ta|rules/gdi-structures.yaml
 
-Sequences:
-	ta|sequences/aircraft.yaml
-	ta|sequences/allied-infantry.yaml
-	ta|sequences/allied-structures.yaml
-	ta|sequences/animals.yaml
-	ta|sequences/bridges.yaml
-	ta|sequences/civilians.yaml
-	ta|sequences/civilian-props.yaml
-	ta|sequences/civilian-structures.yaml
-	ta|sequences/defaults.yaml
-	ta|sequences/misc.yaml
-	ta|sequences/soviet-infantry.yaml
-	ta|sequences/soviet-structures.yaml
-	ta|sequences/tech-structures.yaml
-	ta|sequences/trees.yaml
-	ta|sequences/vehicles.yaml
+	### Old RA2 rules
+	ta|rules/RA2-rules/proxy-actors.yaml
+	ta|rules/RA2-rules/misc.yaml
+	ta|rules/RA2-rules/player.yaml
+	ta|rules/RA2-rules/world.yaml
+	ta|rules/RA2-rules/palettes.yaml
+	ta|rules/RA2-rules/defaults.yaml
+	ta|rules/RA2-rules/allied-infantry.yaml
+	ta|rules/RA2-rules/soviet-infantry.yaml
+	ta|rules/RA2-rules/civilians.yaml
+	ta|rules/RA2-rules/bridges.yaml
+	ta|rules/RA2-rules/animals.yaml
+	ta|rules/RA2-rules/allied-structures.yaml
+	ta|rules/RA2-rules/soviet-structures.yaml
+	ta|rules/RA2-rules/civilian-structures.yaml
+	ta|rules/RA2-rules/tech-structures.yaml
+	ta|rules/RA2-rules/allied-vehicles.yaml
+	ta|rules/RA2-rules/soviet-vehicles.yaml
+	ta|rules/RA2-rules/civilian-vehicles.yaml
+	ta|rules/RA2-rules/allied-naval.yaml
+	ta|rules/RA2-rules/soviet-naval.yaml
+	ta|rules/RA2-rules/aircraft.yaml
+	ta|rules/RA2-rules/civilian-props.yaml
+	ta|rules/RA2-rules/trees.yaml
+	ta|rules/RA2-rules/civilian-naval.yaml
 
+
+Sequences:
 	ta|sequences/common-structures.yaml
 
+	### Old RA2 Sequence
+	ta|sequences/RA2-sequence/aircraft.yaml
+	ta|sequences/RA2-sequence/allied-infantry.yaml
+	ta|sequences/RA2-sequence/allied-structures.yaml
+	ta|sequences/RA2-sequence/animals.yaml
+	ta|sequences/RA2-sequence/bridges.yaml
+	ta|sequences/RA2-sequence/civilians.yaml
+	ta|sequences/RA2-sequence/civilian-props.yaml
+	ta|sequences/RA2-sequence/civilian-structures.yaml
+	ta|sequences/RA2-sequence/defaults.yaml
+	ta|sequences/RA2-sequence/misc.yaml
+	ta|sequences/RA2-sequence/soviet-infantry.yaml
+	ta|sequences/RA2-sequence/soviet-structures.yaml
+	ta|sequences/RA2-sequence/tech-structures.yaml
+	ta|sequences/RA2-sequence/trees.yaml
+	ta|sequences/RA2-sequence/vehicles.yaml
+
 ModelSequences:
-	ta|sequences/voxels.yaml
+	ta|sequences/RA2-sequence/voxels.yaml
 
 Cursors:
 	ta|cursors.yaml
