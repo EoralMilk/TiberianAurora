@@ -327,3 +327,46 @@ refinery:
 	RenderSprites:
 		Image: refinery
 		PlayerPalette: green_unit
+
+repairdepot:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: structures.any
+		Description: 消耗资金维修机械
+	Selectable:
+		Bounds: 144, 88, 5, 0
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: 维修平台
+	ProvidesPrerequisite:
+	Reservable:
+	RepairsUnits:
+		HpPerStep: 20
+		FinishRepairingNotification: UnitRepaired
+		PlayerExperience: 15
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+	Building:
+		Footprint: === === ===
+		Dimensions: 3,3
+	Health:
+		HP: 500
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	WithRepairOverlay@PLATFORM:
+		Sequence: padglow
+		RequiresCondition: !Building-Buildup
+	Power:
+		Amount: -30
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure
+	RenderSprites:
+		Image: repairdepot
+		PlayerPalette: green_unit

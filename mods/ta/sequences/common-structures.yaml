@@ -305,3 +305,49 @@ refinery:
 	icon: refinery_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
+repairdepot:
+	Defaults:
+		Offset: 0, -43, 5
+		UseTilesetCode: true
+		ZOffset: -1c511
+	idle: repairdepot.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ZOffset: -1c511
+		ZRamp: 1
+	damaged-idle: repairdepot.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ZOffset: -1c511
+		ZRamp: 1
+	dead: repairdepot.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		Tick: 40
+		ZOffset: -1c511
+	make: repairdepot_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 41
+		ZOffset: -1c511
+		ZRamp: 1
+	padglow: repairdepot_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 17
+		ZOffset: -1c511
+		ZRamp: 1
+	damaged-padglow: repairdepot_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 17
+		ZOffset: -1c511
+		ZRamp: 1
+	icon: repairdepot_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

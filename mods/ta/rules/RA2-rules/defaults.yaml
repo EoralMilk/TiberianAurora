@@ -833,7 +833,7 @@
 		ValidDamageStates: Light, Medium, Heavy, Critical
 	Repairable:
 		Voice: Move
-		RepairActors: gadept, nadept, caoutp
+		RepairActors: gadept, nadept, caoutp, repairdepot
 	Passenger:
 		Voice: Move
 		CargoType: Vehicle
