@@ -53,4 +53,4 @@ Tiberian Aurora是一个基于Openra引擎开发的Mod。致力于制作一个TS
 ### 防御：
 1. 炮塔 √
 2. SAM √
-3. **石碑**
+3. 石碑 √
