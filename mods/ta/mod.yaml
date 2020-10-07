@@ -192,15 +192,18 @@ ChromeLayout:
 	ta|chrome/editor.yaml
 
 Weapons:
-	ta|weapons/bullets.yaml
-	ta|weapons/defaults.yaml
-	ta|weapons/explosions.yaml
-	ta|weapons/flaks.yaml
-	ta|weapons/melee.yaml
-	ta|weapons/mgs.yaml
-	ta|weapons/misc.yaml
-	ta|weapons/missiles.yaml
-	ta|weapons/zaps.yaml
+	ta|weapons/RA2-weapon/bullets.yaml
+	ta|weapons/RA2-weapon/defaults.yaml
+	ta|weapons/RA2-weapon/explosions.yaml
+	ta|weapons/RA2-weapon/flaks.yaml
+	ta|weapons/RA2-weapon/melee.yaml
+	ta|weapons/RA2-weapon/mgs.yaml
+	ta|weapons/RA2-weapon/misc.yaml
+	ta|weapons/RA2-weapon/missiles.yaml
+	ta|weapons/RA2-weapon/zaps.yaml
+
+	####TA weapons
+	ta|weapons/commonweapons.yaml
 
 Voices:
 	ta|audio/voices.yaml
