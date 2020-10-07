@@ -394,23 +394,28 @@ obelisk:
 		Type: Steel
 	RevealsShroud:
 		Range: 8c0
-	WithTeslaChargeAnimation:
 	GrantConditionOnHealth:
 		Condition: heavilydamaged
 		MaxHP: 299
 	Armament:
 		RequiresCondition: !heavilydamaged
-		Weapon: PrismShot
+		Weapon: ObeliskLaser
 		LocalOffset: 0,0,4240
 	Armament@heaviyDamaged:
 		RequiresCondition: heavilydamaged
-		Weapon: PrismShot
+		Weapon: ObeliskLaser
 		LocalOffset: 10,-10,4240
-	AttackTesla:
-		Voice: Attack
-		ReloadDelay: 60
-		ChargeAudio: bpripow.wav
+	AttackChargesBursts:
 		PauseOnCondition: lowpower
+		ChargeLevel: 40
+		ChargingCondition: charging
+	AmbientSound:
+		RequiresCondition: charging && !lowpower
+		SoundFiles: bpripow.wav
+	WithChargeBurstsOverlay:
+		Sequence: active
+		Palette: red_unit
+		IsPlayerPalette: true
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -75
@@ -418,10 +423,6 @@ obelisk:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
-	WithIdleOverlay@normal:
-		Sequence: idle-normal
-		PauseOnCondition: lowpower
-		RequiresCondition: !build-incomplete
 	WithSpriteBody:
 		PauseOnCondition: lowpower
 	WithRangeCircle:

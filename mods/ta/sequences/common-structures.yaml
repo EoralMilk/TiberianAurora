@@ -357,28 +357,18 @@ obelisk:
 	Defaults: obelisk.shp
 		Offset: 1,-15, 15
 		UseTilesetCode: true
-	idle-normal: obelisk.shp
+	idle: obelisk.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		ShadowStart: 54
 		Start: 0
 		Length: 1
-	damaged-idle-normal: obelisk.shp
+	damaged-idle: obelisk.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		Start: 1
 		Length: 1
 		ShadowStart: 55
-	idle: obelisk.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Start: 3
-		Length: 1
-	damaged-idle: obelisk.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Start: 18
-		Length: 1
 	active: obelisk.shp
 		UseTilesetCode: false
 	 	AddExtension: false

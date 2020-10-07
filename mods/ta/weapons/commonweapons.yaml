@@ -1,0 +1,35 @@
+ObeliskLaser:
+	ReloadDelay: 120
+	Range: 8c0
+	FirstBurstTargetOffset: 0,-360,0
+	FollowingBurstTargetOffset: 0,40,0
+	Burst: 18
+	BurstDelays: 1
+	StartBurstReport: bpriat1a.wav
+	TargetActorCenter: true
+	Projectile: LaserZap
+		Width: 70
+		UsePlayerColor: true
+		ZOffset: 2047
+		TrackTarget: false
+		Duration: 2
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 11
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+			Drone: 200
+			Rocket: 100
+		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: tiny_bang
+		ImpactActors: false
+
