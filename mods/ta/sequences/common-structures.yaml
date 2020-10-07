@@ -244,67 +244,139 @@ advpwr:
 
 refinery:
 	Inherits: ^Structure
-	Defaults:
+	Defaults: refinery.shp
 		Offset: 15, -50, 60
-		UseTilesetCode: true
-	idle: refinery.shp
 		UseTilesetCode: false
-	 	AddExtension: false
-		ShadowStart: 3
-	damaged-idle: refinery.shp
+		# DepthSpriteOffset: 27, 0
+		DepthSprite: isodepth.shp
+	idle:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Start: 1
-		ShadowStart: 4
-	dead: refinery.shp
-		Length: 1
-		Start: 1
-		ShadowStart: 4
+		ShadowStart: 156
+	damaged-idle:
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 3
+		ShadowStart: 158
+	dead:
+		Start: 3
+		ShadowStart: 158
 		Tick: 400
-	idle-lights: refinery_anim.shp
+	make:
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 15, -50, 60
+		Length: 51
+		Start: 4
+		ShadowStart: 159
+		DepthSpriteOffset: -12, 0
+	bib:
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 0
+		ShadowStart: 155
+		Length: 1
+		ZOffset: -100
+		ZRamp: 1
+		-DepthSprite:
+	damaged-bib:
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		ShadowStart: 157
+		ZOffset: -100
+		ZRamp: 1
+		-DepthSprite:
+	dead-bib:
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		ShadowStart: 157
+		ZOffset: -100
+		ZRamp: 1
+		-DepthSprite:
+
+	idle-lights:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Length: 15
-		ShadowStart: 15
+		Start: 83
+		ShadowStart: 238
 		Tick: 200
-	damaged-idle-lights: refinery_de_anim.shp
+		-DepthSprite:
+	damaged-idle-lights:
 		UseTilesetCode: false
 	 	AddExtension: false
+		Start: 119
 		Length: 15
-		ShadowStart: 15
+		ShadowStart: 274
 		Tick: 200
-	idle-liquid: refinery_anim_b.shp
+		-DepthSprite:
+	idle-liquid:
 		UseTilesetCode: false
 	 	AddExtension: false
-		Length: 20
-		ShadowStart: 20
+		Start: 98
+		Length: 21
+		ShadowStart: 253
 		Tick: 200
-	damaged-idle-liquid: refinery_de_anim_b.shp
+		-DepthSprite:
+	damaged-idle-liquid:
 		UseTilesetCode: false
 	 	AddExtension: false
-		Length: 20
-		ShadowStart: 20
+		Start: 134
+		Length: 21
+		ShadowStart: 289
 		Tick: 170
-	idle-arrow: refinery_anim_d.shp
+		-DepthSprite:
+
+	idle-arrow:
 		UseTilesetCode: false
 	 	AddExtension: false
-		Length: 18
-		ShadowStart: 18
+		Start: 55
+		Length: 21
+		ShadowStart: 210
 		Tick: 170
-	damaged-idle-arrow: refinery_anim_d.shp
+		ZOffset: -100
+		ZRamp: 1
+		-DepthSprite:
+	damaged-idle-arrow:
 		UseTilesetCode: false
 	 	AddExtension: false
-		Length: 18
-		ShadowStart: 18
-		Tick: 200
-	make: refinery_mkup.shp
+		Start: 55
+		Length: 21
+		ShadowStart: 210
+		Tick: 170
+		ZOffset: -100
+		ZRamp: 1
+		-DepthSprite:
+
+	idle-fans:
 		UseTilesetCode: false
 	 	AddExtension: false
-		Length: 55
-		ShadowStart: 55
+		Start: 76
+		Length: 7
+		ShadowStart: 231
+		Tick: 170
+		-DepthSprite:
+	damaged-idle-fans:
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 76
+		Length: 7
+		ShadowStart: 231
+		Tick: 170
+		-DepthSprite:
+
+	docking-overlay:
+		UseTilesetCode: false
+	 	AddExtension: false
+
 	icon: refinery_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
+
+
 repairdepot:
 	Defaults:
 		Offset: 0, -43, 5

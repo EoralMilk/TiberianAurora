@@ -282,25 +282,44 @@ refinery:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
-		Prerequisites: structures.any
+		Prerequisites: power
 		Description: 收集并精炼泰伯利亚晶矿
 	Selectable:
 		Bounds: 252, 188, 4, -32
-	Valued:
-		Cost: 1500
 	Tooltip:
 		Name: 精炼厂
 	ProvidesPrerequisite:
-		Prerequisite: power
+		Prerequisite: refinery
 	Building:
 		Footprint: xx= xxx x=x ===
 		Dimensions: 3,4
+	Valued:
+		Cost: 1500
+	Power:
+		Amount: -30
+	StoresResources:
+		PipColor: Green
+		PipCount: 15
+		Capacity: 1000
+	TiberianSunRefinery:
+		ShowTicks: True
+		TickLifetime: 30
+		TickVelocity: 1
+		TickRate: 10
+		UseStorage: True
+		DockAngle: 96
+		DockOffset: 1,2
+	FreeActor:
+		Actor: harv
+		SpawnOffset: 1,3
+		Facing: 96
 	Health:
 		HP: 1500
 	Armor:
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+	WithDockedOverlay:
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		RequiresCondition: !build-incomplete
@@ -313,9 +332,14 @@ refinery:
 		Sequence: idle-arrow
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete
-	Power:
-		Amount: 200
-		RequiresCondition: !power-outage
+	WithIdleOverlay@fans:
+		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	WithIdleOverlay@bib:
+		Sequence: bib
+		RequiresCondition: !Building-Buildup
+		PauseOnCondition: build-incomplete
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
@@ -343,6 +367,7 @@ repairdepot:
 	Tooltip:
 		Name: 维修平台
 	ProvidesPrerequisite:
+		Prerequisite: repair
 	Reservable:
 	RepairsUnits:
 		HpPerStep: 20
@@ -428,5 +453,8 @@ obelisk:
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		CameraPitch: 85
 	RenderSprites:
 		PlayerPalette: red_unit
