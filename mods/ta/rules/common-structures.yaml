@@ -370,3 +370,62 @@ repairdepot:
 	RenderSprites:
 		Image: repairdepot
 		PlayerPalette: green_unit
+
+obelisk:
+	Inherits: ^SupportBuilding
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 40
+		Prerequisites: ~structures.any
+		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: 光之石碑
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Selectable:
+		Bounds: 44, 102, 0, -40
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 8c0
+	WithTeslaChargeAnimation:
+	GrantConditionOnHealth:
+		Condition: heavilydamaged
+		MaxHP: 299
+	Armament:
+		RequiresCondition: !heavilydamaged
+		Weapon: PrismShot
+		LocalOffset: 0,0,4240
+	Armament@heaviyDamaged:
+		RequiresCondition: heavilydamaged
+		Weapon: PrismShot
+		LocalOffset: 10,-10,4240
+	AttackTesla:
+		Voice: Attack
+		ReloadDelay: 60
+		ChargeAudio: bpripow.wav
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -75
+	AutoTarget:
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	WithIdleOverlay@normal:
+		Sequence: idle-normal
+		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
+	WithSpriteBody:
+		PauseOnCondition: lowpower
+	WithRangeCircle:
+		Range: 8c0
+		Type: prismcannon
+	RenderSprites:
+		PlayerPalette: red_unit
