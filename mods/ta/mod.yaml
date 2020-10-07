@@ -54,6 +54,8 @@ Packages:
 	ta|speechs
 	ta|content
 	ta|content/structures
+	ta|content/audio
+
 	ta|content/structures/a_pwrplt
 	ta|content/structures/a_advpwr
 	ta|content/structures/a_refinery

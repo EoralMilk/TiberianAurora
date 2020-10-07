@@ -1,21 +1,20 @@
 ObeliskLaser:
 	ReloadDelay: 120
 	Range: 8c0
-	FirstBurstTargetOffset: 0,-360,0
-	FollowingBurstTargetOffset: 0,40,0
+	FirstBurstTargetOffset: 0,-600,0
+	FollowingBurstTargetOffset: 0,100,0
 	Burst: 18
 	BurstDelays: 1
-	StartBurstReport: bpriat1a.wav
+	StartBurstReport: obelray1.aud
 	TargetActorCenter: true
 	Projectile: LaserZap
 		Width: 70
 		UsePlayerColor: true
-		ZOffset: 2047
 		TrackTarget: false
 		Duration: 2
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 11
+		Damage: 20
 		Versus:
 			None: 200
 			Flak: 100

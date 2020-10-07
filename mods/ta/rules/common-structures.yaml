@@ -382,7 +382,7 @@ obelisk:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: 光之石碑
+		Name: 光明石碑
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -400,18 +400,18 @@ obelisk:
 	Armament:
 		RequiresCondition: !heavilydamaged
 		Weapon: ObeliskLaser
-		LocalOffset: 0,0,4240
+		LocalOffset: 60,0,4260
 	Armament@heaviyDamaged:
 		RequiresCondition: heavilydamaged
 		Weapon: ObeliskLaser
-		LocalOffset: 10,-10,4240
+		LocalOffset: 50,-10,4250
 	AttackChargesBursts:
 		PauseOnCondition: lowpower
 		ChargeLevel: 40
 		ChargingCondition: charging
 	AmbientSound:
 		RequiresCondition: charging && !lowpower
-		SoundFiles: bpripow.wav
+		SoundFiles: obelpowr.aud
 	WithChargeBurstsOverlay:
 		Sequence: active
 		Palette: red_unit
