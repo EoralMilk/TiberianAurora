@@ -208,20 +208,23 @@ advpwr:
 
 refinery:
 	Defaults: refinery.shp
-		Offset: 15, -50, 35
+		Offset: 15, -50, 28
 		UseTilesetCode: false
 	idle:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Start: 1
+		Length: 1
 		ShadowStart: 156
 	damaged-idle:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Start: 3
+		Length: 1
 		ShadowStart: 158
 	dead:
 		Start: 3
+		Length: 1
 		ShadowStart: 158
 		Tick: 400
 	make:
@@ -235,22 +238,27 @@ refinery:
 	 	AddExtension: false
 		Start: 0
 		ShadowStart: 155
+		Offset: 15, -50, 10
 		Length: 1
-		ZOffset: -100
+		ZOffset: -1c511
 		ZRamp: 1
 	damaged-bib:
 		UseTilesetCode: false
 	 	AddExtension: false
-		Start: 1
+		Start: 2
+		Length: 1
 		ShadowStart: 157
-		ZOffset: -100
+		Offset: 15, -50, 10
+		ZOffset: -1c511
 		ZRamp: 1
 	dead-bib:
 		UseTilesetCode: false
 	 	AddExtension: false
-		Start: 1
+		Start: 2
+		Length: 1
 		ShadowStart: 157
-		ZOffset: -100
+		Offset: 15, -50, 10
+		ZOffset: -1c511
 		ZRamp: 1
 	idle-lights:
 		UseTilesetCode: false
@@ -287,8 +295,9 @@ refinery:
 		Length: 21
 		ShadowStart: 210
 		Tick: 170
-		ZOffset: -100
+		ZOffset: -1c511
 		ZRamp: 1
+		Offset: 15, -50, 11
 	damaged-idle-arrow:
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -296,8 +305,9 @@ refinery:
 		Length: 21
 		ShadowStart: 210
 		Tick: 170
-		ZOffset: -100
+		ZOffset: -1c511
 		ZRamp: 1
+		Offset: 15, -50, 18
 	idle-fans:
 		UseTilesetCode: false
 	 	AddExtension: false

@@ -308,7 +308,7 @@ refinery:
 		TickRate: 10
 		UseStorage: True
 		DockAngle: 96
-		DockOffset: 1,2
+		DockOffset: 1, 3 #1,2
 	FreeActor:
 		Actor: harv
 		SpawnOffset: 1,3
@@ -351,6 +351,9 @@ refinery:
 	RenderSprites:
 		Image: refinery
 		PlayerPalette: green_unit
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		CameraPitch: 85
 
 repairdepot:
 	Inherits: ^BaseBuilding
