@@ -207,6 +207,9 @@ Weapons:
 	####TA weapons
 	ta|weapons/commonweapons.yaml
 
+	####Test Weapons
+	ta|weapons/testweapon.yaml
+
 Voices:
 	ta|audio/voices.yaml
 

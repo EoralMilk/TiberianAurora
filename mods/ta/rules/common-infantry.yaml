@@ -22,8 +22,9 @@ mngunner:
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary: # TODO: 武器修改
-		Weapon: M1Carbine
+		Weapon: testweapon
 		RequiresCondition: !rank-elite
+		LocalOffset: 0,0,512
 	Armament@elite: # TODO: 武器修改
 		Weapon: M1CarbineE
 		RequiresCondition: rank-elite
