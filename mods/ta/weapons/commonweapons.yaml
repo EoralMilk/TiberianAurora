@@ -8,10 +8,8 @@ ObeliskLaser:
 	StartBurstReport: obelray1.aud
 	TargetActorCenter: true
 	Projectile: LaserZap
-		Width: 70
-		UsePlayerColor: true
+		Width: 0
 		TrackTarget: false
-		Duration: 2
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 20
