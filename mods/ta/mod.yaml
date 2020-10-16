@@ -55,6 +55,7 @@ Packages:
 	ta|content
 	ta|content/structures
 	ta|content/audio
+	ta|content/vehicales
 
 	ta|content/structures/a_pwrplt
 	ta|content/structures/a_advpwr
@@ -74,7 +75,6 @@ Packages:
 	ta|content/structures/n_ntur
 	ta|content/structures/n_samsite
 	ta|content/structures/n_obelisk
-
 
 	ta|content/expandmd80.mix
 
