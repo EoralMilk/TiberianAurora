@@ -471,3 +471,77 @@ obelisk:
 		CameraPitch: 85
 	RenderSprites:
 		PlayerPalette: red_unit
+
+warfactory:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^4x4Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 40
+		Prerequisites: ~structures.any
+		Description: Produces vehicles.
+	Selectable:
+		Bounds: 196, 178, -6, -48
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: GDI War Factory
+	ProvidesPrerequisite@libya:
+		Prerequisite: vehicles.libya
+		Factions: libya
+	ProvidesPrerequisite@russia:
+		Prerequisite: vehicles.russia
+		Factions: russia
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xxx= xxx= xxx= xxx=
+		Dimensions: 4,4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+	Exit@1:
+		ExitCell: 5,2
+		SpawnOffset: -1024, 0, 0
+	Production:
+		Produces: Vehicle
+	PrimaryBuilding:
+		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
+	ProductionBar:
+		ProductionType: Vehicle
+	WithIdleOverlay@right:
+		Sequence: r-idle
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@shadow:
+		Sequence: shadow
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@bib:
+		Sequence: bib
+		RequiresCondition: !build-incomplete
+	WithProductionDoorOverlay@DOOR:
+		Sequence: build-door
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@fan:
+		Sequence: idle-fan
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -25
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: warfactory.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		PlayerPalette: green_unit
