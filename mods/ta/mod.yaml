@@ -90,6 +90,9 @@ Rules:
 	ta|rules/common-infantry.yaml
 	
 	ta|rules/gdi-structures.yaml
+	ta|rules/gdi-vehicales.yaml
+
+
 
 	### Old RA2 rules
 	ta|rules/RA2-rules/proxy-actors.yaml
@@ -120,6 +123,8 @@ Rules:
 
 Sequences:
 	ta|sequences/common-structures.yaml
+	ta|sequences/gdi-vehicales.yaml
+
 
 	### Old RA2 Sequence
 	ta|sequences/RA2-sequence/aircraft.yaml

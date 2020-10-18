@@ -1,0 +1,42 @@
+humvee:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: 搭载重机枪的悍马吉普车\n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: 重机枪悍马
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 20
+		Speed: 100
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+  WithFacingSpriteBody:
+  AttackTurreted:
+	AutoTarget:
+	Armament@mg:
+		Weapon: CRM60
+		LocalOffset: 188,32,600
+		RequiresCondition: ifv-mg
+		MuzzleSequence: mgun_muz
+		MuzzleSplitFacings: 8
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	Turreted:
+		TurnSpeed: 25
+		# Offset: 0,0,0
+	RenderSprites:
+  
+	HitShape:
+
