@@ -521,3 +521,9 @@ obelisk:
 		Length: 19 #frame53
 		Start: 34
 		ShadowStart: 89
+
+silo:
+	Defaults:
+		Offset: 0, -43, 5
+		UseTilesetCode: true
+		ZOffset: -1c511

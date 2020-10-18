@@ -25,12 +25,7 @@ testweapon:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
+		Explosions: lazerflare
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater, SmallScorch

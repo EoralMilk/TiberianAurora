@@ -239,6 +239,10 @@ explosion:
 	weatherbolt3: wclbolt3
 		Tick: 80
 	weatherboltexplosion: explolb
+	lazerflare: lazerflare
+		Start: 0
+		Length: 2
+		Tick: 50
 
 chrono:
 	warpin: warpin

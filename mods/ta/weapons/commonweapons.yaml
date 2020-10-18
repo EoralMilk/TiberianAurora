@@ -10,6 +10,9 @@ ObeliskLaser:
 	Projectile: LaserZap
 		Width: 0
 		TrackTarget: false
+		HitAnim: explosion
+		HitAnimSequence: lazerflare
+		HitAnimPalette: effect
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 20
@@ -26,7 +29,4 @@ ObeliskLaser:
 			Drone: 200
 			Rocket: 100
 		DamageTypes: ElectroDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: tiny_bang
-		ImpactActors: false
 
