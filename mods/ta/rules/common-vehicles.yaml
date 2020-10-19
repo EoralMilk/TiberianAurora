@@ -52,10 +52,6 @@
 		VoiceSet: AlliedVehicleVoice
 	MapEditorData:
 		Categories: Vehicle
-	Voiced:
-		VoiceSet: VehicleVoice
-
-
 
 mcv:
 	Inherits: ^Vehicle

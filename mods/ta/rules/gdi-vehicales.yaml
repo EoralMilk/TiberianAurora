@@ -24,14 +24,14 @@ humvee:
 		Range: 8c0
 	WithFacingSpriteBody:
 	AttackTurreted:
+		Voice: Attack
 	AutoTarget:
 	Armament:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
-		RequiresCondition: ifv-mg
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
-	WithMuzzleOverlay:
+		#MuzzleSequence: mgun_muz
+		#MuzzleSplitFacings: 8
+	#WithMuzzleOverlay:
 	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 25
@@ -65,14 +65,14 @@ gapc:
 		Range: 8c0
 	WithFacingSpriteBody:
 	AttackTurreted:
+		Voice: Attack
 	AutoTarget:
 	Armament:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
-		RequiresCondition: ifv-mg
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
-	WithMuzzleOverlay:
+		#MuzzleSequence: mgun_muz
+		#MuzzleSplitFacings: 8
+	#WithMuzzleOverlay:
 	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 25
@@ -106,14 +106,14 @@ gtank:
 		Range: 8c0
 	WithFacingSpriteBody:
 	AttackTurreted:
+		Voice: Attack
 	AutoTarget:
 	Armament:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
-		RequiresCondition: ifv-mg
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
-	WithMuzzleOverlay:
+		#MuzzleSequence: mgun_muz
+		#MuzzleSplitFacings: 8
+	#WithMuzzleOverlay:
 	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 25
