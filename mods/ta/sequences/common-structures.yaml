@@ -249,7 +249,7 @@ refinery:
 		Length: 1
 		ShadowStart: 157
 		Offset: 15, -50, 10
-		ZOffset: -1c511
+		ZOffset: -2048
 		ZRamp: 1
 	dead-bib:
 		UseTilesetCode: false
@@ -258,7 +258,7 @@ refinery:
 		Length: 1
 		ShadowStart: 157
 		Offset: 15, -50, 10
-		ZOffset: -1c511
+		ZOffset: -2048
 		ZRamp: 1
 	idle-lights:
 		UseTilesetCode: false
@@ -295,9 +295,9 @@ refinery:
 		Length: 21
 		ShadowStart: 210
 		Tick: 170
-		ZOffset: -1c511
-		ZRamp: 1
 		Offset: 15, -50, 11
+		ZOffset: -1024
+		ZRamp: 1
 	damaged-idle-arrow:
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -305,9 +305,9 @@ refinery:
 		Length: 21
 		ShadowStart: 210
 		Tick: 170
-		ZOffset: -1c511
-		ZRamp: 1
 		Offset: 15, -50, 18
+		ZOffset: -1024
+		ZRamp: 1
 	idle-fans:
 		UseTilesetCode: false
 	 	AddExtension: false

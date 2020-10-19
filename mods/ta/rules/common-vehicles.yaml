@@ -1,4 +1,62 @@
-# mcv
+
+^TAVehicle:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+	Inherits@3: ^IronCurtainable
+	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
+	Inherits@6: ^ParachutableVehicle
+	OwnerLostAction:
+		Action: Kill
+		DeathTypes: BulletDeath
+	Mobile:
+		Voice: Move
+		TurnSpeed: 5
+		Locomotor: wheeled
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+		Bounds: 32,32
+	Targetable:
+		TargetTypes: Ground, Vehicle, DetonateAttack
+	Targetable@REPAIR:
+		RequiresCondition: damaged
+		TargetTypes: Repair
+	GrantConditionOnDamageState@DAMAGED:
+		Condition: damaged
+		ValidDamageStates: Light, Medium, Heavy, Critical
+	Repairable:
+		Voice: Move
+		RepairActors: gadept, nadept, caoutp, repairdepot
+	Passenger:
+		Voice: Move
+		CargoType: Vehicle
+		Weight: 3
+	HiddenUnderFog:
+	WithTextControlGroupDecoration:
+	ActorLostNotification:
+	ProximityCaptor:
+		Types: Vehicle
+	Guard:
+		Voice: Attack
+	Guardable:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	MustBeDestroyed:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
+	MapEditorData:
+		Categories: Vehicle
+	Voiced:
+		VoiceSet: VehicleVoice
+
+
+
 mcv:
 	Inherits: ^Vehicle
 	Buildable:
@@ -37,4 +95,48 @@ mcv:
 	RenderVoxels: # TODO: 素材..
 		Image: amcv
 	WithVoxelBody:
+	HitShape:
+
+
+harvester:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 10
+		Prerequisites: refinery
+		Description: 收割泰伯利亚以换取资金
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: 收割机
+	Selectable:
+		Priority: 7
+		Bounds: 64, 52, 0, -6
+	Harvester:
+		Capacity: 40
+		Resources: Ore, Gems
+		BaleUnloadDelay: 1
+		SearchFromProcRadius: 24
+		SearchFromHarvesterRadius: 12
+		HarvestVoice: Move
+		DeliverVoice: Move
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Targetable@RadiationImmunity:
+		TargetTypes: ImmuneToRadiation
+	Mobile:
+		Speed: 60
+		TurnSpeed: 8
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 4c0
+	WithFacingSpriteBody:
+	RenderSprites:
+		Image: gharv
+	WithHarvestAnimation:
+	WithDockingAnimation:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
 	HitShape:

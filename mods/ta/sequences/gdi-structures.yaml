@@ -10,14 +10,12 @@ warfactory:
 		Start: 0
 		ShadowStart: 2
 		ZOffset: 512
-
 	damaged-idle: wf_top.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		Start: 1
 		ShadowStart: 3
 		ZOffset: 512
-
 	r-idle: wf_right.shp
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -40,20 +38,18 @@ warfactory:
 	 	AddExtension: false
 		Offset: -10, -60, 11
 		Start: 3
-
 	build-door: wf_anim_door.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		Start: 0
 		Length: 9
-		ZOffset: 60
+		ZOffset: 30
 	damaged-build-door: wf_anim_door.shp
 		UseTilesetCode: false
 	 	AddExtension: false
 		Start: 0
 		Length: 9
-		ZOffset: 60
-
+		ZOffset: 30
 	build-top: wf_top.shp
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -66,7 +62,6 @@ warfactory:
 		Start: 1
 		ShadowStart: 3
 		ZOffset: 1024
-
 	bib: wf_bottom.shp
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -80,7 +75,6 @@ warfactory:
 		Offset: -10, -60, 11
 		ZOffset: -1024
 		ZRamp: 1
-
 	idle-fan: wf_anim_fan.shp
 		Start: 0
 		UseTilesetCode: false

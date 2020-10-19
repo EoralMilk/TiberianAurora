@@ -1,5 +1,5 @@
 humvee:
-	Inherits: ^Vehicle
+	Inherits: ^TAVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20

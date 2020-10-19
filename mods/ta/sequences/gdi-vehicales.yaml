@@ -1,11 +1,11 @@
 
 humvee:
 	Defaults:
-		Offset: 0,0,0
+		Offset: 0,0,15
+		UseTilesetCode: false
 	idle:
 		Facings: 32
 		ShadowStart: 64
-		UseTilesetCode: false
 	stand:
 		Facings: 32
 		ShadowStart: 64
@@ -16,8 +16,41 @@ humvee:
 		Start: 32
 		Facings: 32
 		ShadowStart: 96
-		UseTilesetCode: false
 	icon: humvee_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+gharv:
+	Defaults:
+		Offset: 0,0,15
+		UseTilesetCode: false
+	idle:
+		Facings: -32
+		ShadowStart: 32
+	stand:
+		Facings: -32
+		ShadowStart: 32
+	run:
+		Facings: -32
+		ShadowStart: 32
+	harvest: gharv-ha
+		Length: 21
+		Facings: -8
+		ShadowStart: 168
+		Tick: 120
+	dock: gharv-dock
+		Facings: -8
+		ShadowStart: 72
+		Tick: 120
+		Length: 9
+		UseTilesetCode: false
+	dock-loop: gharv-dock-loop
+		Facings: -8
+		ShadowStart: 8
+		UseTilesetCode: false
+	icon: harv_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
