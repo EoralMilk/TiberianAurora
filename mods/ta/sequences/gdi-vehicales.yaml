@@ -22,6 +22,28 @@ humvee:
 		Offset: 0, 0, 0
 
 
+gapc:
+	Defaults: 
+		Offset: 0,0,15
+		UseTilesetCode: false
+	idle: 
+		Facings: -32
+		ShadowStart: 32
+	stand: 
+		Facings: -32
+		ShadowStart: 32
+	run: 
+		Facings: -32
+		ShadowStart: 32
+	turret: gapctur
+		Facings: -32
+		ShadowStart: 32
+	icon: apc_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
 gharv:
 	Defaults:
 		Offset: 0,0,15
