@@ -1,28 +1,4 @@
-
-humvee:
-	Defaults:
-		Offset: 0,0,15
-		UseTilesetCode: false
-	idle:
-		Facings: 32
-		ShadowStart: 64
-	stand:
-		Facings: 32
-		ShadowStart: 64
-	run:
-		Facings: 32
-		ShadowStart: 64
-	turret:
-		Start: 32
-		Facings: 32
-		ShadowStart: 96
-	icon: humvee_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
-
-gapc:
+^commontank:
 	Defaults: 
 		Offset: 0,0,15
 		UseTilesetCode: false
@@ -35,14 +11,6 @@ gapc:
 	run: 
 		Facings: -32
 		ShadowStart: 32
-	turret: gapctur
-		Facings: -32
-		ShadowStart: 32
-	icon: apc_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
 
 gharv:
 	Defaults:
@@ -73,6 +41,48 @@ gharv:
 		ShadowStart: 8
 		UseTilesetCode: false
 	icon: harv_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+humvee:
+	Defaults:
+		Offset: 0,0,15
+		UseTilesetCode: false
+	idle:
+		Facings: 32
+		ShadowStart: 64
+	stand:
+		Facings: 32
+		ShadowStart: 64
+	run:
+		Facings: 32
+		ShadowStart: 64
+	turret:
+		Start: 32
+		Facings: 32
+		ShadowStart: 96
+	icon: humvee_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+gapc:
+	Inherits: ^commontank
+	turret: gapctur
+		Facings: -32
+		ShadowStart: 32
+	icon: apc_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+gtank:
+	Inherits: ^commontank
+	turret: gtanktur
+		Facings: -32
+		ShadowStart: 32
+	icon: gtank_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0

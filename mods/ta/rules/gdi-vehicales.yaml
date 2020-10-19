@@ -79,3 +79,44 @@ gapc:
 	RenderSprites:
 		Image: gapc
 	HitShape:
+
+gtank:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: GDI中型主战坦克，装有105mm主炮和重装甲\n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: 中型坦克
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 20
+		Speed: 100
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	WithFacingSpriteBody:
+	AttackTurreted:
+	AutoTarget:
+	Armament:
+		Weapon: CRM60
+		LocalOffset: 188,32,600
+		RequiresCondition: ifv-mg
+		MuzzleSequence: mgun_muz
+		MuzzleSplitFacings: 8
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	Turreted:
+		TurnSpeed: 25
+	RenderSprites:
+		Image: gtank
+	HitShape:
