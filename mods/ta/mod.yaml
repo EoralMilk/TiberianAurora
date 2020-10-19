@@ -90,6 +90,8 @@ Rules:
 	ta|rules/common-infantry.yaml
 	
 	ta|rules/gdi-structures.yaml
+	ta|rules/nod-structures.yaml
+
 	ta|rules/gdi-vehicales.yaml
 
 
@@ -123,6 +125,9 @@ Rules:
 
 Sequences:
 	ta|sequences/common-structures.yaml
+	ta|sequences/gdi-structures.yaml
+	ta|sequences/nod-structures.yaml
+
 	ta|sequences/gdi-vehicales.yaml
 
 
@@ -229,7 +234,7 @@ TileSets:
 MapGrid:
 	Type: RectangularIsometric
 	TileSize: 60,30
-	EnableDepthBuffer: true
+	EnableDepthBuffer: false
 	SubCellOffsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
 	DefaultSubCell: 2
 	MaximumTerrainHeight: 16

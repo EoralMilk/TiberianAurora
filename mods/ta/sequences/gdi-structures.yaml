@@ -1,0 +1,107 @@
+
+warfactory:
+	Defaults:
+		Offset: -10, -60, 60
+		UseTilesetCode: false
+		ZRamp: 3
+	idle: wf_top.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 0
+		ShadowStart: 2
+		ZOffset: 512
+
+	damaged-idle: wf_top.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		ShadowStart: 3
+		ZOffset: 512
+
+	r-idle: wf_right.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: -10, -60, -20
+		ZOffset: -1024
+		Start: 0
+	damaged-r-idle: wf_right.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: -10, -60, -20
+		ZOffset: -1024
+		Start: 1
+	shadow: wf.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: -10, -60, 11
+		Start: 2
+	damaged-shadow: wf.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: -10, -60, 11
+		Start: 3
+
+	build-door: wf_anim_door.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 0
+		Length: 9
+		ZOffset: 60
+	damaged-build-door: wf_anim_door.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 0
+		Length: 9
+		ZOffset: 60
+
+	build-top: wf_top.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 0
+		ShadowStart: 2
+		ZOffset: 1024
+	damaged-build-top: wf_top.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		ShadowStart: 3
+		ZOffset: 1024
+
+	bib: wf_bottom.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: -10, -60, 11
+		ZOffset: -1024
+		ZRamp: 1
+	damaged-bib: wf_bottom.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		Offset: -10, -60, 11
+		ZOffset: -1024
+		ZRamp: 1
+
+	idle-fan: wf_anim_fan.shp
+		Start: 0
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		Offset: -10, -60, 64
+		ZOffset: 2048
+	damaged-idle-fan: wf_anim_fan.shp # doesn't have damage frames
+		Start: 0
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		Offset: -10, -60, 64
+		ZOffset: 2048
+	make: wf_mkup.shp
+		Start: 0
+		Length: 50
+		ShadowStart: 50
+		UseTilesetCode: false
+	 	AddExtension: false
+	icon: wf_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

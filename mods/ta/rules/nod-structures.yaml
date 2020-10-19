@@ -1,0 +1,73 @@
+
+obelisk:
+	Inherits: ^SupportBuilding
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 40
+		Prerequisites: ~structures.any
+		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: 光明石碑
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Selectable:
+		Bounds: 44, 102, 0, -40
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 8c0
+	GrantConditionOnHealth:
+		Condition: heavilydamaged
+		MaxHP: 299
+	ArmamentWithRa2Lase:
+		# Armament:
+		RequiresCondition: !heavilydamaged
+		Weapon: ObeliskLaser
+		LocalOffset: 190,-190,4000
+		ZOffset: 1
+		Duration: 9
+		Width: 140
+		InnerWidth: 80
+	ArmamentWithRa2Lase@heaviyDamaged:
+		# Armament@heaviyDamaged:
+		RequiresCondition: heavilydamaged
+		Weapon: ObeliskLaser
+		LocalOffset: 370,-240,3880
+		ZOffset: 1
+		Duration: 9
+		Width: 140
+		InnerWidth: 80
+	AttackChargesBursts:
+		PauseOnCondition: lowpower
+		ChargeLevel: 40
+		ChargingCondition: charging
+	AmbientSound:
+		RequiresCondition: charging && !lowpower
+		SoundFiles: obelpowr.aud
+	WithChargeBurstsOverlay:
+		Sequence: active
+		Palette: red_unit
+		IsPlayerPalette: true
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -75
+	AutoTarget:
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	WithSpriteBody:
+		PauseOnCondition: lowpower
+	WithRangeCircle:
+		Range: 8c0
+		Type: prismcannon
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		CameraPitch: 85
+	RenderSprites:
+		PlayerPalette: red_unit
