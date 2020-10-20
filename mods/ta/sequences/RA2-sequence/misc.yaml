@@ -242,11 +242,22 @@ explosion:
 	lazerflare: lazerflare
 		Start: 0
 		Length: 4
-		Tick: 88
-	laserburnt: laserburnt
+		Tick: 50
+	laserburning: laserburning
 		Start: 0
-		Length: *
-		Tick: 140
+		Length: 4
+		Tick: 300
+		ZOffset: -500
+	laserburn: laserburn
+		Start: 0
+		Length: 7
+		Tick: 300
+		ZOffset: -512
+	laserburnt: laserburn
+		Start: 7
+		Length: 3
+		Tick: 6000
+		ZOffset: -1024	
 
 chrono:
 	warpin: warpin
