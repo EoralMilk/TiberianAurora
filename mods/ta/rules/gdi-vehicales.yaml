@@ -1,4 +1,4 @@
-humvee:
+ghumvee:
 	Inherits: ^TAVehicle
 	Buildable:
 		Queue: Vehicle
@@ -36,7 +36,7 @@ humvee:
 	Turreted:
 		TurnSpeed: 20
 	RenderSprites:
-		Image: humvee
+		Image: ghumvee
 	HitShape:
 
 gapc:
@@ -196,4 +196,45 @@ gmmtnk:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gmmtnk
+	HitShape:
+
+gunboat:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: \n GDI的海军主力
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: 内河炮艇
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 1000
+	Armor:
+		Type: Heavy
+	Mobile:
+		TurnSpeed: 2
+		Speed: 70
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	WithFacingSpriteBody:
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	Armament@antiair:
+		Weapon: MammothTusk
+		LocalOffset: 217,195,1365, 217,-195,1365
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	Turreted:
+		TurnSpeed: 15
+		Offset: 1281,0,0
+	RenderSprites:
+		Image: gunboat
+		PlayerPalette: green_unit
 	HitShape:

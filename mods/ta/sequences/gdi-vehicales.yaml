@@ -45,7 +45,7 @@ gharv:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-humvee:
+ghumvee:
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
 		Offset: 0,0,15
@@ -116,3 +116,32 @@ gmmtnk:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+gunboat:
+	Defaults: 
+		Offset: 0,0,15
+		UseTilesetCode: false
+	idle: 
+		Facings: -32
+		ShadowStart: 480
+		Length: 15
+		Tick: 150
+	walk:
+		Facings: -32
+		ShadowStart: 480
+		Length: 15
+		Tick: 150
+	stand:
+		Facings: -32
+		ShadowStart: 480
+		Length: 15
+		Tick: 150
+	turret: gunboattur
+		Facings: -32
+		ShadowStart: 32
+	icon: gunboat_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+# Offset: 1281,0,0
