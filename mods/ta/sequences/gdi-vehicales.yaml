@@ -1,4 +1,4 @@
-^commontank:
+^CommonTank:
 	Defaults: 
 		Offset: 0,0,15
 		UseTilesetCode: false
@@ -69,7 +69,7 @@ humvee:
 		Offset: 0, 0, 0
 
 gapc:
-	Inherits: ^commontank
+	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithFlakMuzzle
 	turret: gapctur
 		Facings: -32
@@ -80,7 +80,7 @@ gapc:
 		Offset: 0, 0, 0
 
 gtank:
-	Inherits: ^commontank
+	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
 	turret: gtanktur
 		Facings: -32
@@ -91,7 +91,7 @@ gtank:
 		Offset: 0, 0, 0
 
 gmlrs:
-	Inherits: ^commontank
+	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
 	preparing: gmlrs-prep
 		Facings: -32
@@ -102,6 +102,17 @@ gmlrs:
 		Facings: -32
 		ShadowStart: 32
 	icon: gmlrs_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+gmmtnk:
+	Inherits: ^CommonTank
+	Inherits@Muzzle: ^WithCannonMuzzle
+	turret: gmmtnktur
+		Facings: -32
+		ShadowStart: 32
+	icon: gmmtnk_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0

@@ -6,7 +6,7 @@ obelisk:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: ~structures.any
-		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: Nod的终极地面防御装置，强大的激光扫射能摧毁一切地面单位。\n 强势对抗：一切地面单位
 	Valued:
 		Cost: 1500
 	Tooltip:

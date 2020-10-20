@@ -4,7 +4,7 @@ humvee:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: 搭载重机枪的悍马吉普车\n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
+		Description: \n 搭载重机枪的悍马吉普车。\n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -45,7 +45,7 @@ gapc:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: 装有重装甲和榴弹发射器的运兵车\n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
+		Description: \n 装有重装甲和榴弹发射器的运兵车。\n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -85,7 +85,7 @@ gtank:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: GDI中型主战坦克，装有105mm主炮和重装甲\n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+		Description: \n GDI中型主战坦克，装有105mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -125,7 +125,7 @@ gmlrs:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: GDI的主力炮兵，能用火箭弹幕对目标区域进行轰炸，但是装甲比较脆弱\n 强势对抗：地面单位 
+		Description: \n GDI的主力炮兵，能用火箭弹幕对目标区域进行轰炸。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果不佳
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -153,4 +153,47 @@ gmlrs:
 		Voice: Attack
 	RenderSprites:
 		Image: gmlrs
+	HitShape:
+
+gmmtnk:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: \n GDI的重型坦克，装有双联装120mm主炮和猛犸牙飞弹。\n 猛犸牙飞弹可以对空 \n 装甲十分强大。\n \n 强势对抗：一切单位 \n 可以自我修复至生命值的一半
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: 猛犸坦克mk1
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 800
+	Armor:
+		Type: Heavy
+	Mobile:
+		TurnSpeed: 5
+		Speed: 70
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	WithFacingSpriteBody:
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	Armament:
+		Weapon: 120mmx
+		LocalOffset: 1227,168,800, 1227,-168,800
+		MuzzleSequence: muzzle
+	Armament@antiair:
+		Weapon: MammothTusk
+		LocalOffset: 20,371,866, 20,-371,866
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	Turreted:
+		TurnSpeed: 15
+	RenderSprites:
+		Image: gmmtnk
 	HitShape:

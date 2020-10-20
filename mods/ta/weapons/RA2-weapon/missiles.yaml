@@ -5,7 +5,7 @@ RedEye2:
 		LockOnProbability: 80
 
 MammothTusk:
-	Inherits: ^AAMissile
+	Inherits: ^Missile
 	ReloadDelay: 80
 	Range: 8c0
 	Report: vapoat2a.wav, vapoar2b.wav, vapoat2c.wav
