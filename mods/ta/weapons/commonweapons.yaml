@@ -29,4 +29,7 @@ ObeliskLaser:
 			Drone: 200
 			Rocket: 100
 		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: laserburnt
+		ValidTargets: Ground
 

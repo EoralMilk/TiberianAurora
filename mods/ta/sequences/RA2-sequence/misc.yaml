@@ -243,6 +243,10 @@ explosion:
 		Start: 0
 		Length: 2
 		Tick: 50
+	laserburnt: laserburnt
+		Start: 0
+		Length: *
+		Tick: 140
 
 chrono:
 	warpin: warpin
