@@ -93,6 +93,14 @@ gtank:
 gmlrs:
 	Inherits: ^commontank
 	Inherits@Muzzle: ^WithCannonMuzzle
+	preparing: gmlrs-prep
+		Facings: -32
+		ShadowStart: 320
+		Tick: 150
+		Length: 10
+	alert: gmlrs-alert
+		Facings: -32
+		ShadowStart: 32
 	icon: gmlrs_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
