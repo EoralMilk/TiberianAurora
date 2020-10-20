@@ -184,6 +184,7 @@
 		BaseName: green_unit
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
 	PaletteFromFile@red_unit:
 		Name: red_unit
 		Filename: Redunit.pal
@@ -191,5 +192,15 @@
 	PlayerColorPalette@red_unit:
 		BasePalette: red_unit
 		BaseName: red_unit
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@green_vehicle:
+		Name: green_vehicle
+		Filename: greenvehicle.pal
+		ShadowIndex: 1
+	PlayerColorPalette@green_vehicle:
+		BasePalette: green_vehicle
+		BaseName: green_vehicle
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31

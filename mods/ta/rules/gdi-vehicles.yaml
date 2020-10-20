@@ -1,4 +1,4 @@
-ghumvee:
+ghumv:
 	Inherits: ^TAVehicle
 	Buildable:
 		Queue: Vehicle
@@ -36,7 +36,8 @@ ghumvee:
 	Turreted:
 		TurnSpeed: 20
 	RenderSprites:
-		Image: ghumvee
+		Image: ghumv
+		PlayerPalette: green_vehicle
 	HitShape:
 
 gapc:
@@ -77,6 +78,7 @@ gapc:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gapc
+		PlayerPalette: green_vehicle
 	HitShape:
 
 gtank:
@@ -117,6 +119,7 @@ gtank:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gtank
+		PlayerPalette: green_vehicle
 	HitShape:
 
 gmlrs:
@@ -153,6 +156,7 @@ gmlrs:
 		Voice: Attack
 	RenderSprites:
 		Image: gmlrs
+		PlayerPalette: green_vehicle
 	HitShape:
 
 gmmtnk:
@@ -196,6 +200,7 @@ gmmtnk:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gmmtnk
+		PlayerPalette: green_vehicle
 	HitShape:
 
 gunboat:

@@ -45,7 +45,7 @@ gharv:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-ghumvee:
+ghumv:
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
 		Offset: 0,0,15

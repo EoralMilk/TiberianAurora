@@ -92,7 +92,7 @@ Rules:
 	ta|rules/gdi-structures.yaml
 	ta|rules/nod-structures.yaml
 
-	ta|rules/gdi-vehicales.yaml
+	ta|rules/gdi-vehicles.yaml
 
 
 
@@ -128,7 +128,7 @@ Sequences:
 	ta|sequences/gdi-structures.yaml
 	ta|sequences/nod-structures.yaml
 
-	ta|sequences/gdi-vehicales.yaml
+	ta|sequences/gdi-vehicles.yaml
 
 
 	### Old RA2 Sequence
