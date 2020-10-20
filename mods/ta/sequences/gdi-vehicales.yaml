@@ -26,9 +26,9 @@ gharv:
 		Facings: -32
 		ShadowStart: 32
 	harvest: gharv-ha
-		Length: 21
-		Facings: -8
-		ShadowStart: 168
+		Length: 19
+		Facings: -32
+		ShadowStart: 608
 		Tick: 120
 	dock: gharv-dock
 		Facings: -8
@@ -40,12 +40,13 @@ gharv:
 		Facings: -8
 		ShadowStart: 8
 		UseTilesetCode: false
-	icon: harv_icon.png
+	icon: charv_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
 humvee:
+	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
 		Offset: 0,0,15
 		UseTilesetCode: false
@@ -62,27 +63,37 @@ humvee:
 		Start: 32
 		Facings: 32
 		ShadowStart: 96
-	icon: humvee_icon.png
+	icon: ghumvee_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
 gapc:
 	Inherits: ^commontank
+	Inherits@Muzzle: ^WithFlakMuzzle
 	turret: gapctur
 		Facings: -32
 		ShadowStart: 32
-	icon: apc_icon.png
+	icon: gapc_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
 gtank:
 	Inherits: ^commontank
+	Inherits@Muzzle: ^WithCannonMuzzle
 	turret: gtanktur
 		Facings: -32
 		ShadowStart: 32
 	icon: gtank_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+gmlrs:
+	Inherits: ^commontank
+	Inherits@Muzzle: ^WithCannonMuzzle
+	icon: gmlrs_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0

@@ -17,8 +17,8 @@ humvee:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 20
-		Speed: 100
+		TurnSpeed: 15
+		Speed: 150
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
@@ -28,13 +28,13 @@ humvee:
 	AutoTarget:
 	Armament:
 		Weapon: CRM60
-		LocalOffset: 188,32,600
-		#MuzzleSequence: mgun_muz
-		#MuzzleSplitFacings: 8
-	#WithMuzzleOverlay:
+		LocalOffset: 300,0,870
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 8
+	WithMuzzleOverlay:
 	WithSpriteTurret:
 	Turreted:
-		TurnSpeed: 25
+		TurnSpeed: 20
 	RenderSprites:
 		Image: humvee
 	HitShape:
@@ -47,19 +47,19 @@ gapc:
 		Prerequisites: ~gaweap
 		Description: 装有重装甲和榴弹发射器的运兵车\n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
-		Cost: 500
+		Cost: 700
 	Tooltip:
 		Name: 装甲运兵车
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 200
+		HP: 300
 	Armor:
-		Type: Light
+		Type: Heavy
 	Mobile:
-		TurnSpeed: 20
-		Speed: 100
+		TurnSpeed: 5
+		Speed: 125
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
@@ -68,14 +68,13 @@ gapc:
 		Voice: Attack
 	AutoTarget:
 	Armament:
-		Weapon: CRM60
-		LocalOffset: 188,32,600
-		#MuzzleSequence: mgun_muz
-		#MuzzleSplitFacings: 8
-	#WithMuzzleOverlay:
+		Weapon: FlakTrackGun
+		LocalOffset: 430,0,1100
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	WithSpriteTurret:
 	Turreted:
-		TurnSpeed: 25
+		TurnSpeed: 15
 	RenderSprites:
 		Image: gapc
 	HitShape:
@@ -88,18 +87,18 @@ gtank:
 		Prerequisites: ~gaweap
 		Description: GDI中型主战坦克，装有105mm主炮和重装甲\n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 500
+		Cost: 800
 	Tooltip:
 		Name: 中型坦克
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 200
+		HP: 400
 	Armor:
-		Type: Light
+		Type: Heavy
 	Mobile:
-		TurnSpeed: 20
+		TurnSpeed: 5
 		Speed: 100
 		Locomotor: tracked
 	RevealsShroud:
@@ -109,14 +108,49 @@ gtank:
 		Voice: Attack
 	AutoTarget:
 	Armament:
-		Weapon: CRM60
-		LocalOffset: 188,32,600
-		#MuzzleSequence: mgun_muz
-		#MuzzleSplitFacings: 8
-	#WithMuzzleOverlay:
+		Weapon: 105mm
+		LocalOffset: 1238,0,608
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	WithSpriteTurret:
 	Turreted:
-		TurnSpeed: 25
+		TurnSpeed: 15
 	RenderSprites:
 		Image: gtank
+	HitShape:
+
+gmlrs:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: GDI的主力炮兵，能用火箭弹幕对目标区域进行轰炸，但是装甲比较脆弱\n 强势对抗：地面单位 
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: 多管火箭发射系统
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 5
+		Speed: 100
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	WithFacingSpriteBody:
+	Armament:
+		Weapon: 155mm
+		LocalOffset: 27,0,1380
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
+	AttackFrontal:
+		Voice: Attack
+	RenderSprites:
+		Image: gmlrs
 	HitShape:
