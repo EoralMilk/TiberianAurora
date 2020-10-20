@@ -241,8 +241,8 @@ explosion:
 	weatherboltexplosion: explolb
 	lazerflare: lazerflare
 		Start: 0
-		Length: 2
-		Tick: 50
+		Length: 4
+		Tick: 88
 	laserburnt: laserburnt
 		Start: 0
 		Length: *
