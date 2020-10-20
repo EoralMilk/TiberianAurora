@@ -245,13 +245,13 @@ explosion:
 		Tick: 50
 	laserburning: laserburning
 		Start: 0
-		Length: 4
-		Tick: 300
+		Length: 7
+		Tick: 200
 		ZOffset: -500
 	laserburn: laserburn
 		Start: 0
 		Length: 7
-		Tick: 300
+		Tick: 200
 		ZOffset: -512
 	laserburnt: laserburn
 		Start: 7
