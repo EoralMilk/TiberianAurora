@@ -55,7 +55,9 @@ Packages:
 	ta|content
 	ta|content/structures
 	ta|content/audio
-	ta|content/vehicales
+	ta|content/vehicles
+	ta|content/aircrafts
+
 
 	ta|content/structures/a_pwrplt
 	ta|content/structures/a_advpwr
