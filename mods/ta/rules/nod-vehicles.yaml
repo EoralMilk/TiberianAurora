@@ -117,3 +117,41 @@ nftnk:
 		Image: nftnk
 		PlayerPalette: red_unit
 	HitShape:
+
+
+nhowi:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: \n Nod的主力炮兵，搭载155mm榴弹炮。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果欠佳
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: 自行榴弹炮
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 5
+		Speed: 100
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	WithFacingSpriteBody:
+	Armament:
+		Weapon: 155mm
+		LocalOffset: 27,0,1380
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
+	AttackFrontal:
+		Voice: Attack
+	RenderSprites:
+		Image: nhowi
+		PlayerPalette: red_unit
+	HitShape:

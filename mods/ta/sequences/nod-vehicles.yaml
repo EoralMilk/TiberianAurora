@@ -29,3 +29,18 @@ nftnk:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
+nhowi:
+	Inherits: ^CommonTank
+	Inherits@Muzzle: ^WithCannonMuzzle
+	preparing: nhowi-prep
+		Facings: -32
+		ShadowStart: 320
+		Tick: 150
+		Length: 10
+	alert: nhowi-alert
+		Facings: -32
+		ShadowStart: 32
+	icon: nhowi_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
