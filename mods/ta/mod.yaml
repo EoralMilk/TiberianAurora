@@ -268,7 +268,7 @@ Hotkeys:
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ta|uibits/loadscreen.png
-	Text: 祈祷中......
+	Text: 正在打理猫耳..., 正在压下呆毛..., 正在吐槽OpenRA引擎..., 正在崩溃..., 正在因愚蠢的问题而愤怒..., 正在重新开始..., 正在祈祷..., 正在加入彩蛋..., 正在期待曙光降临...
 
 ServerTraits:
 	LobbyCommands
