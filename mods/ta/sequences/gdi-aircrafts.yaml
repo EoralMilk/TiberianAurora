@@ -1,0 +1,6 @@
+a10:
+	icon: a10_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+	idle:

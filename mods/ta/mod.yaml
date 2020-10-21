@@ -96,6 +96,9 @@ Rules:
 
 	ta|rules/gdi-vehicles.yaml
 
+	ta|rules/gdi-aircrafts.yaml
+
+
 
 
 	### Old RA2 rules
@@ -132,6 +135,9 @@ Sequences:
 
 	ta|sequences/gdi-vehicles.yaml
 
+	ta|sequences/gdi-aircrafts.yaml
+
+
 
 	### Old RA2 Sequence
 	ta|sequences/RA2-sequence/aircraft.yaml
@@ -152,6 +158,7 @@ Sequences:
 
 ModelSequences:
 	ta|sequences/RA2-sequence/voxels.yaml
+	ta|sequences/voxels.yaml
 
 Cursors:
 	ta|cursors.yaml
