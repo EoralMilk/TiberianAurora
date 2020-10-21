@@ -55,6 +55,7 @@ Packages:
 	ta|content
 	ta|content/structures
 	ta|content/audio
+	ta|content/audio/voice
 	ta|content/vehicles
 	ta|content/aircrafts
 

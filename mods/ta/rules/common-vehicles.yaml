@@ -49,7 +49,7 @@
 		EmptyWeapon: UnitExplodeSmall
 	MustBeDestroyed:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: VehicleVoice
 	MapEditorData:
 		Categories: Vehicle
 
@@ -137,6 +137,4 @@ harvester:
 			nod: nharv
 	WithHarvestAnimation:
 	WithDockingAnimation:
-	Voiced:
-		VoiceSet: SovietVehicleVoice
 	HitShape:

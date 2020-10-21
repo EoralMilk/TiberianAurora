@@ -392,24 +392,21 @@ SecretServiceVoice:
 
 # TD 语音
 VehicleVoice:
-	Variants:
-		nod: .v00,.v02
-		gdi: .v00,.v02
+	DefaultVariant: .wav
 	Voices:
-		Select: vehic1,yessir1,report1,await1,unit1
-		Move: ackno,affirm1,movout1
-		Unload: movout1	# TODO: 验证是否无用
+		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir
+		Move: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
+		Attack: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
+		Unload: Acknowledge,Affirmative	# TODO: 验证是否无用
 
 GenericVoice:
-	Variants:
-		nod: .v01,.v03
-		gdi: .v01,.v03
+	DefaultVariant: .wav
 	Voices:
-		Select: await1,ready,report1,yessir1
-		Move: ackno,affirm1,noprob,ritaway,roger,ugotit
-		Attack: ackno,affirm1,noprob,ritaway,roger,ugotit
-		Die: nuyell1,nuyell4,nuyell5,nuyell6
-		Burned: yell1
-		Zapped: nuyell3
-		Poisoned: nuyell12
+		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir
+		Move: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
+		Attack: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
+		Die: death_01,death_02,death_03,death_04,death_05,death_06,death_07,death_08,death_09,death_10,death_11,death_12
+		Burned: death_10,death_11,death_12
+		Zapped: death_01,death_02,death_03,death_04
+		Poisoned: death_10,death_11,death_12
 	DisableVariants: Die, Burned, Zapped, Poisoned
