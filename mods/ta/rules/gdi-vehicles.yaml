@@ -149,7 +149,7 @@ gmlrs:
 	WithFacingSpriteBody:
 	Armament:
 		Weapon: 155mm
-		LocalOffset: 27,0,1380
+		LocalOffset: 27,0,1300
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	AttackFrontal:

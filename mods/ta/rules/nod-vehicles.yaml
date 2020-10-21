@@ -146,7 +146,7 @@ nhowi:
 	WithFacingSpriteBody:
 	Armament:
 		Weapon: 155mm
-		LocalOffset: 27,0,1380
+		LocalOffset: 833,0,1960
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	AttackFrontal:
