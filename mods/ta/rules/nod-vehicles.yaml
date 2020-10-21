@@ -77,6 +77,50 @@ ncycle:
 		PlayerPalette: red_unit
 	HitShape:
 
+
+ntank:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: \n Nod轻型主战坦克，装有90mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: 轻型坦克
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 300
+	Armor:
+		Type: Heavy
+	Mobile:
+		TurnSpeed: 7
+		Speed: 120
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	WithFacingSpriteBody:
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	Armament:
+		Weapon: 105mm
+		LocalOffset: 939,0,608
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	Turreted:
+		TurnSpeed: 15
+		Offset: -186,0,0
+	RenderSprites:
+		Image: ntank
+		PlayerPalette: red_unit
+	HitShape:
+
+
 nftnk:
 	Inherits: ^TAVehicle
 	Buildable:
