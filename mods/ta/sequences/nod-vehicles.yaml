@@ -18,3 +18,14 @@ ncycle:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
+nftnk:
+	Inherits: ^CommonTank
+	Inherits@Muzzle: ^WithFlakMuzzle
+	turret: nftnktur
+		Facings: -32
+		ShadowStart: 32
+	icon: nftnk_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
