@@ -131,6 +131,10 @@ harvester:
 	WithFacingSpriteBody:
 	RenderSprites:
 		Image: gharv
+		PlayerPalette: green_vehicle
+		FactionImages:
+			gdi: gharv
+			nod: nharv
 	WithHarvestAnimation:
 	WithDockingAnimation:
 	Voiced:
