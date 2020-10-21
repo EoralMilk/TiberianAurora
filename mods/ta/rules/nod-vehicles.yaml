@@ -4,7 +4,7 @@ nbggy:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: \n 搭载机枪的全地形四驱车。\n 速度很快 \n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
+		Description: \n 搭载机枪的全地形四驱车。\n 速度很快 \n 装甲很脆弱。\n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -37,5 +37,42 @@ nbggy:
 		TurnSpeed: 20
 	RenderSprites:
 		Image: nbggy
+		PlayerPalette: red_unit
+	HitShape:
+
+ncycle:
+	Inherits: ^TAVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: \n 搭载"龙"式导弹的突击摩托车 \n 速度飞快 \n 装甲很脆弱。\n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: 突击摩托车
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 120
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 20
+		Speed: 200
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	WithFacingSpriteBody:
+	Armament:
+		Weapon: HoverMissile
+		LocalOffset: -141,123,720, -141,-123,720
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
+	AttackFrontal:
+		Voice: Attack
+	RenderSprites:
+		Image: ncycle
 		PlayerPalette: red_unit
 	HitShape:

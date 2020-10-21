@@ -10,4 +10,11 @@ nbggy:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
+ncycle:
+	Inherits: ^CommonTank
+	Inherits@Muzzle: ^WithFlakMuzzle
+	icon: ncycle_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
 
