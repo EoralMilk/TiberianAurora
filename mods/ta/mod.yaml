@@ -95,6 +95,8 @@ Rules:
 	ta|rules/nod-structures.yaml
 
 	ta|rules/gdi-vehicles.yaml
+	ta|rules/nod-vehicles.yaml
+
 
 	ta|rules/gdi-aircrafts.yaml
 
@@ -134,6 +136,8 @@ Sequences:
 	ta|sequences/nod-structures.yaml
 
 	ta|sequences/gdi-vehicles.yaml
+	ta|sequences/nod-vehicles.yaml
+
 
 	ta|sequences/gdi-aircrafts.yaml
 

@@ -252,7 +252,6 @@ gdummy:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: \n 测试用载具
 	Valued:
 		Cost: 100
 	Tooltip:

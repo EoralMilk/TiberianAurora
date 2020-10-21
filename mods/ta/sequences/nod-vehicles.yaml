@@ -1,0 +1,13 @@
+
+nbggy:
+	Inherits: ^CommonTank
+	Inherits@Muzzle: ^WithMachineGunMuzzle
+	turret: nbggytur
+		Facings: -32
+		ShadowStart: 32
+	icon: nbggy_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
