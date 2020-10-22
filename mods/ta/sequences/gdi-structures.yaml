@@ -99,3 +99,64 @@ warfactory:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+
+
+advhq:
+	Defaults:
+		Offset: -5, -40, 45
+		UseTilesetCode: true
+	idle: advhq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ShadowStart: 3
+	damaged-idle: advhq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+	dead: advhq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	damaged-idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	idle-dish: advhq_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 48
+	damaged-idle-dish: advhq_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 48
+	make: advhq_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 46
+		ShadowStart: 46
+	icon: advhq_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
