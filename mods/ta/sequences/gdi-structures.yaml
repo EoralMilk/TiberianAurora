@@ -183,3 +183,45 @@ advhq:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+guntower:
+	Inherits@Muzzle: ^WithMachineGunMuzzle
+	Defaults:
+		Offset: 0, -11, 25
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	dead:
+		Start: 1
+		ShadowStart: 3
+	make: guntower_mkup
+		Length: 18
+		ShadowStart: 18
+	icon: guntower_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+advgtwr:
+	Inherits@Muzzle: ^WithFlakMuzzle
+	Defaults:
+		Offset: 0, -15, 25
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 2
+		ShadowStart: 3
+	dead:
+		Start: 2
+		ShadowStart: 3
+	turret: advgtwr_tur
+		Facings: 32
+	make: advgtwr_mkup
+		Length: 31
+		ShadowStart: 31
+	icon: advgtwr_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
