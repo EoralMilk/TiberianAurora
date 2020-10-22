@@ -390,23 +390,45 @@ SecretServiceVoice:
 		Attack: isecata, isecatb, isecatc, isecatd, isecate
 		Die: isecdia, isecdib, isecdic
 
-# TD 语音
-VehicleVoice:
+# TA 语音
+^CommonVoice:
 	DefaultVariant: .wav
 	Voices:
 		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir
-		Move: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
-		Attack: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
-		Unload: Acknowledge,Affirmative	# TODO: 验证是否无用
+		Move: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it,Moving out,Advancing,Pushin forward,Over and out
+		Attack: Acknowledge,Affirmative,Not a problem,Roger,Roger that,You've got it,Engage,Over and out,Target identified
+		Unload: Acknowledge,Affirmative,Over and out
+		Feedback: Get me out of here
 
 GenericVoice:
 	DefaultVariant: .wav
 	Voices:
-		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir
-		Move: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
-		Attack: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it
+		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir,Infantry reporting
+		Move: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it,Moving out,Advancing,Pushin forward,Over and out
+		Attack: Acknowledge,Affirmative,Not a problem,Roger,Roger that,You've got it,Engage,Over and out
 		Die: death_01,death_02,death_03,death_04,death_05,death_06,death_07,death_08,death_09,death_10,death_11,death_12
 		Burned: death_10,death_11,death_12
 		Zapped: death_01,death_02,death_03,death_04
 		Poisoned: death_10,death_11,death_12
 	DisableVariants: Die, Burned, Zapped, Poisoned
+
+VehicleVoice:
+	Inherits: ^CommonVoice
+	Voices:
+		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir,Vehicle reporting,Unit reporting
+
+AircraftVoice:
+	Inherits: ^CommonVoice
+	Voices:
+		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir,Aircraft reporting
+
+GunBoatVoice:
+	Inherits: ^CommonVoice
+	Voices:
+		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir,Unit reporting
+
+MCVVoice:
+	Inherits: ^CommonVoice
+	Voices:
+		Select: Awaiting orders,Ready and waiting,Reporting,Unit reporting,Mobile Construction Vehicle
+

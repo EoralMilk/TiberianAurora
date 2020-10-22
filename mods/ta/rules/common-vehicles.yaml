@@ -91,6 +91,8 @@ mcv:
 	RenderVoxels: # TODO: 素材..
 		Image: amcv
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: MCVVoice
 	HitShape:
 
 

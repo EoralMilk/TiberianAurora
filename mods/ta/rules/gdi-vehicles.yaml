@@ -242,6 +242,8 @@ gunboat:
 	RenderSprites:
 		Image: gunboat
 		PlayerPalette: green_unit
+	Voiced:
+		VoiceSet: GunBoatVoice
 	HitShape:
 
 

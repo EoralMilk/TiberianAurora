@@ -48,6 +48,8 @@ a10:
 		Image: a10
 	SpawnActorOnDeath:
 		Actor: orcahusk
+	Voiced:
+		VoiceSet: AircraftVoice
 	HitShape:
 	Rearmable:
 		RearmActors: gaairc, amradr
