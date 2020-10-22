@@ -311,6 +311,65 @@ hq:
 		PlayerPalette: green_unit
 
 
+helipad:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^2x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: hq
+		Description: 提供一个可以维修直升机并为其装弹的停机位，并开启直升机建造序列。
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: 停机坪
+	ProvidesPrerequisite:
+		Prerequisite: helipad
+	ProvidesPrerequisite@gdi:
+		Prerequisite: aircraft.gdi
+		Factions: gdi
+	ProvidesPrerequisite@nod:
+		Prerequisite: aircraft.nod
+		Factions: nod
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Selectable:
+		Bounds: 96, 98, -2, -24
+	Health:
+		HP: 500
+	Armor:
+		Type: Steel
+	WithIdleOverlay@anim-lights:
+		Sequence: anim-lights
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	Power:
+		Amount: -20
+	Reservable:
+	Exit@1:
+		SpawnOffset: 0,-256,0
+	Production:
+		Produces: Aircraft
+	ProductionBar:
+		ProductionType: Aircraft
+	PrimaryBuilding:
+		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
+	InfiltrateForExploration:
+		Types: SpyInfiltrate
+
 repairdepot:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape

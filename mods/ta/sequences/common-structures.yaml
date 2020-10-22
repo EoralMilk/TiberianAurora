@@ -44,107 +44,6 @@ pwrplt:
 		Offset: 0, 0, 0
 
 
-hq:
-	Defaults:
-		Offset: -5, -40, 45
-		UseTilesetCode: true
-	idle: hq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		ShadowStart: 3
-	damaged-idle: hq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-	dead: hq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-		Tick: 400
-	idle-fans: hq_anim_b.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 6
-		ShadowStart: 6
-		Tick: 120
-		Offset: -5, -40, 46
-	damaged-idle-fans: hq_anim_b.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 6
-		ShadowStart: 6
-		Tick: 120
-		Offset: -5, -40, 46
-	idle-dish: hq_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 30
-		ShadowStart: 30
-		Tick: 120
-		Offset: -5, -40, 48
-	damaged-idle-dish: hq_de_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 30
-		ShadowStart: 30
-		Tick: 120
-		Offset: -5, -40, 48
-	make: hq_mkup.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 43
-		ShadowStart: 43
-	icon: hq_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
-
-advpwr:
-	Defaults:
-		Offset: 0, -45, 45
-		UseTilesetCode: true
-	idle: advpwr.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		ShadowStart: 3
-	damaged-idle: advpwr.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Start: 1
-		ShadowStart: 4
-	dead: advpwr.shp
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-		Tick: 400
-	idle-glow: advpwr_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 30
-		ShadowStart: 30
-		Tick: 200
-	damaged-idle-glow: advpwr_de_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 30
-		ShadowStart: 30
-		Tick: 200
-	make: advpwr_mkup.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 50
-		ShadowStart: 50
-	icon: advpwr_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
-
 
 refinery:
 	Defaults: refinery.shp
@@ -270,6 +169,108 @@ refinery:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
+
+hq:
+	Defaults:
+		Offset: -5, -40, 45
+		UseTilesetCode: true
+	idle: hq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ShadowStart: 3
+	damaged-idle: hq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+	dead: hq.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	damaged-idle-fans: hq_anim_b.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	idle-dish: hq_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 48
+	damaged-idle-dish: hq_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 48
+	make: hq_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 43
+		ShadowStart: 43
+	icon: hq_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+advpwr:
+	Defaults:
+		Offset: 0, -45, 45
+		UseTilesetCode: true
+	idle: advpwr.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		ShadowStart: 3
+	damaged-idle: advpwr.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Start: 1
+		ShadowStart: 4
+	dead: advpwr.shp
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-glow: advpwr_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 200
+	damaged-idle-glow: advpwr_de_anim.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 30
+		ShadowStart: 30
+		Tick: 200
+	make: advpwr_mkup.shp
+		UseTilesetCode: false
+	 	AddExtension: false
+		Length: 50
+		ShadowStart: 50
+	icon: advpwr_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
 repairdepot:
 	Defaults:
 		Offset: 0, -43, 5
@@ -316,6 +317,31 @@ repairdepot:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+helipad:
+	Defaults:
+		Offset: 0, -30, 25
+		ZOffset: -1c611
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	dead:
+		Start: 1
+		ShadowStart: 3
+	make: helipad_mkup
+		Length: 45
+		ShadowStart: 45
+	anim-lights: helipad_anim
+		Length: 19
+	damaged-anima: helipad_de_anim
+		Length: 19
+	icon: helipad_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
 
 silo:
 	Defaults:
