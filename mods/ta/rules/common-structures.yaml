@@ -110,7 +110,7 @@ pwrplt:
 		Footprint: xx xx xx
 		Dimensions: 2,3
 	Health:
-		HP: 750
+		HP: 550
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -139,8 +139,8 @@ advpwr:
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: structures.any
+		BuildPaletteOrder: 80
+		Prerequisites: hq
 		Description: 高级发电设施
 	Selectable:
 		Bounds: 252, 188, 4, -32
@@ -154,7 +154,7 @@ advpwr:
 		Footprint: xx= xxx =x=
 		Dimensions: 3,3
 	Health:
-		HP: 1250
+		HP: 700
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -178,102 +178,6 @@ advpwr:
 		Image: advpwr
 		PlayerPalette: green_unit
 
-hq:
-	Inherits: ^BaseBuilding
-	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: structures.any
-		Description: 开启雷达并提供T2科技
-	Selectable:
-		Bounds: 252, 188, 4, -32
-	Valued:
-		Cost: 1000
-	Tooltip:
-		Name: 指挥中心
-	ProvidesPrerequisite:
-		Prerequisite: power
-	Building:
-		Footprint: =x= xxx =x=
-		Dimensions: 3,3
-	Health:
-		HP: 1250
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 4c0
-	WithIdleOverlay@dish:
-		Sequence: idle-dish
-		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
-	WithIdleOverlay@fans:
-		Sequence: idle-fans
-		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
-	Power:
-		Amount: 100
-		RequiresCondition: !power-outage
-	InfiltrateForPowerOutage:
-		Types: SpyInfiltrate
-	AffectedByPowerOutage:
-		Condition: power-outage
-	ScalePowerWithHealth:
-	PowerTooltip:
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	RenderSprites:
-		Image: hq
-		PlayerPalette: green_unit
-
-
-advhq:
-	Inherits: ^BaseBuilding
-	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: structures.any
-		Description: 开启雷达并提供T3科技
-	Selectable:
-		Bounds: 252, 188, 4, -32
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: 高级指挥中心
-	ProvidesPrerequisite:
-		Prerequisite: power
-	Building:
-		Footprint: =x= xxx =x=
-		Dimensions: 3,3
-	Health:
-		HP: 2000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 4c0
-	WithIdleOverlay@dish:
-		Sequence: idle-dish
-		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
-	WithIdleOverlay@fans:
-		Sequence: idle-fans
-		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
-	Power:
-		Amount: 100
-		RequiresCondition: !power-outage
-	InfiltrateForPowerOutage:
-		Types: SpyInfiltrate
-	AffectedByPowerOutage:
-		Condition: power-outage
-	ScalePowerWithHealth:
-	PowerTooltip:
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	RenderSprites:
-		Image: advhq
-		PlayerPalette: green_unit
 
 
 refinery:
@@ -281,7 +185,7 @@ refinery:
 	Inherits@shape: ^3x4Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 20
 		Prerequisites: power
 		Description: 收集并精炼泰伯利亚晶矿
 	Selectable:
@@ -295,8 +199,10 @@ refinery:
 		Dimensions: 3,4
 	Valued:
 		Cost: 1500
+	CustomSellValue:
+		Value: 500
 	Power:
-		Amount: -30
+		Amount: -40
 	StoresResources:
 		PipColor: Green
 		PipCount: 15
@@ -355,22 +261,72 @@ refinery:
 		UseClassicPerspectiveFudge: false
 		CameraPitch: 85
 
+
+hq:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: refinery
+		Description: 开启雷达并提供T2科技
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: 指挥中心
+	ProvidesPrerequisite:
+		Prerequisite: hq
+	Building:
+		Footprint: =x= xxx =x=
+		Dimensions: 3,3
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	WithIdleOverlay@fans:
+		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	Power:
+		Amount: -100
+		RequiresCondition: !power-outage
+	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
+	AffectedByPowerOutage:
+		Condition: power-outage
+	ScalePowerWithHealth:
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: hq
+		PlayerPalette: green_unit
+
+
 repairdepot:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: structures.any
+		BuildPaletteOrder: 60
+		Prerequisites: vehicle_factory
 		Description: 消耗资金维修机械
 	Selectable:
 		Bounds: 144, 88, 5, 0
 	Valued:
-		Cost: 2000
+		Cost: 500
 	Tooltip:
 		Name: 维修平台
 	ProvidesPrerequisite:
-		Prerequisite: repair
+		Prerequisite: repairdepot
 	Reservable:
 	RepairsUnits:
 		HpPerStep: 20

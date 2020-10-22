@@ -71,7 +71,7 @@ warfactory:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: ~structures.any
+		Prerequisites: refinery
 		Description: Produces vehicles.
 	Selectable:
 		Bounds: 196, 178, -6, -48
@@ -79,18 +79,13 @@ warfactory:
 		Cost: 2000
 	Tooltip:
 		Name: GDI War Factory
-	ProvidesPrerequisite@libya:
-		Prerequisite: vehicles.libya
-		Factions: libya
-	ProvidesPrerequisite@russia:
-		Prerequisite: vehicles.russia
-		Factions: russia
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite:
+		Prerequisite: vehicle_factory
 	Building:
 		Footprint: xxx= xxx= xxx= xxx=
 		Dimensions: 4,4
 	Health:
-		HP: 1000
+		HP: 1100
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -130,11 +125,59 @@ warfactory:
 		Sequence: idle-fan
 		RequiresCondition: !build-incomplete
 	Power:
-		Amount: -25
+		Amount: -40
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
+		PlayerPalette: green_unit
+
+
+advhq:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^3x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 100
+		Prerequisites: hq
+		Description: 开启雷达并提供T3科技
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 1800
+	Tooltip:
+		Name: 高级指挥中心
+	ProvidesPrerequisite:
+		Prerequisite: power
+	Building:
+		Footprint: =x= xxx =x=
+		Dimensions: 3,3
+	Health:
+		HP: 1300
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	WithIdleOverlay@fans:
+		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	Power:
+		Amount: -200
+	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
+	AffectedByPowerOutage:
+		Condition: power-outage
+	ScalePowerWithHealth:
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: advhq
 		PlayerPalette: green_unit
