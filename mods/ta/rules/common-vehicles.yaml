@@ -87,9 +87,9 @@ mcv:
 		TransformSounds: constru2.aud, hvydoor1.aud
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
-		Image: amcv
+		Image: omcv
 	RenderVoxels: # TODO: 素材..
-		Image: amcv
+		Image: omcv
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: MCVVoice

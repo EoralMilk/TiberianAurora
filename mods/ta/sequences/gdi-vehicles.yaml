@@ -12,6 +12,12 @@
 		Facings: -32
 		ShadowStart: 32
 
+omcv:
+	Inherits@MC: ^MindControllable
+	icon: mcvicon
+		Offset: 0, 0, 0
+	idle:
+
 gharv:
 	Defaults:
 		Offset: 0,0,15
