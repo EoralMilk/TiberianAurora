@@ -345,6 +345,22 @@ helipad:
 
 silo:
 	Defaults:
-		Offset: 0, -43, 5
-		UseTilesetCode: true
-		ZOffset: -1c511
+		Offset: -8, -23, 25
+		ZRamp: 1
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	dead:
+		Start: 1
+		ShadowStart: 3
+	stages: silo_anim
+		Length: 4
+	make: silo_mkup
+		Length: 23
+		ShadowStart: 23
+	icon: silo_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

@@ -413,3 +413,37 @@ repairdepot:
 	RenderSprites:
 		Image: repairdepot
 		PlayerPalette: green_unit
+
+
+silo:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^2x3Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: structures.any
+		Description: 储存泰伯利亚
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: 储仓
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: silo
+		PlayerPalette: silo
+	StoresResources:
+		PipColor: Green
+		PipCount: 15
+		Capacity: 1000
