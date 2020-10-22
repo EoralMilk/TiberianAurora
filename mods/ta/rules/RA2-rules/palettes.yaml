@@ -204,3 +204,54 @@
 		BaseName: green_vehicle
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+
+	PaletteFromFile@gapc:
+		Name: gapc
+		Filename: gapc.pal
+		ShadowIndex: 1
+	PlayerColorPalette@gpc:
+		BasePalette: gapc
+		BaseName: gapc
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@ghumv:
+		Name: ghumv
+		Filename: ghumv.pal
+		ShadowIndex: 1
+	PlayerColorPalette@humv:
+		BasePalette: ghumv
+		BaseName: ghumv
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@gmmtnk:
+		Name: gmmtnk
+		Filename: gmmtnk.pal
+		ShadowIndex: 1
+	PlayerColorPalette@mmtnk:
+		BasePalette: gmmtnk
+		BaseName: gmmtnk
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@gtank:
+		Name: gtank
+		Filename: gtank.pal
+		ShadowIndex: 1
+	PlayerColorPalette@tank:
+		BasePalette: gtank
+		BaseName: gtank
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@gmlrs:
+		Name: gmlrs
+		Filename: gmlrs.pal
+		ShadowIndex: 1
+	PlayerColorPalette@mlrs:
+		BasePalette: gmlrs
+		BaseName: gmlrs
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31

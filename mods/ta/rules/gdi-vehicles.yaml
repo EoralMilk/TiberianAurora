@@ -37,7 +37,7 @@ ghumv:
 		TurnSpeed: 20
 	RenderSprites:
 		Image: ghumv
-		PlayerPalette: green_vehicle
+		PlayerPalette: ghumv
 	HitShape:
 
 gapc:
@@ -78,7 +78,7 @@ gapc:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gapc
-		PlayerPalette: green_vehicle
+		PlayerPalette: gapc
 	HitShape:
 
 gtank:
@@ -119,7 +119,7 @@ gtank:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gtank
-		PlayerPalette: green_vehicle
+		PlayerPalette: gtank
 	HitShape:
 
 gmlrs:
@@ -156,7 +156,7 @@ gmlrs:
 		Voice: Attack
 	RenderSprites:
 		Image: gmlrs
-		PlayerPalette: green_vehicle
+		PlayerPalette: gmlrs
 	HitShape:
 
 gmmtnk:
@@ -200,7 +200,7 @@ gmmtnk:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gmmtnk
-		PlayerPalette: green_vehicle
+		PlayerPalette: gmmtnk
 	HitShape:
 
 gunboat:
