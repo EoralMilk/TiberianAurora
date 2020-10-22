@@ -1,26 +1,26 @@
-pyle:
+barracks:
 	Inherits: ^BaseBuilding
-	Inherits@shape: ^3x2Shape
+	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.gdi
-		Description: Trains infantry.
+		Description: GDI用于训练步兵的建筑
 	Selectable:
 		Bounds: 134, 132, 0, -28
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Barracks
+		Name: 兵营
 	ProvidesPrerequisite@gdi:
 		Prerequisite: infantry.gdi
 	ProvidesPrerequisite@default:
 		Prerequisite: infantry.any
 	Building:
-		Footprint: xxx xxx
-		Dimensions: 3,2
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
 	Health:
-		HP: 500
+		HP: 600
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -28,20 +28,50 @@ pyle:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
-	Exit@0_n1:
-		SpawnOffset: 170,-810,0
-		ExitCell: 0, -1
-	Exit@0_2:
-		SpawnOffset: -900,220,0
-		ExitCell: 0, 2
-	Exit@2_n1:
-		SpawnOffset: 900,-220,0
-		ExitCell: 2, -1
-	Exit@2_2:
-		SpawnOffset: -170,810,0
-		ExitCell: 2, 2
+	Exit@1:
+		SpawnOffset: -512,768,0
+		ExitCell: 1,2
+		Priority: 2
+	Exit@2:
+		SpawnOffset: -512,768,0
+		ExitCell: 0,2
+		Priority: 2
+	Exit@fallback1:
+		SpawnOffset: 0,724,0
+		ExitCell: 2,2
+	Exit@fallback2:
+		SpawnOffset: 0,724,0
+		ExitCell: 2,1
+	Exit@fallback3:
+		SpawnOffset: 724,0,0
+		ExitCell: 2,0
+	Exit@fallback4:
+		SpawnOffset: 724,0,0
+		ExitCell: 2,-1
+	Exit@fallback5:
+		SpawnOffset: 724,0,0
+		ExitCell: 1,-1
+	Exit@fallback6:
+		SpawnOffset: 0,-724,0
+		ExitCell: 0,-1
+	Exit@fallback7:
+		SpawnOffset: 0,-724,0
+		ExitCell: -1,-1
+	Exit@fallback8:
+		SpawnOffset: 0,-724,0
+		ExitCell: -1,0
+	Exit@fallback9:
+		SpawnOffset: -724,0,0
+		ExitCell: -1,1
+	Exit@fallback10:
+		SpawnOffset: -724,0,0
+		ExitCell: -1,2
+	WithIdleOverlay@anim-flag:
+		Sequence: anim-flag
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	Production:
-		Produces: Infantry
+		Produces: infantry
 	PrimaryBuilding:
 		PrimaryCondition: primary
 		SelectionNotification: PrimaryBuildingSelected
@@ -53,16 +83,13 @@ pyle:
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Infantry
-	WithIdleOverlay@flag:
-		Sequence: idle-flag
-		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
 	Power:
 		Amount: -20
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	RenderSprites:  # TODO: 素材..
-		Image: gapile
+	RenderSprites:
+		Image: barracks
+		PlayerPalette: barracks
 
 
 warfactory:

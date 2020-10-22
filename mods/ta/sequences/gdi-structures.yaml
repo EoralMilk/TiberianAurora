@@ -1,5 +1,27 @@
 
 
+barracks:
+	Defaults:
+		Offset: 0, -45, 25
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	dead:
+		Start: 1
+		ShadowStart: 3
+	anim-flag: barracks_anim_flag
+		Length: 20
+		ShadowStart: 20
+	make: barracks_mkup
+		Length: 45
+		ShadowStart: 45
+	icon: barracks_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
 warfactory:
 	Defaults:
 		Offset: -10, -60, 60
