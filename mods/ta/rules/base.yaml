@@ -63,12 +63,12 @@
 		Categories: Vehicle
 	Voiced:
 		VoiceSet: VehicleVoice
-  WithFacingSpriteBody:
-  RenderSprites:
+  	WithFacingSpriteBody:
+  	RenderSprites:
 
 ^TurretedVehicle:
 	Inherits: ^SpiritVehicle
-  WithSpriteTurret:
+  	WithSpriteTurret:
 	AttackTurreted:
 		Voice: Attack
  	Turreted:
@@ -77,8 +77,8 @@
 	HitShape:
 
 ^AtkFrontalVehicle:
-  Inherits: ^SpiritVehicle
+  	Inherits: ^SpiritVehicle
 	AttackFrontal:
 		Voice: Attack
-  AutoTarget:
+  	AutoTarget:
 	HitShape:
