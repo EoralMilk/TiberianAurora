@@ -131,6 +131,9 @@ Rules:
 
 
 Sequences:
+	ta|sequences/base.yaml
+
+
 	ta|sequences/common-structures.yaml
 	# ta|sequences/common-infantry.yaml
 	# ta|sequences/common-vehicles.yaml

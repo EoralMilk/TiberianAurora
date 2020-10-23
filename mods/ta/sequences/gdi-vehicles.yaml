@@ -1,16 +1,3 @@
-^CommonTank:
-	Defaults: 
-		Offset: 0,0,15
-		UseTilesetCode: false
-	idle: 
-		Facings: -32
-		ShadowStart: 32
-	stand: 
-		Facings: -32
-		ShadowStart: 32
-	run: 
-		Facings: -32
-		ShadowStart: 32
 
 omcv:
 	Inherits@MC: ^MindControllable
