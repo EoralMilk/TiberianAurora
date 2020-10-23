@@ -1,5 +1,5 @@
 ghumv:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -22,26 +22,20 @@ ghumv:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: CRM60
 		LocalOffset: 300,0,870
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 20
 	RenderSprites:
 		Image: ghumv
 		PlayerPalette: ghumv
-	HitShape:
 
 gapc:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -64,25 +58,19 @@ gapc:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: FlakTrackGun
 		LocalOffset: 430,0,1100
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gapc
 		PlayerPalette: gapc
-	HitShape:
 
 gtank:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -105,25 +93,19 @@ gtank:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: 105mm
 		LocalOffset: 1238,0,608
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gtank
 		PlayerPalette: gtank
-	HitShape:
 
 gmlrs:
-	Inherits: ^TAVehicle
+	Inherits: ^AtkFrontalVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -146,21 +128,17 @@ gmlrs:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
 	Armament:
 		Weapon: 155mm
 		LocalOffset: 27,0,1300
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	AttackFrontal:
-		Voice: Attack
 	RenderSprites:
 		Image: gmlrs
 		PlayerPalette: gmlrs
-	HitShape:
 
 gmmtnk:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -183,10 +161,6 @@ gmmtnk:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: 120mmx
 		LocalOffset: 1227,168,800, 1227,-168,800
@@ -195,16 +169,14 @@ gmmtnk:
 		Weapon: MammothTusk
 		LocalOffset: 20,371,866, 20,-371,866
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: gmmtnk
 		PlayerPalette: gmmtnk
-	HitShape:
 
 gunboat:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -227,15 +199,10 @@ gunboat:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament@antiair:
 		Weapon: MammothTusk
 		LocalOffset: 217,195,1365, 217,-195,1365
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 15
 		Offset: 1281,0,0
@@ -244,12 +211,9 @@ gunboat:
 		PlayerPalette: green_unit
 	Voiced:
 		VoiceSet: GunBoatVoice
-	HitShape:
-
-
 
 gdummy:
-	Inherits: ^TAVehicle
+	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20

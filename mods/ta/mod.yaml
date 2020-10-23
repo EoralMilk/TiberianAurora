@@ -87,22 +87,21 @@ MapFolders:
 
 Rules:
 	ta|rules/ai.yaml
+	ta|rules/base.yaml
 
-	ta|rules/common-vehicles.yaml
 	ta|rules/common-structures.yaml
 	ta|rules/common-infantry.yaml
+	ta|rules/common-vehicles.yaml
+	# ta|rules/common-aircraft.yaml
 	
 	ta|rules/gdi-structures.yaml
 	ta|rules/nod-structures.yaml
-
+	# ta|rules/gdi-infantry.yaml
+	# ta|rules/nod-infantry.yaml
 	ta|rules/gdi-vehicles.yaml
 	ta|rules/nod-vehicles.yaml
-
-
 	ta|rules/gdi-aircrafts.yaml
-
-
-
+	# ta|rules/nod-aircrafts.yaml
 
 	### Old RA2 rules
 	ta|rules/RA2-rules/proxy-actors.yaml
@@ -133,14 +132,19 @@ Rules:
 
 Sequences:
 	ta|sequences/common-structures.yaml
+	# ta|sequences/common-infantry.yaml
+	# ta|sequences/common-vehicles.yaml
+	# ta|sequences/common-aircrafts.yaml
+
 	ta|sequences/gdi-structures.yaml
 	ta|sequences/nod-structures.yaml
-
+	# ta|sequences/gdi-infantry.yaml
+	# ta|sequences/nod-infantry.yaml
 	ta|sequences/gdi-vehicles.yaml
 	ta|sequences/nod-vehicles.yaml
-
-
 	ta|sequences/gdi-aircrafts.yaml
+	# ta|sequences/nod-aircrafts.yaml
+
 
 
 

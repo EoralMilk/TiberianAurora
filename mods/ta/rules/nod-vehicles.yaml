@@ -1,5 +1,5 @@
 nbggy:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -22,26 +22,20 @@ nbggy:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: para
 		LocalOffset: 214,0,870
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 20
 	RenderSprites:
 		Image: nbggy
 		PlayerPalette: red_unit
-	HitShape:
 
 ncycle:
-	Inherits: ^TAVehicle
+	Inherits: ^AtkFrontalVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -64,22 +58,17 @@ ncycle:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
 	Armament:
 		Weapon: HoverMissile
 		LocalOffset: -141,123,720, -141,-123,720
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	AttackFrontal:
-		Voice: Attack
 	RenderSprites:
 		Image: ncycle
 		PlayerPalette: red_unit
-	HitShape:
-
 
 ntank:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -102,27 +91,20 @@ ntank:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: 105mm
 		LocalOffset: 939,0,608
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 15
 		Offset: -186,0,0
 	RenderSprites:
 		Image: ntank
 		PlayerPalette: red_unit
-	HitShape:
-
 
 nftnk:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -145,26 +127,19 @@ nftnk:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: 120mmx
 		LocalOffset: 685,300,640, 685,-300,640
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: nftnk
 		PlayerPalette: red_unit
-	HitShape:
-
 
 nhowi:
-	Inherits: ^TAVehicle
+	Inherits: ^AtkFrontalVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -187,22 +162,17 @@ nhowi:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
 	Armament:
 		Weapon: 155mm
 		LocalOffset: 833,0,1960
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	AttackFrontal:
-		Voice: Attack
 	RenderSprites:
 		Image: nhowi
 		PlayerPalette: red_unit
-	HitShape:
-
 
 nstltnk:
-	Inherits: ^TAVehicle
+	Inherits: ^TurretedVehicle
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -225,20 +195,14 @@ nstltnk:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	WithFacingSpriteBody:
-	AttackTurreted:
-		Voice: Attack
-	AutoTarget:
 	Armament:
 		Weapon: MammothTusk
 		LocalOffset: 204,31,808, 204,-31,808
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	WithSpriteTurret:
 	Turreted:
 		TurnSpeed: 15
 		Offset: -216,0,0
 	RenderSprites:
 		Image: nstltnk
 		PlayerPalette: red_unit
-	HitShape:
