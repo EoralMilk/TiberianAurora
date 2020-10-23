@@ -211,13 +211,14 @@ advgtwr:
 	idle:
 		ShadowStart: 2
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 3
 	dead:
-		Start: 2
+		Start: 1
 		ShadowStart: 3
 	turret: advgtwr_tur
 		Facings: 32
+		ShadowStart: 32
 	make: advgtwr_mkup
 		Length: 31
 		ShadowStart: 31

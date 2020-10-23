@@ -420,6 +420,7 @@ VehicleVoice:
 AircraftVoice:
 	Inherits: ^CommonVoice
 	Voices:
+		Die: Get me out of here
 		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir,Aircraft reporting
 
 GunBoatVoice:

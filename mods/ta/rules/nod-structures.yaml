@@ -1,11 +1,260 @@
 
+nhand:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^3x2Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: power, ~structures.nod
+		Description: Nod用于训练步兵的建筑
+	Selectable:
+		Bounds: 134, 132, 0, -28
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Nod之手
+	ProvidesPrerequisite@nod:
+		Prerequisite: infantry.nod
+	ProvidesPrerequisite@default:
+		Prerequisite: infantry.any
+	ProvidesPrerequisite@building:
+		Prerequisite: nhand
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 5c0
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+	Exit@1:
+		SpawnOffset: -512,768,0
+		ExitCell: 1,2
+	Exit@2:
+		SpawnOffset: -512,768,0
+		ExitCell: 0,2
+	WithIdleOverlay@anim-fans:
+		Sequence: anim-fans
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	Production:
+		Produces: infantry
+	PrimaryBuilding:
+		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
+	ProductionBar:
+		ProductionType: Infantry
+	Power:
+		Amount: -20
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: nhand
+		PlayerPalette: green_unit
+
+
+airstrip:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^6x4Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: hq
+		Description: Nod用于为运送前线购买的载具的运输机短时间着陆并卸载的设施。
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: 战地跑道
+	ProvidesPrerequisite@building:
+		Prerequisite: vehicle_factory
+	Building:
+		Footprint: xxx=== xxx=== xxx=== xxx=== 
+		Dimensions: 6,4
+	Health:
+		HP: 1300
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Power:
+		Amount: -40
+	WithIdleOverlay@anim-dish:
+		Sequence: anim-dish
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	WithIdleOverlay@anim-lights:
+		Sequence: anim-lights
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: airstrip
+		PlayerPalette: green_unit
+
+
+ntpl:
+	Inherits: ^BaseBuilding
+	Inherits@shape: ^6x4Shape
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: hq
+		Description: Nod极具宗教色彩的巨型指挥中心，同时还具有完善的弹道核弹发射设施。提供T3科技
+	Selectable:
+		Bounds: 252, 188, 4, -32
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Nod神庙
+	ProvidesPrerequisite:
+		Prerequisite: ntpl
+	Building:
+		Footprint: xxxx== xxxxx= xxxxx= xxxxx= xxxxx= xxxx==
+		Dimensions: 6,6
+	Health:
+		HP: 2000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Power:
+		Amount: -200
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	RenderSprites:
+		Image: ntpl
+		PlayerPalette: red_unit
+
+
+
+ntur:
+	Inherits: ^SupportBuilding
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 20
+		Prerequisites: nhand, ~structures.nod
+		Description: Nod的常规反装甲防御炮塔，适用于对抗装甲单位。
+	Valued:
+		Cost: 700
+	Tooltip:
+		Name: 定点炮塔
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 50, 30, 0, -4
+	Armament:
+		Weapon: 120mm
+		MuzzleSequence: muzzle
+		LocalOffset: 820,0,600
+	WithSpriteTurret:
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
+	WithMuzzleOverlay:
+	AttackTurreted:
+		Voice: Attack
+		RequiresCondition: !build-incomplete
+	Turreted:
+		TurnSpeed: 13
+		InitialFacing: 160
+		PreviewFacing: 160
+		Offset: -11,11,0
+	BodyOrientation:
+		QuantizedFacings: 8
+	WithRangeCircle:
+		Range: 6c0
+		Type: pillbox
+	AutoTarget:
+	RequiresBuildableArea:
+		Adjacent: 5
+	RenderSprites:
+		Image: ntur
+		PlayerPalette: green_unit
+
+
+samsite:
+	Inherits: ^SupportBuilding
+	Inherits@AUTOTARGET: ^AutoTargetAir
+	# Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@shape: ^2x2Shape
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 20
+		Prerequisites: nhand, ~structures.nod
+		Description: 特殊的防空装置，平时发射器处于重装甲的保护之下，当空域内出现敌军飞行器时将自行升起打击敌机。
+	Valued:
+		Cost: 650
+	Tooltip:
+		Name: SAM防空导弹井
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 50, 30, 0, -4
+	Armament:
+		Weapon: RedEye2
+		MuzzleSequence: muzzle
+		LocalOffset: 450,170,700, 450,0,700, 450,-170,700, 390,170,820, 390,0,820, 390,-170,820
+	AttackPopupTurreted:
+		CloseDelay: 50
+		DefaultFacing: 160
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: lowpower
+	WithEmbeddedTurretSpriteBody:
+	WithSpriteBody:
+		Name: base
+		Sequence: base
+		RequiresCondition: !build-incomplete
+	WithMuzzleOverlay:
+	Turreted:
+		TurnSpeed: 10
+		InitialFacing: 160
+		PreviewFacing: 160
+	BodyOrientation:
+		QuantizedFacings: 8
+	WithRangeCircle:
+		Range: 12c0
+		Type: patriot
+	AutoTarget:
+	RequiresBuildableArea:
+		Adjacent: 5
+	RenderSprites:
+		Image: samsite
+		PlayerPalette: red_unit
+
 obelisk:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
-		Prerequisites: ~structures.any
+		Prerequisites: ntpl, ~structures.nod
 		Description: Nod的终极地面防御装置，强大的激光扫射能摧毁一切地面单位。\n 强势对抗：一切地面单位
 	Valued:
 		Cost: 1500

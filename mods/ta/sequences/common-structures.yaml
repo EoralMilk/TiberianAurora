@@ -335,8 +335,10 @@ helipad:
 		ShadowStart: 45
 	anim-lights: helipad_anim
 		Length: 19
-	damaged-anima: helipad_de_anim
+		Tick: 200
+	damaged-anim-lights: helipad_de_anim
 		Length: 19
+		Tick: 200
 	icon: helipad_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

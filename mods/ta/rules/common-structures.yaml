@@ -302,7 +302,6 @@ hq:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
 		Condition: power-outage
-	ScalePowerWithHealth:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -416,7 +415,7 @@ repairdepot:
 
 
 silo:
-	Inherits: ^BaseBuilding
+	Inherits: ^SupportBuilding
 	Inherits@shape: ^2x3Shape
 	Buildable:
 		Queue: Building
