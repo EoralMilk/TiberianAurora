@@ -78,7 +78,7 @@ gtank:
 	turret: gtanktur
 		Facings: -32
 		ShadowStart: 32
-	icon: gtank_icon.png
+	icon: gtank_icon2.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
