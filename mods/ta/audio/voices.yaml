@@ -415,6 +415,7 @@ GenericVoice:
 VehicleVoice:
 	Inherits: ^CommonVoice
 	Voices:
+		Action: Acknowledge,Affirmative,Not a problem,Roger,Roger that,Engage,Over and out
 		Select: Awaiting orders,Ready and waiting,Reporting,Yes sir,Vehicle reporting,Unit reporting
 
 AircraftVoice:

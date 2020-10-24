@@ -206,3 +206,68 @@ nstltnk:
 	RenderSprites:
 		Image: nstltnk
 		PlayerPalette: red_unit
+
+
+meme_obelisker:
+	Inherits: ^AtkFrontalVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+		Description: \n 一个会动的石碑？
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: 突击摩托车
+	Selectable:
+		Priority: 4
+		Bounds: 68, 56, 0, -7
+	Health:
+		HP: 120
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 2
+		Speed: 40
+		Locomotor: tracked
+	RevealsShroud:
+		Range: 8c0
+	ArmamentWithRa2Lase:
+		# Armament:
+		RequiresCondition: !heavilydamaged
+		Weapon: ObeliskLaser
+		LocalOffset: 1347,0,2000
+		ZOffset: 1
+		Duration: 9
+		Width: 140
+		InnerWidth: 80
+	AttackChargesBursts:
+		ChargeLevel: 40
+		ChargingCondition: charging
+	AmbientSound:
+		RequiresCondition: charging
+		SoundFiles: obelpowr.aud
+
+	WithMuzzleOverlay:
+	WithInfantryBody:
+		MinIdleDelay: 1
+		MaxIdleDelay: 2
+		IdleSequences: idle
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+		RequiresCondition: !charging
+	-WithFacingSpriteBody:
+	WithFacingSpriteBody@charg:
+		Sequence: idle
+		RequiresCondition: charging
+	WithChargeBurstsOverlay:
+		Sequence: shoot
+		Palette: green_unit
+		IsPlayerPalette: true
+		RequiresCondition: charging
+	WithRangeCircle:
+		Range: 8c0
+		Type: prismcannon
+	RenderSprites:
+		Image: meme_obelisker
+		PlayerPalette: green_unit

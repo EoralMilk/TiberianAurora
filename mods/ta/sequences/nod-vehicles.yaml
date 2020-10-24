@@ -100,3 +100,34 @@ nstltnk:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+
+
+meme_obelisker:
+	Defaults:
+		Offset: 0,0,15
+		UseTilesetCode: false
+	empty:
+		Length: 0
+	idle:
+		Facings: -32
+		ShadowStart: 896
+	stand:
+		Facings: -32
+		ShadowStart: 896
+	run:
+		Start: 32
+		Facings: -32
+		Length: 12
+		ShadowStart: 928
+		Ticks: 100
+	shoot:
+		Start: 416
+		Facings: -31
+		Length: 15
+		ShadowStart: 1312
+		Ticks: 100
+	icon: obelisk_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
