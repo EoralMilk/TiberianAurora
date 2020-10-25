@@ -24,7 +24,7 @@ HumveeMG:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 
 APCCannon:
@@ -191,7 +191,7 @@ ManyRockets:
 # 	Warhead@1Dam: SpreadDamage
 # 		Damage: 5
 # 		Spread: 200
-# 		DamageTypes: Prone50Percent, TriggerProne
+# 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 HMG-Eff:
 	Inherits: ^MGBulletEff
@@ -215,7 +215,7 @@ HMG-Eff:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 
 

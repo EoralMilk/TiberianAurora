@@ -120,6 +120,22 @@
 		Palette: ra
 		Shadow: true
 		LaunchAngle: 0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
 		ValidTargets: Ground, Water

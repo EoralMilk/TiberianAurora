@@ -24,7 +24,7 @@ BuggyMG:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 
 CycleMissile:
