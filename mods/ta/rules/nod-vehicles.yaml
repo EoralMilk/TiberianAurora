@@ -212,6 +212,17 @@ nstltnk:
 	RenderSprites:
 		Image: nstltnk
 		PlayerPalette: red_unit
+	Cloak:
+		InitialDelay: 90
+		CloakDelay: 90
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Dock, Damage, Heal
+		PauseOnCondition: cloak-force-disabled
+		IsPlayerPalette: true
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
 
 
 meme_obelisker:
