@@ -122,10 +122,10 @@
 		G: 0
 		B: 0
 		A: 140
-	PaletteFromPlayerPaletteWithAlpha@cloak:
-		BaseName: cloak
-		BasePalette: player
-		Alpha: 0.50
+	#PaletteFromPlayerPaletteWithAlpha@cloak:
+	#	BaseName: cloak
+	#	BasePalette: player
+	#	Alpha: 0.50
 	PaletteFromRGBA@invuln:
 		Name: invuln
 		R: 128
@@ -194,6 +194,11 @@
 		BaseName: red_unit
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PaletteFromPlayerPaletteWithAlpha@cloak:
+		BaseName: cloak
+		BasePalette: red_unit
+		Alpha: 0.30
+	##CloakPaletteEffect:
 
 	PaletteFromFile@green_vehicle:
 		Name: green_vehicle
@@ -276,3 +281,7 @@
 		BaseName: silo
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+
+
+
