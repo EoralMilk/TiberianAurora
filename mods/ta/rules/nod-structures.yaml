@@ -29,12 +29,12 @@ nhand:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
-	Exit@0_n1:
+	Exit@n1:
 		SpawnOffset: 800,-2000,0
-		ExitCell: 5, 0
-	Exit@0_2:
+		ExitCell: 2, 2
+	Exit@n2:
 		SpawnOffset: 350,2000,0
-		ExitCell: 0, 5
+		ExitCell: 0, 2
 	WithIdleOverlay@anim-fans:
 		Sequence: anim-fans
 		RequiresCondition: !build-incomplete
@@ -66,7 +66,7 @@ airstrip:
 	Inherits@shape: ^6x4Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 40
 		Prerequisites: hq
 		Description: Nod用于为运送前线购买的载具的运输机短时间着陆并卸载的设施。
 	Selectable:
@@ -129,7 +129,7 @@ ntpl:
 	Inherits@shape: ^6x4Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 100
 		Prerequisites: hq
 		Description: Nod极具宗教色彩的巨型指挥中心，同时还具有完善的弹道核弹发射设施。提供T3科技
 	Selectable:
@@ -218,7 +218,7 @@ samsite:
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Prerequisites: nhand, ~structures.nod
 		Description: 特殊的防空装置，平时发射器处于重装甲的保护之下，当空域内出现敌军飞行器时将自行升起打击敌机。
 	Valued:

@@ -418,7 +418,7 @@ silo:
 	Inherits: ^SupportBuilding
 	Inherits@shape: ^2x3Shape
 	Buildable:
-		Queue: Building
+		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: structures.any
 		Description: 储存泰伯利亚
