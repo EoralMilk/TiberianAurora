@@ -39,3 +39,216 @@ ObeliskLaser:
 		Explosions: laserburnt
 		ValidTargets: Ground
 
+
+^CommonMissile:
+	ReloadDelay: 60
+	Range: 12c0
+	Report: bpatatta.wav
+	Projectile: Missile
+		Blockable: false
+		Shadow: true
+		Image: DRAGON
+		Palette: ra
+		ContrailLength: 12
+		ContrailWidth: 24
+		CruiseAltitude: 4352
+		VerticalRateOfTurn: 55
+		HorizontalRateOfTurn: 55
+		MinimumLaunchAngle: 255
+		MaximumLaunchAngle: 255
+		Speed: 240
+		RangeLimit: 14c409
+		TerrainHeightAware: false
+		AllowSnapping: true
+
+^CommonAAMissile:
+	Inherits: ^CommonMissile
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		Spread: 240
+		Damage: 75
+		ValidTargets: Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 100
+			Rocket: 100
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_bang
+		ImpactSounds: gexp10a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+RedEye:
+	Inherits: ^CommonAAMissile
+	Projectile: Missile
+		Speed: 300
+		-CruiseAltitude: 4000
+
+TowerMissile:
+	Inherits: ^CommonMissile
+	Range: 8c0
+	ReloadDelay: 10
+	Projectile: Missile
+		CruiseAltitude: 3400
+		ContrailLength: 12
+		Arm: 2
+		Inaccuracy: 128
+		HorizontalRateOfTurn: 8
+		RangeLimit: 14c512
+		ContrailColor: D8D8FF
+	Warhead@1Dam: SpreadDamage
+		Spread: 347
+		Damage: 20
+		Versus:
+			Flak: 90
+			Plate: 80
+			Light: 70
+			Medium: 50
+			Heavy: 50
+			Wood: 30
+			Steel: 30
+			Concrete: 20
+			Drone: 80
+			Rocket: 100
+		DamageTypes: ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ImpactSounds: gexpifva.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater
+
+
+^CommonCannon:
+	Projectile: Bullet
+		ContrailLength: 8
+		ContrailWidth: 15
+		ContrailColor: FFD860
+		Speed: 40c0
+		Image: 120mm
+		Palette: ra
+		Shadow: true
+		LaunchAngle: 15
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+TurretCannon:
+	Inherits: ^CommonCannon
+	ReloadDelay: 60
+	Range: 6c0
+	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
+	Projectile: Bullet
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Damage: 75
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+			Drone: 60
+			Rocket: 100
+
+
+^CommonMG:
+	ReloadDelay: 20
+	Range: 4c0
+	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
+	# Projectile: InstantHit
+	# 	Blockable: true
+	Projectile: LaserZap
+		Width: 4
+		Duration: 4
+		UsePlayerColor: false
+		Color: FFD860
+		ZOffset: 2047
+		Blockable: true
+		Inaccuracy: 800
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+		ValidTargets: Ground, Water
+
+^MGBulletEff:
+	ReloadDelay: 20
+	Range: 4c0
+	Projectile: Bullet
+		ContrailLength: 6
+		ContrailWidth: 7
+		ContrailColor: FFD860
+		Inaccuracy: 800
+		Speed: 600
+		Image: bulletsmall
+		Palette: ra
+		Shadow: true
+		LaunchAngle: 0
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+		ValidTargets: Ground, Water
+
+HMG:
+	Inherits: ^CommonMG
+	ReloadDelay: 50
+	Burst: 2
+	BurstDelays: 6
+	Range: 5c512
+	Report: mg_shot.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 5
+		Spread: 200
+
+HMG-Eff:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 50
+	Burst: 6
+	BurstDelays: 4
+	Range: 5c512
+	Report: mg_shot.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 5
+		Spread: 200

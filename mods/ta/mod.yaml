@@ -53,11 +53,15 @@ Packages:
 	# ta
 	ta|speechs
 	ta|content
-	ta|content/structures
 	ta|content/audio
 	ta|content/audio/voice
+	ta|content/effect
+
+	ta|content/structures
 	ta|content/vehicles
 	ta|content/aircrafts
+
+
 
 
 	ta|content/structures/a_pwrplt
@@ -132,6 +136,8 @@ Rules:
 
 Sequences:
 	ta|sequences/base.yaml
+	ta|sequences/misc.yaml
+
 
 
 	ta|sequences/common-structures.yaml

@@ -13,9 +13,9 @@ fact:
 	Selectable:
 		Bounds: 220, 155, 0, -20
 	Health:
-		HP: 1000
+		HP: 2100
 	Armor:
-		Type: Concrete
+		Type: 建筑工厂
 	RevealsShroud:
 		Range: 10c0
 	Valued:
@@ -75,12 +75,6 @@ fact:
 		Prerequisite: structures.any
 	Power:
 		Amount: 0
-	SpawnActorsOnSell@allies: # TIDO: 移除多余的出售单位
-		ActorTypes: e1, e1, e1, engineer
-		Factions: america, germany, england, france, korea
-	SpawnActorsOnSell@soviets:
-		ActorTypes: e2, e2, e2, e2, engineer
-		Factions: cuba, libya, iraq, russia
 	SpawnActorsOnSell@gdi:
 		ActorTypes: e1, e1, e1, engineer
 		Factions: gdi
@@ -97,7 +91,7 @@ pwrplt:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: structures.any
-		Description: 基础发电设施
+		Description: 基础发电设施, 为基地其他建筑提供电力
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -140,8 +134,8 @@ advpwr:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
-		Prerequisites: hq
-		Description: 高级发电设施
+		Prerequisites: hq, ~techlevel.medium
+		Description: 高级发电设施, 效率是普通发电厂的两倍
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -187,7 +181,7 @@ refinery:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power
-		Description: 收集并精炼泰伯利亚晶矿
+		Description: 收集并精炼泰伯利亚晶矿以获取资金\n\n·可以储存1000单位泰伯利亚晶体
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Tooltip:
@@ -205,7 +199,7 @@ refinery:
 		Amount: -40
 	StoresResources:
 		PipColor: Green
-		PipCount: 15
+		PipCount: 10
 		Capacity: 1000
 	Refinery:
 		ShowTicks: True
@@ -269,7 +263,7 @@ hq:
 		Queue: Building
 		BuildPaletteOrder: 70
 		Prerequisites: refinery
-		Description: 开启雷达并提供T2科技
+		Description: 开启雷达并提供高级的生产许可
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -296,12 +290,14 @@ hq:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete
 	Power:
-		Amount: -100
+		Amount: -50
 		RequiresCondition: !power-outage
-	InfiltrateForPowerOutage:
-		Types: SpyInfiltrate
-	AffectedByPowerOutage:
-		Condition: power-outage
+	ProvidesRadar:
+		RequiresCondition: !lowpower
+	RenderDetectionCircle:
+	DetectCloaked:
+		Range: 5c0
+		RequiresCondition: !lowpower
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -316,10 +312,10 @@ helipad:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: hq
-		Description: 提供一个可以维修直升机并为其装弹的停机位，并开启直升机建造序列。
+		Prerequisites: refinery
+		Description: 提供一个可以维修飞行器并为其装弹的停机位。\n开启飞行器建造序列。
 	Valued:
-		Cost: 500
+		Cost: 800
 	Tooltip:
 		Name: 停机坪
 	ProvidesPrerequisite:
@@ -337,7 +333,7 @@ helipad:
 	Selectable:
 		Bounds: 120, 53, 0, -5
 	Health:
-		HP: 500
+		HP: 600
 	Armor:
 		Type: Steel
 	WithIdleOverlay@anim-lights:
@@ -345,11 +341,11 @@ helipad:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete
 	RevealsShroud:
-		Range: 4c0
+		Range: 5c0
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
-		Amount: -20
+		Amount: -10
 	Reservable:
 	Exit@1:
 		SpawnOffset: 0,-256,0
@@ -376,7 +372,7 @@ repairdepot:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: vehicle_factory
-		Description: 消耗资金维修机械
+		Description: 消耗资金来快速维修载具与飞行器
 	Selectable:
 		Bounds: 144, 88, 5, 0
 	Valued:
@@ -394,7 +390,7 @@ repairdepot:
 		Palette: mouse
 		IsPlayerPalette: false
 	Building:
-		Footprint: === === ===
+		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
 	Health:
 		HP: 500
@@ -421,13 +417,13 @@ silo:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: structures.any
-		Description: 储存泰伯利亚
+		Description: 储存1000单位泰伯利亚晶体
 	Selectable:
 		Bounds: 120, 53, 0, -5
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: 储仓
+		Name: 泰伯利亚储仓
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2

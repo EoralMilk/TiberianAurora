@@ -3,7 +3,7 @@ ghumv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~vehicle.gdi
 		Description: \n 搭载重机枪的悍马吉普车。\n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 500
@@ -39,7 +39,7 @@ gapc:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~vehicle.gdi
 		Description: \n 装有重装甲和榴弹发射器的运兵车。\n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 700
@@ -74,7 +74,7 @@ gtank:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~vehicle.gdi
 		Description: \n GDI中型主战坦克，装有105mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 800
@@ -109,7 +109,7 @@ gmlrs:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~vehicle.gdi
 		Description: \n GDI的主力炮兵，能用火箭弹幕对目标区域进行轰炸。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果不佳
 	Valued:
 		Cost: 1200
@@ -142,7 +142,7 @@ gmmtnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~vehicle.gdi
 		Description: \n GDI的重型坦克，装有双联装120mm主炮和猛犸牙飞弹。\n 猛犸牙飞弹可以对空 \n 装甲十分强大。\n \n 强势对抗：一切单位 \n 可以自我修复至生命值的一半
 	Valued:
 		Cost: 1500
@@ -180,7 +180,7 @@ gunboat:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~vehicle.gdi
 		Description: \n GDI的海军主力
 	Valued:
 		Cost: 2000
@@ -214,10 +214,10 @@ gunboat:
 
 gdummy:
 	Inherits: ^Vehicle
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 20
+	# 	Prerequisites: ~vehicle.gdi
 	Valued:
 		Cost: 100
 	Tooltip:
