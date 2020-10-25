@@ -3,7 +3,7 @@ mcv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: ~gaweap, gadept	# TODO:设置gdimcv的建造条件
+		Prerequisites: ~repairdepot
 		Description: Deploys into a Construction Yard.\n	Unarmed
 	Valued:
 		Cost: 3500

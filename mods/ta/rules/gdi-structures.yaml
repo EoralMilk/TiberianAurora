@@ -12,6 +12,8 @@ barracks:
 		Cost: 500
 	Tooltip:
 		Name: 兵营
+	ProvidesPrerequisite@building:
+		Prerequisite: infantry_barracks
 	ProvidesPrerequisite@gdi:
 		Prerequisite: infantry.gdi
 	ProvidesPrerequisite@default:
@@ -67,18 +69,18 @@ warfactory:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: refinery
-		Description: Produces vehicles.
+		Prerequisites: refinery, ~structures.gdi
+		Description: GDI用于生产地面载具的建筑
 	Selectable:
 		Bounds: 196, 178, -6, -48
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: GDI War Factory
+		Name: 战车工厂
 	ProvidesPrerequisite@building:
 		Prerequisite: vehicle_factory
 	ProvidesPrerequisite@vehicle:
-		Prerequisite: Vehicle.GDI
+		Prerequisite: vehicle.gdi
 	Building:
 		Footprint: xxx= xxx= xxx= xxx=
 		Dimensions: 4,4
@@ -139,8 +141,8 @@ advhq:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
-		Prerequisites: hq
-		Description: 开启雷达并提供T3科技
+		Prerequisites: hq, ~structures.gdi
+		Description: 开启雷达并提供最高级生产许可，同时操控天基离子炮。\n\n·提供 超级武器：离子炮打击
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -168,16 +170,34 @@ advhq:
 		PauseOnCondition: build-incomplete
 	Power:
 		Amount: -200
-	InfiltrateForPowerOutage:
-		Types: SpyInfiltrate
-	AffectedByPowerOutage:
-		Condition: power-outage
-	PowerTooltip:
+	ProvidesRadar:
+		RequiresCondition: !lowpower
+	RenderDetectionCircle:
+	DetectCloaked:
+		Range: 5c0
+		RequiresCondition: !lowpower
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
 		Image: advhq
 		PlayerPalette: green_unit
+	# IonCannonPower:
+	# 	PauseOnCondition: lowpower
+	# 	Prerequisites: ~techlevel.superweapons
+	# 	Icon: ioncannon
+	# 	Cursor: ioncannon
+	# 	ChargeInterval: 6750
+	# 	Description: 离子炮打击
+	# 	LongDesc: 命令天基离子炮向目标区域开火\n立即对小范围内的一切单位造成高额伤害
+	# 	BeginChargeSpeechNotification: IonCannonCharging
+	# 	EndChargeSpeechNotification: IonCannonReady
+	# 	SelectTargetSpeechNotification: SelectTarget
+	# 	InsufficientPowerSpeechNotification: InsufficientPower
+	# 	OnFireSound: ion1.aud
+	# 	DisplayRadarPing: True
+	# 	CameraActor: camera.small
+	# 	SupportPowerPaletteOrder: 20
+	# SupportPowerChargeBar:
 
 
 guntower:
@@ -186,7 +206,7 @@ guntower:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 20
-		Prerequisites: barracks, ~structures.gdi
+		Prerequisites: infantry_barracks, ~structures.gdi
 		Description: 内置了重机枪的哨塔
 	Valued:
 		Cost: 500
@@ -203,8 +223,13 @@ guntower:
 		Range: 7c0
 	Selectable:
 		Bounds: 50, 30, 0, -4
-	Armament:
-		Weapon: vulcan2
+	# Armament@shoot1:
+	# 	Weapon: HMG
+	# 	LocalOffset: 500,0,1400
+	# 	MuzzleSequence: muzzle
+	# 	MuzzleSplitFacings: 8
+	Armament@shoot2:
+		Weapon: HMG-Eff
 		LocalOffset: 500,0,1400
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
@@ -227,6 +252,7 @@ guntower:
 		PlayerPalette: green_unit
 
 
+
 advgtwr:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
@@ -234,7 +260,7 @@ advgtwr:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
-		Prerequisites: barracks, ~structures.gdi
+		Prerequisites: infantry_barracks, ~structures.gdi
 		Description: 装载着导弹发射器和整套探测，索敌，瞄准系统的高级防御塔
 	Valued:
 		Cost: 500
@@ -252,7 +278,7 @@ advgtwr:
 	Selectable:
 		Bounds: 50, 30, 0, -4
 	Armament:
-		Weapon: HoverMissileE
+		Weapon: TowerMissile
 		MuzzleSequence: muzzle
 		LocalOffset: 190,35,2800, 190,-35,2800, 190,110,2800, 190,-110,2800
 	WithSpriteTurret:

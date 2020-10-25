@@ -12,6 +12,8 @@ nhand:
 		Cost: 500
 	Tooltip:
 		Name: Nod之手
+	ProvidesPrerequisite@building:
+		Prerequisite: infantry_barracks
 	ProvidesPrerequisite@nod:
 		Prerequisite: infantry.nod
 	ProvidesPrerequisite@default:
@@ -131,7 +133,7 @@ airstrip:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: hq
+		Prerequisites: refinery, ~structures.nod
 		Description: Nod用于为运送前线购买的载具的运输机短时间着陆并卸载的设施。
 	Selectable:
 		Bounds: 252, 188, 4, -32
@@ -151,7 +153,7 @@ airstrip:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 10c0
+		Range: 7c0
 	Power:
 		Amount: -40
 	Exit@1:
@@ -194,8 +196,8 @@ ntpl:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
-		Prerequisites: hq
-		Description: Nod极具宗教色彩的巨型指挥中心，同时还具有完善的弹道核弹发射设施。提供T3科技
+		Prerequisites: hq, ~structures.nod
+		Description: Nod极具宗教色彩的巨型指挥中心，提供最高级许可。\n具有完善的弹道核导弹发射设施.\n\n·提供 超级武器：核弹攻击
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -204,11 +206,15 @@ ntpl:
 		Name: Nod神庙
 	ProvidesPrerequisite:
 		Prerequisite: ntpl
+	RenderDetectionCircle:
+	DetectCloaked:
+		Range: 5c0
+		RequiresCondition: !lowpower
 	Building:
 		Footprint: xxxx== xxxxx= xxxxx= xxxxx= xxxxx= xxxx==
 		Dimensions: 6,6
 	Health:
-		HP: 2000
+		HP: 3000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -229,7 +235,7 @@ ntur:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 20
-		Prerequisites: nhand, ~structures.nod
+		Prerequisites: infantry_barracks, ~structures.nod
 		Description: Nod的常规反装甲防御炮塔，适用于对抗装甲单位。
 	Valued:
 		Cost: 700
@@ -241,13 +247,16 @@ ntur:
 	Health:
 		HP: 400
 	Armor:
-		Type: Steel
+		Type: Heavy
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
 		Bounds: 50, 30, 0, -4
+	RenderDetectionCircle:
+	DetectCloaked:
+		Range: 3c0
 	Armament:
-		Weapon: 120mm
+		Weapon: TurretCannon
 		MuzzleSequence: muzzle
 		LocalOffset: 820,0,600
 	WithSpriteTurret:
@@ -283,7 +292,7 @@ samsite:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
-		Prerequisites: nhand, ~structures.nod
+		Prerequisites: infantry_barracks, ~structures.nod
 		Description: 特殊的防空装置，平时发射器处于重装甲的保护之下，当空域内出现敌军飞行器时将自行升起打击敌机。
 	Valued:
 		Cost: 650
@@ -295,13 +304,13 @@ samsite:
 	Health:
 		HP: 400
 	Armor:
-		Type: Steel
+		Type: Heavy
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
 		Bounds: 120, 53, 0, -5
 	Armament:
-		Weapon: RedEye2
+		Weapon: RedEye
 		MuzzleSequence: muzzle
 		LocalOffset: 450,170,700, 450,0,700, 450,-170,700, 390,170,820, 390,0,820, 390,-170,820
 	AttackPopupTurreted:
@@ -339,7 +348,7 @@ obelisk:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: ntpl, ~structures.nod
-		Description: Nod的终极地面防御装置，强大的激光扫射能摧毁一切地面单位。\n 强势对抗：一切地面单位
+		Description: Nod的终极地面防御装置，其发射的高能激光可以摧毁一切地面目标。\n 强势对抗：一切地面单位
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -350,9 +359,9 @@ obelisk:
 	Selectable:
 		Bounds: 44, 102, 0, -40
 	Health:
-		HP: 600
+		HP: 700
 	Armor:
-		Type: Steel
+		Type: Concrete
 	RevealsShroud:
 		Range: 8c0
 	GrantConditionOnHealth:
@@ -402,5 +411,8 @@ obelisk:
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 		CameraPitch: 85
+	RenderDetectionCircle:
+	DetectCloaked:
+		Range: 5c0
 	RenderSprites:
 		PlayerPalette: red_unit

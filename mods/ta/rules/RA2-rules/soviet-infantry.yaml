@@ -3,11 +3,11 @@ e2:
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Infantry
-		Prerequisites: ~nahand
-		BuildPaletteOrder: 20
-		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	# Buildable:
+	# 	Queue: Infantry
+	# 	Prerequisites: ~nahand
+	# 	BuildPaletteOrder: 20
+	# 	Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 100
 	DeliversCash:
@@ -46,11 +46,11 @@ flakt:
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Infantry
-		Prerequisites: naradr, ~nahand
-		BuildPaletteOrder: 70
-		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+	# Buildable:
+	# 	Queue: Infantry
+	# 	Prerequisites: naradr, ~nahand
+	# 	BuildPaletteOrder: 70
+	# 	Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
 		Cost: 300
 	DeliversCash:
@@ -104,12 +104,12 @@ shk:
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
-		Prerequisites: ~nahand
-		BuildPaletteOrder: 50
-		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
+	# Buildable:
+	# 	Queue: Infantry
+	# 	BuildAtProductionType: Infantry
+	# 	Prerequisites: ~nahand
+	# 	BuildPaletteOrder: 50
+	# 	Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Valued:
 		Cost: 500
 	DeliversCash:
@@ -165,12 +165,12 @@ shk:
 terror:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 90
-		Prerequisites: naradr, ~infantry.cuba
-		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
+	# Buildable:
+	# 	Queue: Infantry
+	# 	BuildAtProductionType: Infantry
+	# 	BuildPaletteOrder: 90
+	# 	Prerequisites: naradr, ~infantry.cuba
+	# 	Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Valued:
 		Cost: 200
 	DeliversCash:
@@ -219,12 +219,12 @@ deso:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 120
-		Prerequisites: naradr, ~infantry.iraq
-		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+	# Buildable:
+	# 	Queue: Infantry
+	# 	BuildAtProductionType: Infantry
+	# 	BuildPaletteOrder: 120
+	# 	Prerequisites: naradr, ~infantry.iraq
+	# 	Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
 	DeliversCash:
@@ -283,12 +283,12 @@ deso:
 ivan:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 110
-		Prerequisites: naradr, ~nahand
-		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
+	# Buildable:
+	# 	Queue: Infantry
+	# 	BuildAtProductionType: Infantry
+	# 	BuildPaletteOrder: 110
+	# 	Prerequisites: naradr, ~nahand
+	# 	Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
 	Valued:
 		Cost: 600
 	DeliversCash:
@@ -331,10 +331,10 @@ ivan:
 
 civan:
 	Inherits: ivan
-	Buildable:
-		BuildPaletteOrder: 180
-		Prerequisites: ~nahand, ~allies.tech.infiltrated
-		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows. Can teleport on anywhere on the map.
+	# Buildable:
+	# 	BuildPaletteOrder: 180
+	# 	Prerequisites: ~nahand, ~allies.tech.infiltrated
+	# 	Description: Specialist for explosives. Can plant a Bomb on anything, even Cows. Can teleport on anywhere on the map.
 	Tooltip:
 		Name: Chrono Ivan
 	Valued:
@@ -357,12 +357,12 @@ civan:
 yuri:
 	Inherits: ^Infantry
 	Inherits@2: ^Parachutable
-	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 160
-		Prerequisites: natech, ~nahand
-		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
+	# Buildable:
+	# 	Queue: Infantry
+	# 	BuildAtProductionType: Infantry
+	# 	BuildPaletteOrder: 160
+	# 	Prerequisites: natech, ~nahand
+	# 	Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
 	Valued:
 		Cost: 1200
 	DeliversCash:
@@ -410,11 +410,11 @@ yuri:
 
 yuripr:
 	Inherits: yuri
-	Buildable:
-		BuildLimit: 1
-		BuildPaletteOrder: 290
-		Prerequisites: ~nahand, ~soviets.tech.infiltrated
-		Description: Psychic infantry. Can mind control enemy units from a great range.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings\n\nMaximum 1 can be trained.
+	# Buildable:
+	# 	BuildLimit: 1
+	# 	BuildPaletteOrder: 290
+	# 	Prerequisites: ~nahand, ~soviets.tech.infiltrated
+	# 	Description: Psychic infantry. Can mind control enemy units from a great range.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings\n\nMaximum 1 can be trained.
 	Tooltip:
 		Name: Yuri Prime
 	Valued:
