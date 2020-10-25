@@ -2,6 +2,7 @@
 # ^SpiritVehicle
 # ^TurretedVehicle
 # ^AtkFrontalVehicle
+# ^CommonAircraft
 ###
 
 ^SpiritVehicle:
@@ -82,3 +83,55 @@
 		Voice: Attack
   	AutoTarget:
 	HitShape:
+
+
+
+^CommonAircraft:
+	Inherits@1: ^ExistsInWorld
+	OwnerLostAction:
+		Action: Kill
+		DeathTypes: BulletDeath
+	Targetable@airborne:
+		TargetTypes: Air
+		RequiresCondition: airborne
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+	Aircraft:
+		Voice: Move
+		AirborneCondition: airborne
+		CanHover: True
+		VTOL: true
+		CanSlide: True
+		CruiseAltitude: 2560
+	HiddenUnderFog:
+		Type: CenterPosition
+	ActorLostNotification:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
+	Guard:
+		Voice: Attack
+	Guardable:
+	MustBeDestroyed:
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.4,1.4,1.4
+	Targetable@ground:
+		RequiresCondition: !airborne
+		TargetTypes: Ground, Vehicle
+	Targetable@REPAIR:
+		RequiresCondition: !airborne && damaged
+		TargetTypes: Repair
+	GrantConditionOnDamageState@DAMAGED:
+		Condition: damaged
+		ValidDamageStates: Light, Medium, Heavy, Critical
+	DeathSounds:
+	AppearsOnRadar:
+		UseLocation: true
+	MapEditorData:
+		Categories: Aircraft

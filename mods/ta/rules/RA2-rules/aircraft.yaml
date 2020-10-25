@@ -18,11 +18,11 @@ shad:
 	WithMuzzleOverlay:
 	Voiced:
 		VoiceSet: NighthawkVoice
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 90
-		Prerequisites: ~gaweap
-		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 90
+	# 	Prerequisites: ~gaweap
+	# 	Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1000
 	RevealsShroud:
@@ -78,10 +78,10 @@ zep:
 		Cost: 2000
 	Tooltip:
 		Name: Kirov Airship
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 90
-		Prerequisites: ~naweap, natech
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 90
+	# 	Prerequisites: ~naweap, natech
 	Selectable:
 		Bounds: 100,60,0,-10
 	Aircraft:
@@ -152,11 +152,11 @@ orca:
 		Cost: 1200
 	Tooltip:
 		Name: Harrier
-	Buildable:
-		Queue: Aircraft
-		BuildPaletteOrder: 10
-		Prerequisites: ~aircraft.harrier
-		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
+	# Buildable:
+	# 	Queue: Aircraft
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: ~aircraft.harrier
+	# 	Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Aircraft:
 		TurnSpeed: 3
 		Speed: 210
@@ -208,9 +208,9 @@ beag:
 	Inherits: orca
 	Tooltip:
 		Name: Black Eagle
-	Buildable:
-		BuildPaletteOrder: 20
-		Prerequisites: ~aircraft.korea
+	# Buildable:
+	# 	BuildPaletteOrder: 20
+	# 	Prerequisites: ~aircraft.korea
 	SpawnActorOnDeath:
 		Actor: beaghusk
 	Armament:

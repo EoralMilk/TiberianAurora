@@ -1,11 +1,11 @@
 smcv:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 80
-		Prerequisites: ~naweap, repairpad
-		Description: Deploys into a Construction Yard.
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 80
+	# 	Prerequisites: ~naweap, repairpad
+	# 	Description: Deploys into a Construction Yard.
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -43,11 +43,11 @@ smcv:
 harv:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 10
-		Prerequisites: ~naweap, refinery
-		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: ~naweap, refinery
+	# 	Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -109,11 +109,11 @@ dron:
 		Cost: 500
 	Tooltip:
 		Name: Terror Drone
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 40
-		Prerequisites: ~naweap
-		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 40
+	# 	Prerequisites: ~naweap
+	# 	Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Mobile:
 		Speed: 150
 		TurnSpeed: 15
@@ -157,11 +157,11 @@ htk:
 		Name: Flak Track
 	Selectable:
 		Bounds: 50, 40, 0, -6
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 30
-		Prerequisites: ~naweap
-		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 30
+	# 	Prerequisites: ~naweap
+	# 	Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 120
 		TurnSpeed: 5
@@ -214,11 +214,11 @@ htnk:
 		Cost: 900
 	Tooltip:
 		Name: Rhino Heavy Tank
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~naweap
-		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 20
+	# 	Prerequisites: ~naweap
+	# 	Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 90
 		TurnSpeed: 5
@@ -267,11 +267,11 @@ apoc:
 		Cost: 1750
 	Tooltip:
 		Name: Apocalypse Tank
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 70
-		Prerequisites: ~naweap, natech
-		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 70
+	# 	Prerequisites: ~naweap, natech
+	# 	Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
 		Speed: 60
 		TurnSpeed: 5
@@ -325,11 +325,11 @@ ttnk:
 		Cost: 1200
 	Tooltip:
 		Name: Tesla Tank
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 50
-		Prerequisites: ~naweap, naradr, ~vehicles.russia
-		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 50
+	# 	Prerequisites: ~naweap, naradr, ~vehicles.russia
+	# 	Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
 		Speed: 75
 		Locomotor: heavytracked
@@ -367,11 +367,11 @@ ttnk:
 dtruck:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 60
-		Prerequisites: naradr, ~vehicles.libya
-		Description: Demolition Truck, actively armed with nuclear explosives.
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 60
+	# 	Prerequisites: naradr, ~vehicles.libya
+	# 	Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:
 		Cost: 1500
 	Tooltip:

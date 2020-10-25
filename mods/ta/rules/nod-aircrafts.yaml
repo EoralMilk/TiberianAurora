@@ -1,0 +1,72 @@
+
+c130:
+	Inherits: ^CommonAircraft
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 10
+		Prerequisites: hq
+	Valued:
+		Cost: 2000
+	-Selectable:
+	Interactable:
+		Bounds: 100,80
+	# RejectsOrders:
+	Tooltip:
+		Name: 运输机
+	Aircraft:
+		CanHover: false
+		Repulsable: false
+		VTOL: false
+		CruiseAltitude: 5800
+		IdleBehavior: LeaveMap
+		TurnSpeed: 3
+		Speed: 288
+	Health:
+		HP: 2000
+	Armor:
+		Type: Heavy
+	WithFacingSpriteBody:
+	-RenderVoxels:
+	RenderSprites:
+		Image: c130
+		PlayerPalette: red_unit
+	Cargo:
+		MaxWeight: 10
+	ParaDrop:
+		DropRange: 4c0
+		ChuteSound: sparadra.wav
+	SpawnActorOnDeath:
+		Actor: c130husk
+	HitShape:
+	BodyOrientation:
+		QuantizedFacings: 64
+	QuantizeFacingsFromSequence:
+	WithShadow:
+		RequiresCondition: airborne
+	WithShadow@2:
+		Offset: 240,480,0
+		RequiresCondition: !airborne
+		ZOffset: -1000
+
+c130husk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: 运输机
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 100
+	-RenderVoxels:
+	-WithVoxelBody:
+	WithFacingSpriteBody:
+	RenderSprites:
+		Image: c130
+		PlayerPalette: red_unit
+	BodyOrientation:
+		QuantizedFacings: 64
+	QuantizeFacingsFromSequence:
+	WithShadow:
+		RequiresCondition: airborne
+	WithShadow@2:
+		Offset: 240,480,0
+		RequiresCondition: !airborne
+		ZOffset: -1000

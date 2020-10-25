@@ -1,11 +1,11 @@
 nacnst:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 1000
-		Prerequisites: ~disabled
-		Description: Allows construction of base structures.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 1000
+	# 	Prerequisites: ~disabled
+	# 	Description: Allows construction of base structures.
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -75,11 +75,11 @@ nacnst:
 napowr:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: ~structures.soviets
-		Description: Provides power for other structures.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: ~structures.soviets
+	# 	Description: Provides power for other structures.
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -117,11 +117,11 @@ napowr:
 nahand:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 20
-		Prerequisites: power, ~structures.soviets
-		Description: Produces infantry.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 20
+	# 	Prerequisites: power, ~structures.soviets
+	# 	Description: Produces infantry.
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -210,11 +210,11 @@ nahand:
 narefn:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 30
-		Prerequisites: power, ~structures.soviets
-		Description: Processes ore into credits.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 30
+	# 	Prerequisites: power, ~structures.soviets
+	# 	Description: Processes ore into credits.
 	Selectable:
 		Bounds: 170, 150, -6, -33
 	Valued:
@@ -267,11 +267,11 @@ narefn:
 naradr:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 60
-		Prerequisites: power, narefn, ~structures.soviets
-		Description: Provides radar.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 60
+	# 	Prerequisites: power, narefn, ~structures.soviets
+	# 	Description: Provides radar.
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -309,11 +309,11 @@ naradr:
 naweap:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^5x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 40
-		Prerequisites: refinery, nahand, ~structures.soviets
-		Description: Produces vehicles.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 40
+	# 	Prerequisites: refinery, nahand, ~structures.soviets
+	# 	Description: Produces vehicles.
 	Selectable:
 		Bounds: 196, 178, -6, -48
 	Valued:
@@ -391,11 +391,11 @@ nayard:
 		Cost: 1000
 	Tooltip:
 		Name: Naval Yard
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 50
-		Prerequisites: power, refinery, ~structures.soviets
-		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 50
+	# 	Prerequisites: power, refinery, ~structures.soviets
+	# 	Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
@@ -519,11 +519,11 @@ nayard:
 nadept:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 70
-		Prerequisites: naweap, ~structures.soviets
-		Description: Repairs vehicles and removes Terror Drones (for a price).
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 70
+	# 	Prerequisites: naweap, ~structures.soviets
+	# 	Description: Repairs vehicles and removes Terror Drones (for a price).
 	Selectable:
 		Bounds: 156, 150, 0, -38
 	Valued:
@@ -565,11 +565,11 @@ nadept:
 nanrct:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 90
-		Prerequisites: natech, ~structures.soviets
-		Description: Provides power for other structures.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 90
+	# 	Prerequisites: natech, ~structures.soviets
+	# 	Description: Provides power for other structures.
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -611,11 +611,11 @@ nanrct:
 natech:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 80
-		Prerequisites: naweap, naradr, ~structures.soviets
-		Description: Allows deployment of advanced units.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 80
+	# 	Prerequisites: naweap, naradr, ~structures.soviets
+	# 	Description: Allows deployment of advanced units.
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -643,12 +643,12 @@ natech:
 naclon:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 100
-		Prerequisites: natech, ~structures.soviets
-		BuildLimit: 1
-		Description: Clones most trained infantry.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 100
+	# 	Prerequisites: natech, ~structures.soviets
+	# 	BuildLimit: 1
+	# 	Description: Clones most trained infantry.
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -712,11 +712,11 @@ naclon:
 napsis:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 60
-		Prerequisites: natech, ~structures.soviets
-		Description: Detects enemy units and strikepoints
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 60
+	# 	Prerequisites: natech, ~structures.soviets
+	# 	Description: Detects enemy units and strikepoints
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -748,12 +748,12 @@ napsis:
 nairon:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 80
-		Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
-		BuildLimit: 1
-		Description: Grants invulnerability to armored units.\nFries fleshy units.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 80
+	# 	Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
+	# 	BuildLimit: 1
+	# 	Description: Grants invulnerability to armored units.\nFries fleshy units.
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -793,12 +793,12 @@ nairon:
 namisl:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 90
-		Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
-		BuildLimit: 1
-		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 90
+	# 	Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
+	# 	BuildLimit: 1
+	# 	Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -854,22 +854,22 @@ namisl:
 
 nawall:
 	Inherits: ^Wall
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 10
-		Prerequisites: barracks, ~structures.soviets
-		Description: Light wall.\nCrushable by vehicles.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: barracks, ~structures.soviets
+	# 	Description: Light wall.\nCrushable by vehicles.
 	Tooltip:
 		Name: Soviet Wall
 
 naflak:
 	Inherits: ^VoxelLighting
 	Inherits@AUTOTARGET: ^AutoTargetAir
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 30
-		Prerequisites: barracks, ~structures.soviets
-		Description: Automated anti-aircraft defense.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 30
+	# 	Prerequisites: barracks, ~structures.soviets
+	# 	Description: Automated anti-aircraft defense.
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -917,11 +917,11 @@ naflak:
 tesla:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 40
-		Prerequisites: naradr, ~structures.soviets
-		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 40
+	# 	Prerequisites: naradr, ~structures.soviets
+	# 	Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -974,11 +974,11 @@ tesla:
 nalasr:
 	Inherits: ^VoxelLighting
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 20
-		Prerequisites: barracks, ~structures.soviets
-		Description: Automated anti-infantry defense.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 20
+	# 	Prerequisites: barracks, ~structures.soviets
+	# 	Description: Automated anti-infantry defense.
 	Valued:
 		Cost: 500
 	Tooltip:

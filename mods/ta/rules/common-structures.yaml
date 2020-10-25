@@ -335,7 +335,7 @@ helipad:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Selectable:
-		Bounds: 96, 98, -2, -24
+		Bounds: 120, 53, 0, -5
 	Health:
 		HP: 500
 	Armor:
@@ -423,7 +423,7 @@ silo:
 		Prerequisites: structures.any
 		Description: 储存泰伯利亚
 	Selectable:
-		Bounds: 252, 188, 4, -32
+		Bounds: 120, 53, 0, -5
 	Valued:
 		Cost: 200
 	Tooltip:

@@ -1,11 +1,11 @@
 gacnst:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 1000
-		Prerequisites: ~disabled
-		Description: Builds base structures.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 1000
+	# 	Prerequisites: ~disabled
+	# 	Description: Builds base structures.
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -84,11 +84,11 @@ gacnst:
 gapowr:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: ~structures.allies
-		Description: Provides power for other structures.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: ~structures.allies
+	# 	Description: Provides power for other structures.
 	Selectable:
 		Bounds: 96, 98, -2, -24
 	Valued:
@@ -126,11 +126,11 @@ gapowr:
 gapile:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 20
-		Prerequisites: power, ~structures.allies
-		Description: Trains infantry.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 20
+	# 	Prerequisites: power, ~structures.allies
+	# 	Description: Trains infantry.
 	Selectable:
 		Bounds: 134, 132, 0, -28
 	Valued:
@@ -194,11 +194,11 @@ gapile:
 garefn:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 30
-		Prerequisites: power, ~structures.allies
-		Description: Processes ore into credits.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 30
+	# 	Prerequisites: power, ~structures.allies
+	# 	Description: Processes ore into credits.
 	Selectable:
 		Bounds: 176, 150, 0, -20
 	Valued:
@@ -251,11 +251,11 @@ garefn:
 gaairc:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 60
-		Prerequisites: garefn, ~structures.allies, ~!structures.america
-		Description: Provides radar\nSupports 4 aircraft.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 60
+	# 	Prerequisites: garefn, ~structures.allies, ~!structures.america
+	# 	Description: Provides radar\nSupports 4 aircraft.
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -340,8 +340,8 @@ amradr:
 	Inherits: gaairc
 	Tooltip:
 		Name: American Airforce Command Headquarters
-	Buildable:
-		Prerequisites: garefn, ~structures.america
+	# Buildable:
+	# 	Prerequisites: garefn, ~structures.america
 	WithSpriteBody:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
@@ -362,11 +362,11 @@ amradr:
 gaweap:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^5x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 40
-		Prerequisites: garefn, gapile, ~structures.allies
-		Description: Produces vehicles.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 40
+	# 	Prerequisites: garefn, gapile, ~structures.allies
+	# 	Description: Produces vehicles.
 	Selectable:
 		Bounds: 212, 158, -7, -28
 	Valued:
@@ -445,11 +445,11 @@ gayard:
 		Cost: 1000
 	Tooltip:
 		Name: Naval Yard
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 50
-		Prerequisites: power, refinery, ~structures.allies
-		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 50
+	# 	Prerequisites: power, refinery, ~structures.allies
+	# 	Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
@@ -570,11 +570,11 @@ gayard:
 gadept:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 70
-		Prerequisites: gaweap, ~structures.allies
-		Description: Repairs vehicles and removes Terror Drones (for a price).
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 70
+	# 	Prerequisites: gaweap, ~structures.allies
+	# 	Description: Repairs vehicles and removes Terror Drones (for a price).
 	Selectable:
 		Bounds: 144, 88, -12, -16
 	Valued:
@@ -616,11 +616,11 @@ gadept:
 gatech:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 80
-		Prerequisites: radar, gaweap, ~structures.allies
-		Description: Allows deployment of advanced units.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 80
+	# 	Prerequisites: radar, gaweap, ~structures.allies
+	# 	Description: Allows deployment of advanced units.
 	Selectable:
 		Bounds: 122, 216, 0, -81
 	Valued:
@@ -650,22 +650,22 @@ gatech:
 
 gawall:
 	Inherits: ^Wall
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 10
-		Prerequisites: barracks, ~structures.allies
-		Description: Light wall.\nCrushable by vehicles.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: barracks, ~structures.allies
+	# 	Description: Light wall.\nCrushable by vehicles.
 	Tooltip:
 		Name: Allied Wall
 
 gapill:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 20
-		Prerequisites: barracks, ~structures.allies
-		Description: Automated anti-infantry defense.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 20
+	# 	Prerequisites: barracks, ~structures.allies
+	# 	Description: Automated anti-infantry defense.
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -704,11 +704,11 @@ gapill:
 nasam:
 	Inherits: ^VoxelLighting
 	Inherits@AUTOTARGET: ^AutoTargetAir
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 30
-		Prerequisites: barracks, ~structures.allies
-		Description: Automated anti-aircraft defense.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 30
+	# 	Prerequisites: barracks, ~structures.allies
+	# 	Description: Automated anti-aircraft defense.
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -758,11 +758,11 @@ gtgcan:
 	Inherits: ^VoxelLighting
 	Inherits@shape: ^2x2Shape
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 50
-		Prerequisites: radar, ~structures.france
-		Description: Automated, long ranged anti-ground defense.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 50
+	# 	Prerequisites: radar, ~structures.france
+	# 	Description: Automated, long ranged anti-ground defense.
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -815,12 +815,12 @@ gtgcan:
 gaorep:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 100
-		Prerequisites: garefn, gatech, ~structures.allies
-		BuildLimit: 1
-		Description: Refines all forms of income by 25%.
+	# Buildable:
+	# 	Queue: Building
+	# 	BuildPaletteOrder: 100
+	# 	Prerequisites: garefn, gatech, ~structures.allies
+	# 	BuildLimit: 1
+	# 	Description: Refines all forms of income by 25%.
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
@@ -847,11 +847,11 @@ gaorep:
 gaspysat:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 70
-		Prerequisites: gatech, ~structures.allies
-		Description: Reveals the entire battlefield.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 70
+	# 	Prerequisites: gatech, ~structures.allies
+	# 	Description: Reveals the entire battlefield.
 	Selectable:
 		Bounds: 96, 98, -4, -30
 	Valued:
@@ -885,11 +885,11 @@ gagap:
 		Cost: 1000
 	Tooltip:
 		Name: Gap Generator
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 60
-		Prerequisites: gatech, ~structures.allies
-		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 60
+	# 	Prerequisites: gatech, ~structures.allies
+	# 	Description: Obscures the enemy's view with shroud.\nRequires power to operate.
 	Selectable:
 		Bounds: 50, 114, -1, -45
 	GrantConditionOnPowerState@LOWPOWER:
@@ -911,12 +911,12 @@ gagap:
 gaweat:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 90
-		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
-		BuildLimit: 1
-		Description: Play God with deadly weather!
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 90
+	# 	Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
+	# 	BuildLimit: 1
+	# 	Description: Play God with deadly weather!
 	Selectable:
 		Bounds: 116, 106, -2, -26
 	Valued:
@@ -941,12 +941,12 @@ gaweat:
 gacsph:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 80
-		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
-		Description: Allows teleporting units in a 3x3 array.
-		BuildLimit: 1
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 80
+	# 	Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
+	# 	Description: Allows teleporting units in a 3x3 array.
+	# 	BuildLimit: 1
 	Selectable:
 		Bounds: 176, 110, -5, -14
 	Valued:
@@ -993,11 +993,11 @@ gacsph:
 atesla:
 	Inherits: ^SupportBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	Buildable:
-		Queue: Support
-		BuildPaletteOrder: 40
-		Prerequisites: power, radar, ~structures.allies
-		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	# Buildable:
+	# 	Queue: Support
+	# 	BuildPaletteOrder: 40
+	# 	Prerequisites: power, radar, ~structures.allies
+	# 	Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1500
 	Tooltip:

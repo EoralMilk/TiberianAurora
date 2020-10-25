@@ -8,7 +8,7 @@ nhand:
 		Prerequisites: power, ~structures.nod
 		Description: Nod用于训练步兵的建筑
 	Selectable:
-		Bounds: 134, 132, 0, -28
+		Bounds: 126, 94, 2, -16
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -17,8 +17,6 @@ nhand:
 		Prerequisite: infantry.nod
 	ProvidesPrerequisite@default:
 		Prerequisite: infantry.any
-	ProvidesPrerequisite@building:
-		Prerequisite: nhand
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -31,12 +29,12 @@ nhand:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
-	Exit@1:
-		SpawnOffset: -512,768,0
-		ExitCell: 1,2
-	Exit@2:
-		SpawnOffset: -512,768,0
-		ExitCell: 0,2
+	Exit@0_n1:
+		SpawnOffset: 800,-2000,0
+		ExitCell: 5, 0
+	Exit@0_2:
+		SpawnOffset: 350,2000,0
+		ExitCell: 0, 5
 	WithIdleOverlay@anim-fans:
 		Sequence: anim-fans
 		RequiresCondition: !build-incomplete
@@ -79,8 +77,10 @@ airstrip:
 		Name: 战地跑道
 	ProvidesPrerequisite@building:
 		Prerequisite: vehicle_factory
+	ProvidesPrerequisite@vehicle:
+		Prerequisite: Vehicle.Nod
 	Building:
-		Footprint: xxx=== xxx=== xxx=== xxx=== 
+		Footprint: ====== ====== ====== ====== 
 		Dimensions: 6,4
 	Health:
 		HP: 1300
@@ -90,6 +90,25 @@ airstrip:
 		Range: 10c0
 	Power:
 		Amount: -40
+	Exit@1:
+		ExitCell: 5,2
+		SpawnOffset: -1024, 0, 0
+	ProductionAirdrop:
+		Produces: Vehicle
+		ActorType: c130
+	# WithBuildingBib:
+	ProductionQueue:
+		Type: Vehicle
+		DisplayOrder: 3
+		Group: Vehicle
+		LowPowerModifier: 300
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionBar:
+		ProductionType: Vehicle
 	WithIdleOverlay@anim-dish:
 		Sequence: anim-dish
 		RequiresCondition: !build-incomplete
@@ -216,7 +235,7 @@ samsite:
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
-		Bounds: 50, 30, 0, -4
+		Bounds: 120, 53, 0, -5
 	Armament:
 		Weapon: RedEye2
 		MuzzleSequence: muzzle

@@ -3,7 +3,7 @@ nbggy:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~Vehicle.Nod
 		Description: \n 搭载机枪的全地形四驱车。\n 速度很快 \n 装甲很脆弱。\n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 300
@@ -39,7 +39,7 @@ ncycle:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~Vehicle.Nod
 		Description: \n 搭载"龙"式导弹的突击摩托车 \n 速度飞快 \n 装甲很脆弱。\n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 500
@@ -72,7 +72,7 @@ ntank:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~Vehicle.Nod
 		Description: \n Nod轻型主战坦克，装有90mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 600
@@ -108,7 +108,7 @@ nftnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~Vehicle.Nod, hq
 		Description: \n 搭载双联装火焰喷射器和大量燃料的重装甲坦克 \n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 800
@@ -143,7 +143,7 @@ nhowi:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~Vehicle.Nod, hq
 		Description: \n Nod的主力炮兵，搭载155mm榴弹炮。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果欠佳
 	Valued:
 		Cost: 1000
@@ -176,7 +176,7 @@ nstltnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~Vehicle.Nod, ntpl
 		Description: \n 这种坦克采用了神秘技术令其可以在肉眼和雷达探测中隐形 \n 不攻击且不受攻击时隐形 \n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 1200
@@ -213,7 +213,7 @@ meme_obelisker:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~gaweap
+		Prerequisites: ~Vehicle.Nod
 		Description: \n 一个会动的石碑？
 	Valued:
 		Cost: 500

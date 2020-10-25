@@ -1,0 +1,29 @@
+
+c130:
+	Defaults: 
+		Offset: 0,0,15
+		UseTilesetCode: false
+	idle: 
+		Facings: 64
+		# ShadowStart: 192
+		# Length: 6
+		# Tick: 150
+	walk:
+		Facings: 64
+		# ShadowStart: 192
+		# Length: 6
+		# Tick: 150
+	stand:
+		Facings: 64
+		# ShadowStart: 192
+		# Length: 6
+		# Tick: 150
+	# shadow:
+	# 	Facings: -32
+	# 	Start: 192
+	# 	Length: 6
+	# 	Tick: 150
+	icon: c17_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

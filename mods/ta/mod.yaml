@@ -101,7 +101,7 @@ Rules:
 	ta|rules/gdi-vehicles.yaml
 	ta|rules/nod-vehicles.yaml
 	ta|rules/gdi-aircrafts.yaml
-	# ta|rules/nod-aircrafts.yaml
+	ta|rules/nod-aircrafts.yaml
 
 	### Old RA2 rules
 	ta|rules/RA2-rules/proxy-actors.yaml
@@ -146,7 +146,7 @@ Sequences:
 	ta|sequences/gdi-vehicles.yaml
 	ta|sequences/nod-vehicles.yaml
 	ta|sequences/gdi-aircrafts.yaml
-	# ta|sequences/nod-aircrafts.yaml
+	ta|sequences/nod-aircrafts.yaml
 
 
 
