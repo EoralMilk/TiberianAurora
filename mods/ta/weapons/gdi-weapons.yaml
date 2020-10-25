@@ -1,0 +1,259 @@
+
+HumveeMG:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 30
+	Burst: 5
+	BurstDelays: 3
+	Range: 5c0
+	Report: mg_shot2.wav
+	Projectile: Bullet
+		Inaccuracy: 500
+		Speed: 600
+	Warhead@1Dam: SpreadDamage
+		Damage: 20
+		Spread: 0c368
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 30
+			Medium: 10
+			Heavy: 10
+			Wood: 20
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne
+
+
+APCCannon:
+	Inherits: ^CommonCannon
+	ReloadDelay: 40
+	Range: 5c0
+	Report: gl_shot.wav
+	Projectile: Bullet
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Damage: 35
+		Spread: 0c512
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 70
+			Light: 75
+			Medium: 35
+			Heavy: 35
+			Wood: 65
+			Steel: 45
+			Concrete: 30
+			Drone: 60
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: small_bang
+
+
+MediumTankCannonAP:
+	Inherits: ^CommonCannon
+	ReloadDelay: 60
+	Range: 5c512
+	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
+	Projectile: Bullet
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Damage: 70
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+			Drone: 60
+			Rocket: 100
+
+
+MammothTankCannon:
+	Inherits: ^CommonCannon
+	ReloadDelay: 80
+	Range: 5c512
+	Burst: 2
+	BurstDelays: 5
+	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
+	Projectile: Bullet
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Damage: 80
+		Spread: 0c674
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+			Drone: 60
+			Rocket: 100
+
+
+MammothTuskMissile:
+	Inherits: ^CommonMissile
+	Range: 5c512
+	Burst: 2
+	BurstDelays: 1
+	ReloadDelay: 60
+	Projectile: Missile
+		CruiseAltitude: 3400
+		ContrailLength: 12
+		Arm: 2
+		Speed: 350
+		Inaccuracy: 300
+		HorizontalRateOfTurn: 8
+		RangeLimit: 14c512
+		ContrailColor: D8D8FF
+	Warhead@1Dam: SpreadDamage
+		Spread: 347
+		Damage: 60
+		Versus:
+			None: 100
+			Flak: 95
+			Plate: 80
+			Light: 100
+			Medium: 80
+			Heavy: 80
+			Wood: 70
+			Steel: 50
+			Concrete: 40
+			Drone: 80
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_grey_explosion
+		ImpactSounds: gexpifva.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater
+
+
+ManyRockets:
+	Inherits: ^CommonCannon
+	ReloadDelay: 160
+	Burst: 6
+	BurstDelays: 3
+	Range: 15c512
+	MinRange: 3c0
+	Report: rocket_shot.wav
+	Projectile: Bullet
+		Speed: 236
+		ContrailLength: 14
+		ContrailWidth: 30
+		Inaccuracy: 900
+		Image: DRAGON
+		LaunchAngle: 180
+	Warhead@1Dam: SpreadDamage
+		Damage: 90
+		Spread: 0c512
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 70
+			Light: 75
+			Medium: 35
+			Heavy: 35
+			Wood: 65
+			Steel: 45
+			Concrete: 30
+			Drone: 60
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_bang
+
+
+# structure
+
+# HMG:
+# 	Inherits: ^CommonMG
+# 	ReloadDelay: 50
+# 	Burst: 2
+# 	BurstDelays: 6
+# 	Range: 5c512
+# 	Report: mg_shot.wav
+# 	Warhead@1Dam: SpreadDamage
+# 		Damage: 5
+# 		Spread: 200
+# 		DamageTypes: Prone50Percent, TriggerProne
+
+HMG-Eff:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 50
+	Burst: 6
+	BurstDelays: 4
+	Range: 6c0
+	Report: mg_shot.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 25
+		Spread: 0c512
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 35
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne
+
+
+
+TowerMissile:
+	Inherits: ^CommonMissile
+	Range: 8c0
+	ReloadDelay: 10
+	Projectile: Missile
+		CruiseAltitude: 3400
+		ContrailLength: 12
+		Arm: 2
+		Speed: 350
+		Inaccuracy: 300
+		HorizontalRateOfTurn: 8
+		RangeLimit: 14c512
+		ContrailColor: D8D8FF
+	Warhead@1Dam: SpreadDamage
+		Spread: 347
+		Damage: 25
+		Versus:
+			Flak: 40
+			Plate: 30
+			Light: 100
+			Medium: 80
+			Heavy: 80
+			Wood: 70
+			Steel: 50
+			Concrete: 40
+			Drone: 80
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ImpactSounds: gexpifva.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater

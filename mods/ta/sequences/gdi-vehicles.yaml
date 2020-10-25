@@ -86,6 +86,15 @@ gtank:
 gmlrs:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
+	idle: gmlrs-alert
+		Facings: -32
+		ShadowStart: 32
+	stand: gmlrs-alert
+		Facings: -32
+		ShadowStart: 32
+	run: gmlrs-alert
+		Facings: -32
+		ShadowStart: 32
 	preparing: gmlrs-prep
 		Facings: -32
 		ShadowStart: 320

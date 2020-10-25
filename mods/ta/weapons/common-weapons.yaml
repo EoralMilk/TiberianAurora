@@ -1,0 +1,126 @@
+
+^CommonMissile:
+	ReloadDelay: 60
+	Range: 12c0
+	Report: bpatatta.wav
+	Projectile: Missile
+		Blockable: false
+		Shadow: true
+		Image: DRAGON
+		Palette: ra
+		ContrailLength: 8
+		ContrailWidth: 24
+		CruiseAltitude: 4352
+		VerticalRateOfTurn: 55
+		HorizontalRateOfTurn: 55
+		MinimumLaunchAngle: 255
+		MaximumLaunchAngle: 255
+		Speed: 100
+		RangeLimit: 14c409
+		TerrainHeightAware: true
+		AllowSnapping: true
+
+^CommonAAMissile:
+	Inherits: ^CommonMissile
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		Spread: 240
+		Damage: 75
+		ValidTargets: Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 100
+			Rocket: 100
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_bang
+		ImpactSounds: gexp10a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+
+^CommonCannon:
+	Projectile: Bullet
+		ContrailLength: 8
+		ContrailWidth: 15
+		ContrailColor: FFD860
+		Speed: 40c0
+		Image: 120mm
+		Palette: ra
+		Shadow: true
+		LaunchAngle: 15
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+
+^CommonMG:
+	ReloadDelay: 20
+	Range: 4c0
+	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
+	# Projectile: InstantHit
+	# 	Blockable: true
+	Projectile: LaserZap
+		Width: 4
+		Duration: 4
+		UsePlayerColor: false
+		Color: FFD860
+		ZOffset: 2047
+		Blockable: true
+		Inaccuracy: 800
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+		ValidTargets: Ground, Water
+
+^MGBulletEff:
+	ReloadDelay: 20
+	Range: 4c0
+	Projectile: Bullet
+		ContrailLength: 6
+		ContrailWidth: 10
+		ContrailColor: FFD860
+		Inaccuracy: 800
+		Speed: 600
+		Image: bulletsmall
+		Palette: ra
+		Shadow: true
+		LaunchAngle: 0
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+		ValidTargets: Ground, Water
+

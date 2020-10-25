@@ -242,7 +242,10 @@ Weapons:
 	ta|weapons/RA2-weapon/zaps.yaml
 
 	####TA weapons
-	ta|weapons/commonweapons.yaml
+	ta|weapons/common-weapons.yaml
+	ta|weapons/gdi-weapons.yaml
+	ta|weapons/nod-weapons.yaml
+
 
 	####Test Weapons
 	ta|weapons/testweapon.yaml

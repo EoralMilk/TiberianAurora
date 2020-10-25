@@ -7,25 +7,27 @@ ghumv:
 		Prerequisites: ~vehicle.gdi
 		Description: \n 搭载重机枪的悍马吉普车。\n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
 	Valued:
-		Cost: 500
+		Cost: 400
 	Tooltip:
 		Name: 重机枪悍马
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 200
+		HP: 160
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 15
-		Speed: 150
+		TurnSpeed: 12
+		Speed: 156
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
 	Armament:
 		Weapon: HumveeMG
 		LocalOffset: 300,0,870
+		Recoil: 33
+		RecoilRecovery: 12
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
@@ -44,29 +46,31 @@ gapc:
 		Prerequisites: ~vehicle.gdi
 		Description: \n 装有重装甲和榴弹发射器的运兵车。\n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
-		Cost: 700
+		Cost: 600
 	Tooltip:
 		Name: 装甲运兵车
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 300
+		HP: 190
 	Armor:
 		Type: Heavy
 	Mobile:
 		TurnSpeed: 5
-		Speed: 125
+		Speed: 132
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
 	Armament:
 		Weapon: APCCannon
 		LocalOffset: 430,0,1100
+		Recoil: 66
+		RecoilRecovery: 18
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 14
+		TurnSpeed: 10
 	RenderSprites:
 		Image: gapc
 		PlayerPalette: gapc
@@ -87,7 +91,7 @@ gtank:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 400
+		HP: 450
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -99,6 +103,8 @@ gtank:
 	Armament:
 		Weapon: MediumTankCannonAP
 		LocalOffset: 1238,0,608
+		Recoil: 128
+		RecoilRecovery: 26
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
@@ -109,32 +115,32 @@ gtank:
 
 gmlrs:
 	Inherits: ^AtkFrontalVehicle
-	Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicle.gdi
 		Description: \n GDI的主力炮兵，能用火箭弹幕对目标区域进行轰炸。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果不佳
 	Valued:
-		Cost: 1200
+		Cost: 1000
 	Tooltip:
 		Name: 多管火箭发射系统
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 200
+		HP: 120
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
-		Speed: 100
+		TurnSpeed: 4
+		Speed: 85
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
 	Armament:
 		Weapon: ManyRockets
-		LocalOffset: 27,0,1300
+		LocalOffset: 27,120,1300, 27,40,1300, 23,90,1350, 27,-120,1300, 27,-40,1300, 23,-90,1350
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	RenderSprites:
@@ -143,7 +149,7 @@ gmlrs:
 
 gmmtnk:
 	Inherits: ^TurretedVehicle
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -157,18 +163,20 @@ gmmtnk:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 800
+		HP: 870
 	Armor:
 		Type: Heavy
 	Mobile:
 		TurnSpeed: 4
-		Speed: 70
+		Speed: 65
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
 	Armament:
 		Weapon: MammothTankCannon
 		LocalOffset: 1227,168,800, 1227,-168,800
+		Recoil: 170
+		RecoilRecovery: 42
 		MuzzleSequence: muzzle
 	Armament@antiair:
 		Weapon: MammothTuskMissile

@@ -77,6 +77,15 @@ nftnk:
 nhowi:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
+	idle: nhowi-alert
+		Facings: -32
+		ShadowStart: 32
+	stand: nhowi-alert
+		Facings: -32
+		ShadowStart: 32
+	run: nhowi-alert
+		Facings: -32
+		ShadowStart: 32
 	preparing: nhowi-prep
 		Facings: -32
 		ShadowStart: 320

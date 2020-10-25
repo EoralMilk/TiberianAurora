@@ -11,7 +11,7 @@ fact:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
 	Selectable:
-		Bounds: 220, 155, 0, -20
+		Bounds: 120, 53, 0, -5
 	Health:
 		HP: 2100
 	Armor:
@@ -93,7 +93,7 @@ pwrplt:
 		Prerequisites: structures.any
 		Description: 基础发电设施, 为基地其他建筑提供电力
 	Selectable:
-		Bounds: 252, 188, 4, -32
+		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -137,7 +137,7 @@ advpwr:
 		Prerequisites: hq, ~techlevel.medium
 		Description: 高级发电设施, 效率是普通发电厂的两倍
 	Selectable:
-		Bounds: 252, 188, 4, -32
+		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -183,7 +183,7 @@ refinery:
 		Prerequisites: power
 		Description: 收集并精炼泰伯利亚晶矿以获取资金\n\n·可以储存1000单位泰伯利亚晶体
 	Selectable:
-		Bounds: 252, 188, 4, -32
+		Bounds: 200, 148, 4, -32
 	Tooltip:
 		Name: 精炼厂
 	ProvidesPrerequisite:
@@ -265,7 +265,7 @@ hq:
 		Prerequisites: refinery
 		Description: 开启雷达并提供高级的生产许可
 	Selectable:
-		Bounds: 252, 188, 4, -32
+		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -413,7 +413,7 @@ repairdepot:
 
 silo:
 	Inherits: ^SupportBuilding
-	Inherits@shape: ^2x3Shape
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 10

@@ -18,7 +18,7 @@ nbggy:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 18
+		TurnSpeed: 14
 		Speed: 170
 		Locomotor: tracked
 	RevealsShroud:
@@ -26,6 +26,8 @@ nbggy:
 	Armament:
 		Weapon: BuggyMG
 		LocalOffset: 214,0,870
+		Recoil: 35
+		RecoilRecovery: 13
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
@@ -51,12 +53,12 @@ ncycle:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 120
+		HP: 110
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 20
-		Speed: 200
+		TurnSpeed: 16
+		Speed: 213
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
@@ -78,14 +80,14 @@ ntank:
 		Prerequisites: ~Vehicle.Nod
 		Description: \n Nod轻型主战坦克，装有90mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 600
+		Cost: 650
 	Tooltip:
 		Name: 轻型坦克
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 300
+		HP: 340
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -97,10 +99,12 @@ ntank:
 	Armament:
 		Weapon: LightTankCannonAP
 		LocalOffset: 939,0,608
+		Recoil: 85
+		RecoilRecovery: 17
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 13
 		Offset: -186,0,0
 	RenderSprites:
 		Image: ntank
@@ -122,7 +126,7 @@ nftnk:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 400
+		HP: 300
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -137,33 +141,33 @@ nftnk:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 5
 	RenderSprites:
 		Image: nftnk
 		PlayerPalette: red_unit
 
 nhowi:
 	Inherits: ^AtkFrontalVehicle
-	Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~Vehicle.Nod, hq
 		Description: \n Nod的主力炮兵，搭载155mm榴弹炮。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果欠佳
 	Valued:
-		Cost: 1000
+		Cost: 700
 	Tooltip:
 		Name: 自行榴弹炮
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 200
+		HP: 100
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
-		Speed: 100
+		TurnSpeed: 4
+		Speed: 85
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
@@ -185,24 +189,24 @@ nstltnk:
 		Prerequisites: ~Vehicle.Nod, ntpl
 		Description: \n 这种坦克采用了神秘技术令其可以在肉眼和雷达探测中隐形 \n 不攻击且不受攻击时隐形 \n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 1200
+		Cost: 1000
 	Tooltip:
 		Name: 以西结之轮
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 300
+		HP: 230
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 7
-		Speed: 100
+		TurnSpeed: 9
+		Speed: 110
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: MammothTusk
+		Weapon: DaggerOfNod
 		LocalOffset: 204,31,808, 204,-31,808
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:

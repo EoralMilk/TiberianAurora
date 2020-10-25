@@ -7,7 +7,7 @@ barracks:
 		Prerequisites: power, ~structures.gdi
 		Description: GDI用于训练步兵的建筑
 	Selectable:
-		Bounds: 144, 88, -12, -16
+		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -144,7 +144,7 @@ advhq:
 		Prerequisites: hq, ~structures.gdi
 		Description: 开启雷达并提供最高级生产许可，同时操控天基离子炮。\n\n·提供 超级武器：离子炮打击
 	Selectable:
-		Bounds: 252, 188, 4, -32
+		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 1800
 	Tooltip:
