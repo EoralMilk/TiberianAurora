@@ -5,7 +5,7 @@ ghumv:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicle.gdi
-		Description: \n 搭载重机枪的悍马吉普车。\n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
+		Description: \n 搭载重机枪的悍马吉普车。\n \n 强势对抗：步兵 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 400
 	Tooltip:

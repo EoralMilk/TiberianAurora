@@ -5,7 +5,7 @@ nbggy:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~Vehicle.Nod
-		Description: \n 搭载机枪的全地形四驱车。\n 速度很快 \n 装甲很脆弱。\n \n 强势对抗：步兵，轻装甲单位 \n 弱势对抗：重装甲单位
+		Description: \n 搭载机枪的全地形四驱车。\n 速度很快 \n 装甲很脆弱。\n \n 强势对抗：步兵 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 300
 	Tooltip:
