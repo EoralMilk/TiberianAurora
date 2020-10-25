@@ -134,7 +134,7 @@ airstrip:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, ~structures.nod
-		Description: Nod用于为运送前线购买的载具的运输机短时间着陆并卸载的设施。
+		Description: Nod用于为运送前线购买的载具的运输机短时间着陆并卸载的设施。\n\n 受停电影响很小
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -153,9 +153,9 @@ airstrip:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 7c0
+		Range: 9c0
 	Power:
-		Amount: -40
+		Amount: -30
 	Exit@1:
 		ExitCell: 5,2
 		SpawnOffset: -1024, 0, 0
@@ -167,7 +167,7 @@ airstrip:
 		Type: Vehicle
 		DisplayOrder: 3
 		Group: Vehicle
-		LowPowerModifier: 300
+		LowPowerModifier: 125
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
 		QueuedAudio: Training

@@ -1,5 +1,6 @@
 ghumv:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -23,19 +24,20 @@ ghumv:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: CRM60
+		Weapon: HumveeMG
 		LocalOffset: 300,0,870
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 20
+		TurnSpeed: 15
 	RenderSprites:
 		Image: ghumv
 		PlayerPalette: ghumv
 
 gapc:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -59,18 +61,19 @@ gapc:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: FlakTrackGun
+		Weapon: APCCannon
 		LocalOffset: 430,0,1100
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 14
 	RenderSprites:
 		Image: gapc
 		PlayerPalette: gapc
 
 gtank:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -94,18 +97,19 @@ gtank:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: 105mm
+		Weapon: MediumTankCannonAP
 		LocalOffset: 1238,0,608
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 10
 	RenderSprites:
 		Image: gtank
 		PlayerPalette: gtank
 
 gmlrs:
 	Inherits: ^AtkFrontalVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -129,7 +133,7 @@ gmlrs:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: 155mm
+		Weapon: ManyRockets
 		LocalOffset: 27,0,1300
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
@@ -139,6 +143,7 @@ gmlrs:
 
 gmmtnk:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -156,27 +161,28 @@ gmmtnk:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 4
 		Speed: 70
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: 120mmx
+		Weapon: MammothTankCannon
 		LocalOffset: 1227,168,800, 1227,-168,800
 		MuzzleSequence: muzzle
 	Armament@antiair:
-		Weapon: MammothTusk
+		Weapon: MammothTuskMissile
 		LocalOffset: 20,371,866, 20,-371,866
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 6
 	RenderSprites:
 		Image: gmmtnk
 		PlayerPalette: gmmtnk
 
 gunboat:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20

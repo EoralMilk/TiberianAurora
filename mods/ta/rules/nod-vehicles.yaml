@@ -1,5 +1,6 @@
 nbggy:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -23,19 +24,20 @@ nbggy:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: para
+		Weapon: BuggyMG
 		LocalOffset: 214,0,870
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 20
+		TurnSpeed: 15
 	RenderSprites:
 		Image: nbggy
 		PlayerPalette: red_unit
 
 ncycle:
 	Inherits: ^AtkFrontalVehicle
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -59,7 +61,7 @@ ncycle:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: HoverMissile
+		Weapon: CycleMissile
 		LocalOffset: -141,123,720, -141,-123,720
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
@@ -69,6 +71,7 @@ ncycle:
 
 ntank:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -92,7 +95,7 @@ ntank:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: 105mm
+		Weapon: LightTankCannonAP
 		LocalOffset: 939,0,608
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
@@ -105,6 +108,7 @@ ntank:
 
 nftnk:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -140,6 +144,7 @@ nftnk:
 
 nhowi:
 	Inherits: ^AtkFrontalVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -163,7 +168,7 @@ nhowi:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: 155mm
+		Weapon: HowitzerCannonHE
 		LocalOffset: 833,0,1960
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
@@ -173,6 +178,7 @@ nhowi:
 
 nstltnk:
 	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20

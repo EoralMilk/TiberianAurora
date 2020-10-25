@@ -152,7 +152,7 @@ advhq:
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
-		Footprint: =x= xxx =x=
+		Footprint: _x_ xxx _x_
 		Dimensions: 3,3
 	Health:
 		HP: 1300
@@ -296,7 +296,7 @@ advgtwr:
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
-		Range: 6c0
+		Range: 8c0
 		Type: pillbox
 	AutoTarget:
 	RequiresBuildableArea:

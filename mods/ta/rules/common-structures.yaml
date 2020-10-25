@@ -273,7 +273,7 @@ hq:
 	ProvidesPrerequisite:
 		Prerequisite: hq
 	Building:
-		Footprint: =x= xxx =x=
+		Footprint: _x_ xxx _x_
 		Dimensions: 3,3
 	Health:
 		HP: 800
@@ -327,6 +327,7 @@ helipad:
 		Prerequisite: aircraft.nod
 		Factions: nod
 	ProvidesPrerequisite@default:
+		Prerequisite: aircraft.any
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -390,7 +391,7 @@ repairdepot:
 		Palette: mouse
 		IsPlayerPalette: false
 	Building:
-		Footprint: _+_ +++ _+_
+		Footprint: === === ===
 		Dimensions: 3,3
 	Health:
 		HP: 500
