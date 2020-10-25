@@ -222,8 +222,8 @@ samsite:
 		MuzzleSequence: muzzle
 		LocalOffset: 450,170,700, 450,0,700, 450,-170,700, 390,170,820, 390,0,820, 390,-170,820
 	AttackPopupTurreted:
-		CloseDelay: 50
-		DefaultFacing: 160
+		CloseDelay: 100
+		DefaultFacing: 128
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: lowpower
 	WithEmbeddedTurretSpriteBody:
@@ -233,11 +233,12 @@ samsite:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 160
-		PreviewFacing: 160
+		TurnSpeed: 5
+		InitialFacing: 32
+		PreviewFacing: 32
+		RealignDelay: -1
 	BodyOrientation:
-		QuantizedFacings: 8
+		QuantizedFacings: 32
 	WithRangeCircle:
 		Range: 12c0
 		Type: patriot

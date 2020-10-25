@@ -126,21 +126,20 @@ samsite:
 	dead:
 		Start: 1
 		ZOffset: -1c611
-	opening:
-		Start: 4
+	opening: samsite_popup-fix
 		Length: 25
-		ShadowStart: 82
+		ShadowStart: 25
 		-ZRamp:
-	closing:
-		ShadowStart: 82
-		Length: 21
-		Frames: 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4
+	closing: samsite_popup-fix
+		ShadowStart: 25
+		Length: 25
+		Frames: 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
 		-ZRamp:
 	idle:
 		Start: 46
 		Facings: 32
 		ShadowStart: 124
-		UseClassicFacings: True
+		# UseClassicFacings: True
 		-ZRamp:
 	base:
 		ZOffset: -1c611
@@ -161,7 +160,7 @@ samsite:
 		Start: 3
 		ShadowStart: 81
 		-ZRamp:
-	make: samsite_mkup-fix
+	make: samsite_mkup-fix2
 		Length: 41
 		ShadowStart: 41
 		ZOffset: -1c611
