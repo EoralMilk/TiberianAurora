@@ -30,12 +30,24 @@ nbggy:
 		RecoilRecovery: 13
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
+	Armament@Casing:
+		Weapon: Buggy-Casing
+		LocalOffset: 0,0,800
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: nbggy
 		PlayerPalette: red_unit
+	GrantConditionOnMovement:
+		Condition: wheelmoving
+	# AmbientSound@idle:
+	# 	SoundFiles: atv_rev0.wav
+	# 	Delay: 0
+	# 	Interval: 0
+	AmbientSound@wheel:
+		SoundFiles: atv_rev1.wav
+		RequiresCondition: wheelmoving
 
 ncycle:
 	Inherits: ^AtkFrontalVehicle
@@ -70,6 +82,15 @@ ncycle:
 	RenderSprites:
 		Image: ncycle
 		PlayerPalette: red_unit
+	GrantConditionOnMovement:
+		Condition: wheelmoving
+	# AmbientSound@idle:
+	# 	SoundFiles: atv_rev0.wav
+	# 	Delay: 0
+	# 	Interval: 0
+	AmbientSound@wheel:
+		SoundFiles: atv_rev2.wav
+		RequiresCondition: wheelmoving
 
 ntank:
 	Inherits: ^TurretedVehicle
@@ -109,6 +130,8 @@ ntank:
 	RenderSprites:
 		Image: ntank
 		PlayerPalette: red_unit
+	GrantConditionOnMovement:
+		Condition: trackmoving
 
 nftnk:
 	Inherits: ^TurretedVehicle
@@ -136,7 +159,7 @@ nftnk:
 	RevealsShroud:
 		Range: 8c0
 	Armament:
-		Weapon: 120mmx
+		Weapon: Devil'sTongue
 		LocalOffset: 685,300,640, 685,-300,640
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
@@ -145,6 +168,8 @@ nftnk:
 	RenderSprites:
 		Image: nftnk
 		PlayerPalette: red_unit
+	GrantConditionOnMovement:
+		Condition: trackmoving
 
 nhowi:
 	Inherits: ^AtkFrontalVehicle
@@ -171,14 +196,19 @@ nhowi:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	Armament:
+	Armament@Casing:
 		Weapon: HowitzerCannonHE
 		LocalOffset: 833,0,1960
 		MuzzleSequence: muzzle
+	Armament:
+		Weapon: Howitzer-Casing
+		LocalOffset: -233,0,600
 	WithMuzzleOverlay:
 	RenderSprites:
 		Image: nhowi
 		PlayerPalette: red_unit
+	GrantConditionOnMovement:
+		Condition: trackmoving
 
 nstltnk:
 	Inherits: ^TurretedVehicle

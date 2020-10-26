@@ -5,7 +5,7 @@ BuggyMG:
 	Burst: 3
 	BurstDelays: 4
 	Range: 5c0
-	Report: mg_shot3.wav
+	Report: buggy_mg_shot.wav
 	Projectile: Bullet
 		Inaccuracy: 500
 		Speed: 600
@@ -26,6 +26,13 @@ BuggyMG:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
+Buggy-Casing:
+	Inherits: ^BulletCasing
+	ReloadDelay: 25
+	Burst: 3
+	BurstDelays: 4
+	Range: 5c0
+	ValidTargets: Ground, Water
 
 CycleMissile:
 	Inherits: ^CommonMissile
@@ -91,6 +98,19 @@ LightTankCannonAP:
 			Concrete: 60
 			Drone: 60
 			Rocket: 100
+
+
+Devil'sTongue:
+	Inherits: ^FlameWeapon
+	ReloadDelay: 45
+	Burst: 20
+	BurstDelays: 1
+	Range: 4c512
+	Projectile: Bullet
+		Inaccuracy: 800
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Spread: 0c914
 
 
 DaggerOfNod:
@@ -166,6 +186,14 @@ HowitzerCannonHE:
 	Warhead@2Eff: CreateEffect
 		Explosions: large_bang
 
+Howitzer-Casing:
+	Inherits: ^ShellCasing
+	ReloadDelay: 120
+	Range: 15c0
+	MinRange: 3c0
+	ValidTargets: Ground, Water
+
+
 # structure
 
 TurretCannon:
@@ -189,6 +217,13 @@ TurretCannon:
 			Concrete: 60
 			Drone: 60
 			Rocket: 100
+
+Turret-Casing:
+	Inherits: ^ShellCasing
+	ReloadDelay: 60
+	Range: 6c0
+	ValidTargets: Ground, Water
+
 
 RedEye:
 	Inherits: ^CommonAAMissile

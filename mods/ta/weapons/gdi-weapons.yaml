@@ -1,4 +1,31 @@
 
+HEGrenade:
+	Inherits: ^CommonCannon
+	ReloadDelay: 50
+	Range: 4c0
+	Report: grenade_throw.wav
+	Projectile: Bullet
+		Image: discus
+		Speed: 182
+	Warhead@1Dam: SpreadDamage
+		Damage: 50
+		Spread: 0c793
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 70
+			Light: 75
+			Medium: 30
+			Heavy: 30
+			Wood: 85
+			Steel: 75
+			Concrete: 45
+			Drone: 60
+			Rocket: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_bang
+
+
 HumveeMG:
 	Inherits: ^MGBulletEff
 	ReloadDelay: 30
@@ -26,6 +53,13 @@ HumveeMG:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
+HumvMG-Casing:
+	Inherits: ^BulletCasing
+	ReloadDelay: 30
+	Burst: 5
+	BurstDelays: 3
+	Range: 5c0
+	ValidTargets: Ground, Water
 
 APCCannon:
 	Inherits: ^CommonCannon
@@ -52,6 +86,11 @@ APCCannon:
 	Warhead@2Eff: CreateEffect
 		Explosions: small_bang
 
+APC-Casing:
+	Inherits: ^ShellCasing
+	ReloadDelay: 40
+	Range: 5c0
+	ValidTargets: Ground, Water
 
 MediumTankCannonAP:
 	Inherits: ^CommonCannon
@@ -75,6 +114,11 @@ MediumTankCannonAP:
 			Drone: 60
 			Rocket: 100
 
+MTank-Casing:
+	Inherits: ^ShellCasing
+	ReloadDelay: 60
+	Range: 5c512
+	ValidTargets: Ground, Water
 
 MammothTankCannon:
 	Inherits: ^CommonCannon
@@ -101,6 +145,13 @@ MammothTankCannon:
 			Drone: 60
 			Rocket: 100
 
+Mammoth-Casing:
+	Inherits: ^ShellCasing
+	ReloadDelay: 80
+	Range: 5c512
+	Burst: 2
+	BurstDelays: 5
+	ValidTargets: Ground, Water
 
 MammothTuskMissile:
 	Inherits: ^CommonMissile
@@ -217,6 +268,13 @@ HMG-Eff:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
+HMG-Casing:
+	Inherits: ^BulletCasing
+	ReloadDelay: 50
+	Burst: 6
+	BurstDelays: 4
+	Range: 6c0
+	ValidTargets: Ground, Water
 
 
 TowerMissile:

@@ -194,6 +194,9 @@ ntur:
 		Weapon: TurretCannon
 		MuzzleSequence: muzzle
 		LocalOffset: 820,0,600
+	Armament@Casing:
+		Weapon: Turret-Casing
+		LocalOffset: 100,300,600
 	WithSpriteTurret:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete
@@ -294,7 +297,7 @@ obelisk:
 	Selectable:
 		Bounds: 44, 102, 0, -40
 	Health:
-		HP: 700
+		HP: 1000
 	Armor:
 		Type: Concrete
 	RevealsShroud:

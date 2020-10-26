@@ -402,6 +402,8 @@
 
 ^SupportBuilding:
 	Inherits: ^BaseBuilding
+	MustBeDestroyed:
+		RequiredForShortGame: false
 	-Capturable:
 	-CaptureNotification:
 	-ShakeOnDeath:
@@ -1075,7 +1077,7 @@
 ^OreDrill:
 	Inherits@1: ^SpriteActor
 	Tooltip:
-		Name: Ore Drill
+		Name: 晶化孢子树
 	WithSpriteBody:
 	Building:
 		Footprint: x

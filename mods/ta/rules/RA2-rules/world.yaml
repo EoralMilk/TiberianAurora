@@ -177,21 +177,21 @@
 		Name: GDI
 		InternalName: gdi
 		Side: TA Faction
-		Description: Global Defense Initiative\nThe GDI is an international military branch of the United Nations tasked\nwith keeping world peace. Commanding the combined forces of the world's\nmost powerful nations, they possess an unmatched arsenal of high-tech weaponry.
+		Description: 全球防御组织\n作为联合国下属的全球性军事盟约，\n全球防御组织旨在守护世界和平。\n全球科技领先的大国们，\n都无私地将最先进的军备贡献出来，\n推动GDI成为世上一支无可匹敌的军事力量。
 	Faction@nod:
 		Name: Nod
 		InternalName: nod
 		Side: TA Faction
-		Description: Brotherhood of Nod\nThe Brotherhood is a religious cult centered around their leader Kane\nand the alien substance Tiberium. They utilize stealth technology\nand guerilla tactics to defeat those who oppose them.
-	ResourceType@Ore:
+		Description: Nod兄弟会\n兄弟会狂热地崇拜着他们的伟大先知凯恩，\n以及泰伯利亚这一神奇而独特的外星存在。\n作为神秘的政教合一的军阀组织，\n兄弟会借由隐形与匿踪科技，\n通过多种多样的游击战法惩戒那些胆敢反抗他们的异教徒。
+	ResourceType@Tiberium:
 		ResourceType: 1
 		Palette: resource
 		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
 		MaxDensity: 12
 		ValuePerUnit: 25
 		Type: Ore
-		Name: Valuable Minerals
-		PipColor: Yellow
+		Name: 泰伯利亚晶体
+		PipColor: Green
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Ore
@@ -202,7 +202,7 @@
 		MaxDensity: 12
 		ValuePerUnit: 50
 		Type: Gems
-		Name: Valuable Minerals
+		Name: 宝石矿
 		PipColor: Red
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false

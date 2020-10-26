@@ -69,6 +69,10 @@ harvester:
 		SearchFromHarvesterRadius: 12
 		HarvestVoice: Move
 		DeliverVoice: Move
+		EmptyCondition: no-tiberium
+	Explodes:
+		RequiresCondition: !no-tiberium
+		Weapon: TiberiumExplosion
 	Health:
 		HP: 1000
 	Armor:

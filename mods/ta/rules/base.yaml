@@ -64,24 +64,42 @@
 		Categories: Vehicle
 	Voiced:
 		VoiceSet: VehicleVoice
-  	WithFacingSpriteBody:
-  	RenderSprites:
+	WithFacingSpriteBody:
+	RenderSprites:
+	# GrantConditionOnMovement:
+	# 	Condition: moving
+	AmbientSound@tank:
+		SoundFiles: tank_rev0.wav
+		Delay: 0
+		Interval: 0
+		RequiresCondition: trackmoving
+	AmbientSound@track:
+		SoundFiles: tank_tracks.wav
+		Delay: 0
+		Interval: 0
+		RequiresCondition: trackmoving
+	AmbientSound@wheel:
+		SoundFiles: jeep_rev.wav
+		Delay: 0
+		Interval: 0
+		RequiresCondition: wheelmoving
+
 
 ^TurretedVehicle:
 	Inherits: ^SpiritVehicle
-  	WithSpriteTurret:
+	WithSpriteTurret:
 	AttackTurreted:
 		Voice: Attack
- 	Turreted:
+	Turreted:
 		TurnSpeed: 20
 	AutoTarget:
 	HitShape:
 
 ^AtkFrontalVehicle:
-  	Inherits: ^SpiritVehicle
+	Inherits: ^SpiritVehicle
 	AttackFrontal:
 		Voice: Attack
-  	AutoTarget:
+		AutoTarget:
 	HitShape:
 
 
@@ -135,3 +153,12 @@
 		UseLocation: true
 	MapEditorData:
 		Categories: Aircraft
+
+^CommonInfantry:
+	Inherits: ^Infantry
+	DamagedByTerrain:
+		Terrain: Ore
+		Damage: 2
+		DamageInterval: 16
+		# DamageTypes: TiberiumDeath
+		# RequiresCondition: !hazmatsuits

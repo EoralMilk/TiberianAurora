@@ -25,17 +25,26 @@ ghumv:
 		Range: 8c0
 	Armament:
 		Weapon: HumveeMG
-		LocalOffset: 300,0,870
+		LocalOffset: 300,0,850
 		Recoil: 33
 		RecoilRecovery: 12
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
+	Armament@Casing:
+		Weapon: HumvMG-Casing
+		LocalOffset: -60,30,840
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
 		Image: ghumv
 		PlayerPalette: ghumv
+	GrantConditionOnMovement:
+		Condition: wheelmoving
+	# AmbientSound@idle:
+	# 	SoundFiles: jeep_rev0.wav
+	# 	Delay: 0
+	# 	Interval: 0
 
 gapc:
 	Inherits: ^TurretedVehicle
@@ -68,12 +77,17 @@ gapc:
 		Recoil: 66
 		RecoilRecovery: 18
 		MuzzleSequence: muzzle
+	Armament@Casing:
+		Weapon: APC-Casing
+		LocalOffset: 60,0,1050
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 10
 	RenderSprites:
 		Image: gapc
 		PlayerPalette: gapc
+	GrantConditionOnMovement:
+		Condition: trackmoving
 
 gtank:
 	Inherits: ^TurretedVehicle
@@ -106,12 +120,17 @@ gtank:
 		Recoil: 128
 		RecoilRecovery: 26
 		MuzzleSequence: muzzle
+	# Armament@Casing:
+	# 	Weapon: MTank-Casing
+	# 	LocalOffset: 1000,0,608
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 10
 	RenderSprites:
 		Image: gtank
 		PlayerPalette: gtank
+	GrantConditionOnMovement:
+		Condition: trackmoving
 
 gmlrs:
 	Inherits: ^AtkFrontalVehicle
@@ -146,6 +165,8 @@ gmlrs:
 	RenderSprites:
 		Image: gmlrs
 		PlayerPalette: gmlrs
+	GrantConditionOnMovement:
+		Condition: trackmoving
 
 gmmtnk:
 	Inherits: ^TurretedVehicle
@@ -187,6 +208,8 @@ gmmtnk:
 	RenderSprites:
 		Image: gmmtnk
 		PlayerPalette: gmmtnk
+	GrantConditionOnMovement:
+		Condition: trackmoving
 
 gunboat:
 	Inherits: ^TurretedVehicle
