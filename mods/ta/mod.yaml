@@ -100,8 +100,8 @@ Rules:
 	
 	ta|rules/gdi-structures.yaml
 	ta|rules/nod-structures.yaml
-	# ta|rules/gdi-infantry.yaml
-	# ta|rules/nod-infantry.yaml
+	ta|rules/gdi-infantry.yaml
+	ta|rules/nod-infantry.yaml
 	ta|rules/gdi-vehicles.yaml
 	ta|rules/nod-vehicles.yaml
 	ta|rules/gdi-aircrafts.yaml
@@ -242,6 +242,10 @@ Weapons:
 	ta|weapons/RA2-weapon/zaps.yaml
 
 	####TA weapons
+	ta|weapons/base-weapons.yaml
+	ta|weapons/effects.yaml
+	ta|weapons/explosions.yaml
+
 	ta|weapons/common-weapons.yaml
 	ta|weapons/gdi-weapons.yaml
 	ta|weapons/nod-weapons.yaml

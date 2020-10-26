@@ -1,4 +1,6 @@
 
+# infantry
+
 HEGrenade:
 	Inherits: ^CommonCannon
 	ReloadDelay: 50
@@ -25,20 +27,47 @@ HEGrenade:
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_bang
 
-
-HumveeMG:
+SniperRF:
 	Inherits: ^MGBulletEff
+	ReloadDelay: 80
+	Burst: 1
+	Range: 11c0
+	Report: sniper_shot.wav
+	Projectile: Bullet
+		Inaccuracy: 10
+		Speed: 1400
+		LaunchAngle: 40
+	Warhead@1Dam: SpreadDamage
+		Damage: 120
+		Spread: 0c68
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 3
+			Medium: 1
+			Heavy: 1
+			Wood: 2
+			Steel: 1
+			Concrete: 1
+			Drone: 100
+			Rocket: 70
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+# vehicle
+
+HumveeMG_damage:
+	Inherits: ^MGDamageMaker
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
 	Range: 5c0
-	Report: mg_shot2.wav
-	Projectile: Bullet
-		Inaccuracy: 500
-		Speed: 600
+	Projectile: Missile
+		Speed: 1000
+		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
 		Damage: 20
-		Spread: 0c368
+		Spread: 0c256
 		Versus:
 			None: 100
 			Flak: 80
@@ -53,6 +82,17 @@ HumveeMG:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
+HumveeMG_eff:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 30
+	Burst: 5
+	BurstDelays: 3
+	Range: 5c0
+	Report: mg_shot2.wav
+	Projectile: Bullet
+		Inaccuracy: 500
+		Speed: 600
+
 HumvMG-Casing:
 	Inherits: ^BulletCasing
 	ReloadDelay: 30
@@ -60,6 +100,7 @@ HumvMG-Casing:
 	BurstDelays: 3
 	Range: 5c0
 	ValidTargets: Ground, Water
+
 
 APCCannon:
 	Inherits: ^CommonCannon
@@ -92,6 +133,7 @@ APC-Casing:
 	Range: 5c0
 	ValidTargets: Ground, Water
 
+
 MediumTankCannonAP:
 	Inherits: ^CommonCannon
 	ReloadDelay: 60
@@ -119,6 +161,7 @@ MTank-Casing:
 	ReloadDelay: 60
 	Range: 5c512
 	ValidTargets: Ground, Water
+
 
 MammothTankCannon:
 	Inherits: ^CommonCannon
@@ -152,6 +195,7 @@ Mammoth-Casing:
 	Burst: 2
 	BurstDelays: 5
 	ValidTargets: Ground, Water
+
 
 MammothTuskMissile:
 	Inherits: ^CommonMissile
@@ -244,13 +288,13 @@ ManyRockets:
 # 		Spread: 200
 # 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
-HMG-Eff:
-	Inherits: ^MGBulletEff
+
+HMG-damage:
+	Inherits: ^MGDamageMaker
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
 	Range: 6c0
-	Report: mg_shot.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 25
 		Spread: 0c512
@@ -267,6 +311,14 @@ HMG-Eff:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+HMG-eff:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 50
+	Burst: 6
+	BurstDelays: 4
+	Range: 6c0
+	Report: mg_shot.wav
 
 HMG-Casing:
 	Inherits: ^BulletCasing

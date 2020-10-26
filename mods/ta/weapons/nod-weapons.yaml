@@ -1,17 +1,24 @@
 
-BuggyMG:
-	Inherits: ^MGBulletEff
+Flamethrower:
+	Inherits: ^FlameWeapon
+
+Chemspray:
+	Inherits: ^FlameWeapon
+
+# vehicle
+
+BuggyMG_damage:
+	Inherits: ^MGDamageMaker
 	ReloadDelay: 25
 	Burst: 3
 	BurstDelays: 4
 	Range: 5c0
-	Report: buggy_mg_shot.wav
-	Projectile: Bullet
-		Inaccuracy: 500
-		Speed: 600
+	Projectile: Missile
+		Speed: 1000
+		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
 		Damage: 25
-		Spread: 0c368
+		Spread: 0c256
 		Versus:
 			None: 100
 			Flak: 80
@@ -26,6 +33,17 @@ BuggyMG:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
+BuggyMG_eff:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 25
+	Burst: 3
+	BurstDelays: 4
+	Range: 5c0
+	Report: buggy_mg_shot.wav
+	Projectile: Bullet
+		Inaccuracy: 500
+		Speed: 600
+
 Buggy-Casing:
 	Inherits: ^BulletCasing
 	ReloadDelay: 25
@@ -33,6 +51,7 @@ Buggy-Casing:
 	BurstDelays: 4
 	Range: 5c0
 	ValidTargets: Ground, Water
+
 
 CycleMissile:
 	Inherits: ^CommonMissile

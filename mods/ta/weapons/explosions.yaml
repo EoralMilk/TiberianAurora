@@ -1,0 +1,35 @@
+
+^DamagingExplosion:
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 40
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+
+
+
+TiberiumExplosion:
+	Inherits: ^DamagingExplosion
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c652
+		Damage: 40
+		Versus:
+			Wood: 70
+			Heavy: 20
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_bang
+	Warhead@4Res: CreateResource
+		AddsResourceType: Ore
+		Size: 3,3

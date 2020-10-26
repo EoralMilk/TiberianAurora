@@ -1,0 +1,177 @@
+
+^CommonMissile:
+	ReloadDelay: 60
+	Range: 12c0
+	Report: bpatatta.wav
+	Projectile: Missile
+		Blockable: false
+		Shadow: true
+		Image: DRAGON
+		Palette: ra
+		ContrailLength: 8
+		ContrailWidth: 24
+		CruiseAltitude: 4352
+		VerticalRateOfTurn: 55
+		HorizontalRateOfTurn: 55
+		MinimumLaunchAngle: 255
+		MaximumLaunchAngle: 255
+		Speed: 100
+		RangeLimit: 14c409
+		TerrainHeightAware: true
+		AllowSnapping: true
+
+^CommonAAMissile:
+	Inherits: ^CommonMissile
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		Spread: 240
+		Damage: 75
+		ValidTargets: Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 100
+			Rocket: 100
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_bang
+		ImpactSounds: gexp10a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+
+^CommonCannon:
+	Projectile: Bullet
+		ContrailLength: 8
+		ContrailWidth: 15
+		ContrailColor: FFD860
+		Speed: 40c0
+		Image: 120mm
+		Palette: ra
+		Shadow: true
+		LaunchAngle: 25
+		ZOffset: 1024
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+
+^MGDamageMaker:
+	ReloadDelay: 20
+	Range: 4c0
+	Projectile: Missile
+		Blockable: true
+		Image: bulletsmall
+		# ContrailLength: 8
+		# ContrailWidth: 24
+		CruiseAltitude: 4352
+		VerticalRateOfTurn: 105
+		HorizontalRateOfTurn: 105
+		MinimumLaunchAngle: 255
+		MaximumLaunchAngle: 255
+		Speed: 1000
+		RangeLimit: 20c409
+		TerrainHeightAware: true
+		AllowSnapping: true
+
+^MGBulletEff:
+	ReloadDelay: 20
+	Range: 4c0
+	Projectile: Bullet
+		ContrailLength: 6
+		ContrailWidth: 10
+		ContrailColor: FFD860
+		Inaccuracy: 800
+		Speed: 600
+		Image: bulletsmall
+		Shadow: true
+		LaunchAngle: 15
+		Blockable: true
+		ZOffset: 4096
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+		Spread: 0
+		Versus:
+			None: 0
+			Flak: 0
+			Plate: 0
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 0
+			Rocket: 0
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+		ValidTargets: Ground
+	Warhead@3EffWater: CreateEffect
+		Explosions: water_piff
+		ValidTargets: Water
+
+
+^FlameWeapon:
+	ValidTargets: Ground, Water, Trees
+	ReloadDelay: 55
+	Range: 3c0
+	Burst: 10
+	BurstDelays: 1
+	InvalidTargets: Wall
+	Report: flamethrower.wav
+	Projectile: Bullet
+		ContrailLength: 5
+		ContrailWidth: 25
+		ContrailColor: DF460C
+		Inaccuracy: 800
+		Speed: 130
+		Image: flameall
+		Palette: ts-anim
+		Shadow: true
+		LaunchAngle: 15
+		ZOffset: 4096
+	Warhead@1Dam: SpreadDamage
+		Spread: 680
+		Damage: 8
+		ValidTargets: Ground, Water, Trees
+		InvalidTargets: Wall
+		Versus:
+			None: 140
+			Flak: 100
+			Plate: 80
+			Light: 35
+			Medium: 10
+			Heavy: 10
+			Wood: 100
+			Steel: 85
+			Concrete: 55
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, FireDeath, Incendiary
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: SmallScorch
+		InvalidTargets: Vehicle, Structure, Wall
+	Warhead@3Eff: CreateEffect
+		Explosions: fire03
+		ImpactSounds: burn-eff.wav
+		ImpactActors: false
+

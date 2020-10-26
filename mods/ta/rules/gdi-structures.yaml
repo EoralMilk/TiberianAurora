@@ -228,11 +228,17 @@ guntower:
 	# 	LocalOffset: 500,0,1400
 	# 	MuzzleSequence: muzzle
 	# 	MuzzleSplitFacings: 8
-	Armament@shoot2:
-		Weapon: HMG-Eff
+	Armament@Damage:
+		Weapon: HMG-damage
+		LocalOffset: 500,0,0
+	Armament@Effect:
+		Weapon: HMG-eff
 		LocalOffset: 500,0,1400
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
+	Armament@Casing:
+		Weapon: HMG-Casing
+		LocalOffset: 300,0,1400
 	AttackTurreted:
 		Voice: Attack
 		RequiresCondition: !build-incomplete

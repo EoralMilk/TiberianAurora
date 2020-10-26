@@ -1,0 +1,90 @@
+
+grenader:
+	Inherits@1: ^CommonInfantry
+	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.gdi
+		BuildPaletteOrder: 10
+		Description: 装备有高爆手榴弹的突击队\n难以命中快速移动的目标 \n\n·强势对抗：步兵、建筑\n·弱势对抗：载具
+	Valued:
+		Cost: 200
+	Armor:
+		Type: Flak
+	Tooltip:
+		Name: 掷弹兵
+	Mobile:
+		Speed: 80
+		Voice: Move
+		Locomotor: foot
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 50
+	Passenger:
+		PipType: Red
+	RevealsShroud:
+		Range: 7c0
+	AttackFrontal:
+		Voice: Attack
+	Armament@primary:
+		Weapon: HEGrenade
+		LocalOffset: 0,0,512
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	AutoTarget:
+		ScanRadius: 4
+	RenderSprites:  # TODO: 素材..
+		Image: e1
+
+sniper:
+	Inherits@1: ^CommonInfantry
+	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.gdi
+		BuildPaletteOrder: 10
+		Description: 装备有狙击步枪的专业射手，擅长远距离射杀敌军步兵 \n需要合适的位置和角度才能命中目标 \n不容易击中移动目标 \n\n·强势对抗：步兵\n·弱势对抗：装甲目标
+	Valued:
+		Cost: 500
+	Armor:
+		Type: Flak
+	Tooltip:
+		Name: 狙击手
+	Mobile:
+		Speed: 55
+		Voice: Move
+		Locomotor: foot
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 50
+	Passenger:
+		PipType: Blue
+	RevealsShroud:
+		Range: 7c0
+	AttackFrontal:
+		Voice: Attack
+	Armament@primary:
+		Weapon: SniperRF
+		LocalOffset: 0,0,672
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	AutoTarget:
+		ScanRadius: 4
+	RenderSprites:  # TODO: 素材..
+		Image: snipe

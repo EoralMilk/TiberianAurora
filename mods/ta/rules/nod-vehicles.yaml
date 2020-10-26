@@ -23,8 +23,11 @@ nbggy:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	Armament:
-		Weapon: BuggyMG
+	Armament@Damage:
+		Weapon: BuggyMG_damage
+		LocalOffset: 214,0,0
+	Armament@Effect:
+		Weapon: BuggyMG_eff
 		LocalOffset: 214,0,870
 		Recoil: 35
 		RecoilRecovery: 13
@@ -160,7 +163,7 @@ nftnk:
 		Range: 8c0
 	Armament:
 		Weapon: Devil'sTongue
-		LocalOffset: 685,300,640, 685,-300,640
+		LocalOffset: 685,300,580, 685,-300,580
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:

@@ -23,9 +23,12 @@ ghumv:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
-	Armament:
-		Weapon: HumveeMG
-		LocalOffset: 300,0,850
+	Armament@Damage:
+		Weapon: HumveeMG_damage
+		LocalOffset: 300,0,2000
+	Armament@Effect:
+		Weapon: HumveeMG_eff
+		LocalOffset: 300,0,0
 		Recoil: 33
 		RecoilRecovery: 12
 		MuzzleSequence: muzzle

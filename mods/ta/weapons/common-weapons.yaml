@@ -1,268 +1,16 @@
-CasingDebris:
-	ReloadDelay: 60
-	Range: 0c764
-	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
-	Projectile: Bullet
-		Speed: 100, 200
-		Inaccuracy: 256
-		LaunchAngle: 91, 140
-		Image: casing
-		Palette: ts-anim
-		Sequences: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-		Shadow: true
-	Warhead@: CreateEffect
-		Explosions: casingscorch, casingscorch2, casingscorch3, casingscorch4, casingscorch5, casingscorch6, casingscorch7
-		ExplosionPalette: ts-anim
-		ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-		InvalidTargets: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: water_piff
-		ValidTargets: Water
-		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
 
-ShellCasingDebris:
-	Inherits: CasingDebris
-	MinRange: 0c512
-	Range: 1c764
-	Projectile: Bullet
-		Speed: 75, 125
-		Inaccuracy: 256
-		LaunchAngle: 91, 140
-		Image: shellcasing
-		Palette: ts-anim
-	Warhead@: CreateEffect
-		ExplosionPalette: ts-anim
-		Explosions: shellcasingscorch, shellcasingscorch2, shellcasingscorch3, shellcasingscorch4, shellcasingscorch5, shellcasingscorch6, shellcasingscorch7
-	Warhead@3EffWater: CreateEffect
-		Explosions: tiny_watersplash
-		ValidTargets: Water
-		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-
-
-^ShellCasing:
-	Inherits: ^BulletCasing
-	Projectile: Missile
-		Blockable: false
-		VerticalRateOfTurn: 55
-		HorizontalRateOfTurn: 55
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		Speed: 275
-		Inaccuracy: 556
-		LaunchAngle: 91, 140
-		Image: shellcasing
-		Palette: ts-anim
-		RangeLimit: 1c0
-		TerrainHeightAware: false
-		AllowSnapping: false
-	Warhead@: CreateEffect
-		ExplosionPalette: ts-anim
-		Explosions: shellcasingscorch, shellcasingscorch2, shellcasingscorch3, shellcasingscorch4, shellcasingscorch5, shellcasingscorch6, shellcasingscorch7
-	Warhead@3EffWater: CreateEffect
-		Explosions: tiny_watersplash
-		ValidTargets: Water
-		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-
-^BulletCasing:
-	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
-	Projectile: Missile
-		Blockable: false
-		Speed: 300
-		Inaccuracy: 656
-		LaunchAngle: 91, 140
-		Image: casing
-		Palette: ts-anim
-		Sequences: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-		Shadow: true
-		VerticalRateOfTurn: 55
-		HorizontalRateOfTurn: 55
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		RangeLimit: 1c0
-		TerrainHeightAware: false
-		AllowSnapping: false
-	Warhead@: CreateEffect
-		Explosions: casingscorch, casingscorch2, casingscorch3, casingscorch4, casingscorch5, casingscorch6, casingscorch7
-		ExplosionPalette: ts-anim
-		ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-		InvalidTargets: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: water_piff
-		ValidTargets: Water
-		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-
-
-^CommonMissile:
-	ReloadDelay: 60
-	Range: 12c0
-	Report: bpatatta.wav
-	Projectile: Missile
-		Blockable: false
-		Shadow: true
-		Image: DRAGON
-		Palette: ra
-		ContrailLength: 8
-		ContrailWidth: 24
-		CruiseAltitude: 4352
-		VerticalRateOfTurn: 55
-		HorizontalRateOfTurn: 55
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		Speed: 100
-		RangeLimit: 14c409
-		TerrainHeightAware: true
-		AllowSnapping: true
-
-^CommonAAMissile:
-	Inherits: ^CommonMissile
-	ValidTargets: Air
-	Warhead@1Dam: SpreadDamage
-		Spread: 240
-		Damage: 75
-		ValidTargets: Air
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
-			Medium: 100
-			Heavy: 100
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-			Drone: 100
-			Rocket: 100
-		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: small_bang
-		ImpactSounds: gexp10a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-
-
-^CommonCannon:
-	Projectile: Bullet
-		ContrailLength: 8
-		ContrailWidth: 15
-		ContrailColor: FFD860
-		Speed: 40c0
-		Image: 120mm
-		Palette: ra
-		Shadow: true
-		LaunchAngle: 25
-		ZOffset: 1024
-	Warhead@1Dam: SpreadDamage
-		Spread: 128
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
-		ImpactSounds: gexp14a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-
-
-^MGBulletEff:
-	ReloadDelay: 20
-	Range: 4c0
-	Projectile: Bullet
-		ContrailLength: 6
-		ContrailWidth: 10
-		ContrailColor: FFD860
-		Inaccuracy: 800
-		Speed: 600
-		Image: bulletsmall
-		Shadow: true
-		LaunchAngle: 0
-		Blockable: true
-		ZOffset: 4096
-	Warhead@1Dam: SpreadDamage
-		Spread: 64
-		Damage: 20
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 50
-			Medium: 25
-			Heavy: 25
-			Wood: 75
-			Steel: 50
-			Concrete: 25
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		ValidTargets: Ground, Water
-
-^FlameWeapon:
-	ValidTargets: Ground, Water, Trees
-	ReloadDelay: 55
-	Range: 3c0
-	Burst: 10
-	BurstDelays: 1
-	InvalidTargets: Wall
-	Report: flamethrower.wav
-	Projectile: Bullet
-		ContrailLength: 5
-		ContrailWidth: 25
-		ContrailColor: DF460C
-		Inaccuracy: 800
-		Speed: 130
-		Image: flameall
-		Palette: ts-anim
-		Shadow: true
-		LaunchAngle: 15
-		ZOffset: 4096
-	Warhead@1Dam: SpreadDamage
-		Spread: 680
-		Damage: 8
-		ValidTargets: Ground, Water, Trees
-		InvalidTargets: Wall
-		Versus:
-			None: 140
-			Flak: 100
-			Plate: 80
-			Light: 35
-			Medium: 10
-			Heavy: 10
-			Wood: 100
-			Steel: 85
-			Concrete: 55
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, FireDeath, Incendiary
-	Warhead@2Smu: LeaveSmudge
-		SmudgeType: SmallScorch
-		InvalidTargets: Vehicle, Structure, Wall
-	Warhead@3Eff: CreateEffect
-		Explosions: fire03
-		ImpactSounds: burn-eff.wav
-		ImpactActors: false
-
-
-
-GAU-3:
-	Inherits: ^MGBulletEff
+GAU-3_damage:
+	Inherits: ^MGDamageMaker
 	ReloadDelay: 30
 	Burst: 4
 	BurstDelays: 3
 	Range: 4c512
-	Report: chain_shot.wav
-	Projectile: Bullet
-		ContrailLength: 8
-		ContrailWidth: 10
-		ContrailColor: FFD860
-		Inaccuracy: 400
+	Projectile: Missile
+		Speed: 1000
+		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
 		Damage: 12
-		Spread: 0c512
+		Spread: 0c256
 		Versus:
 			None: 100
 			Flak: 80
@@ -276,6 +24,21 @@ GAU-3:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+GAU-3_eff:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 30
+	Burst: 4
+	BurstDelays: 3
+	Range: 4c512
+	Report: chain_shot.wav
+	Projectile: Bullet
+		ContrailLength: 8
+		ContrailWidth: 10
+		ContrailColor: FFD860
+		Inaccuracy: 400
+
+
 
 GAU-Casing:
 	Inherits: ^BulletCasing
@@ -310,38 +73,3 @@ APBazooka:
 			Rocket: 100
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_bang
-
-^DamagingExplosion:
-	Warhead@1Dam: SpreadDamage
-		Spread: 426
-		Damage: 40
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-
-
-
-TiberiumExplosion:
-	Inherits: ^DamagingExplosion
-	Warhead@1Dam: SpreadDamage
-		Spread: 0c652
-		Damage: 40
-		Versus:
-			Wood: 70
-			Heavy: 20
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: large_bang
-	Warhead@4Res: CreateResource
-		AddsResourceType: Ore
-		Size: 3,3

@@ -160,5 +160,8 @@
 		Terrain: Ore
 		Damage: 2
 		DamageInterval: 16
-		# DamageTypes: TiberiumDeath
-		# RequiresCondition: !hazmatsuits
+		DamageTypes: BulletDeath  #TiberiumDeath
+		RequiresCondition: !hazmatsuits
+	TakeCover:
+		SpeedModifier: 50
+		ProneOffset: 400,0,0

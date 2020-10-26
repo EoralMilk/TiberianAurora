@@ -7,23 +7,32 @@ mngunner:
 		Queue: Infantry
 		Prerequisites: ~infantry.any
 		BuildPaletteOrder: 10
-		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles
+		Description: 装备轻机枪的常规步兵\n\n·强势对抗：步兵\n·弱势对抗：载具
 	Valued:
 		Cost: 100
+	Armor:
+		Type: Flak
 	Tooltip:
 		Name: 机枪兵
+	Mobile:
+		Speed: 60
+		Voice: Move
+		Locomotor: foot
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 50
 	Passenger:
-		PipType: Green
+		PipType: Gray
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary:
-		Weapon: GAU-3
+		Weapon: GAU-3_damage
+		LocalOffset: 0,0,0
+	Armament@primary_eff:
+		Weapon: GAU-3_eff
 		LocalOffset: 0,0,512
 	Armament@Casing:
 		Weapon: GAU-Casing
@@ -49,17 +58,23 @@ bazoker:
 		Queue: Infantry
 		Prerequisites: ~infantry.any
 		BuildPaletteOrder: 10
-		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles
+		Description: 装备反装甲火箭筒的步兵 \n护甲较弱 \n可以对空 \n\n·强势对抗：载具、飞行器 \n·弱势对抗：步兵
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: 反坦克兵
+		Name: 反装甲兵
+	Armor:
+		Type: None
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 125
+		HP: 50
+	Mobile:
+		Speed: 48
+		Voice: Move
+		Locomotor: foot
 	Passenger:
-		PipType: Green
+		PipType: Blue
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -81,3 +96,50 @@ bazoker:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
 		Image: flakt
+
+eng:
+	Inherits: ^CommonInfantry
+	Inherits@2: ^Parachutable
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.any
+		BuildPaletteOrder: 10
+		Description: 功能型步兵\n可维修友军建筑或占领中立、敌方建筑\n\n·无武装
+	Valued:
+		Cost: 500
+	DeliversCash:
+		Payload: 250
+		PlayerExperience: 25
+		Voice: Move
+	Tooltip:
+		Name: 工程师
+	Mobile:
+		Speed: 50
+		Voice: Move
+		Locomotor: foot
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 45
+	Passenger:
+		PipType: Yellow
+	EngineerRepair:
+	RepairsBridges:
+		RepairNotification: BridgeRepaired
+	Captures:
+		CaptureTypes: building, husk
+	RevealsShroud:
+		Range: 4c0
+	Voiced:
+		VoiceSet: EngineerVoice
+	Guard:
+		Voice: Action
+	AttackMove:
+		Voice: Action
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: stand
+	CaptureManager:
+	RenderSprites:  # TODO: 素材..
+		Image: engineer
