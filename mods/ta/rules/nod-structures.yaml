@@ -182,7 +182,7 @@ ntur:
 	Health:
 		HP: 400
 	Armor:
-		Type: Heavy
+		Type: Steel
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
@@ -242,7 +242,7 @@ samsite:
 	Health:
 		HP: 400
 	Armor:
-		Type: Heavy
+		Type: Steel
 	RevealsShroud:
 		Range: 7c0
 	Selectable:

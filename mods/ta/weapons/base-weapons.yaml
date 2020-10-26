@@ -150,7 +150,7 @@
 		LaunchAngle: 15
 		ZOffset: 4096
 	Warhead@1Dam: SpreadDamage
-		Spread: 680
+		Spread: 0c368
 		Damage: 8
 		ValidTargets: Ground, Water, Trees
 		InvalidTargets: Wall
