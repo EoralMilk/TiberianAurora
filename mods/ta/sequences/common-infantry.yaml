@@ -1,0 +1,12 @@
+mnguner:
+	Inherits: ^ArmedInfantry
+	Inherits@MC: ^MindControllable
+	Defaults: cons
+	run:
+		Tick: 120
+	paradrop:
+		Start: 292
+	icon: miniguner_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

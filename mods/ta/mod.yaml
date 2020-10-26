@@ -57,6 +57,7 @@ Packages:
 	ta|content/audio/voice
 	ta|content/effect
 
+	ta|content/infantrys
 	ta|content/structures
 	ta|content/vehicles
 	ta|content/aircrafts
@@ -141,7 +142,7 @@ Sequences:
 
 
 	ta|sequences/common-structures.yaml
-	# ta|sequences/common-infantry.yaml
+	ta|sequences/common-infantry.yaml
 	# ta|sequences/common-vehicles.yaml
 	# ta|sequences/common-aircrafts.yaml
 
