@@ -55,6 +55,7 @@
 		ContrailLength: 8
 		ContrailWidth: 15
 		ContrailColor: FFD860
+		ContrailDelay: 0
 		Speed: 40c0
 		Image: 120mm
 		Palette: ra
@@ -72,7 +73,10 @@
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
-
+	Warhead@Eff_hitmetal: CreateEffect
+		Explosions: empty
+		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
+		ValidTargets: Vehicle, Building, Wall, AirHit
 
 ^MGDamageMaker:
 	ReloadDelay: 20
@@ -91,12 +95,6 @@
 		RangeLimit: 20c409
 		TerrainHeightAware: true
 		AllowSnapping: true
-	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		ValidTargets: Ground
-	Warhead@3EffWater: CreateEffect
-		Explosions: water_piff
-		ValidTargets: Water
 
 ^MGBulletEff:
 	ReloadDelay: 20
@@ -105,11 +103,12 @@
 		ContrailLength: 6
 		ContrailWidth: 10
 		ContrailColor: FFD860
+		ContrailDelay: 0
 		Inaccuracy: 800
 		Speed: 600
 		Image: bulletsmall
 		Shadow: true
-		LaunchAngle: 15
+		LaunchAngle: 0
 		Blockable: true
 		ZOffset: 4096
 	Warhead@1Dam: SpreadDamage
@@ -128,12 +127,6 @@
 			Drone: 0
 			Rocket: 0
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		ValidTargets: Ground
-	Warhead@3EffWater: CreateEffect
-		Explosions: water_piff
-		ValidTargets: Water
 
 
 ^FlameWeapon:

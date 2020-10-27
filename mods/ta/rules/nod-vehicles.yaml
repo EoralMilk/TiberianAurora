@@ -26,8 +26,11 @@ nbggy:
 	Armament@Damage:
 		Weapon: BuggyMG_damage
 		LocalOffset: 214,0,0
-	Armament@Effect:
-		Weapon: BuggyMG_eff
+	Armament@Effect_bullet:
+		Weapon: BuggyMG_eff_bullet
+		LocalOffset: -386,0,870
+	Armament@Effect_fire:
+		Weapon: BuggyMG_eff_fire
 		LocalOffset: 214,0,870
 		Recoil: 35
 		RecoilRecovery: 13

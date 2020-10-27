@@ -22,6 +22,7 @@ a10:
 		CanSlide: false
 	Selectable:
 		Bounds: 30,24
+		Priority: 5
 	Health:
 		HP: 150
 	Armor:
@@ -31,11 +32,15 @@ a10:
 		Type: CenterPosition
 	# AttackBomber:
 	# 	Armaments: gun, bombs
+	Armament@GUNS_fake:
+		# Name: gun
+		Weapon: A10VulcanFake
+		LocalOffset: 1510,0,85
+		MuzzleSequence: muzzle
 	Armament@GUNS:
 		# Name: gun
 		Weapon: A10Vulcan
-		LocalOffset: 1510,0,85
-		MuzzleSequence: muzzle
+		LocalOffset: 2260,0,600
 	WithMuzzleOverlay:
 	Armament@BOMBS:
 		# Name: bombs

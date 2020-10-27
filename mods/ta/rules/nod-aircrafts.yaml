@@ -1,13 +1,16 @@
 
 c130:
 	Inherits: ^CommonAircraft
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
 		Prerequisites: hq
 	Valued:
 		Cost: 2000
-	-Selectable:
+	Selectable:
+		Priority: 5
+		Bounds: 168, 156, 0, -7
 	Interactable:
 		Bounds: 100,80
 	# RejectsOrders:
@@ -17,13 +20,27 @@ c130:
 		CanHover: false
 		Repulsable: false
 		VTOL: false
-		CruiseAltitude: 5800
-		IdleBehavior: LeaveMap
-		TurnSpeed: 3
-		Speed: 288
+		CruiseAltitude: 6c0
+		IdleBehavior: None
+		TurnSpeed: 2
+		Speed: 235
 		CanSlide: false
+	Armament@GUNS_fake:
+		# Name: gun
+		Weapon: AC130VulcanFake
+		LocalOffset: 0,0,0
+	Armament@GUNS:
+		# Name: gun
+		Weapon: AC130Vulcan
+		LocalOffset: 560,0,600
+	AutoTarget:
+	AttackAircraft:
+		FacingTolerance: 128
+		OpportunityFire: true
+		PersistentTargeting: true
+		AttackType: Default
 	Health:
-		HP: 2000
+		HP: 1000
 	Armor:
 		Type: Heavy
 	WithFacingSpriteBody:

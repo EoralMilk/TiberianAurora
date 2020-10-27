@@ -6,7 +6,6 @@ GAU-3_damage:
 	BurstDelays: 3
 	Range: 4c512
 	Projectile: Missile
-		Speed: 1000
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
 		Damage: 12
@@ -25,18 +24,30 @@ GAU-3_damage:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
-GAU-3_eff:
+GAU-3_eff_bullet:
 	Inherits: ^MGBulletEff
+	Inherits: ^MGPiff
 	ReloadDelay: 30
 	Burst: 4
 	BurstDelays: 3
 	Range: 4c512
-	Report: chain_shot.wav
 	Projectile: Bullet
 		ContrailLength: 8
 		ContrailWidth: 10
 		ContrailColor: FFD860
 		Inaccuracy: 400
+
+GAU-3_eff_fire:
+	Inherits: ^MGDamageMaker
+	Inherits: ^MGPiff
+	ReloadDelay: 30
+	Burst: 4
+	BurstDelays: 3
+	Range: 4c512
+	Report: chain_shot.wav
+	Projectile: Missile
+		Inaccuracy: 400
+		RangeLimit: 20c409
 
 GAU-Casing:
 	Inherits: ^BulletCasing

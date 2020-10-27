@@ -32,8 +32,12 @@ mngunner:
 		Weapon: GAU-3_damage
 		LocalOffset: 0,0,0
 		FireDelay: 3
-	Armament@primary_eff:
-		Weapon: GAU-3_eff
+	Armament@primary_eff_bullet:
+		Weapon: GAU-3_eff_bullet
+		LocalOffset: -350,50,850
+		FireDelay: 3
+	Armament@primary_eff_fire:
+		Weapon: GAU-3_eff_fire
 		LocalOffset: 268,50,850
 		FireDelay: 3
 		MuzzleSequence: muzzle

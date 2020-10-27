@@ -14,7 +14,6 @@ BuggyMG_damage:
 	BurstDelays: 4
 	Range: 5c0
 	Projectile: Missile
-		Speed: 1000
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
 		Damage: 20
@@ -33,16 +32,28 @@ BuggyMG_damage:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
-BuggyMG_eff:
+BuggyMG_eff_bullet:
 	Inherits: ^MGBulletEff
+	Inherits: ^MGPiff
+	ReloadDelay: 25
+	Burst: 3
+	BurstDelays: 4
+	Range: 5c0
+	Projectile: Bullet
+		Inaccuracy: 500
+		Speed: 600
+
+BuggyMG_eff_fire:
+	Inherits: ^MGDamageMaker
+	Inherits: ^MGPiff
 	ReloadDelay: 25
 	Burst: 3
 	BurstDelays: 4
 	Range: 5c0
 	Report: buggy_mg_shot.wav
-	Projectile: Bullet
+	Projectile: Missile
 		Inaccuracy: 500
-		Speed: 600
+		RangeLimit: 20c409
 
 Buggy-Casing:
 	Inherits: ^BulletCasing
@@ -246,6 +257,7 @@ Turret-Casing:
 
 RedEye:
 	Inherits: ^CommonAAMissile
+	Range: 12c0
 	Projectile: Missile
 		Speed: 400
 		CruiseAltitude: 4000
@@ -290,3 +302,51 @@ ObeliskLaser:
 	Warhead@4Eff: CreateEffect
 		Explosions: laserburnt
 		ValidTargets: Ground
+
+
+# aircraft
+
+
+AC130VulcanFake:
+	ReloadDelay: 20
+	Burst: 19
+	BurstDelays: 1
+	Range: 11c0
+	# Report: ac130_hmg_burst.wav
+	FirstBurstTargetOffset: -1500,0,0
+	FollowingBurstTargetOffset: 150,0,0
+	Projectile: InstantHit
+		Blockable: true
+	Warhead@Eff_attacksound: CreateEffect
+		ImpactSounds: ac130_hmg_burst.wav
+
+
+AC130Vulcan:
+	Inherits: ^MGBulletEff
+	Inherits: ^MGPiff
+	ReloadDelay: 20
+	Burst: 19
+	BurstDelays: 1
+	Range: 11c0
+	FirstBurstTargetOffset: -1500,0,0
+	FollowingBurstTargetOffset: 150,0,0
+	Projectile: Bullet
+		Inaccuracy: 800
+		Speed: 800
+		LaunchAngle: 0
+	Warhead@1Dam: SpreadDamage
+		Damage: 40
+		Spread: 0c342
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 10
+			Heavy: 10
+			Wood: 40
+			Steel: 30
+			Concrete: 30
+			Drone: 100
+			Rocket: 70
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath

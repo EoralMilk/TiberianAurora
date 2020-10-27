@@ -25,10 +25,13 @@ ghumv:
 		Range: 8c0
 	Armament@Damage:
 		Weapon: HumveeMG_damage
-		LocalOffset: 300,0,2000
-	Armament@Effect:
-		Weapon: HumveeMG_eff
 		LocalOffset: 300,0,0
+	Armament@Effect_bullet:
+		Weapon: HumveeMG_eff_bullet
+		LocalOffset: -300,0,840
+	Armament@Effect_fire:
+		Weapon: HumveeMG_eff_fire
+		LocalOffset: 300,0,840
 		Recoil: 33
 		RecoilRecovery: 12
 		MuzzleSequence: muzzle

@@ -68,7 +68,6 @@ HumveeMG_damage:
 	BurstDelays: 3
 	Range: 5c0
 	Projectile: Missile
-		Speed: 1000
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
 		Damage: 16
@@ -87,16 +86,29 @@ HumveeMG_damage:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
-HumveeMG_eff:
+HumveeMG_eff_bullet:
 	Inherits: ^MGBulletEff
+	Inherits: ^MGPiff
+	ReloadDelay: 30
+	Burst: 5
+	BurstDelays: 3
+	Range: 5c0
+	Projectile: Bullet
+		Inaccuracy: 500
+		Speed: 600
+
+HumveeMG_eff_fire:
+	Inherits: ^MGDamageMaker
+	Inherits: ^MGPiff
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
 	Range: 5c0
 	Report: mg_shot2.wav
-	Projectile: Bullet
+	Projectile: Missile
+		RangeLimit: 20c409
 		Inaccuracy: 500
-		Speed: 600
+
 
 HumvMG-Casing:
 	Inherits: ^BulletCasing
@@ -318,13 +330,25 @@ HMG-damage:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
-HMG-eff:
+HMG-eff_bullet:
 	Inherits: ^MGBulletEff
+	Inherits: ^MGPiff
+	ReloadDelay: 50
+	Burst: 6
+	BurstDelays: 4
+	Range: 6c0
+
+HMG-eff_fire:
+	Inherits: ^MGDamageMaker
+	Inherits: ^MGPiff
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
 	Range: 6c0
 	Report: mg_shot.wav
+	Projectile: Missile
+		RangeLimit: 20c409
+		Inaccuracy: 800
 
 HMG-Casing:
 	Inherits: ^BulletCasing
@@ -380,22 +404,33 @@ TowerMissile:
 # aircraft
 
 
-A10Vulcan:
-	Inherits: ^MGBulletEff
+A10VulcanFake:
 	ReloadDelay: 100
-	Burst: 45
+	Burst: 30
 	BurstDelays: 1
 	Range: 11c0
 	Report: vulcan_shot.wav
 	FirstBurstTargetOffset: -3000,0,0
-	FollowingBurstTargetOffset: 200,0,0
+	FollowingBurstTargetOffset: 300,0,0
+	Projectile: InstantHit
+		Blockable: true
+
+A10Vulcan:
+	Inherits: ^MGBulletEff
+	Inherits: ^MGPiff
+	ReloadDelay: 100
+	Burst: 30
+	BurstDelays: 1
+	Range: 11c0
+	FirstBurstTargetOffset: -3000,0,0
+	FollowingBurstTargetOffset: 300,0,0
 	Projectile: Bullet
-		Inaccuracy: 600
+		Inaccuracy: 800
 		Speed: 800
 		LaunchAngle: 0
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
-		Spread: 0c256
+		Damage: 40
+		Spread: 0c342
 		Versus:
 			None: 100
 			Flak: 80
@@ -413,10 +448,10 @@ A10Vulcan:
 A10Napalm:
 	ReloadDelay: 100
 	Range: 4c0
-	Burst: 15
-	BurstDelays: 2
+	Burst: 10
+	BurstDelays: 4
 	FirstBurstTargetOffset: -3000,0,0
-	FollowingBurstTargetOffset: 200,0,0
+	FollowingBurstTargetOffset: 400,0,0
 	Report: vkiratta.wav
 	Projectile: GravityBomb
 		# Velocity: 0, 0, -50
@@ -449,8 +484,13 @@ A10Napalm:
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
-		SmudgeType: MediumCrater, MediumScorch
+		SmudgeType: MediumScorch
 	Warhead@FireEff: CreateEffect
 		Explosions: fire01
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
+	Warhead@FireEff2: FireCluster
+		Weapon: Flamethrower
+		RandomClusterCount: 6
+		Dimensions: 3,3
+		Footprint: xxx xXx xxx

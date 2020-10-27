@@ -27,6 +27,7 @@ explosion:
 	small_watersplash: h2o_exp3
 	tiny_watersplash: h2o_exp4
 	water_piff: h2o_exp5
+	empty: bulletsmall
 	piff: piff
 	piffpiff: piffpiff
 	small_explosion: explosml

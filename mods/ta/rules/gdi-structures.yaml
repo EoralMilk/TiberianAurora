@@ -220,7 +220,7 @@ guntower:
 	Armor:
 		Type: Steel
 	RevealsShroud:
-		Range: 7c0
+		Range: 6c0
 	Selectable:
 		Bounds: 50, 30, 0, -4
 	# Armament@shoot1:
@@ -231,8 +231,11 @@ guntower:
 	Armament@Damage:
 		Weapon: HMG-damage
 		LocalOffset: 500,0,0
-	Armament@Effect:
-		Weapon: HMG-eff
+	Armament@Effect_bullet:
+		Weapon: HMG-eff_bullet
+		LocalOffset: -100,0,1400
+	Armament@Effect_fire:
+		Weapon: HMG-eff_fire
 		LocalOffset: 500,0,1400
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
@@ -279,7 +282,7 @@ advgtwr:
 	Armor:
 		Type: Steel
 	RevealsShroud:
-		Range: 7c0
+		Range: 8c0
 	Selectable:
 		Bounds: 50, 30, 0, -4
 	Armament:

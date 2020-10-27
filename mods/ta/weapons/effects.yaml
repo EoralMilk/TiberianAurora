@@ -90,4 +90,34 @@ ShellCasingDebris:
 		Explosions: water_piff
 		ValidTargets: Water
 		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
+	# Warhead@Eff_sound: CreateEffect
+	# 	Explosions: empty
+	# 	ImpactSounds: Shells_falls.wav
+	# 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
+
+^MGPiff:
+	Warhead@Eff_piff: CreateEffect
+		Explosions: piff
+		ImpactSounds: ricochet1.wav, ricochet2.wav, ricochet3.wav, ricochet4.wav, ricochet7.wav
+		ValidTargets: Ground
+		InvalidTargets: Infantry, Vehicle, Building, Wall, AirHit
+	Warhead@EffWater_piff: CreateEffect
+		Explosions: water_piff
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+		InvalidTargets: Vehicle, Building, Wall, AirHit
+	Warhead@Eff_hitmetal: CreateEffect
+		Explosions: piff
+		ImpactSounds: metal_thin_01.wav, metal_thin_02.wav, metal_thin_03.wav, metal_thin_04.wav, metal_thin_05.wav, metal_thin_06.wav, metal_thin_07.wav, metal_thin_08.wav, metal_thin_09.wav
+		ValidTargets: Vehicle, Building, AirHit
+	Warhead@Eff_hitmeet: CreateEffect
+		Explosions: piff
+		ImpactSounds: impact_body1.wav, impact_body2.wav, impact_body3.wav, impact_body4.wav
+		ValidTargets: Infantry
+	Warhead@Eff_hitwall: CreateEffect
+		Explosions: piff
+		ImpactSounds: ricochet5.wav, ricochet6.wav
+		ValidTargets: Wall
+
+
 
