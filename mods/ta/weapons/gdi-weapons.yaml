@@ -7,10 +7,12 @@ HEGrenade:
 	Range: 4c0
 	Report: grenade_throw.wav
 	Projectile: Bullet
-		Image: discus
+		Image: 120mm
 		Speed: 146
 		LaunchAngle: 120
 		ZOffset: 1024
+		ContrailLength: 0
+		ContrailWidth: 0
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
 		Spread: 0c580
@@ -56,6 +58,7 @@ SniperRF:
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
+
 # vehicle
 
 HumveeMG_damage:
@@ -68,7 +71,7 @@ HumveeMG_damage:
 		Speed: 1000
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
-		Damage: 20
+		Damage: 16
 		Spread: 0c256
 		Versus:
 			None: 100
@@ -299,7 +302,7 @@ HMG-damage:
 	BurstDelays: 4
 	Range: 6c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
+		Damage: 20
 		Spread: 0c512
 		Versus:
 			None: 100
@@ -334,6 +337,7 @@ HMG-Casing:
 
 TowerMissile:
 	Inherits: ^CommonMissile
+	ValidTargets: Ground, Water, Air
 	Range: 8c0
 	ReloadDelay: 10
 	Projectile: Missile
@@ -359,6 +363,7 @@ TowerMissile:
 			Concrete: 40
 			Drone: 80
 			Rocket: 100
+		ValidTargets: Ground, Water, Air
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: small_grey_explosion
@@ -370,3 +375,82 @@ TowerMissile:
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
+
+
+# aircraft
+
+
+A10Vulcan:
+	Inherits: ^MGBulletEff
+	ReloadDelay: 100
+	Burst: 45
+	BurstDelays: 1
+	Range: 11c0
+	Report: vulcan_shot.wav
+	FirstBurstTargetOffset: -3000,0,0
+	FollowingBurstTargetOffset: 200,0,0
+	Projectile: Bullet
+		Inaccuracy: 600
+		Speed: 800
+		LaunchAngle: 0
+	Warhead@1Dam: SpreadDamage
+		Damage: 25
+		Spread: 0c256
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 10
+			Heavy: 10
+			Wood: 40
+			Steel: 30
+			Concrete: 30
+			Drone: 100
+			Rocket: 70
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+A10Napalm:
+	ReloadDelay: 100
+	Range: 4c0
+	Burst: 15
+	BurstDelays: 2
+	FirstBurstTargetOffset: -3000,0,0
+	FollowingBurstTargetOffset: 200,0,0
+	Report: vkiratta.wav
+	Projectile: GravityBomb
+		# Velocity: 0, 0, -50
+		# Acceleration: 0, 0, -10
+		Image: zbomb
+		Palette: player
+		IsPlayerPalette: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 400
+		Damage: 170
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 85
+			Steel: 75
+			Concrete: 50
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+	Warhead@FireEff: CreateEffect
+		Explosions: fire01
+		ImpactSounds: burn-eff.wav
+		ImpactActors: false

@@ -261,8 +261,7 @@ guntower:
 
 advgtwr:
 	Inherits: ^DefenceBuilding
-	Inherits@AUTOTARGET: ^AutoTargetGround
-	Inherits@AUTOTARGET: ^AutoTargetAir
+	Inherits@AUTOTARGET: ^AutoTargetAll
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40

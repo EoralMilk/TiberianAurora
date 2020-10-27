@@ -21,7 +21,7 @@ grenader:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 50
+		HP: 70
 	Passenger:
 		PipType: Red
 	RevealsShroud:
@@ -67,7 +67,7 @@ sniper:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 50
+		HP: 65
 	Passenger:
 		PipType: Blue
 	RevealsShroud:

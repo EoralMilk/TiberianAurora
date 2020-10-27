@@ -8,11 +8,18 @@ a10:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
-		Prerequisites: ~aircraft.harrier
-		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
+		Prerequisites: hq
+		Description: 快速对地攻击机\n\n 强势对抗：地面单位
 	Aircraft:
-		TurnSpeed: 3
-		Speed: 210
+		CanHover: false
+		Repulsable: false
+		# IdleBehavior: None
+		VTOL: false
+		CruiseAltitude: 4800
+		TurnSpeed: 4
+		IdleTurnSpeed: 4
+		Speed: 288
+		CanSlide: false
 	Selectable:
 		Bounds: 30,24
 	Health:
@@ -20,23 +27,48 @@ a10:
 	Armor:
 		Type: Light
 	RevealsShroud:
-		Range: 8c0
+		Range: 10c0
 		Type: CenterPosition
-	Armament:
-		Weapon: Maverick
-		PauseOnCondition: !ammo
+	# AttackBomber:
+	# 	Armaments: gun, bombs
+	Armament@GUNS:
+		# Name: gun
+		Weapon: A10Vulcan
+		LocalOffset: 1510,0,85
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
+	Armament@BOMBS:
+		# Name: bombs
+		Weapon: A10Napalm
+		LocalOffset: 0,-256,43, 0,256,43
 	AttackAircraft:
-		FacingTolerance: 20
-		Voice: Attack
-	Voiced:
-		VoiceSet: HarrierVoice
-	AmmoPool:
-		Ammo: 1
-		PipCount: 1
-		PipType: Ammo
-		PipTypeEmpty: AmmoEmpty
-		AmmoCondition: ammo
+		FacingTolerance: 128
+		OpportunityFire: false
+		PersistentTargeting: true
+		AttackType: Strafe
+		StrafeRunLength: 17c0
 	AutoTarget:
+		# ScanRadius: 8
+		InitialStance: ReturnFire
+		InitialStanceAI: ReturnFire
+	Contrail@1:
+		Offset: -660,230,380
+		TrailLength: 15
+		TrailWidth: 55
+		Color: FFD860
+	Contrail@2:
+		Offset: -660,-230,380
+		TrailWidth: 55
+		Color: FFD860
+		TrailLength: 15
+	# AmmoPool:
+	# 	Ammo: 1
+	# 	PipCount: 1
+	# 	PipType: Ammo
+	# 	PipTypeEmpty: AmmoEmpty
+	# 	AmmoCondition: ammo
+	# AutoTarget:
+	AttackMove:
 	RenderSprites:
 		Image: a10
 	RenderVoxels:
@@ -47,12 +79,15 @@ a10:
 		LightDiffuseColor: 1.4,1.4,1.4
 		Image: a10
 	SpawnActorOnDeath:
-		Actor: a10husk
+		Actor: mngunner
 	Voiced:
 		VoiceSet: AircraftVoice
 	HitShape:
 	Rearmable:
-		RearmActors: gaairc, amradr
+		RearmActors: helipad
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
 
 a10husk:
 	Inherits: ^PlaneHusk

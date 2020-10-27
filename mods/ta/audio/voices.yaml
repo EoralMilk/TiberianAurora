@@ -399,6 +399,7 @@ SecretServiceVoice:
 		Attack: Acknowledge,Affirmative,Not a problem,Roger,Roger that,Engage,Over and out,Target identified
 		Unload: Acknowledge,Affirmative,Over and out
 		Feedback: Get me out of here
+		Action: Acknowledge,Affirmative,Not a problem,Roger,Roger that,Engage,Over and out
 
 GenericVoice:
 	DefaultVariant: .wav

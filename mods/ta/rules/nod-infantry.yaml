@@ -21,7 +21,7 @@ flamet:
 	Armor:
 		Type: Plate
 	Health:
-		HP: 100
+		HP: 130
 	Passenger:
 		PipType: Red
 	RevealsShroud:
@@ -70,7 +70,7 @@ Chemict:
 		Condition: hazmatsuits
 		TerrainTypes: Ore
 	Health:
-		HP: 100
+		HP: 130
 	Passenger:
 		PipType: Green
 	RevealsShroud:

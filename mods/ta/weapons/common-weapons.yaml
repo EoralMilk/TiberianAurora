@@ -38,8 +38,6 @@ GAU-3_eff:
 		ContrailColor: FFD860
 		Inaccuracy: 400
 
-
-
 GAU-Casing:
 	Inherits: ^BulletCasing
 	ReloadDelay: 30

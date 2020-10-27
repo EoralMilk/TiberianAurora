@@ -203,15 +203,15 @@
 	WithDeathAnimation@normal:
 		DeathSequencePalette: n_mngr
 		DeathTypes:
-			ExplosionDeath: 1
-			BulletDeath: 2
+			ExplosionDeath: 2
+			BulletDeath: 1
 			TiberiumDeath: 3
 	WithDeathAnimation@effect:
 		DeathSequencePalette: n_mngr
 		DeathTypes:
 			RadiationDeath: 3
 			PsychicDeath: 2
-			ElectroDeath: 1
+			ElectroDeath: 2
 	SpawnActorOnDeath@flames:
 		Actor: FLAMEGUY
 		DeathType: FlameDeath

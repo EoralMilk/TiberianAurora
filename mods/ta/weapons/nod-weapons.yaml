@@ -17,7 +17,7 @@ BuggyMG_damage:
 		Speed: 1000
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
-		Damage: 25
+		Damage: 20
 		Spread: 0c256
 		Versus:
 			None: 100

@@ -21,6 +21,7 @@ c130:
 		IdleBehavior: LeaveMap
 		TurnSpeed: 3
 		Speed: 288
+		CanSlide: false
 	Health:
 		HP: 2000
 	Armor:

@@ -338,6 +338,7 @@ obelisk:
 	Power:
 		Amount: -75
 	AutoTarget:
+		InitialStance: AttackAnything
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical

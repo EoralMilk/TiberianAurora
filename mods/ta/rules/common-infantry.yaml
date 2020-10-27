@@ -21,7 +21,7 @@ mngunner:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 50
+		HP: 70
 	Passenger:
 		PipType: Gray
 	RevealsShroud:
@@ -83,7 +83,7 @@ bazoker:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 50
+		HP: 70
 	Mobile:
 		Speed: 48
 		Voice: Move
@@ -134,7 +134,7 @@ eng:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 45
+		HP: 57
 	Passenger:
 		PipType: Yellow
 	EngineerRepair:

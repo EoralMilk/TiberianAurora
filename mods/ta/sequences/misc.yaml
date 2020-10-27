@@ -120,8 +120,12 @@ explosion:
 		Length: 3
 		Tick: 6000
 		ZOffset: -1024
+	fire01: fire01
+		Length: *
+	fire02: fire02
+		Length: *
 	fire03: fire03
-		Length: 12
+		Length: *
 	casingscorch: casing
 		Tick: 1200
 		Start: 10
