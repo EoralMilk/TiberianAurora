@@ -201,7 +201,7 @@ advhq:
 
 
 guntower:
-	Inherits: ^SupportBuilding
+	Inherits: ^DefenceBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
@@ -260,7 +260,7 @@ guntower:
 
 
 advgtwr:
-	Inherits: ^SupportBuilding
+	Inherits: ^DefenceBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:

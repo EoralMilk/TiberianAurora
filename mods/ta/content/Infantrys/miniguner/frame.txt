@@ -1,0 +1,13 @@
+Stand:	0
+Run: 	5-16   	Length: 12
+Shoot:      21-29	Length: 9
+Idle1:	41-59	Length: 19
+Idle2:	66-79	Length: 14
+Down:	92-98	Length: 7
+Prone:	105	
+Creep:	106-117	Length: 12
+ProneFire:125-133	Length: 9
+Up:	141-144	Length: 4
+BulletDie:	156-161	Length: 6
+ExpDie:	167-172	Length: 6
+TibDie:	178-182	Length: 5

@@ -344,7 +344,7 @@ helipad:
 	RevealsShroud:
 		Range: 5c0
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Power:
 		Amount: -10
 	Reservable:
@@ -435,7 +435,7 @@ silo:
 	RevealsShroud:
 		Range: 4c0
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+		TargetTypes: Ground, C4, DetonateAttack, Structure
 	RenderSprites:
 		Image: silo
 		PlayerPalette: silo

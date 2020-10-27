@@ -8,10 +8,12 @@ HEGrenade:
 	Report: grenade_throw.wav
 	Projectile: Bullet
 		Image: discus
-		Speed: 182
+		Speed: 146
+		LaunchAngle: 120
+		ZOffset: 1024
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
-		Spread: 0c793
+		Spread: 0c580
 		Versus:
 			None: 100
 			Flak: 90
@@ -108,7 +110,8 @@ APCCannon:
 	Range: 5c0
 	Report: gl_shot.wav
 	Projectile: Bullet
-		Speed: 682
+		Speed: 382
+		LaunchAngle: 80
 	Warhead@1Dam: SpreadDamage
 		Damage: 35
 		Spread: 0c512
@@ -343,7 +346,7 @@ TowerMissile:
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
-		Spread: 347
+		Spread: 0c268
 		Damage: 25
 		Versus:
 			Flak: 40

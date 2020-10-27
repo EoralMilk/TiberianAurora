@@ -91,6 +91,12 @@
 		RangeLimit: 20c409
 		TerrainHeightAware: true
 		AllowSnapping: true
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+		ValidTargets: Ground
+	Warhead@3EffWater: CreateEffect
+		Explosions: water_piff
+		ValidTargets: Water
 
 ^MGBulletEff:
 	ReloadDelay: 20
@@ -139,9 +145,9 @@
 	InvalidTargets: Wall
 	Report: flamethrower.wav
 	Projectile: Bullet
-		ContrailLength: 5
-		ContrailWidth: 25
-		ContrailColor: DF460C
+		# ContrailLength: 5
+		# ContrailWidth: 25
+		# ContrailColor: DF460C
 		Inaccuracy: 800
 		Speed: 130
 		Image: flameall
@@ -159,14 +165,14 @@
 			Flak: 100
 			Plate: 80
 			Light: 35
-			Medium: 10
-			Heavy: 10
+			Medium: 15
+			Heavy: 15
 			Wood: 100
 			Steel: 85
 			Concrete: 55
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone70Percent, TriggerProne, FireDeath, Incendiary
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: SmallScorch
 		InvalidTargets: Vehicle, Structure, Wall

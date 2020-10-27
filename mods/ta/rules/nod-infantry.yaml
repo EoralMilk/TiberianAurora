@@ -42,7 +42,8 @@ flamet:
 	AutoTarget:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
-		Image: e1
+		Image: mnguner
+		PlayerPalette: n_mngr
 
 Chemict:
 	Inherits@1: ^CommonInfantry
@@ -90,4 +91,5 @@ Chemict:
 	AutoTarget:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
-		Image: shk
+		Image: mnguner
+		PlayerPalette: n_mngr

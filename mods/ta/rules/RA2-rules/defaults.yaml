@@ -408,6 +408,7 @@
 	-CaptureNotification:
 	-ShakeOnDeath:
 
+
 ^CivBuilding:
 	Inherits: ^Building
 	-OwnerLostAction:

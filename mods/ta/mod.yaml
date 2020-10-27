@@ -62,9 +62,6 @@ Packages:
 	ta|content/vehicles
 	ta|content/aircrafts
 
-
-
-
 	ta|content/structures/a_pwrplt
 	ta|content/structures/a_advpwr
 	ta|content/structures/a_refinery
@@ -83,6 +80,12 @@ Packages:
 	ta|content/structures/n_ntur
 	ta|content/structures/n_samsite
 	ta|content/structures/n_obelisk
+
+	ta|content/infantrys/miniguner
+	ta|content/infantrys/bazookier
+
+
+
 
 	ta|content/expandmd80.mix
 

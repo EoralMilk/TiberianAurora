@@ -103,6 +103,11 @@
 	HitShape:
 
 
+^DefenceBuilding:
+	Inherits: ^SupportBuilding
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
+
 
 ^CommonAircraft:
 	Inherits@1: ^ExistsInWorld
@@ -154,14 +159,100 @@
 	MapEditorData:
 		Categories: Aircraft
 
+
+
 ^CommonInfantry:
-	Inherits: ^Infantry
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^GainsExperience
+	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
+	Health:
+	OwnerLostAction:
+		Action: Kill
+		DeathTypes: BulletDeath
+	HitShape:
+		Type: Circle
+			Radius: 128
+	Armor:
+		Type: None
+	RevealsShroud:
+		Range: 4c0
+	Mobile:
+		Speed: 60
+		Voice: Move
+		Locomotor: foot
+	WithTextControlGroupDecoration:
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+		Priority: 4
+	Targetable:
+		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+	WithInfantryBody:
+		StandSequences: stand
+		MoveSequence: run
+		IdleSequences: idle1,idle2
+		DefaultAttackSequence: shoot
 	DamagedByTerrain:
 		Terrain: Ore
 		Damage: 2
 		DamageInterval: 16
-		DamageTypes: BulletDeath  #TiberiumDeath
+		DamageTypes: TiberiumDeath
 		RequiresCondition: !hazmatsuits
+	WithDeathAnimation@normal:
+		DeathSequencePalette: n_mngr
+		DeathTypes:
+			ExplosionDeath: 1
+			BulletDeath: 2
+			TiberiumDeath: 3
+	WithDeathAnimation@effect:
+		DeathSequencePalette: n_mngr
+		DeathTypes:
+			RadiationDeath: 3
+			PsychicDeath: 2
+			ElectroDeath: 1
+	SpawnActorOnDeath@flames:
+		Actor: FLAMEGUY
+		DeathType: FlameDeath
 	TakeCover:
 		SpeedModifier: 50
-		ProneOffset: 400,0,0
+		ProneOffset: 443,10,100
+		DamageModifiers:
+			Prone50Percent: 50
+			Prone70Percent: 70
+			Prone100Percent: 100
+		DamageTriggers: TriggerProne
+	Passenger:
+		Voice: Move
+		CargoType: Infantry
+	HiddenUnderFog:
+	ActorLostNotification:
+	ProximityCaptor:
+		Types: Infantry
+	Crushable:
+		CrushSound: death_03.wav
+	EdibleByLeap:
+	Guard:
+		Voice: Attack
+	Guardable:
+	DeathSounds@normal:
+		DeathTypes: ExplosionDeath, BulletDeath
+	DeathSounds@burned:
+		Voice: Burned
+		DeathTypes: FlameDeath
+	DeathSounds@POISONED:
+		Voice: Poisoned
+		DeathTypes: TiberiumDeath
+	MustBeDestroyed:
+	Cloneable:
+		Types: infantry
+	Voiced:
+		VoiceSet: GenericVoice
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Repairable:
+		RepairActors: cahosp
+		Voice: Move
+	MapEditorData:
+		Categories: Infantry

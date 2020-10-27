@@ -165,7 +165,7 @@ ntpl:
 
 
 ntur:
-	Inherits: ^SupportBuilding
+	Inherits: ^DefenceBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
@@ -223,7 +223,7 @@ ntur:
 
 
 samsite:
-	Inherits: ^SupportBuilding
+	Inherits: ^DefenceBuilding
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	# Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits@shape: ^2x2Shape
@@ -280,7 +280,7 @@ samsite:
 		PlayerPalette: red_unit
 
 obelisk:
-	Inherits: ^SupportBuilding
+	Inherits: ^DefenceBuilding
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support

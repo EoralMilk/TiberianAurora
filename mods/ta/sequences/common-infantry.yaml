@@ -1,12 +1,103 @@
 mnguner:
-	Inherits: ^ArmedInfantry
-	Inherits@MC: ^MindControllable
-	Defaults: cons
+	Inherits@Muzzle: ^WithMachineGunMuzzle
+	Defaults: mngr_up
+		Offset: 0, 0, 16
+	stand:
+		Facings: 8
+		ShadowStart: 209
 	run:
-		Tick: 120
+		Start: 8
+		Length: 12
+		Facings: 8
+		Tick: 70
+		ShadowStart: 217
+	shoot:
+		Start: 104
+		Length: 9
+		Facings: 8
+		Tick: 40
+		ShadowStart: 313
+	idle1:
+		Start: 176
+		Length: 19
+		ShadowStart: 385
+	idle2:
+		Start: 195
+		Length: 14
+		ShadowStart: 404
+	# die1: mngr_die1
+	# 	Start: 8
+	# 	Length: 6
+	# 	Facings: 8
+	# 	Tick: 80
+	# 	ShadowStart: 64
+	# die2: mngr_die2
+	# 	Start: 8
+	# 	Length: 6
+	# 	Facings: 8
+	# 	Tick: 80
+	# 	ShadowStart: 64
+	# die3: mngr_die3
+	# 	Start: 8
+	# 	Length: 5
+	# 	Facings: 8
+	# 	Tick: 80
+	# 	ShadowStart: 56
+	die1: mngr_die1
+		Start: 26
+		Length: 6
+		Tick: 80
+		ShadowStart: 82
+	die2: mngr_die2
+		Start: 38
+		Length: 6
+		Tick: 80
+		ShadowStart: 94
+	die3: mngr_die3
+		Start: 23
+		Length: 5
+		Tick: 100
+		ShadowStart: 66
 	paradrop:
-		Start: 292
+	cheer:
+	liedown: mngr_change
+		Length: 7
+		Facings: 8
+		Tick: 70
+		ShadowStart: 88
+	standup: mngr_change
+		Start: 56
+		Length: 4
+		Facings: 8
+		ShadowStart: 144
+	prone-stand: mngr_prone
+		Facings: 8
+		ShadowStart: 176
+	prone-run: mngr_prone
+		Start: 8
+		Length: 12
+		Facings: 8
+		Tick: 70
+		ShadowStart: 184
+	prone-shoot: mngr_prone
+		Start: 104
+		Length: 9
+		Facings: 8
+		Tick: 40
+		ShadowStart: 280
 	icon: miniguner_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+mnguner-g:
+	Inherits@Muzzle: mnguner
+	Defaults: mngr_up-g
+	die1: mngr_die1-g
+	die2: mngr_die2-g
+	die3: mngr_die3-g
+	liedown: mngr_change-g
+	standup: mngr_change-g
+	prone-stand: mngr_prone-g
+	prone-run: mngr_prone-g
+	prone-shoot: mngr_prone-g

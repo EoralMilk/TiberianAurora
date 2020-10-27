@@ -42,7 +42,8 @@ grenader:
 	AutoTarget:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
-		Image: e1
+		Image: mnguner
+		PlayerPalette: n_mngr
 
 sniper:
 	Inherits@1: ^CommonInfantry
@@ -87,4 +88,5 @@ sniper:
 	AutoTarget:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
-		Image: snipe
+		Image: mnguner
+		PlayerPalette: n_mngr

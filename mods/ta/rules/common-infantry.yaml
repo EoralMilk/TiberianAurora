@@ -31,14 +31,25 @@ mngunner:
 	Armament@primary:
 		Weapon: GAU-3_damage
 		LocalOffset: 0,0,0
+		FireDelay: 3
 	Armament@primary_eff:
 		Weapon: GAU-3_eff
-		LocalOffset: 0,0,512
+		LocalOffset: 268,50,850
+		FireDelay: 3
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 8
+	WithMuzzleOverlay:
 	Armament@Casing:
 		Weapon: GAU-Casing
-		LocalOffset: 0,0,512
+		LocalOffset: 0,50,800
+		FireDelay: 3
+	TakeCover:
+		SpeedModifier: 50
+		ProneOffset: 443,10,30
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+	# WithAimAnimation:
+	# 	Sequence: shoot
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
@@ -49,6 +60,10 @@ mngunner:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
 		Image: mnguner
+		FactionImages:
+			gdi: mnguner-g
+			nod: mnguner
+		PlayerPalette: n_mngr
 
 bazoker:
 	Inherits@1: ^CommonInfantry
@@ -82,8 +97,6 @@ bazoker:
 	Armament@primary:
 		Weapon: APBazooka
 		LocalOffset: 256,0,1024
-		MuzzleSequence: muzzle
-	WithMuzzleOverlay:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
@@ -95,7 +108,8 @@ bazoker:
 	AutoTarget:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
-		Image: flakt
+		Image: mnguner
+		PlayerPalette: n_mngr
 
 eng:
 	Inherits: ^CommonInfantry
@@ -130,8 +144,6 @@ eng:
 		CaptureTypes: building, husk
 	RevealsShroud:
 		Range: 4c0
-	Voiced:
-		VoiceSet: EngineerVoice
 	Guard:
 		Voice: Action
 	AttackMove:
@@ -142,4 +154,5 @@ eng:
 		DefaultAttackSequence: stand
 	CaptureManager:
 	RenderSprites:  # TODO: 素材..
-		Image: engineer
+		Image: mnguner
+		PlayerPalette: n_mngr
