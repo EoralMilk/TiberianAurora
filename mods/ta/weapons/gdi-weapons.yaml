@@ -223,6 +223,7 @@ Mammoth-Casing:
 MammothTuskMissile:
 	Inherits: ^CommonMissile
 	Inherits: ^HE_WarheadEff_Medium
+	ValidTargets: Ground, Water, Air
 	Range: 5c512
 	Burst: 2
 	BurstDelays: 1
