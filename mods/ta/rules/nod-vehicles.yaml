@@ -4,7 +4,7 @@ nbggy:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~Vehicle.Nod
+		Prerequisites: ~vehicle.nod
 		Description: \n 搭载机枪的全地形四驱车。\n 速度很快 \n 装甲很脆弱。\n \n 强势对抗：步兵 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 300
@@ -54,14 +54,16 @@ nbggy:
 	AmbientSound@wheel:
 		SoundFiles: atv_rev1.wav
 		RequiresCondition: wheelmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 ncycle:
 	Inherits: ^AtkFrontalVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~Vehicle.Nod
+		BuildPaletteOrder: 30
+		Prerequisites: ~vehicle.nod
 		Description: \n 搭载"龙"式导弹的突击摩托车 \n 速度飞快 \n 装甲很脆弱。\n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 500
@@ -97,14 +99,16 @@ ncycle:
 	AmbientSound@wheel:
 		SoundFiles: atv_rev2.wav
 		RequiresCondition: wheelmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 ntank:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~Vehicle.Nod
+		BuildPaletteOrder: 40
+		Prerequisites: ~vehicle.nod, repairdepot
 		Description: \n Nod轻型主战坦克，装有90mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 650
@@ -138,14 +142,16 @@ ntank:
 		PlayerPalette: red_unit
 	GrantConditionOnMovement:
 		Condition: trackmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 nftnk:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~Vehicle.Nod, hq
+		BuildPaletteOrder: 60
+		Prerequisites: ~vehicle.nod, repairdepot
 		Description: \n 搭载双联装火焰喷射器和大量燃料的重装甲坦克 \n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
 		Cost: 800
@@ -176,14 +182,16 @@ nftnk:
 		PlayerPalette: red_unit
 	GrantConditionOnMovement:
 		Condition: trackmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 nhowi:
 	Inherits: ^AtkFrontalVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~Vehicle.Nod, hq
+		BuildPaletteOrder: 70
+		Prerequisites: ~vehicle.nod, hq
 		Description: \n Nod的主力炮兵，搭载155mm榴弹炮。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果欠佳
 	Valued:
 		Cost: 700
@@ -202,9 +210,12 @@ nhowi:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
+	AttackFrontal:
+		TargetFrozenActors: True
+		ForceFireIgnoresActors: True
 	Armament@Casing:
 		Weapon: HowitzerCannonHE
-		LocalOffset: 833,0,1960
+		LocalOffset: 843,0,1900
 		MuzzleSequence: muzzle
 	Armament:
 		Weapon: Howitzer-Casing
@@ -215,14 +226,16 @@ nhowi:
 		PlayerPalette: red_unit
 	GrantConditionOnMovement:
 		Condition: trackmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 nstltnk:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~Vehicle.Nod, ntpl
+		BuildPaletteOrder: 80
+		Prerequisites: ~vehicle.nod, ntpl
 		Description: \n 这种坦克采用了神秘技术令其可以在肉眼和雷达探测中隐形 \n 不攻击且不受攻击时隐形 \n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 1000
@@ -263,68 +276,64 @@ nstltnk:
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
+	Targetable@materials:
+		TargetTypes: Metel
 
 
 meme_obelisker:
 	Inherits: ^AtkFrontalVehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~Vehicle.Nod
+		BuildPaletteOrder: 120
+		Prerequisites: ~vehicle.nod
 		Description: \n 一个会动的石碑？
 	Valued:
-		Cost: 500
+		Cost: 1500
 	Tooltip:
-		Name: 突击摩托车
+		Name: 光明...石碑
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 120
+		HP: 520
 	Armor:
 		Type: Light
 	Mobile:
 		TurnSpeed: 2
 		Speed: 40
-		Locomotor: tracked
+		Locomotor: foot
 	RevealsShroud:
 		Range: 8c0
+	AttackFrontal:
+		TargetFrozenActors: True
+		ForceFireIgnoresActors: True
 	ArmamentWithRa2Lase:
-		# Armament:
-		RequiresCondition: !heavilydamaged
 		Weapon: ObeliskLaser
 		LocalOffset: 1347,0,2000
 		ZOffset: 1
 		Duration: 9
 		Width: 140
 		InnerWidth: 80
-	AttackChargesBursts:
-		ChargeLevel: 40
-		ChargingCondition: charging
-	AmbientSound:
+	AmbientSound@Charging:
 		RequiresCondition: charging
 		SoundFiles: obelpowr.aud
-
 	WithMuzzleOverlay:
-	WithInfantryBody:
-		MinIdleDelay: 1
-		MaxIdleDelay: 2
-		IdleSequences: idle
-		StandSequences: stand
-		DefaultAttackSequence: shoot
-		RequiresCondition: !charging
-	-WithFacingSpriteBody:
-	WithFacingSpriteBody@charg:
-		Sequence: idle
-		RequiresCondition: charging
-	WithChargeBurstsOverlay:
-		Sequence: shoot
-		Palette: green_unit
-		IsPlayerPalette: true
-		RequiresCondition: charging
+	WithMoveAnimation:
+		MoveSequence: run
+	WithAimAnimation:
+		Sequence: Shoot
+	
+	WithFacingSpriteBody:
+	# WithChargeBurstsOverlay:
+	# 	Sequence: shoot
+	# 	Palette: green_unit
+	# 	IsPlayerPalette: true
+	# 	RequiresCondition: charging
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
 	RenderSprites:
 		Image: meme_obelisker
 		PlayerPalette: green_unit
+	Targetable@materials:
+		TargetTypes: Metel, Meat

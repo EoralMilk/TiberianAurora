@@ -3,6 +3,7 @@
 
 HEGrenade:
 	Inherits: ^CommonCannon
+	Inherits: ^HE_WarheadEff_Medium
 	ReloadDelay: 50
 	Range: 4c0
 	Report: grenade_throw.wav
@@ -28,8 +29,8 @@ HEGrenade:
 			Concrete: 45
 			Drone: 60
 			Rocket: 100
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_bang
+
+
 
 SniperRF:
 	Inherits: ^MGBulletEff
@@ -37,6 +38,8 @@ SniperRF:
 	Burst: 1
 	Range: 11c0
 	Report: sniper_shot.wav
+	# AfterFireSoundDelay: 2
+	# AfterFireSound: sniper_cycle_out.wav
 	Projectile: Bullet
 		Inaccuracy: 10
 		Speed: 1400
@@ -105,6 +108,7 @@ HumveeMG_eff_fire:
 	BurstDelays: 3
 	Range: 5c0
 	Report: mg_shot2.wav
+	# AfterFireSound: mg_clip_out.wav
 	Projectile: Missile
 		RangeLimit: 20c409
 		Inaccuracy: 500
@@ -121,6 +125,7 @@ HumvMG-Casing:
 
 APCCannon:
 	Inherits: ^CommonCannon
+	Inherits: ^HE_WarheadEff_Medium
 	ReloadDelay: 40
 	Range: 5c0
 	Report: gl_shot.wav
@@ -142,8 +147,6 @@ APCCannon:
 			Concrete: 30
 			Drone: 60
 			Rocket: 100
-	Warhead@2Eff: CreateEffect
-		Explosions: small_bang
 
 APC-Casing:
 	Inherits: ^ShellCasing
@@ -154,6 +157,7 @@ APC-Casing:
 
 MediumTankCannonAP:
 	Inherits: ^CommonCannon
+	Inherits: ^AP_WarheadEff_Medium
 	ReloadDelay: 60
 	Range: 5c512
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
@@ -183,7 +187,8 @@ MTank-Casing:
 
 MammothTankCannon:
 	Inherits: ^CommonCannon
-	ReloadDelay: 80
+	Inherits: ^AP_WarheadEff_Large
+	ReloadDelay: 90
 	Range: 5c512
 	Burst: 2
 	BurstDelays: 5
@@ -217,6 +222,7 @@ Mammoth-Casing:
 
 MammothTuskMissile:
 	Inherits: ^CommonMissile
+	Inherits: ^HE_WarheadEff_Medium
 	Range: 5c512
 	Burst: 2
 	BurstDelays: 1
@@ -232,7 +238,7 @@ MammothTuskMissile:
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 347
-		Damage: 60
+		Damage: 40
 		Versus:
 			None: 100
 			Flak: 95
@@ -246,20 +252,12 @@ MammothTuskMissile:
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_grey_explosion
-		ImpactSounds: gexpifva.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallCrater
+
 
 
 ManyRockets:
 	Inherits: ^CommonCannon
+	Inherits: ^HE_WarheadEff_Large
 	ReloadDelay: 160
 	Burst: 6
 	BurstDelays: 3
@@ -288,24 +286,9 @@ ManyRockets:
 			Concrete: 30
 			Drone: 60
 			Rocket: 100
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_bang
 
 
 # structure
-
-# HMG:
-# 	Inherits: ^CommonMG
-# 	ReloadDelay: 50
-# 	Burst: 2
-# 	BurstDelays: 6
-# 	Range: 5c512
-# 	Report: mg_shot.wav
-# 	Warhead@1Dam: SpreadDamage
-# 		Damage: 5
-# 		Spread: 200
-# 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-
 
 HMG-damage:
 	Inherits: ^MGDamageMaker
@@ -337,6 +320,11 @@ HMG-eff_bullet:
 	Burst: 6
 	BurstDelays: 4
 	Range: 6c0
+	Warhead@Eff_HitMetel: CreateEffect
+		Explosions: piff
+		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
+		ValidTargets: Metel
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 HMG-eff_fire:
 	Inherits: ^MGDamageMaker
@@ -346,9 +334,16 @@ HMG-eff_fire:
 	BurstDelays: 4
 	Range: 6c0
 	Report: mg_shot.wav
+	AfterFireSoundDelay: 2
+	AfterFireSound: Shells_falls.wav
 	Projectile: Missile
 		RangeLimit: 20c409
 		Inaccuracy: 800
+	Warhead@Eff_HitMetel: CreateEffect
+		Explosions: piff
+		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
+		ValidTargets: Metel
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 HMG-Casing:
 	Inherits: ^BulletCasing
@@ -361,6 +356,7 @@ HMG-Casing:
 
 TowerMissile:
 	Inherits: ^CommonMissile
+	Inherits: ^HE_WarheadEff_Small
 	ValidTargets: Ground, Water, Air
 	Range: 8c0
 	ReloadDelay: 10

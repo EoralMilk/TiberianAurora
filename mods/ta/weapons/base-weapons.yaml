@@ -9,7 +9,7 @@
 		Image: DRAGON
 		Palette: ra
 		ContrailLength: 8
-		ContrailWidth: 24
+		ContrailWidth: 35
 		CruiseAltitude: 4352
 		VerticalRateOfTurn: 55
 		HorizontalRateOfTurn: 55
@@ -40,15 +40,6 @@
 			Drone: 100
 			Rocket: 100
 		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: small_bang
-		ImpactSounds: gexp10a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-
 
 ^CommonCannon:
 	Projectile: Bullet
@@ -65,18 +56,6 @@
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
-		ImpactSounds: gexp14a.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-	Warhead@Eff_hitmetal: CreateEffect
-		Explosions: empty
-		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Vehicle, Building, Wall, AirHit
 
 ^MGDamageMaker:
 	ReloadDelay: 20

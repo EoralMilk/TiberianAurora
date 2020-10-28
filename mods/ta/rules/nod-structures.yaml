@@ -60,7 +60,8 @@ nhand:
 	RenderSprites:
 		Image: nhand
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 airstrip:
 	Inherits: ^BaseBuilding
@@ -79,7 +80,7 @@ airstrip:
 	ProvidesPrerequisite@building:
 		Prerequisite: vehicle_factory
 	ProvidesPrerequisite@vehicle:
-		Prerequisite: Vehicle.Nod
+		Prerequisite: vehicle.nod
 	Building:
 		Footprint: xxx=== xxx=== xxx=== xxx=== 
 		Dimensions: 6,4
@@ -123,7 +124,8 @@ airstrip:
 	RenderSprites:
 		Image: airstrip
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 ntpl:
 	Inherits: ^BaseBuilding
@@ -161,7 +163,8 @@ ntpl:
 	RenderSprites:
 		Image: ntpl
 		PlayerPalette: red_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 
 ntur:
@@ -220,7 +223,8 @@ ntur:
 	RenderSprites:
 		Image: ntur
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 samsite:
 	Inherits: ^DefenceBuilding
@@ -278,6 +282,8 @@ samsite:
 	RenderSprites:
 		Image: samsite
 		PlayerPalette: red_unit
+	Targetable@materials:
+		TargetTypes: Metel
 
 obelisk:
 	Inherits: ^DefenceBuilding
@@ -327,6 +333,8 @@ obelisk:
 		PauseOnCondition: lowpower
 		ChargeLevel: 40
 		ChargingCondition: charging
+		TargetFrozenActors: True
+		ForceFireIgnoresActors: True
 	AmbientSound:
 		RequiresCondition: charging && !lowpower
 		SoundFiles: obelpowr.aud
@@ -355,3 +363,5 @@ obelisk:
 		Range: 5c0
 	RenderSprites:
 		PlayerPalette: red_unit
+	Targetable@materials:
+		TargetTypes: Stone

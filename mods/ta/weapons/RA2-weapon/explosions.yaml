@@ -36,7 +36,7 @@ DerrickExplode:
 	Warhead@1Dam: SpreadDamage
 		Damage: 600
 	Warhead@2Eff: CreateEffect
-		Explosions: large_twlt, large_bang, large_brnl, verylarge_clsn, large_tumu
+		Explosions: large_twlt, large_bang, large_brnl, large_tumu
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 
@@ -61,7 +61,7 @@ V3AmmunitionExplode:
 BuildingExplode:
 	Inherits: UnitExplodeSmall
 	Warhead@1Eff: CreateEffect
-		Explosions: building, large_bang, large_brnl, verylarge_clsn, large_tumu
+		Explosions: building, large_bang, large_brnl, large_tumu
 
 KirovExplode:
 	Inherits: UnitExplode

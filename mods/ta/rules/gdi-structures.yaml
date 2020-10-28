@@ -51,7 +51,6 @@ barracks:
 		Sequence: anim-flag
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete
-
 	ProductionBar:
 		ProductionType: Infantry
 	Power:
@@ -61,7 +60,8 @@ barracks:
 	RenderSprites:
 		Image: barracks
 		PlayerPalette: barracks
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 warfactory:
 	Inherits: ^BaseBuilding
@@ -133,7 +133,8 @@ warfactory:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 advhq:
 	Inherits: ^BaseBuilding
@@ -150,7 +151,7 @@ advhq:
 	Tooltip:
 		Name: 高级指挥中心
 	ProvidesPrerequisite:
-		Prerequisite: power
+		Prerequisite: advhq
 	Building:
 		Footprint: _x_ xxx _x_
 		Dimensions: 3,3
@@ -198,7 +199,8 @@ advhq:
 	# 	CameraActor: camera.small
 	# 	SupportPowerPaletteOrder: 20
 	# SupportPowerChargeBar:
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 guntower:
 	Inherits: ^DefenceBuilding
@@ -259,7 +261,8 @@ guntower:
 	RenderSprites:
 		Image: guntower
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 
 advgtwr:
@@ -312,3 +315,5 @@ advgtwr:
 	RenderSprites:
 		Image: advgtwr
 		PlayerPalette: green_unit
+	Targetable@materials:
+		TargetTypes: Metel

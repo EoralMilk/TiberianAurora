@@ -83,6 +83,8 @@
 		Delay: 0
 		Interval: 0
 		RequiresCondition: wheelmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 
 ^TurretedVehicle:
@@ -158,8 +160,15 @@
 		UseLocation: true
 	MapEditorData:
 		Categories: Aircraft
-
-
+	EjectOnDeath:
+		PilotActor: mngunner
+		SuccessRate: 50
+		EjectOnGround: false
+		EjectInAir: true
+		AllowUnsuitableCell: true
+		# ChuteSound: chute1.aud
+	Targetable@materials:
+		TargetTypes: Metel
 
 ^CommonInfantry:
 	Inherits@1: ^ExistsInWorld
@@ -256,3 +265,5 @@
 		Voice: Move
 	MapEditorData:
 		Categories: Infantry
+	Targetable@materials:
+		TargetTypes: Meat

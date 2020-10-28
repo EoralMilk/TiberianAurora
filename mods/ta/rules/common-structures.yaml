@@ -83,6 +83,8 @@ fact:
 		Factions: nod
 	RenderSprites:  # TODO: 素材..
 		Image: gacnst
+	Targetable@materials:
+		TargetTypes: Metel
 
 pwrplt:
 	Inherits: ^BaseBuilding
@@ -122,6 +124,8 @@ pwrplt:
 		Condition: power-outage
 	ScalePowerWithHealth:
 	PowerTooltip:
+	Targetable@materials:
+		TargetTypes: Metel
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
@@ -171,7 +175,8 @@ advpwr:
 	RenderSprites:
 		Image: advpwr
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 
 refinery:
@@ -254,7 +259,8 @@ refinery:
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 		CameraPitch: 85
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 hq:
 	Inherits: ^BaseBuilding
@@ -304,7 +310,8 @@ hq:
 	RenderSprites:
 		Image: hq
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 helipad:
 	Inherits: ^BaseBuilding
@@ -365,6 +372,9 @@ helipad:
 		RequiresCondition: primary
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+	Targetable@materials:
+		TargetTypes: Metel
+
 
 repairdepot:
 	Inherits: ^BaseBuilding
@@ -409,7 +419,8 @@ repairdepot:
 	RenderSprites:
 		Image: repairdepot
 		PlayerPalette: green_unit
-
+	Targetable@materials:
+		TargetTypes: Metel
 
 silo:
 	Inherits: ^SupportBuilding
@@ -443,3 +454,6 @@ silo:
 		PipColor: Green
 		PipCount: 15
 		Capacity: 1000
+	Targetable@materials:
+		TargetTypes: Metel
+

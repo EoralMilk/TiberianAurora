@@ -1,7 +1,6 @@
 
 c130:
 	Inherits: ^CommonAircraft
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
@@ -16,6 +15,60 @@ c130:
 	# RejectsOrders:
 	Tooltip:
 		Name: 运输机
+	Aircraft:
+		CanHover: false
+		Repulsable: false
+		VTOL: false
+		CruiseAltitude: 6c0
+		IdleBehavior: None
+		TurnSpeed: 2
+		Speed: 235
+		CanSlide: false
+	Health:
+		HP: 1000
+	Armor:
+		Type: Heavy
+	WithFacingSpriteBody:
+	-RenderVoxels:
+	RenderSprites:
+		Image: c130
+		PlayerPalette: red_unit
+	Cargo:
+		MaxWeight: 10
+	ParaDrop:
+		DropRange: 4c0
+		ChuteSound: sparadra.wav
+	SpawnActorOnDeath:
+		Actor: c130husk
+	HitShape:
+	BodyOrientation:
+		QuantizedFacings: 64
+	QuantizeFacingsFromSequence:
+	WithShadow:
+		RequiresCondition: airborne
+	WithShadow@2:
+		Offset: 240,480,0
+		RequiresCondition: !airborne
+		ZOffset: -1000
+
+
+ac130:
+	Inherits: ^CommonAircraft
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 10
+		Prerequisites: hq
+	Valued:
+		Cost: 2000
+	Selectable:
+		Priority: 5
+		Bounds: 168, 156, 0, -7
+	Interactable:
+		Bounds: 100,80
+	# RejectsOrders:
+	Tooltip:
+		Name: AC130炮艇机
 	Aircraft:
 		CanHover: false
 		Repulsable: false

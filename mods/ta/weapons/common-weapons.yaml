@@ -59,6 +59,7 @@ GAU-Casing:
 
 APBazooka:
 	Inherits: ^CommonCannon
+	Inherits: ^AP_WarheadEff_Small
 	ReloadDelay: 50
 	Range: 6c0
 	Report: bazooka_shot.wav
@@ -80,5 +81,4 @@ APBazooka:
 			Concrete: 85
 			Drone: 60
 			Rocket: 100
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_bang
+

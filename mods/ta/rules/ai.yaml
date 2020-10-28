@@ -1,151 +1,126 @@
 Player:
 	ModularBot@testai:
-		Name: Test AI
+		Name: 木头人
 		Type: test
 	GrantConditionOnBotOwner@test:
 		Condition: enable-test-ai
 		Bots: test
-	SupportPowerBotModule@test:
-		RequiresCondition: enable-test-ai
-		Decisions:
-			airborne:
-				OrderName: AmericanParatroopers
-				MinimumAttractiveness: 5
-				Consideration@1:
-					Against: Enemy
-					Types: Structure
-					Attractiveness: 1
-					TargetMetric: None
-					CheckRadius: 8c0
-				Consideration@2:
-					Against: Enemy
-					Types: Water
-					Attractiveness: -5
-					TargetMetric: None
-					CheckRadius: 8c0
-			nukepower:
-				OrderName: NukePowerInfoOrder
-				MinimumAttractiveness: 3000
-				Consideration@1:
-					Against: Enemy
-					Types: Structure
-					Attractiveness: 1
-					TargetMetric: Value
-					CheckRadius: 5c0
-				Consideration@2:
-					Against: Ally
-					Types: Air, Ground, Water
-					Attractiveness: -10
-					TargetMetric: Value
-					CheckRadius: 7c0
+	# SupportPowerBotModule@test:
+	# 	RequiresCondition: enable-test-ai
+	# 	Decisions:
+	# 		airborne:
+	# 			OrderName: AmericanParatroopers
+	# 			MinimumAttractiveness: 5
+	# 			Consideration@1:
+	# 				Against: Enemy
+	# 				Types: Structure
+	# 				Attractiveness: 1
+	# 				TargetMetric: None
+	# 				CheckRadius: 8c0
+	# 			Consideration@2:
+	# 				Against: Enemy
+	# 				Types: Water
+	# 				Attractiveness: -5
+	# 				TargetMetric: None
+	# 				CheckRadius: 8c0
+	# 		nukepower:
+	# 			OrderName: NukePowerInfoOrder
+	# 			MinimumAttractiveness: 3000
+	# 			Consideration@1:
+	# 				Against: Enemy
+	# 				Types: Structure
+	# 				Attractiveness: 1
+	# 				TargetMetric: Value
+	# 				CheckRadius: 5c0
+	# 			Consideration@2:
+	# 				Against: Ally
+	# 				Types: Air, Ground, Water
+	# 				Attractiveness: -10
+	# 				TargetMetric: Value
+	# 				CheckRadius: 7c0
 	BaseBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		DefenseQueues: Support
-		ConstructionYardTypes: gacnst, nacnst
-		RefineryTypes: garefn, narefn
-		PowerTypes: gapowr, napowr, nanrct
-		BarracksTypes: gapile, nahand
-		VehiclesFactoryTypes: gaweap, naweap
-		ProductionTypes: gapile, nahand, gaweap, naweap, gaairc, amradr
-		NavalProductionTypes: nayard, gayard
+		ConstructionYardTypes: fact
+		RefineryTypes: refinery
+		PowerTypes: pwrplt, advpwr
+		BarracksTypes: barracks, nhand
+		VehiclesFactoryTypes: warfactory, airstrip
+		ProductionTypes: barracks, nhand, warfactory, airstrip, helipad
+		# NavalProductionTypes: nayard, gayard
 		MaxBaseRadius: 50
 		BuildingLimits:
-			garefn: 4
-			narefn: 4
-			gapowr: 8
-			napowr: 8
-			nanrct: 1
-			gapile: 2
-			nahand: 2
-			gaweap: 2
-			naweap: 2
-			nayard: 1
-			gayard: 1
-			gadept: 1
-			nadept: 1
-			gaairc: 2
-			amradr: 2
-			naradr: 1
-			gatech: 1
-			natech: 1
-			gagap: 2
+			refinery: 4
+			pwrplt: 8
+			advpwr: 8
+			barracks: 2
+			nhand: 2
+			warfactory: 2
+			airstrip: 2
+			silo: 4
+			repairdepot: 1
+			helipad: 4
+			hq: 1
+			advhq: 1
+			ntpl: 1
 		BuildingFractions:
-			garefn: 30
-			narefn: 30
-			gapowr: 35
-			napowr: 25
-			nanrct: 10
-			gapile: 1
-			nahand: 1
-			gaweap: 1
-			naweap: 1
-			nayard: 1
-			gayard: 1
-			gaairc: 1
-			amradr: 1
-			naradr: 1
-			gatech: 1
-			natech: 1
-			naclon: 1
-			gadept: 1
-			nadept: 1
-			gapill: 10
-			nalasr: 10
-			nasam: 4
-			naflak: 4
-			tesla: 4
-			atesla: 4
-			gtgcan: 1
-			gagap: 1
-			namisl: 1
+			refinery: 30
+			pwrplt: 25
+			advpwr: 30
+			barracks: 1
+			nhand: 1
+			warfactory: 1
+			airstrip: 1
+			helipad: 1
+			hq: 1
+			repairdepot: 1
+			advhq: 1
+			ntpl: 1
+
+			guntower: 8
+			advgtwr: 6
+			ntur: 6
+			samsite: 4
+			obelisk: 4
+
+			silo: 1
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		SquadSize: 5
-		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv
-		ConstructionYardTypes: gacnst, nacnst
-		NavalUnitsTypes: dest, aegis, dlph, carrier, sub, hyd, sqd
-		NavalProductionTypes: nayard, gayard
+		ExcludeFromSquadsTypes: harvester
+		ConstructionYardTypes: fact
+		# NavalUnitsTypes: dest, aegis, dlph, carrier, sub, hyd, sqd
+		# NavalProductionTypes: nayard, gayard
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
-			e1: 90
-			e2: 90
-			dog: 1
-			flakt: 10
-			shk: 10
-			ivan: 3
-			jumpjet: 2
-			deso: 1
-			tany: 1
-			yuri: 1
-			snipe: 5
-			cmin: 10
-			harv: 10
-			htnk: 50
-			htk: 20
-			mtnk: 50
-			fv: 20
-			sref: 10
-			mgtk: 10
-			apoc: 10
-			tnkd: 15
-			ttnk: 15
-			dest: 20
-			aegis: 20
-			dlph: 5
-			carrier: 3
-			sub: 20
-			hyd: 20
-			sqd: 5
+			mngunner: 100
+
+			harvester: 15
+
+
+			ghumv: 35
+			gapc: 25
+			gtank: 40
+			gmlrs: 10
+			gmmtnk: 10
+			nbggy: 35
+			ncycle: 35
+			ntank: 30
+			nftnk: 30
+			nhowi: 10
+			nstltnk: 15
+
 		UnitLimits:
-			dog: 4
-			cmin: 8
-			harv: 8
+			gmmtnk: 7
+			nstltnk: 15
+			harvester: 8
+
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai
-		McvTypes: amcv, smcv
-		ConstructionYardTypes: gacnst, nacnst
-		McvFactoryTypes: gaweap, naweap
+		McvTypes: mcv
+		ConstructionYardTypes: fact
+		McvFactoryTypes: warfactory, airstrip
 	HarvesterBotModule:
 		RequiresCondition: enable-test-ai
 	BuildingRepairBotModule:

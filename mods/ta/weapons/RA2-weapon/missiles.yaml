@@ -53,7 +53,7 @@ Maverick:
 			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: verylarge_clsn
+		Explosions: large_clsn
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
 	Warhead@3EffWater: CreateEffect

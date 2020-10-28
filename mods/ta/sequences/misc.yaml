@@ -15,7 +15,7 @@ flameall:
 explosion:
 	Defaults:
 		Length: *
-		Offset: 0, 0, 30
+		Offset: 0, 0, 80
 	building: twlt070
 		Offset: 0, 0, 40
 	ionring: ring1
@@ -30,6 +30,7 @@ explosion:
 	empty: bulletsmall
 	piff: piff
 	piffpiff: piffpiff
+	soilpiff: soil_piff
 	small_explosion: explosml
 	medium_explosion: explomed
 		Offset: 0, 0, 27
@@ -39,15 +40,15 @@ explosion:
 	small_bang: s_bang24
 	medium_bang: s_bang34
 	large_bang: s_bang48
-	tiny_brnl: s_brnl20
-	small_brnl: s_brnl30
-	medium_brnl: s_brnl40
-	large_brnl: s_brnl58
+	small_brnl: s_brnl20
+	medium_brnl: s_brnl30
+	large_brnl: s_brnl40
+	verylarge_brnl: s_brnl58
 		Offset: 0, 0, 30
-	tiny_tumu: s_tumu22
-	small_tumu: s_tumu30
-	medium_tumu: s_tumu42
-	large_tumu: s_tumu60
+	small_tumu: s_tumu22
+	medium_tumu: s_tumu30
+	large_tumu: s_tumu42
+	huge_tumu: s_tumu60
 		Offset: 0, 0, 31
 	tiny_clsn: s_clsn16
 	small_clsn: s_clsn22
@@ -55,18 +56,19 @@ explosion:
 	large_clsn: s_clsn42
 	verylarge_clsn: s_clsn58
 		Offset: 0, 0, 30
-	tiny_twlt: twlt026
-	small_twlt: twlt036
-	medium_twlt: twlt050
+	small_twlt: twlt026
+	medium_twlt: twlt036
+	large_twlt: twlt050
 		Offset: 0, 0, 26
-	large_twlt: twlt070
+	huge_twlt: twlt070
 		Offset: 0, 0, 36
-	verylarge_twlt: twlt100
+	super_twlt: twlt100
 		Offset: 0, 0, 51
 	tiny_grey_explosion: xgrysml1
 	small_grey_explosion: xgrysml2
 	medium_grey_explosion: xgrymed1
 	large_grey_explosion: xgrymed2
+
 	small_barrel_explosion: brrlexp1
 	large_barrel_explosion: brrlexp2
 	nuke_explosion: nukeanim

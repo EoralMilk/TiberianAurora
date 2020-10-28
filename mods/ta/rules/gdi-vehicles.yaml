@@ -51,13 +51,15 @@ ghumv:
 	# 	SoundFiles: jeep_rev0.wav
 	# 	Delay: 0
 	# 	Interval: 0
+	Targetable@materials:
+		TargetTypes: Metel
 
 gapc:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Prerequisites: ~vehicle.gdi
 		Description: \n 装有重装甲和榴弹发射器的运兵车。\n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
@@ -94,14 +96,16 @@ gapc:
 		PlayerPalette: gapc
 	GrantConditionOnMovement:
 		Condition: trackmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 gtank:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~vehicle.gdi
+		BuildPaletteOrder: 40
+		Prerequisites: ~vehicle.gdi, repairdepot
 		Description: \n GDI中型主战坦克，装有105mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
 		Cost: 800
@@ -137,14 +141,17 @@ gtank:
 		PlayerPalette: gtank
 	GrantConditionOnMovement:
 		Condition: trackmoving
+	Targetable@materials:
+		TargetTypes: Metel
+
 
 gmlrs:
 	Inherits: ^AtkFrontalVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~vehicle.gdi
+		BuildPaletteOrder: 70
+		Prerequisites: ~vehicle.gdi, hq
 		Description: \n GDI的主力炮兵，能用火箭弹幕对目标区域进行轰炸。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果不佳
 	Valued:
 		Cost: 1000
@@ -163,6 +170,9 @@ gmlrs:
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 8c0
+	AttackFrontal:
+		TargetFrozenActors: True
+		ForceFireIgnoresActors: True
 	Armament:
 		Weapon: ManyRockets
 		LocalOffset: 27,120,1300, 27,40,1300, 23,90,1350, 27,-120,1300, 27,-40,1300, 23,-90,1350
@@ -173,14 +183,16 @@ gmlrs:
 		PlayerPalette: gmlrs
 	GrantConditionOnMovement:
 		Condition: trackmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 gmmtnk:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
-		Prerequisites: ~vehicle.gdi
+		BuildPaletteOrder: 80
+		Prerequisites: ~vehicle.gdi, advhq, repairdepot
 		Description: \n GDI的重型坦克，装有双联装120mm主炮和猛犸牙飞弹。\n 猛犸牙飞弹可以对空 \n 装甲十分强大。\n \n 强势对抗：一切单位 \n 可以自我修复至生命值的一半
 	Valued:
 		Cost: 1500
@@ -191,6 +203,11 @@ gmmtnk:
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 870
+	SelfHealing:
+		Step: 5
+		Delay: 10
+		HealIfBelow: 50
+		DamageCooldown: 200
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -216,13 +233,15 @@ gmmtnk:
 		PlayerPalette: gmmtnk
 	GrantConditionOnMovement:
 		Condition: trackmoving
+	Targetable@materials:
+		TargetTypes: Metel
 
 gunboat:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 110
 		Prerequisites: ~vehicle.gdi
 		Description: \n GDI的海军主力
 	Valued:
@@ -254,6 +273,8 @@ gunboat:
 		PlayerPalette: green_unit
 	Voiced:
 		VoiceSet: GunBoatVoice
+	Targetable@materials:
+		TargetTypes: Metel
 
 gdummy:
 	Inherits: ^Vehicle
