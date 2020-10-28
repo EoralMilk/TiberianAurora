@@ -257,7 +257,7 @@ TREE23:
 TREE23burnt:
 	Inherits: ^TreeBurnt
 	RenderSprites:
-		Image: tre23
+		Image: tree23
 		Palette: terrain
 
 TREE24:
