@@ -408,6 +408,7 @@ GenericVoice:
 		Move: Acknowledge,Affirmative,Not a problem,Right away sir,Roger,Roger that,You've got it,Moving out,Advancing,Pushin forward,Over and out
 		Attack: Acknowledge,Affirmative,Not a problem,Roger,Roger that,Engage,Over and out
 		Die: death_01,death_02,death_03,death_04,death_05,death_06,death_07,death_08,death_09,death_10,death_11,death_12
+		Action: Acknowledge,Affirmative,Not a problem,Roger,Roger that
 		Burned: death_10,death_11,death_12
 		Zapped: death_01,death_02,death_03,death_04
 		Poisoned: death_01,death_02,death_03,death_04
