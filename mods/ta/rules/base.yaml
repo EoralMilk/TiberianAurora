@@ -162,7 +162,7 @@
 		Categories: Aircraft
 	EjectOnDeath:
 		PilotActor: mngunner
-		SuccessRate: 50
+		SuccessRate: 100
 		EjectOnGround: false
 		EjectInAir: true
 		AllowUnsuitableCell: true
@@ -267,3 +267,184 @@
 		Categories: Infantry
 	Targetable@materials:
 		TargetTypes: Meat
+
+
+
+^OreDrill:
+	Inherits@1: ^SpriteActor
+	Tooltip:
+		Name: 晶化孢子树
+	WithSpriteBody:
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Ore
+	BodyOrientation:
+	FrozenUnderFog:
+	SeedsResource:
+		ResourceType: Ore
+		Interval: 55
+	WithIdleAnimation:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: player
+	HitShape:
+		UseTargetableCellsOffsets: true
+	MapEditorData:
+		Categories: Resource spawn
+	Interactable:
+	Targetable@materials:
+		TargetTypes: Meat
+
+
+^Tree:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	WithSpriteBody:
+	FrozenUnderFog:
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	AppearsOnRadar:
+	BodyOrientation:
+	Tooltip:
+		Name: 树
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
+	Targetable:
+		TargetTypes: Ground, DetonateAttack
+	Health:
+		HP: 200
+	HitShape:
+		Type: Circle
+			Radius: 256
+	Armor:
+		Type: Wood
+	MapEditorData:
+		Categories: Tree
+	Interactable:
+	Targetable@materials:
+		TargetTypes: Concrete, Grass, Tree
+	SpawnActorOnDeath:
+		Actor: TREE01burnt
+		DeathType: FlameDeath
+	ExternalCondition@OnFire:
+		Condition: KeepBurning
+	DamagedByTerrain:
+		Terrain: Clear, Road, Bridge, Rail, Impassable, DirtRoad, Rough, Cliff, Ore, Gems
+		Damage: 3
+		DamageInterval: 16
+		DamageTypes: FlameDeath
+		RequiresCondition: KeepBurning
+	WithIdleOverlay@OnFire:
+		Sequence: fire
+		RequiresCondition: KeepBurning
+		Palette: effect
+
+^TreeBurnt:
+	Inherits: ^Tree
+	Tooltip:
+		Name: 烧焦的树
+	WithSpriteBody:
+		Sequence: burnt
+	-SpawnActorOnDeath:
+	Targetable@materials:
+		TargetTypes: Concrete
+	-ExternalCondition@OnFire:
+
+^StreetSign:
+	Inherits: ^Tree
+	Tooltip:
+		Name: 街道标识牌
+	MapEditorData:
+		Categories: Decoration
+	Targetable@materials:
+		TargetTypes: Metel
+	-SpawnActorOnDeath:
+	-ExternalCondition@OnFire:
+
+^TrafficLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: 交通信号灯
+	MapEditorData:
+		Categories: Decoration
+	Targetable@materials:
+		TargetTypes: Metel
+	-SpawnActorOnDeath:
+	-ExternalCondition@OnFire:
+
+^StreetLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: 路灯
+	Armor:
+		Type: steel
+	Health:
+		HP: 50
+	MapEditorData:
+		Categories: Decoration
+	Targetable@materials:
+		TargetTypes: Metel
+	-SpawnActorOnDeath:
+	-ExternalCondition@OnFire:
+
+^TelephonePole:
+	Inherits: ^Tree
+	Tooltip:
+		Name: 电话亭
+	Health:
+		HP: 20
+	Armor:
+		Type: Concrete
+	MapEditorData:
+		Categories: Decoration
+	Targetable@materials:
+		TargetTypes: Concrete
+	-SpawnActorOnDeath:
+	-ExternalCondition@OnFire:
+
+^Rock:
+	Inherits@1: ^SpriteActor
+	WithSpriteBody:
+	FrozenUnderFog:
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	AppearsOnRadar:
+	BodyOrientation:
+	Tooltip:
+		Name: 岩石
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
+	HitShape:
+		UseTargetableCellsOffsets: true
+	MapEditorData:
+		Categories: Rock
+	Interactable:
+	Targetable@materials:
+		TargetTypes: Stone
+
+^Crate:
+	Inherits@1: ^SpriteActor
+	HiddenUnderFog:
+	Tooltip:
+		Name: 补给箱
+		GenericName: 补给箱
+	Crate:
+		TerrainTypes: Clear, Rough, Road, Ore, Gems
+	RenderSprites:
+		Palette: terrain
+		Image: crate
+	WithCrateBody:
+		LandSequence: land
+		WaterSequence: water
+	MapEditorData:
+		Categories: System
+	Interactable:
+	Targetable@materials:
+		TargetTypes: Concrete, Grass

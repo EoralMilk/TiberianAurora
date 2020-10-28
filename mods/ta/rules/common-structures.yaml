@@ -428,7 +428,7 @@ silo:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 10
-		Prerequisites: structures.any
+		Prerequisites: refinery
 		Description: 储存1000单位泰伯利亚晶体
 	Selectable:
 		Bounds: 120, 53, 0, -5

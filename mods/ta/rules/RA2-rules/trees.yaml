@@ -9,84 +9,308 @@ TIBTRE03:
 
 TREE01:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE01burnt
+
+TREE01burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree01
+		Palette: terrain
 
 TREE02:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE02burnt
+
+TREE02burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree02
+		Palette: terrain
 
 TREE03:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE03burnt
+
+TREE03burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree03
+		Palette: terrain
 
 TREE04:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE04burnt
+
+TREE04burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree04
+		Palette: terrain
 
 TREE05:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE05burnt
+
+TREE05burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree05
+		Palette: terrain
 
 TREE06:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE06burnt
+
+TREE06burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree06
+		Palette: terrain
 
 TREE07:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE07burnt
+
+TREE07burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree07
+		Palette: terrain
 
 TREE08:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE08burnt
+
+TREE08burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree08
+		Palette: terrain
 
 TREE09:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE09burnt
+
+TREE09burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree09
+		Palette: terrain
 
 TREE10:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE10burnt
+
+TREE10burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree10
+		Palette: terrain
 
 TREE11:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE11burnt
+
+TREE11burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree11
+		Palette: terrain
 
 TREE12:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE12burnt
+
+TREE12burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree12
+		Palette: terrain
 
 TREE13:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE13burnt
+
+TREE13burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree13
+		Palette: terrain
 
 TREE14:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE14burnt
+
+TREE14burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree14
+		Palette: terrain
 
 TREE15:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE15burnt
+
+TREE15burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree15
+		Palette: terrain
 
 TREE16:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE16burnt
+
+TREE16burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree16
+		Palette: terrain
 
 TREE17:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE17burnt
+
+TREE17burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree17
+		Palette: terrain
 
 TREE18:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE18burnt
+
+TREE18burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree18
+		Palette: terrain
 
 TREE19:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE19burnt
+
+TREE19burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree19
+		Palette: terrain
 
 TREE20:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE20burnt
+
+TREE20burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree20
+		Palette: terrain
 
 TREE21:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE21burnt
+
+TREE21burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree21
+		Palette: terrain
 
 TREE22:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE22burnt
+
+TREE22burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree22
+		Palette: terrain
 
 TREE23:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE23burnt
+
+TREE23burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tre23
+		Palette: terrain
 
 TREE24:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE24burnt
+
+TREE24burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree24
+		Palette: terrain
 
 TREE25:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE25burnt
+
+TREE25burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree25
+		Palette: terrain
 
 TREE26:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE26burnt
+
+TREE26burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree26
+		Palette: terrain
 
 TREE27:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE27burnt
+
+TREE27burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree27
+		Palette: terrain
 
 TREE28:
 	Inherits: ^Tree
+	SpawnActorOnDeath:
+		Actor: TREE28burnt
+
+TREE28burnt:
+	Inherits: ^TreeBurnt
+	RenderSprites:
+		Image: tree28
+		Palette: terrain

@@ -93,6 +93,12 @@ a10:
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
+	EjectOnDeath:
+		PilotActor: mngunner
+		SuccessRate: 100
+		EjectOnGround: false
+		EjectInAir: true
+		AllowUnsuitableCell: true
 
 a10husk:
 	Inherits: ^PlaneHusk

@@ -12,7 +12,7 @@ Terrain:
 		Type: Clear
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
 		Color: 745537
-		TargetTypes: Ground, Grass, Soil
+		TargetTypes: Ground, Soil
 	TerrainType@Road:
 		Type: Road
 		AcceptsSmudgeType: SmallScorch, MediumScorch, LargeScorch

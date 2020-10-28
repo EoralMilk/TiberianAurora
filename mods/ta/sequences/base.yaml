@@ -71,3 +71,18 @@
 		Facings: 8
 		Tick: 80
 	icon: xxicon
+
+
+^Tree:
+	idle:
+		ShadowStart: 2
+		UseTilesetExtension: true
+		Offset: 0, 0, 16
+	burnt:
+		Start: 1
+		ShadowStart: 3
+		UseTilesetExtension: true
+		Offset: 0, 0, 16
+	fire: fire01
+		Length: *
+		Offset: 0, -22, 50

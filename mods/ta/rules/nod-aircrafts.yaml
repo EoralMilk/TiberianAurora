@@ -60,7 +60,7 @@ ac130:
 		BuildPaletteOrder: 10
 		Prerequisites: hq
 	Valued:
-		Cost: 2000
+		Cost: 4000
 	Selectable:
 		Priority: 5
 		Bounds: 168, 156, 0, -7

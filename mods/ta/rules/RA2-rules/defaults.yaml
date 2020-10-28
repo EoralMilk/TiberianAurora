@@ -386,6 +386,8 @@
 	CaptureManager:
 	FootprintPlaceBuildingPreview:
 		Palette: effect75alpha
+	Targetable@materials:
+		TargetTypes: Metel
 
 ^BaseBuilding:
 	Inherits: ^Building
@@ -542,6 +544,8 @@
 		AreaTypes: building
 		Adjacent: 9
 	Interactable:
+	Targetable@materials:
+		TargetTypes: Concrete
 
 ^Fence:
 	Inherits: ^Wall
@@ -556,6 +560,8 @@
 	SoundOnDamageTransition:
 		DamagedSounds: gblacrua.wav, gblacrub.wav
 		DestroyedSounds: gblacrua.wav, gblacrub.wav
+	Targetable@materials:
+		TargetTypes: Metel
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
@@ -641,6 +647,8 @@
 		Voice: Move
 	MapEditorData:
 		Categories: Infantry
+	Targetable@materials:
+		TargetTypes: Meat
 
 ^Parachutable:
 	WithSpriteBody@Parachute:
@@ -867,6 +875,8 @@
 		Categories: Vehicle
 	Voiced:
 		VoiceSet: VehicleVoice
+	Targetable@materials:
+		TargetTypes: Metel
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -943,6 +953,8 @@
 		UseLocation: true
 	MapEditorData:
 		Categories: Aircraft
+	Targetable@materials:
+		TargetTypes: Metel
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -998,6 +1010,8 @@
 	MapEditorData:
 		Categories: Husk
 	Interactable:
+	Targetable@materials:
+		TargetTypes: Metel
 
 ^PlaneHusk:
 	Inherits: ^Husk
@@ -1074,129 +1088,6 @@
 		VoiceSet: SovietNavalVoice
 	MapEditorData:
 		Categories: Naval
+	Targetable@materials:
+		TargetTypes: Metel
 
-^OreDrill:
-	Inherits@1: ^SpriteActor
-	Tooltip:
-		Name: 晶化孢子树
-	WithSpriteBody:
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	AppearsOnRadar:
-	RadarColorFromTerrain:
-		Terrain: Ore
-	BodyOrientation:
-	FrozenUnderFog:
-	SeedsResource:
-		ResourceType: Ore
-		Interval: 55
-	WithIdleAnimation:
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-		Palette: player
-	HitShape:
-		UseTargetableCellsOffsets: true
-	MapEditorData:
-		Categories: Resource spawn
-	Interactable:
-
-^Tree:
-	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^SpriteActor
-	WithSpriteBody:
-	FrozenUnderFog:
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	AppearsOnRadar:
-	BodyOrientation:
-	Tooltip:
-		Name: Tree
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-		Palette: terrain
-	Targetable:
-		TargetTypes: Ground, Wall, DetonateAttack
-	Health:
-		HP: 200
-	HitShape:
-	Armor:
-		Type: Wood
-	MapEditorData:
-		Categories: Tree
-	Interactable:
-
-^StreetSign:
-	Inherits: ^Tree
-	Tooltip:
-		Name: Street Sign
-	MapEditorData:
-		Categories: Decoration
-
-^TrafficLight:
-	Inherits: ^Tree
-	Tooltip:
-		Name: Traffic Light
-	MapEditorData:
-		Categories: Decoration
-
-^StreetLight:
-	Inherits: ^Tree
-	Tooltip:
-		Name: Street Light
-	Armor:
-		Type: steel
-	Health:
-		HP: 50
-	MapEditorData:
-		Categories: Decoration
-
-^TelephonePole:
-	Inherits: ^Tree
-	Tooltip:
-		Name: Utility Pole
-	Health:
-		HP: 20
-	Armor:
-		Type: Concrete
-	MapEditorData:
-		Categories: Decoration
-
-^Rock:
-	Inherits@1: ^SpriteActor
-	WithSpriteBody:
-	FrozenUnderFog:
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	AppearsOnRadar:
-	BodyOrientation:
-	Tooltip:
-		Name: Rock
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-		Palette: terrain
-	HitShape:
-		UseTargetableCellsOffsets: true
-	MapEditorData:
-		Categories: Rock
-	Interactable:
-
-^Crate:
-	Inherits@1: ^SpriteActor
-	HiddenUnderFog:
-	Tooltip:
-		Name: Crate
-		GenericName: Crate
-	Crate:
-		TerrainTypes: Clear, Rough, Road, Ore, Gems
-	RenderSprites:
-		Palette: terrain
-		Image: crate
-	WithCrateBody:
-		LandSequence: land
-		WaterSequence: water
-	MapEditorData:
-		Categories: System
-	Interactable:

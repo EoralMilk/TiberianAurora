@@ -3,7 +3,7 @@
 		Name: terrain
 		Tileset: TEMPERATE
 		Filename: isotem.pal
-		ShadowIndex: 1
+		ShadowIndex: 9,1
 	PaletteFromFile@terrain-snow:
 		Name: terrain
 		Tileset: SNOW
