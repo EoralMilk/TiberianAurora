@@ -519,7 +519,7 @@ GunBoatMissile:
 	Inherits: ^HE_WarheadEff_Large
 	ValidTargets: Ground, Water, Air
 	Range: 13c512
-	Burst: 8
+	Burst: 4
 	BurstDelays: 5
 	ReloadDelay: 120
 	Projectile: Missile

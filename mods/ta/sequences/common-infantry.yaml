@@ -21,10 +21,12 @@ mnguner:
 		Start: 176
 		Length: 19
 		ShadowStart: 385
+		Tick: 140
 	idle2:
 		Start: 195
 		Length: 14
 		ShadowStart: 404
+		Tick: 140
 	# die1: mngr_die1
 	# 	Start: 8
 	# 	Length: 6
