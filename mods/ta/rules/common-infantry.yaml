@@ -72,7 +72,7 @@ mngunner:
 bzkier:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.any

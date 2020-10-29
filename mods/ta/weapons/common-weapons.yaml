@@ -60,8 +60,9 @@ GAU-Casing:
 APBazooka:
 	Inherits: ^CommonMissile
 	Inherits: ^AP_WarheadEff_Small
+	ValidTargets: Ground, Water, Air
 	ReloadDelay: 50
-	Range: 6c512
+	Range: 6c0
 	Report: bazooka_shot.wav
 	Projectile: Missile
 		CruiseAltitude: 3000

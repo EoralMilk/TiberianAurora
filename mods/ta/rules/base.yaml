@@ -397,8 +397,8 @@
 	Crushable:
 		CrushClasses: tree
 	SoundOnDamageTransition:
-		DamagedSounds: gblacrua.wav, gblacrub.wav
-		DestroyedSounds: gblacrua.wav, gblacrub.wav
+		DamagedSounds: ricochet5.wav, ricochet6.wav
+		DestroyedSounds: ricochet5.wav, ricochet6.wav
 	HitShape:
 		Type: Circle
 			Radius: 256

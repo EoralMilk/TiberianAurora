@@ -151,6 +151,10 @@ c130husk:
 		ZOffset: -1000
 	Explodes:
 		Weapon: HighExplosion
+		EmptyWeapon: HighExplosion
+	Explodes@Flame:
+		Weapon: FlameSea
+		EmptyWeapon: FlameSea
 
 ac130husk:
 	Inherits: c130husk

@@ -86,3 +86,47 @@ HighExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 
 
+FlameSea:
+	Inherits: ^DamagingExplosion
+	Inherits: ^HE_WarheadEff_Small
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c552
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	Warhead@FireEff: CreateEffect
+		Explosions: fire01
+		ImpactSounds: burn-eff.wav
+		ImpactActors: false
+	Warhead@FireWave: FireCluster
+		Weapon: FlameWave
+		RandomClusterCount: 15
+		Dimensions: 5,5
+		Footprint: xxxxx xxxxx xxXxx xxxxx xxxxx
+
+FlameWave:
+	Inherits: ^FlameWeapon
+	ReloadDelay: 1
+	Range: 7c512
+	Projectile: Bullet
+		Speed: 200
+		Inaccuracy: 800
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Spread: 0c512
+	Warhead@FireWave: FireCluster
+		Weapon: Flamethrower
+		RandomClusterCount: 6
+		Dimensions: 3,3
+		Footprint: xxx xXx xxx

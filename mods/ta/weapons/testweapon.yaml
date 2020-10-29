@@ -29,3 +29,25 @@ testweapon:
 		ImpactSounds: gexp14a.wav
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater, SmallScorch
+
+SummonFlameSea:
+	Inherits: FlameSea
+	ValidTargets: Ground, Water
+	ReloadDelay: 100
+	Range: 10c0
+	Report: vpriatta.wav
+	Projectile: Ra2LaserZap	#Ra2Laser Demo
+		Duration: 12
+		Width: 140
+		InnerWidth: 80
+		TrackTarget: false
+	Warhead@2Eff: CreateEffect
+		Explosions: lazerflare
+		ImpactSounds: gexp14a.wav
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch
+	# Warhead@SummonFlame: FireCluster
+	# 	Weapon: FlameSea
+	# 	RandomClusterCount: 1
+	# 	Dimensions: 1,1
+	# 	Footprint: X

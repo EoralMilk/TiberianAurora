@@ -186,6 +186,7 @@ nftnk:
 		TargetTypes: Metel
 	Explodes:
 		Weapon: FlameExplosion
+		EmptyWeapon: FlameExplosion
 
 
 nhowi:

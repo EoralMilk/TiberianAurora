@@ -364,7 +364,7 @@ World:
 		Factions: gdi
 		BaseActor: mcv
 		BaseActorFacing: 224
-		SupportActors: dog,mngunner,mngunner,mngunner,ghumv
+		SupportActors: dog,mngunner,mngunner,bzkier,ghumv
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -374,7 +374,7 @@ World:
 		Factions: gdi
 		BaseActor: mcv
 		BaseActorFacing: 224
-		SupportActors: dog,mngunner,mngunner,mngunner,ghumv,ghumv,ghumv,gtank,gapc
+		SupportActors: dog,mngunner,mngunner,bzkier,bzkier,ghumv,ghumv,ghumv,gtank,gapc
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -400,7 +400,7 @@ World:
 		Factions: nod
 		BaseActor: mcv
 		BaseActorFacing: 224
-		SupportActors: dog,mngunner,mngunner,mngunner,mngunner,nbggy
+		SupportActors: dog,mngunner,mngunner,bzkier,mngunner,nbggy
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -410,7 +410,7 @@ World:
 		Factions: nod
 		BaseActor: mcv
 		BaseActorFacing: 224
-		SupportActors: dog,mngunner,mngunner,mngunner,mngunner,nbggy,nbggy,ncycle,ntank,ncycle
+		SupportActors: dog,mngunner,mngunner,bzkier,bzkier,mngunner,nbggy,nbggy,ncycle,ntank,ncycle
 		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
