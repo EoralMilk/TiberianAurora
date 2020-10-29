@@ -58,27 +58,34 @@ GAU-Casing:
 	ValidTargets: Ground, Water
 
 APBazooka:
-	Inherits: ^CommonCannon
+	Inherits: ^CommonMissile
 	Inherits: ^AP_WarheadEff_Small
 	ReloadDelay: 50
-	Range: 6c0
+	Range: 6c512
 	Report: bazooka_shot.wav
-	Projectile: Bullet
-		Speed: 376
+	Projectile: Missile
+		CruiseAltitude: 3000
+		ContrailLength: 10
+		Arm: 2
+		Speed: 278
+		Inaccuracy: 128
+		HorizontalRateOfTurn: 8
+		RangeLimit: 10c512
+		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
-		Spread: 0c793
+		Spread: 0c288
 		LaunchAngle: 78
 		Versus:
 			None: 20
 			Flak: 15
 			Plate: 15
-			Light: 75
+			Light: 80
 			Medium: 100
 			Heavy: 100
 			Wood: 95
-			Steel: 95
-			Concrete: 85
+			Steel: 100
+			Concrete: 75
 			Drone: 60
 			Rocket: 100
 

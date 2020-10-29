@@ -82,12 +82,12 @@ CycleMissile:
 		RangeLimit: 10c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
-		Spread: 347
+		Spread: 0c224
 		Damage: 30
 		Versus:
-			None: 40
-			Flak: 35
-			Plate: 30
+			None: 25
+			Flak: 25
+			Plate: 20
 			Light: 100
 			Medium: 80
 			Heavy: 80
