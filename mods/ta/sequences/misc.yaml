@@ -286,6 +286,11 @@ icon:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+	para_icon: para_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
 
 beacon:
 	idle: pbeacon
@@ -300,6 +305,10 @@ beacon:
 		Offset: 0,-100, 10
 		BlendMode: Multiply
 	a10_icon: a10_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, -100, 0
+	para_icon: para_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, -100, 0

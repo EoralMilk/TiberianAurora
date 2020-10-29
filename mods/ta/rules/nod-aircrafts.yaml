@@ -19,7 +19,7 @@ c130:
 		Repulsable: false
 		VTOL: false
 		CruiseAltitude: 6c0
-		IdleBehavior: None
+		IdleBehavior: LeaveMap
 		TurnSpeed: 3
 		Speed: 285
 		CanSlide: false
@@ -55,10 +55,10 @@ c130:
 ac130:
 	Inherits: ^CommonAircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
-	Buildable:
-		Queue: Aircraft
-		BuildPaletteOrder: 10
-		Prerequisites: hq
+	# Buildable:
+	# 	Queue: Aircraft
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: hq
 	Valued:
 		Cost: 4000
 	Selectable:
@@ -66,7 +66,7 @@ ac130:
 		Bounds: 168, 156, 0, -7
 	Interactable:
 		Bounds: 100,80
-	# RejectsOrders:
+	RejectsOrders:
 	Tooltip:
 		Name: AC130炮艇机
 	Aircraft:
@@ -74,7 +74,7 @@ ac130:
 		Repulsable: false
 		VTOL: false
 		CruiseAltitude: 6c0
-		IdleBehavior: None
+		IdleBehavior: LeaveMap
 		TurnSpeed: 2
 		Speed: 235
 		CanSlide: false
@@ -85,6 +85,14 @@ ac130:
 	Armament@GUNS:
 		# Name: gun
 		Weapon: AC130Vulcan
+		LocalOffset: 560,0,600
+	Armament@Cannon_fake:
+		# Name: gun
+		Weapon: AC130CannonFake
+		LocalOffset: 0,0,0
+	Armament@Cannon:
+		# Name: gun
+		Weapon: AC130Cannon
 		LocalOffset: 560,0,600
 	AutoTarget:
 	AttackAircraft:

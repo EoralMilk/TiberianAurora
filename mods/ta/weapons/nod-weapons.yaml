@@ -319,7 +319,7 @@ AC130Vulcan:
 		Speed: 800
 		LaunchAngle: 0
 	Warhead@1Dam: SpreadDamage
-		Damage: 40
+		Damage: 60
 		Spread: 0c342
 		Versus:
 			None: 100
@@ -339,3 +339,39 @@ AC130Vulcan:
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
 		ValidTargets: Metel
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
+
+AC130CannonFake:
+	ReloadDelay: 25
+	Range: 11c0
+	Projectile: InstantHit
+		Blockable: true
+	Warhead@Eff_attacksound: CreateEffect
+		ImpactSounds: vgriatta.wav, vgriattb.wav, vgriattc.wav
+
+
+AC130Cannon:
+	Inherits: ^CommonCannon
+	Inherits: ^AP_WarheadEff_Medium
+	ReloadDelay: 25
+	Range: 11c0
+	Projectile: Bullet
+		Inaccuracy: 600
+		Speed: 800
+		LaunchAngle: 0
+		ContrailLength: 16
+		ContrailWidth: 26
+		ContrailColor: E86400
+	Warhead@1Dam: SpreadDamage
+		Damage: 60
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+			Drone: 60
+			Rocket: 100

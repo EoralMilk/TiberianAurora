@@ -31,6 +31,35 @@ Player:
 					Attractiveness: 2
 					TargetMetric: Value
 					CheckRadius: 2c0
+			Paratroopers:
+				OrderName: Paratroopers
+				MinimumAttractiveness: 60
+				MinimumScanTimeInterval: 20
+				MaximumScanTimeInterval: 40
+				Consideration@2:
+					Against: Enemy
+					Types: Building
+					Attractiveness: 20
+					TargetMetric: Value
+					CheckRadius: 7c0
+				Consideration@3:
+					Against: Enemy
+					Types: Defence
+					Attractiveness: -7
+					TargetMetric: Value
+					CheckRadius: 6c0
+				Consideration@ally:
+					Against: Ally
+					Types: Vehicle, Infantry
+					Attractiveness: 5
+					TargetMetric: Value
+					CheckRadius: 3c0
+				Consideration@4:
+					Against: Enemy
+					Types: Vehicle, Infantry
+					Attractiveness: -3
+					TargetMetric: Value
+					CheckRadius: 3c0
 	BaseBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		DefenseQueues: Support

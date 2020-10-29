@@ -312,14 +312,14 @@ hq:
 		PlayerPalette: green_unit
 	Targetable@materials:
 		TargetTypes: Metel
-	AirstrikePower:
+	AirstrikePower@gdi:
 		OrderName: A-10Airstrike
 		Cursor: attackmove
 		PauseOnCondition: lowpower
-		Prerequisites: ~techlevel.unrestricted
+		Prerequisites: A-10Airstrike.gdi
 		Icon: a10_icon
-		ChargeInterval: 1000
-		SquadSize: 1
+		ChargeInterval: 5000
+		SquadSize: 3
 		QuantizedFacings: 8
 		Description: A-10空袭
 		LongDesc: 部署轰炸信标\n对一条直线上的单位与建筑造成伤害
@@ -340,7 +340,42 @@ hq:
 		UseDirectionalTarget: True
 		DirectionArrowAnimation: arrowdirection
 		SupportPowerPaletteOrder: 10
+	ParatroopersPower@nod:
+		OrderName: Paratroopers
+		Icon: para_icon
+		ChargeInterval: 7000
+		Description: 空降部队
+		LongDesc: 派遣AC130炮艇机向目标区域投送空降突击队 \nAC130将在投放部队的同时提供一定的火力支援
+		EndChargeSpeechNotification: AirstrikeReady
+		SelectTargetSpeechNotification: SelectTarget
+		InsufficientPowerSpeechNotification: InsufficientPower
+		IncomingSpeechNotification: EnemyPlanesApproaching
+		DropItems: mngunner,ncycle,mngunner,mngunner,nbggy
+		QuantizedFacings: 8
+		UnitType: ac130
+		DisplayBeacon: True
+		BeaconPoster: para_icon
+		# BeaconPosterPalette: beaconposter
+		DisplayRadarPing: True
+		DisplayTimerStances: Ally, Neutral, Enemy
+		CameraActor: camera
+		Prerequisites: Paradrops.nod
+		ArrowSequence: arrow
+		ClockSequence: clock
+		# CircleSequence: circles
+		UseDirectionalTarget: True
+		DirectionArrowAnimation: arrowdirection
+		SupportPowerPaletteOrder: 10
 	SupportPowerChargeBar:
+	ProvidesPrerequisite@gdi:
+		Prerequisite: A-10Airstrike.gdi
+		Factions: gdi
+		ResetOnOwnerChange: true
+	ProvidesPrerequisite@nod:
+		Prerequisite: Paradrops.nod
+		Factions: nod
+		ResetOnOwnerChange: true
+
 
 helipad:
 	Inherits: ^BaseBuilding
