@@ -312,6 +312,35 @@ hq:
 		PlayerPalette: green_unit
 	Targetable@materials:
 		TargetTypes: Metel
+	AirstrikePower:
+		OrderName: A-10Airstrike
+		Cursor: attackmove
+		PauseOnCondition: lowpower
+		Prerequisites: ~techlevel.superweapons
+		Icon: a10_icon
+		ChargeInterval: 1000
+		SquadSize: 1
+		QuantizedFacings: 8
+		Description: A-10空袭
+		LongDesc: 部署轰炸信标\n对一条直线上的单位与建筑造成伤害
+		EndChargeSpeechNotification: AirstrikeReady
+		SelectTargetSpeechNotification: SelectTarget
+		InsufficientPowerSpeechNotification: InsufficientPower
+		IncomingSpeechNotification: EnemyPlanesApproaching
+		UnitType: a10b
+		DisplayBeacon: True
+		BeaconPoster: a10_icon
+		# BeaconPosterPalette: beaconposter
+		DisplayRadarPing: True
+		DisplayTimerStances: Ally, Neutral, Enemy
+		CameraActor: camera
+		ArrowSequence: arrow
+		ClockSequence: clock
+		# CircleSequence: circles
+		UseDirectionalTarget: True
+		DirectionArrowAnimation: arrowdirection
+		SupportPowerPaletteOrder: 10
+	SupportPowerChargeBar:
 
 helipad:
 	Inherits: ^BaseBuilding

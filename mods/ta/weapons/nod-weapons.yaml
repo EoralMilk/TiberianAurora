@@ -334,3 +334,8 @@ AC130Vulcan:
 			Drone: 100
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@Eff_HitMetel: CreateEffect
+		Explosions: piff
+		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
+		ValidTargets: Metel
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water

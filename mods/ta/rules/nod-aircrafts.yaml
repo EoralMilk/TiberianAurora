@@ -1,10 +1,10 @@
 
 c130:
 	Inherits: ^CommonAircraft
-	Buildable:
-		Queue: Aircraft
-		BuildPaletteOrder: 10
-		Prerequisites: hq
+	# Buildable:
+	# 	Queue: Aircraft
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: hq
 	Valued:
 		Cost: 2000
 	Selectable:
@@ -12,7 +12,6 @@ c130:
 		Bounds: 168, 156, 0, -7
 	Interactable:
 		Bounds: 100,80
-	# RejectsOrders:
 	Tooltip:
 		Name: 运输机
 	Aircraft:
@@ -24,6 +23,7 @@ c130:
 		TurnSpeed: 2
 		Speed: 235
 		CanSlide: false
+		MaximumPitch: 50
 	Health:
 		HP: 1000
 	Armor:
@@ -50,7 +50,7 @@ c130:
 		Offset: 240,480,0
 		RequiresCondition: !airborne
 		ZOffset: -1000
-
+	RejectsOrders:
 
 ac130:
 	Inherits: ^CommonAircraft

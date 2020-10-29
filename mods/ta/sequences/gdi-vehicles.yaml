@@ -22,7 +22,7 @@ gharv:
 		Length: 19
 		Facings: -32
 		ShadowStart: 608
-		Tick: 120
+		Tick: 70
 	dock: gharv-dock
 		Facings: -8
 		ShadowStart: 72

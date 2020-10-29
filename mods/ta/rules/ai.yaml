@@ -1,43 +1,34 @@
 Player:
 	ModularBot@testai:
-		Name: 木头人
+		Name: 蠢萝莉指挥官
 		Type: test
 	GrantConditionOnBotOwner@test:
 		Condition: enable-test-ai
 		Bots: test
-	# SupportPowerBotModule@test:
-	# 	RequiresCondition: enable-test-ai
-	# 	Decisions:
-	# 		airborne:
-	# 			OrderName: AmericanParatroopers
-	# 			MinimumAttractiveness: 5
-	# 			Consideration@1:
-	# 				Against: Enemy
-	# 				Types: Structure
-	# 				Attractiveness: 1
-	# 				TargetMetric: None
-	# 				CheckRadius: 8c0
-	# 			Consideration@2:
-	# 				Against: Enemy
-	# 				Types: Water
-	# 				Attractiveness: -5
-	# 				TargetMetric: None
-	# 				CheckRadius: 8c0
-	# 		nukepower:
-	# 			OrderName: NukePowerInfoOrder
-	# 			MinimumAttractiveness: 3000
-	# 			Consideration@1:
-	# 				Against: Enemy
-	# 				Types: Structure
-	# 				Attractiveness: 1
-	# 				TargetMetric: Value
-	# 				CheckRadius: 5c0
-	# 			Consideration@2:
-	# 				Against: Ally
-	# 				Types: Air, Ground, Water
-	# 				Attractiveness: -10
-	# 				TargetMetric: Value
-	# 				CheckRadius: 7c0
+	SupportPowerBotModule@test:
+		RequiresCondition: enable-test-ai
+		Decisions:
+			A-10Airstrike:
+				OrderName: A-10Airstrike
+				MinimumAttractiveness: 2000
+				Consideration@1:
+					Against: Enemy
+					Types: Vehicle, Infantry
+					Attractiveness: 3
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@2:
+					Against: Ally
+					Types: Ground, Water
+					Attractiveness: -20
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@3:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: Value
+					CheckRadius: 2c0
 	BaseBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		DefenseQueues: Support
@@ -47,8 +38,12 @@ Player:
 		BarracksTypes: barracks, nhand
 		VehiclesFactoryTypes: warfactory, airstrip
 		ProductionTypes: barracks, nhand, warfactory, airstrip, helipad
-		# NavalProductionTypes: nayard, gayard
-		MaxBaseRadius: 50
+		SiloTypes: silo
+		MinimumExcessPower: 30
+		MaximumExcessPower: 150
+		ExcessPowerIncrement: 30
+		ExcessPowerIncreaseThreshold: 5
+		# MaxBaseRadius: 50
 		BuildingLimits:
 			refinery: 4
 			pwrplt: 8
@@ -59,7 +54,7 @@ Player:
 			airstrip: 2
 			silo: 4
 			repairdepot: 1
-			helipad: 4
+			# helipad: 1
 			hq: 1
 			advhq: 1
 			ntpl: 1
@@ -71,34 +66,30 @@ Player:
 			nhand: 1
 			warfactory: 1
 			airstrip: 1
-			helipad: 1
+			# helipad: 1
 			hq: 1
 			repairdepot: 1
 			advhq: 1
 			ntpl: 1
-
+			# defence
 			guntower: 8
 			advgtwr: 6
 			ntur: 6
 			samsite: 4
 			obelisk: 4
-
 			silo: 1
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
-		SquadSize: 5
+		SquadSize: 15
 		ExcludeFromSquadsTypes: harvester
 		ConstructionYardTypes: fact
-		# NavalUnitsTypes: dest, aegis, dlph, carrier, sub, hyd, sqd
-		# NavalProductionTypes: nayard, gayard
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
+			# infantry
 			mngunner: 100
-
-			harvester: 15
-
-
+			# vehicle
+			harvester: 10
 			ghumv: 35
 			gapc: 25
 			gtank: 40
@@ -110,10 +101,11 @@ Player:
 			nftnk: 30
 			nhowi: 10
 			nstltnk: 15
-
 		UnitLimits:
 			gmmtnk: 7
 			nstltnk: 15
+			nhowi: 9
+			gmlrs: 9
 			harvester: 8
 
 	McvManagerBotModule@test:
@@ -123,5 +115,7 @@ Player:
 		McvFactoryTypes: warfactory, airstrip
 	HarvesterBotModule:
 		RequiresCondition: enable-test-ai
+		HarvesterTypes: harvester
+		RefineryTypes: refinery
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai

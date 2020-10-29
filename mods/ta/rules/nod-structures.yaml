@@ -246,7 +246,7 @@ samsite:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
-		Prerequisites: infantry_barracks, ~structures.nod
+		Prerequisites: infantry_barracks, hq, ~structures.nod
 		Description: 特殊的防空装置，平时发射器处于重装甲的保护之下，当空域内出现敌军飞行器时将自行升起打击敌机。
 	Valued:
 		Cost: 650

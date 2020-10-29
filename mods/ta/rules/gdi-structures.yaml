@@ -94,7 +94,7 @@ warfactory:
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
-		ExitCell: 4,2
+		ExitCell: 3,2
 		SpawnOffset: -1024, 0, 0
 	Production:
 		Produces: Vehicle
@@ -271,7 +271,7 @@ advgtwr:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
-		Prerequisites: infantry_barracks, ~structures.gdi
+		Prerequisites: infantry_barracks, ~structures.gdi, hq
 		Description: 装载着导弹发射器和整套探测，索敌，瞄准系统的高级防御塔
 	Valued:
 		Cost: 500

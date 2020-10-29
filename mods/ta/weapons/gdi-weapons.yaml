@@ -411,6 +411,22 @@ A10VulcanFake:
 	FollowingBurstTargetOffset: 300,0,0
 	Projectile: InstantHit
 		Blockable: true
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+		Spread: 0c366
+		Versus:
+			None: 0
+			Flak: 0
+			Plate: 0
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 0
+			Rocket: 0
+
 
 A10Vulcan:
 	Inherits: ^MGBulletEff
@@ -441,6 +457,11 @@ A10Vulcan:
 			Drone: 100
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@Eff_HitMetel: CreateEffect
+		Explosions: piff
+		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
+		ValidTargets: Metel
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 A10Napalm:
 	ReloadDelay: 100
@@ -497,15 +518,15 @@ GunBoatMissile:
 	Inherits: ^CommonMissile
 	Inherits: ^HE_WarheadEff_Large
 	ValidTargets: Ground, Water, Air
-	Range: 10c512
+	Range: 13c512
 	Burst: 8
-	BurstDelays: 10
+	BurstDelays: 5
 	ReloadDelay: 120
 	Projectile: Missile
 		CruiseAltitude: 4800
 		ContrailLength: 15
 		Arm: 2
-		Speed: 280
+		Speed: 380
 		Inaccuracy: 568
 		HorizontalRateOfTurn: 8
 		RangeLimit: 18c512

@@ -197,7 +197,7 @@ gmmtnk:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: 猛犸坦克mk1
+		Name: 猛犸坦克
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7

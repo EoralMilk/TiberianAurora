@@ -33,17 +33,17 @@ a10:
 	# AttackBomber:
 	# 	Armaments: gun, bombs
 	Armament@GUNS_fake:
-		# Name: gun
+		Name: gun_fake
 		Weapon: A10VulcanFake
 		LocalOffset: 1510,0,85
 		MuzzleSequence: muzzle
 	Armament@GUNS:
-		# Name: gun
+		Name: gun
 		Weapon: A10Vulcan
 		LocalOffset: 2260,0,600
 	WithMuzzleOverlay:
 	Armament@BOMBS:
-		# Name: bombs
+		Name: bombs
 		Weapon: A10Napalm
 		LocalOffset: 0,-256,43, 0,256,43
 	AttackAircraft:
@@ -100,10 +100,21 @@ a10:
 		EjectInAir: true
 		AllowUnsuitableCell: true
 
+a10b:
+	Inherits: a10
+	-Buildable:
+	-Selectable:
+	-RevealsShroud:
+	AttackBomber:
+		Armaments: gun,gun_fake,bombs
+	RejectsOrders:
+
+
+
 a10husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Harrier
+		Name: A-10 对地攻击机
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 210

@@ -238,3 +238,68 @@ casing:
 
 shellcasing:
 	Inherits: casing
+
+
+arrowdirection:
+	Defaults:
+		Length: *
+		Tick: 75
+	arrow-t: arrwnw
+		# Y: -12
+		Offset: 0, -25, 0
+	arrow-tr: arrwn
+		# X: 14
+		# Y: -12
+		Offset: 15, -15, 0
+	arrow-r: arrwne
+		# X: 14
+		Offset: 25, 0, 0
+	arrow-br: arrwe
+		# X: 14
+		# Y: 11
+		Offset: 15, 15, 0
+	arrow-b: arrwse
+		# Y: 11
+		Offset: 0, 25, 0
+	arrow-bl: arrws
+		# X: -15
+		# Y: 11
+		Offset: -15, 15, 0
+	arrow-l: arrwsw
+		# X: -15
+		Offset: -25, 0, 0
+	arrow-tl: arrww
+		# X: -15
+		# Y: -12
+		Offset: -15, -15, 0
+
+
+icon:
+	gps: asaticon
+	invuln: ircricon
+	chrono: chroicon
+	abomb: nukeicon
+	paradrop: paraicon
+	airborne: aparicon
+	lightningstorm: bolticon
+	a10_icon: a10_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+beacon:
+	idle: pbeacon
+		Length: 20
+		Tick: 200
+		ZOffset: 2047
+	arrow: pbeacon
+		Length: 1
+		ZOffset: 2047
+	clock: clock
+		Length: *
+		Offset: 0,-100, 10
+		BlendMode: Multiply
+	a10_icon: a10_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, -100, 0

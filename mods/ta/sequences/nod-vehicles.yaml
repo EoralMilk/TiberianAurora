@@ -17,7 +17,7 @@ nharv:
 		Length: 19
 		Facings: -32
 		ShadowStart: 608
-		Tick: 120
+		Tick: 70
 	dock: nharv-dock
 		Facings: -8
 		ShadowStart: 72
