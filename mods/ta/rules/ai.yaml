@@ -10,7 +10,9 @@ Player:
 		Decisions:
 			A-10Airstrike:
 				OrderName: A-10Airstrike
-				MinimumAttractiveness: 2000
+				MinimumAttractiveness: 10
+				MinimumScanTimeInterval: 25
+				MaximumScanTimeInterval: 50
 				Consideration@1:
 					Against: Enemy
 					Types: Vehicle, Infantry
@@ -26,7 +28,7 @@ Player:
 				Consideration@3:
 					Against: Enemy
 					Types: Structure
-					Attractiveness: 1
+					Attractiveness: 2
 					TargetMetric: Value
 					CheckRadius: 2c0
 	BaseBuilderBotModule@test:

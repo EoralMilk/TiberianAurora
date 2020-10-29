@@ -20,10 +20,10 @@ c130:
 		VTOL: false
 		CruiseAltitude: 6c0
 		IdleBehavior: None
-		TurnSpeed: 2
-		Speed: 235
+		TurnSpeed: 3
+		Speed: 285
 		CanSlide: false
-		MaximumPitch: 50
+		MaximumPitch: 40
 	Health:
 		HP: 1000
 	Armor:

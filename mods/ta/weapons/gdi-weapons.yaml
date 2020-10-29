@@ -487,9 +487,9 @@ A10Napalm:
 			Light: 90
 			Medium: 75
 			Heavy: 75
-			Wood: 85
+			Wood: 75
 			Steel: 75
-			Concrete: 50
+			Concrete: 35
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath

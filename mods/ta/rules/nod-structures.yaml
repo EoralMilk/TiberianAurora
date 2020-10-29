@@ -165,7 +165,7 @@ ntpl:
 	Health:
 		HP: 3000
 	Armor:
-		Type: Wood
+		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
 	Power:

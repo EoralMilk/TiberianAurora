@@ -158,7 +158,7 @@ advhq:
 	Health:
 		HP: 1300
 	Armor:
-		Type: Wood
+		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@dish:

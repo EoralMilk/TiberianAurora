@@ -15,7 +15,7 @@ fact:
 	Health:
 		HP: 2100
 	Armor:
-		Type: 建筑工厂
+		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
 	Valued:
@@ -221,7 +221,7 @@ refinery:
 	Health:
 		HP: 1500
 	Armor:
-		Type: Wood
+		Type: Concrete
 	RevealsShroud:
 		Range: 4c0
 	WithDockedOverlay:
@@ -284,7 +284,7 @@ hq:
 	Health:
 		HP: 800
 	Armor:
-		Type: Wood
+		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@dish:
@@ -316,7 +316,7 @@ hq:
 		OrderName: A-10Airstrike
 		Cursor: attackmove
 		PauseOnCondition: lowpower
-		Prerequisites: ~techlevel.superweapons
+		Prerequisites: ~techlevel.unrestricted
 		Icon: a10_icon
 		ChargeInterval: 1000
 		SquadSize: 1
