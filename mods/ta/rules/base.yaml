@@ -240,6 +240,7 @@
 	ProximityCaptor:
 		Types: Infantry
 	Crushable:
+		CrushClasses: infantry
 		CrushSound: death_03.wav
 	EdibleByLeap:
 	Guard:
@@ -318,6 +319,11 @@
 		TargetTypes: Ground, DetonateAttack
 	Health:
 		HP: 200
+	Crushable:
+		CrushClasses: tree
+	SoundOnDamageTransition:
+		DamagedSounds: gblacrua.wav, gblacrub.wav
+		DestroyedSounds: gblacrua.wav, gblacrub.wav
 	HitShape:
 		Type: Circle
 			Radius: 256
@@ -354,6 +360,8 @@
 	Targetable@materials:
 		TargetTypes: Concrete
 	-ExternalCondition@OnFire:
+	-DamagedByTerrain:
+	-WithIdleOverlay@OnFire:
 
 ^StreetSign:
 	Inherits: ^Tree
@@ -365,6 +373,8 @@
 		TargetTypes: Metel
 	-SpawnActorOnDeath:
 	-ExternalCondition@OnFire:
+	-DamagedByTerrain:
+	-WithIdleOverlay@OnFire:
 
 ^TrafficLight:
 	Inherits: ^Tree
@@ -376,6 +386,8 @@
 		TargetTypes: Metel
 	-SpawnActorOnDeath:
 	-ExternalCondition@OnFire:
+	-DamagedByTerrain:
+	-WithIdleOverlay@OnFire:
 
 ^StreetLight:
 	Inherits: ^Tree
@@ -391,6 +403,8 @@
 		TargetTypes: Metel
 	-SpawnActorOnDeath:
 	-ExternalCondition@OnFire:
+	-DamagedByTerrain:
+	-WithIdleOverlay@OnFire:
 
 ^TelephonePole:
 	Inherits: ^Tree
@@ -406,6 +420,8 @@
 		TargetTypes: Concrete
 	-SpawnActorOnDeath:
 	-ExternalCondition@OnFire:
+	-DamagedByTerrain:
+	-WithIdleOverlay@OnFire:
 
 ^Rock:
 	Inherits@1: ^SpriteActor

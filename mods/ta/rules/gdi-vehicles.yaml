@@ -213,7 +213,7 @@ gmmtnk:
 	Mobile:
 		TurnSpeed: 4
 		Speed: 65
-		Locomotor: tracked
+		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 8c0
 	Armament:
@@ -258,15 +258,15 @@ gunboat:
 	Mobile:
 		TurnSpeed: 2
 		Speed: 70
-		Locomotor: tracked
+		Locomotor: lcraft
 	RevealsShroud:
 		Range: 8c0
 	Armament@antiair:
-		Weapon: MammothTusk
+		Weapon: GunBoatMissile
 		LocalOffset: 217,195,1365, 217,-195,1365
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 6
 		Offset: 1281,0,0
 	RenderSprites:
 		Image: gunboat

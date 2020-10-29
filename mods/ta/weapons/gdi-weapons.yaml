@@ -491,3 +491,38 @@ A10Napalm:
 		RandomClusterCount: 6
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
+
+
+GunBoatMissile:
+	Inherits: ^CommonMissile
+	Inherits: ^HE_WarheadEff_Large
+	ValidTargets: Ground, Water, Air
+	Range: 10c512
+	Burst: 8
+	BurstDelays: 10
+	ReloadDelay: 120
+	Projectile: Missile
+		CruiseAltitude: 4800
+		ContrailLength: 15
+		Arm: 2
+		Speed: 280
+		Inaccuracy: 568
+		HorizontalRateOfTurn: 8
+		RangeLimit: 18c512
+		ContrailColor: D8D8FF
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c512
+		Damage: 75
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 80
+			Heavy: 80
+			Wood: 50
+			Steel: 80
+			Concrete: 50
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath

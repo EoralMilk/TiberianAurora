@@ -92,12 +92,24 @@ airstrip:
 		Range: 9c0
 	Power:
 		Amount: -30
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		ExitCell: 5,2
 		SpawnOffset: -1024, 0, 0
 	ProductionAirdrop:
 		Produces: Vehicle
 		ActorType: c130
+	PrimaryBuilding:
+		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
 	# WithBuildingBib:
 	ProductionQueue:
 		Type: Vehicle

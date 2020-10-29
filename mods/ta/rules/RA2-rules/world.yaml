@@ -63,7 +63,7 @@
 			Gems: 70
 	Locomotor@TRACKED:
 		Name: tracked
-		Crushes: crate, infantry
+		Crushes: crate, infantry, fence
 		TerrainSpeeds:
 			Clear: 100
 			Rough: 100
@@ -76,7 +76,7 @@
 			Gems: 70
 	Locomotor@HEAVYTRACKED:
 		Name: heavytracked
-		Crushes: wall, crate, infantry
+		Crushes: wall, crate, infantry, tree, fence
 		TerrainSpeeds:
 			Clear: 100
 			Rough: 100
