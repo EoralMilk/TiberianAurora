@@ -214,6 +214,7 @@ refinery:
 		UseStorage: True
 		DockAngle: 96
 		DockOffset: 1, 3 #1,2
+		EmptyCondition: no-tiberium
 	FreeActor:
 		Actor: harvester
 		SpawnOffset: 1,3
@@ -261,6 +262,10 @@ refinery:
 		CameraPitch: 85
 	Targetable@materials:
 		TargetTypes: Metel
+	Explodes@TiberiumBlast:
+		RequiresCondition: !no-tiberium
+		Weapon: TiberiumExplosion
+
 
 hq:
 	Inherits: ^BaseBuilding
@@ -518,6 +523,10 @@ silo:
 		PipColor: Green
 		PipCount: 15
 		Capacity: 1000
+		EmptyCondition: no-tiberium
 	Targetable@materials:
 		TargetTypes: Metel
+	Explodes@TiberiumBlast:
+		RequiresCondition: !no-tiberium
+		Weapon: TiberiumExplosion
 

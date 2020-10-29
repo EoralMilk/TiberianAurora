@@ -13,7 +13,7 @@ c130:
 	Interactable:
 		Bounds: 100,80
 	Tooltip:
-		Name: 运输机
+		Name: C130运输机
 	Aircraft:
 		CanHover: false
 		Repulsable: false
@@ -115,7 +115,7 @@ ac130:
 		DropRange: 4c0
 		ChuteSound: sparadra.wav
 	SpawnActorOnDeath:
-		Actor: c130husk
+		Actor: ac130husk
 	HitShape:
 	BodyOrientation:
 		QuantizedFacings: 64
@@ -130,7 +130,7 @@ ac130:
 c130husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: 运输机
+		Name: C130运输机
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 100
@@ -149,3 +149,10 @@ c130husk:
 		Offset: 240,480,0
 		RequiresCondition: !airborne
 		ZOffset: -1000
+	Explodes:
+		Weapon: HighExplosion
+
+ac130husk:
+	Inherits: c130husk
+	Tooltip:
+		Name: AC130炮艇机

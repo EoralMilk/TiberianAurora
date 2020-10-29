@@ -33,17 +33,17 @@ a10:
 	# AttackBomber:
 	# 	Armaments: gun, bombs
 	Armament@GUNS_fake:
-		Name: gun_fake
+		# Name: gun_fake
 		Weapon: A10VulcanFake
 		LocalOffset: 1510,0,85
 		MuzzleSequence: muzzle
 	Armament@GUNS:
-		Name: gun
+		# Name: gun
 		Weapon: A10Vulcan
 		LocalOffset: 2260,0,600
 	WithMuzzleOverlay:
 	Armament@BOMBS:
-		Name: bombs
+		# Name: bombs
 		Weapon: A10Napalm
 		LocalOffset: 0,-256,43, 0,256,43
 	AttackAircraft:
@@ -108,7 +108,20 @@ a10b:
 	AttackBomber:
 		Armaments: gun,gun_fake,bombs
 	RejectsOrders:
-
+	Armament@GUNS_fake:
+		Name: gun_fake
+		Weapon: A10VulcanFake
+		LocalOffset: 1510,0,85
+		MuzzleSequence: muzzle
+	Armament@GUNS:
+		Name: gun
+		Weapon: A10Vulcan
+		LocalOffset: 2260,0,600
+	WithMuzzleOverlay:
+	Armament@BOMBS:
+		Name: bombs
+		Weapon: A10Napalm
+		LocalOffset: 0,-256,43, 0,256,43
 
 
 a10husk:
@@ -120,3 +133,5 @@ a10husk:
 		Speed: 210
 	RenderVoxels:
 		Image: a10
+	Explodes:
+		Weapon: FlameExplosion

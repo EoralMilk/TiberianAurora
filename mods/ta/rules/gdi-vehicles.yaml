@@ -77,6 +77,14 @@ gapc:
 		TurnSpeed: 5
 		Speed: 132
 		Locomotor: tracked
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+		PassengerFacing: 0
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadVoice: Move
+		LoadingCondition: notmobile
 	RevealsShroud:
 		Range: 8c0
 	Armament:

@@ -184,6 +184,9 @@ nftnk:
 		Condition: trackmoving
 	Targetable@materials:
 		TargetTypes: Metel
+	Explodes:
+		Weapon: FlameExplosion
+
 
 nhowi:
 	Inherits: ^AtkFrontalVehicle
