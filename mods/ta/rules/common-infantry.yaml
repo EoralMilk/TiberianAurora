@@ -69,7 +69,7 @@ mngunner:
 			nod: mnguner
 		PlayerPalette: n_mngr
 
-bazoker:
+bzkier:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
@@ -100,7 +100,12 @@ bazoker:
 		Voice: Attack
 	Armament@primary:
 		Weapon: APBazooka
-		LocalOffset: 256,0,1024
+		LocalOffset: 251,70,1024
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
+	TakeCover:
+		SpeedModifier: 50
+		ProneOffset: 425,10,56
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
@@ -112,7 +117,10 @@ bazoker:
 	AutoTarget:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
-		Image: mnguner
+		Image: bzkier-n
+		FactionImages:
+			gdi: bzkier-g
+			nod: bzkier-n
 		PlayerPalette: n_mngr
 
 eng:

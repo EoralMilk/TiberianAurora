@@ -118,7 +118,8 @@ Player:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
 			# infantry
-			mngunner: 100
+			mngunner: 80
+			bzkier: 35
 			# vehicle
 			harvester: 10
 			ghumv: 35

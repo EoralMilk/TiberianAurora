@@ -46,17 +46,17 @@ mnguner:
 	die1: mngr_die1
 		Start: 26
 		Length: 6
-		Tick: 80
+		Tick: 100
 		ShadowStart: 82
 	die2: mngr_die2
 		Start: 38
 		Length: 6
-		Tick: 80
+		Tick: 100
 		ShadowStart: 94
 	die3: mngr_die3
 		Start: 23
 		Length: 5
-		Tick: 100
+		Tick: 110
 		ShadowStart: 66
 	paradrop:
 	cheer:
@@ -91,7 +91,7 @@ mnguner:
 		Offset: 0, 0, 0
 
 mnguner-g:
-	Inherits@Muzzle: mnguner
+	Inherits: mnguner
 	Defaults: mngr_up-g
 	die1: mngr_die1-g
 	die2: mngr_die2-g
@@ -101,3 +101,44 @@ mnguner-g:
 	prone-stand: mngr_prone-g
 	prone-run: mngr_prone-g
 	prone-shoot: mngr_prone-g
+
+
+
+bzkier-n:
+	Inherits: mnguner
+	Inherits@Muzzle: ^WithFlakMuzzle
+	Defaults: bzkr_up-n
+	die1: bzkr_die1-n
+		Start: 0
+		Length: 6
+		ShadowStart: 6
+	die2: bzkr_die2-n
+		Start: 0
+		Length: 6
+		ShadowStart: 6
+	die3: bzkr_die3-n
+		Start: 0
+		Length: 5
+		ShadowStart: 5
+	liedown: bzkr_change-n
+	standup: bzkr_change-n
+	prone-stand: bzkr_prone-n
+	prone-run: bzkr_prone-n
+	prone-shoot: bzkr_prone-n
+	icon: bazookier_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+bzkier-g:
+	Inherits: bzkier-n
+	Defaults: bzkr_up-g
+	die1: bzkr_die1-g
+	die2: bzkr_die2-g
+	die3: bzkr_die3-g
+	liedown: bzkr_change-g
+	standup: bzkr_change-g
+	prone-stand: bzkr_prone-g
+	prone-run: bzkr_prone-g
+	prone-shoot: bzkr_prone-g
