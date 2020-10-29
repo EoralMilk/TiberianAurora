@@ -85,7 +85,7 @@ Player:
 			airstrip: 2
 			silo: 4
 			repairdepot: 1
-			# helipad: 1
+			helipad: 1
 			hq: 1
 			advhq: 1
 			ntpl: 1
@@ -97,7 +97,7 @@ Player:
 			nhand: 1
 			warfactory: 1
 			airstrip: 1
-			# helipad: 1
+			helipad: 1
 			hq: 1
 			repairdepot: 1
 			advhq: 1
