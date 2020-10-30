@@ -91,8 +91,8 @@ Player:
 			ntpl: 1
 		BuildingFractions:
 			refinery: 30
-			pwrplt: 25
-			advpwr: 30
+			pwrplt: 10
+			advpwr: 10
 			barracks: 1
 			nhand: 1
 			warfactory: 1
@@ -105,9 +105,9 @@ Player:
 			# defence
 			guntower: 8
 			advgtwr: 6
-			ntur: 6
-			samsite: 4
-			obelisk: 4
+			ntur: 7
+			samsite: 5
+			obelisk: 6
 			silo: 1
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai

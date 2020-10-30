@@ -178,6 +178,13 @@ BuildingExplode:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	-Warhead@Flash:
+	Warhead@FireEff2: FireCluster
+		Weapon: Flamethrower
+		RandomClusterCount: 1
+		Dimensions: 3,3
+		Footprint: xxx x_x xxx
+		ValidTargets: Ground, Water, Air
+
 
 FlameSea:
 	Inherits: ^DamagingExplosion
@@ -213,6 +220,7 @@ FlameWave:
 	Range: 7c512
 	Projectile: Bullet
 		Speed: 200
+		-Image:
 		Inaccuracy: 800
 	Warhead@1Dam: SpreadDamage
 		Damage: 10
