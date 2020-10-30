@@ -82,7 +82,7 @@ airstrip:
 	ProvidesPrerequisite@vehicle:
 		Prerequisite: vehicle.nod
 	Building:
-		Footprint: xxx=== xxx=== xxx=== xxx=== 
+		Footprint: xxx___ xxx=== xxx=== xxx=== 
 		Dimensions: 6,4
 	Health:
 		HP: 1300

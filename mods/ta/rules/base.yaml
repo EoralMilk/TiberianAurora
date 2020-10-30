@@ -61,8 +61,8 @@
 		CameraPitch: 85
 		UseClassicPerspectiveFudge: false
 	Explodes:
-		Weapon: UnitExplodeSmall
-		EmptyWeapon: UnitExplodeSmall
+		Weapon: SmallExplosion
+		EmptyWeapon: SmallExplosion
 	# RenderVoxels:
 	# 	Scale: 11.7
 	# 	LightYaw: 800

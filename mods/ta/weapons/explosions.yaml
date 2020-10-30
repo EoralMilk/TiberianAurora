@@ -17,10 +17,104 @@
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
+SmallExplosion:
+	Inherits: ^DamagingExplosion
+	Inherits: ^HE_WarheadEff_Small
+	Inherits: ^Fire_03
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c256
+		Damage: 30
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+
+
+MediumExplosion:
+	Inherits: ^DamagingExplosion
+	Inherits: ^HE_WarheadEff_Medium
+	Inherits: ^Fire_03
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c325
+		Damage: 70
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+
+LargeExplosion:
+	Inherits: ^DamagingExplosion
+	Inherits: ^HE_WarheadEff_Large
+	Inherits: ^Fire_03
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c512
+		Damage: 150
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+
+
+HugeExplosion:
+	Inherits: ^DamagingExplosion
+	Inherits: ^HE_WarheadEff_Huge
+	Inherits: ^Fire_03
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c625
+		Damage: 200
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	Warhead@FireEff2: FireCluster
+		Weapon: FlameWave
+		RandomClusterCount: 6
+		Dimensions: 3,3
+		Footprint: xxx xXx xxx
+		ValidTargets: Ground, Water, Air
+
 
 
 TiberiumExplosion:
 	Inherits: ^DamagingExplosion
+	Inherits: ^HE_WarheadEff_Large
+	Inherits: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c652
 		Damage: 40
@@ -38,6 +132,7 @@ TiberiumExplosion:
 FlameExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits: ^HE_WarheadEff_Large
+	Inherits: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
 		Damage: 110
@@ -54,23 +149,21 @@ FlameExplosion:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
-	Warhead@FireEff: CreateEffect
-		Explosions: fire01
-		ImpactSounds: burn-eff.wav
-		ImpactActors: false
 	Warhead@FireEff2: FireCluster
 		Weapon: Flamethrower
 		RandomClusterCount: 6
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
+		ValidTargets: Ground, Water, Air
 
 
-HighExplosion:
+BuildingExplode:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Huge
+	Inherits: ^HE_WarheadEff_Large
+	Inherits: ^Fire_03
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c625
-		Damage: 150
+		Spread: 0c386
+		Damage: 10
 		Versus:
 			None: 100
 			Flak: 80
@@ -84,11 +177,13 @@ HighExplosion:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
-
+	-Warhead@Flash:
 
 FlameSea:
 	Inherits: ^DamagingExplosion
 	Inherits: ^HE_WarheadEff_Small
+	Inherits: ^Fire_01
+	ValidTargets: Ground, Water, Air
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
 		Damage: 20
@@ -105,15 +200,12 @@ FlameSea:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
-	Warhead@FireEff: CreateEffect
-		Explosions: fire01
-		ImpactSounds: burn-eff.wav
-		ImpactActors: false
 	Warhead@FireWave: FireCluster
 		Weapon: FlameWave
 		RandomClusterCount: 15
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxXxx xxxxx xxxxx
+		ValidTargets: Ground, Water, Air
 
 FlameWave:
 	Inherits: ^FlameWeapon
@@ -130,3 +222,4 @@ FlameWave:
 		RandomClusterCount: 6
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
+		ValidTargets: Ground, Water, Air

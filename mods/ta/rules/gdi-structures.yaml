@@ -82,7 +82,7 @@ warfactory:
 	ProvidesPrerequisite@vehicle:
 		Prerequisite: vehicle.gdi
 	Building:
-		Footprint: xxx= xxx= xxx= xxx=
+		Footprint: xx__ xxx_ xxx= xxx=
 		Dimensions: 4,4
 	Health:
 		HP: 1100

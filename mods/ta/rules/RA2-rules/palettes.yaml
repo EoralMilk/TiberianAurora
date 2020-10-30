@@ -101,6 +101,7 @@
 		Name: effect50alpha
 		BasePalette: effect
 		Alpha: 0.5
+
 	PaletteFromFile@mousepal:
 		Name: mouse
 		Filename: mousepal.pal
@@ -174,12 +175,6 @@
 
 
 	################ TA 色盘 ################
-	PaletteFromFile@ts-anim:
-		Name: ts-anim
-		Filename: tsanim.pal
-		AllowModifiers: false
-		ShadowIndex: 242
-
 
 	PaletteFromFile@green_unit:
 		Name: green_unit
@@ -299,4 +294,72 @@
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
+	PaletteFromFile@Gray:
+		Name: gray
+		Filename: gray.pal
+	PaletteFromPaletteWithAlpha@GrayAlpha:
+		Name: gray_alpha
+		Alpha: 0.3
+		BasePalette: gray
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@GrayAlpha40:
+		Name: gray_alpha40
+		Alpha: 0.4
+		BasePalette: gray
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@GrayAlpha50:
+		Name: gray_alpha50
+		Alpha: 0.5
+		BasePalette: gray
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@GrayAlpha60:
+		Name: gray_alpha60
+		Alpha: 0.6
+		BasePalette: gray
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@GrayAlpha70:
+		Name: gray_alpha70
+		Alpha: 0.7
+		BasePalette: gray
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@GrayAlpha80:
+		Name: gray_alpha80
+		Alpha: 0.8
+		BasePalette: gray
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@GrayAlpha90:
+		Name: gray_alpha90
+		Alpha: 0.8
+		BasePalette: gray
+		# Premultiply: true
 
+
+
+
+
+	PaletteFromPaletteWithAlpha@effect40alpha:
+		Name: effect40alpha
+		BasePalette: effect
+		Alpha: 0.4
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@effect40alpha:
+		Name: effect60alpha
+		BasePalette: effect
+		Alpha: 0.6
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@effect80alpha:
+		Name: effect80alpha
+		BasePalette: effect
+		Alpha: 0.8
+		# Premultiply: true
+
+
+	PaletteFromFile@ts-anim:
+		Name: ts-anim
+		Filename: tsanim.pal
+		AllowModifiers: false
+		ShadowIndex: 242
+	PaletteFromPaletteWithAlpha@ts_effect80alpha:
+		Name: ts_effect80alpha
+		BasePalette: ts-anim
+		Alpha: 0.8

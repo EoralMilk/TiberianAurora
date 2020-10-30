@@ -10,15 +10,24 @@
 		Palette: ra
 		ContrailLength: 8
 		ContrailWidth: 35
-		CruiseAltitude: 4352
+		CruiseAltitude: 3c0
 		VerticalRateOfTurn: 55
 		HorizontalRateOfTurn: 55
 		MinimumLaunchAngle: 255
 		MaximumLaunchAngle: 255
-		Speed: 100
+		MinimumLaunchSpeed: 30
+		MaximumLaunchSpeed: 40
+		Acceleration: 12
+		Gravity: 6
+		Speed: 300
+		Arm: 5
 		RangeLimit: 14c409
+		ExplodeWhenEmpty: true
 		TerrainHeightAware: true
 		AllowSnapping: true
+		# TrailImage: mslsmoke1
+		# TrailPalette: effect80alpha
+		# TrailInterval: 1
 
 ^CommonAAMissile:
 	Inherits: ^CommonMissile
@@ -109,6 +118,7 @@
 
 
 ^FlameWeapon:
+	Inherits: ^Fire_03
 	ReloadDelay: 55
 	Range: 3c0
 	Burst: 10
@@ -122,7 +132,7 @@
 		Inaccuracy: 800
 		Speed: 130
 		Image: flameall
-		Palette: ts-anim
+		Palette: ts_effect80alpha
 		Shadow: true
 		LaunchAngle: 15
 		ZOffset: 4096
@@ -147,45 +157,8 @@
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: SmallScorch
 		InvalidTargets: Vehicle, Structure, Wall
-	Warhead@3Eff: CreateEffect
-		Explosions: fire03
-		ImpactSounds: burn-eff.wav
-		ImpactActors: false
-	Warhead@FireCluster: FireCluster
-		Weapon: FlameCluster
-		RandomClusterCount: 2
-		Dimensions: 3,3
-		Footprint: xxx x_x xxx
-		ValidTargets: Grass, Tree
-		InvalidTargets: Ground, Water
 	Warhead@SetFire: GrantExternalCondition
 		Condition: Burning
 		Duration: 100
 	Warhead@SetFire2: GrantExternalCondition
 		Condition: KeepBurning
-
-
-FlameCluster:
-	Inherits: ^FlameWeapon
-	ValidTargets: Tree
-	InvalidTargets: Water
-	Projectile: Bullet
-		Inaccuracy: 800
-		Speed: 10
-		Image: bulletsmall
-	Warhead@FireCluster: FireCluster
-		Weapon: FlameCluster
-		RandomClusterCount: 2
-		Dimensions: 3,3
-		Footprint: xxx x_x xxx
-		ValidTargets: Grass, Tree
-		InvalidTargets: Ground, Water
-	Warhead@2Smu: LeaveSmudge
-		SmudgeType: SmallScorch
-		InvalidTargets: Vehicle, Structure, Wall
-	Warhead@3Eff: CreateEffect
-		Explosions: fire03
-		ImpactSounds: burn-eff.wav
-		ImpactActors: false
-	Warhead@1Dam: SpreadDamage
-		Spread: 0c512

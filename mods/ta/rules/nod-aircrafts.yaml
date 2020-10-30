@@ -51,17 +51,18 @@ c130:
 		RequiresCondition: !airborne
 		ZOffset: -1000
 	RejectsOrders:
-	Explodes@Flame:
-		Weapon: FlameSea
-		EmptyWeapon: FlameSea
+	Explodes:
+		Weapon: HugeExplosion
+		EmptyWeapon: HugeExplosion
+
 
 ac130:
 	Inherits: ^CommonAircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
-	Buildable:
-		Queue: Aircraft
-		BuildPaletteOrder: 10
-		Prerequisites: hq
+	# Buildable:
+	# 	Queue: Aircraft
+	# 	BuildPaletteOrder: 10
+	# 	Prerequisites: hq
 	Valued:
 		Cost: 4000
 	Selectable:
@@ -69,7 +70,7 @@ ac130:
 		Bounds: 168, 156, 0, -7
 	Interactable:
 		Bounds: 100,80
-	# RejectsOrders:
+	RejectsOrders:
 	Tooltip:
 		Name: AC130炮艇机
 	Aircraft:
@@ -77,7 +78,7 @@ ac130:
 		Repulsable: false
 		VTOL: false
 		CruiseAltitude: 6c0
-		# IdleBehavior: LeaveMap
+		IdleBehavior: LeaveMap
 		TurnSpeed: 2
 		Speed: 235
 		CanSlide: false
@@ -129,9 +130,9 @@ ac130:
 		Offset: 240,480,0
 		RequiresCondition: !airborne
 		ZOffset: -1000
-	Explodes@Flame:
-		Weapon: FlameSea
-		EmptyWeapon: FlameSea
+	Explodes:
+		Weapon: HugeExplosion
+		EmptyWeapon: HugeExplosion
 
 
 c130husk:
@@ -157,8 +158,8 @@ c130husk:
 		RequiresCondition: !airborne
 		ZOffset: -1000
 	Explodes:
-		Weapon: HighExplosion
-		EmptyWeapon: HighExplosion
+		Weapon: HugeExplosion
+		EmptyWeapon: HugeExplosion
 	Explodes@Flame:
 		Weapon: FlameSea
 		EmptyWeapon: FlameSea

@@ -15,6 +15,7 @@ flameall:
 explosion:
 	Defaults:
 		Length: *
+		Tick: 60
 		Offset: 0, 0, 80
 	building: twlt070
 		Offset: 0, 0, 40
@@ -29,7 +30,9 @@ explosion:
 	water_piff: h2o_exp5
 	empty: bulletsmall
 	piff: piff
+		# BlendMode: Additive
 	piffpiff: piffpiff
+		# BlendMode: Additive
 	soilpiff: soil_piff
 	small_explosion: explosml
 	medium_explosion: explomed
@@ -108,11 +111,13 @@ explosion:
 		Start: 0
 		Length: 4
 		Tick: 50
+		BlendMode: Additive
 	laserburning: laserburning
 		Start: 0
 		Length: 7
 		Tick: 200
 		ZOffset: -500
+		BlendMode: Additive
 	laserburn: laserburn
 		Start: 0
 		Length: 7
@@ -125,10 +130,28 @@ explosion:
 		ZOffset: -1024
 	fire01: fire01
 		Length: *
+		Tick: 150
+		# BlendMode: Additive
 	fire02: fire02
 		Length: *
+		Tick: 320
+		# BlendMode: Additive
 	fire03: fire03
 		Length: *
+		Tick: 150
+		# BlendMode: Additive
+	fire01a: fire01
+		Length: *
+		Tick: 150
+		BlendMode: Additive
+	fire02a: fire02
+		Length: *
+		Tick: 320
+		BlendMode: Additive
+	fire03a: fire03
+		Length: *
+		Tick: 150
+		BlendMode: Additive
 	casingscorch: casing
 		Tick: 1200
 		Start: 10
@@ -199,6 +222,49 @@ explosion:
 		Start: 27
 		Length: 1
 		ZOffset: -540
+	flash_tiny: flash_tiny
+		BlendMode: Additive
+	flash_small-dark: flash_small-dark
+		BlendMode: Additive
+	flash_small-bright: flash_small-bright
+		BlendMode: Additive
+	flash_small-brighter: flash_small-brighter
+		BlendMode: Additive
+	flash_medium: flash_medium
+		BlendMode: Additive
+	flash_large: flash_large
+		BlendMode: Additive
+	flash_huge: flash_huge
+		BlendMode: Additive
+
+	light_tiny: flash_tiny
+		Start: 2
+		Length: 1
+		Tick: 4500
+		BlendMode: Additive
+	light_small-dark: flash_small-dark
+		Start: 2
+		Length: 1
+		Tick: 4500
+		BlendMode: Additive
+	light_small-bright: flash_small-bright
+		Start: 2
+		Length: 1
+		Tick: 4500
+		BlendMode: Additive
+	light_small-brighter: flash_small-brighter
+		Start: 2
+		Length: 1
+		Tick: 9600
+		BlendMode: Additive
+
+mslsmoke1:
+	idle:
+		Length: *
+		BlendMode: Additive
+		Tick: 25
+		ZOffset: 3000
+
 
 casing:
 	Defaults:

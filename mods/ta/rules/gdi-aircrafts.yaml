@@ -37,9 +37,6 @@ a10:
 		Weapon: A10VulcanFake
 		LocalOffset: 1510,0,85
 		MuzzleSequence: muzzle
-	Armament@Test:
-		Weapon: SummonFlameSea
-		LocalOffset: 1510,0,85
 	Armament@GUNS:
 		# Name: gun
 		Weapon: A10Vulcan
@@ -64,11 +61,13 @@ a10:
 		TrailLength: 15
 		TrailWidth: 55
 		Color: FFD860
+		ContrailUsePlayerColor: false
 	Contrail@2:
 		Offset: -660,-230,380
 		TrailWidth: 55
 		Color: FFD860
 		TrailLength: 15
+		ContrailUsePlayerColor: false
 	# AmmoPool:
 	# 	Ammo: 1
 	# 	PipCount: 1
@@ -125,7 +124,6 @@ a10b:
 		Name: bombs
 		Weapon: A10Napalm
 		LocalOffset: 0,-256,43, 0,256,43
-	-Armament@Test:
 
 a10husk:
 	Inherits: ^PlaneHusk
@@ -139,3 +137,6 @@ a10husk:
 	Explodes:
 		Weapon: FlameExplosion
 		EmptyWeapon: FlameExplosion
+	Explodes@Flame:
+		Weapon: FlameSea
+		EmptyWeapon: FlameSea

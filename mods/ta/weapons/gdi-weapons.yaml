@@ -229,12 +229,12 @@ MammothTuskMissile:
 	BurstDelays: 1
 	ReloadDelay: 60
 	Projectile: Missile
-		CruiseAltitude: 3400
 		ContrailLength: 12
-		Arm: 2
+		Arm: 8
 		Speed: 350
+		Acceleration: 20
 		Inaccuracy: 300
-		HorizontalRateOfTurn: 8
+		HorizontalRateOfTurn: 18
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
@@ -253,6 +253,7 @@ MammothTuskMissile:
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air
 
 
 
@@ -362,12 +363,13 @@ TowerMissile:
 	Range: 8c0
 	ReloadDelay: 10
 	Projectile: Missile
-		CruiseAltitude: 3400
 		ContrailLength: 12
+		CruiseAltitude: 5c0
 		Arm: 2
-		Speed: 350
+		Speed: 388
 		Inaccuracy: 300
-		HorizontalRateOfTurn: 8
+		Acceleration: 12
+		HorizontalRateOfTurn: 11
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
@@ -493,6 +495,7 @@ A10Napalm:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
+		ValidTargets: Ground, Water, Air
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
 		ImpactSounds: gexp14a.wav
@@ -512,6 +515,7 @@ A10Napalm:
 		RandomClusterCount: 6
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
+		ValidTargets: Ground, Water, Air
 
 
 GunBoatMissile:
@@ -523,10 +527,10 @@ GunBoatMissile:
 	BurstDelays: 5
 	ReloadDelay: 120
 	Projectile: Missile
-		CruiseAltitude: 4800
 		ContrailLength: 15
 		Arm: 2
 		Speed: 380
+		Acceleration: 9
 		Inaccuracy: 568
 		HorizontalRateOfTurn: 8
 		RangeLimit: 18c512
@@ -547,3 +551,4 @@ GunBoatMissile:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air

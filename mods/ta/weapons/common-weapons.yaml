@@ -65,9 +65,8 @@ APBazooka:
 	Range: 6c0
 	Report: bazooka_shot.wav
 	Projectile: Missile
-		CruiseAltitude: 3000
 		ContrailLength: 10
-		Arm: 2
+		Arm: 6
 		Speed: 278
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 8

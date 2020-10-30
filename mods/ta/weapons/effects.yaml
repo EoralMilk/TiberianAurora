@@ -127,310 +127,362 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 		InvalidTargets: Soil, Stone, Metel, Concrete, Meat
+	Warhead@Flash: CreateEffect
+		Explosions: flash_tiny
+		ExplosionPalette: gray_alpha
+		InvalidTargets: Soil, Water
+		ImpactActors: false
 
-# AP
-^AP_WarheadEff_Tiny:
+
+^WarheadEff:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: tiny_clsn
-		ImpactSounds: gexp14a.wav
+		ExplosionPalette: effect80alpha
 		ValidTargets: Soil
 		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: tiny_clsn
-		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
+		ExplosionPalette: effect80alpha
 		ValidTargets: Metel
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: tiny_clsn
-		ImpactSounds: gexp14a.wav
-		ValidTargets: Stone
+		ExplosionPalette: effect80alpha
+		ValidTargets: Stone, Air
 		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: tiny_clsn
-		ImpactSounds: gexp14a.wav
+		ExplosionPalette: effect80alpha
 		ValidTargets: Concrete
 		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: tiny_clsn
-		ImpactSounds: gexp14a.wav
+		ExplosionPalette: effect80alpha
 		ValidTargets: Meat
 		InvalidTargets: Soil, Stone, Metel, Concrete, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: tiny_watersplash
-		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
 		InvalidTargets: Soil, Stone, Metel, Concrete, Meat
+	Warhead@Flash: CreateEffect
+		InvalidTargets: Water
+
+
+
+
+# AP
+^AP_WarheadEff_Tiny:
+	Inherits: ^Flash_Small-Bright
+	Inherits: ^WarheadEff
+	Warhead@Eff_HitSoil: CreateEffect
+		Explosions: tiny_clsn
+		ImpactSounds: gexp14a.wav
+	Warhead@Eff_HitMetel: CreateEffect
+		Explosions: tiny_clsn
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
+	Warhead@Eff_HitStone: CreateEffect
+		Explosions: tiny_clsn
+		ImpactSounds: gexp14a.wav
+	Warhead@Eff_HitConcrete: CreateEffect
+		Explosions: tiny_clsn
+		ImpactSounds: gexp14a.wav
+	Warhead@Eff_HitMeat: CreateEffect
+		Explosions: tiny_clsn
+		ImpactSounds: gexp14a.wav
+	Warhead@EffWater_piff: CreateEffect
+		Explosions: tiny_watersplash
+		ImpactSounds: gexpwasa.wav
+
+
 
 ^AP_WarheadEff_Small:
+	Inherits: ^Flash_Small-Bright
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: small_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: small_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: small_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: small_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: small_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Meat
-		InvalidTargets: Soil, Stone, Metel, Concrete, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Soil, Stone, Metel, Concrete, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: smallcraters
 
 ^AP_WarheadEff_Medium:
+	Inherits: ^Flash_Medium
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: medium_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: medium_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: medium_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: medium_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: medium_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Meat
-		InvalidTargets: Metel, Stone, Concrete, Soil, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Metel, Stone, Concrete, Soil, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: mediumcraters
 
 ^AP_WarheadEff_Large:
+	Inherits: ^Flash_Large
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: large_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: large_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: large_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: large_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: large_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Meat
-		InvalidTargets: Metel, Stone, Concrete, Soil, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: large_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Metel, Stone, Concrete, Soil, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: mediumcraters
 
 ^AP_WarheadEff_Huge:
+	Inherits: ^Flash_Large
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: huge_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: verylarge_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: verylarge_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: huge_tumu
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: verylarge_clsn
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Meat
-		InvalidTargets: Metel, Stone, Concrete, Soil, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: huge_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Metel, Stone, Concrete, Soil, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: largecraters
 
 # HE
 ^HE_WarheadEff_Small:
+	Inherits: ^Flash_Small-Brighter
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: small_bang
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: small_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: small_twlt
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: small_bang
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: small_twlt
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Meat
-		InvalidTargets: Metel, Stone, Concrete, Soil, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Metel, Stone, Concrete, Soil, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: smallcraters, smallscorches
 
 ^HE_WarheadEff_Medium:
+	Inherits: ^Flash_Medium
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: medium_bang
 		ImpactSounds: gexp10a.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: medium_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: medium_twlt
 		ImpactSounds: gexp10a.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: medium_bang
 		ImpactSounds: gexp10a.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: medium_twlt
 		ImpactSounds: gexp10a.wav
-		ValidTargets: Meat
-		InvalidTargets: Metel, Stone, Concrete, Soil, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Metel, Stone, Concrete, Soil, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: mediumcraters, mediumscorches
 
 ^HE_WarheadEff_Large:
+	Inherits: ^Flash_Large
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: large_bang
 		ImpactSounds: gexpcraa.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: large_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: large_twlt
 		ImpactSounds: gexpcraa.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: large_bang
 		ImpactSounds: gexpcraa.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: large_twlt
 		ImpactSounds: gexpcraa.wav
-		ValidTargets: Meat
-		InvalidTargets: Metel, Stone, Concrete, Soil, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: large_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Metel, Stone, Concrete, Soil, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: largecraters, mediumscorches
 
 ^HE_WarheadEff_Huge:
+	Inherits: ^Flash_Large
+	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: verylarge_brnl
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: huge_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
-		ValidTargets: Metel
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: huge_twlt
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: verylarge_brnl
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: huge_twlt
 		ImpactSounds: gexp14a.wav
-		ValidTargets: Meat
-		InvalidTargets: Metel, Stone, Concrete, Soil, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: huge_watersplash
 		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-		InvalidTargets: Metel, Stone, Concrete, Soil, Meat
 	Warhead@3Smu: LeaveSmudge
 		SmudgeType: largecraters, largescorches
 
+
+^Fire_01:
+	# Inherits: ^Light_Small-Bright
+	Warhead@FireEff: CreateEffect
+		Explosions: fire01
+		ExplosionPalette: effect80alpha
+		ImpactSounds: burn-eff.wav
+		ImpactActors: false
+
+^Fire_02:
+	# Inherits: ^Light_Small-Brighter
+	Warhead@FireEff: CreateEffect
+		Explosions: fire02
+		ExplosionPalette: effect
+		ImpactSounds: burn-eff.wav
+		ImpactActors: false
+
+^Fire_03:
+	# Inherits: ^Light_Small-Bright
+	Warhead@FireEff: CreateEffect
+		Explosions: fire03
+		ExplosionPalette: effect80alpha
+		ImpactSounds: burn-eff.wav
+		ImpactActors: false
+
+
+# Light
+^Light_Tiny:
+	Warhead@Light: CreateEffect
+		Explosions: light_tiny
+		ExplosionPalette: gray_alpha
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Light_Small-Dark:
+	Warhead@Flash: CreateEffect
+		Explosions: light_small-dark
+		ExplosionPalette: gray_alpha
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Light_Small-Bright:
+	Warhead@Flash: CreateEffect
+		Explosions: light_small-bright
+		ExplosionPalette: gray_alpha
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Light_Small-Brighter:
+	Warhead@Flash: CreateEffect
+		Explosions: light_small-brighter
+		ExplosionPalette: gray_alpha
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+
+# Flash
+^Flash_Tiny:
+	Warhead@Flash: CreateEffect
+		Explosions: flash_tiny
+		ExplosionPalette: gray_alpha50
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Flash_Small-Dark:
+	Warhead@Flash: CreateEffect
+		Explosions: flash_small-dark
+		ExplosionPalette: gray_alpha
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Flash_Small-Bright:
+	Warhead@Flash: CreateEffect
+		Explosions: flash_small-bright
+		ExplosionPalette: gray_alpha60
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Flash_Small-Brighter:
+	Warhead@Flash: CreateEffect
+		Explosions: flash_small-brighter
+		ExplosionPalette: gray_alpha80
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Flash_Medium:
+	Warhead@Flash: CreateEffect
+		Explosions: flash_medium
+		ExplosionPalette: gray_alpha50
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+
+^Flash_Large:
+	Warhead@Flash: CreateEffect
+		Explosions: flash_large
+		ExplosionPalette: gray_alpha80
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false

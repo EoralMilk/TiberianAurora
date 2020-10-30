@@ -58,11 +58,6 @@ V3AmmunitionExplode:
 	Warhead@1Eff: CreateEffect
 		Explosions: terrorist_explosion
 
-BuildingExplode:
-	Inherits: UnitExplodeSmall
-	Warhead@1Eff: CreateEffect
-		Explosions: building, large_bang, large_brnl, large_tumu
-
 KirovExplode:
 	Inherits: UnitExplode
 	Warhead@2Dam: SpreadDamage

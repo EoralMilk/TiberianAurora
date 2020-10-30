@@ -20,7 +20,7 @@ nbggy:
 	Mobile:
 		TurnSpeed: 14
 		Speed: 170
-		Locomotor: tracked
+		Locomotor: wheeled
 	RevealsShroud:
 		Range: 8c0
 	Armament@Damage:
@@ -79,7 +79,7 @@ ncycle:
 	Mobile:
 		TurnSpeed: 16
 		Speed: 213
-		Locomotor: tracked
+		Locomotor: wheeled
 	RevealsShroud:
 		Range: 8c0
 	Armament:
@@ -144,6 +144,9 @@ ntank:
 		Condition: trackmoving
 	Targetable@materials:
 		TargetTypes: Metel
+	Explodes:
+		Weapon: MediumExplosion
+		EmptyWeapon: MediumExplosion
 
 nftnk:
 	Inherits: ^TurretedVehicle
@@ -232,6 +235,10 @@ nhowi:
 		Condition: trackmoving
 	Targetable@materials:
 		TargetTypes: Metel
+	Explodes:
+		Weapon: LargeExplosion
+		EmptyWeapon: MediumExplosion
+
 
 nstltnk:
 	Inherits: ^TurretedVehicle
@@ -282,6 +289,9 @@ nstltnk:
 		ValidDamageStates: Critical
 	Targetable@materials:
 		TargetTypes: Metel
+	Explodes:
+		Weapon: MediumExplosion
+		EmptyWeapon: MediumExplosion
 
 
 meme_obelisker:

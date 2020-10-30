@@ -15,9 +15,9 @@ Packages:
 	~^Content/cnc
 	.
 	$ta: ta
+
 	./mods/common: common
 	~sounds.mix
-
 	~ra2.mix
 	~language.mix
 	~multi.mix
@@ -43,24 +43,27 @@ Packages:
 	~urb.mix
 	~urban.mix
 	~audio.bag
+
+
+	ta|content
+	ta|content/effect/multiple
+	ta|content/effect
+	ta|content/common-pal
+
+	ta|content/audio
+	ta|content/audio/voice
+	ta|content/infantrys
+	ta|content/structures
+	ta|content/vehicles
+	ta|content/aircrafts
+
 	ta|bits
 	ta|bits/cameos
 	ta|bits/structures
 	ta|bits/animations
 	ta|bits/projectiles
 	ta|uibits
-
-	# ta
 	ta|speechs
-	ta|content
-	ta|content/audio
-	ta|content/audio/voice
-	ta|content/effect
-
-	ta|content/infantrys
-	ta|content/structures
-	ta|content/vehicles
-	ta|content/aircrafts
 
 	ta|content/structures/a_pwrplt
 	ta|content/structures/a_advpwr
@@ -95,8 +98,12 @@ MapFolders:
 
 Rules:
 	ta|rules/ai.yaml
-	ta|rules/base.yaml
+	ta|rules/RA2-rules/player.yaml
+	ta|rules/RA2-rules/world.yaml
+	ta|rules/RA2-rules/palettes.yaml
+	ta|rules/RA2-rules/misc.yaml
 
+	ta|rules/base.yaml
 	ta|rules/common-structures.yaml
 	ta|rules/common-infantry.yaml
 	ta|rules/common-vehicles.yaml
@@ -111,12 +118,8 @@ Rules:
 	ta|rules/gdi-aircrafts.yaml
 	ta|rules/nod-aircrafts.yaml
 
-	### Old RA2 rules
+
 	ta|rules/RA2-rules/proxy-actors.yaml
-	ta|rules/RA2-rules/misc.yaml
-	ta|rules/RA2-rules/player.yaml
-	ta|rules/RA2-rules/world.yaml
-	ta|rules/RA2-rules/palettes.yaml
 	ta|rules/RA2-rules/defaults.yaml
 	ta|rules/RA2-rules/allied-infantry.yaml
 	ta|rules/RA2-rules/soviet-infantry.yaml
@@ -139,8 +142,11 @@ Rules:
 
 
 Sequences:
-	ta|sequences/base.yaml
 	ta|sequences/misc.yaml
+	ta|sequences/base.yaml
+	ta|sequences/RA2-sequence/misc.yaml
+	ta|sequences/RA2-sequence/defaults.yaml
+
 
 
 
@@ -159,9 +165,6 @@ Sequences:
 	ta|sequences/nod-aircrafts.yaml
 
 
-
-
-	### Old RA2 Sequence
 	ta|sequences/RA2-sequence/aircraft.yaml
 	ta|sequences/RA2-sequence/allied-infantry.yaml
 	ta|sequences/RA2-sequence/allied-structures.yaml
@@ -170,8 +173,7 @@ Sequences:
 	ta|sequences/RA2-sequence/civilians.yaml
 	ta|sequences/RA2-sequence/civilian-props.yaml
 	ta|sequences/RA2-sequence/civilian-structures.yaml
-	ta|sequences/RA2-sequence/defaults.yaml
-	ta|sequences/RA2-sequence/misc.yaml
+
 	ta|sequences/RA2-sequence/soviet-infantry.yaml
 	ta|sequences/RA2-sequence/soviet-structures.yaml
 	ta|sequences/RA2-sequence/tech-structures.yaml

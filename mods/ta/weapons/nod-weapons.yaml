@@ -76,8 +76,9 @@ CycleMissile:
 	Projectile: Missile
 		CruiseAltitude: 3000
 		ContrailLength: 10
-		Arm: 2
-		Speed: 278
+		Arm: 12
+		Speed: 436
+		Acceleration: 13
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 8
 		RangeLimit: 10c512
@@ -98,6 +99,7 @@ CycleMissile:
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air
 
 
 LightTankCannonAP:
@@ -146,12 +148,12 @@ DaggerOfNod:
 	BurstDelays: 1
 	ReloadDelay: 80
 	Projectile: Missile
-		CruiseAltitude: 2400
 		ContrailLength: 12
 		Arm: 2
 		Speed: 400
 		Inaccuracy: 100
-		HorizontalRateOfTurn: 8
+		Acceleration: 22
+		HorizontalRateOfTurn: 30
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
@@ -170,6 +172,7 @@ DaggerOfNod:
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air
 
 HowitzerCannonHE:
 	Inherits: ^CommonCannon
@@ -245,7 +248,7 @@ RedEye:
 	Range: 12c0
 	Projectile: Missile
 		Speed: 400
-		CruiseAltitude: 4000
+
 
 ObeliskLaser:
 	ReloadDelay: 120
