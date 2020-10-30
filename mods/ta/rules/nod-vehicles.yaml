@@ -11,7 +11,6 @@ nbggy:
 	Tooltip:
 		Name: 突击四驱车
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 120
@@ -70,7 +69,6 @@ ncycle:
 	Tooltip:
 		Name: 突击摩托车
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 110
@@ -115,7 +113,6 @@ ntank:
 	Tooltip:
 		Name: 轻型坦克
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 340
@@ -161,7 +158,6 @@ nftnk:
 	Tooltip:
 		Name: 恶魔之舌
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 300
@@ -205,7 +201,6 @@ nhowi:
 	Tooltip:
 		Name: 自行榴弹炮
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 100
@@ -253,7 +248,6 @@ nstltnk:
 	Tooltip:
 		Name: 以西结之轮
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 230
@@ -306,7 +300,6 @@ meme_obelisker:
 	Tooltip:
 		Name: 光明...石碑
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 520

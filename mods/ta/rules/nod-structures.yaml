@@ -377,3 +377,5 @@ obelisk:
 		PlayerPalette: red_unit
 	Targetable@materials:
 		TargetTypes: Stone
+	RequiresBuildableArea:
+		Adjacent: 4

@@ -11,7 +11,6 @@ ghumv:
 	Tooltip:
 		Name: 重机枪悍马
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 160
@@ -67,7 +66,6 @@ gapc:
 	Tooltip:
 		Name: 装甲运兵车
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 190
@@ -124,7 +122,6 @@ gtank:
 	Tooltip:
 		Name: 中型坦克
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 450
@@ -173,7 +170,6 @@ gmlrs:
 	Tooltip:
 		Name: 多管火箭发射系统
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 120
@@ -217,7 +213,6 @@ gmmtnk:
 	Tooltip:
 		Name: 猛犸坦克
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 870
@@ -270,7 +265,6 @@ gunboat:
 	Tooltip:
 		Name: 内河炮艇
 	Selectable:
-		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 1000

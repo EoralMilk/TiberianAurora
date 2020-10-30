@@ -311,7 +311,7 @@ advgtwr:
 		Type: pillbox
 	AutoTarget:
 	RequiresBuildableArea:
-		Adjacent: 5
+		Adjacent: 4
 	RenderSprites:
 		Image: advgtwr
 		PlayerPalette: green_unit

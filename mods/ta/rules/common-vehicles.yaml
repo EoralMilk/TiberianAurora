@@ -59,7 +59,7 @@ harvester:
 	Tooltip:
 		Name: 收割机
 	Selectable:
-		Priority: 7
+		Priority: 3
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 40

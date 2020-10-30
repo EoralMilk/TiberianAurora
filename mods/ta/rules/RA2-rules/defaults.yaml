@@ -399,6 +399,7 @@
 	-Capturable:
 	-CaptureNotification:
 	-ShakeOnDeath:
+	-GivesBuildableArea:
 
 
 ^CivBuilding:
