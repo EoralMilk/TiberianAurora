@@ -264,7 +264,7 @@ ManyRockets:
 	Burst: 6
 	BurstDelays: 3
 	Range: 15c512
-	MinRange: 3c0
+	MinRange: 4c512
 	Report: rocket_shot.wav
 	Projectile: Bullet
 		Speed: 236
