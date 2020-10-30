@@ -348,6 +348,7 @@ hq:
 	ParatroopersPower@nod:
 		OrderName: Paratroopers
 		Icon: para_icon
+		Cursor: praradrop
 		ChargeInterval: 7000
 		Description: 空降部队
 		LongDesc: 派遣AC130炮艇机向目标区域投送空降突击队 \nAC130将在投放部队的同时提供一定的火力支援

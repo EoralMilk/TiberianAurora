@@ -56,6 +56,8 @@ Packages:
 	ta|content/structures
 	ta|content/vehicles
 	ta|content/aircrafts
+	ta|content/others
+
 
 	ta|bits
 	ta|bits/cameos
@@ -255,6 +257,9 @@ Weapons:
 	ta|weapons/common-weapons.yaml
 	ta|weapons/gdi-weapons.yaml
 	ta|weapons/nod-weapons.yaml
+
+	ta|weapons/superweapons.yaml
+
 
 
 	####Test Weapons

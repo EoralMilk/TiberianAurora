@@ -1,0 +1,96 @@
+
+IonCannon:
+	Inherits: ^HE_WarheadEff_Huge
+	Inherits: ^Fire_03
+	ValidTargets: Ground, Water, Air
+	Warhead@1Dam_impact: SpreadDamage
+		Range: 0, 1c1, 2c1, 2c512
+		Damage: 100
+		Falloff: 1000, 1000, 250, 100
+		ValidTargets: Ground, Water, Air
+		AffectsParent: True
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	Warhead@FireEff2: FireCluster
+		Weapon: FlameWave
+		RandomClusterCount: 8
+		Dimensions: 3,3
+		Footprint: xxx xXx xxx
+		ValidTargets: Ground, Water, Air
+	Warhead@4Effect: CreateEffect
+		Explosions: ionbeam
+		ExplosionPalette: ts_effect80alpha
+		AffectsParent: true
+	Warhead@5Effect: CreateEffect
+		Explosions: ionbeam2
+		ExplosionPalette: ts_effect80alpha
+		AffectsParent: true
+	Warhead@6Effect: CreateEffect
+		Explosions: ionbeam3
+		ExplosionPalette: ts_effect80alpha
+		AffectsParent: true
+	Warhead@7Effect: CreateEffect
+		Explosions: ionbeam4
+		ExplosionPalette: ts_effect80alpha
+		AffectsParent: true
+	Warhead@8Effect: CreateEffect
+		Explosions: ionbeam5
+		ExplosionPalette: ts_effect80alpha
+		AffectsParent: true
+	Warhead@EffectRing: CreateEffect
+		Explosions: ionring
+		ExplosionPalette: effect80alpha
+		AffectsParent: true
+
+
+NukePayload:
+	ValidTargets: Ground, Water, Air
+	Warhead@1Dam_impact: SpreadDamage
+		Spread: 1c128
+		Damage: 1000
+		Falloff: 1024, 512, 387, 256, 128, 64, 32, 16, 8, 4, 2
+		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 200
+			Medium: 100
+			Heavy: 100
+			Wood: 60
+			Steel: 100
+			Concrete: 8
+			Drone: 100
+			Rocket: 100
+		AffectsParent: true
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
+	Warhead@2Res_impact: DestroyResource
+		Size: 10
+	Warhead@3Eff_impact: CreateEffect
+		Explosions: nuke_explosion
+		ImpactSounds: snukexpl.wav
+		ValidTargets: Ground, Water, Air
+
+
+atomic:
+	Inherits: NukePayload
+	Inherits: ^Flash_Huge
+	Warhead@0Eff_impact: CreateEffect
+		Explosions: nuke_ball
+		ImpactSounds: snukintr.wav
+		ValidTargets: Ground, Water, Air
+	Warhead@1Dam_impact: SpreadDamage
+		Delay: 25
+	Warhead@2Res_impact: DestroyResource
+		Delay: 25
+	Warhead@3Eff_impact: CreateEffect
+		Delay: 25
+		ValidTargets: Ground, Water, Air
+	Warhead@4Smu_areanuke: LeaveSmudge
+		Delay: 25
+	Warhead@FireEff2: FireCluster
+		Delay: 25
+		Weapon: FlameWave
+		RandomClusterCount: 60
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx 
+		ValidTargets: Ground, Water, Air

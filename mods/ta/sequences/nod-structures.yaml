@@ -72,9 +72,12 @@ ntpl:
 		Start: 2
 		Length: 36
 		ShadowStart: 45
-	launch:
-		Start: 39
+	active:
+		Frames: 39, 40, 41, 42, 42, 41, 40, 39
 		Length: 4
+		ZOffset: 1024
+		Tick: 130
+	none: bulletsmall
 	icon: ntpl_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

@@ -182,23 +182,29 @@ advhq:
 	RenderSprites:
 		Image: advhq
 		PlayerPalette: green_unit
-	# IonCannonPower:
-	# 	PauseOnCondition: lowpower
-	# 	Prerequisites: ~techlevel.superweapons
-	# 	Icon: ioncannon
-	# 	Cursor: ioncannon
-	# 	ChargeInterval: 6750
-	# 	Description: 离子炮打击
-	# 	LongDesc: 命令天基离子炮向目标区域开火\n立即对小范围内的一切单位造成高额伤害
-	# 	BeginChargeSpeechNotification: IonCannonCharging
-	# 	EndChargeSpeechNotification: IonCannonReady
-	# 	SelectTargetSpeechNotification: SelectTarget
-	# 	InsufficientPowerSpeechNotification: InsufficientPower
-	# 	OnFireSound: ion1.aud
-	# 	DisplayRadarPing: True
-	# 	CameraActor: camera.small
-	# 	SupportPowerPaletteOrder: 20
-	# SupportPowerChargeBar:
+	IonCannonPower:
+		PauseOnCondition: lowpower
+		Prerequisites: ~techlevel.unrestricted
+		OrderName: IonCannonAttack
+		Icon: ioncannon_icon
+		Cursor: attackmove
+		ChargeInterval: 6750
+		Description: 离子炮轰炸
+		LongDesc: 命令天基离子炮轰炸目标区域\n立即对小范围内的一切单位造成高额伤害
+		BeginChargeSpeechNotification: IonCannonCharging
+		EndChargeSpeechNotification: IonCannonReady
+		SelectTargetSpeechNotification: SelectTarget
+		InsufficientPowerSpeechNotification: InsufficientPower
+		OnFireSound: ion1.aud
+		DisplayRadarPing: True
+		DisplayTimerStances: Ally, Neutral, Enemy
+		CameraActor: camera
+		SupportPowerPaletteOrder: 20
+		Weapon: IonCannon
+		Effect: moveflsh
+		# EffectSequence: idle
+		# EffectPalette: ts_effect80alpha
+	SupportPowerChargeBar:
 	Targetable@materials:
 		TargetTypes: Metel
 

@@ -12,6 +12,11 @@ flameall:
 		Tick: 160
 		ZOffset: 1023
 
+atomic:
+	up: nukeup
+	down: nukedown
+		Offset: 0, 70
+
 explosion:
 	Defaults:
 		Length: *
@@ -20,7 +25,8 @@ explosion:
 	building: twlt070
 		Offset: 0, 0, 40
 	ionring: ring1
-		Tick: 160
+		Tick: 80
+		BlendMode: Additive
 		ZRamp: 1
 	huge_watersplash: h2o_exp1
 		Offset: 0, 0, 39
@@ -257,6 +263,36 @@ explosion:
 		Length: 1
 		Tick: 9600
 		BlendMode: Additive
+	ionbeam: ionbeam
+		Offset: 0, -60, 60
+		ZRamp: 1
+		Tick: 100
+		BlendMode: Additive
+	ionbeam2: ionbeam
+		Offset: 0, -180, 60
+		ZRamp: 1
+		Tick: 100
+		BlendMode: Additive
+	ionbeam3: ionbeam
+		Offset: 0, -300, 60
+		ZRamp: 1
+		Tick: 100
+		BlendMode: Additive
+	ionbeam4: ionbeam
+		Offset: 0, -420, 60
+		ZRamp: 1
+		Tick: 100
+		BlendMode: Additive
+	ionbeam5: ionbeam
+		Offset: 0, -540, 60
+		ZRamp: 1
+		Tick: 100
+		BlendMode: Additive
+	ionbeam6: ionbeam
+		Offset: 0, -660, 60
+		ZRamp: 1
+		Tick: 100
+		BlendMode: Additive
 
 mslsmoke1:
 	idle:
@@ -356,6 +392,14 @@ icon:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+	ioncannon_icon: ioncannon_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+	nukemissile_icon: nukemissile_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
 
 
 beacon:
@@ -375,6 +419,14 @@ beacon:
 	 	AddExtension: false
 		Offset: 0, -100, 0
 	para_icon: para_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, -100, 0
+	ioncannon_icon: ioncannon_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, -100, 0
+	nukemissile_icon: nukemissile_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, -100, 0

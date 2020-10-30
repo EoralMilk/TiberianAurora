@@ -97,6 +97,7 @@
 	PaletteFromFile@effect:
 		Name: effect
 		Filename: anim.pal
+		AllowModifiers: false
 	PaletteFromPaletteWithAlpha@effect50alpha:
 		Name: effect50alpha
 		BasePalette: effect

@@ -486,3 +486,12 @@ ShellCasingDebris:
 		ExplosionPalette: gray_alpha80
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
 		ImpactActors: false
+
+
+^Flash_Huge:
+	Warhead@Flash: CreateEffect
+		Explosions: flash_huge
+		ExplosionPalette: gray_alpha80
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ImpactActors: false
+

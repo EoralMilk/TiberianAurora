@@ -51,7 +51,7 @@ Player:
 				Consideration@ally:
 					Against: Ally, Enemy
 					Types: Vehicle, Infantry
-					Attractiveness: 5
+					Attractiveness: 3
 					TargetMetric: Health
 					CheckRadius: 3c0
 				Consideration@4:
@@ -60,6 +60,66 @@ Player:
 					Attractiveness: 4
 					TargetMetric: Value
 					CheckRadius: 3c0
+			nuclearmissile:
+				OrderName: NuclearMissile
+				MinimumAttractiveness: 20
+				MinimumScanTimeInterval: 25
+				MaximumScanTimeInterval: 40
+				Consideration@1:
+					Against: Enemy
+					Types: ConsideredThreatForAI
+					IgnoreVisibility: true
+					Attractiveness: 1000000
+					TargetMetric: None
+					CheckRadius: 2c0
+				Consideration@2:
+					Against: Enemy
+					Types: Ground, Water
+					Attractiveness: 1
+					TargetMetric: Value
+					CheckRadius: 7c0
+				Consideration@3:
+					Against: Enemy
+					Types: Structure
+					Attractiveness: 3
+					TargetMetric: Value
+					CheckRadius: 7c0
+				Consideration@4:
+					Against: Ally
+					Types: Air, Ground, Water
+					Attractiveness: -5
+					TargetMetric: Value
+					CheckRadius: 8c0
+			IonCannonAttack:
+				OrderName: IonCannonAttack
+				MinimumAttractiveness: 10
+				MinimumScanTimeInterval: 10
+				MaximumScanTimeInterval: 30
+				Consideration@1:
+					Against: Enemy
+					Types: ConsideredThreatForAI
+					IgnoreVisibility: true
+					Attractiveness: 1000000
+					TargetMetric: None
+					CheckRadius: 1c0
+				Consideration@2:
+					Against: Ally
+					Types: Air, Ground, Water
+					Attractiveness: -10
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@3:
+					Against: Enemy
+					Types: Air, Ground, Water
+					Attractiveness: 1
+					TargetMetric: Value
+					CheckRadius: 2c0
+				Consideration@4:
+					Against: Enemy
+					Types: Defence
+					Attractiveness: 2
+					TargetMetric: Health
+					CheckRadius: 2c0
 	BaseBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		DefenseQueues: Support

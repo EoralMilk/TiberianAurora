@@ -67,6 +67,7 @@ LargeExplosion:
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
 		Damage: 150
+		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
 			Flak: 80
@@ -89,6 +90,7 @@ HugeExplosion:
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c625
 		Damage: 200
+		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
 			Flak: 80
@@ -136,6 +138,7 @@ FlameExplosion:
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
 		Damage: 110
+		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
 			Flak: 80

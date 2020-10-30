@@ -171,13 +171,51 @@ ntpl:
 	Power:
 		Amount: -200
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate, ConsideredThreatForAI
 	RenderSprites:
 		Image: ntpl
 		PlayerPalette: red_unit
 	Targetable@materials:
 		TargetTypes: Metel
-
+	NukePower:
+		PauseOnCondition: lowpower
+		Prerequisites: ~techlevel.unrestricted
+		OrderName: NuclearMissile
+		Icon: nukemissile_icon
+		Cursor: nuke
+		ChargeInterval: 9000
+		Description: 核弹攻击
+		LongDesc: 向目标区域发射载有常规核武器的洲际导弹\n一段时间后对大范围内的一切单位造成高额伤害
+		EndChargeSpeechNotification: NuclearWeaponAvailable
+		SelectTargetSpeechNotification: SelectTarget
+		InsufficientPowerSpeechNotification: InsufficientPower
+		LaunchSpeechNotification: NuclearWeaponLaunched
+		IncomingSpeechNotification: NuclearWarheadApproaching
+		MissileWeapon: atomic
+		MissileDelay: 11
+		MissilePalette: player
+		SpawnOffset: 2c0,-1c780, 5c500
+		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayBeacon: True
+		BeaconPoster: nukemissile_icon
+		DisplayRadarPing: True
+		CameraRange: 10c0
+		TrailImage: nukesmoke
+		TrailPalette: effect
+		TrailSequences: idle
+		TrailDelay: 0
+		TrailInterval: 2
+		FlightDelay: 200
+		ArrowSequence: arrow
+		ClockSequence: clock
+		SupportPowerPaletteOrder: 30
+	SupportPowerChargeBar:
+	WithNukeLaunchAnimation:
+		Body: none
+	WithSpriteBody@none:
+		Name: none
+		Sequence: none
+		RequiresCondition: !build-incomplete
 
 ntur:
 	Inherits: ^DefenceBuilding
