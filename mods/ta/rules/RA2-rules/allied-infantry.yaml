@@ -45,7 +45,7 @@ dog:
 	# 	Queue: Infantry
 	# 	Prerequisites: ~barracks
 	# 	BuildPaletteOrder: 40
-	# 	Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	# 	Description: 快速反步兵单位 \n 擅长侦查
 	Valued:
 		Cost: 200
 	DeliversCash:
@@ -53,7 +53,7 @@ dog:
 		PlayerExperience: 10
 		Voice: Move
 	Tooltip:
-		Name: Attack Dog
+		Name: 军犬
 	Selectable:
 		Bounds: 30, 24, 0, -5
 	Health:
