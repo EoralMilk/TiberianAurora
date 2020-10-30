@@ -94,3 +94,5 @@ atomic:
 		Dimensions: 11,11
 		Footprint: xxxxXXXxxxx xxXXXXXXXxx xXXXXXXXXXx xXXXXXXXXXx XXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXX xXXXXXXXXXx xXXXXXXXXXx xxXXXXXXXxx xxxxXXXxxxx
 		ValidTargets: Ground, Water, Air
+	Warhead@Flash: CreateEffect
+		Delay: 25
