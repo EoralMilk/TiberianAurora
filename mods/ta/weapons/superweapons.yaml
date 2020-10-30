@@ -12,9 +12,9 @@ IonCannon:
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	Warhead@FireEff2: FireCluster
 		Weapon: FlameWave
-		RandomClusterCount: 8
+		RandomClusterCount: 0
 		Dimensions: 3,3
-		Footprint: xxx xXx xxx
+		Footprint: xXx XXX xXx
 		ValidTargets: Ground, Water, Air
 	Warhead@4Effect: CreateEffect
 		Explosions: ionbeam

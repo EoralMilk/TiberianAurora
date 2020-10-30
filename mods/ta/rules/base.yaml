@@ -270,7 +270,6 @@
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
-		Priority: 4
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 	WithInfantryBody:
