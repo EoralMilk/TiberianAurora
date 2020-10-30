@@ -90,7 +90,7 @@ atomic:
 	Warhead@FireEff2: FireCluster
 		Delay: 25
 		Weapon: FlameWave
-		RandomClusterCount: 60
+		RandomClusterCount: 0
 		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx 
+		Footprint: xxxxXXXxxxx xxXXXXXXXxx xXXXXXXXXXx xXXXXXXXXXx XXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXX xXXXXXXXXXx xXXXXXXXXXx xxXXXXXXXxx xxxxXXXxxxx
 		ValidTargets: Ground, Water, Air
