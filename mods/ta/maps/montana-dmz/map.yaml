@@ -5,7 +5,7 @@ Author: Westwood Studios
 Tileset: SNOW
 MapSize: 85,170
 Bounds: 2,4,81,156
-Visibility: Lobby
+Visibility: None
 Categories: Conquest
 Players:
 	PlayerReference@Neutral:

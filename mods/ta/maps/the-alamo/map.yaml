@@ -12,7 +12,7 @@ MapSize: 60,120
 
 Bounds: 2,4,56,108
 
-Visibility: Lobby
+Visibility: None
 
 Categories: Conquest
 
