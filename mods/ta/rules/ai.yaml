@@ -168,6 +168,7 @@ Player:
 		SquadSize: 15
 		ExcludeFromSquadsTypes: harvester
 		ConstructionYardTypes: fact
+		RushInterval: 200000 ## rush squad有bug
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
