@@ -37,6 +37,8 @@ SmallExplosion:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
 
 
 MediumExplosion:
@@ -59,6 +61,8 @@ MediumExplosion:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
 
 LargeExplosion:
 	Inherits: ^DamagingExplosion
@@ -81,6 +85,8 @@ LargeExplosion:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
 
 
 HugeExplosion:
@@ -110,6 +116,8 @@ HugeExplosion:
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
 		ValidTargets: Ground, Water, Air
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
 
 
 
@@ -158,6 +166,8 @@ FlameExplosion:
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
 		ValidTargets: Ground, Water, Air
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
 
 
 BuildingExplode:
@@ -187,6 +197,8 @@ BuildingExplode:
 		Dimensions: 3,3
 		Footprint: xxx x_x xxx
 		ValidTargets: Ground, Water, Air
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
 
 
 FlameSea:
@@ -216,15 +228,17 @@ FlameSea:
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxXxx xxxxx xxxxx
 		ValidTargets: Ground, Water, Air
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
+
 
 FlameWave:
 	Inherits: ^FlameWeapon
 	ReloadDelay: 1
 	Range: 7c512
-	Projectile: Bullet
-		Speed: 200
-		-Image:
+	Projectile: InstantHit
 		Inaccuracy: 800
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 10
 		Spread: 0c512
@@ -234,3 +248,30 @@ FlameWave:
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
 		ValidTargets: Ground, Water, Air
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
+
+
+FlameInfection:
+	Inherits: ^FlameWeapon
+	ValidTargets: Ground
+	# InvalidTargets: Water, Inpassable
+	ReloadDelay: 15
+	Range: 7c512
+	-Report:
+	Projectile: InstantHit
+		Inaccuracy: 800
+		Blockable: false
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Spread: 0c256
+	Warhead@FireWave: FireCluster
+		Delay: 5
+		Weapon: FlameInfection
+		RandomClusterCount: 1
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Soil, Metel, Stone, Concrete, Meat
+		InvalidTargets: Water, Inpassable, Air
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:

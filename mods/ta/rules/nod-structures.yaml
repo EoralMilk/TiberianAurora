@@ -334,6 +334,10 @@ samsite:
 		PlayerPalette: red_unit
 	Targetable@materials:
 		TargetTypes: Metel
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+
 
 obelisk:
 	Inherits: ^DefenceBuilding

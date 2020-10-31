@@ -77,19 +77,19 @@ Player:
 					Types: Ground, Water
 					Attractiveness: 1
 					TargetMetric: Value
-					CheckRadius: 7c0
+					CheckRadius: 5c0
 				Consideration@3:
 					Against: Enemy
 					Types: Structure
 					Attractiveness: 3
 					TargetMetric: Value
-					CheckRadius: 7c0
+					CheckRadius: 5c0
 				Consideration@4:
 					Against: Ally
-					Types: Air, Ground, Water
+					Types: Ground, Water
 					Attractiveness: -5
 					TargetMetric: Value
-					CheckRadius: 8c0
+					CheckRadius: 7c0
 			IonCannonAttack:
 				OrderName: IonCannonAttack
 				MinimumAttractiveness: 12
@@ -104,13 +104,13 @@ Player:
 					CheckRadius: 1c0
 				Consideration@2:
 					Against: Ally
-					Types: Air, Ground, Water
+					Types: Ground, Water
 					Attractiveness: -10
 					TargetMetric: Value
 					CheckRadius: 2c0
 				Consideration@3:
 					Against: Enemy
-					Types: Air, Ground, Water
+					Types: Ground, Water
 					Attractiveness: 1
 					TargetMetric: Value
 					CheckRadius: 1c512
