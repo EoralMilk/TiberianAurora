@@ -81,6 +81,8 @@ explosion:
 	small_barrel_explosion: brrlexp1
 	large_barrel_explosion: brrlexp2
 	nuke_explosion: nukeanim
+	nuke_steam: nukestm
+		Tick: 100
 	nuke_ball: nukeball
 	demotruck_explosion: demtexp
 	elite_explosion: vtexplod

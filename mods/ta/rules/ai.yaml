@@ -92,7 +92,7 @@ Player:
 					CheckRadius: 8c0
 			IonCannonAttack:
 				OrderName: IonCannonAttack
-				MinimumAttractiveness: 10
+				MinimumAttractiveness: 12
 				MinimumScanTimeInterval: 10
 				MaximumScanTimeInterval: 30
 				Consideration@1:
@@ -113,13 +113,13 @@ Player:
 					Types: Air, Ground, Water
 					Attractiveness: 1
 					TargetMetric: Value
-					CheckRadius: 2c0
+					CheckRadius: 1c512
 				Consideration@4:
 					Against: Enemy
 					Types: Defence
 					Attractiveness: 2
 					TargetMetric: Health
-					CheckRadius: 2c0
+					CheckRadius: 1c512
 	BaseBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		DefenseQueues: Support

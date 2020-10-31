@@ -163,7 +163,7 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: tiny_watersplash
 		ValidTargets: Water
-		InvalidTargets: Soil, Stone, Metel, Concrete, Meat
+		InvalidTargets: Soil, Stone, Metel, Concrete, Meat, Ground
 	Warhead@Flash: CreateEffect
 		InvalidTargets: Water
 
@@ -396,6 +396,7 @@ ShellCasingDebris:
 		ExplosionPalette: effect80alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
+		ValidTargets: Ground
 
 ^Fire_02:
 	# Inherits: ^Light_Small-Brighter
@@ -404,6 +405,7 @@ ShellCasingDebris:
 		ExplosionPalette: effect
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
+		ValidTargets: Ground
 
 ^Fire_03:
 	# Inherits: ^Light_Small-Bright
@@ -412,6 +414,7 @@ ShellCasingDebris:
 		ExplosionPalette: effect80alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
+		ValidTargets: Ground
 
 
 # Light

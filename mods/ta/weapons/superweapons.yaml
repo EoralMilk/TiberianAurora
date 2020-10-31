@@ -1,20 +1,52 @@
 
 IonCannon:
 	Inherits: ^HE_WarheadEff_Huge
-	Inherits: ^Fire_03
+	# Projectile: InstantHit
+	# 	Blockable: false
+	Projectile: Missile
+		Blockable: true
+		Inaccuracy: 120
+		Shadow: false
+		CruiseAltitude: 2c0
+		VerticalRateOfTurn: 55
+		HorizontalRateOfTurn: 55
+		MinimumLaunchAngle: 255
+		MaximumLaunchAngle: 255
+		Gravity: 10
+		Speed: 300
+		Arm: 0
+		RangeLimit: 30c0
+		ExplodeWhenEmpty: true
+		TerrainHeightAware: true
+		AllowSnapping: true
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
 		Range: 0, 1c1, 2c1, 2c512
-		Damage: 100
-		Falloff: 1000, 1000, 250, 100
+		Damage: 80
+		Falloff: 100, 100, 25, 10
 		ValidTargets: Ground, Water, Air
 		AffectsParent: True
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
-	Warhead@FireEff2: FireCluster
-		Weapon: FlameWave
+	Warhead@BlastWaveCore: FireCluster
+		Weapon: StroneBlastWave
+		Delay: 0
 		RandomClusterCount: 0
 		Dimensions: 3,3
 		Footprint: xXx XXX xXx
+		ValidTargets: Ground, Water, Air
+	Warhead@BlastWave2: FireCluster
+		Weapon: OrdinaryBlastWave
+		Delay: 2
+		RandomClusterCount: 0
+		Dimensions: 5,5
+		Footprint: xXXXx XXxXX XxxxX XXxXX xXXXx
+		ValidTargets: Ground, Water, Air
+	Warhead@BlastWave3: FireCluster
+		Delay: 3
+		Weapon: WeakBlastWave
+		RandomClusterCount: 0
+		Dimensions: 17,17
+		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxXxxxxxxxx xxxxxxXXXXXxxxxxx xxxxxXXxxxXXxxxxx xxxxxXxxxxxXxxxxx xxxxXXxxxxxXXxxxx xxxxxXxxxxxXxxxxx xxxxxXXxxxXXxxxxx xxxxxxXXXXXxxxxxx  xxxxxxxxXxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@4Effect: CreateEffect
 		Explosions: ionbeam
@@ -40,7 +72,13 @@ IonCannon:
 		Explosions: ionring
 		ExplosionPalette: effect80alpha
 		AffectsParent: true
-
+	Warhead@SmuSomke: LeaveSmudge
+		SmokeType: largesmoke
+		SmokePercentage: 100
+	ShakeScreenWarhead@HitShake:
+		Duration: 10
+		Intensity: 8
+		Multiplier: 3
 
 NukePayload:
 	ValidTargets: Ground, Water, Air
@@ -64,7 +102,7 @@ NukePayload:
 		AffectsParent: true
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
 	Warhead@2Res_impact: DestroyResource
-		Size: 10
+		Size: 3
 	Warhead@3Eff_impact: CreateEffect
 		Explosions: nuke_explosion
 		ImpactSounds: snukexpl.wav
@@ -80,17 +118,275 @@ atomic:
 		ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
 		Delay: 25
+		ValidTargets: Air
+		Damage: 10000
 	Warhead@2Res_impact: DestroyResource
 		Delay: 25
 	Warhead@3Eff_impact: CreateEffect
 		Delay: 25
 		ValidTargets: Ground, Water, Air
 	Warhead@4Smu_areanuke: LeaveSmudge
-		Delay: 25
-	Warhead@FireEff2: FireCluster
-		Delay: 25
-		Weapon: FlameWave
-		RandomClusterCount: 0
-		Dimensions: 11,11
-		Footprint: xxxxXXXxxxx xxXXXXXXXxx xXXXXXXXXXx xXXXXXXXXXx XXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXX xXXXXXXXXXx xXXXXXXXXXx xxXXXXXXXxx xxxxXXXxxxx
+		Delay: 35
+		SmokeType: largesmoke
+		SmokePercentage: 100
+	Warhead@CoreDamage: SpreadDamage
+		Delay: 30
+		Spread: 0c256
+		Damage: 500
+		Falloff: 1024, 512, 387, 256, 128, 64, 32, 16, 8, 4, 2
 		ValidTargets: Ground, Water, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 200
+			Medium: 100
+			Heavy: 100
+			Wood: 60
+			Steel: 100
+			Concrete: 8
+			Drone: 100
+			Rocket: 100
+		AffectsParent: true
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
+	Warhead@BlastWaveCore: FireCluster
+		Delay: 25
+		Weapon: SuperBlastWave
+		RandomClusterCount: 0
+		Dimensions: 17,17
+		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxXXXxxxxxxx xxxxxxXXXXXxxxxxx xxxxxxXXXXXxxxxxx xxxxxxXXXXXxxxxxx xxxxxxxXXXxxxxxxx xxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@BlastWave2: FireCluster
+		Delay: 25
+		Weapon: StroneBlastWave
+		RandomClusterCount: 0
+		Dimensions: 17,17
+		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxXxxxxxxxx xxxxxxXXXXXxxxxxx xxxxxXXxxxXXxxxxx xxxxxXxxxxxXxxxxx xxxxXXxxxxxXXxxxx xxxxxXxxxxxXxxxxx xxxxxXXxxxXXxxxxx xxxxxxXXXXXxxxxxx  xxxxxxxxXxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@BlastWave3: FireCluster
+		Delay: 25
+		Weapon: OrdinaryBlastWave
+		RandomClusterCount: 0
+		Dimensions: 17,17
+		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxXXXxxxxxxx xxxxxXXXxXXXxxxxx xxxxXXxxxxxXXxxxx xxxxXxxxxxxxXxxxx xxxXXxxxxxxxXXxxx xxxXxxxxxxxxxXxxx xxxXXxxxxxxxXXxxx xxxxXxxxxxxxXxxxx xxxxXXxxxxxXXxxxx xxxxxXXXxXXXxxxxx xxxxxxxXXXxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@BlastWave4: FireCluster
+		Delay: 25
+		Weapon: WeakBlastWave
+		RandomClusterCount: 0
+		Dimensions: 17,17
+		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxXxxxxxxxx xxxxxxXXXXXxxxxxx xxxxXXXxxxXXXxxxx xxxXXxxxxxxxXXxxx xxxXxxxxxxxxxXxxx xxXXxxxxxxxxxXXxx xxXxxxxxxxxxxxXxx xXXxxxxxxxxxxxXXx xxXxxxxxxxxxxxXxx xxXXxxxxxxxxxXXxx xxxXxxxxxxxxxXxxx xxxXXxxxxxxxXXxxx xxxxXXXxxxXXXxxxx xxxxxxXXXXXxxxxxx xxxxxxxxXxxxxxxxx xxxxxxxxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@BlastWave5: FireCluster
+		Delay: 25
+		Weapon: MicroBlastWave
+		RandomClusterCount: 0
+		Dimensions: 17,17
+		Footprint: xxxxxxxXXXxxxxxxx xxxxxXXXxXXXxxxxx xxxXXXxxxxxXXXxxx xxXXxxxxxxxxxXXxx xxXxxxxxxxxxxxXxx xXXxxxxxxxxxxxXXx xXxxxxxxxxxxxxxXx XXxxxxxxxxxxxxxXX XxxxxxxxxxxxxxxxX XXxxxxxxxxxxxxxXX xXxxxxxxxxxxxxxXx xXXxxxxxxxxxxxXXx xxXxxxxxxxxxxxXxx xxXXxxxxxxxxxXXxx xxxXXXxxxxxXXXxxx xxxxxXXXxXXXxxxxx xxxxxxxXXXxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@OverBlast: FireCluster
+		Delay: 55
+		Weapon: SecondaryShockWave
+		RandomClusterCount: 0
+		Dimensions: 17,17
+		Footprint: xxxxxxxXXXxxxxxxx xxxxxXXXXXXXxxxxx xxxXXXXXXXXXXXxxx xxXXXXXXXXXXXXXxx xxXXXXXXXXXXXXXxx xXXXXXXXXXXXXXXXx xXXXXXXXXXXXXXXXx XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX xXXXXXXXXXXXXXXXx xXXXXXXXXXXXXXXXx  xxXXXXXXXXXXXXXxx xxXXXXXXXXXXXXXxx xxxXXXXXXXXXXXxxx xxxxxXXXXXXXxxxxx xxxxxxxXXXxxxxxxx
+		ValidTargets: Ground, Water, Air
+	# Warhead@Smoke: CreateEffect
+	# 	Explosions: nuke_steam
+	# 	Delay: 45
+	# 	ValidTargets: Ground
+	ShakeScreenWarhead@HitShake:
+		Delay: 25
+		Duration: 35
+		Intensity: 14
+		Multiplier: 3
+
+IonCannonStorm:
+	ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm1: FireCluster
+		Weapon: IonCannon
+		Delay: 0
+		Dimensions: 1,1
+		Footprint: X
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm2: FireCluster
+		Weapon: IonCannon
+		Delay: 20
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm3: FireCluster
+		Weapon: IonCannon
+		Delay: 40
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm4: FireCluster
+		Weapon: IonCannon
+		Delay: 60
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm5: FireCluster
+		Weapon: IonCannon
+		Delay: 80
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm6: FireCluster
+		Weapon: IonCannon
+		Delay: 100
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm7: FireCluster
+		Weapon: IonCannon
+		Delay: 120
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm8: FireCluster
+		Weapon: IonCannon
+		Delay: 140
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm9: FireCluster
+		Weapon: IonCannon
+		Delay: 160
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm10: FireCluster
+		Weapon: IonCannon
+		Delay: 180
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm11: FireCluster
+		Weapon: IonCannon
+		Delay: 200
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@IonCannonStorm12: FireCluster
+		Weapon: IonCannon
+		Delay: 220
+		RandomClusterCount: 2
+		Dimensions: 9,9
+		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		ValidTargets: Ground, Water, Air
+
+
+^BlastWave:
+	Range: 30c0
+	Projectile: Missile
+		Blockable: true
+		Shadow: false
+		CruiseAltitude: 2c0
+		VerticalRateOfTurn: 55
+		HorizontalRateOfTurn: 55
+		MinimumLaunchAngle: 255
+		MaximumLaunchAngle: 255
+		MinimumLaunchSpeed: 150
+		MaximumLaunchSpeed: 150
+		Inaccuracy: 400
+		Acceleration: 0
+		Gravity: 10
+		Speed: 150
+		Arm: 0
+		RangeLimit: 30c0
+		ExplodeWhenEmpty: true
+		TerrainHeightAware: true
+		AllowSnapping: true
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 300
+			Medium: 200
+			Heavy: 300
+			Wood: 60
+			Steel: 100
+			Concrete: 60
+			Drone: 100
+			Rocket: 100
+		Spread: 0c355
+	Warhead@FireWave: FireCluster
+		Weapon: BlastFlame
+		RandomClusterCount: 1
+		Dimensions: 1,1
+		Footprint: xxx xXx xxx
+		ValidTargets: Ground, Water, Air
+	Warhead@Res_impact: DestroyResource
+		Size: 1
+	ShakeScreenWarhead@BlastShake:
+		Duration: 5
+		Intensity: 3
+		Multiplier: 3
+
+BlastFlame:
+	Inherits: ^FlameWeapon
+	ReloadDelay: 1
+	Range: 7c512
+	Projectile: Bullet
+		Speed: 200
+		-Image:
+		Inaccuracy: 18c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Spread: 0c512
+
+SuperBlastWave:
+	Inherits: ^BlastWave
+	Inherits: ^HE_WarheadEff_Huge
+	Warhead@1Dam: SpreadDamage
+		Damage: 150
+		Spread: 0c640
+
+StroneBlastWave:
+	Inherits: ^BlastWave
+	Inherits: ^HE_WarheadEff_Large
+	Warhead@1Dam: SpreadDamage
+		Damage: 100
+		Spread: 0c512
+
+OrdinaryBlastWave:
+	Inherits: ^BlastWave
+	Inherits: ^HE_WarheadEff_Medium
+	Warhead@1Dam: SpreadDamage
+		Damage: 60
+		Spread: 0c384
+
+WeakBlastWave:
+	Inherits: ^BlastWave
+	Inherits: ^HE_WarheadEff_Small
+	Warhead@1Dam: SpreadDamage
+		Damage: 30
+		Spread: 0c256
+
+MicroBlastWave:
+	Inherits: ^BlastWave
+	Inherits: ^AP_WarheadEff_Tiny
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Spread: 0c128
+
+SecondaryShockWave:
+	Inherits: ^BlastWave
+	Inherits: ^HE_WarheadEff_Large
+	Warhead@1Dam: SpreadDamage
+		Damage: 70
+		Spread: 0c326
