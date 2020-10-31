@@ -171,7 +171,7 @@ ntpl:
 	Power:
 		Amount: -200
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate, ConsideredThreatForAI
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate	#, ConsideredThreatForAI
 	RenderSprites:
 		Image: ntpl
 		PlayerPalette: red_unit

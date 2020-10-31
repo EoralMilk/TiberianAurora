@@ -41,37 +41,31 @@ Player:
 					Types: Building
 					Attractiveness: 20
 					TargetMetric: Value
-					CheckRadius: 7c0
+					CheckRadius: 6c0
 				Consideration@3:
 					Against: Enemy
 					Types: Defence
-					Attractiveness: -7
+					Attractiveness: -70
 					TargetMetric: Health
 					CheckRadius: 6c0
 				Consideration@ally:
 					Against: Ally, Enemy
 					Types: Vehicle, Infantry
-					Attractiveness: 3
-					TargetMetric: Health
-					CheckRadius: 3c0
-				Consideration@4:
-					Against: Enemy
-					Types: Vehicle, Infantry
-					Attractiveness: 4
-					TargetMetric: Value
+					Attractiveness: 1
+					TargetMetric: None
 					CheckRadius: 3c0
 			nuclearmissile:
 				OrderName: NuclearMissile
 				MinimumAttractiveness: 20
 				MinimumScanTimeInterval: 25
 				MaximumScanTimeInterval: 40
-				Consideration@1:
-					Against: Enemy
-					Types: ConsideredThreatForAI
-					IgnoreVisibility: true
-					Attractiveness: 1000000
-					TargetMetric: None
-					CheckRadius: 2c0
+				#Consideration@1:
+				#	Against: Enemy
+				#	Types: ConsideredThreatForAI
+				#	IgnoreVisibility: true
+				#	Attractiveness: 1000000
+				#	TargetMetric: None
+				#	CheckRadius: 2c0
 				Consideration@2:
 					Against: Enemy
 					Types: Ground, Water
@@ -95,13 +89,13 @@ Player:
 				MinimumAttractiveness: 12
 				MinimumScanTimeInterval: 10
 				MaximumScanTimeInterval: 30
-				Consideration@1:
-					Against: Enemy
-					Types: ConsideredThreatForAI
-					IgnoreVisibility: true
-					Attractiveness: 1000000
-					TargetMetric: None
-					CheckRadius: 1c0
+				#Consideration@1:
+				#	Against: Enemy
+				#	Types: ConsideredThreatForAI
+				#	IgnoreVisibility: true
+				#	Attractiveness: 1000000
+				#	TargetMetric: None
+				#	CheckRadius: 1c0
 				Consideration@2:
 					Against: Ally
 					Types: Ground, Water
@@ -205,6 +199,7 @@ Player:
 		McvTypes: mcv
 		ConstructionYardTypes: fact
 		McvFactoryTypes: warfactory, airstrip
+		MinimumConstructionYardCount: 3
 	HarvesterBotModule:
 		RequiresCondition: enable-test-ai
 		HarvesterTypes: harvester
