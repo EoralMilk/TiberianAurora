@@ -224,7 +224,7 @@ FlameSea:
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	Warhead@FireWave: FireCluster
 		Weapon: FlameWave
-		RandomClusterCount: 15
+		RandomClusterCount: 7
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxXxx xxxxx xxxxx
 		ValidTargets: Ground, Water, Air

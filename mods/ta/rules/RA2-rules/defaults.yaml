@@ -642,7 +642,7 @@
 		TargetTypes: Meat
 
 ^Parachutable:
-	WithSpriteBody@Parachute:
+	WithFacingSpriteBody@Parachute:
 		Name: parachute
 		Sequence: paradrop
 		RequiresCondition: parachute

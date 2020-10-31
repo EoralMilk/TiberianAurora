@@ -137,6 +137,3 @@ a10husk:
 	Explodes:
 		Weapon: FlameExplosion
 		EmptyWeapon: FlameExplosion
-	Explodes@Flame:
-		Weapon: FlameSea
-		EmptyWeapon: FlameSea

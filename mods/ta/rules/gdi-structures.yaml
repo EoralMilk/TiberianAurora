@@ -200,7 +200,7 @@ advhq:
 		DisplayTimerStances: Ally, Neutral, Enemy
 		CameraActor: camera
 		SupportPowerPaletteOrder: 20
-		Weapon: IonCannonStorm
+		Weapon: IonCannon
 		Effect: moveflsh
 		# EffectSequence: idle
 		# EffectPalette: ts_effect80alpha

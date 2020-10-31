@@ -5,27 +5,6 @@ engineer:
 		Start: 244
 	icon: engnicon
 
-adog:
-	Inherits: ^BasicInfantry
-	cheer:
-		Start: 164
-	die1:
-		Start: 87
-		Length: 14
-	die2:
-		Start: 102
-		Length: 14
-	-die4:
-	-die6:
-	standup: # TODO unused
-		Start: 166
-		Length: 6
-		Facings: 8
-	jump: adogp
-		Length: 1
-		Facings: 32
-	icon: adogicon
-
 dlph:
 	stand:
 		Start: 48

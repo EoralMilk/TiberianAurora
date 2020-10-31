@@ -60,7 +60,8 @@ mnguner:
 		Length: 5
 		Tick: 110
 		ShadowStart: 66
-	paradrop:
+	paradrop: mngr_para-n
+		Facings: 8
 	cheer:
 	liedown: mngr_change
 		Length: 7
@@ -103,7 +104,7 @@ mnguner-g:
 	prone-stand: mngr_prone-g
 	prone-run: mngr_prone-g
 	prone-shoot: mngr_prone-g
-
+	paradrop: mngr_para-g
 
 
 bzkier-n:
@@ -127,6 +128,7 @@ bzkier-n:
 	prone-stand: bzkr_prone-n
 	prone-run: bzkr_prone-n
 	prone-shoot: bzkr_prone-n
+	paradrop: bzkr_para-n
 	icon: bazookier_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -144,3 +146,29 @@ bzkier-g:
 	prone-stand: bzkr_prone-g
 	prone-run: bzkr_prone-g
 	prone-shoot: bzkr_prone-g
+	paradrop: bzkr_para-g
+
+
+adog:
+	Inherits: ^BasicInfantry
+	cheer:
+		Start: 164
+	die1:
+		Start: 87
+		Length: 14
+	die2:
+		Start: 102
+		Length: 14
+	-die4:
+	-die6:
+	standup: # TODO unused
+		Start: 166
+		Length: 6
+		Facings: 8
+	jump: adogp
+		Length: 1
+		Facings: 32
+	icon: dog_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
