@@ -17,6 +17,18 @@ atomic:
 	down: nukedown
 		Offset: 0, 70
 
+crate:
+	Defaults: supplycrate
+		Offset: 0, 0, 15
+		ShadowStart: 1
+		UseTilesetExtension: false
+	idle:
+	land:
+	water: supplycrate-water
+		Length: 16
+		ShadowStart: 16
+		Tick: 180
+
 explosion:
 	Defaults:
 		Length: *

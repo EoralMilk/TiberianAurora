@@ -62,15 +62,6 @@ crate-effects:
 	levelup: veteran
 	speed: speed
 
-crate:
-	Defaults:
-		Offset: 0, -12, 12
-		ShadowStart: 1
-		UseTilesetExtension: true
-	idle:
-	land:
-	water: wcrate
-
 rank:
 	veteran: pips
 		Start: 13

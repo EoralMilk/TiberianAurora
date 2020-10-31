@@ -528,7 +528,7 @@
 	Crate:
 		TerrainTypes: Clear, Rough, Road, Ore, Gems
 	RenderSprites:
-		Palette: terrain
+		Palette: player
 		Image: crate
 	WithCrateBody:
 		LandSequence: land

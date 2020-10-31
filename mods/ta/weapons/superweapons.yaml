@@ -75,10 +75,10 @@ IonCannon:
 	Warhead@SmuSomke: LeaveSmudge
 		SmokeType: largesmoke
 		SmokePercentage: 100
-	ShakeScreenWarhead@HitShake:
-		Duration: 10
-		Intensity: 8
-		Multiplier: 3
+	Warhead@BlastShake: ShakeScreen
+		Duration: 5
+		Intensity: 4
+		Multiplier: 3,3
 
 NukePayload:
 	ValidTargets: Ground, Water, Air
@@ -195,11 +195,12 @@ atomic:
 	# 	Explosions: nuke_steam
 	# 	Delay: 45
 	# 	ValidTargets: Ground
-	ShakeScreenWarhead@HitShake:
+	Warhead@BlastShake: ShakeScreen
+		Duration: 30
+		Intensity: 8
+		Multiplier: 3,3
 		Delay: 25
-		Duration: 35
-		Intensity: 14
-		Multiplier: 3
+
 
 IonCannonStorm:
 	ValidTargets: Ground, Water, Air
@@ -332,10 +333,10 @@ IonCannonStorm:
 		ValidTargets: Ground, Water, Air
 	Warhead@Res_impact: DestroyResource
 		Size: 1
-	ShakeScreenWarhead@BlastShake:
+	Warhead@BlastShake: ShakeScreen
 		Duration: 5
-		Intensity: 3
-		Multiplier: 3
+		Intensity: 1
+		Multiplier: 3,3
 
 BlastFlame:
 	Inherits: ^FlameWeapon
