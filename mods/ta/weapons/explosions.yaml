@@ -36,7 +36,7 @@ SmallExplosion:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
 
@@ -60,7 +60,7 @@ MediumExplosion:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
 
@@ -84,7 +84,7 @@ LargeExplosion:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
 
@@ -109,7 +109,7 @@ HugeExplosion:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff2: FireCluster
 		Weapon: FlameWave
 		RandomClusterCount: 6
