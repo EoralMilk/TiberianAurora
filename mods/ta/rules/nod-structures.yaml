@@ -111,16 +111,6 @@ airstrip:
 		ZOffset: 256
 		RequiresCondition: primary
 	# WithBuildingBib:
-	ProductionQueue:
-		Type: Vehicle
-		DisplayOrder: 3
-		Group: Vehicle
-		LowPowerModifier: 125
-		BlockedAudio: NoBuild
-		LimitedAudio: BuildingInProgress
-		QueuedAudio: Training
-		OnHoldAudio: OnHold
-		CancelledAudio: Cancelled
 	ProductionBar:
 		ProductionType: Vehicle
 	WithIdleOverlay@anim-dish:

@@ -48,11 +48,11 @@ Player:
 					Attractiveness: -70
 					TargetMetric: Health
 					CheckRadius: 6c0
-				Consideration@ally:
-					Against: Ally, Enemy
+				Consideration@4:
+					Against: Enemy
 					Types: Vehicle, Infantry
 					Attractiveness: 1
-					TargetMetric: None
+					TargetMetric: Value
 					CheckRadius: 3c0
 			nuclearmissile:
 				OrderName: NuclearMissile
