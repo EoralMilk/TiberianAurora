@@ -9,7 +9,7 @@ mnguner:
 		Start: 8
 		Length: 12
 		Facings: 8
-		Tick: 70
+		Tick: 60
 		ShadowStart: 217
 	shoot:
 		Start: 104
@@ -80,7 +80,7 @@ mnguner:
 		Start: 8
 		Length: 12
 		Facings: 8
-		Tick: 70
+		Tick: 60
 		ShadowStart: 184
 	prone-shoot: mngr_prone
 		Start: 104
@@ -147,6 +147,26 @@ bzkier-g:
 	prone-run: bzkr_prone-g
 	prone-shoot: bzkr_prone-g
 	paradrop: bzkr_para-g
+
+
+grenader:
+	Inherits: bzkier-n
+	Defaults: grdr_up
+	die1: grdr_die1
+	die2: grdr_die2
+	die3: grdr_die3
+	liedown: grdr_change
+	standup: grdr_change
+	prone-stand: grdr_prone
+	prone-run: grdr_prone
+	prone-shoot: grdr_prone
+	paradrop: grdr_para
+	icon: grenader_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
 
 
 adog:

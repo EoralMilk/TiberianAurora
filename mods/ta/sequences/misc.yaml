@@ -29,6 +29,12 @@ crate:
 		ShadowStart: 16
 		Tick: 180
 
+grenade:
+	idle:
+		Length: 10
+		Facings: -32
+		Tick: 60
+
 explosion:
 	Defaults:
 		Length: *

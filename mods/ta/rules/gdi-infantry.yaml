@@ -42,7 +42,7 @@ grenader:
 	AutoTarget:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
-		Image: mnguner
+		Image: grenader
 		PlayerPalette: n_mngr
 
 sniper:

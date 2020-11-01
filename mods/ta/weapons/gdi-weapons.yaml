@@ -8,9 +8,12 @@ HEGrenade:
 	Range: 4c0
 	Report: grenade_throw.wav
 	Projectile: Bullet
-		Image: 120mm
+		Image: grenade
+		Palette: player
+		IsPlayerPalette: true
 		Speed: 146
-		LaunchAngle: 120
+		LaunchAngle: 160
+		Shadow: true
 		ZOffset: 1024
 		ContrailLength: 0
 		ContrailWidth: 0

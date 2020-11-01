@@ -216,6 +216,7 @@ dog:
 		ReloadingCondition: attack-cooldown
 	AttackLeap:
 		Voice: Attack
+		Speed: 160
 		PauseOnCondition: attacking || attack-cooldown
 	AutoTarget:
 		InitialStance: AttackAnything
