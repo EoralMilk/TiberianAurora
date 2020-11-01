@@ -673,6 +673,8 @@
 		RequiresCondition: !parachute
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
+	# WithShadow:
+	# 	RequiresCondition: parachute
 
 ^ParachutableVehicle:
 	Parachutable:
@@ -696,6 +698,8 @@
 		RequiresCondition: parachute
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
+	# WithShadow:
+	# 	RequiresCondition: parachute
 
 ^WithSwimSuit:
 	WithInfantryBody:

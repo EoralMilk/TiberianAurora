@@ -58,7 +58,7 @@ mnguner:
 	die3: mngr_die3
 		Start: 23
 		Length: 5
-		Tick: 110
+		Tick: 150
 		ShadowStart: 66
 	paradrop: mngr_para-n
 		Facings: 8

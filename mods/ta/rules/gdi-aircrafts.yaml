@@ -8,7 +8,7 @@ a10:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
-		Prerequisites: hq
+		Prerequisites: none
 		Description: 快速对地攻击机\n\n 强势对抗：地面单位
 	Aircraft:
 		CanHover: false

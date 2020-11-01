@@ -293,7 +293,7 @@ meme_obelisker:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 120
-		Prerequisites: ~vehicle.nod
+		Prerequisites: none
 		Description: \n 一个会动的石碑？
 	Valued:
 		Cost: 1500

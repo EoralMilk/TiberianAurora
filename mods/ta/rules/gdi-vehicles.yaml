@@ -258,7 +258,7 @@ gunboat:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
-		Prerequisites: ~vehicle.gdi
+		Prerequisites: none
 		Description: \n GDI的海军主力
 	Valued:
 		Cost: 2000
@@ -294,42 +294,3 @@ gunboat:
 		Weapon: HugeExplosion
 		EmptyWeapon: HugeExplosion
 
-
-gdummy:
-	Inherits: ^Vehicle
-	# Buildable:
-	# 	Queue: Vehicle
-	# 	BuildPaletteOrder: 20
-	# 	Prerequisites: ~vehicle.gdi
-	Valued:
-		Cost: 100
-	Tooltip:
-		Name: 测试用载具
-	Selectable:
-		Priority: 4
-		Bounds: 68, 56, 0, -7
-	Health:
-		HP: 200
-	Armor:
-		Type: Heavy
-	Mobile:
-		TurnSpeed: 5
-		Speed: 70
-		Locomotor: tracked
-	RevealsShroud:
-		Range: 8c0
-	RenderSprites:
-		Image: a10
-	RenderVoxels:
-		Scale: 11.7
-		LightYaw: 800
-		LightPitch: 150
-		LightAmbientColor: -0.5,-0.5,-0.5
-		LightDiffuseColor: 1.4,1.4,1.4
-		Image: a10
-	WithVoxelBody:
-	BodyOrientation:
-		QuantizedFacings: 0
-		CameraPitch: 85
-		UseClassicPerspectiveFudge: false
-	HitShape:
