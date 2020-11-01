@@ -5,7 +5,7 @@ flamet:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Infantry
-		Prerequisites: ~infantry.any
+		Prerequisites: ~infantry.nod
 		BuildPaletteOrder: 10
 		Description: 装备火焰喷射器和坚固护甲的特种部队\n\n·强势对抗：步兵、建筑 \n·弱势对抗：载具
 	Valued:
@@ -44,6 +44,11 @@ flamet:
 	RenderSprites:  # TODO: 素材..
 		Image: mnguner
 		PlayerPalette: n_mngr
+	Explodes:
+		Weapon: FlameExplosion
+		EmptyWeapon: FlameExplosion
+		Chance: 66
+		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
 
 Chemict:
 	Inherits@1: ^CommonInfantry
@@ -51,7 +56,7 @@ Chemict:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Infantry
-		Prerequisites: ~infantry.any
+		Prerequisites: ~infantry.nod
 		BuildPaletteOrder: 10
 		Description: 装备先进泰伯利亚武器的精英部队\n免疫泰伯利亚毒害\n\n·强势对抗：地面目标
 	Valued:
@@ -93,3 +98,8 @@ Chemict:
 	RenderSprites:  # TODO: 素材..
 		Image: mnguner
 		PlayerPalette: n_mngr
+	Explodes:
+		Weapon: FlameExplosion
+		EmptyWeapon: FlameExplosion
+		Chance: 66
+		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath

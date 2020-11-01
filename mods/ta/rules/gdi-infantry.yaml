@@ -44,6 +44,12 @@ grenader:
 	RenderSprites:  # TODO: 素材..
 		Image: grenader
 		PlayerPalette: n_mngr
+	Explodes:
+		Weapon: LargeExplosion
+		EmptyWeapon: LargeExplosion
+		Chance: 50
+		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
+
 
 sniper:
 	Inherits@1: ^CommonInfantry
