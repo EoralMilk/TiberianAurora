@@ -59,13 +59,18 @@ c130:
 	# 	RequiresCondition: !airborne
 	# 	ZOffset: -1000
 	RejectsOrders:
-	Explodes:
-		Weapon: HugeExplosion
-		EmptyWeapon: HugeExplosion
+
 
 
 ac130:
 	Inherits: c130
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	# RejectsOrders:
+	# 	Except: Attack
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 100
+		Prerequisites: none
 	Valued:
 		Cost: 3000
 	Interactable:
@@ -75,24 +80,35 @@ ac130:
 	Aircraft:
 		TurnSpeed: 2
 		Speed: 235
-	Armament@GUNS_fake:
+	Armament@Vulcan_fake:
 		Weapon: AC130VulcanFake
+		RequiresCondition: airborne
 		LocalOffset: 0,0,0
-	Armament@GUNS:
+	Armament@Vulcan:
 		Weapon: AC130Vulcan
+		RequiresCondition: airborne
 		LocalOffset: 560,0,600
 	Armament@Cannon_fake:
 		Weapon: AC130CannonFake
+		RequiresCondition: airborne
 		LocalOffset: 0,0,0
 	Armament@Cannon:
 		Weapon: AC130Cannon
+		RequiresCondition: airborne
 		LocalOffset: 560,0,600
 	AutoTarget:
+		AllowMovement: false
+		InitialStance: Defend
+		InitialStanceAI: AttackAnything
+		ScanOnIdle: true
+		MinimumScanTimeInterval: 2
+		MaximumScanTimeInterval: 4
 	AttackAircraft:
 		FacingTolerance: 128
 		OpportunityFire: true
 		PersistentTargeting: true
 		AttackType: Default
+		AbortOnResupply: false
 	SpawnActorOnDeath:
 		Actor: ac130husk
 
