@@ -393,7 +393,7 @@ ShellCasingDebris:
 	# Inherits: ^Light_Small-Bright
 	Warhead@FireEff: CreateEffect
 		Explosions: fire01
-		ExplosionPalette: effect80alpha
+		ExplosionPalette: effect
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -411,11 +411,19 @@ ShellCasingDebris:
 	# Inherits: ^Light_Small-Bright
 	Warhead@FireEff: CreateEffect
 		Explosions: fire03
-		ExplosionPalette: effect80alpha
+		ExplosionPalette: effect
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground
 
+# ^Fire_04:
+# 	# Inherits: ^Light_Small-Bright
+# 	Warhead@FireEff: CreateEffect
+# 		Explosions: fire-4
+# 		ExplosionPalette: fire
+# 		ImpactSounds: burn-eff.wav
+# 		ImpactActors: false
+# 		ValidTargets: Ground
 
 # Light
 ^Light_Tiny:

@@ -359,8 +359,17 @@
 		Name: ts-anim
 		Filename: tsanim.pal
 		AllowModifiers: false
-		ShadowIndex: 242
 	PaletteFromPaletteWithAlpha@ts_effect80alpha:
 		Name: ts_effect80alpha
 		BasePalette: ts-anim
+		Alpha: 0.8
+
+
+	PaletteFromFile@fire:
+		Name: fire
+		Filename: fire.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@fire80alpha:
+		Name: fire80alpha
+		BasePalette: fire
 		Alpha: 0.8

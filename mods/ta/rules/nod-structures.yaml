@@ -98,6 +98,8 @@ airstrip:
 	Exit@1:
 		ExitCell: 5,2
 		SpawnOffset: -1024, 0, 0
+		# Facing: 0
+		BaselineSpawn: true
 	ProductionAirdrop:
 		Produces: Vehicle
 		ActorType: c130

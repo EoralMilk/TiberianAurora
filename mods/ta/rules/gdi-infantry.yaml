@@ -9,7 +9,7 @@ grenader:
 		BuildPaletteOrder: 10
 		Description: 装备有高爆手榴弹的突击队\n难以命中快速移动的目标 \n\n·强势对抗：步兵、建筑\n·弱势对抗：载具
 	Valued:
-		Cost: 200
+		Cost: 160
 	Armor:
 		Type: Flak
 	Tooltip:

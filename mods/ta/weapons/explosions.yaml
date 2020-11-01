@@ -192,7 +192,7 @@ BuildingExplode:
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	-Warhead@Flash:
 	Warhead@FireEff2: FireCluster
-		Weapon: Flamethrower
+		Weapon: FlameWave
 		RandomClusterCount: 1
 		Dimensions: 3,3
 		Footprint: xxx x_x xxx
@@ -238,6 +238,7 @@ FlameWave:
 	Range: 7c512
 	Projectile: InstantHit
 		Inaccuracy: 800
+		-Image:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 10

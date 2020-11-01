@@ -11,6 +11,7 @@ flameall:
 		Facings: -8
 		Tick: 160
 		ZOffset: 1023
+		BlendMode: Additive
 
 atomic:
 	up: nukeup
@@ -172,11 +173,27 @@ explosion:
 		BlendMode: Additive
 	fire02a: fire02
 		Length: *
-		Tick: 320
+		Tick: 150
 		BlendMode: Additive
 	fire03a: fire03
 		Length: *
 		Tick: 150
+		BlendMode: Additive
+	fire-1: fire-1
+		Length: *
+		Tick: 120
+		BlendMode: Additive
+	fire-2: fire-2
+		Length: *
+		Tick: 120
+		BlendMode: Additive
+	fire-3: fire-3
+		Length: *
+		Tick: 120
+		BlendMode: Additive
+	fire-4: fire-4
+		Length: *
+		Tick: 120
 		BlendMode: Additive
 	casingscorch: casing
 		Tick: 1200

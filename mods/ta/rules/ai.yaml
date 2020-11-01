@@ -174,8 +174,8 @@ Player:
 		UnitsToBuild:
 			# infantry
 			mngunner: 70
-			bzkier: 30
-			grenader: 40
+			bzkier: 35
+			grenader: 25
 			# vehicle
 			harvester: 10
 			ghumv: 35
