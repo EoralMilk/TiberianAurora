@@ -378,6 +378,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	WithSpriteBody:
+		ForceToGround: true
 	FrozenUnderFog:
 	Building:
 		Footprint: x
@@ -500,6 +501,7 @@
 ^Rock:
 	Inherits@1: ^SpriteActor
 	WithSpriteBody:
+		ForceToGround: true
 	FrozenUnderFog:
 	Building:
 		Footprint: x
