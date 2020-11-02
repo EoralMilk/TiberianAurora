@@ -137,32 +137,33 @@ ShellCasingDebris:
 ^WarheadEff:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: tiny_clsn
-		ExplosionPalette: effect80alpha
+		ExplosionPalette: effect
 		ValidTargets: Soil
 		InvalidTargets: Stone, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: tiny_clsn
-		ExplosionPalette: effect80alpha
+		ExplosionPalette: effect
 		ValidTargets: Metel
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: tiny_clsn
-		ExplosionPalette: effect80alpha
+		ExplosionPalette: effect
 		ValidTargets: Stone, Air
 		InvalidTargets: Soil, Metel, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: tiny_clsn
-		ExplosionPalette: effect80alpha
+		ExplosionPalette: effect
 		ValidTargets: Concrete
 		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: tiny_clsn
-		ExplosionPalette: effect80alpha
+		ExplosionPalette: effect
 		ValidTargets: Meat
 		InvalidTargets: Soil, Stone, Metel, Concrete, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: tiny_watersplash
 		ValidTargets: Water
+		ExplosionPalette: effect80alpha
 		InvalidTargets: Soil, Stone, Metel, Concrete, Meat, Ground
 	Warhead@Flash: CreateEffect
 		InvalidTargets: Water
@@ -390,28 +391,28 @@ ShellCasingDebris:
 
 
 ^Fire_01:
-	# Inherits: ^Light_Small-Bright
+	Inherits: ^Light_Small-Bright
 	Warhead@FireEff: CreateEffect
 		Explosions: fire01
-		ExplosionPalette: effect
+		ExplosionPalette: effect60alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground
 
 ^Fire_02:
-	# Inherits: ^Light_Small-Brighter
+	Inherits: ^Light_Small-Brighter
 	Warhead@FireEff: CreateEffect
 		Explosions: fire02
-		ExplosionPalette: effect
+		ExplosionPalette: effect60alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground
 
 ^Fire_03:
-	# Inherits: ^Light_Small-Bright
+	Inherits: ^Light_Small-Bright
 	Warhead@FireEff: CreateEffect
 		Explosions: fire03
-		ExplosionPalette: effect
+		ExplosionPalette: effect60alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground

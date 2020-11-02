@@ -55,9 +55,9 @@ explosion:
 	water_piff: h2o_exp5
 	empty: bulletsmall
 	piff: piff
-		# BlendMode: Additive
+		BlendMode: Additive
 	piffpiff: piffpiff
-		# BlendMode: Additive
+		BlendMode: Additive
 	soilpiff: soil_piff
 	small_explosion: explosml
 	medium_explosion: explomed
@@ -159,15 +159,15 @@ explosion:
 	fire01: fire01
 		Length: *
 		Tick: 150
-		# BlendMode: Additive
+		BlendMode: Additive
 	fire02: fire02
 		Length: *
 		Tick: 320
-		# BlendMode: Additive
+		BlendMode: Additive
 	fire03: fire03
 		Length: *
 		Tick: 150
-		# BlendMode: Additive
+		BlendMode: Additive
 	fire01a: fire01
 		Length: *
 		Tick: 150
