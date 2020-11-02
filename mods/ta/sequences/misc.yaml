@@ -103,6 +103,7 @@ explosion:
 	nuke_steam: nukestm
 		Tick: 100
 	nuke_ball: nukeball
+		Tick: 120
 	demotruck_explosion: demtexp
 	elite_explosion: vtexplod
 	terrorist_explosion: mininuke
