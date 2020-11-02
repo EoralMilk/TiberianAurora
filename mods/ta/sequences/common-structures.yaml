@@ -2,39 +2,27 @@
 pwrplt:
 	Defaults:
 		Offset: 15, -37, 40
-		UseTilesetCode: true
-	idle: pwrplt.shp
+		UseTilesetCode: false
+	idle:
 		ShadowStart: 3
-		UseTilesetCode: false
-		AddExtension: false
-	damaged-idle: pwrplt.shp
-		UseTilesetCode: false
-		AddExtension: false
+	damaged-idle:
 		Length: 1
 		Start: 1
 		ShadowStart: 4
-	dead: pwrplt.shp
-		UseTilesetCode: false
-		AddExtension: false
+	dead:
 		Length: 1
 		Start: 1
 		ShadowStart: 4
 		Tick: 400
-	idle-glow: pwrplt_anim.shp
-		UseTilesetCode: false
-		AddExtension: false
+	idle-glow: pwrplt_anim
 		Length: 30
 		ShadowStart: 30
 		Tick: 150
-	damaged-idle-glow: pwrplt_de_anim.shp
-		UseTilesetCode: false
-		AddExtension: false
+	damaged-idle-glow: pwrplt_de_anim
 		Length: 30
 		ShadowStart: 30
 		Tick: 150
-	make: pwrplt_mkup.shp
-		UseTilesetCode: false
-		AddExtension: false
+	make: pwrplt_mkup
 		Length: 50
 		ShadowStart: 50
 		Tick: 20
@@ -46,18 +34,14 @@ pwrplt:
 
 
 refinery:
-	Defaults: refinery.shp
+	Defaults:
 		Offset: 15, -50, 28
 		UseTilesetCode: false
 	idle:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 1
 		Length: 1
 		ShadowStart: 156
 	damaged-idle:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 3
 		Length: 1
 		ShadowStart: 158
@@ -67,14 +51,10 @@ refinery:
 		ShadowStart: 158
 		Tick: 400
 	make:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Length: 51
 		Start: 4
 		ShadowStart: 159
 	bib:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 0
 		ShadowStart: 155
 		Offset: 15, -50, 10
@@ -82,8 +62,6 @@ refinery:
 		ZOffset: -1c511
 		ZRamp: 1
 	damaged-bib:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 2
 		Length: 1
 		ShadowStart: 157
@@ -91,8 +69,6 @@ refinery:
 		ZOffset: -2048
 		ZRamp: 1
 	dead-bib:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 2
 		Length: 1
 		ShadowStart: 157
@@ -100,36 +76,26 @@ refinery:
 		ZOffset: -2048
 		ZRamp: 1
 	idle-lights:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Length: 15
 		Start: 83
 		ShadowStart: 238
 		Tick: 200
 	damaged-idle-lights:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 119
 		Length: 15
 		ShadowStart: 274
 		Tick: 200
 	idle-liquid:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 98
 		Length: 21
 		ShadowStart: 253
 		Tick: 200
 	damaged-idle-liquid:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 134
 		Length: 21
 		ShadowStart: 289
 		Tick: 170
 	idle-arrow:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 55
 		Length: 21
 		ShadowStart: 210
@@ -138,8 +104,6 @@ refinery:
 		ZOffset: -1024
 		ZRamp: 1
 	damaged-idle-arrow:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 55
 		Length: 21
 		ShadowStart: 210
@@ -148,22 +112,16 @@ refinery:
 		ZOffset: -1024
 		ZRamp: 1
 	idle-fans:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 76
 		Length: 7
 		ShadowStart: 231
 		Tick: 170
 	damaged-idle-fans:
-		UseTilesetCode: false
-	 	AddExtension: false
 		Start: 76
 		Length: 7
 		ShadowStart: 231
 		Tick: 170
 	docking-overlay:
-		UseTilesetCode: false
-	 	AddExtension: false
 	icon: refinery_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -173,55 +131,39 @@ refinery:
 hq:
 	Defaults:
 		Offset: -5, -40, 45
-		UseTilesetCode: true
-	idle: hq.shp
 		UseTilesetCode: false
-	 	AddExtension: false
+	idle:
 		ShadowStart: 3
-	damaged-idle: hq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-idle:
 		Length: 1
 		Start: 1
 		ShadowStart: 4
-	dead: hq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	dead:
 		Length: 1
 		Start: 1
 		ShadowStart: 4
 		Tick: 400
-	idle-fans: hq_anim_b.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	idle-fans: hq_anim_b
 		Length: 6
 		ShadowStart: 6
 		Tick: 120
 		Offset: -5, -40, 46
-	damaged-idle-fans: hq_anim_b.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-idle-fans: hq_anim_b
 		Length: 6
 		ShadowStart: 6
 		Tick: 120
 		Offset: -5, -40, 46
-	idle-dish: hq_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	idle-dish: hq_anim
 		Length: 30
 		ShadowStart: 30
 		Tick: 120
 		Offset: -5, -40, 48
-	damaged-idle-dish: hq_de_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-idle-dish: hq_de_anim
 		Length: 30
 		ShadowStart: 30
 		Tick: 120
 		Offset: -5, -40, 48
-	make: hq_mkup.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	make: hq_mkup
 		Length: 43
 		ShadowStart: 43
 	icon: hq_icon.png
@@ -233,36 +175,26 @@ hq:
 advpwr:
 	Defaults:
 		Offset: 0, -45, 45
-		UseTilesetCode: true
-	idle: advpwr.shp
 		UseTilesetCode: false
-	 	AddExtension: false
+	idle:
 		ShadowStart: 3
-	damaged-idle: advpwr.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-idle:
 		Start: 1
 		ShadowStart: 4
-	dead: advpwr.shp
+	dead:
 		Length: 1
 		Start: 1
 		ShadowStart: 4
 		Tick: 400
-	idle-glow: advpwr_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	idle-glow: advpwr_anim
 		Length: 30
 		ShadowStart: 30
 		Tick: 200
-	damaged-idle-glow: advpwr_de_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-idle-glow: advpwr_de_anim
 		Length: 30
 		ShadowStart: 30
 		Tick: 200
-	make: advpwr_mkup.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	make: advpwr_mkup
 		Length: 50
 		ShadowStart: 50
 	icon: advpwr_icon.png
@@ -274,42 +206,30 @@ advpwr:
 repairdepot:
 	Defaults:
 		Offset: 0, -43, 5
-		UseTilesetCode: true
-		ZOffset: -1c511
-	idle: repairdepot.shp
 		UseTilesetCode: false
-	 	AddExtension: false
+		ZOffset: -1c511
+	idle: repairdepot
 		ZOffset: -1c511
 		ZRamp: 1
-	damaged-idle: repairdepot.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-idle: repairdepot
 		Length: 1
 		Start: 1
 		ZOffset: -1c511
 		ZRamp: 1
-	dead: repairdepot.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	dead: repairdepot
 		Length: 1
 		Start: 1
 		Tick: 40
 		ZOffset: -1c511
-	make: repairdepot_mkup.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	make: repairdepot_mkup
 		Length: 41
 		ZOffset: -1c511
 		ZRamp: 1
-	padglow: repairdepot_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	padglow: repairdepot_anim
 		Length: 17
 		ZOffset: -1c511
 		ZRamp: 1
-	damaged-padglow: repairdepot_de_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-padglow: repairdepot_de_anim
 		Length: 17
 		ZOffset: -1c511
 		ZRamp: 1

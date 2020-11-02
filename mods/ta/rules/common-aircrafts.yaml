@@ -1,0 +1,99 @@
+
+transport:
+	Inherits: ^Helicopter
+	Valued:
+		Cost: 750
+	Tooltip:
+		Name: 支努干运输机
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		BuildPaletteOrder: 10
+		Prerequisites: helipad
+		Queue: Aircraft
+		Description: 用于运输步兵\n\n·无武装
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 150
+		AltitudeVelocity: 0c100
+		CruiseAltitude: 3c512
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 10c0
+		Type: GroundPosition
+	WithIdleOverlay@ROTOR1AIR:
+		Offset: 716,0,1360
+		Sequence: rotor-f
+		RequiresCondition: airborne
+	WithIdleOverlay@ROTOR1GROUND:
+		Offset: 716,0,1360
+		Sequence: rotor-f_low
+		RequiresCondition: !airborne
+	WithIdleOverlay@ROTOR2AIR:
+		Offset: -863,0,1740
+		Sequence: rotor-b
+		RequiresCondition: airborne
+	WithIdleOverlay@ROTOR2GROUND:
+		Offset: -863,0,1740
+		Sequence: rotor-b_low
+		RequiresCondition: !airborne
+	WithFacingSpriteBody@Shadow:
+		Sequence: shadow
+		Name: shadow
+		ForceToGround: true
+	Cargo:
+		Types: Infantry
+		MaxWeight: 10
+		PipCount: 10
+		AfterUnloadDelay: 40
+	SpawnActorOnDeath:
+		Actor: transport.Husk
+	SelectionDecorations:
+	Selectable:
+		DecorationBounds: 41,41
+	RenderSprites:
+		Image: transport-n
+		PlayerPalette: transport
+		FactionImages:
+			gdi: transport-g
+			nod: transport-n
+	GrantConditionOnMovement:
+		Condition: rotormoving
+	Targetable@materials:
+		TargetTypes: Metel
+
+
+transport.Husk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: 支努干运输机
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 140
+	RevealsShroud:
+		Range: 10c0
+		Type: GroundPosition
+	WithIdleOverlay@ROTOR1AIR:
+		Offset: 716,0,1360
+		Sequence: rotor-f
+	WithIdleOverlay@ROTOR2AIR:
+		Offset: -863,0,1740
+		Sequence: rotor-b
+	-WithVoxelBody:
+	WithFacingSpriteBody:
+	RenderSprites:
+		Image: transport-n
+		PlayerPalette: transport
+		FactionImages:
+			gdi: transport-g
+			nod: transport-n
+	WithFacingSpriteBody@Shadow:
+		Sequence: shadow
+		Name: shadow
+		ForceToGround: true
+	Explodes:
+		Weapon: LargeExplosion
+		EmptyWeapon: LargeExplosion

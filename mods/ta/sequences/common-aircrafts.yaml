@@ -1,0 +1,40 @@
+transport-n:
+	Inherits@Muzzle: ^WithFlakMuzzle
+	Defaults: 
+		Offset: 0,0,0
+		UseTilesetCode: false
+	idle: 
+		Facings: -32
+	stand: 
+		Facings: -32
+	run: 
+		Facings: -32
+	shadow:
+		Start: 32
+		ZOffset: -15
+		Facings: -32
+	rotor-f: transrotor-nm
+		Length: 10
+		Tick: 20
+		ZOffset: 5
+	rotor-f_low: transrotor-nm
+		Start: 10
+		Length: 10
+		Tick: 30
+		ZOffset: 5
+	rotor-b: transrotor-b-nm
+		Length: 10
+		Tick: 20
+		ZOffset: 5
+	rotor-b_low: transrotor-b-nm
+		Start: 10
+		Length: 10
+		Tick: 30
+		ZOffset: 5
+	icon: trans_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+transport-g:
+	Inherits: transport-n

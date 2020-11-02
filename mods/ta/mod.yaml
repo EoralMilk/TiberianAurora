@@ -110,7 +110,7 @@ Rules:
 	ta|rules/common-structures.yaml
 	ta|rules/common-infantry.yaml
 	ta|rules/common-vehicles.yaml
-	# ta|rules/common-aircraft.yaml
+	ta|rules/common-aircrafts.yaml
 	
 	ta|rules/gdi-structures.yaml
 	ta|rules/nod-structures.yaml
@@ -156,7 +156,7 @@ Sequences:
 	ta|sequences/common-structures.yaml
 	ta|sequences/common-infantry.yaml
 	# ta|sequences/common-vehicles.yaml
-	# ta|sequences/common-aircrafts.yaml
+	ta|sequences/common-aircrafts.yaml
 
 	ta|sequences/gdi-structures.yaml
 	ta|sequences/nod-structures.yaml

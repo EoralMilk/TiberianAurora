@@ -125,7 +125,7 @@
 	Inherits@1: ^ExistsInWorld
 	OwnerLostAction:
 		Action: Kill
-		DeathTypes: BulletDeath
+		DeathTypes: ExplosionDeath
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: airborne
@@ -182,8 +182,8 @@
 		Categories: Aircraft
 	Targetable@materials:
 		TargetTypes: Metel
-
-
+	Voiced:
+		VoiceSet: AircraftVoice
 
 
 ^CommonAircraft:
@@ -237,13 +237,68 @@
 		Categories: Aircraft
 	EjectOnDeath:
 		PilotActor: mngunner
-		SuccessRate: 100
+		SuccessRate: 50
 		EjectOnGround: false
 		EjectInAir: true
 		AllowUnsuitableCell: true
 		# ChuteSound: chute1.aud
 	Targetable@materials:
 		TargetTypes: Metel
+	Voiced:
+		VoiceSet: AircraftVoice
+
+^Helicopter:
+	Inherits: ^CommonAircraft
+	Huntable:
+	OwnerLostAction:
+		Action: Kill
+	AppearsOnRadar:
+		UseLocation: true
+	Targetable@GROUND:
+		TargetTypes: Ground, Vehicle
+		RequiresCondition: !airborne
+	Targetable@AIRBORNE:
+		TargetTypes: Air
+		RequiresCondition: airborne
+	SelectionDecorations:
+	WithSpriteControlGroupDecoration:
+	Selectable:
+		Bounds: 24,24
+	Repairable:
+		RepairActors: helipad, repairdepot
+	Aircraft:
+		AirborneCondition: airborne
+		CruisingCondition: cruising
+		CanHover: True
+		TakeOffOnResupply: true
+		VTOL: true
+		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Rail, Ore, Gems
+		Crushes: crate, infantry
+		InitialFacing: 224
+		CanSlide: True
+	HiddenUnderFog:
+		Type: GroundPosition
+	ActorLostNotification:
+	AttackMove:
+	DrawLineToTarget:
+	Guard:
+	Guardable:
+	Tooltip:
+		GenericName: 直升机
+	Hovers@CRUISING:
+		RequiresCondition: cruising
+	MustBeDestroyed:
+	Voiced:
+		VoiceSet: AircraftVoice
+	HitShape:
+	MapEditorData:
+		Categories: Aircraft
+	SpawnActorOnDeath:
+		RequiresCondition: airborne
+	-RenderVoxels:
+	WithFacingSpriteBody:
+	RenderSprites:
+
 
 ^CommonInfantry:
 	Inherits@1: ^ExistsInWorld

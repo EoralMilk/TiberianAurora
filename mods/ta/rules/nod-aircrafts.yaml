@@ -130,12 +130,14 @@ c130husk:
 	BodyOrientation:
 		QuantizedFacings: 64
 	QuantizeFacingsFromSequence:
-	WithShadow:
-		RequiresCondition: airborne
-	WithShadow@2:
-		Offset: 240,480,0
-		RequiresCondition: !airborne
-		ZOffset: -1000
+	WithFacingSpriteBody@Screw:
+		Sequence: screw
+		Name: screw
+		ForceToGround: false
+	WithFacingSpriteBody@Shadow:
+		Sequence: shadow
+		Name: shadow
+		ForceToGround: true
 	Explodes:
 		Weapon: HugeExplosion
 		EmptyWeapon: HugeExplosion
