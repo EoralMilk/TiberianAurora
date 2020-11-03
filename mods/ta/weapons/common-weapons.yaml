@@ -89,4 +89,4 @@ APBazooka:
 			Concrete: 75
 			Drone: 60
 			Rocket: 100
-
+		ValidTargets: Ground, Water, Air
