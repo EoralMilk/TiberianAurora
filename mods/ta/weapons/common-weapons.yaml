@@ -69,9 +69,10 @@ APBazooka:
 		Arm: 6
 		Speed: 278
 		Inaccuracy: 128
-		HorizontalRateOfTurn: 8
+		HorizontalRateOfTurn: 13
 		RangeLimit: 10c512
 		ContrailColor: D8D8FF
+		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
 		Spread: 0c288

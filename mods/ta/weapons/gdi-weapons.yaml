@@ -240,6 +240,7 @@ MammothTuskMissile:
 		HorizontalRateOfTurn: 18
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
+		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 347
 		Damage: 40
@@ -367,7 +368,7 @@ TowerMissile:
 	ReloadDelay: 10
 	Projectile: Missile
 		ContrailLength: 12
-		CruiseAltitude: 5c0
+		# CruiseAltitude: 5c0
 		Arm: 2
 		Speed: 388
 		Inaccuracy: 300
@@ -407,23 +408,34 @@ TowerMissile:
 
 
 OrcaAGMissiles:
-	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ValidTargets: Ground, Water
 	Range: 5c512
 	Burst: 2
 	BurstDelays: 0
 	ReloadDelay: 5
+	Report: bpatatta.wav
 	Projectile: Missile
-		ContrailLength: 8
 		Arm: 4
 		Speed: 280
 		Acceleration: 8
 		Inaccuracy: 400
-		HorizontalRateOfTurn: 22
-		CruiseAltitude: 4c768
 		RangeLimit: 10c512
+		ContrailLength: 8
+		ContrailWidth: 25
 		ContrailColor: FFFFB1
+		Blockable: false
+		Gravity: 8
+		Image: DRAGON
+		Palette: ra
+		Shadow: true
+		VerticalRateOfTurn: 20
+		HorizontalRateOfTurn: 20
+		MinimumLaunchAngle: 0
+		MaximumLaunchAngle: 0
+		TerrainHeightAware: true
+		AllowSnapping: false
+		CruiseAltitude: 0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c300
 		Damage: 10
@@ -583,6 +595,7 @@ GunBoatMissile:
 		HorizontalRateOfTurn: 8
 		RangeLimit: 18c512
 		ContrailColor: D8D8FF
+		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
 		Damage: 75

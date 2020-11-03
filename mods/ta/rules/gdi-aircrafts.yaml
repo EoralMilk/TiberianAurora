@@ -14,7 +14,7 @@ orcafighter:
 		BuildPaletteOrder: 20
 		Prerequisites: hq, ~techlevel.medium, aircraft.gdi
 		Queue: Aircraft
-		Description: GDI反装甲武装直升机\n\n·强势对抗：载具、建筑\n·弱势对抗：步兵
+		Description: 搭载反装甲火箭的轻型直升机\n\n·强势对抗：载具、建筑\n·弱势对抗：步兵
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 196
@@ -75,6 +75,7 @@ orcafighter:
 		Delay: 120
 		Count: 8
 	Selectable:
+		Bounds: 68, 56, 0, -7
 
 
 

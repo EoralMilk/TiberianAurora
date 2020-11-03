@@ -4,27 +4,26 @@
 	Range: 12c0
 	Report: bpatatta.wav
 	Projectile: Missile
+		Arm: 4
+		Speed: 280
+		Acceleration: 8
+		Inaccuracy: 400
+		RangeLimit: 10c512
+		ContrailLength: 8
+		ContrailWidth: 25
+		ContrailColor: FFFFB1
 		Blockable: false
-		Shadow: true
+		Gravity: 8
 		Image: DRAGON
 		Palette: ra
-		ContrailLength: 8
-		ContrailWidth: 35
-		CruiseAltitude: 3c0
-		VerticalRateOfTurn: 55
-		HorizontalRateOfTurn: 55
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		MinimumLaunchSpeed: 30
-		MaximumLaunchSpeed: 40
-		Acceleration: 12
-		Gravity: 6
-		Speed: 300
-		Arm: 5
-		RangeLimit: 14c409
-		ExplodeWhenEmpty: true
+		Shadow: true
+		VerticalRateOfTurn: 20
+		HorizontalRateOfTurn: 20
+		MinimumLaunchAngle: 0
+		MaximumLaunchAngle: 0
 		TerrainHeightAware: true
 		AllowSnapping: true
+		CruiseAltitude: 0
 		# TrailImage: mslsmoke1
 		# TrailPalette: effect80alpha
 		# TrailInterval: 1
@@ -32,6 +31,9 @@
 ^CommonAAMissile:
 	Inherits: ^CommonMissile
 	ValidTargets: Air
+	Projectile: Missile
+		Arm: 2
+		CruiseAltitude: 5c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 240
 		Damage: 75

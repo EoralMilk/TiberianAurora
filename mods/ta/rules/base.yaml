@@ -300,6 +300,7 @@
 	RenderSprites:
 	GrantConditionOnMovement:
 		Condition: moving
+	-EjectOnDeath:
 
 ^CommonInfantry:
 	Inherits@1: ^ExistsInWorld

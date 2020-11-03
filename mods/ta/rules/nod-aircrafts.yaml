@@ -1,4 +1,125 @@
 
+apache:
+	Inherits: ^Helicopter
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: 阿帕奇武装直升机
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: hq, ~techlevel.medium, aircraft.nod
+		Queue: Aircraft
+		Description: 搭载盖特炮的重型武装直升机\n\n·强势对抗：步兵、轻型载具、飞行器\n·弱势对抗：装甲载具
+	Aircraft:
+		TurnSpeed: 7
+		Speed: 165
+		AltitudeVelocity: 0c150
+		CruiseAltitude: 3c512
+	Health:
+		HP: 185
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 10c0
+		Type: GroundPosition
+	Armament@fake:
+		Name: fake
+		Weapon: HeliGunFake
+		LocalOffset: 940,0,48
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+	Armament@casing:
+		Name: casing
+		Weapon: HeliGunCasing
+		LocalOffset: 800,0,55
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+
+	# GrantConditionOnAttack@muzzle:
+	# 	Condition: firingmuzzle
+	# WithIdleOverlay@muzzle:
+	# 	Sequence: muzzle
+	# 	Palette: effect80alpha
+	# 	Offset: 940,0,48
+	# 	RequiresCondition: firingmuzzle
+	Armament@aggun:
+		Weapon: HeliAGGun
+		LocalOffset: 400,0,748
+		PauseOnCondition: !ammo
+	Armament@aagun:
+		Name: secondary
+		Weapon: HeliAAGun
+		LocalOffset: 200,0,48
+		PauseOnCondition: !ammo
+	AutoTarget:
+		ScanRadius: 6
+	AttackAircraft:
+		FacingTolerance: 10
+		OpportunityFire: false
+		PersistentTargeting: false
+		AttackType: Hover
+		Armaments: primary, secondary, fake, casing
+	AmmoPool@real:
+		Ammo: 25
+		PipCount: 5
+		AmmoCondition: ammo
+		Armaments: primary,secondary
+	ReloadAmmoPool@real:
+		Delay: 4
+		Count: 1
+	WithIdleOverlay@ROTORAIR:
+		Sequence: rotor
+		RequiresCondition: airborne
+	WithIdleOverlay@ROTORGROUND:
+		Sequence: rotor-low
+		RequiresCondition: !airborne
+	WithFacingSpriteBody@Shadow:
+		Sequence: shadow
+		Name: shadow
+		ForceToGround: true
+	WithMuzzleOverlay:
+	SpawnActorOnDeath:
+		Actor: apache.Husk
+	SelectionDecorations:
+	RenderSprites:
+		Image: apache
+		PlayerPalette: green_vehicle
+	Selectable:
+		Bounds: 68, 56, 0, -7
+
+
+
+apache.Husk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: 阿帕奇武装直升机
+	Aircraft:
+		TurnSpeed: 2
+		Speed: 80
+	RevealsShroud:
+		Range: 10c0
+		Type: GroundPosition
+	-WithVoxelBody:
+	WithIdleOverlay@ROTORAIR:
+		Sequence: rotor
+	WithFacingSpriteBody@Shadow:
+		Sequence: shadow
+		Name: shadow
+		ForceToGround: true
+	WithFacingSpriteBody:
+	RenderSprites:
+		Image: apache
+		PlayerPalette: green_vehicle
+	Explodes:
+		Weapon: LargeExplosion
+		EmptyWeapon: LargeExplosion
+
+
+
 c130:
 	Inherits: ^CommonAircraft
 	# Buildable:

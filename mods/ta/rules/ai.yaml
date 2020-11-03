@@ -190,7 +190,8 @@ Player:
 			nhowi: 13
 			nstltnk: 15
 			# aircraft
-			orcafighter: 10
+			orcafighter: 8
+			apache: 8
 		UnitLimits:
 			gmmtnk: 7
 			nstltnk: 15

@@ -74,7 +74,6 @@ CycleMissile:
 	BurstDelays: 1
 	ReloadDelay: 50
 	Projectile: Missile
-		CruiseAltitude: 3000
 		ContrailLength: 10
 		Arm: 12
 		Speed: 436
@@ -83,6 +82,7 @@ CycleMissile:
 		HorizontalRateOfTurn: 8
 		RangeLimit: 10c512
 		ContrailColor: D8D8FF
+		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c224
 		Damage: 30
@@ -156,6 +156,7 @@ DaggerOfNod:
 		HorizontalRateOfTurn: 30
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
+		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 435
 		Damage: 100
@@ -294,6 +295,78 @@ ObeliskLaser:
 
 # aircraft
 
+HeliGunFake:
+	ValidTargets: Ground, Water, Air
+	ReloadDelay: 1
+	Range: 5c512
+	Projectile: InstantHit
+		Blockable: false
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+		Spread: 1
+		Versus:
+			None: 0
+			Flak: 0
+			Plate: 0
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 0
+			Rocket: 0
+
+
+HeliGunCasing:
+	Inherits: ^BulletCasing
+	ReloadDelay: 1
+	Range: 5c512
+	ValidTargets: Ground, Water, Air
+
+
+HeliAGGun:
+	Inherits: ^MGBulletEff
+	Inherits@WarheadEff: ^MGPiff
+	ValidTargets: Ground, Water
+	ReloadDelay: 1
+	Report: vulcan_shot.wav
+	Range: 5c512
+	Projectile: Bullet
+		Inaccuracy: 500
+		Speed: 800
+		LaunchAngle: 0
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Spread: 0c356
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 30
+			Medium: 10
+			Heavy: 10
+			Wood: 20
+			Steel: 20
+			Concrete: 10
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@Eff_HitMetel: CreateEffect
+		Explosions: piff
+		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
+		ValidTargets: Metel
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water
+
+
+HeliAAGun:
+	Inherits: HeliAGGun
+	ValidTargets: Air
+	Projectile: Bullet
+		Inaccuracy: 300
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		ValidTargets: Air
 
 AC130VulcanFake:
 	ReloadDelay: 20

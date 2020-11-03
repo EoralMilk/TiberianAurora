@@ -38,62 +38,35 @@ ShellCasingDebris:
 		ValidTargets: Water
 		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
 
-
-^ShellCasing:
-	Inherits: ^BulletCasing
-	Projectile: Missile
-		Blockable: false
-		VerticalRateOfTurn: 55
-		HorizontalRateOfTurn: 55
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		Speed: 275
-		Inaccuracy: 556
-		LaunchAngle: 91, 140
-		Image: shellcasing
-		Palette: ts-anim
-		RangeLimit: 1c0
-		TerrainHeightAware: false
-		AllowSnapping: false
-	Warhead@: CreateEffect
-		ExplosionPalette: ts-anim
-		Explosions: shellcasingscorch, shellcasingscorch2, shellcasingscorch3, shellcasingscorch4, shellcasingscorch5, shellcasingscorch6, shellcasingscorch7
-	Warhead@3EffWater: CreateEffect
-		Explosions: tiny_watersplash
-		ValidTargets: Water
-		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-
 ^BulletCasing:
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
 	Projectile: Missile
-		Blockable: false
-		Speed: 300
-		Inaccuracy: 656
-		LaunchAngle: 91, 140
-		Image: casing
-		Palette: ts-anim
-		Sequences: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-		Shadow: true
-		VerticalRateOfTurn: 55
-		HorizontalRateOfTurn: 55
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		RangeLimit: 1c0
+		# Blockable: true
+		# Width: 10000
+		Speed: 1
+		Inaccuracy: 0
+		VerticalRateOfTurn: 15
+		HorizontalRateOfTurn: 15
+		RangeLimit: 0c1
 		TerrainHeightAware: false
 		AllowSnapping: false
-	Warhead@: CreateEffect
-		Explosions: casingscorch, casingscorch2, casingscorch3, casingscorch4, casingscorch5, casingscorch6, casingscorch7
-		ExplosionPalette: ts-anim
-		ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-		InvalidTargets: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: water_piff
-		ValidTargets: Water
-		InvalidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
-	# Warhead@Eff_sound: CreateEffect
-	# 	Explosions: empty
-	# 	ImpactSounds: Shells_falls.wav
-	# 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Air, AirHit
+		CruiseAltitude: 0
+	Warhead@SpawnCasing: FireCluster
+		Weapon: CasingDebris
+		RandomClusterCount: 0
+		Dimensions: 1,1
+		Footprint: X
+		ValidTargets: Ground, Water, Air
+
+^ShellCasing:
+	Inherits: ^BulletCasing
+	Warhead@SpawnCasing: FireCluster
+		Weapon: ShellCasingDebris
+
+
+
+
+
 
 # piff
 ^MGPiff:

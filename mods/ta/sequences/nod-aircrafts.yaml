@@ -1,4 +1,30 @@
 
+
+apache:
+	Inherits@Muzzle: ^WithFlakMuzzle
+	Defaults: 
+		Offset: 0,0,0
+		UseTilesetCode: false
+	idle:
+		Facings: -32
+	shadow: apache-shadow
+		Facings: -32
+		ZOffset: -15
+	rotor: apache-rotor
+		Length: 10
+		Facings: -32
+		Tick: 20
+		ZOffset: 5
+	rotor-low: apache-rotor-low
+		Length: 10
+		Facings: -32
+		Tick: 30
+		ZOffset: 5
+	icon: apache_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
 c130:
 	Defaults: 
 		Offset: 0,0,15
