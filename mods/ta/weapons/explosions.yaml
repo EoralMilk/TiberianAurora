@@ -236,8 +236,9 @@ FlameWave:
 	Inherits: ^FlameWeapon
 	ReloadDelay: 1
 	Range: 7c512
-	Projectile: InstantHit
+	Projectile: Bullet
 		Inaccuracy: 1000
+		Speed: 160
 		-Image:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
@@ -254,7 +255,8 @@ FlameWave:
 
 FlameCluster:
 	Inherits: ^FlameWeapon
-	Projectile: InstantHit
+	Projectile: Bullet
+		Speed: 140
 		Inaccuracy: 1200
 		-Image:
 

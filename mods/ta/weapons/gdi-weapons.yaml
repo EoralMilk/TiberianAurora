@@ -436,7 +436,7 @@ OrcaAGMissiles:
 			Heavy: 80
 			Wood: 60
 			Steel: 80
-			Concrete: 40
+			Concrete: 60
 			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
