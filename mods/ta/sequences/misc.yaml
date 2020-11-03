@@ -36,6 +36,26 @@ grenade:
 		Facings: -32
 		Tick: 60
 
+
+largefire:
+	idle: fire01
+		BlendMode: Additive
+		Tick: 150
+		Length: *
+
+mediumfire:
+	idle: fire02
+		BlendMode: Additive
+		Tick: 150
+		Length: *
+
+smallfire:
+	idle: fire03
+		BlendMode: Additive
+		Tick: 150
+		Length: *
+
+
 explosion:
 	Defaults:
 		Length: *

@@ -85,4 +85,5 @@
 		Offset: 0, 0, 16
 	fire: fire01
 		Length: *
+		BlendMode: Additive
 		Offset: 0, -22, 50

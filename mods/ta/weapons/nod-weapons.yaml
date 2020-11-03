@@ -135,7 +135,7 @@ Devil'sTongue:
 	Projectile: Bullet
 		Inaccuracy: 800
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 8
 		Spread: 0c512
 
 

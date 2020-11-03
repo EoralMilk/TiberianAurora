@@ -182,18 +182,6 @@ nukesmoke:
 		Length: *
 		BlendMode: Additive
 
-largefire:
-	idle: fire01
-		Length: *
-
-mediumfire:
-	idle: fire02
-		Length: *
-
-smallfire:
-	idle: fire03
-		Length: *
-
 moveflsh:
 	idle: ring
 		Length: *

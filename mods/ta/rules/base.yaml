@@ -478,7 +478,7 @@
 	WithIdleOverlay@OnFire:
 		Sequence: fire
 		RequiresCondition: KeepBurning
-		Palette: effect
+		Palette: effect80alpha
 
 ^TreeBurnt:
 	Inherits: ^Tree

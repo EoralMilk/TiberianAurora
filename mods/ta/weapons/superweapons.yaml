@@ -338,6 +338,7 @@ IonCannonStorm:
 		Intensity: 1
 		Multiplier: 3,3
 
+
 BlastFlame:
 	Inherits: ^FlameWeapon
 	ReloadDelay: 1
@@ -356,6 +357,7 @@ SuperBlastWave:
 	Warhead@1Dam: SpreadDamage
 		Damage: 150
 		Spread: 0c640
+	-Warhead@EffSmu:
 
 StroneBlastWave:
 	Inherits: ^BlastWave
@@ -363,6 +365,7 @@ StroneBlastWave:
 	Warhead@1Dam: SpreadDamage
 		Damage: 100
 		Spread: 0c512
+	-Warhead@EffSmu:
 
 OrdinaryBlastWave:
 	Inherits: ^BlastWave
@@ -370,6 +373,7 @@ OrdinaryBlastWave:
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Spread: 0c384
+	-Warhead@EffSmu:
 
 WeakBlastWave:
 	Inherits: ^BlastWave
@@ -377,6 +381,7 @@ WeakBlastWave:
 	Warhead@1Dam: SpreadDamage
 		Damage: 30
 		Spread: 0c256
+	-Warhead@EffSmu:
 
 MicroBlastWave:
 	Inherits: ^BlastWave
@@ -385,9 +390,11 @@ MicroBlastWave:
 		Damage: 10
 		Spread: 0c128
 
+
 SecondaryShockWave:
 	Inherits: ^BlastWave
 	Inherits: ^HE_WarheadEff_Large
 	Warhead@1Dam: SpreadDamage
 		Damage: 100
 		Spread: 0c326
+	-Warhead@EffSmu:

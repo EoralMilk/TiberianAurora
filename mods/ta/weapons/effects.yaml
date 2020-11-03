@@ -167,7 +167,9 @@ ShellCasingDebris:
 		InvalidTargets: Soil, Stone, Metel, Concrete, Meat, Ground
 	Warhead@Flash: CreateEffect
 		InvalidTargets: Water
-
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: SmallCrater
+		InvalidTargets: Vehicle, Structure, Wall
 
 
 
@@ -193,7 +195,7 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: tiny_watersplash
 		ImpactSounds: gexpwasa.wav
-
+	-Warhead@EffSmu:
 
 
 ^AP_WarheadEff_Small:
@@ -217,8 +219,8 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: smallcraters
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: SmallCrater
 
 ^AP_WarheadEff_Medium:
 	Inherits: ^Flash_Medium
@@ -241,8 +243,8 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: mediumcraters
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: MediumCrater
 
 ^AP_WarheadEff_Large:
 	Inherits: ^Flash_Large
@@ -265,8 +267,8 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: large_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: mediumcraters
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: LargeCrater
 
 ^AP_WarheadEff_Huge:
 	Inherits: ^Flash_Large
@@ -289,8 +291,9 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: huge_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: largecraters
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: LargeCrater
+		Size: 2
 
 # HE
 ^HE_WarheadEff_Small:
@@ -314,8 +317,8 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: smallcraters, smallscorches
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: SmallCrater
 
 ^HE_WarheadEff_Medium:
 	Inherits: ^Flash_Medium
@@ -338,8 +341,8 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: mediumcraters, mediumscorches
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: MediumCrater
 
 ^HE_WarheadEff_Large:
 	Inherits: ^Flash_Large
@@ -362,8 +365,8 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: large_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: largecraters, mediumscorches
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: LargeCrater
 
 ^HE_WarheadEff_Huge:
 	Inherits: ^Flash_Large
@@ -386,33 +389,33 @@ ShellCasingDebris:
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: huge_watersplash
 		ImpactSounds: gexpwasa.wav
-	Warhead@3Smu: LeaveSmudge
-		SmudgeType: largecraters, largescorches
-
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: LargeCrater
+		Size: 2
 
 ^Fire_01:
-	Inherits: ^Light_Small-Bright
+	# Inherits: ^Light_Small-Bright
 	Warhead@FireEff: CreateEffect
 		Explosions: fire01
-		ExplosionPalette: effect60alpha
+		ExplosionPalette: effect80alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground
 
 ^Fire_02:
-	Inherits: ^Light_Small-Brighter
+	# Inherits: ^Light_Small-Brighter
 	Warhead@FireEff: CreateEffect
 		Explosions: fire02
-		ExplosionPalette: effect60alpha
+		ExplosionPalette: effect80alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground
 
 ^Fire_03:
-	Inherits: ^Light_Small-Bright
+	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
 		Explosions: fire03
-		ExplosionPalette: effect60alpha
+		ExplosionPalette: effect80alpha
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -438,21 +441,21 @@ ShellCasingDebris:
 	Warhead@Flash: CreateEffect
 		Explosions: light_small-dark
 		ExplosionPalette: gray_alpha
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Infantry, Vehicle, Building
 		ImpactActors: false
 
 ^Light_Small-Bright:
 	Warhead@Flash: CreateEffect
 		Explosions: light_small-bright
 		ExplosionPalette: gray_alpha
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Infantry, Vehicle, Building
 		ImpactActors: false
 
 ^Light_Small-Brighter:
 	Warhead@Flash: CreateEffect
 		Explosions: light_small-brighter
 		ExplosionPalette: gray_alpha
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Infantry, Vehicle, Building
 		ImpactActors: false
 
 
