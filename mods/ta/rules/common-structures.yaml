@@ -444,7 +444,8 @@ helipad:
 		Types: SpyInfiltrate
 	Targetable@materials:
 		TargetTypes: Metel
-
+	RenderSprites:
+		PlayerPalette: green_unit
 
 repairdepot:
 	Inherits: ^BaseBuilding
