@@ -1,0 +1,67 @@
+
+
+^debris:
+	idle:
+		Length: *
+		Tick: 90
+		ZOffset: 3000
+
+dbris1lg:
+	Inherits: ^debris
+
+dbris1sm:
+	Inherits: ^debris
+
+dbris2lg:
+	Inherits: ^debris
+
+dbris2sm:
+	Inherits: ^debris
+
+dbris3lg:
+	Inherits: ^debris
+
+dbris3sm:
+	Inherits: ^debris
+
+dbris4lg:
+	Inherits: ^debris
+
+dbris4sm:
+	Inherits: ^debris
+
+dbris5lg:
+	Inherits: ^debris
+
+dbris5sm:
+	Inherits: ^debris
+
+dbris6lg:
+	Inherits: ^debris
+
+dbris6sm:
+	Inherits: ^debris
+
+dbris7lg:
+	Inherits: ^debris
+
+dbris7sm:
+	Inherits: ^debris
+
+dbris8lg:
+	Inherits: ^debris
+
+dbris8sm:
+	Inherits: ^debris
+
+dbris9lg:
+	Inherits: ^debris
+
+dbris9sm:
+	Inherits: ^debris
+
+dbris10lg:
+	Inherits: ^debris
+
+dbris10sm:
+	Inherits: ^debris

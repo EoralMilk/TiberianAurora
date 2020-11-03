@@ -1,0 +1,144 @@
+^debrisExplode:
+	Warhead@SpawnDebris: FireCluster
+		Weapon: ^debrisProjectile
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+
+
+
+^debrisProjectile:
+	Inherits@WarheadEff: ^HE_WarheadEff_Small
+	ReloadDelay: 60
+	Range: 0c764
+	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
+	Projectile: Bullet
+		Speed: 80, 150
+		Inaccuracy: 1500
+		LaunchAngle: 180, 230
+		Image: dbris1lg
+		Palette: effect
+		Shadow: true
+		TrailImage: smokey2
+		TrailDelay: 1
+		TrailInterval: 0
+		# ContrailLength: 8
+		# ContrailWidth: 45
+		# ContrailColor: FFFFB1
+	Warhead@1Dam: SpreadDamage
+		Damage: 10
+		Spread: 0c580
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 70
+			Light: 75
+			Medium: 30
+			Heavy: 30
+			Wood: 85
+			Steel: 75
+			Concrete: 45
+			Drone: 60
+			Rocket: 100
+
+dbris1lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris1lg
+
+dbris1sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris1sm
+
+dbris2lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris2lg
+
+dbris2sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris2sm
+
+dbris3lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris3lg
+
+dbris3sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris3sm
+
+dbris4lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris4lg
+
+dbris4sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris4sm
+
+dbris5lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris5lg
+
+dbris5sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris5sm
+
+dbris6lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris6lg
+
+dbris6sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris6sm
+
+dbris7lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris7lg
+
+dbris7sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris7sm
+
+dbris8lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris8lg
+
+dbris8sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris8sm
+
+dbris9lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris9lg
+
+dbris9sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris9sm
+
+dbris10lg:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris10lg
+
+dbris10sm:
+	Inherits: ^debrisProjectile
+	Projectile: Bullet
+		Image: dbris10sm
+

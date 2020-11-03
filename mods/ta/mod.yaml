@@ -150,6 +150,7 @@ Sequences:
 	ta|sequences/RA2-sequence/misc.yaml
 	ta|sequences/RA2-sequence/defaults.yaml
 
+	ta|sequences/debris.yaml
 
 
 
@@ -254,6 +255,7 @@ Weapons:
 	ta|weapons/base-weapons.yaml
 	ta|weapons/effects.yaml
 	ta|weapons/explosions.yaml
+	ta|weapons/debris.yaml
 
 	ta|weapons/common-weapons.yaml
 	ta|weapons/gdi-weapons.yaml

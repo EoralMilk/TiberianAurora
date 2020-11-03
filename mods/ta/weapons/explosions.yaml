@@ -39,7 +39,12 @@ SmallExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
-
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5sm
+		RandomClusterCount: 2
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
 
 MediumExplosion:
 	Inherits: ^DamagingExplosion
@@ -63,6 +68,18 @@ MediumExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5lg
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris5sm
+		RandomClusterCount: 2
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
 
 LargeExplosion:
 	Inherits: ^DamagingExplosion
@@ -87,6 +104,18 @@ LargeExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5lg
+		RandomClusterCount: 2
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris5sm
+		RandomClusterCount: 3
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
 
 
 HugeExplosion:
@@ -118,6 +147,18 @@ HugeExplosion:
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5lg
+		RandomClusterCount: 2
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris5sm
+		RandomClusterCount: 3
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
 
 
 
@@ -137,6 +178,18 @@ TiberiumExplosion:
 	Warhead@4Res: CreateResource
 		AddsResourceType: Ore
 		Size: 3,3
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5lg
+		RandomClusterCount: 2
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris5sm
+		RandomClusterCount: 3
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
 
 
 FlameExplosion:
@@ -168,6 +221,18 @@ FlameExplosion:
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5lg
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris5sm
+		RandomClusterCount: 2
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
 
 
 BuildingExplode:
@@ -199,6 +264,42 @@ BuildingExplode:
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris1lg
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris1sm
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris3: FireCluster
+		Weapon: dbris2lg
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris4: FireCluster
+		Weapon: dbris2sm
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris5: FireCluster
+		Weapon: dbris3lg
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris6: FireCluster
+		Weapon: dbris3sm
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		ValidTargets: Ground, Water, Air
 
 
 FlameSea:

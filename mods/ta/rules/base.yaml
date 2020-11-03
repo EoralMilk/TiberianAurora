@@ -184,7 +184,9 @@
 		TargetTypes: Metel
 	Voiced:
 		VoiceSet: AircraftVoice
-
+	Explodes:
+		Weapon: SmallExplosion
+		EmptyWeapon: SmallExplosion
 
 ^CommonAircraft:
 	Inherits@1: ^ExistsInWorld
@@ -246,6 +248,10 @@
 		TargetTypes: Metel
 	Voiced:
 		VoiceSet: AircraftVoice
+	Explodes:
+		Weapon: SmallExplosion
+		EmptyWeapon: SmallExplosion
+
 
 ^Helicopter:
 	Inherits: ^CommonAircraft
@@ -301,6 +307,10 @@
 	GrantConditionOnMovement:
 		Condition: moving
 	-EjectOnDeath:
+	Explodes:
+		Weapon: SmallExplosion
+		EmptyWeapon: SmallExplosion
+
 
 ^CommonInfantry:
 	Inherits@1: ^ExistsInWorld
