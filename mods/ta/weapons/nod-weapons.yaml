@@ -34,7 +34,7 @@ BuggyMG_damage:
 
 BuggyMG_eff_bullet:
 	Inherits: ^MGBulletEff
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 25
 	Burst: 3
 	BurstDelays: 4
@@ -45,7 +45,7 @@ BuggyMG_eff_bullet:
 
 BuggyMG_eff_fire:
 	Inherits: ^MGDamageMaker
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 25
 	Burst: 3
 	BurstDelays: 4
@@ -67,7 +67,7 @@ Buggy-Casing:
 
 CycleMissile:
 	Inherits: ^CommonMissile
-	Inherits: ^AP_WarheadEff_Small
+	Inherits@WarheadEff: ^AP_WarheadEff_Small
 	ValidTargets: Ground, Water, Air
 	Range: 6c0
 	Burst: 2
@@ -104,7 +104,7 @@ CycleMissile:
 
 LightTankCannonAP:
 	Inherits: ^CommonCannon
-	Inherits: ^AP_WarheadEff_Small
+	Inherits@WarheadEff: ^AP_WarheadEff_Small
 	ReloadDelay: 40
 	Range: 5c512
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
@@ -141,7 +141,7 @@ Devil'sTongue:
 
 DaggerOfNod:
 	Inherits: ^CommonMissile
-	Inherits: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water, Air
 	Range: 6c512
 	Burst: 2
@@ -176,7 +176,7 @@ DaggerOfNod:
 
 HowitzerCannonHE:
 	Inherits: ^CommonCannon
-	Inherits: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	ReloadDelay: 120
 	Range: 15c0
 	MinRange: 4c0
@@ -215,7 +215,7 @@ Howitzer-Casing:
 
 TurretCannon:
 	Inherits: ^CommonCannon
-	Inherits: ^AP_WarheadEff_Medium
+	Inherits@WarheadEff: ^AP_WarheadEff_Medium
 	ReloadDelay: 60
 	Range: 6c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
@@ -243,7 +243,7 @@ Turret-Casing:
 	ValidTargets: Ground, Water
 
 RedEye:
-	Inherits: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	Inherits: ^CommonAAMissile
 	Range: 12c0
 	Projectile: Missile
@@ -311,7 +311,7 @@ AC130VulcanFake:
 
 AC130Vulcan:
 	Inherits: ^MGBulletEff
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 20
 	Burst: 19
 	BurstDelays: 1
@@ -355,7 +355,7 @@ AC130CannonFake:
 
 AC130Cannon:
 	Inherits: ^CommonCannon
-	Inherits: ^AP_WarheadEff_Medium
+	Inherits@WarheadEff: ^AP_WarheadEff_Medium
 	ReloadDelay: 25
 	Range: 11c0
 	Projectile: Bullet

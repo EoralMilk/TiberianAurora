@@ -1,4 +1,127 @@
 
+
+orcafighter:
+	Inherits: ^Helicopter
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: 奥卡战机
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: hq, ~techlevel.medium, aircraft.gdi
+		Queue: Aircraft
+		Description: GDI反装甲武装直升机\n\n·强势对抗：载具、建筑\n·弱势对抗：步兵
+	Aircraft:
+		TurnSpeed: 7
+		Speed: 196
+		AltitudeVelocity: 0c200
+		CruiseAltitude: 3c512
+	Health:
+		HP: 130
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 10c0
+		Type: GroundPosition
+	Armament@PRIMARY:
+		Weapon: OrcaAGMissiles
+		LocalOffset: 642,-284,120, 642,284,120
+		PauseOnCondition: !ammo
+		MuzzleSequence: muzzle
+	Armament@SECONDARY:
+		Weapon: OrcaAAMissiles
+		LocalOffset: 642,-284,120, 642,284,120
+		PauseOnCondition: !ammo
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
+	AutoTarget:
+		ScanRadius: 7
+	AttackAircraft:
+		FacingTolerance: 20
+		OpportunityFire: false
+		PersistentTargeting: false
+		AttackType: Hover
+	AmmoPool:
+		Ammo: 16
+		PipCount: 2
+		AmmoCondition: ammo
+	SpawnActorOnDeath:
+		Actor: orcafighter.Husk
+	WithFacingSpriteBody:
+		Sequence: hover
+		Name: body
+	WithMoveAnimation:
+		Body: body
+		MoveSequence: move
+	SelectionDecorations:
+	WithFacingSpriteBody@hover-Shadow:
+		Sequence: hover-shadow
+		Name: hover-shadow
+		ForceToGround: true
+		RequiresCondition: !moving
+	WithFacingSpriteBody@move-Shadow:
+		Sequence: move-shadow
+		Name: move-shadow
+		ForceToGround: true
+		RequiresCondition: moving
+	RenderSprites:
+		Image: orcafighter
+		PlayerPalette: orca
+	ReloadAmmoPool:
+		Delay: 120
+		Count: 8
+	Selectable:
+
+
+
+
+orcafighter.Husk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: 奥卡战机
+	Aircraft:
+		TurnSpeed: 2
+		Speed: 90
+	RevealsShroud:
+		Range: 10c0
+		Type: GroundPosition
+	-WithVoxelBody:
+	WithFacingSpriteBody:
+		Sequence: hover
+		Name: body
+	WithMoveAnimation:
+		Body: body
+		MoveSequence: move
+	RenderSprites:
+		Image: orcafighter
+		PlayerPalette: orca
+	WithFacingSpriteBody@hover-Shadow:
+		Sequence: hover-shadow
+		Name: hover-shadow
+		ForceToGround: true
+		RequiresCondition: !moving
+	WithFacingSpriteBody@move-Shadow:
+		Sequence: move-shadow
+		Name: move-shadow
+		ForceToGround: true
+		RequiresCondition: moving
+	Explodes:
+		Weapon: LargeExplosion
+		EmptyWeapon: LargeExplosion
+
+
+
+
+
+
+
+
+
+
 a10:
 	Inherits: ^Plane
 	Valued:

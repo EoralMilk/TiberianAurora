@@ -1,6 +1,6 @@
 
 IonCannon:
-	Inherits: ^HE_WarheadEff_Huge
+	Inherits@WarheadEff: ^HE_WarheadEff_Huge
 	# Projectile: InstantHit
 	# 	Blockable: false
 	Projectile: Missile
@@ -111,7 +111,7 @@ NukePayload:
 
 atomic:
 	Inherits: NukePayload
-	Inherits: ^Flash_Huge
+	Inherits@WarheadLight: ^Flash_Huge
 	Warhead@0Eff_impact: CreateEffect
 		Explosions: nuke_ball
 		ImpactSounds: snukintr.wav
@@ -353,7 +353,7 @@ BlastFlame:
 
 SuperBlastWave:
 	Inherits: ^BlastWave
-	Inherits: ^HE_WarheadEff_Huge
+	Inherits@WarheadEff: ^HE_WarheadEff_Huge
 	Warhead@1Dam: SpreadDamage
 		Damage: 150
 		Spread: 0c640
@@ -361,7 +361,7 @@ SuperBlastWave:
 
 StroneBlastWave:
 	Inherits: ^BlastWave
-	Inherits: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Warhead@1Dam: SpreadDamage
 		Damage: 100
 		Spread: 0c512
@@ -369,7 +369,7 @@ StroneBlastWave:
 
 OrdinaryBlastWave:
 	Inherits: ^BlastWave
-	Inherits: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Spread: 0c384
@@ -377,7 +377,7 @@ OrdinaryBlastWave:
 
 WeakBlastWave:
 	Inherits: ^BlastWave
-	Inherits: ^HE_WarheadEff_Small
+	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	Warhead@1Dam: SpreadDamage
 		Damage: 30
 		Spread: 0c256
@@ -385,7 +385,7 @@ WeakBlastWave:
 
 MicroBlastWave:
 	Inherits: ^BlastWave
-	Inherits: ^AP_WarheadEff_Tiny
+	Inherits@WarheadEff: ^AP_WarheadEff_Tiny
 	Warhead@1Dam: SpreadDamage
 		Damage: 10
 		Spread: 0c128
@@ -393,7 +393,7 @@ MicroBlastWave:
 
 SecondaryShockWave:
 	Inherits: ^BlastWave
-	Inherits: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Warhead@1Dam: SpreadDamage
 		Damage: 100
 		Spread: 0c326

@@ -274,7 +274,7 @@
 		VTOL: true
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Rail, Ore, Gems
 		Crushes: crate, infantry
-		InitialFacing: 224
+		InitialFacing: 160
 		CanSlide: True
 	HiddenUnderFog:
 		Type: GroundPosition
@@ -298,7 +298,8 @@
 	-RenderVoxels:
 	WithFacingSpriteBody:
 	RenderSprites:
-
+	GrantConditionOnMovement:
+		Condition: moving
 
 ^CommonInfantry:
 	Inherits@1: ^ExistsInWorld

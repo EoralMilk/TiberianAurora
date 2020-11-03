@@ -30,12 +30,31 @@ barracks:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
-	Exit@1:
+	Exit@right:
 		SpawnOffset: 0,536,0
 		ExitCell: 1, 3
-	Exit@2:
+	Exit@left:
 		SpawnOffset: -900,220,0
 		ExitCell: 0, 3
+	Exit@right2:
+		SpawnOffset: 0,536,0
+		ExitCell: 2, 3
+	Exit@right3:
+		SpawnOffset: 0,536,0
+		ExitCell: 3, 3
+	Exit@right4:
+		SpawnOffset: 0,536,0
+		ExitCell: 3, 2
+	# Exit@right5:
+	# 	SpawnOffset: 0,536,0
+	# 	ExitCell: 3, 1
+	Exit@left2:
+		SpawnOffset: -900,220,0
+		ExitCell: -1, 3
+	Exit@left3:
+		SpawnOffset: -900,220,0
+		ExitCell: -1, 2
+
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:

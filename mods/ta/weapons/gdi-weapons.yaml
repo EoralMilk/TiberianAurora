@@ -3,7 +3,7 @@
 
 HEGrenade:
 	Inherits: ^CommonCannon
-	Inherits: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ReloadDelay: 50
 	Range: 4c0
 	Report: grenade_throw.wav
@@ -94,7 +94,7 @@ HumveeMG_damage:
 
 HumveeMG_eff_bullet:
 	Inherits: ^MGBulletEff
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
@@ -105,7 +105,7 @@ HumveeMG_eff_bullet:
 
 HumveeMG_eff_fire:
 	Inherits: ^MGDamageMaker
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
@@ -128,7 +128,7 @@ HumvMG-Casing:
 
 APCCannon:
 	Inherits: ^CommonCannon
-	Inherits: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ReloadDelay: 40
 	Range: 5c0
 	Report: gl_shot.wav
@@ -160,7 +160,7 @@ APC-Casing:
 
 MediumTankCannonAP:
 	Inherits: ^CommonCannon
-	Inherits: ^AP_WarheadEff_Medium
+	Inherits@WarheadEff: ^AP_WarheadEff_Medium
 	ReloadDelay: 60
 	Range: 5c512
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
@@ -190,7 +190,7 @@ MTank-Casing:
 
 MammothTankCannon:
 	Inherits: ^CommonCannon
-	Inherits: ^AP_WarheadEff_Large
+	Inherits@WarheadEff: ^AP_WarheadEff_Large
 	ReloadDelay: 90
 	Range: 5c512
 	Burst: 2
@@ -225,7 +225,7 @@ Mammoth-Casing:
 
 MammothTuskMissile:
 	Inherits: ^CommonMissile
-	Inherits: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water, Air
 	Range: 5c512
 	Burst: 2
@@ -262,7 +262,7 @@ MammothTuskMissile:
 
 ManyRockets:
 	Inherits: ^CommonCannon
-	Inherits: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	ReloadDelay: 160
 	Burst: 6
 	BurstDelays: 3
@@ -320,7 +320,7 @@ HMG-damage:
 
 HMG-eff_bullet:
 	Inherits: ^MGBulletEff
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
@@ -333,7 +333,7 @@ HMG-eff_bullet:
 
 HMG-eff_fire:
 	Inherits: ^MGDamageMaker
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
@@ -361,7 +361,7 @@ HMG-Casing:
 
 TowerMissile:
 	Inherits: ^CommonMissile
-	Inherits: ^HE_WarheadEff_Small
+	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ValidTargets: Ground, Water, Air
 	Range: 8c0
 	ReloadDelay: 10
@@ -406,6 +406,52 @@ TowerMissile:
 # aircraft
 
 
+OrcaAGMissiles:
+	Inherits: ^CommonMissile
+	Inherits@WarheadEff: ^HE_WarheadEff_Small
+	ValidTargets: Ground, Water
+	Range: 5c512
+	Burst: 2
+	BurstDelays: 0
+	ReloadDelay: 5
+	Projectile: Missile
+		ContrailLength: 8
+		Arm: 4
+		Speed: 280
+		Acceleration: 8
+		Inaccuracy: 400
+		HorizontalRateOfTurn: 22
+		CruiseAltitude: 4c768
+		RangeLimit: 10c512
+		ContrailColor: FFFFB1
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c300
+		Damage: 10
+		Versus:
+			None: 30
+			Flak: 20
+			Plate: 20
+			Light: 100
+			Medium: 80
+			Heavy: 80
+			Wood: 60
+			Steel: 80
+			Concrete: 40
+			Drone: 60
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air
+
+
+OrcaAAMissiles:
+	Inherits: OrcaAGMissiles
+	ValidTargets: Air
+	MinRange: 1c256
+	Projectile: Missile
+		Arm: 0
+		Speed: 350
+
+
 A10VulcanFake:
 	ReloadDelay: 100
 	Burst: 30
@@ -435,7 +481,7 @@ A10VulcanFake:
 
 A10Vulcan:
 	Inherits: ^MGBulletEff
-	Inherits: ^MGPiff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 100
 	Burst: 30
 	BurstDelays: 1
@@ -522,7 +568,7 @@ A10Napalm:
 
 GunBoatMissile:
 	Inherits: ^CommonMissile
-	Inherits: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	ValidTargets: Ground, Water, Air
 	Range: 13c512
 	Burst: 4

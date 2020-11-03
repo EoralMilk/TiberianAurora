@@ -19,8 +19,8 @@
 
 SmallExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Small
-	Inherits: ^Fire_03
+	Inherits@WarheadEff: ^HE_WarheadEff_Small
+	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c256
 		Damage: 30
@@ -43,8 +43,8 @@ SmallExplosion:
 
 MediumExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Medium
-	Inherits: ^Fire_03
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
+	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
 		Damage: 70
@@ -66,8 +66,8 @@ MediumExplosion:
 
 LargeExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Large
-	Inherits: ^Fire_03
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
 		Damage: 150
@@ -91,8 +91,8 @@ LargeExplosion:
 
 HugeExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Huge
-	Inherits: ^Fire_03
+	Inherits@WarheadEff: ^HE_WarheadEff_Huge
+	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c625
 		Damage: 200
@@ -123,8 +123,8 @@ HugeExplosion:
 
 TiberiumExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Large
-	Inherits: ^Fire_03
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c652
 		Damage: 40
@@ -141,8 +141,8 @@ TiberiumExplosion:
 
 FlameExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Large
-	Inherits: ^Fire_03
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
 		Damage: 110
@@ -172,8 +172,8 @@ FlameExplosion:
 
 BuildingExplode:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Large
-	Inherits: ^Fire_03
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
 		Damage: 10
@@ -203,8 +203,8 @@ BuildingExplode:
 
 FlameSea:
 	Inherits: ^DamagingExplosion
-	Inherits: ^HE_WarheadEff_Small
-	Inherits: ^Fire_01
+	Inherits@WarheadEff: ^HE_WarheadEff_Small
+	Inherits@WarheadFire: ^Fire_01
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
@@ -237,20 +237,26 @@ FlameWave:
 	ReloadDelay: 1
 	Range: 7c512
 	Projectile: InstantHit
-		Inaccuracy: 800
+		Inaccuracy: 1000
 		-Image:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 10
 		Spread: 0c512
 	Warhead@FireWave: FireCluster
-		Weapon: Flamethrower
+		Weapon: FlameCluster
 		RandomClusterCount: 6
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+
+FlameCluster:
+	Inherits: ^FlameWeapon
+	Projectile: InstantHit
+		Inaccuracy: 1200
+		-Image:
 
 
 FlameInfection:

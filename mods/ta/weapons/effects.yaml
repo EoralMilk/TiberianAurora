@@ -175,7 +175,7 @@ ShellCasingDebris:
 
 # AP
 ^AP_WarheadEff_Tiny:
-	Inherits: ^Flash_Small-Bright
+	Inherits@@WarheadLight: ^Flash_Small-Bright
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: tiny_clsn
@@ -199,7 +199,7 @@ ShellCasingDebris:
 
 
 ^AP_WarheadEff_Small:
-	Inherits: ^Flash_Small-Bright
+	Inherits@WarheadLight: ^Flash_Small-Bright
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: small_tumu
@@ -223,7 +223,7 @@ ShellCasingDebris:
 		SmudgeType: SmallCrater
 
 ^AP_WarheadEff_Medium:
-	Inherits: ^Flash_Medium
+	Inherits@WarheadLight: ^Flash_Medium
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: medium_tumu
@@ -247,7 +247,7 @@ ShellCasingDebris:
 		SmudgeType: MediumCrater
 
 ^AP_WarheadEff_Large:
-	Inherits: ^Flash_Large
+	Inherits@WarheadLight: ^Flash_Large
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: large_tumu
@@ -271,7 +271,7 @@ ShellCasingDebris:
 		SmudgeType: LargeCrater
 
 ^AP_WarheadEff_Huge:
-	Inherits: ^Flash_Large
+	Inherits@WarheadLight: ^Flash_Large
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: huge_tumu
@@ -297,7 +297,7 @@ ShellCasingDebris:
 
 # HE
 ^HE_WarheadEff_Small:
-	Inherits: ^Flash_Small-Brighter
+	Inherits@WarheadLight: ^Flash_Small-Brighter
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: small_bang
@@ -321,7 +321,7 @@ ShellCasingDebris:
 		SmudgeType: SmallCrater
 
 ^HE_WarheadEff_Medium:
-	Inherits: ^Flash_Medium
+	Inherits@WarheadLight: ^Flash_Medium
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: medium_bang
@@ -345,7 +345,7 @@ ShellCasingDebris:
 		SmudgeType: MediumCrater
 
 ^HE_WarheadEff_Large:
-	Inherits: ^Flash_Large
+	Inherits@WarheadLight: ^Flash_Large
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: large_bang
@@ -369,7 +369,7 @@ ShellCasingDebris:
 		SmudgeType: LargeCrater
 
 ^HE_WarheadEff_Huge:
-	Inherits: ^Flash_Large
+	Inherits@WarheadLight: ^Flash_Large
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: verylarge_brnl

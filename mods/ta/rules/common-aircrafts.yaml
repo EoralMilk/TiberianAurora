@@ -9,7 +9,7 @@ transport:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 10
-		Prerequisites: helipad
+		Prerequisites: aircraft.any
 		Queue: Aircraft
 		Description: 用于运输步兵\n\n·无武装
 	Aircraft:
@@ -71,8 +71,8 @@ transport.Husk:
 	Tooltip:
 		Name: 支努干运输机
 	Aircraft:
-		TurnSpeed: 5
-		Speed: 140
+		TurnSpeed: 2
+		Speed: 80
 	RevealsShroud:
 		Range: 10c0
 		Type: GroundPosition

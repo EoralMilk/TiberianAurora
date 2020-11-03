@@ -181,14 +181,16 @@ Player:
 			ghumv: 35
 			gapc: 25
 			gtank: 40
-			gmlrs: 10
+			gmlrs: 13
 			gmmtnk: 10
 			nbggy: 35
 			ncycle: 35
 			ntank: 30
 			nftnk: 30
-			nhowi: 10
+			nhowi: 13
 			nstltnk: 15
+			# aircraft
+			orcafighter: 10
 		UnitLimits:
 			gmmtnk: 7
 			nstltnk: 15
