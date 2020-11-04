@@ -67,7 +67,7 @@ mngunner:
 		FactionImages:
 			gdi: mnguner-g
 			nod: mnguner
-		PlayerPalette: n_mngr
+		PlayerPalette: green_infantry
 
 bzkier:
 	Inherits@1: ^CommonInfantry
@@ -121,7 +121,7 @@ bzkier:
 		FactionImages:
 			gdi: bzkier-g
 			nod: bzkier-n
-		PlayerPalette: n_mngr
+		PlayerPalette: green_infantry
 
 eng:
 	Inherits: ^CommonInfantry
@@ -168,6 +168,10 @@ eng:
 	RenderSprites:
 		Image: eng
 		PlayerPalette: engineer
+	WithDeathAnimation@normal:
+		DeathSequencePalette: engineer
+	WithDeathAnimation@effect:
+		DeathSequencePalette: engineer
 
 
 

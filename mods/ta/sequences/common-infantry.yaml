@@ -17,16 +17,28 @@ mnguner:
 		Facings: 8
 		Tick: 40
 		ShadowStart: 313
-	idle1:
-		Start: 176
+	idle1: mngr_idle-n
+		Start: 0
+		Facings: 8
 		Length: 19
-		ShadowStart: 385
+		ShadowStart: 264
 		Tick: 140
-	idle2:
-		Start: 195
+	idle2: mngr_idle-n
+		Start: 152
+		Facings: 8
 		Length: 14
-		ShadowStart: 404
+		ShadowStart: 416
 		Tick: 140
+	# idle1:
+	# 	Start: 176
+	# 	Length: 19
+	# 	ShadowStart: 385
+	# 	Tick: 140
+	# idle2:
+	# 	Start: 195
+	# 	Length: 14
+	# 	ShadowStart: 404
+	# 	Tick: 140
 	# die1: mngr_die1
 	# 	Start: 8
 	# 	Length: 6
@@ -96,6 +108,8 @@ mnguner:
 mnguner-g:
 	Inherits: mnguner
 	Defaults: mngr_up-g
+	idle1: mngr_idle-g
+	idle2: mngr_idle-g
 	die1: mngr_die1-g
 	die2: mngr_die2-g
 	die3: mngr_die3-g
@@ -111,6 +125,8 @@ bzkier-n:
 	Inherits: mnguner
 	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults: bzkr_up-n
+	idle1: bzkr_idle-n
+	idle2: bzkr_idle-n
 	die1: bzkr_die1-n
 		Start: 0
 		Length: 6
@@ -138,6 +154,8 @@ bzkier-n:
 bzkier-g:
 	Inherits: bzkier-n
 	Defaults: bzkr_up-g
+	idle1: bzkr_idle-g
+	idle2: bzkr_idle-g
 	die1: bzkr_die1-g
 	die2: bzkr_die2-g
 	die3: bzkr_die3-g
@@ -152,6 +170,8 @@ bzkier-g:
 eng:
 	Inherits: bzkier-n
 	Defaults: eng_up
+	idle1: eng_idle
+	idle2: eng_idle
 	die1: eng_die1
 	die2: eng_die2
 	die3: eng_die3
@@ -170,6 +190,8 @@ eng:
 grenader:
 	Inherits: bzkier-n
 	Defaults: grdr_up
+	idle1: grdr_idle
+	idle2: grdr_idle
 	die1: grdr_die1
 	die2: grdr_die2
 	die3: grdr_die3

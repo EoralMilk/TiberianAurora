@@ -351,13 +351,13 @@
 		DamageTypes: TiberiumDeath
 		RequiresCondition: !hazmatsuits
 	WithDeathAnimation@normal:
-		DeathSequencePalette: n_mngr
+		DeathSequencePalette: green_infantry
 		DeathTypes:
 			ExplosionDeath: 2
 			BulletDeath: 1
 			TiberiumDeath: 3
 	WithDeathAnimation@effect:
-		DeathSequencePalette: n_mngr
+		DeathSequencePalette: green_infantry
 		DeathTypes:
 			RadiationDeath: 3
 			PsychicDeath: 2

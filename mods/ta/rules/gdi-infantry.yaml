@@ -43,7 +43,7 @@ grenader:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
 		Image: grenader
-		PlayerPalette: n_mngr
+		PlayerPalette: green_infantry
 	Explodes:
 		Weapon: GrdExplosion
 		EmptyWeapon: GrdExplosion
@@ -95,4 +95,4 @@ sniper:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
 		Image: mnguner
-		PlayerPalette: n_mngr
+		PlayerPalette: green_infantry

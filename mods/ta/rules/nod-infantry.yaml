@@ -43,7 +43,7 @@ flamet:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
 		Image: mnguner
-		PlayerPalette: n_mngr
+		PlayerPalette: green_infantry
 	Explodes:
 		Weapon: FlameExplosion
 		EmptyWeapon: FlameExplosion
@@ -97,7 +97,7 @@ Chemict:
 		ScanRadius: 4
 	RenderSprites:  # TODO: 素材..
 		Image: mnguner
-		PlayerPalette: n_mngr
+		PlayerPalette: green_infantry
 	Explodes:
 		Weapon: FlameExplosion
 		EmptyWeapon: FlameExplosion
