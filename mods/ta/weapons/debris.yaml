@@ -15,7 +15,7 @@
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
 	Projectile: Bullet
 		Speed: 130, 150
-		Inaccuracy: 2500
+		Inaccuracy: 3000
 		LaunchAngle: 180, 230
 		Image: dbris1lg
 		Palette: effect
