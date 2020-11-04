@@ -30,7 +30,7 @@ flamet:
 		Voice: Attack
 	Armament@primary:
 		Weapon: Flamethrower
-		LocalOffset: 233,50,555
+		LocalOffset: 300,50,600
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
@@ -88,7 +88,7 @@ Chemict:
 		Voice: Attack
 	Armament@primary:
 		Weapon: Chemspray
-		LocalOffset: 233,50,555
+		LocalOffset: 300,50,600
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
