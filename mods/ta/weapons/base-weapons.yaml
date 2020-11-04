@@ -51,7 +51,7 @@
 			Concrete: 0
 			Drone: 100
 			Rocket: 100
-		DamageTypes: BulletDeath
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
 ^CommonCannon:
 	Projectile: Bullet
@@ -86,6 +86,22 @@
 		RangeLimit: 20c409
 		TerrainHeightAware: true
 		AllowSnapping: true
+	Warhead@1Dam: SpreadDamage
+		Damage: 30
+		Spread: 0c68
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 30
+			Medium: 10
+			Heavy: 10
+			Wood: 20
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 ^MGBulletEff:
 	ReloadDelay: 20

@@ -34,7 +34,6 @@ HEGrenade:
 			Rocket: 100
 
 
-
 SniperRF:
 	Inherits: ^MGBulletEff
 	ReloadDelay: 80
@@ -90,7 +89,7 @@ HumveeMG_damage:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
 
 HumveeMG_eff_bullet:
 	Inherits: ^MGBulletEff
@@ -317,7 +316,6 @@ HMG-damage:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 HMG-eff_bullet:
 	Inherits: ^MGBulletEff

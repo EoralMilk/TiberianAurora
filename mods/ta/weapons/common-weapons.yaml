@@ -90,3 +90,4 @@ APBazooka:
 			Drone: 60
 			Rocket: 100
 		ValidTargets: Ground, Water, Air
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath

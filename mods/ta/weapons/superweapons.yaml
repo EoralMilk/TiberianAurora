@@ -325,6 +325,7 @@ IonCannonStorm:
 			Drone: 100
 			Rocket: 100
 		Spread: 0c355
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireWave: FireCluster
 		Weapon: BlastFlame
 		RandomClusterCount: 1

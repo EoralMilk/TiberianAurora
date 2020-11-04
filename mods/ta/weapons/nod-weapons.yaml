@@ -30,7 +30,6 @@ BuggyMG_damage:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 BuggyMG_eff_bullet:
 	Inherits: ^MGBulletEff
@@ -281,7 +280,7 @@ ObeliskLaser:
 			Concrete: 50
 			Drone: 200
 			Rocket: 100
-		DamageTypes: ElectroDeath
+		DamageTypes: FlameDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: laserburning
 		ValidTargets: Ground
