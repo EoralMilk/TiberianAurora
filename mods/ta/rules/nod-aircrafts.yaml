@@ -71,11 +71,15 @@ apache:
 	ReloadAmmoPool@real:
 		Delay: 4
 		Count: 1
-	WithIdleOverlay@ROTORAIR:
+	WithFacingSpriteBody@Rotor:
 		Sequence: rotor
+		Name: rotor
+		ForceToGround: false
 		RequiresCondition: airborne
-	WithIdleOverlay@ROTORGROUND:
+	WithFacingSpriteBody@Rotorlow:
 		Sequence: rotor-low
+		Name: rotor-low
+		ForceToGround: false
 		RequiresCondition: !airborne
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow
@@ -104,8 +108,10 @@ apache.Husk:
 		Range: 10c0
 		Type: GroundPosition
 	-WithVoxelBody:
-	WithIdleOverlay@ROTORAIR:
+	WithFacingSpriteBody@Rotor:
 		Sequence: rotor
+		Name: rotor
+		ForceToGround: false
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow
 		Name: shadow

@@ -42,8 +42,8 @@ SmallExplosion:
 	Warhead@SpawnDebris1: FireCluster
 		Weapon: dbris5sm
 		RandomClusterCount: 2
-		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		Dimensions: 7,7
+		Footprint: xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx
 		ValidTargets: Ground, Water, Air
 
 MediumExplosion:
@@ -71,14 +71,14 @@ MediumExplosion:
 	Warhead@SpawnDebris1: FireCluster
 		Weapon: dbris5lg
 		RandomClusterCount: 1
-		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		Dimensions: 7,7
+		Footprint: xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@SpawnDebris2: FireCluster
 		Weapon: dbris5sm
 		RandomClusterCount: 2
-		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		Dimensions: 7,7
+		Footprint: xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx
 		ValidTargets: Ground, Water, Air
 
 LargeExplosion:
@@ -107,8 +107,8 @@ LargeExplosion:
 	Warhead@SpawnDebris1: FireCluster
 		Weapon: dbris5lg
 		RandomClusterCount: 2
-		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		Dimensions: 7,7
+		Footprint: xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@SpawnDebris2: FireCluster
 		Weapon: dbris5sm
@@ -181,8 +181,8 @@ TiberiumExplosion:
 	Warhead@SpawnDebris1: FireCluster
 		Weapon: dbris5lg
 		RandomClusterCount: 2
-		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		Dimensions: 7,7
+		Footprint: xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@SpawnDebris2: FireCluster
 		Weapon: dbris5sm
@@ -224,8 +224,8 @@ FlameExplosion:
 	Warhead@SpawnDebris1: FireCluster
 		Weapon: dbris5lg
 		RandomClusterCount: 1
-		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
+		Dimensions: 7,7
+		Footprint: xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@SpawnDebris2: FireCluster
 		Weapon: dbris5sm

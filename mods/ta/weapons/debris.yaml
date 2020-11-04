@@ -14,15 +14,15 @@
 	Range: 0c764
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
 	Projectile: Bullet
-		Speed: 80, 150
-		Inaccuracy: 1500
+		Speed: 130, 150
+		Inaccuracy: 2500
 		LaunchAngle: 180, 230
 		Image: dbris1lg
 		Palette: effect
 		Shadow: true
 		TrailImage: smokey2
 		TrailDelay: 1
-		TrailInterval: 0
+		TrailInterval: 1
 		# ContrailLength: 8
 		# ContrailWidth: 45
 		# ContrailColor: FFFFB1

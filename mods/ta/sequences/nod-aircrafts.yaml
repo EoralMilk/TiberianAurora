@@ -14,12 +14,10 @@ apache:
 		Length: 10
 		Facings: -32
 		Tick: 20
-		ZOffset: 5
 	rotor-low: apache-rotor-low
 		Length: 10
 		Facings: -32
 		Tick: 30
-		ZOffset: 5
 	icon: apache_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

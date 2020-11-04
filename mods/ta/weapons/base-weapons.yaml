@@ -26,7 +26,8 @@
 		CruiseAltitude: 0
 		# TrailImage: mslsmoke1
 		# TrailPalette: effect80alpha
-		# TrailInterval: 1
+		# TrailInterval: 0
+		# TrailDelay: 0
 
 ^CommonAAMissile:
 	Inherits: ^CommonMissile
