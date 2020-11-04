@@ -961,7 +961,7 @@
 	Inherits: ^Plane
 	-Selectable:
 	Interactable:
-	-DeathSounds:
+	# -DeathSounds:
 	-ActorLostNotification:
 	RejectsOrders:
 	Aircraft:

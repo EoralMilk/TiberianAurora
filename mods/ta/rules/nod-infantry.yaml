@@ -60,11 +60,11 @@ Chemict:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Infantry
-		Prerequisites: ~infantry.nod
+		Prerequisites: ~infantry.nod, ntpl
 		BuildPaletteOrder: 10
 		Description: 装备先进泰伯利亚武器的精英部队\n免疫泰伯利亚毒害\n\n·强势对抗：地面目标
 	Valued:
-		Cost: 400
+		Cost: 300
 	Tooltip:
 		Name: 化学部队
 	Mobile:
@@ -88,7 +88,7 @@ Chemict:
 		Voice: Attack
 	Armament@primary:
 		Weapon: Chemspray
-		LocalOffset: 0,0,512
+		LocalOffset: 233,50,555
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
@@ -99,11 +99,15 @@ Chemict:
 		AddToArmyValue: true
 	AutoTarget:
 		ScanRadius: 4
-	RenderSprites:  # TODO: 素材..
-		Image: mnguner
-		PlayerPalette: green_infantry
+	RenderSprites:
+		Image: cmcler
+		PlayerPalette: chamer
+	WithDeathAnimation@normal:
+		DeathSequencePalette: chamer
+	WithDeathAnimation@effect:
+		DeathSequencePalette: chamer
 	Explodes:
-		Weapon: FlameExplosion
-		EmptyWeapon: FlameExplosion
-		Chance: 66
+		Weapon: ChamExplosion
+		EmptyWeapon: ChamExplosion
+		Chance: 55
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath

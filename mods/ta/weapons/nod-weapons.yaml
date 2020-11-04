@@ -3,7 +3,7 @@ Flamethrower:
 	Inherits: ^FlameWeapon
 
 Chemspray:
-	Inherits: ^FlameWeapon
+	Inherits: ^TiberiumWeapon
 
 # vehicle
 

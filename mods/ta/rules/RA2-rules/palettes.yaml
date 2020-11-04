@@ -313,6 +313,17 @@
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
+	PaletteFromFile@chamer:
+		Name: chamer
+		Filename: chamer.pal
+		ShadowIndex: 1
+	PlayerColorPalette@chamer:
+		BasePalette: chamer
+		BaseName: chamer
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+
 
 	PaletteFromFile@transport:
 		Name: transport
@@ -386,8 +397,14 @@
 		# Premultiply: true
 
 
-
-
+	PaletteFromFile@chamall:
+		Name: chamall
+		Filename: chamall.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@chamall60alpha:
+		Name: chamall60alpha
+		BasePalette: chamall
+		Alpha: 0.6
 
 	PaletteFromPaletteWithAlpha@effect40alpha:
 		Name: effect40alpha

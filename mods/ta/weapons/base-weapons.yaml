@@ -152,7 +152,7 @@
 		Speed: 130
 		Image: flameall
 		Palette: ts_effect80alpha
-		Shadow: true
+		Shadow: false
 		LaunchAngle: 15
 		ZOffset: 4096
 	Warhead@1Dam: SpreadDamage
@@ -181,3 +181,42 @@
 		Duration: 100
 	Warhead@SetFire2: GrantExternalCondition
 		Condition: KeepBurning
+
+
+
+^TiberiumWeapon:
+	ReloadDelay: 55
+	Range: 3c0
+	Burst: 10
+	BurstDelays: 1
+	InvalidTargets: Wall
+	Report: flamethrower.wav
+	Projectile: Bullet
+		# ContrailLength: 5
+		# ContrailWidth: 25
+		# ContrailColor: DF460C
+		Inaccuracy: 800
+		Speed: 140
+		Image: chamall
+		Palette: chamall60alpha
+		Shadow: false
+		LaunchAngle: 15
+		ZOffset: 4096
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c368
+		Damage: 8
+		ValidTargets: Ground, Water, Tree
+		InvalidTargets: Wall
+		Versus:
+			None: 130
+			Flak: 130
+			Plate: 130
+			Light: 100
+			Medium: 80
+			Heavy: 80
+			Wood: 100
+			Steel: 85
+			Concrete: 85
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone100Percent, TiberiumDeath

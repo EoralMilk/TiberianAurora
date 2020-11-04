@@ -282,6 +282,44 @@ FlameTankExplosion:
 		ValidTargets: Ground, Water, Air
 
 
+ChamExplosion:
+	Inherits: ^DamagingExplosion
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c368
+		Damage: 8
+		ValidTargets: Ground, Water, Tree
+		InvalidTargets: Wall
+		Versus:
+			None: 130
+			Flak: 130
+			Plate: 130
+			Light: 100
+			Medium: 80
+			Heavy: 80
+			Wood: 100
+			Steel: 85
+			Concrete: 85
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone100Percent, TiberiumDeath
+	Warhead@ChamCluster: FireCluster
+		Weapon: ChemCluster
+		RandomClusterCount: 2
+		Dimensions: 5,5
+		Footprint: xxXxx xXXXx XXXXX xXXXx xxXxx
+		ValidTargets: Ground, Water, Air
+
+ChemCluster:
+	Inherits: ^TiberiumWeapon
+	Projectile: Bullet
+		Inaccuracy: 1800
+		Speed: 60
+	Warhead@1Dam: SpreadDamage
+		Damage: 15
+
+
+
 BuildingExplode:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large

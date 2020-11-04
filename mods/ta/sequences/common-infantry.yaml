@@ -228,6 +228,25 @@ flamer:
 		Offset: 0, 0, 0
 
 
+cmcler:
+	Inherits: bzkier-n
+	Defaults: cmlr_up
+	idle1: cmlr_idle
+	idle2: cmlr_idle
+	die1: cmlr_die1
+	die2: cmlr_die2
+	die3: cmlr_die3
+	liedown: cmlr_change
+	standup: cmlr_change
+	prone-stand: cmlr_prone
+	prone-run: cmlr_prone
+	prone-shoot: cmlr_prone
+	paradrop: cmlr_para
+	icon: cmcler_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
 adog:
 	Inherits: ^BasicInfantry
 	cheer:

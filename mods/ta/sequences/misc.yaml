@@ -13,6 +13,15 @@ flameall:
 		ZOffset: 1023
 		BlendMode: Additive
 
+chamall:
+	idle:
+		Length: 19
+		Facings: -8
+		Tick: 160
+		ZOffset: 1023
+		# BlendMode: Additive
+
+
 atomic:
 	up: nukeup
 	down: nukedown
