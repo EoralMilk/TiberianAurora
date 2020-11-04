@@ -208,6 +208,25 @@ grenader:
 
 
 
+flamer:
+	Inherits: bzkier-n
+	Defaults: fltr_up
+	idle1: fltr_idle
+	idle2: fltr_idle
+	die1: fltr_die1
+	die2: fltr_die2
+	die3: fltr_die3
+	liedown: fltr_change
+	standup: fltr_change
+	prone-stand: fltr_prone
+	prone-run: fltr_prone
+	prone-shoot: fltr_prone
+	paradrop: fltr_para
+	icon: flamer_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
 
 adog:
 	Inherits: ^BasicInfantry

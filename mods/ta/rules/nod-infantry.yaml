@@ -9,7 +9,7 @@ flamet:
 		BuildPaletteOrder: 10
 		Description: 装备火焰喷射器和坚固护甲的特种部队\n\n·强势对抗：步兵、建筑 \n·弱势对抗：载具
 	Valued:
-		Cost: 300
+		Cost: 200
 	Tooltip:
 		Name: 喷火部队
 	Mobile:
@@ -30,7 +30,7 @@ flamet:
 		Voice: Attack
 	Armament@primary:
 		Weapon: Flamethrower
-		LocalOffset: 0,0,512
+		LocalOffset: 233,50,555
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
@@ -41,9 +41,13 @@ flamet:
 		AddToArmyValue: true
 	AutoTarget:
 		ScanRadius: 4
-	RenderSprites:  # TODO: 素材..
-		Image: mnguner
-		PlayerPalette: green_infantry
+	RenderSprites:
+		Image: flamer
+		PlayerPalette: flamethrower
+	WithDeathAnimation@normal:
+		DeathSequencePalette: flamethrower
+	WithDeathAnimation@effect:
+		DeathSequencePalette: flamethrower
 	Explodes:
 		Weapon: FlameExplosion
 		EmptyWeapon: FlameExplosion

@@ -160,7 +160,7 @@
 	GrantConditionOnDamageState@DAMAGED:
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
-	DeathSounds:
+	# DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
 	BodyOrientation:
@@ -232,7 +232,7 @@
 	GrantConditionOnDamageState@DAMAGED:
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
-	DeathSounds:
+	# DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
 	MapEditorData:
@@ -327,7 +327,7 @@
 			Radius: 128
 	Armor:
 		Type: None
-	RevealsShroud:
+	RevealsShroud: 
 		Range: 4c0
 	Mobile:
 		Speed: 60
