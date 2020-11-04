@@ -100,16 +100,10 @@ orcafighter.Husk:
 	RenderSprites:
 		Image: orcafighter
 		PlayerPalette: orca
-	WithFacingSpriteBody@hover-Shadow:
+	WithFacingSpriteBody@Shadow:
 		Sequence: hover-shadow
 		Name: hover-shadow
 		ForceToGround: true
-		RequiresCondition: !moving
-	WithFacingSpriteBody@move-Shadow:
-		Sequence: move-shadow
-		Name: move-shadow
-		ForceToGround: true
-		RequiresCondition: moving
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: LargeExplosion
