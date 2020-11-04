@@ -176,6 +176,7 @@ Player:
 			mngunner: 70
 			bzkier: 35
 			grenader: 25
+			eng: 5 #工程师不该这样
 			# vehicle
 			harvester: 10
 			ghumv: 35

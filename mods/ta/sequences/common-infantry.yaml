@@ -149,6 +149,24 @@ bzkier-g:
 	paradrop: bzkr_para-g
 
 
+eng:
+	Inherits: bzkier-n
+	Defaults: eng_up
+	die1: eng_die1
+	die2: eng_die2
+	die3: eng_die3
+	liedown: eng_change
+	standup: eng_change
+	prone-stand: eng_prone
+	prone-run: eng_prone
+	prone-shoot: eng_prone
+	paradrop: eng_para
+	icon: eng_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
 grenader:
 	Inherits: bzkier-n
 	Defaults: grdr_up

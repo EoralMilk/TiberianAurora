@@ -62,7 +62,7 @@ mngunner:
 		AddToArmyValue: true
 	AutoTarget:
 		ScanRadius: 4
-	RenderSprites:  # TODO: 素材..
+	RenderSprites:
 		Image: mnguner
 		FactionImages:
 			gdi: mnguner-g
@@ -116,7 +116,7 @@ bzkier:
 		AddToArmyValue: true
 	AutoTarget:
 		ScanRadius: 4
-	RenderSprites:  # TODO: 素材..
+	RenderSprites:
 		Image: bzkier-n
 		FactionImages:
 			gdi: bzkier-g
@@ -165,9 +165,9 @@ eng:
 	WithInfantryBody:
 		DefaultAttackSequence: stand
 	CaptureManager:
-	RenderSprites:  # TODO: 素材..
-		Image: mnguner
-		PlayerPalette: n_mngr
+	RenderSprites:
+		Image: eng
+		PlayerPalette: engineer
 
 
 
