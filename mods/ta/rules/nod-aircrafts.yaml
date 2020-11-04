@@ -36,7 +36,6 @@ apache:
 		Name: casing
 		Weapon: HeliGunCasing
 		LocalOffset: 800,0,55
-		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
 
 	# GrantConditionOnAttack@muzzle:
