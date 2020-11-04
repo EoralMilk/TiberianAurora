@@ -45,8 +45,8 @@ grenader:
 		Image: grenader
 		PlayerPalette: n_mngr
 	Explodes:
-		Weapon: LargeExplosion
-		EmptyWeapon: LargeExplosion
+		Weapon: GrdExplosion
+		EmptyWeapon: GrdExplosion
 		Chance: 50
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
 

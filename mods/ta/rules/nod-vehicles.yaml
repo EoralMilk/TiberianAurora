@@ -184,8 +184,8 @@ nftnk:
 	Targetable@materials:
 		TargetTypes: Metel
 	Explodes:
-		Weapon: FlameExplosion
-		EmptyWeapon: FlameExplosion
+		Weapon: FlameTankExplosion
+		EmptyWeapon: FlameTankExplosion
 
 
 nhowi:

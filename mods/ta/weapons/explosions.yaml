@@ -191,8 +191,55 @@ TiberiumExplosion:
 		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 
+GrdExplosion:
+	Inherits: ^DamagingExplosion
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadFire: ^Fire_03
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c512
+		Damage: 150
+		Falloff: 100, 73, 47, 20, 0
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@FireEff: CreateEffect
+		-ImpactSounds:
+
 
 FlameExplosion:
+	Inherits: ^DamagingExplosion
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadFire: ^Fire_03
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c552
+		Damage: 110
+		Falloff: 100, 73, 47, 20, 0
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+
+
+FlameTankExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Inherits@WarheadFire: ^Fire_03
