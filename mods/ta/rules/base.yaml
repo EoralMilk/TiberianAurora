@@ -595,10 +595,10 @@
 		Name: 补给箱
 		GenericName: 补给箱
 	Crate:
-		TerrainTypes: Clear, Rough, Road, Ore, Gems
+		TerrainTypes: Clear, Rough, Road, Ore, Gems, Water
 	RenderSprites:
-		Palette: player
-		Image: crate
+		Palette: supplycrate
+		Image: supplycrate
 	WithCrateBody:
 		LandSequence: land
 		WaterSequence: water

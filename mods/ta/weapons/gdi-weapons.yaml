@@ -36,16 +36,17 @@ HEGrenade:
 
 SniperRF:
 	Inherits: ^MGBulletEff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 80
 	Burst: 1
-	Range: 11c0
+	Range: 12c0
 	Report: sniper_shot.wav
 	# AfterFireSoundDelay: 2
 	# AfterFireSound: sniper_cycle_out.wav
 	Projectile: Bullet
 		Inaccuracy: 10
 		Speed: 1400
-		LaunchAngle: 40
+		LaunchAngle: 5
 	Warhead@1Dam: SpreadDamage
 		Damage: 120
 		Spread: 0c68
