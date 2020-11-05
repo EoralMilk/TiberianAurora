@@ -161,7 +161,7 @@ Player:
 			advgtwr: 6
 			ntur: 7
 			samsite: 5
-			obelisk: 6
+			obelisk: 10
 			silo: 1
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
