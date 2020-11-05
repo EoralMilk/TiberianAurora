@@ -35,6 +35,7 @@
 	Projectile: Missile
 		Arm: 2
 		CruiseAltitude: 5c0
+		RangeLimit: 18c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 240
 		Damage: 75

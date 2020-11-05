@@ -248,6 +248,8 @@ RedEye:
 	Range: 12c0
 	Projectile: Missile
 		Speed: 400
+		Arm: 3
+		RangeLimit: 18c512
 
 
 ObeliskLaser:
