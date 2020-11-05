@@ -386,6 +386,15 @@ BuildingExplode:
 		Footprint: xxx xxx xxx
 		ValidTargets: Ground, Water, Air
 
+BuildingExplode3x3:
+	Inherits: BuildingExplode
+	Warhead@3x3: FireCluster
+		Weapon: BuildingExplode
+		RandomClusterCount: 0
+		Dimensions: 3,3
+		Footprint: XXX XxX XXX
+		ValidTargets: Ground, Water, Air
+
 
 FlameSea:
 	Inherits: ^DamagingExplosion

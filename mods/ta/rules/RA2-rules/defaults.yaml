@@ -346,6 +346,7 @@
 	Explodes:
 		Type: Footprint
 		Weapon: BuildingExplode
+		EmptyWeapon: BuildingExplode
 	RepairableBuilding:
 		RepairingNotification: Repairing
 	EngineerRepairable:

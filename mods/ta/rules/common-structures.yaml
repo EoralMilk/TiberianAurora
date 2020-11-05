@@ -492,6 +492,11 @@ repairdepot:
 		PlayerPalette: green_unit
 	Targetable@materials:
 		TargetTypes: Metel
+	Explodes:
+		Type: CenterPosition
+		Weapon: BuildingExplode3x3
+		EmptyWeapon: BuildingExplode3x3
+
 
 silo:
 	Inherits: ^SupportBuilding
