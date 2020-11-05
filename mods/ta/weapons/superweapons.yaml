@@ -359,6 +359,9 @@ SuperBlastWave:
 		Damage: 150
 		Spread: 0c640
 	-Warhead@EffSmu:
+	Warhead@Flash: CreateEffect
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
+		-InvalidTargets:
 
 StroneBlastWave:
 	Inherits: ^BlastWave
@@ -367,6 +370,9 @@ StroneBlastWave:
 		Damage: 100
 		Spread: 0c512
 	-Warhead@EffSmu:
+	Warhead@Flash: CreateEffect
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
+		-InvalidTargets:
 
 OrdinaryBlastWave:
 	Inherits: ^BlastWave
@@ -375,6 +381,9 @@ OrdinaryBlastWave:
 		Damage: 60
 		Spread: 0c384
 	-Warhead@EffSmu:
+	Warhead@Flash: CreateEffect
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
+		-InvalidTargets:
 
 WeakBlastWave:
 	Inherits: ^BlastWave
@@ -383,6 +392,9 @@ WeakBlastWave:
 		Damage: 30
 		Spread: 0c256
 	-Warhead@EffSmu:
+	Warhead@Flash: CreateEffect
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
+		-InvalidTargets:
 
 MicroBlastWave:
 	Inherits: ^BlastWave
@@ -390,7 +402,9 @@ MicroBlastWave:
 	Warhead@1Dam: SpreadDamage
 		Damage: 10
 		Spread: 0c128
-
+	Warhead@Flash: CreateEffect
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
+		-InvalidTargets:
 
 SecondaryShockWave:
 	Inherits: ^BlastWave
@@ -399,3 +413,6 @@ SecondaryShockWave:
 		Damage: 100
 		Spread: 0c326
 	-Warhead@EffSmu:
+	Warhead@Flash: CreateEffect
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
+		-InvalidTargets:
