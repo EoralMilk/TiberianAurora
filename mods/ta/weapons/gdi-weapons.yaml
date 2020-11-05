@@ -373,7 +373,7 @@ TowerMissile:
 		Inaccuracy: 300
 		Acceleration: 12
 		HorizontalRateOfTurn: 11
-		RangeLimit: 14c512
+		RangeLimit: 17c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c268
