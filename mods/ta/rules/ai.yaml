@@ -56,7 +56,7 @@ Player:
 					CheckRadius: 3c0
 			nuclearmissile:
 				OrderName: NuclearMissile
-				MinimumAttractiveness: 20
+				MinimumAttractiveness: 30
 				MinimumScanTimeInterval: 25
 				MaximumScanTimeInterval: 40
 				#Consideration@1:
@@ -75,9 +75,9 @@ Player:
 				Consideration@3:
 					Against: Enemy
 					Types: Structure
-					Attractiveness: 3
+					Attractiveness: 6
 					TargetMetric: Value
-					CheckRadius: 5c0
+					CheckRadius: 7c0
 				Consideration@4:
 					Against: Ally
 					Types: Ground, Water, Air
@@ -160,7 +160,7 @@ Player:
 			guntower: 8
 			advgtwr: 6
 			ntur: 7
-			samsite: 5
+			samsite: 7
 			obelisk: 10
 			silo: 1
 	SquadManagerBotModule@test:
@@ -193,7 +193,7 @@ Player:
 			nstltnk: 15
 			# aircraft
 			orcafighter: 8
-			apache: 8
+			apache: 6
 		UnitLimits:
 			gmmtnk: 7
 			nstltnk: 15
