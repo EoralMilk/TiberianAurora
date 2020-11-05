@@ -12,8 +12,8 @@ GAU-3_damage:
 		Spread: 0c256
 		Versus:
 			None: 100
-			Flak: 80
-			Plate: 70
+			Flak: 95
+			Plate: 85
 			Light: 25
 			Medium: 10
 			Heavy: 10
@@ -81,10 +81,10 @@ APBazooka:
 			None: 20
 			Flak: 15
 			Plate: 15
-			Light: 80
+			Light: 85
 			Medium: 100
 			Heavy: 100
-			Wood: 95
+			Wood: 85
 			Steel: 100
 			Concrete: 75
 			Drone: 60

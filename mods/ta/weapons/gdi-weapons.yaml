@@ -53,7 +53,7 @@ SniperRF:
 		Versus:
 			None: 100
 			Flak: 80
-			Plate: 70
+			Plate: 65
 			Light: 3
 			Medium: 1
 			Heavy: 1
@@ -80,8 +80,8 @@ HumveeMG_damage:
 		Spread: 0c256
 		Versus:
 			None: 100
-			Flak: 80
-			Plate: 70
+			Flak: 85
+			Plate: 85
 			Light: 30
 			Medium: 10
 			Heavy: 10
@@ -145,9 +145,9 @@ APCCannon:
 			Light: 75
 			Medium: 35
 			Heavy: 35
-			Wood: 65
-			Steel: 45
-			Concrete: 30
+			Wood: 80
+			Steel: 60
+			Concrete: 60
 			Drone: 60
 			Rocket: 100
 
@@ -175,9 +175,9 @@ MediumTankCannonAP:
 			Light: 75
 			Medium: 100
 			Heavy: 100
-			Wood: 65
-			Steel: 45
-			Concrete: 60
+			Wood: 100
+			Steel: 85
+			Concrete: 100
 			Drone: 60
 			Rocket: 100
 
@@ -208,9 +208,9 @@ MammothTankCannon:
 			Light: 75
 			Medium: 100
 			Heavy: 100
-			Wood: 65
-			Steel: 45
-			Concrete: 60
+			Wood: 100
+			Steel: 100
+			Concrete: 75
 			Drone: 60
 			Rocket: 100
 
@@ -246,14 +246,14 @@ MammothTuskMissile:
 		Damage: 40
 		Versus:
 			None: 100
-			Flak: 95
+			Flak: 100
 			Plate: 80
 			Light: 100
 			Medium: 80
 			Heavy: 80
-			Wood: 70
-			Steel: 50
-			Concrete: 40
+			Wood: 50
+			Steel: 65
+			Concrete: 50
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -287,9 +287,9 @@ ManyRockets:
 			Light: 75
 			Medium: 35
 			Heavy: 35
-			Wood: 65
-			Steel: 45
-			Concrete: 30
+			Wood: 100
+			Steel: 75
+			Concrete: 75
 			Drone: 60
 			Rocket: 100
 
@@ -307,8 +307,8 @@ HMG-damage:
 		Spread: 0c512
 		Versus:
 			None: 100
-			Flak: 80
-			Plate: 70
+			Flak: 100
+			Plate: 90
 			Light: 35
 			Medium: 10
 			Heavy: 10
@@ -379,7 +379,8 @@ TowerMissile:
 		Spread: 0c268
 		Damage: 25
 		Versus:
-			Flak: 40
+			None: 40
+			Flak: 30
 			Plate: 30
 			Light: 100
 			Medium: 80
@@ -508,8 +509,8 @@ A10Vulcan:
 		Spread: 0c366
 		Versus:
 			None: 100
-			Flak: 80
-			Plate: 70
+			Flak: 85
+			Plate: 85
 			Light: 60
 			Medium: 40
 			Heavy: 40

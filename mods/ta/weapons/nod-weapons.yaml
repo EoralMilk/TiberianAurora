@@ -20,8 +20,8 @@ BuggyMG_damage:
 		Spread: 0c256
 		Versus:
 			None: 100
-			Flak: 80
-			Plate: 70
+			Flak: 85
+			Plate: 85
 			Light: 30
 			Medium: 10
 			Heavy: 10
@@ -118,9 +118,9 @@ LightTankCannonAP:
 			Light: 75
 			Medium: 100
 			Heavy: 100
-			Wood: 65
-			Steel: 45
-			Concrete: 60
+			Wood: 100
+			Steel: 85
+			Concrete: 100
 			Drone: 60
 			Rocket: 100
 
@@ -145,7 +145,7 @@ DaggerOfNod:
 	Range: 6c512
 	Burst: 2
 	BurstDelays: 1
-	ReloadDelay: 80
+	ReloadDelay: 60
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2
@@ -158,17 +158,17 @@ DaggerOfNod:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 435
-		Damage: 100
+		Damage: 70
 		Versus:
-			None: 40
-			Flak: 35
+			None: 30
+			Flak: 30
 			Plate: 30
 			Light: 100
 			Medium: 80
 			Heavy: 80
 			Wood: 70
 			Steel: 50
-			Concrete: 40
+			Concrete: 50
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -192,7 +192,7 @@ HowitzerCannonHE:
 		Spread: 0c920
 		Versus:
 			None: 100
-			Flak: 95
+			Flak: 100
 			Plate: 80
 			Light: 100
 			Medium: 40
@@ -220,19 +220,19 @@ TurretCannon:
 	Range: 6c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
-		Speed: 682
+		Speed: 700
 	Warhead@1Dam: SpreadDamage
 		Damage: 75
 		Versus:
-			None: 25
-			Flak: 25
+			None: 30
+			Flak: 30
 			Plate: 25
-			Light: 75
+			Light: 100
 			Medium: 100
 			Heavy: 100
 			Wood: 65
-			Steel: 45
-			Concrete: 60
+			Steel: 90
+			Concrete: 65
 			Drone: 60
 			Rocket: 100
 
@@ -269,15 +269,15 @@ ObeliskLaser:
 		Spread: 42
 		Damage: 40
 		Versus:
-			None: 200
-			Flak: 100
-			Plate: 100
+			None: 150
+			Flak: 150
+			Plate: 150
 			Light: 100
 			Medium: 100
 			Heavy: 100
-			Wood: 50
-			Steel: 50
-			Concrete: 50
+			Wood: 70
+			Steel: 70
+			Concrete: 40
 			Drone: 200
 			Rocket: 100
 		DamageTypes: FlameDeath
@@ -340,8 +340,8 @@ HeliAGGun:
 		Spread: 0c356
 		Versus:
 			None: 100
-			Flak: 80
-			Plate: 70
+			Flak: 90
+			Plate: 90
 			Light: 30
 			Medium: 10
 			Heavy: 10
@@ -400,7 +400,7 @@ AC130Vulcan:
 		Versus:
 			None: 100
 			Flak: 80
-			Plate: 70
+			Plate: 80
 			Light: 50
 			Medium: 10
 			Heavy: 10
@@ -438,7 +438,7 @@ AC130Cannon:
 		ContrailWidth: 26
 		ContrailColor: E86400
 	Warhead@1Dam: SpreadDamage
-		Damage: 60
+		Damage: 90
 		Versus:
 			None: 25
 			Flak: 25
@@ -446,8 +446,8 @@ AC130Cannon:
 			Light: 75
 			Medium: 100
 			Heavy: 100
-			Wood: 65
+			Wood: 45
 			Steel: 45
-			Concrete: 60
+			Concrete: 40
 			Drone: 60
 			Rocket: 100

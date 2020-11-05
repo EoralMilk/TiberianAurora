@@ -162,8 +162,8 @@
 		InvalidTargets: Wall
 		Versus:
 			None: 140
-			Flak: 100
-			Plate: 80
+			Flak: 140
+			Plate: 100
 			Light: 35
 			Medium: 15
 			Heavy: 15

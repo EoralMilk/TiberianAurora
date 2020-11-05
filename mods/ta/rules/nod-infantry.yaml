@@ -109,5 +109,5 @@ chemict:
 	Explodes:
 		Weapon: ChamExplosion
 		EmptyWeapon: ChamExplosion
-		Chance: 55
+		Chance: 75
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
