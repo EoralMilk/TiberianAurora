@@ -80,10 +80,10 @@ Player:
 					CheckRadius: 5c0
 				Consideration@4:
 					Against: Ally
-					Types: Ground, Water
+					Types: Ground, Water, Air
 					Attractiveness: -5
 					TargetMetric: Value
-					CheckRadius: 7c0
+					CheckRadius: 8c0
 			IonCannonAttack:
 				OrderName: IonCannonAttack
 				MinimumAttractiveness: 12
@@ -177,7 +177,7 @@ Player:
 			bzkier: 35
 			grenader: 25
 			flamet: 25
-			Chemict: 20
+			chemict: 35
 			# vehicle
 			harvester: 10
 			ghumv: 35

@@ -54,7 +54,7 @@ flamet:
 		Chance: 66
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
 
-Chemict:
+chemict:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
