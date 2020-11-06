@@ -516,7 +516,7 @@ silo:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
-		HP: 100
+		HP: 200
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -537,3 +537,59 @@ silo:
 		RequiresCondition: !no-tiberium
 		Weapon: TiberiumExplosion
 
+
+a_wall:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@shape: ^1x1Shape
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 5
+		Prerequisites: structures.any
+		Description: 防御用的坚固围墙.\n有效阻挡平射武器抛射物与地面单位通过
+	Tooltip:
+		Name: 混凝土围墙
+	OwnerLostAction:
+		Action: ChangeOwner
+	FrozenUnderFog:
+	# -CombatDebugOverlay:
+	-DrawLineToTarget:
+	-ConditionManager:
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+		BuildSounds: hvydoor1.aud
+		TerrainTypes: Clear, Rough, Road, DirtRoad
+	FootprintPlaceBuildingPreview:
+		Palette: effect75alpha
+	BlocksProjectiles:
+		Height: 2c128
+	LineBuild:
+		Range: 8
+		NodeTypes: wall
+	LineBuildNode:
+		Types: wall
+	Targetable:
+		TargetTypes: Ground, Wall, C4, DetonateAttack, NoAutoTarget
+	WithWallSpriteBody:
+		Type: wall
+	WithWallSpriteBody@shadow:
+		Sequence: shadow
+		Type: wall
+	Sellable:
+		SellSounds: uselbuil.wav
+	Valued:
+		Cost: 100
+	Health:
+		HP: 400
+	Armor:
+		Type: Concrete
+	HitShape:
+	MapEditorData:
+		Categories: Wall
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 9
+	Interactable:
+	Targetable@materials:
+		TargetTypes: Concrete

@@ -11,12 +11,13 @@ HEGrenade:
 		Image: grenade
 		Palette: player
 		IsPlayerPalette: true
-		Speed: 146
+		Speed: 126
 		LaunchAngle: 160
 		Shadow: true
 		ZOffset: 1024
 		ContrailLength: 0
 		ContrailWidth: 0
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
 		Spread: 0c580
@@ -38,7 +39,6 @@ SniperRF:
 	Inherits: ^MGBulletEff
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 80
-	Burst: 1
 	Range: 12c0
 	Report: sniper_shot.wav
 	# AfterFireSoundDelay: 2
@@ -52,8 +52,8 @@ SniperRF:
 		Spread: 0c68
 		Versus:
 			None: 100
-			Flak: 80
-			Plate: 65
+			Flak: 100
+			Plate: 85
 			Light: 3
 			Medium: 1
 			Heavy: 1
@@ -124,6 +124,8 @@ HumvMG-Casing:
 	BurstDelays: 3
 	Range: 5c0
 	ValidTargets: Ground, Water
+	Projectile: Missile
+		Blockable: true
 
 
 APCCannon:
@@ -156,6 +158,8 @@ APC-Casing:
 	ReloadDelay: 40
 	Range: 5c0
 	ValidTargets: Ground, Water
+	Projectile: Missile
+		Blockable: true
 
 
 MediumTankCannonAP:
@@ -186,6 +190,8 @@ MTank-Casing:
 	ReloadDelay: 60
 	Range: 5c512
 	ValidTargets: Ground, Water
+	Projectile: Missile
+		Blockable: true
 
 
 MammothTankCannon:
@@ -237,7 +243,7 @@ MammothTuskMissile:
 		Speed: 350
 		Acceleration: 20
 		Inaccuracy: 300
-		HorizontalRateOfTurn: 18
+		HorizontalRateOfTurn: 25
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
@@ -277,6 +283,7 @@ ManyRockets:
 		Inaccuracy: 900
 		Image: DRAGON
 		LaunchAngle: 180
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 90
 		Spread: 0c512
@@ -302,6 +309,8 @@ HMG-damage:
 	Burst: 6
 	BurstDelays: 4
 	Range: 6c0
+	Projectile: Missile
+		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
 		Damage: 20
 		Spread: 0c512
@@ -344,6 +353,7 @@ HMG-eff_fire:
 	Projectile: Missile
 		RangeLimit: 20c409
 		Inaccuracy: 800
+		Blockable: true
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
@@ -357,7 +367,8 @@ HMG-Casing:
 	BurstDelays: 4
 	Range: 6c0
 	ValidTargets: Ground, Water
-
+	Projectile: Missile
+		Blockable: true
 
 TowerMissile:
 	Inherits: ^CommonMissile
@@ -372,7 +383,8 @@ TowerMissile:
 		Speed: 388
 		Inaccuracy: 300
 		Acceleration: 12
-		HorizontalRateOfTurn: 11
+		CruiseAltitude: 5c512
+		HorizontalRateOfTurn: 18
 		RangeLimit: 17c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
@@ -473,7 +485,7 @@ A10VulcanFake:
 	FirstBurstTargetOffset: -3000,0,0
 	FollowingBurstTargetOffset: 300,0,0
 	Projectile: InstantHit
-		Blockable: true
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
 		Spread: 0c366
@@ -504,6 +516,7 @@ A10Vulcan:
 		Inaccuracy: 800
 		Speed: 800
 		LaunchAngle: 0
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Spread: 0c366
@@ -540,6 +553,7 @@ A10Napalm:
 		Image: zbomb
 		Palette: player
 		IsPlayerPalette: true
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
 		Damage: 170

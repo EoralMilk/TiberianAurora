@@ -286,3 +286,31 @@ silo:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+
+a_wall:
+	Defaults:
+		Length: 16
+		Offset: 0, -12, 15
+		UseTilesetCode: false
+		DepthSprite: isodepth.shp
+	idle:
+	damaged-idle:
+		Start: 16
+	critical-idle:
+		Start: 32
+	shadow:
+		ZOffset: 0
+		Start: 48
+	damaged-shadow:
+		ZOffset: 0
+		Start: 64
+	critical-shadow:
+		ZOffset: 0
+		Start: 80
+	icon: wall_icon.png
+		Length: 1
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+

@@ -512,6 +512,7 @@
 	FootprintPlaceBuildingPreview:
 		Palette: effect75alpha
 	BlocksProjectiles:
+		Height: 3c512
 	LineBuild:
 		Range: 8
 		NodeTypes: wall
@@ -1000,13 +1001,25 @@
 
 ^PlaneHusk:
 	Inherits: ^Husk
+	SmokeTrailWhenDamaged:
+		Interval: 2
+		Delay: 1
+		Sprite: v3trail
+		Palette: effect
+		MinDamage: Undamaged
 	FallsToEarth:
-		Explosion: PlaneExplode
+		Explosion: LargeExplosion
 		MaximumSpinSpeed: 0
 		Moves: true
 
 ^HelicopterHusk:
 	Inherits: ^Husk
+	# SmokeTrailWhenDamaged:
+	# 	Interval: 3
+	# 	Delay: 2
+	# 	Sprite: v3trail
+	# 	Palette: effect
+	# 	MinDamage: Undamaged
 	Aircraft:
 		CanHover: true
 		VTOL: true

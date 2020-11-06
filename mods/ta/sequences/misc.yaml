@@ -21,6 +21,13 @@ chamall:
 		ZOffset: 1023
 		# BlendMode: Additive
 
+v3trail:
+	idle:
+		Length: *
+		ZOffset: 512
+		Tick: 60
+
+
 
 atomic:
 	up: nukeup

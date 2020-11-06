@@ -62,6 +62,8 @@ Buggy-Casing:
 	BurstDelays: 4
 	Range: 5c0
 	ValidTargets: Ground, Water
+	Projectile: Missile
+		Blockable: true
 
 
 CycleMissile:
@@ -187,6 +189,7 @@ HowitzerCannonHE:
 		ContrailWidth: 28
 		Inaccuracy: 790
 		LaunchAngle: 165
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 150
 		Spread: 0c920
@@ -241,6 +244,8 @@ Turret-Casing:
 	ReloadDelay: 60
 	Range: 6c0
 	ValidTargets: Ground, Water
+	Projectile: Missile
+		Blockable: true
 
 RedEye:
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
@@ -324,6 +329,8 @@ HeliGunCasing:
 	ReloadDelay: 1
 	Range: 5c512
 	ValidTargets: Ground, Water, Air
+	Projectile: Missile
+		Blockable: false
 
 
 HeliAGGun:
@@ -334,11 +341,12 @@ HeliAGGun:
 	Report: vulcan_shot.wav
 	Range: 5c512
 	Projectile: Bullet
-		Inaccuracy: 500
+		Inaccuracy: 400
 		Speed: 800
 		LaunchAngle: 0
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 13
 		Spread: 0c356
 		Versus:
 			None: 100
@@ -378,7 +386,7 @@ AC130VulcanFake:
 	FirstBurstTargetOffset: -1500,0,0
 	FollowingBurstTargetOffset: 150,0,0
 	Projectile: InstantHit
-		Blockable: true
+		Blockable: false
 	Warhead@Eff_attacksound: CreateEffect
 		ImpactSounds: ac130_hmg_burst.wav
 
@@ -396,6 +404,7 @@ AC130Vulcan:
 		Inaccuracy: 800
 		Speed: 800
 		LaunchAngle: 0
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Spread: 0c342
@@ -439,6 +448,7 @@ AC130Cannon:
 		ContrailLength: 16
 		ContrailWidth: 26
 		ContrailColor: E86400
+		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 90
 		Versus:

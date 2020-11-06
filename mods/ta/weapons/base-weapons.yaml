@@ -56,6 +56,7 @@
 
 ^CommonCannon:
 	Projectile: Bullet
+		Blockable: true
 		ContrailLength: 8
 		ContrailWidth: 15
 		ContrailColor: FFD860
@@ -78,9 +79,9 @@
 		Image: bulletsmall
 		# ContrailLength: 8
 		# ContrailWidth: 24
-		CruiseAltitude: 4352
-		VerticalRateOfTurn: 105
-		HorizontalRateOfTurn: 105
+		CruiseAltitude: 2c0
+		VerticalRateOfTurn: 100
+		HorizontalRateOfTurn: 100
 		MinimumLaunchAngle: 255
 		MaximumLaunchAngle: 255
 		Speed: 1000
@@ -103,6 +104,7 @@
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+		InvalidTargets: Wall
 
 ^MGBulletEff:
 	ReloadDelay: 20
@@ -135,6 +137,7 @@
 			Drone: 0
 			Rocket: 0
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+		InvalidTargets: Wall
 
 
 ^FlameWeapon:
@@ -156,6 +159,7 @@
 		Shadow: false
 		LaunchAngle: 15
 		ZOffset: 4096
+		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c368
 		Damage: 8
@@ -203,6 +207,7 @@
 		Shadow: false
 		LaunchAngle: 15
 		ZOffset: 4096
+		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c368
 		Damage: 8
