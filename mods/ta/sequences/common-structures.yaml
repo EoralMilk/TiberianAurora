@@ -1,4 +1,35 @@
 
+
+a_advpwr:
+	Defaults:
+		Offset: 0, -45, 45
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 102
+	damaged-idle:
+		Start: 1
+		ShadowStart: 103
+	idle-glow:
+		Start: 2
+		Length: 30
+		ShadowStart: 104
+		Tick: 200
+	damaged-idle-glow:
+		Start: 32
+		Length: 30
+		ShadowStart: 134
+		Tick: 200
+	make:
+		Start: 52
+		Length: 50
+		ShadowStart: 154
+	icon: advpwr_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+
 pwrplt:
 	Defaults:
 		Offset: 15, -37, 40
@@ -167,37 +198,6 @@ hq:
 		Length: 43
 		ShadowStart: 43
 	icon: hq_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
-
-advpwr:
-	Defaults:
-		Offset: 0, -45, 45
-		UseTilesetCode: false
-	idle:
-		ShadowStart: 3
-	damaged-idle:
-		Start: 1
-		ShadowStart: 4
-	dead:
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-		Tick: 400
-	idle-glow: advpwr_anim
-		Length: 30
-		ShadowStart: 30
-		Tick: 200
-	damaged-idle-glow: advpwr_de_anim
-		Length: 30
-		ShadowStart: 30
-		Tick: 200
-	make: advpwr_mkup
-		Length: 50
-		ShadowStart: 50
-	icon: advpwr_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0

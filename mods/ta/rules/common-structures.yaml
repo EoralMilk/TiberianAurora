@@ -173,8 +173,8 @@ advpwr:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: advpwr
-		PlayerPalette: green_unit
+		Image: a_advpwr
+		PlayerPalette: a_advpwr
 	Targetable@materials:
 		TargetTypes: Metel
 
