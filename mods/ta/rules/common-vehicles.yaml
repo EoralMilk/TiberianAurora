@@ -70,7 +70,7 @@ harvester:
 		HarvestVoice: Move
 		DeliverVoice: Move
 		EmptyCondition: no-tiberium
-	Explodes:
+	Explodes@tib:
 		RequiresCondition: !no-tiberium
 		Weapon: TiberiumExplosion
 	Health:
