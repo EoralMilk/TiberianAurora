@@ -160,7 +160,7 @@ Sequences:
 
 	ta|sequences/common-structures.yaml
 	ta|sequences/common-infantry.yaml
-	# ta|sequences/common-vehicles.yaml
+	ta|sequences/common-vehicles.yaml
 	ta|sequences/common-aircrafts.yaml
 
 	ta|sequences/gdi-structures.yaml

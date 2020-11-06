@@ -1,43 +1,4 @@
 
-omcv:
-	Inherits@MC: ^MindControllable
-	icon: mcvicon
-		Offset: 0, 0, 0
-	idle:
-
-gharv:
-	Defaults:
-		Offset: 0,0,15
-		UseTilesetCode: false
-	idle:
-		Facings: -32
-		ShadowStart: 32
-	stand:
-		Facings: -32
-		ShadowStart: 32
-	run:
-		Facings: -32
-		ShadowStart: 32
-	harvest: gharv-ha
-		Length: 19
-		Facings: -32
-		ShadowStart: 608
-		Tick: 70
-	dock: gharv-dock
-		Facings: -8
-		ShadowStart: 72
-		Tick: 120
-		Length: 9
-		UseTilesetCode: false
-	dock-loop: gharv-dock-loop
-		Facings: -8
-		ShadowStart: 8
-		UseTilesetCode: false
-	icon: charv_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
 ghumv:
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
