@@ -445,7 +445,8 @@ helipad:
 	Targetable@materials:
 		TargetTypes: Metel
 	RenderSprites:
-		PlayerPalette: green_unit
+		Image: a_helipad
+		PlayerPalette: a_helipad
 
 repairdepot:
 	Inherits: ^BaseBuilding

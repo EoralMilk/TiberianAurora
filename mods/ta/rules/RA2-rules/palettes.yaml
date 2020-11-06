@@ -392,6 +392,17 @@
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
+	PaletteFromFile@a_helipad:
+		Name: a_helipad
+		Filename: a_helipad.pal
+		ShadowIndex: 1
+	PlayerColorPalette@a_helipad:
+		BasePalette: a_helipad
+		BaseName: a_helipad
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+
 	PaletteFromFile@barracks:
 		Name: barracks
 		Filename: barracks.pal

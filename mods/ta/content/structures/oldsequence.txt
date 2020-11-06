@@ -29,3 +29,30 @@ advpwr:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+
+helipad:
+	Defaults:
+		Offset: 0, -30, 25
+		ZOffset: -1c611
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	dead:
+		Start: 1
+		ShadowStart: 3
+	make: helipad_mkup
+		Length: 45
+		ShadowStart: 45
+	anim-lights: helipad_anim
+		Length: 19
+		Tick: 200
+	damaged-anim-lights: helipad_de_anim
+		Length: 19
+		Tick: 200
+	icon: helipad_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

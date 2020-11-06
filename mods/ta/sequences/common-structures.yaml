@@ -29,6 +29,30 @@ a_advpwr:
 		Offset: 0, 0, 0
 
 
+a_helipad:
+	Defaults:
+		Offset: 0, -45, 45
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 63
+	damaged-idle:
+		Start: 1
+		ShadowStart: 64
+	anim-lights:
+		Start: 2
+		Length: 16
+		# ShadowStart: 104
+		Tick: 200
+	make:
+		Start: 18
+		Length: 45
+		ShadowStart: 81
+	icon: helipad_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
 
 pwrplt:
 	Defaults:
@@ -234,32 +258,6 @@ repairdepot:
 		ZOffset: -1c511
 		ZRamp: 1
 	icon: repairdepot_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
-helipad:
-	Defaults:
-		Offset: 0, -30, 25
-		ZOffset: -1c611
-	idle:
-		ShadowStart: 2
-	damaged-idle:
-		Start: 1
-		ShadowStart: 3
-	dead:
-		Start: 1
-		ShadowStart: 3
-	make: helipad_mkup
-		Length: 45
-		ShadowStart: 45
-	anim-lights: helipad_anim
-		Length: 19
-		Tick: 200
-	damaged-anim-lights: helipad_de_anim
-		Length: 19
-		Tick: 200
-	icon: helipad_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
