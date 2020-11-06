@@ -12,12 +12,12 @@ a_advpwr:
 	idle-glow:
 		Start: 2
 		Length: 30
-		ShadowStart: 104
+		# ShadowStart: 104
 		Tick: 200
 	damaged-idle-glow:
 		Start: 32
 		Length: 30
-		ShadowStart: 134
+		# ShadowStart: 134
 		Tick: 200
 	make:
 		Start: 52
