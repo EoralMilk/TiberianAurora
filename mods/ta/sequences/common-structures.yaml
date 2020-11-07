@@ -190,41 +190,32 @@ a_refinery:
 		Offset: 0, 0, 0
 
 
-
-repairdepot:
+a_repairdepot:
 	Defaults:
 		Offset: 0, -43, 5
 		UseTilesetCode: false
 		ZOffset: -1c511
-	idle: repairdepot
-		ZOffset: -1c511
 		ZRamp: 1
-	damaged-idle: repairdepot
-		Length: 1
+	idle:
+		ShadowStart: 68
+	damaged-idle:
 		Start: 1
-		ZOffset: -1c511
-		ZRamp: 1
-	dead: repairdepot
-		Length: 1
-		Start: 1
-		Tick: 40
-		ZOffset: -1c511
-	make: repairdepot_mkup
+		ShadowStart: 69
+	make:
 		Length: 41
-		ZOffset: -1c511
-		ZRamp: 1
-	padglow: repairdepot_anim
-		Length: 17
-		ZOffset: -1c511
-		ZRamp: 1
-	damaged-padglow: repairdepot_de_anim
-		Length: 17
-		ZOffset: -1c511
-		ZRamp: 1
+		Start: 26
+		ShadowStart: 94
+	padglow:
+		Start: 2
+		Length: 12
+	damaged-padglow:
+		Start: 14
+		Length: 12
 	icon: repairdepot_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
 
 
 silo:

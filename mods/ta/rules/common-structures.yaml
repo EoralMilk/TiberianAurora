@@ -493,8 +493,8 @@ repairdepot:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	RenderSprites:
-		Image: repairdepot
-		PlayerPalette: green_unit
+		Image: a_repairdepot
+		PlayerPalette: a_repairdepot
 	Targetable@materials:
 		TargetTypes: Metel
 	Explodes:
