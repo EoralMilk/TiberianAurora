@@ -18,6 +18,7 @@ mcv:
 		Type: Heavy
 	Mobile:
 		Speed: 71
+		TurnSpeed: 5
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 8c0

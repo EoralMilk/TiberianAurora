@@ -292,14 +292,18 @@ hq:
 		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
-	WithIdleOverlay@dish:
-		Sequence: idle-dish
+	WithIdleOverlay@shadow:
+		Sequence: shadow
 		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
+		PauseOnCondition: build-incomplete || lowpower
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
+		PauseOnCondition: build-incomplete || lowpower
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete || lowpower
 	Power:
 		Amount: -50
 		RequiresCondition: !power-outage
@@ -313,8 +317,8 @@ hq:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: hq
-		PlayerPalette: green_unit
+		Image: a_hq
+		PlayerPalette: a_hq
 	Targetable@materials:
 		TargetTypes: Metel
 	AirstrikePower@gdi:

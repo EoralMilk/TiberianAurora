@@ -31,7 +31,8 @@ a_advpwr:
 
 a_helipad:
 	Defaults:
-		Offset: 0, -45, 45
+		Offset: 0, -30, 25
+		ZOffset: -1c611
 		UseTilesetCode: false
 	idle:
 		ShadowStart: 63
@@ -48,6 +49,50 @@ a_helipad:
 		Length: 45
 		ShadowStart: 81
 	icon: helipad_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+a_hq:
+	Defaults:
+		Offset: -5, -40, 45
+		UseTilesetCode: false
+	idle:
+		# ShadowStart: 103
+	damaged-idle:
+		Start: 1
+		# ShadowStart: 104
+	idle-fans: hq_anim_b
+		Length: 6
+		# ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	idle-dish:
+		Length: 30
+		Start: 2
+		# ShadowStart: 105
+		Tick: 120
+		Offset: -5, -40, 50
+	damaged-idle-dish:
+		Length: 30
+		Start: 32
+		# ShadowStart: 135
+		Tick: 120
+		Offset: -5, -40, 50
+	shadow: a_hq-shadow
+		Length: 30
+		Tick: 120
+		Offset: -5, -40, 40
+	damaged-shadow: a_hq-shadow-d
+		Length: 30
+		Tick: 120
+		Offset: -5, -40, 40
+	make:
+		Start: 62
+		Length: 41
+		ShadowStart: 165
+	icon: hq_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
@@ -178,50 +223,6 @@ refinery:
 		Tick: 170
 	docking-overlay:
 	icon: refinery_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
-
-
-hq:
-	Defaults:
-		Offset: -5, -40, 45
-		UseTilesetCode: false
-	idle:
-		ShadowStart: 3
-	damaged-idle:
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-	dead:
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-		Tick: 400
-	idle-fans: hq_anim_b
-		Length: 6
-		ShadowStart: 6
-		Tick: 120
-		Offset: -5, -40, 46
-	damaged-idle-fans: hq_anim_b
-		Length: 6
-		ShadowStart: 6
-		Tick: 120
-		Offset: -5, -40, 46
-	idle-dish: hq_anim
-		Length: 30
-		ShadowStart: 30
-		Tick: 120
-		Offset: -5, -40, 48
-	damaged-idle-dish: hq_de_anim
-		Length: 30
-		ShadowStart: 30
-		Tick: 120
-		Offset: -5, -40, 48
-	make: hq_mkup
-		Length: 43
-		ShadowStart: 43
-	icon: hq_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0

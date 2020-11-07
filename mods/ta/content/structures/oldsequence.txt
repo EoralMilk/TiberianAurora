@@ -56,3 +56,48 @@ helipad:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+
+hq:
+	Defaults:
+		Offset: -5, -40, 45
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+	dead:
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-fans: hq_anim_b
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	damaged-idle-fans: hq_anim_b
+		Length: 6
+		ShadowStart: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	idle-dish: hq_anim
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 48
+	damaged-idle-dish: hq_de_anim
+		Length: 30
+		ShadowStart: 30
+		Tick: 120
+		Offset: -5, -40, 48
+	make: hq_mkup
+		Length: 43
+		ShadowStart: 43
+	icon: hq_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
