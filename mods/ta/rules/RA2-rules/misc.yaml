@@ -60,17 +60,7 @@ crate:
 		ValidFactions: america, germany, england, france, korea
 		Units: amcv
 
-amcv.colorpicker:
-	Inherits: amcv
-	Mobile:
-		InitialFacing: 160
-	-MapEditorData:
-	RenderSprites:
-		Image: amcv
-		Palette: colorpicker
-	RenderVoxels:
-		Image: amcv
-		Palette: colorpicker
+
 
 SROCK01:
 	Inherits: ^Rock

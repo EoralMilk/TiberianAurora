@@ -39,6 +39,14 @@ mcv:
 		VoiceSet: MCVVoice
 	HitShape:
 
+mcv.colorpicker:
+	Inherits: mcv
+	Mobile:
+		InitialFacing: 160
+	-MapEditorData:
+	RenderSprites:
+		Image: mcv
+		Palette: colorpicker
 
 harvester:
 	Inherits: ^SpiritVehicle
