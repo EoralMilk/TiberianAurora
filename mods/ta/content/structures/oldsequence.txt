@@ -101,3 +101,35 @@ hq:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
+
+pwrplt:
+	Defaults:
+		Offset: 15, -37, 40
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+	dead:
+		Length: 1
+		Start: 1
+		ShadowStart: 4
+		Tick: 400
+	idle-glow: pwrplt_anim
+		Length: 30
+		ShadowStart: 30
+		Tick: 150
+	damaged-idle-glow: pwrplt_de_anim
+		Length: 30
+		ShadowStart: 30
+		Tick: 150
+	make: pwrplt_mkup
+		Length: 50
+		ShadowStart: 50
+		Tick: 20
+	icon: pwrplt_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

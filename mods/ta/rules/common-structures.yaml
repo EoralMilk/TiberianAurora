@@ -129,8 +129,8 @@ pwrplt:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: pwrplt
-		PlayerPalette: green_unit
+		Image: a_pwrplt
+		PlayerPalette: a_pwrplt
 
 advpwr:
 	Inherits: ^BaseBuilding

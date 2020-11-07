@@ -5,24 +5,23 @@ a_advpwr:
 		Offset: 0, -45, 45
 		UseTilesetCode: false
 	idle:
-		ShadowStart: 102
+		ShadowStart: 114
 	damaged-idle:
 		Start: 1
-		ShadowStart: 103
+		ShadowStart: 115
 	idle-glow:
 		Start: 2
-		Length: 30
-		# ShadowStart: 104
+		Length: 31
 		Tick: 200
 	damaged-idle-glow:
-		Start: 32
-		Length: 30
-		# ShadowStart: 134
+		Start: 33
+		Length: 31
 		Tick: 200
 	make:
-		Start: 52
+		Start: 64
 		Length: 50
-		ShadowStart: 154
+		ShadowStart: 178
+		Tick: 40
 	icon: advpwr_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -48,6 +47,7 @@ a_helipad:
 		Start: 18
 		Length: 45
 		ShadowStart: 81
+		Tick: 40
 	icon: helipad_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -92,44 +92,40 @@ a_hq:
 		Start: 62
 		Length: 41
 		ShadowStart: 165
+		Tick: 40
 	icon: hq_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
 
-
-pwrplt:
+a_pwrplt:
 	Defaults:
 		Offset: 15, -37, 40
 		UseTilesetCode: false
 	idle:
-		ShadowStart: 3
+		ShadowStart: 114
 	damaged-idle:
-		Length: 1
 		Start: 1
-		ShadowStart: 4
-	dead:
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-		Tick: 400
-	idle-glow: pwrplt_anim
-		Length: 30
-		ShadowStart: 30
+		ShadowStart: 115
+	idle-glow:
+		Start: 2
+		Length: 31
 		Tick: 150
-	damaged-idle-glow: pwrplt_de_anim
-		Length: 30
-		ShadowStart: 30
+	damaged-idle-glow:
+		Start: 33
+		Length: 31
 		Tick: 150
-	make: pwrplt_mkup
+	make:
+		Start: 64
 		Length: 50
-		ShadowStart: 50
-		Tick: 20
+		ShadowStart: 178
+		Tick: 40
 	icon: pwrplt_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
 
 
 
