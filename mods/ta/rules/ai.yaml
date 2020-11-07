@@ -168,7 +168,7 @@ Player:
 		SquadSize: 15
 		ExcludeFromSquadsTypes: harvester
 		ConstructionYardTypes: fact
-		RushInterval: 200000 ## rush squad有bug
+		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
