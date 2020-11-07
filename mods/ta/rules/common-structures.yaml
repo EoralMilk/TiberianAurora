@@ -244,7 +244,7 @@ refinery:
 		PauseOnCondition: build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
-		RequiresCondition: !Building-Buildup
+		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
@@ -255,8 +255,8 @@ refinery:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: refinery
-		PlayerPalette: green_unit
+		Image: a_refinery
+		PlayerPalette: a_refinery
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 		CameraPitch: 85

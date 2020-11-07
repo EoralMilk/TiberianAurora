@@ -128,24 +128,16 @@ a_pwrplt:
 
 
 
-
-refinery:
+a_refinery:
 	Defaults:
 		Offset: 15, -50, 28
 		UseTilesetCode: false
 	idle:
 		Start: 1
-		Length: 1
 		ShadowStart: 156
 	damaged-idle:
 		Start: 3
-		Length: 1
 		ShadowStart: 158
-	dead:
-		Start: 3
-		Length: 1
-		ShadowStart: 158
-		Tick: 400
 	make:
 		Length: 51
 		Start: 4
@@ -164,64 +156,39 @@ refinery:
 		Offset: 15, -50, 10
 		ZOffset: -2048
 		ZRamp: 1
-	dead-bib:
-		Start: 2
-		Length: 1
-		ShadowStart: 157
-		Offset: 15, -50, 10
-		ZOffset: -2048
-		ZRamp: 1
 	idle-lights:
 		Length: 15
 		Start: 83
-		ShadowStart: 238
 		Tick: 200
 	damaged-idle-lights:
 		Start: 119
 		Length: 15
-		ShadowStart: 274
 		Tick: 200
 	idle-liquid:
 		Start: 98
 		Length: 21
-		ShadowStart: 253
 		Tick: 200
 	damaged-idle-liquid:
 		Start: 134
 		Length: 21
-		ShadowStart: 289
-		Tick: 170
+		Tick: 200
 	idle-arrow:
 		Start: 55
 		Length: 21
-		ShadowStart: 210
 		Tick: 170
 		Offset: 15, -50, 11
-		ZOffset: -1024
-		ZRamp: 1
-	damaged-idle-arrow:
-		Start: 55
-		Length: 21
-		ShadowStart: 210
-		Tick: 170
-		Offset: 15, -50, 18
 		ZOffset: -1024
 		ZRamp: 1
 	idle-fans:
 		Start: 76
 		Length: 7
-		ShadowStart: 231
-		Tick: 170
-	damaged-idle-fans:
-		Start: 76
-		Length: 7
-		ShadowStart: 231
 		Tick: 170
 	docking-overlay:
 	icon: refinery_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
 
 
 repairdepot:
