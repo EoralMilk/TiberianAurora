@@ -127,7 +127,6 @@ a_pwrplt:
 		Offset: 0, 0, 0
 
 
-
 a_refinery:
 	Defaults:
 		Offset: 15, -50, 28
@@ -217,24 +216,20 @@ a_repairdepot:
 		Offset: 0, 0, 0
 
 
-
-silo:
+a_silo:
 	Defaults:
 		Offset: -8, -23, 25
-		ZRamp: 1
 	idle:
-		ShadowStart: 2
+		ShadowStart: 25
 	damaged-idle:
 		Start: 1
-		ShadowStart: 3
-	dead:
-		Start: 1
-		ShadowStart: 3
+		ShadowStart: 26
 	stages: silo_anim
 		Length: 4
-	make: silo_mkup
+	make:
+		Start: 2
 		Length: 23
-		ShadowStart: 23
+		ShadowStart: 27
 	icon: silo_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

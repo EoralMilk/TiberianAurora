@@ -133,3 +133,158 @@ pwrplt:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+
+
+refinery:
+	Defaults:
+		Offset: 15, -50, 28
+		UseTilesetCode: false
+	idle:
+		Start: 1
+		Length: 1
+		ShadowStart: 156
+	damaged-idle:
+		Start: 3
+		Length: 1
+		ShadowStart: 158
+	dead:
+		Start: 3
+		Length: 1
+		ShadowStart: 158
+		Tick: 400
+	make:
+		Length: 51
+		Start: 4
+		ShadowStart: 159
+	bib:
+		Start: 0
+		ShadowStart: 155
+		Offset: 15, -50, 10
+		Length: 1
+		ZOffset: -1c511
+		ZRamp: 1
+	damaged-bib:
+		Start: 2
+		Length: 1
+		ShadowStart: 157
+		Offset: 15, -50, 10
+		ZOffset: -2048
+		ZRamp: 1
+	dead-bib:
+		Start: 2
+		Length: 1
+		ShadowStart: 157
+		Offset: 15, -50, 10
+		ZOffset: -2048
+		ZRamp: 1
+	idle-lights:
+		Length: 15
+		Start: 83
+		ShadowStart: 238
+		Tick: 200
+	damaged-idle-lights:
+		Start: 119
+		Length: 15
+		ShadowStart: 274
+		Tick: 200
+	idle-liquid:
+		Start: 98
+		Length: 21
+		ShadowStart: 253
+		Tick: 200
+	damaged-idle-liquid:
+		Start: 134
+		Length: 21
+		ShadowStart: 289
+		Tick: 170
+	idle-arrow:
+		Start: 55
+		Length: 21
+		ShadowStart: 210
+		Tick: 170
+		Offset: 15, -50, 11
+		ZOffset: -1024
+		ZRamp: 1
+	damaged-idle-arrow:
+		Start: 55
+		Length: 21
+		ShadowStart: 210
+		Tick: 170
+		Offset: 15, -50, 18
+		ZOffset: -1024
+		ZRamp: 1
+	idle-fans:
+		Start: 76
+		Length: 7
+		ShadowStart: 231
+		Tick: 170
+	damaged-idle-fans:
+		Start: 76
+		Length: 7
+		ShadowStart: 231
+		Tick: 170
+	docking-overlay:
+	icon: refinery_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+repairdepot:
+	Defaults:
+		Offset: 0, -43, 5
+		UseTilesetCode: false
+		ZOffset: -1c511
+	idle: repairdepot
+		ZOffset: -1c511
+		ZRamp: 1
+	damaged-idle: repairdepot
+		Length: 1
+		Start: 1
+		ZOffset: -1c511
+		ZRamp: 1
+	dead: repairdepot
+		Length: 1
+		Start: 1
+		Tick: 40
+		ZOffset: -1c511
+	make: repairdepot_mkup
+		Length: 41
+		ZOffset: -1c511
+		ZRamp: 1
+	padglow: repairdepot_anim
+		Length: 17
+		ZOffset: -1c511
+		ZRamp: 1
+	damaged-padglow: repairdepot_de_anim
+		Length: 17
+		ZOffset: -1c511
+		ZRamp: 1
+	icon: repairdepot_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+silo:
+	Defaults:
+		Offset: -8, -23, 25
+		ZRamp: 1
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	dead:
+		Start: 1
+		ShadowStart: 3
+	stages: silo_anim
+		Length: 4
+	make: silo_mkup
+		Length: 23
+		ShadowStart: 23
+	icon: silo_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0

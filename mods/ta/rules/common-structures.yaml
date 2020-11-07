@@ -529,8 +529,11 @@ silo:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	RenderSprites:
-		Image: silo
-		PlayerPalette: silo
+		Image: a_silo
+		PlayerPalette: a_silo
+	# WithResourceLevelSpriteBody:
+	# 	Sequence: stages
+	# 	PlayerPalette: silo
 	StoresResources:
 		PipColor: Green
 		PipCount: 15
