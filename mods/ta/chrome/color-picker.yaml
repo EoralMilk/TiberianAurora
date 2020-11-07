@@ -4,55 +4,57 @@ Background@COLOR_CHOOSER:
 		PalettePresetRows: 2
 		PaletteCustomRows: 1
 	Background: panel-black
-	Width: 311
+	Width: 350
 	Height: 148
 	Children:
 		Button@RANDOM_BUTTON:
 			Key: tab
-			X: 229
+			X: PARENT_RIGHT - 130
 			Y: 89
-			Width: 77
+			Width: 90
 			Height: 25
-			Text: Random
+			Text: 随机
 		Button@STORE_BUTTON:
-			X: 229
+			X: PARENT_RIGHT - 130
 			Y: 118
-			Width: 77
+			Width: 90
 			Height: 25
-			Text: Store
+			Text: 储存
 			Font: Bold
 		ActorPreview@PREVIEW:
-			X: 232
+			X: PARENT_RIGHT - 150
 			Y: 7
-			Width: 77
+			Width: 150
 			Height: 73
 			Animate: true
 		Button@MIXER_TAB_BUTTON:
-			X: 5
-			Y: PARENT_BOTTOM - 30
-			Height: 25
-			Width: 80
-			Text: Mixer
+			Visible: false
+			X: 0
+			Y: 0
+			Height: 0
+			Width: 0
+			Text: 
 			Font: Bold
 		Button@PALETTE_TAB_BUTTON:
-			X: 90
-			Y: PARENT_BOTTOM - 30
-			Height: 25
-			Width: 80
-			Text: Palette
+			Visible: false
+			X: 0
+			Y: 0
+			Height: 0
+			Width: 0
+			Text: 
 			Font: Bold
 		Container@MIXER_TAB:
 			X: 5
 			Y: 5
-			Width: PARENT_RIGHT - 91
-			Height: PARENT_BOTTOM - 34
+			Width: PARENT_RIGHT - 175
+			Height: PARENT_BOTTOM - 10
 			Children:
 				Background@HUEBG:
 					Background: panel-black
 					X: 0
 					Y: 0
 					Width: PARENT_RIGHT
-					Height: 17
+					Height: 20
 					Children:
 						HueSlider@HUE:
 							X: 2
@@ -65,7 +67,7 @@ Background@COLOR_CHOOSER:
 					X: 0
 					Y: 22
 					Width: PARENT_RIGHT
-					Height: 92
+					Height: PARENT_BOTTOM - 22
 					Children:
 						ColorMixer@MIXER:
 							X: 2
@@ -75,9 +77,9 @@ Background@COLOR_CHOOSER:
 		Background@PALETTE_TAB:
 			Background: panel-black
 			X: 5
-			Y: 5
-			Width: PARENT_RIGHT - 91
-			Height: PARENT_BOTTOM - 34
+			Y: 30
+			Width: PARENT_RIGHT - 175
+			Height: PARENT_BOTTOM - 35
 			Visible: false
 			Children:
 				Container@PALETTE_TAB_PANEL:
@@ -98,7 +100,7 @@ Background@COLOR_CHOOSER:
 									Width: PARENT_RIGHT
 									Height: 13
 									Align: Center
-									Text: Preset Colors
+									Text: 预设颜色
 						Container@PRESET_AREA:
 							Width: PARENT_RIGHT - 4
 							Height: 58
@@ -123,7 +125,7 @@ Background@COLOR_CHOOSER:
 									Width: PARENT_RIGHT
 									Height: 13
 									Align: Center
-									Text: Custom Colors
+									Text: 自定义颜色
 						Container@CUSTOM_AREA:
 							Width: PARENT_RIGHT - 4
 							Height: 31

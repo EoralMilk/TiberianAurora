@@ -330,6 +330,7 @@
 		Name: colorpicker
 		Filename: mcv.pal
 		ShadowIndex: 1
+		UseBasePaletteBrightness: true
 		AllowModifiers: false
 
 	PaletteFromFile@gapc:

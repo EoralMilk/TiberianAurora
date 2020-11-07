@@ -47,6 +47,8 @@ mcv.colorpicker:
 	RenderSprites:
 		Image: mcv
 		Palette: colorpicker
+		# PlayerPalette: mcv
+
 
 harvester:
 	Inherits: ^SpiritVehicle
