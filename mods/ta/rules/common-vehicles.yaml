@@ -41,6 +41,7 @@ mcv:
 
 mcv.colorpicker:
 	Inherits: mcv
+	-Buildable:
 	Mobile:
 		InitialFacing: 160
 	-MapEditorData:

@@ -54,7 +54,6 @@ barracks:
 	Exit@left3:
 		SpawnOffset: -900,220,0
 		ExitCell: -1, 2
-
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
@@ -132,17 +131,24 @@ warfactory:
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
-	WithIdleOverlay@right:
-		Sequence: r-idle
+
+	WithIdleOverlay@back:
+		Sequence: back
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@side:
+		Sequence: side
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@rightwall:
+		Sequence: rightwall
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@shadow:
 		Sequence: shadow
 		RequiresCondition: !build-incomplete
-	WithIdleOverlay@bib:
-		Sequence: bib
-		RequiresCondition: !build-incomplete
 	WithProductionDoorOverlay@DOOR:
 		Sequence: build-door
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@topleft:
+		Sequence: topleft
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@fan:
 		Sequence: idle-fan
@@ -155,7 +161,8 @@ warfactory:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		PlayerPalette: green_unit
+		Image: g_wf
+		PlayerPalette: g_wf
 	Targetable@materials:
 		TargetTypes: Metel
 
