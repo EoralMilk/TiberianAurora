@@ -114,74 +114,74 @@
 		Name: Random
 		InternalName: Random
 		RandomFactionMembers: nod, gdi
-		Side: TA Faction
-		Description: Random Country\nA random country will be chosen when the game starts.
-	Faction@allies:
-		Name: Allies
-		InternalName: random-allies
-		RandomFactionMembers: america, germany, england, france, korea
-		Side: Randoms
-		Description: Random Allied Country\nA random Allied country will be chosen when the game starts.
-	Faction@soviets:
-		Name: Soviets
-		InternalName: random-soviets
-		RandomFactionMembers: cuba, libya, iraq, russia
-		Side: Randoms
-		Description: Random Soviet Country\nA random Soviet country will be chosen when the game starts.
-	Faction@1:
-		Name: America
-		InternalName: america
-		Side: Allies
-		Description: America\nSpecial Ability: Paratroopers
-	Faction@2:
-		Name: Germany
-		InternalName: germany
-		Side: Allies
-		Description: Germany\nSpecial Vehicle: Tank Destroyer
-	Faction@3:
-		Name: England
-		InternalName: england
-		Side: Allies
-		Description: England\nSpecial Infantry: Sniper
-	Faction@4:
-		Name: France
-		InternalName: france
-		Side: Allies
-		Description: France\nSpecial Building: Grand Cannon
-	Faction@5:
-		Name: Korea
-		InternalName: korea
-		Side: Allies
-		Description: Korea\nSpecial Aircraft: Black Eagle
-	Faction@6:
-		Name: Cuba
-		InternalName: cuba
-		Side: Soviets
-		Description: Cuba\nSpecial Infantry: Terrorist
-	Faction@7:
-		Name: Libya
-		InternalName: libya
-		Side: Soviets
-		Description: Libya\nSpecial Vehicle: Demolition Truck
-	Faction@8:
-		Name: Iraq
-		InternalName: iraq
-		Side: Soviets
-		Description: Iraq\nSpecial Infantry: Desolator
-	Faction@9:
-		Name: Russia
-		InternalName: russia
-		Side: Soviets
-		Description: Russia\nSpecial Vehicle: Tesla Tank
+		# Side: Nod/GDI
+		Description: 随机选择Nod或者是GDI
+	# Faction@allies:
+	# 	Name: Allies
+	# 	InternalName: random-allies
+	# 	RandomFactionMembers: america, germany, england, france, korea
+	# 	Side: Randoms
+	# 	Description: Random Allied Country\nA random Allied country will be chosen when the game starts.
+	# Faction@soviets:
+	# 	Name: Soviets
+	# 	InternalName: random-soviets
+	# 	RandomFactionMembers: cuba, libya, iraq, russia
+	# 	Side: Randoms
+	# 	Description: Random Soviet Country\nA random Soviet country will be chosen when the game starts.
+	# Faction@1:
+	# 	Name: America
+	# 	InternalName: america
+	# 	Side: Allies
+	# 	Description: America\nSpecial Ability: Paratroopers
+	# Faction@2:
+	# 	Name: Germany
+	# 	InternalName: germany
+	# 	Side: Allies
+	# 	Description: Germany\nSpecial Vehicle: Tank Destroyer
+	# Faction@3:
+	# 	Name: England
+	# 	InternalName: england
+	# 	Side: Allies
+	# 	Description: England\nSpecial Infantry: Sniper
+	# Faction@4:
+	# 	Name: France
+	# 	InternalName: france
+	# 	Side: Allies
+	# 	Description: France\nSpecial Building: Grand Cannon
+	# Faction@5:
+	# 	Name: Korea
+	# 	InternalName: korea
+	# 	Side: Allies
+	# 	Description: Korea\nSpecial Aircraft: Black Eagle
+	# Faction@6:
+	# 	Name: Cuba
+	# 	InternalName: cuba
+	# 	Side: Soviets
+	# 	Description: Cuba\nSpecial Infantry: Terrorist
+	# Faction@7:
+	# 	Name: Libya
+	# 	InternalName: libya
+	# 	Side: Soviets
+	# 	Description: Libya\nSpecial Vehicle: Demolition Truck
+	# Faction@8:
+	# 	Name: Iraq
+	# 	InternalName: iraq
+	# 	Side: Soviets
+	# 	Description: Iraq\nSpecial Infantry: Desolator
+	# Faction@9:
+	# 	Name: Russia
+	# 	InternalName: russia
+	# 	Side: Soviets
+	# 	Description: Russia\nSpecial Vehicle: Tesla Tank
 	Faction@gdi:
 		Name: GDI
 		InternalName: gdi
-		Side: TA Faction
+		# Side: GDI
 		Description: 全球防御组织\n作为联合国下属的全球性军事盟约，\n全球防御组织旨在守护世界和平。\n全球科技领先的大国们，\n都无私地将最先进的军备贡献出来，\n推动GDI成为世上一支无可匹敌的军事力量。
 	Faction@nod:
 		Name: Nod
 		InternalName: nod
-		Side: TA Faction
+		# Side: Nod
 		Description: Nod兄弟会\n兄弟会狂热地崇拜着他们的伟大先知凯恩，\n以及泰伯利亚这一神奇而独特的外星存在。\n作为神秘的政教合一的军阀组织，\n兄弟会借由隐形与匿踪科技，\n通过多种多样的游击战法惩戒那些胆敢反抗他们的异教徒。
 	ResourceType@Tiberium:
 		ResourceType: 1

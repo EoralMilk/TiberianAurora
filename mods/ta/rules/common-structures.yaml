@@ -533,7 +533,8 @@ silo:
 		PlayerPalette: a_silo
 	# WithResourceLevelSpriteBody:
 	# 	Sequence: stages
-	# 	PlayerPalette: silo
+	# 	Stages: 4
+	# 	Palette: silostage
 	StoresResources:
 		PipColor: Green
 		PipCount: 15

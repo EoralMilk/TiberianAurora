@@ -284,8 +284,8 @@ guntower:
 	RequiresBuildableArea:
 		Adjacent: 5
 	RenderSprites:
-		Image: guntower
-		PlayerPalette: green_unit
+		Image: g_guntwr
+		PlayerPalette: g_guntwr
 	Targetable@materials:
 		TargetTypes: Metel
 
@@ -317,6 +317,10 @@ advgtwr:
 		Weapon: TowerMissile
 		MuzzleSequence: muzzle
 		LocalOffset: 190,35,2800, 190,-35,2800, 190,110,2800, 190,-110,2800
+	WithSpriteTurret@shadow:
+		Sequence: shadow
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: lowpower
 	WithSpriteTurret:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: lowpower
@@ -338,8 +342,8 @@ advgtwr:
 	RequiresBuildableArea:
 		Adjacent: 4
 	RenderSprites:
-		Image: advgtwr
-		PlayerPalette: green_unit
+		Image: g_advgtwr
+		PlayerPalette: g_advgtwr
 	Targetable@materials:
 		TargetTypes: Metel
 	GrantConditionOnPowerState@LOWPOWER:

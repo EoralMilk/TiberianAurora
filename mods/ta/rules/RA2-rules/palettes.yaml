@@ -456,6 +456,27 @@
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
 
+	PaletteFromFile@g_advgtwr:
+		Name: g_advgtwr
+		Filename: g_advgtwr.pal
+		ShadowIndex: 1
+	PlayerColorPalette@g_advgtwr:
+		BasePalette: g_advgtwr
+		BaseName: g_advgtwr
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@g_guntwr:
+		Name: g_guntwr
+		Filename: g_guntwr.pal
+		ShadowIndex: 1
+	PlayerColorPalette@g_guntwr:
+		BasePalette: g_guntwr
+		BaseName: g_guntwr
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+
 
 	PaletteFromFile@barracks:
 		Name: barracks
@@ -467,15 +488,10 @@
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
-	PaletteFromFile@silo:
-		Name: silo
-		Filename: silo.pal
-		ShadowIndex: 1
-	PlayerColorPalette@silo:
-		BasePalette: silo
-		BaseName: silo
-		UseBasePaletteBrightness: true
-		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PaletteFromFile@silostage:
+		Name: silostage
+		Filename: silostage.pal
+
 
 	# aircraft
 

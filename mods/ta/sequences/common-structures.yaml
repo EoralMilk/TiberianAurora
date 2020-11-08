@@ -219,6 +219,7 @@ a_repairdepot:
 a_silo:
 	Defaults:
 		Offset: -8, -23, 25
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 25
 	damaged-idle:
@@ -226,6 +227,7 @@ a_silo:
 		ShadowStart: 26
 	stages: silo_anim
 		Length: 4
+		ZOffset: 35
 	make:
 		Start: 2
 		Length: 23
