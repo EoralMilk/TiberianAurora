@@ -17,8 +17,6 @@ g_guntwr:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-
-
 g_advgtwr:
 	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults:
@@ -45,23 +43,68 @@ g_advgtwr:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-barracks:
+
+g_advhq:
 	Defaults:
-		Offset: 0, -45, 25
+		Offset: -5, -40, 45
+		UseTilesetCode: false
 	idle:
-		ShadowStart: 2
 	damaged-idle:
 		Start: 1
-		ShadowStart: 3
-	dead:
+	idle-fans: hq_anim_b
+		Length: 6
+		Tick: 120
+		Offset: -5, -40, 46
+	idle-dish:
+		Length: 30
+		Start: 2
+		Tick: 120
+		Offset: -5, -40, 50
+	damaged-idle-dish:
+		Length: 30
+		Start: 32
+		Tick: 120
+		Offset: -5, -40, 50
+	shadow: g_advhq-shadow
+		Length: 30
+		Tick: 120
+		Offset: -5, -40, 40
+	damaged-shadow: g_advhq-shadow-d
+		Length: 30
+		Tick: 120
+		Offset: -5, -40, 40
+	make:
+		Start: 62
+		Length: 44
+		ShadowStart: 168
+		Tick: 40
+	icon: advhq_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+
+
+g_barr:
+	Defaults:
+		Offset: 0, -45, 25
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 66
+	damaged-idle:
 		Start: 1
-		ShadowStart: 3
-	anim-flag: barracks_anim_flag
+		ShadowStart: 67
+	anim-flag:
+		Start: 2
 		Length: 20
-		ShadowStart: 20
-	make: barracks_mkup
-		Length: 45
-		ShadowStart: 45
+		Tick: 80
+	flag-shadow: g_barr-shadow
+		Length: 20
+		Tick: 80
+	make:
+		Start: 22
+		Length: 44
+		ShadowStart: 88
 	icon: barracks_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -169,62 +212,3 @@ warfactory:
 		Offset: 0, 0, 0
 
 
-
-advhq:
-	Defaults:
-		Offset: -5, -40, 45
-		UseTilesetCode: true
-	idle: advhq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		ShadowStart: 3
-	damaged-idle: advhq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-	dead: advhq.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 1
-		Start: 1
-		ShadowStart: 4
-		Tick: 400
-	idle-fans: hq_anim_b.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 6
-		ShadowStart: 6
-		Tick: 120
-		Offset: -5, -40, 46
-	damaged-idle-fans: hq_anim_b.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 6
-		ShadowStart: 6
-		Tick: 120
-		Offset: -5, -40, 46
-	idle-dish: advhq_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 30
-		ShadowStart: 30
-		Tick: 120
-		Offset: -5, -40, 48
-	damaged-idle-dish: advhq_de_anim.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 30
-		ShadowStart: 30
-		Tick: 120
-		Offset: -5, -40, 48
-	make: advhq_mkup.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 46
-		ShadowStart: 46
-	icon: advhq_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0

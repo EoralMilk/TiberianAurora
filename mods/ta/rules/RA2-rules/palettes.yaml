@@ -476,17 +476,26 @@
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
-
-
-	PaletteFromFile@barracks:
-		Name: barracks
-		Filename: barracks.pal
+	PaletteFromFile@g_advhq:
+		Name: g_advhq
+		Filename: g_advhq.pal
 		ShadowIndex: 1
-	PlayerColorPalette@barracks:
-		BasePalette: barracks
-		BaseName: barracks
+	PlayerColorPalette@g_advhq:
+		BasePalette: g_advhq
+		BaseName: g_advhq
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@g_barr:
+		Name: g_barr
+		Filename: g_barr.pal
+		ShadowIndex: 1
+	PlayerColorPalette@g_barr:
+		BasePalette: g_barr
+		BaseName: g_barr
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
 
 	PaletteFromFile@silostage:
 		Name: silostage

@@ -66,6 +66,10 @@ barracks:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	WithIdleOverlay@flag-shadow:
+		Sequence: flag-shadow
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	WithIdleOverlay@anim-flag:
 		Sequence: anim-flag
 		RequiresCondition: !build-incomplete
@@ -77,8 +81,8 @@ barracks:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: barracks
-		PlayerPalette: barracks
+		Image: g_barr
+		PlayerPalette: g_barr
 	Targetable@materials:
 		TargetTypes: Metel
 
@@ -180,14 +184,18 @@ advhq:
 		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
-	WithIdleOverlay@dish:
-		Sequence: idle-dish
+	WithIdleOverlay@shadow:
+		Sequence: shadow
 		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
+		PauseOnCondition: build-incomplete || lowpower
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		RequiresCondition: !build-incomplete
-		PauseOnCondition: build-incomplete
+		PauseOnCondition: build-incomplete || lowpower
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete || lowpower
 	Power:
 		Amount: -200
 	ProvidesRadar:
@@ -199,8 +207,8 @@ advhq:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: advhq
-		PlayerPalette: green_unit
+		Image: g_advhq
+		PlayerPalette: g_advhq
 	IonCannonPower:
 		PauseOnCondition: lowpower
 		Prerequisites: ~techlevel.unrestricted
