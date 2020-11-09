@@ -7,6 +7,7 @@ namespace OpenRA.Mods.TA.Traits
 	{
 		public readonly int Duration = 10;
 		public readonly int Intensity = 1;
+		public readonly float2 Multiplier = new float2(1, 1);
 		public object Create(ActorInitializer init) { return new ShakeOnMake(this); }
 	}
 
@@ -21,7 +22,7 @@ namespace OpenRA.Mods.TA.Traits
 
 		void INotifyCreated.Created(Actor self)
 		{
-			self.World.WorldActor.Trait<ScreenShaker>().AddEffect(info.Duration, self.CenterPosition, info.Intensity);
+			self.World.WorldActor.Trait<ScreenShaker>().AddEffect(info.Duration, self.CenterPosition, info.Intensity, info.Multiplier);
 		}
 
 		void INotifyDeployTriggered.Deploy(Actor self, bool skipMakeAnim)
@@ -30,7 +31,7 @@ namespace OpenRA.Mods.TA.Traits
 			{
 				return;
 			}
-			self.World.WorldActor.Trait<ScreenShaker>().AddEffect(info.Duration, self.CenterPosition, info.Intensity);
+			self.World.WorldActor.Trait<ScreenShaker>().AddEffect(info.Duration, self.CenterPosition, info.Intensity, info.Multiplier);
 		}
 
 		void INotifyDeployTriggered.Undeploy(Actor self, bool skipMakeAnim){}
