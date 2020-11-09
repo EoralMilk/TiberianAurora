@@ -106,35 +106,61 @@ n_ntur:
 		Offset: 0, 0, 0
 
 
-samsite:
+n_samsite:
 	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults:
 		Offset: 0, -30, 25
+		UseTilesetCode: false
 		ZRamp: 1
 	closed-idle:
 		Start: 0
 		ZOffset: -1c611
+		ShadowStart: 78
 	damaged-closed-idle:
 		Start: 1
 		ZOffset: -1c611
-	dead:
-		Start: 1
-		ZOffset: -1c611
-	opening: samsite_popup-fix
-		Length: 25
-		ShadowStart: 25
+		ShadowStart: 79
+	# closed-idleshadow:
+	# 	Start: 78
+	# damaged-closed-idleshadow:
+	# 	Start: 79
+	opening:
+		Start: 4
+		Length: 26
+		ShadowStart: 82
+		ZOffset: 45
+		ShadowZOffset: 35
 		-ZRamp:
-	closing: samsite_popup-fix
-		ShadowStart: 25
-		Length: 25
-		Frames: 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+	closing: n_samsite-popdown
+		Length: 26
+		ShadowStart: 26
+		ZOffset: 45
+		ShadowZOffset: 35
 		-ZRamp:
+	# openingshadow:
+	# 	Start: 82
+	# 	Length: 26
+	# 	-ZRamp:
+	# closingshadow:
+	# 	Length: 26
+	# 	Frames: 107, 106, 105, 104, 103, 102, 101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82
+	# 	-ZRamp:
 	idle:
 		Start: 46
 		Facings: 32
 		ShadowStart: 124
-		# UseClassicFacings: True
+		ShadowZOffset: 35
 		-ZRamp:
+	turret:
+		Start: 46
+		Facings: 32
+		ShadowStart: 124
+		ShadowZOffset: 35
+		-ZRamp:
+	# turretshadow:
+	# 	Start: 124
+	# 	Facings: 32
+	# 	-ZRamp:
 	base:
 		ZOffset: -1c611
 		Start: 2
@@ -143,21 +169,11 @@ samsite:
 		ZOffset: -1c611
 		Start: 3
 		ShadowStart: 81
-	dead-base:
-		Start: 1
-		ShadowStart: 79
-	idle-open:
-		Start: 2
-		ShadowStart: 80
-		-ZRamp:
-	damaged-idle-open:
-		Start: 3
-		ShadowStart: 81
-		-ZRamp:
-	make: samsite_mkup-fix2
+	make: n_samsite-mkup
 		Length: 41
 		ShadowStart: 41
 		ZOffset: -1c611
+	none: empty
 	icon: sam_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

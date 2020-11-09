@@ -331,7 +331,7 @@ samsite:
 		MuzzleSequence: muzzle
 		LocalOffset: 450,170,700, 450,0,700, 450,-170,700, 390,170,820, 390,0,820, 390,-170,820
 	AttackPopupTurreted:
-		CloseDelay: 100
+		CloseDelay: 125
 		DefaultFacing: 128
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: lowpower
@@ -355,8 +355,8 @@ samsite:
 	RequiresBuildableArea:
 		Adjacent: 5
 	RenderSprites:
-		Image: samsite
-		PlayerPalette: red_unit
+		Image: n_samsite
+		PlayerPalette: n_samsite
 	Targetable@materials:
 		TargetTypes: Metel
 	GrantConditionOnPowerState@LOWPOWER:
