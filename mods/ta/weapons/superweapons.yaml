@@ -4,7 +4,7 @@ IonCannon:
 	# Projectile: InstantHit
 	# 	Blockable: false
 	Projectile: Missile
-		Blockable: true
+		Blockable: false
 		Inaccuracy: 120
 		Shadow: false
 		CruiseAltitude: 2c0
@@ -19,12 +19,12 @@ IonCannon:
 		ExplodeWhenEmpty: true
 		TerrainHeightAware: true
 		AllowSnapping: true
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water, Air, Wall
 	Warhead@1Dam_impact: SpreadDamage
 		Range: 0, 1c1, 2c1, 2c512
 		Damage: 700
 		Falloff: 100, 100, 25, 10
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 		AffectsParent: True
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	Warhead@BlastWaveCore: FireCluster
@@ -33,21 +33,21 @@ IonCannon:
 		RandomClusterCount: 0
 		Dimensions: 3,3
 		Footprint: xXx XXX xXx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@BlastWave2: FireCluster
 		Weapon: OrdinaryBlastWave
 		Delay: 2
 		RandomClusterCount: 0
 		Dimensions: 5,5
 		Footprint: xXXXx XXxXX XxxxX XXxXX xXXXx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@BlastWave3: FireCluster
 		Delay: 3
 		Weapon: WeakBlastWave
 		RandomClusterCount: 0
 		Dimensions: 17,17
 		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxXxxxxxxxx xxxxxxXXXXXxxxxxx xxxxxXXxxxXXxxxxx xxxxxXxxxxxXxxxxx xxxxXXxxxxxXXxxxx xxxxxXxxxxxXxxxxx xxxxxXXxxxXXxxxxx xxxxxxXXXXXxxxxxx  xxxxxxxxXxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@4Effect: CreateEffect
 		Explosions: ionbeam
 		ExplosionPalette: ts_effect80alpha
@@ -116,6 +116,24 @@ atomic:
 		Explosions: nuke_ball
 		ImpactSounds: snukintr.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@DestroyWallCore: SpreadDamage
+		ValidTargets: Wall
+		Damage: 1000
+		Spread: 0c128
+		Versus:
+			None: 0
+			Flak: 0
+			Plate: 0
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 100
+			Drone: 0
+			Rocket: 0
+		AffectsParent: true
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
 	Warhead@1Dam_impact: SpreadDamage
 		Delay: 25
 		ValidTargets: Air
@@ -155,42 +173,42 @@ atomic:
 		RandomClusterCount: 0
 		Dimensions: 17,17
 		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxXXXxxxxxxx xxxxxxXXXXXxxxxxx xxxxxxXXXXXxxxxxx xxxxxxXXXXXxxxxxx xxxxxxxXXXxxxxxxx xxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@BlastWave2: FireCluster
 		Delay: 25
 		Weapon: StroneBlastWave
 		RandomClusterCount: 0
 		Dimensions: 17,17
 		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxXxxxxxxxx xxxxxxXXXXXxxxxxx xxxxxXXxxxXXxxxxx xxxxxXxxxxxXxxxxx xxxxXXxxxxxXXxxxx xxxxxXxxxxxXxxxxx xxxxxXXxxxXXxxxxx xxxxxxXXXXXxxxxxx  xxxxxxxxXxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@BlastWave3: FireCluster
 		Delay: 25
 		Weapon: OrdinaryBlastWave
 		RandomClusterCount: 0
 		Dimensions: 17,17
 		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxXXXxxxxxxx xxxxxXXXxXXXxxxxx xxxxXXxxxxxXXxxxx xxxxXxxxxxxxXxxxx xxxXXxxxxxxxXXxxx xxxXxxxxxxxxxXxxx xxxXXxxxxxxxXXxxx xxxxXxxxxxxxXxxxx xxxxXXxxxxxXXxxxx xxxxxXXXxXXXxxxxx xxxxxxxXXXxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@BlastWave4: FireCluster
 		Delay: 25
 		Weapon: WeakBlastWave
 		RandomClusterCount: 0
 		Dimensions: 17,17
 		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxXxxxxxxxx xxxxxxXXXXXxxxxxx xxxxXXXxxxXXXxxxx xxxXXxxxxxxxXXxxx xxxXxxxxxxxxxXxxx xxXXxxxxxxxxxXXxx xxXxxxxxxxxxxxXxx xXXxxxxxxxxxxxXXx xxXxxxxxxxxxxxXxx xxXXxxxxxxxxxXXxx xxxXxxxxxxxxxXxxx xxxXXxxxxxxxXXxxx xxxxXXXxxxXXXxxxx xxxxxxXXXXXxxxxxx xxxxxxxxXxxxxxxxx xxxxxxxxxxxxxxxxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@BlastWave5: FireCluster
 		Delay: 25
 		Weapon: MicroBlastWave
 		RandomClusterCount: 0
 		Dimensions: 17,17
 		Footprint: xxxxxxxXXXxxxxxxx xxxxxXXXxXXXxxxxx xxxXXXxxxxxXXXxxx xxXXxxxxxxxxxXXxx xxXxxxxxxxxxxxXxx xXXxxxxxxxxxxxXXx xXxxxxxxxxxxxxxXx XXxxxxxxxxxxxxxXX XxxxxxxxxxxxxxxxX XXxxxxxxxxxxxxxXX xXxxxxxxxxxxxxxXx xXXxxxxxxxxxxxXXx xxXxxxxxxxxxxxXxx xxXXxxxxxxxxxXXxx xxxXXXxxxxxXXXxxx xxxxxXXXxXXXxxxxx xxxxxxxXXXxxxxxxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	Warhead@OverBlast: FireCluster
 		Delay: 55
 		Weapon: SecondaryShockWave
 		RandomClusterCount: 0
 		Dimensions: 17,17
 		Footprint: xxxxxxxXXXxxxxxxx xxxxxXXXXXXXxxxxx xxxXXXXXXXXXXXxxx xxXXXXXXXXXXXXXxx xxXXXXXXXXXXXXXxx xXXXXXXXXXXXXXXXx xXXXXXXXXXXXXXXXx XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX xXXXXXXXXXXXXXXXx xXXXXXXXXXXXXXXXx  xxXXXXXXXXXXXXXxx xxXXXXXXXXXXXXXxx xxxXXXXXXXXXXXxxx xxxxxXXXXXXXxxxxx xxxxxxxXXXxxxxxxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water, Air, Wall
 	# Warhead@Smoke: CreateEffect
 	# 	Explosions: nuke_steam
 	# 	Delay: 45
