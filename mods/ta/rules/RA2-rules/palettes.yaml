@@ -506,6 +506,42 @@
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
+	PaletteFromFile@n_airstrip:
+		Name: n_airstrip
+		Filename: n_airstrip.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_airstrip:
+		BasePalette: n_airstrip
+		BaseName: n_airstrip
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_nhand:
+		Name: n_nhand
+		Filename: n_nhand.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_nhand:
+		BasePalette: n_nhand
+		BaseName: n_nhand
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_ntpl:
+		Name: n_ntpl
+		Filename: n_ntpl.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_ntpl:
+		BasePalette: n_ntpl
+		BaseName: n_ntpl
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+
+
+
+
+
+
 
 	PaletteFromFile@silostage:
 		Name: silostage

@@ -19,8 +19,6 @@
 		Shadow: true
 		VerticalRateOfTurn: 20
 		HorizontalRateOfTurn: 20
-		MinimumLaunchAngle: 0
-		MaximumLaunchAngle: 0
 		TerrainHeightAware: true
 		AllowSnapping: true
 		CruiseAltitude: 0
@@ -34,7 +32,7 @@
 	ValidTargets: Air
 	Projectile: Missile
 		Arm: 2
-		CruiseAltitude: 5c0
+		CruiseAltitude: 8c0
 		RangeLimit: 18c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 240

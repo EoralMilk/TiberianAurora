@@ -1,21 +1,19 @@
 
-nhand:
+n_nhand:
 	Defaults:
 		Offset: -17, -32, 25
 	idle:
-		ShadowStart: 54
+		ShadowStart: 55
 	damaged-idle:
 		Start: 1
-		ShadowStart: 55
-	dead:
-		Start: 1
-		ShadowStart: 55
-	make:
-		Start: 2
-		Length: 46
 		ShadowStart: 56
+	make:
+		Start: 9
+		Length: 46
+		ShadowStart: 64
+		Tick: 40
 	anim-fans:
-		Start: 48
+		Start: 2
 		Length: 6
 		Tick: 200
 	icon: nhand_icon.png
@@ -24,60 +22,60 @@ nhand:
 		Offset: 0, 0, 0
 
 
-airstrip:
+n_airstrip:
 	Defaults:
 		Offset: -31, -80, 25
 		ZOffset: -1c611
 		ZRamp: 1
+		UseTilesetCode: false
 	idle:
-		ShadowStart: 94
 	damaged-idle:
 		Start: 1
-		ShadowStart: 95
-	dead:
-		Start: 1
-		ShadowStart: 95
-	anim-lights:
-		Start: 62
+	anim-dish:
+		Start: 2
 		Length: 30
 		Tick: 200
-	anim-dish:
+	damaged-anim-dish: empty
+	shadow: n_airstrip-shadow
+		Length: 30
+		Tick: 200
+	damaged-shadow: n_airstrip
+		Start: 92
+		Length: 1
+	anim-lights:
 		Start: 32
-		Length: 28
-		ShadowStart: 122
+		Length: 32
 		Tick: 200
 	make:
-		Start: 2
+		Start: 64
 		Length: 28
-		ShadowStart: 94
+		ShadowStart: 156
+		Tick: 50
 	icon: airstrip_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
 
-ntpl:
+n_ntpl:
 	Defaults:
 		Offset: 0, -81, 25
 	idle:
-		Start: 0
-		ShadowStart: 43
+		ShadowStart: 52
 	damaged-idle:
 		Start: 1
-		ShadowStart: 44
-	dead:
-		Start: 1
-		ShadowStart: 44
+		ShadowStart: 53
 	make:
-		Start: 2
-		Length: 36
-		ShadowStart: 45
+		Start: 15
+		Length: 37
+		ShadowStart: 57
+		Tick: 50
 	active:
-		Frames: 39, 40, 41, 42, 42, 41, 40, 39
-		Length: 4
+		Start: 2
+		Length: 13
 		ZOffset: 1024
-		Tick: 130
-	none: bulletsmall
+		Tick: 80
+	none: empty
 	icon: ntpl_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

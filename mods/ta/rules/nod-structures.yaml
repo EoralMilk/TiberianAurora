@@ -71,8 +71,8 @@ nhand:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: nhand
-		PlayerPalette: green_unit
+		Image: n_nhand
+		PlayerPalette: n_nhand
 	Targetable@materials:
 		TargetTypes: Metel
 
@@ -128,6 +128,10 @@ airstrip:
 	# WithBuildingBib:
 	ProductionBar:
 		ProductionType: Vehicle
+	WithIdleOverlay@shadow:
+		Sequence: shadow
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	WithIdleOverlay@anim-dish:
 		Sequence: anim-dish
 		RequiresCondition: !build-incomplete
@@ -139,8 +143,8 @@ airstrip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
-		Image: airstrip
-		PlayerPalette: green_unit
+		Image: n_airstrip
+		PlayerPalette: n_airstrip
 	Targetable@materials:
 		TargetTypes: Metel
 
@@ -178,8 +182,8 @@ ntpl:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate	#, ConsideredThreatForAI
 	RenderSprites:
-		Image: ntpl
-		PlayerPalette: red_unit
+		Image: n_ntpl
+		PlayerPalette: n_ntpl
 	Targetable@materials:
 		TargetTypes: Metel
 	NukePower:

@@ -78,7 +78,7 @@ harvester:
 		RequiresCondition: !no-tiberium
 		Weapon: TiberiumExplosion
 	Health:
-		HP: 1000
+		HP: 600
 	Armor:
 		Type: Medium
 	Targetable@RadiationImmunity:
