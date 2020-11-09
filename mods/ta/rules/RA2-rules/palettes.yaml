@@ -537,6 +537,25 @@
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
 
+	PaletteFromFile@n_obelisk:
+		Name: n_obelisk
+		Filename: n_obelisk.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_obelisk:
+		BasePalette: n_obelisk
+		BaseName: n_obelisk
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_ntur:
+		Name: n_ntur
+		Filename: n_ntur.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_ntur:
+		BasePalette: n_ntur
+		BaseName: n_ntur
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
 
 

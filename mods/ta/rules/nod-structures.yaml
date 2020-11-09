@@ -48,7 +48,6 @@ nhand:
 	Exit@left3:
 		SpawnOffset: -1200,550,0
 		ExitCell: 1, 2
-
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
@@ -226,6 +225,19 @@ ntpl:
 		Name: none
 		Sequence: none
 		RequiresCondition: !build-incomplete
+	ShakeOnDeath:
+		Duration: 15
+		Intensity: 3
+	ShakeOnMake@1:
+		Duration: 60
+		Intensity: 1
+		Multplier: 0.2, 0.2
+	ShakeOnSell@1:
+		Duration: 60
+		Intensity: 1
+		Multplier: 0.2, 0.2
+
+
 
 ntur:
 	Inherits: ^DefenceBuilding
@@ -259,7 +271,11 @@ ntur:
 		LocalOffset: 820,0,600
 	Armament@Casing:
 		Weapon: Turret-Casing
-		LocalOffset: 100,300,600
+		LocalOffset: 0,0,700
+	WithSpriteTurret@shadow:
+		Sequence: shadow
+		RequiresCondition: !build-incomplete
+		PauseOnCondition: build-incomplete
 	WithSpriteTurret:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete
@@ -271,7 +287,6 @@ ntur:
 		TurnSpeed: 13
 		InitialFacing: 160
 		PreviewFacing: 160
-		Offset: -11,11,0
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -281,8 +296,8 @@ ntur:
 	RequiresBuildableArea:
 		Adjacent: 5
 	RenderSprites:
-		Image: ntur
-		PlayerPalette: green_unit
+		Image: n_ntur
+		PlayerPalette: n_ntur
 	Targetable@materials:
 		TargetTypes: Metel
 
@@ -404,7 +419,7 @@ obelisk:
 		SoundFiles: obelpowr.aud
 	WithChargeBurstsOverlay:
 		Sequence: active
-		Palette: red_unit
+		Palette: n_obelisk
 		IsPlayerPalette: true
 		RequiresCondition: !build-incomplete
 	Power:
@@ -426,7 +441,8 @@ obelisk:
 	DetectCloaked:
 		Range: 5c0
 	RenderSprites:
-		PlayerPalette: red_unit
+		Image: n_obelisk
+		PlayerPalette: n_obelisk
 	Targetable@materials:
 		TargetTypes: Stone
 	RequiresBuildableArea:

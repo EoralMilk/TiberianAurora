@@ -74,39 +74,32 @@ n_ntpl:
 		Start: 2
 		Length: 13
 		ZOffset: 1024
-		Tick: 80
+		Tick: 140
 	none: empty
 	icon: ntpl_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-
-
-ntur:
+n_ntur:
 	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults:
 		Offset: 0, -11, 25
+		UseTilesetCode: false
 	idle:
-		ShadowStart: 49
 	damaged-idle:
 		Start: 1
-		ShadowStart: 50
-	dead:
-		Start: 1
-		ShadowStart: 50
 	turret: 
-		Start: 17
-		Facings: 32
-		ShadowStart: 66
-	dead-turret: ntur_tur
-		Start: 17
-		Facings: 32
-		ShadowStart: 66
-	make: 
 		Start: 2
-		Length: 14
-		ShadowStart: 51
+		Facings: 32
+	shadow: n_ntur-shadow
+		Facings: 32
+	damaged-shadow: n_ntur-shadow-d
+		Facings: 32
+	make: 
+		Start: 34
+		Length: 15
+		ShadowStart: 83
 	icon: ntur_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
@@ -170,50 +163,32 @@ samsite:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-obelisk:
+n_obelisk:
 	Inherits: ^Structure
-	Defaults: obelisk.shp
+	Defaults:
 		Offset: 1,-15, 15
-		UseTilesetCode: true
-	idle: obelisk.shp
 		UseTilesetCode: false
-	 	AddExtension: false
+	idle:
 		ShadowStart: 54
-		Start: 0
-		Length: 1
-	damaged-idle: obelisk.shp
-		UseTilesetCode: false
-	 	AddExtension: false
+	damaged-idle:
 		Start: 1
-		Length: 1
 		ShadowStart: 55
-	active: obelisk.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Start: 3
-		Length: 14
+	active:
+		Start: 7
+		Length: 11
 		Tick: 100
 		ZOffset: 17
-	damaged-active: obelisk.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Start: 18
-		Length: 14
+	damaged-active:
+		Start: 25
+		Length: 11
 		Tick: 100
 		ZOffset: 17
-	dead: obelisk.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		#Length: 21
-		#ShadowStart: 21
-		#Tick: 100
+	make:
+		Length: 18
+		Start: 36
+		ShadowStart: 90
 	icon: obelisk_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
-	make: obelisk.shp
-		UseTilesetCode: false
-	 	AddExtension: false
-		Length: 19 #frame53
-		Start: 34
-		ShadowStart: 89
+
