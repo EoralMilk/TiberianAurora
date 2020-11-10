@@ -29,12 +29,12 @@ orcafighter:
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: OrcaAGMissiles
-		LocalOffset: 642,-284,120, 642,284,120
+		LocalOffset: 600,-260,108, 600,260,108
 		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
 	Armament@SECONDARY:
 		Weapon: OrcaAAMissiles
-		LocalOffset: 642,-284,120, 642,284,120
+		LocalOffset: 600,-260,108, 600,260,108
 		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
