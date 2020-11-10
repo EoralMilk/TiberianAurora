@@ -1,10 +1,4 @@
 
-omcv:
-	Inherits@MC: ^MindControllable
-	icon: mcvicon
-		Offset: 0, 0, 0
-	idle:
-
 mcv:
 	Defaults: 
 		Offset: 0,0,15
@@ -24,7 +18,7 @@ mcv:
 		Offset: 0, 0, 0
 
 
-nharv:
+g_harv:
 	Defaults:
 		Offset: 0,0,15
 		UseTilesetCode: false
@@ -37,55 +31,29 @@ nharv:
 	run:
 		Facings: -32
 		ShadowStart: 32
-	harvest: nharv-ha
+	harvest: g_harv-harving
 		Length: 19
 		Facings: -32
 		ShadowStart: 608
 		Tick: 70
-	dock: nharv-dock
-		Facings: -8
-		ShadowStart: 72
+	dock: g_harv-docking
+		Facings: -32
+		ShadowStart: 320
 		Tick: 120
-		Length: 9
+		Length: 10
 		UseTilesetCode: false
-	dock-loop: nharv-dock-loop
-		Facings: -8
-		ShadowStart: 8
+	dock-loop: g_harv-dock
+		Facings: -32
+		ShadowStart: 32
 		UseTilesetCode: false
 	icon: charv_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-gharv:
-	Defaults:
-		Offset: 0,0,15
-		UseTilesetCode: false
-	idle:
-		Facings: -32
-		ShadowStart: 32
-	stand:
-		Facings: -32
-		ShadowStart: 32
-	run:
-		Facings: -32
-		ShadowStart: 32
-	harvest: gharv-ha
-		Length: 19
-		Facings: -32
-		ShadowStart: 608
-		Tick: 70
-	dock: gharv-dock
-		Facings: -8
-		ShadowStart: 72
-		Tick: 120
-		Length: 9
-		UseTilesetCode: false
-	dock-loop: gharv-dock-loop
-		Facings: -8
-		ShadowStart: 8
-		UseTilesetCode: false
-	icon: charv_icon.png
-		UseTilesetCode: false
-	 	AddExtension: false
-		Offset: 0, 0, 0
+
+n_harv:
+	Inherits: g_harv
+	harvest: n_harv-harving
+	dock: n_harv-docking
+	dock-loop: n_harv-dock

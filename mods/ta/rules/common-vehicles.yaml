@@ -90,11 +90,12 @@ harvester:
 	RevealsShroud:
 		Range: 4c0
 	RenderSprites:
-		Image: gharv
-		PlayerPalette: green_vehicle
+		Image: n_harv
+		PlayerPalette: c_harv
 		FactionImages:
-			gdi: gharv
-			nod: nharv
+			gdi: g_harv
+			nod: n_harv
 	WithHarvestAnimation:
 	WithDockingAnimation:
 	HitShape:
+

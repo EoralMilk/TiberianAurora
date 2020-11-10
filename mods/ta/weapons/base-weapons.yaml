@@ -21,7 +21,7 @@
 		HorizontalRateOfTurn: 20
 		TerrainHeightAware: true
 		AllowSnapping: true
-		CruiseAltitude: 0
+		CruiseAltitude: 3c0
 		# TrailImage: mslsmoke1
 		# TrailPalette: effect80alpha
 		# TrailInterval: 0

@@ -1,6 +1,6 @@
-transport-n:
+n_trans:
 	Inherits@Muzzle: ^WithFlakMuzzle
-	Defaults: 
+	Defaults:
 		Offset: 0,0,0
 		UseTilesetCode: false
 	idle: 
@@ -36,5 +36,5 @@ transport-n:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-transport-g:
-	Inherits: transport-n
+g_trans:
+	Inherits: n_trans

@@ -1,13 +1,14 @@
 
 
-apache:
+n_apache:
 	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults: 
 		Offset: 0,0,0
 		UseTilesetCode: false
 	idle:
 		Facings: -32
-	shadow: apache-shadow
+	shadow:
+		Start: 32
 		Facings: -32
 		ZOffset: -15
 	rotor: apache-rotor
@@ -23,7 +24,7 @@ apache:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-c130:
+n_c130:
 	Defaults: 
 		Offset: 0,0,15
 		UseTilesetCode: false
@@ -36,7 +37,7 @@ c130:
 	shadow:
 		Start: 64
 		Facings: -64
-	screw: c130screw
+	screw: n_c130-screw
 		Facings: 64
 		Length: 5
 	icon: c17_icon.png

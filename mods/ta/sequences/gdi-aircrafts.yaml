@@ -7,21 +7,21 @@ a10:
 	idle:
 
 
-orcafighter:
+g_orca:
 	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults: 
 		Offset: 0,0,0
 		UseTilesetCode: false
-	hover: orca-hover
+	hover:
 		Length: 3
 		Facings: -32
-	move: orca-move
+	move: g_orca-move
 		Length: 3
 		Facings: -32
-	hover-shadow: orca-hover_shadow
+	hover-shadow: g_orca-shadow
 		Facings: -32
 		ZOffset: -15
-	move-shadow: orca-move_shadow
+	move-shadow: g_orca-move-shadow
 		Facings: -32
 		ZOffset: -15
 	icon: orca_icon.png

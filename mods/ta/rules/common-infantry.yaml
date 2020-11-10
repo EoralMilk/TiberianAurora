@@ -179,11 +179,11 @@ eng:
 dog:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
-	Buildable:
-		Queue: Infantry
-		Prerequisites: ~barracks
-		BuildPaletteOrder: 40
-		Description: 快速反步兵单位 \n 擅长侦查
+	# Buildable:
+	# 	Queue: Infantry
+	# 	Prerequisites: ~barracks
+	# 	BuildPaletteOrder: 40
+	# 	Description: 快速反步兵单位 \n 擅长侦查
 	Valued:
 		Cost: 200
 	DeliversCash:

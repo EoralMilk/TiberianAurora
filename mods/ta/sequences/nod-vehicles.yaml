@@ -1,10 +1,10 @@
 
 
 
-nbggy:
+n_bggy:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithMachineGunMuzzle
-	turret: nbggytur
+	turret: n_bggy-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: nbggy_icon.png
@@ -12,7 +12,7 @@ nbggy:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-ncycle:
+n_cycle:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithFlakMuzzle
 	icon: ncycle_icon.png
@@ -20,10 +20,10 @@ ncycle:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-ntank:
+n_ltank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
-  	turret: ntanktur
+  	turret: n_ltank-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: ntank_icon.png
@@ -31,10 +31,10 @@ ntank:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-nftnk:
+n_ftank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithFlakMuzzle
-	turret: nftnktur
+	turret: n_ftank-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: nftnk_icon.png
@@ -42,24 +42,24 @@ nftnk:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-nhowi:
+n_howi:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
-	idle: nhowi-alert
+	idle: n_howi-alert
 		Facings: -32
 		ShadowStart: 32
-	stand: nhowi-alert
+	stand: n_howi-alert
 		Facings: -32
 		ShadowStart: 32
-	run: nhowi-alert
+	run: n_howi-alert
 		Facings: -32
 		ShadowStart: 32
-	preparing: nhowi-prep
+	preparing: n_howi-prep
 		Facings: -32
 		ShadowStart: 320
 		Tick: 150
 		Length: 10
-	alert: nhowi-alert
+	alert: n_howi-alert
 		Facings: -32
 		ShadowStart: 32
 	icon: nhowi_icon.png
@@ -67,10 +67,10 @@ nhowi:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-nstltnk:
+n_stltank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithFlakMuzzle
-  	turret: nstltnktur
+  	turret: n_stltank-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: nstltnk_icon.png

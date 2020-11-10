@@ -206,7 +206,7 @@ MammothTankCannon:
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 80
-		Spread: 0c674
+		Spread: 0c235
 		Versus:
 			None: 25
 			Flak: 25
@@ -239,14 +239,14 @@ MammothTuskMissile:
 	ReloadDelay: 60
 	Projectile: Missile
 		ContrailLength: 12
-		Arm: 8
-		Speed: 350
-		Acceleration: 20
-		Inaccuracy: 300
-		HorizontalRateOfTurn: 25
+		Arm: 2
+		Speed: 380
+		Inaccuracy: 128
+		Acceleration: 25
+		HorizontalRateOfTurn: 30
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
-		CruiseAltitude: 3c0
+		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 347
 		Damage: 40

@@ -42,8 +42,8 @@ ghumv:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
-		Image: ghumv
-		PlayerPalette: ghumv
+		Image: g_humvee
+		PlayerPalette: g_humvee
 	GrantConditionOnMovement:
 		Condition: wheelmoving
 	# AmbientSound@idle:
@@ -98,8 +98,8 @@ gapc:
 	Turreted:
 		TurnSpeed: 10
 	RenderSprites:
-		Image: gapc
-		PlayerPalette: gapc
+		Image: g_apc
+		PlayerPalette: g_apc
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
@@ -146,8 +146,8 @@ gtank:
 	Turreted:
 		TurnSpeed: 10
 	RenderSprites:
-		Image: gtank
-		PlayerPalette: gtank
+		Image: g_mtank
+		PlayerPalette: g_mtank
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
@@ -186,12 +186,12 @@ gmlrs:
 		ForceFireIgnoresActors: True
 	Armament:
 		Weapon: ManyRockets
-		LocalOffset: 27,120,1300, 27,40,1300, 23,90,1350, 27,-120,1300, 27,-40,1300, 23,-90,1350
+		LocalOffset: 27,150,1300, 27,70,1300, 23,120,1350, 27,-150,1300, 27,-70,1300, 23,-120,1350
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	RenderSprites:
-		Image: gmlrs
-		PlayerPalette: gmlrs
+		Image: g_mlrs
+		PlayerPalette: g_mlrs
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
@@ -242,8 +242,8 @@ gmmtnk:
 	Turreted:
 		TurnSpeed: 6
 	RenderSprites:
-		Image: gmmtnk
-		PlayerPalette: gmmtnk
+		Image: g_mmtank
+		PlayerPalette: g_mmtank
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:

@@ -1,31 +1,19 @@
 
-ghumv:
+g_humvee:
 	Inherits@Muzzle: ^WithMachineGunMuzzle
-	Defaults:
-		Offset: 0,0,15
-		UseTilesetCode: false
-	idle:
-		Facings: 32
-		ShadowStart: 64
-	stand:
-		Facings: 32
-		ShadowStart: 64
-	run:
-		Facings: 32
-		ShadowStart: 64
-	turret:
-		Start: 32
-		Facings: 32
-		ShadowStart: 96
+	Inherits: ^CommonTank
+	turret: g_humvee-tur
+		Facings: -32
+		ShadowStart: 32
 	icon: ghumvee_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-gapc:
+g_apc:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithFlakMuzzle
-	turret: gapctur
+	turret: g_apc-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: gapc_icon.png
@@ -33,10 +21,10 @@ gapc:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-gtank:
+g_mtank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
-	turret: gtanktur
+	turret: g_mtank-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: gtank_icon2.png
@@ -44,24 +32,24 @@ gtank:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-gmlrs:
+g_mlrs:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
-	idle: gmlrs-alert
+	idle: g_mlrs-alert
 		Facings: -32
 		ShadowStart: 32
-	stand: gmlrs-alert
+	stand: g_mlrs-alert
 		Facings: -32
 		ShadowStart: 32
-	run: gmlrs-alert
+	run: g_mlrs-alert
 		Facings: -32
 		ShadowStart: 32
-	preparing: gmlrs-prep
+	preparing: g_mlrs-prep
 		Facings: -32
 		ShadowStart: 320
 		Tick: 150
 		Length: 10
-	alert: gmlrs-alert
+	alert: g_mlrs-alert
 		Facings: -32
 		ShadowStart: 32
 	icon: gmlrs_icon.png
@@ -69,10 +57,10 @@ gmlrs:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
-gmmtnk:
+g_mmtank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
-	turret: gmmtnktur
+	turret: g_mmtank-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: gmmtnk_icon.png

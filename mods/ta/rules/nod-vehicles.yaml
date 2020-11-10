@@ -42,8 +42,8 @@ nbggy:
 	Turreted:
 		TurnSpeed: 15
 	RenderSprites:
-		Image: nbggy
-		PlayerPalette: red_unit
+		Image: n_bggy
+		PlayerPalette: n_bggy
 	GrantConditionOnMovement:
 		Condition: wheelmoving
 	# AmbientSound@idle:
@@ -86,8 +86,8 @@ ncycle:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	RenderSprites:
-		Image: ncycle
-		PlayerPalette: red_unit
+		Image: n_cycle
+		PlayerPalette: n_cycle
 	GrantConditionOnMovement:
 		Condition: wheelmoving
 	# AmbientSound@idle:
@@ -135,8 +135,8 @@ ntank:
 		TurnSpeed: 13
 		Offset: -186,0,0
 	RenderSprites:
-		Image: ntank
-		PlayerPalette: red_unit
+		Image: n_ltank
+		PlayerPalette: n_ltank
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
@@ -177,8 +177,8 @@ nftnk:
 	Turreted:
 		TurnSpeed: 5
 	RenderSprites:
-		Image: nftnk
-		PlayerPalette: red_unit
+		Image: n_ftank
+		PlayerPalette: n_ftank
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
@@ -224,8 +224,8 @@ nhowi:
 		LocalOffset: -233,0,600
 	WithMuzzleOverlay:
 	RenderSprites:
-		Image: nhowi
-		PlayerPalette: red_unit
+		Image: n_howi
+		PlayerPalette: n_howi
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
@@ -268,8 +268,8 @@ nstltnk:
 		TurnSpeed: 15
 		Offset: -216,0,0
 	RenderSprites:
-		Image: nstltnk
-		PlayerPalette: red_unit
+		Image: n_stltank
+		PlayerPalette: n_stltank
 	Cloak:
 		InitialDelay: 90
 		CloakDelay: 90

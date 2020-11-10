@@ -51,13 +51,6 @@ orcafighter:
 		AmmoCondition: ammo
 	SpawnActorOnDeath:
 		Actor: orcafighter.Husk
-	WithFacingSpriteBody:
-		Sequence: hover
-		Name: body
-	WithMoveAnimation:
-		Body: body
-		MoveSequence: move
-	SelectionDecorations:
 	WithFacingSpriteBody@hover-Shadow:
 		Sequence: hover-shadow
 		Name: hover-shadow
@@ -68,9 +61,16 @@ orcafighter:
 		Name: move-shadow
 		ForceToGround: true
 		RequiresCondition: moving
+	WithFacingSpriteBody:
+		Sequence: hover
+		Name: body
+	WithMoveAnimation:
+		Body: body
+		MoveSequence: move
+	SelectionDecorations:
 	RenderSprites:
-		Image: orcafighter
-		PlayerPalette: orca
+		Image: g_orca
+		PlayerPalette: g_orca
 	ReloadAmmoPool:
 		Delay: 120
 		Count: 8
@@ -91,6 +91,10 @@ orcafighter.Husk:
 		Range: 10c0
 		Type: GroundPosition
 	-WithVoxelBody:
+	WithFacingSpriteBody@Shadow:
+		Sequence: hover-shadow
+		Name: hover-shadow
+		ForceToGround: true
 	WithFacingSpriteBody:
 		Sequence: hover
 		Name: body
@@ -98,12 +102,8 @@ orcafighter.Husk:
 		Body: body
 		MoveSequence: move
 	RenderSprites:
-		Image: orcafighter
-		PlayerPalette: orca
-	WithFacingSpriteBody@Shadow:
-		Sequence: hover-shadow
-		Name: hover-shadow
-		ForceToGround: true
+		Image: g_orca
+		PlayerPalette: g_orca
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: LargeExplosion

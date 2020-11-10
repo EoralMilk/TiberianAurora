@@ -193,10 +193,7 @@
 		BaseName: red_unit
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
-	PaletteFromPlayerPaletteWithAlpha@cloak:
-		BaseName: cloak
-		BasePalette: red_unit
-		Alpha: 0.30
+
 	##CloakPaletteEffect:
 
 	PaletteFromFile@green_vehicle:
@@ -333,55 +330,137 @@
 		UseBasePaletteBrightness: true
 		AllowModifiers: false
 
-	PaletteFromFile@gapc:
-		Name: gapc
-		Filename: gapc.pal
+
+	PaletteFromFile@c_harv:
+		Name: c_harv
+		Filename: c_harv.pal
 		ShadowIndex: 1
-	PlayerColorPalette@gapc:
-		BasePalette: gapc
-		BaseName: gapc
+	PlayerColorPalette@c_harv:
+		BasePalette: c_harv
+		BaseName: c_harv
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
-	PaletteFromFile@ghumv:
-		Name: ghumv
-		Filename: ghumv.pal
+	PaletteFromFile@g_apc:
+		Name: g_apc
+		Filename: g_apc.pal
 		ShadowIndex: 1
-	PlayerColorPalette@ghumv:
-		BasePalette: ghumv
-		BaseName: ghumv
+	PlayerColorPalette@g_apc:
+		BasePalette: g_apc
+		BaseName: g_apc
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
-	PaletteFromFile@gmmtnk:
-		Name: gmmtnk
-		Filename: gmmtnk.pal
+	PaletteFromFile@g_humvee:
+		Name: g_humvee
+		Filename: g_humvee.pal
 		ShadowIndex: 1
-	PlayerColorPalette@gmmtnk:
-		BasePalette: gmmtnk
-		BaseName: gmmtnk
+	PlayerColorPalette@g_humvee:
+		BasePalette: g_humvee
+		BaseName: g_humvee
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
-	PaletteFromFile@gtank:
-		Name: gtank
-		Filename: gtank.pal
+	PaletteFromFile@g_mmtank:
+		Name: g_mmtank
+		Filename: g_mmtank.pal
 		ShadowIndex: 1
-	PlayerColorPalette@gtank:
-		BasePalette: gtank
-		BaseName: gtank
+	PlayerColorPalette@g_mmtank:
+		BasePalette: g_mmtank
+		BaseName: g_mmtank
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
-	PaletteFromFile@gmlrs:
-		Name: gmlrs
-		Filename: gmlrs.pal
+	PaletteFromFile@g_mtank:
+		Name: g_mtank
+		Filename: g_mtank.pal
 		ShadowIndex: 1
-	PlayerColorPalette@gmlrs:
-		BasePalette: gmlrs
-		BaseName: gmlrs
+	PlayerColorPalette@g_mtank:
+		BasePalette: g_mtank
+		BaseName: g_mtank
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@g_mlrs:
+		Name: g_mlrs
+		Filename: g_mlrs.pal
+		ShadowIndex: 1
+	PlayerColorPalette@g_mlrs:
+		BasePalette: g_mlrs
+		BaseName: g_mlrs
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+
+	PaletteFromFile@n_bggy:
+		Name: n_bggy
+		Filename: n_bggy.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_bggy:
+		BasePalette: n_bggy
+		BaseName: n_bggy
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_cycle:
+		Name: n_cycle
+		Filename: n_cycle.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_cycle:
+		BasePalette: n_cycle
+		BaseName: n_cycle
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_ftank:
+		Name: n_ftank
+		Filename: n_ftank.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_ftank:
+		BasePalette: n_ftank
+		BaseName: n_ftank
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_howi:
+		Name: n_howi
+		Filename: n_howi.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_howi:
+		BasePalette: n_howi
+		BaseName: n_howi
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_ltank:
+		Name: n_ltank
+		Filename: n_ltank.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_ltank:
+		BasePalette: n_ltank
+		BaseName: n_ltank
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_stltank:
+		Name: n_stltank
+		Filename: n_stltank.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_stltank:
+		BasePalette: n_stltank
+		BaseName: n_stltank
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	PaletteFromPlayerPaletteWithAlpha@cloak:
+		BaseName: cloak
+		BasePalette: n_stltank
+		Alpha: 0.30
+
+
+
+
+
+
 
 	# structure
 
@@ -580,22 +659,42 @@
 	# aircraft
 
 	PaletteFromFile@transport:
-		Name: transport
-		Filename: transport.pal
+		Name: c_transport
+		Filename: c_transport.pal
 		ShadowIndex: 1
-	PlayerColorPalette@transport:
-		BasePalette: transport
-		BaseName: transport
+	PlayerColorPalette@c_transport:
+		BasePalette: c_transport
+		BaseName: c_transport
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
-	PaletteFromFile@orca:
-		Name: orca
-		Filename: orca.pal
+	PaletteFromFile@g_orca:
+		Name: g_orca
+		Filename: g_orca.pal
 		ShadowIndex: 1
-	PlayerColorPalette@orca:
-		BasePalette: orca
-		BaseName: orca
+	PlayerColorPalette@g_orca:
+		BasePalette: g_orca
+		BaseName: g_orca
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_apache:
+		Name: n_apache
+		Filename: n_apache.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_apache:
+		BasePalette: n_apache
+		BaseName: n_apache
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+	PaletteFromFile@n_c130:
+		Name: n_c130
+		Filename: n_c130.pal
+		ShadowIndex: 1
+	PlayerColorPalette@n_c130:
+		BasePalette: n_c130
+		BaseName: n_c130
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 

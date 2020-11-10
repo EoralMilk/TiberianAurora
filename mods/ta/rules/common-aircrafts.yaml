@@ -44,6 +44,7 @@ transport:
 		Sequence: shadow
 		Name: shadow
 		ForceToGround: true
+	WithFacingSpriteBody:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 10
@@ -55,11 +56,11 @@ transport:
 	Selectable:
 		DecorationBounds: 41,41
 	RenderSprites:
-		Image: transport-n
-		PlayerPalette: transport
+		Image: n_trans
+		PlayerPalette: c_transport
 		FactionImages:
-			gdi: transport-g
-			nod: transport-n
+			gdi: g_trans
+			nod: n_trans
 	GrantConditionOnMovement:
 		Condition: rotormoving
 	Targetable@materials:
@@ -82,18 +83,18 @@ transport.Husk:
 	WithIdleOverlay@ROTOR2AIR:
 		Offset: -863,0,1740
 		Sequence: rotor-b
-	-WithVoxelBody:
-	WithFacingSpriteBody:
-	RenderSprites:
-		Image: transport-n
-		PlayerPalette: transport
-		FactionImages:
-			gdi: transport-g
-			nod: transport-n
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow
 		Name: shadow
 		ForceToGround: true
+	-WithVoxelBody:
+	WithFacingSpriteBody:
+	RenderSprites:
+		Image: n_trans
+		PlayerPalette: c_transport
+		FactionImages:
+			gdi: g_trans
+			nod: n_trans
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: LargeExplosion

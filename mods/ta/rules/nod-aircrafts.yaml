@@ -37,7 +37,6 @@ apache:
 		Weapon: HeliGunCasing
 		LocalOffset: 750,0,55
 		PauseOnCondition: !ammo
-
 	# GrantConditionOnAttack@muzzle:
 	# 	Condition: firingmuzzle
 	# WithIdleOverlay@muzzle:
@@ -70,6 +69,11 @@ apache:
 	ReloadAmmoPool@real:
 		Delay: 4
 		Count: 1
+	WithFacingSpriteBody@Shadow:
+		Sequence: shadow
+		Name: shadow
+		ForceToGround: true
+	WithFacingSpriteBody:
 	WithFacingSpriteBody@Rotor:
 		Sequence: rotor
 		Name: rotor
@@ -80,17 +84,13 @@ apache:
 		Name: rotor-low
 		ForceToGround: false
 		RequiresCondition: !airborne
-	WithFacingSpriteBody@Shadow:
-		Sequence: shadow
-		Name: shadow
-		ForceToGround: true
 	WithMuzzleOverlay:
 	SpawnActorOnDeath:
 		Actor: apache.Husk
 	SelectionDecorations:
 	RenderSprites:
-		Image: apache
-		PlayerPalette: green_vehicle
+		Image: n_apache
+		PlayerPalette: n_apache
 	Selectable:
 		Bounds: 68, 56, 0, -7
 
@@ -107,18 +107,18 @@ apache.Husk:
 		Range: 10c0
 		Type: GroundPosition
 	-WithVoxelBody:
-	WithFacingSpriteBody@Rotor:
-		Sequence: rotor
-		Name: rotor
-		ForceToGround: false
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow
 		Name: shadow
 		ForceToGround: true
+	WithFacingSpriteBody@Rotor:
+		Sequence: rotor
+		Name: rotor
+		ForceToGround: false
 	WithFacingSpriteBody:
 	RenderSprites:
-		Image: apache
-		PlayerPalette: green_vehicle
+		Image: n_apache
+		PlayerPalette: n_apache
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: LargeExplosion
@@ -157,8 +157,8 @@ c130:
 	WithFacingSpriteBody:
 	-RenderVoxels:
 	RenderSprites:
-		Image: c130
-		PlayerPalette: red_unit
+		Image: n_c130
+		PlayerPalette: n_c130
 	Cargo:
 		MaxWeight: 10
 	ParaDrop:
@@ -251,8 +251,8 @@ c130husk:
 	-WithVoxelBody:
 	WithFacingSpriteBody:
 	RenderSprites:
-		Image: c130
-		PlayerPalette: red_unit
+		Image: n_c130
+		PlayerPalette: n_c130
 	BodyOrientation:
 		QuantizedFacings: 64
 	QuantizeFacingsFromSequence:
