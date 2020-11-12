@@ -20,10 +20,41 @@ IonCannon:
 		TerrainHeightAware: true
 		AllowSnapping: true
 	ValidTargets: Ground, Water, Air, Wall
+	Warhead@Air_impact: SpreadDamage
+		Spread: 0c685
+		Damage: 10000
+		Falloff: 100, 100, 75, 25
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 100
+			Steel: 100
+			Concrete: 100
+			Drone: 100
+			Rocket: 100
+		ValidTargets: Air
+		AffectsParent: True
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	Warhead@1Dam_impact: SpreadDamage
 		Range: 0, 1c1, 2c1, 2c512
-		Damage: 700
+		Damage: 800
 		Falloff: 100, 100, 25, 10
+		Versus:
+			None: 200
+			Flak: 200
+			Plate: 200
+			Light: 200
+			Medium: 100
+			Heavy: 100
+			Wood: 80
+			Steel: 100
+			Concrete: 80
+			Drone: 100
+			Rocket: 100
 		ValidTargets: Ground, Water, Air, Wall
 		AffectsParent: True
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath

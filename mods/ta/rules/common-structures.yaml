@@ -13,7 +13,7 @@ fact:
 	Selectable:
 		Bounds: 220, 125, 8, -7
 	Health:
-		HP: 2100
+		HP: 2800
 	Armor:
 		Type: Concrete
 	RevealsShroud:

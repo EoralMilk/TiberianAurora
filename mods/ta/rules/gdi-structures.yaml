@@ -186,7 +186,7 @@ advhq:
 		Footprint: _x_ xxx _x_
 		Dimensions: 3,3
 	Health:
-		HP: 1300
+		HP: 1600
 	Armor:
 		Type: Concrete
 	RevealsShroud:
