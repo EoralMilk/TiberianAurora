@@ -1,6 +1,6 @@
 a_conyard:
 	Defaults:
-		Offset: 0, -45, 45
+		Offset: 3, -60, 60
 		UseTilesetCode: false
 	idle: a_conyard
 		Length: 4

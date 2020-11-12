@@ -11,7 +11,7 @@ fact:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
 	Selectable:
-		Bounds: 220, 123, 8, 10
+		Bounds: 220, 125, 8, -7
 	Health:
 		HP: 2100
 	Armor:
