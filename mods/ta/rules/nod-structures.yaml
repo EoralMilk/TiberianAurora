@@ -208,7 +208,7 @@ ntpl:
 		BeaconPoster: nukemissile_icon
 		DisplayRadarPing: True
 		CameraRange: 17c0
-		CameraRemoveDelay: 80
+		CameraRemoveDelay: 150
 		TrailImage: nukesmoke
 		TrailPalette: effect
 		TrailSequences: idle
