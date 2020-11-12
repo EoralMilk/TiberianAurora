@@ -314,7 +314,7 @@ advgtwr:
 		Prerequisites: infantry_barracks, ~structures.gdi, hq
 		Description: 装载着导弹发射器和整套探测，索敌，瞄准系统的高级防御塔
 	Valued:
-		Cost: 500
+		Cost: 1000
 	Tooltip:
 		Name: 高级防御塔
 	Building:

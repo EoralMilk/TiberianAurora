@@ -1,3 +1,33 @@
+a_conyard:
+	Defaults:
+		Offset: 0, -45, 45
+		UseTilesetCode: false
+	idle: a_conyard
+		Length: 4
+		ShadowStart: 28
+		Tick: 90
+	damaged-idle: a_conyard-d
+		Length: 4
+		ShadowStart: 28
+		Tick: 90
+	build: a_conyard
+		Start: 4
+		Length: 24
+		ShadowStart: 32
+		Tick: 90
+	damaged-build: a_conyard-d
+		Start: 4
+		Length: 24
+		ShadowStart: 32
+		Tick: 90
+	make: a_conyard-mkup
+		Length: 50
+		ShadowStart: 50
+		Tick: 100
+	icon: conyard_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
 
 
 a_advpwr:

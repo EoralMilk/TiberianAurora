@@ -330,7 +330,6 @@
 		UseBasePaletteBrightness: true
 		AllowModifiers: false
 
-
 	PaletteFromFile@c_harv:
 		Name: c_harv
 		Filename: c_harv.pal
@@ -463,6 +462,17 @@
 
 
 	# structure
+
+	PaletteFromFile@a_conyard:
+		Name: a_conyard
+		Filename: a_conyard.pal
+		ShadowIndex: 1
+	PlayerColorPalette@a_conyard:
+		BasePalette: a_conyard
+		BaseName: a_conyard
+		UseBasePaletteBrightness: true
+		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
 
 	PaletteFromFile@a_advpwr:
 		Name: a_advpwr

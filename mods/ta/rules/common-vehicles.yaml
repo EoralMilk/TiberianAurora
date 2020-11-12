@@ -29,7 +29,7 @@ mcv:
 		Voice: Move
 		IntoActor: fact
 		Offset: -1,-1
-		Facing: 96
+		Facing: 128
 		TransformSounds: constru2.aud, hvydoor1.aud
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:

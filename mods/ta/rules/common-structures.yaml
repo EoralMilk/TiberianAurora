@@ -6,12 +6,12 @@ fact:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
-		Description: Builds structures
+		Description: 建造建筑
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
 	Selectable:
-		Bounds: 120, 53, 0, -5
+		Bounds: 220, 123, 8, 10
 	Health:
 		HP: 2100
 	Armor:
@@ -23,14 +23,14 @@ fact:
 	Production:
 		Produces: Building, Support
 	Tooltip:
-		Name: Construction Yard
+		Name: 建筑工厂
 	BaseBuilding:
 	BaseProvider:
 		Range: 0
 	Transforms:
 		IntoActor: mcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 128
 		DeployCursor: undeploy
 		RequiresCondition: factundeploy && !build-incomplete
 	TransformsIntoMobile:
@@ -38,9 +38,9 @@ fact:
 		Locomotor: heavytracked
 		Voice: Move
 		RequiresForceMove: true
-	TransformsIntoRepairable:	# 修改修复平台名称
+	TransformsIntoRepairable:
 		RequiresCondition: factundeploy
-		RepairActors: gadept, nadept, caoutp
+		RepairActors: repairdepot
 		Voice: Move
 		RequiresForceMove: true
 	TransformsIntoPassenger:
@@ -60,11 +60,8 @@ fact:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
-	WithIdleOverlay@fans:
-		Sequence: idle-fans
-		PauseOnCondition: lowpower || build-incomplete
+	WithBuildingPlacedAnimation:
 		RequiresCondition: !build-incomplete
-	WithBuildingPlacedOverlay:
 	ProvidesPrerequisite@gdi:
 		Factions: gdi
 		Prerequisite: structures.gdi
@@ -75,14 +72,11 @@ fact:
 		Prerequisite: structures.any
 	Power:
 		Amount: 0
-	SpawnActorsOnSell@gdi:
-		ActorTypes: e1, e1, e1, engineer
-		Factions: gdi
-	SpawnActorsOnSell@nod:
-		ActorTypes: e2, e2, e2, e2, engineer
-		Factions: nod
-	RenderSprites:  # TODO: 素材..
-		Image: gacnst
+	SpawnActorsOnSell:
+		ActorTypes: mngunner, mngunner, mngunner, eng
+	RenderSprites:
+		Image: a_conyard
+		PlayerPalette: a_conyard
 	Targetable@materials:
 		TargetTypes: Metel
 
