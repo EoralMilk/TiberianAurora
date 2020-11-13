@@ -17,7 +17,7 @@ c_oildrill:
 
 c_hospital:
 	Defaults:
-		Offset: 3, -60, 60
+		Offset: 9, -64, 60
 		UseTilesetCode: false
 	idle:
 		ShadowStart: 2

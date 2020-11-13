@@ -217,8 +217,8 @@ gmmtnk:
 	Health:
 		HP: 870
 	SelfHealing:
-		Step: 5
-		Delay: 10
+		Step: 1
+		Delay: 5
 		HealIfBelow: 50
 		DamageCooldown: 200
 	Armor:

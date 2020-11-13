@@ -13,7 +13,9 @@ caoild:
 	Tooltip:
 		Name: 油井
 	Health:
-		HP: 1000
+		HP: 500
+	TooltipDescription:
+		Description: 间歇性提供少量资金
 	RevealsShroud:
 		Range: 4c0
 	Armor:
@@ -31,20 +33,24 @@ caoild:
 cahosp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x4Shape
+	Selectable:
+		Bounds: 220, 180, 0, -35
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Tooltip:
 		Name: 医院
+	ProvidesPrerequisite@heal:
+		Prerequisite: hospheal
+	EngineerRepairable:
 	Health:
 		HP: 800
 	RevealsShroud:
 		Range: 6c0
 	Armor:
 		Type: Concrete
-	RepairsUnits:
-		StartRepairingNotification:
-	RallyPoint:
+	TooltipDescription:
+		Description: 为步兵提供自愈能力
 	WithIdleOverlay@lights:
 		Sequence: lights
 	RenderSprites:

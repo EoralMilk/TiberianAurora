@@ -71,6 +71,8 @@ smallfire:
 		Tick: 150
 		Length: *
 
+heal:
+	idle:
 
 explosion:
 	Defaults:
