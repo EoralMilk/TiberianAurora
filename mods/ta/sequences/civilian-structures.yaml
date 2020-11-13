@@ -2,7 +2,6 @@ c_oildrill:
 	Defaults:
 		Offset: 0, -30, 25
 		UseTilesetCode: false
-    UseTilesetCode: false
 	idle: c_oildrill
 		Length: 20
 		ShadowStart: 20
@@ -10,6 +9,26 @@ c_oildrill:
 	damaged-idle: c_oildrill-d
 		Length: 20
 		ShadowStart: 20
+		Tick: 150
+	icon: none_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
+c_hospital:
+	Defaults:
+		Offset: 3, -60, 60
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	lights: c_hospital-anim
+		Length: 30
+		Tick: 150
+	damaged-lights: c_hospital-anim-d
+		Length: 30
 		Tick: 150
 	icon: none_icon.png
 		UseTilesetCode: false

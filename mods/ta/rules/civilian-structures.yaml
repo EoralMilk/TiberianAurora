@@ -26,3 +26,28 @@ caoild:
 	RenderSprites:
 		Image: c_oildrill
 		PlayerPalette: c_oildrill
+
+
+cahosp:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^4x4Shape
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Tooltip:
+		Name: 医院
+	Health:
+		HP: 800
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Concrete
+	RepairsUnits:
+		StartRepairingNotification:
+	RallyPoint:
+	WithIdleOverlay@lights:
+		Sequence: lights
+	RenderSprites:
+		Image: c_hospital
+		PlayerPalette: c_hospital
+
