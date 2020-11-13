@@ -432,6 +432,9 @@ helipad:
 	PrimaryBuilding:
 		PrimaryCondition: primary
 		SelectionNotification: PrimaryBuildingSelected
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -445,6 +448,7 @@ helipad:
 	RenderSprites:
 		Image: a_helipad
 		PlayerPalette: a_helipad
+
 
 repairdepot:
 	Inherits: ^BaseBuilding

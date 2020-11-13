@@ -1,35 +1,3 @@
-caoild:
-	Inherits: ^TechBuilding
-	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 96, 104, -2, -26
-	Building:
-		Footprint: xx xx
-		Dimensions: 2, 2
-	EngineerRepairable:
-	CashTrickler:
-		Interval: 100
-		Amount: 20
-	Tooltip:
-		Name: Tech Oil Derrick
-	Health:
-		HP: 1000
-	RevealsShroud:
-		Range: 4c0
-	Armor:
-		Type: Steel
-	WithIdleOverlay@pump:
-		Sequence: idle-pump
-	WithIdleOverlay@flag:
-		Sequence: flag
-		Offset: 1000,0,0
-	GivesCashOnCapture:
-		Amount: 1000
-	Explodes:
-		Weapon: DerrickExplode
-	SpawnActorOnDeath:
-		Actor: caoild.rubble
-	UpdatesDerrickCount:
 
 caoild.rubble:
 	Inherits: ^Rubble

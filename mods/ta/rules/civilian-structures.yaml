@@ -1,0 +1,28 @@
+caoild:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 96, 104, -2, -26
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	EngineerRepairable:
+	CashTrickler:
+		Interval: 75
+		Amount: 20
+	Tooltip:
+		Name: 油井
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 4c0
+	Armor:
+		Type: Steel
+	GivesCashOnCapture:
+		Amount: 1000
+	Explodes:
+		Weapon: DerrickExplode
+	UpdatesDerrickCount:
+	RenderSprites:
+		Image: c_oildrill
+		PlayerPalette: c_oildrill

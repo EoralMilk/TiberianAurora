@@ -88,6 +88,9 @@ Packages:
 	ta|content/structures/n_samsite
 	ta|content/structures/n_obelisk
 
+	ta|content/structures/c_oildrill
+
+
 	ta|content/infantrys/miniguner
 	ta|content/infantrys/bazookier
 	ta|content/infantrys/engineer
@@ -128,6 +131,8 @@ Rules:
 	ta|rules/nod-vehicles.yaml
 	ta|rules/gdi-aircrafts.yaml
 	ta|rules/nod-aircrafts.yaml
+
+	ta|rules/civilian-structures.yaml
 
 
 	ta|rules/RA2-rules/proxy-actors.yaml
@@ -175,6 +180,8 @@ Sequences:
 	ta|sequences/nod-vehicles.yaml
 	ta|sequences/gdi-aircrafts.yaml
 	ta|sequences/nod-aircrafts.yaml
+
+	ta|sequences/civilian-structures.yaml
 
 
 	ta|sequences/RA2-sequence/aircraft.yaml
