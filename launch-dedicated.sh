@@ -34,12 +34,12 @@ fi
 
 require_variables "MOD_ID" "ENGINE_VERSION" "ENGINE_DIRECTORY"
 
-NAME="${Name:-"Dedicated Server"}"
+NAME="${Name:-"TA Test Room"}"
 LAUNCH_MOD="${Mod:-"${MOD_ID}"}"
-LISTEN_PORT="${ListenPort:-"1234"}"
+LISTEN_PORT="${ListenPort:-"1244"}"
 ADVERTISE_ONLINE="${AdvertiseOnline:-"True"}"
 ENABLE_SINGLE_PLAYER="${EnableSingleplayer:-"False"}"
-PASSWORD="${Password:-""}"
+PASSWORD="${Password:-"123456"}"
 
 cd "${TEMPLATE_ROOT}"
 if [ ! -f "${ENGINE_DIRECTORY}/OpenRA.Game.exe" ] || [ "$(cat "${ENGINE_DIRECTORY}/VERSION")" != "${ENGINE_VERSION}" ]; then
