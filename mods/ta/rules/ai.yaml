@@ -166,7 +166,7 @@ Player:
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		SquadSize: 15
-		ExcludeFromSquadsTypes: harvester
+		ExcludeFromSquadsTypes: harvester, eng, mcv
 		ConstructionYardTypes: fact
 		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache
 	UnitBuilderBotModule@test:
