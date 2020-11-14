@@ -152,8 +152,9 @@ eng:
 	EngineerRepair:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
-	Captures:
-		CaptureTypes: building, husk
+	Captures@Building:
+		CaptureTypes: building
+		CaptureDelay: 175
 	RevealsShroud:
 		Range: 4c0
 	Guard:
