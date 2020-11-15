@@ -146,9 +146,9 @@ DaggerOfNod:
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water, Air
 	Range: 6c512
-	Burst: 6
-	BurstDelays: 8
-	ReloadDelay: 140
+	Burst: 2
+	BurstDelays: 0
+	ReloadDelay: 60
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2
@@ -161,17 +161,17 @@ DaggerOfNod:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 435
-		Damage: 48
+		Damage: 62
 		Versus:
-			None: 20
-			Flak: 20
-			Plate: 20
-			Light: 85
+			None: 40
+			Flak: 40
+			Plate: 40
+			Light: 100
 			Medium: 45
-			Heavy: 70
-			Wood: 55
+			Heavy: 75
+			Wood: 75
 			Steel: 60
-			Concrete: 55
+			Concrete: 75
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath

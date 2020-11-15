@@ -423,9 +423,9 @@ OrcaAGMissiles:
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ValidTargets: Ground, Water
 	Range: 5c512
-	Burst: 4
-	BurstDelays: 1
-	ReloadDelay: 7
+	Burst: 2
+	BurstDelays: 2
+	ReloadDelay: 2
 	Report: bpatatta.wav
 	Projectile: Missile
 		Arm: 4
@@ -447,15 +447,15 @@ OrcaAGMissiles:
 		MaximumLaunchAngle: 0
 		TerrainHeightAware: true
 		AllowSnapping: false
-		CruiseAltitude: 0
+		CruiseAltitude: 5c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
 		Damage: 11
 		Versus:
-			None: 30
+			None: 25
 			Flak: 25
 			Plate: 25
-			Light: 95
+			Light: 100
 			Medium: 75
 			Heavy: 75
 			Wood: 70

@@ -21,7 +21,7 @@ orcafighter:
 		AltitudeVelocity: 0c200
 		CruiseAltitude: 3c512
 	Health:
-		HP: 185
+		HP: 135
 	Armor:
 		Type: Light
 	RevealsShroud:
