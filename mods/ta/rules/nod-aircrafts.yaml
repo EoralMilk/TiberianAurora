@@ -4,7 +4,7 @@ apache:
 	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Valued:
-		Cost: 1200
+		Cost: 1150
 	Tooltip:
 		Name: 阿帕奇武装直升机
 	UpdatesPlayerStatistics:
@@ -20,11 +20,11 @@ apache:
 		AltitudeVelocity: 0c150
 		CruiseAltitude: 3c512
 	Health:
-		HP: 185
+		HP: 170
 	Armor:
 		Type: Light
 	RevealsShroud:
-		Range: 10c0
+		Range: 11c512
 		Type: GroundPosition
 	Armament@fake:
 		Name: fake

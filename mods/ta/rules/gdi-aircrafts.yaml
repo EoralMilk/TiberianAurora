@@ -21,11 +21,11 @@ orcafighter:
 		AltitudeVelocity: 0c200
 		CruiseAltitude: 3c512
 	Health:
-		HP: 130
+		HP: 185
 	Armor:
 		Type: Light
 	RevealsShroud:
-		Range: 10c0
+		Range: 11c512
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: OrcaAGMissiles

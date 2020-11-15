@@ -21,7 +21,7 @@ ghumv:
 		Speed: 156
 		Locomotor: wheeled
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c512
 	Armament@Damage:
 		Weapon: HumveeMG_damage
 		LocalOffset: 300,0,0
@@ -118,13 +118,13 @@ gtank:
 		Prerequisites: ~vehicle.gdi, repairdepot
 		Description: \n GDI中型主战坦克，装有105mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 800
+		Cost: 775
 	Tooltip:
 		Name: 中型坦克
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 450
+		HP: 444
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -176,11 +176,11 @@ gmlrs:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 4
+		TurnSpeed: 5
 		Speed: 85
 		Locomotor: tracked
 	RevealsShroud:
-		Range: 8c0
+		Range: 6c0
 	AttackFrontal:
 		TargetFrozenActors: True
 		ForceFireIgnoresActors: True
@@ -215,7 +215,7 @@ gmmtnk:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 870
+		HP: 777
 	SelfHealing:
 		Step: 1
 		Delay: 5
@@ -240,7 +240,7 @@ gmmtnk:
 		LocalOffset: 20,371,866, 20,-371,866
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 6
+		TurnSpeed: 5
 	RenderSprites:
 		Image: g_mmtank
 		PlayerPalette: g_mmtank

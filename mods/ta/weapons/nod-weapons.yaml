@@ -70,7 +70,7 @@ CycleMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^AP_WarheadEff_Small
 	ValidTargets: Ground, Water, Air
-	Range: 6c0
+	Range: 6c526
 	MinRange: 0c512
 	Burst: 2
 	BurstDelays: 1
@@ -107,13 +107,13 @@ CycleMissile:
 LightTankCannonAP:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Small
-	ReloadDelay: 40
-	Range: 5c512
+	ReloadDelay: 38
+	Range: 5c256
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 40
+		Damage: 36
 		Versus:
 			None: 25
 			Flak: 25
@@ -130,14 +130,14 @@ LightTankCannonAP:
 
 Devil'sTongue:
 	Inherits: ^FlameWeapon
-	ReloadDelay: 45
-	Burst: 20
+	ReloadDelay: 60
+	Burst: 35
 	BurstDelays: 1
 	Range: 4c512
 	Projectile: Bullet
 		Inaccuracy: 800
 	Warhead@1Dam: SpreadDamage
-		Damage: 8
+		Damage: 9
 		Spread: 0c512
 
 
@@ -146,9 +146,9 @@ DaggerOfNod:
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water, Air
 	Range: 6c512
-	Burst: 2
-	BurstDelays: 1
-	ReloadDelay: 60
+	Burst: 6
+	BurstDelays: 8
+	ReloadDelay: 140
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2
@@ -161,17 +161,17 @@ DaggerOfNod:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 435
-		Damage: 70
+		Damage: 48
 		Versus:
-			None: 30
-			Flak: 30
-			Plate: 30
-			Light: 100
-			Medium: 80
-			Heavy: 80
-			Wood: 70
-			Steel: 50
-			Concrete: 50
+			None: 20
+			Flak: 20
+			Plate: 20
+			Light: 85
+			Medium: 45
+			Heavy: 70
+			Wood: 55
+			Steel: 60
+			Concrete: 55
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -181,7 +181,7 @@ HowitzerCannonHE:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	ReloadDelay: 120
-	Range: 15c0
+	Range: 11c0
 	MinRange: 4c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
@@ -210,7 +210,7 @@ HowitzerCannonHE:
 Howitzer-Casing:
 	Inherits: ^ShellCasing
 	ReloadDelay: 120
-	Range: 15c0
+	Range: 11c0
 	MinRange: 3c0
 	ValidTargets: Ground, Water
 
@@ -221,7 +221,7 @@ TurretCannon:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Medium
 	ReloadDelay: 60
-	Range: 6c0
+	Range: 7c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
 		Speed: 700
@@ -243,7 +243,7 @@ TurretCannon:
 Turret-Casing:
 	Inherits: ^ShellCasing
 	ReloadDelay: 60
-	Range: 6c0
+	Range: 7c0
 	ValidTargets: Ground, Water
 	Projectile: Missile
 		Blockable: true
@@ -259,8 +259,8 @@ RedEye:
 
 
 ObeliskLaser:
-	ReloadDelay: 120
-	Range: 8c512
+	ReloadDelay: 121
+	Range: 9c512
 	FirstBurstTargetOffset: 0,-1600,0
 	FollowingBurstTargetOffset: 0,150,1
 	Burst: 22
@@ -274,18 +274,18 @@ ObeliskLaser:
 		HitAnimSequence: lazerflare
 		HitAnimPalette: effect
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 40
+		Spread: 60
+		Damage: 68
 		Versus:
-			None: 150
-			Flak: 150
-			Plate: 150
-			Light: 100
-			Medium: 100
-			Heavy: 100
-			Wood: 70
-			Steel: 70
-			Concrete: 40
+			None: 200
+			Flak: 200
+			Plate: 200
+			Light: 40
+			Medium: 35
+			Heavy: 32
+			Wood: 40
+			Steel: 30
+			Concrete: 22
 			Drone: 200
 			Rocket: 100
 		DamageTypes: FlameDeath
@@ -305,7 +305,7 @@ ObeliskLaser:
 HeliGunFake:
 	ValidTargets: Ground, Water, Air
 	ReloadDelay: 1
-	Range: 5c512
+	Range: 5c640
 	Projectile: InstantHit
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
@@ -328,7 +328,7 @@ HeliGunFake:
 HeliGunCasing:
 	Inherits: ^BulletCasing
 	ReloadDelay: 1
-	Range: 5c512
+	Range: 5c640
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
 		Blockable: false
@@ -340,14 +340,14 @@ HeliAGGun:
 	ValidTargets: Ground, Water
 	ReloadDelay: 1
 	Report: vulcan_shot.wav
-	Range: 5c512
+	Range: 5c640
 	Projectile: Bullet
-		Inaccuracy: 400
+		Inaccuracy: 350
 		Speed: 800
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 13
+		Damage: 15
 		Spread: 0c356
 		Versus:
 			None: 100
@@ -373,9 +373,9 @@ HeliAAGun:
 	Inherits: HeliAGGun
 	ValidTargets: Air
 	Projectile: Bullet
-		Inaccuracy: 300
+		Inaccuracy: 250
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 15
 		ValidTargets: Air
 
 AC130VulcanFake:

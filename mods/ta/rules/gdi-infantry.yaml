@@ -15,7 +15,7 @@ grenader:
 	Tooltip:
 		Name: 掷弹兵
 	Mobile:
-		Speed: 80
+		Speed: 82
 		Voice: Move
 		Locomotor: foot
 	Selectable:

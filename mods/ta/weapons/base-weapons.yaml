@@ -141,7 +141,7 @@
 ^FlameWeapon:
 	Inherits: ^Fire_03
 	ReloadDelay: 55
-	Range: 3c0
+	Range: 3c512
 	Burst: 10
 	BurstDelays: 1
 	InvalidTargets: Wall
@@ -159,20 +159,20 @@
 		ZOffset: 4096
 		Blockable: true
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c368
-		Damage: 8
+		Spread: 0c400
+		Damage: 9
 		ValidTargets: Ground, Water, Tree
 		InvalidTargets: Wall
 		Versus:
-			None: 140
-			Flak: 140
-			Plate: 100
-			Light: 35
-			Medium: 15
-			Heavy: 15
-			Wood: 100
-			Steel: 85
-			Concrete: 55
+			None: 150
+			Flak: 150
+			Plate: 110
+			Light: 33
+			Medium: 12
+			Heavy: 12
+			Wood: 110
+			Steel: 80
+			Concrete: 50
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
@@ -189,8 +189,8 @@
 
 ^TiberiumWeapon:
 	ReloadDelay: 55
-	Range: 3c0
-	Burst: 10
+	Range: 4c256
+	Burst: 13
 	BurstDelays: 1
 	InvalidTargets: Wall
 	Report: flamethrower.wav
@@ -207,20 +207,20 @@
 		ZOffset: 4096
 		Blockable: true
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c368
-		Damage: 8
+		Spread: 0c400
+		Damage: 10
 		ValidTargets: Ground, Water, Tree
 		InvalidTargets: Wall
 		Versus:
-			None: 130
-			Flak: 130
-			Plate: 130
-			Light: 100
-			Medium: 80
-			Heavy: 80
-			Wood: 100
-			Steel: 85
-			Concrete: 85
+			None: 150
+			Flak: 150
+			Plate: 150
+			Light: 90
+			Medium: 90
+			Heavy: 85
+			Wood: 75
+			Steel: 70
+			Concrete: 80
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone100Percent, TiberiumDeath

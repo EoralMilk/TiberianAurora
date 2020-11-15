@@ -258,11 +258,11 @@ guntower:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 400
+		HP: 420
 	Armor:
 		Type: Steel
 	RevealsShroud:
-		Range: 6c0
+		Range: 7c0
 	Selectable:
 		Bounds: 50, 30, 0, -4
 	# Armament@shoot1:
@@ -293,7 +293,7 @@ guntower:
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
-		Range: 6c0
+		Range: 7c0
 		Type: pillbox
 	AutoTarget:
 	RequiresBuildableArea:
@@ -314,18 +314,18 @@ advgtwr:
 		Prerequisites: infantry_barracks, ~structures.gdi, hq
 		Description: 装载着导弹发射器和整套探测，索敌，瞄准系统的高级防御塔
 	Valued:
-		Cost: 1000
+		Cost: 1100
 	Tooltip:
 		Name: 高级防御塔
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 400
+		HP: 770
 	Armor:
-		Type: Steel
+		Type: Concrete
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c0
 	Selectable:
 		Bounds: 50, 30, 0, -4
 	Armament:
@@ -351,8 +351,8 @@ advgtwr:
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
-		Range: 8c0
-		Type: pillbox
+		Range: 9c512
+		Type: prismcannon
 	AutoTarget:
 	RequiresBuildableArea:
 		Adjacent: 4

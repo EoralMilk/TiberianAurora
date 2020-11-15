@@ -4,7 +4,7 @@
 HEGrenade:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
-	ReloadDelay: 50
+	ReloadDelay: 45
 	Range: 4c0
 	Report: grenade_throw.wav
 	Projectile: Bullet
@@ -72,7 +72,7 @@ HumveeMG_damage:
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
-	Range: 5c0
+	Range: 5c128
 	Projectile: Missile
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
@@ -98,7 +98,7 @@ HumveeMG_eff_bullet:
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
-	Range: 5c0
+	Range: 5c128
 	Projectile: Bullet
 		Inaccuracy: 500
 		Speed: 600
@@ -109,7 +109,7 @@ HumveeMG_eff_fire:
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
-	Range: 5c0
+	Range: 5c128
 	Report: mg_shot2.wav
 	# AfterFireSound: mg_clip_out.wav
 	Projectile: Missile
@@ -122,7 +122,7 @@ HumvMG-Casing:
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
-	Range: 5c0
+	Range: 5c128
 	ValidTargets: Ground, Water
 	Projectile: Missile
 		Blockable: true
@@ -165,7 +165,7 @@ APC-Casing:
 MediumTankCannonAP:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Medium
-	ReloadDelay: 60
+	ReloadDelay: 77
 	Range: 5c512
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
@@ -187,7 +187,7 @@ MediumTankCannonAP:
 
 MTank-Casing:
 	Inherits: ^ShellCasing
-	ReloadDelay: 60
+	ReloadDelay: 77
 	Range: 5c512
 	ValidTargets: Ground, Water
 	Projectile: Missile
@@ -197,7 +197,7 @@ MTank-Casing:
 MammothTankCannon:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Large
-	ReloadDelay: 90
+	ReloadDelay: 100
 	Range: 5c512
 	Burst: 2
 	BurstDelays: 5
@@ -205,8 +205,8 @@ MammothTankCannon:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 80
-		Spread: 0c235
+		Damage: 100
+		Spread: 0c240
 		Versus:
 			None: 25
 			Flak: 25
@@ -222,7 +222,7 @@ MammothTankCannon:
 
 Mammoth-Casing:
 	Inherits: ^ShellCasing
-	ReloadDelay: 80
+	ReloadDelay: 100
 	Range: 5c512
 	Burst: 2
 	BurstDelays: 5
@@ -233,10 +233,10 @@ MammothTuskMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water, Air
-	Range: 5c512
-	Burst: 2
-	BurstDelays: 1
-	ReloadDelay: 60
+	Range: 7c0
+	Burst: 4
+	BurstDelays: 4
+	ReloadDelay: 90
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2
@@ -248,18 +248,18 @@ MammothTuskMissile:
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
-		Spread: 347
-		Damage: 40
+		Spread: 500
+		Damage: 12
 		Versus:
-			None: 100
-			Flak: 100
-			Plate: 80
-			Light: 100
-			Medium: 80
-			Heavy: 80
-			Wood: 50
-			Steel: 65
-			Concrete: 50
+			None: 333
+			Flak: 333
+			Plate: 175
+			Light: 120
+			Medium: 70
+			Heavy: 50
+			Wood: 110
+			Steel: 70
+			Concrete: 70
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -273,7 +273,7 @@ ManyRockets:
 	ReloadDelay: 160
 	Burst: 6
 	BurstDelays: 3
-	Range: 15c512
+	Range: 11c512
 	MinRange: 4c512
 	Report: rocket_shot.wav
 	Projectile: Bullet
@@ -308,7 +308,7 @@ HMG-damage:
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
-	Range: 6c0
+	Range: 7c0
 	Projectile: Missile
 		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
@@ -333,7 +333,7 @@ HMG-eff_bullet:
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
-	Range: 6c0
+	Range: 7c0
 	Warhead@Eff_HitMetel: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
@@ -346,7 +346,7 @@ HMG-eff_fire:
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
-	Range: 6c0
+	Range: 7c0
 	Report: mg_shot.wav
 	AfterFireSoundDelay: 2
 	AfterFireSound: Shells_falls.wav
@@ -365,7 +365,7 @@ HMG-Casing:
 	ReloadDelay: 50
 	Burst: 6
 	BurstDelays: 4
-	Range: 6c0
+	Range: 7c0
 	ValidTargets: Ground, Water
 	Projectile: Missile
 		Blockable: true
@@ -374,8 +374,8 @@ TowerMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ValidTargets: Ground, Water, Air
-	Range: 8c0
-	ReloadDelay: 10
+	Range: 9c512
+	ReloadDelay: 11
 	Projectile: Missile
 		ContrailLength: 12
 		# CruiseAltitude: 5c0
@@ -388,18 +388,18 @@ TowerMissile:
 		RangeLimit: 17c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c268
-		Damage: 25
+		Spread: 0c332
+		Damage: 30
 		Versus:
-			None: 40
-			Flak: 30
-			Plate: 30
-			Light: 100
-			Medium: 80
-			Heavy: 80
-			Wood: 70
-			Steel: 50
-			Concrete: 40
+			None: 35
+			Flak: 25
+			Plate: 25
+			Light: 110
+			Medium: 85
+			Heavy: 85
+			Wood: 50
+			Steel: 40
+			Concrete: 30
 			Drone: 80
 			Rocket: 100
 		ValidTargets: Ground, Water, Air
@@ -423,9 +423,9 @@ OrcaAGMissiles:
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ValidTargets: Ground, Water
 	Range: 5c512
-	Burst: 2
-	BurstDelays: 0
-	ReloadDelay: 5
+	Burst: 4
+	BurstDelays: 1
+	ReloadDelay: 7
 	Report: bpatatta.wav
 	Projectile: Missile
 		Arm: 4
@@ -449,18 +449,18 @@ OrcaAGMissiles:
 		AllowSnapping: false
 		CruiseAltitude: 0
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c300
-		Damage: 10
+		Spread: 0c325
+		Damage: 11
 		Versus:
 			None: 30
-			Flak: 20
-			Plate: 20
-			Light: 100
-			Medium: 80
-			Heavy: 80
-			Wood: 60
-			Steel: 80
-			Concrete: 60
+			Flak: 25
+			Plate: 25
+			Light: 95
+			Medium: 75
+			Heavy: 75
+			Wood: 70
+			Steel: 70
+			Concrete: 77
 			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath

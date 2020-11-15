@@ -9,7 +9,7 @@ flamet:
 		BuildPaletteOrder: 10
 		Description: 装备火焰喷射器和坚固护甲的特种部队\n\n·强势对抗：步兵、建筑 \n·弱势对抗：载具
 	Valued:
-		Cost: 200
+		Cost: 325
 	Tooltip:
 		Name: 喷火部队
 	Mobile:
@@ -64,11 +64,11 @@ chemict:
 		BuildPaletteOrder: 10
 		Description: 装备先进泰伯利亚武器的精英部队\n免疫泰伯利亚毒害\n\n·强势对抗：地面目标
 	Valued:
-		Cost: 300
+		Cost: 375
 	Tooltip:
 		Name: 化学部队
 	Mobile:
-		Speed: 75
+		Speed: 80
 		Voice: Move
 		Locomotor: foot
 	Selectable:
@@ -79,7 +79,7 @@ chemict:
 		Condition: hazmatsuits
 		TerrainTypes: Ore
 	Health:
-		HP: 130
+		HP: 150
 	Passenger:
 		PipType: Green
 	RevealsShroud:

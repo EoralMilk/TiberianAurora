@@ -21,7 +21,7 @@ nbggy:
 		Speed: 170
 		Locomotor: wheeled
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c512
 	Armament@Damage:
 		Weapon: BuggyMG_damage
 		LocalOffset: 214,0,0
@@ -109,21 +109,21 @@ ntank:
 		Prerequisites: ~vehicle.nod, repairdepot
 		Description: \n Nod轻型主战坦克，装有90mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 650
+		Cost: 625
 	Tooltip:
 		Name: 轻型坦克
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 340
+		HP: 333
 	Armor:
 		Type: Heavy
 	Mobile:
 		TurnSpeed: 7
-		Speed: 120
+		Speed: 118
 		Locomotor: tracked
 	RevealsShroud:
-		Range: 8c0
+		Range: 8c128
 	Armament:
 		Weapon: LightTankCannonAP
 		LocalOffset: 939,0,608
@@ -154,7 +154,7 @@ nftnk:
 		Prerequisites: ~vehicle.nod, repairdepot
 		Description: \n 搭载双联装火焰喷射器和大量燃料的重装甲坦克 \n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
-		Cost: 800
+		Cost: 775
 	Tooltip:
 		Name: 恶魔之舌
 	Selectable:
@@ -164,11 +164,11 @@ nftnk:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
-		Speed: 100
+		TurnSpeed: 3
+		Speed: 95
 		Locomotor: tracked
 	RevealsShroud:
-		Range: 8c0
+		Range: 6c0
 	Armament:
 		Weapon: Devil'sTongue
 		LocalOffset: 685,300,580, 685,-300,580
@@ -207,11 +207,11 @@ nhowi:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 4
-		Speed: 85
+		TurnSpeed: 3
+		Speed: 80
 		Locomotor: tracked
 	RevealsShroud:
-		Range: 8c0
+		Range: 6c0
 	AttackFrontal:
 		TargetFrozenActors: True
 		ForceFireIgnoresActors: True
@@ -250,15 +250,15 @@ nstltnk:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 230
+		HP: 314
 	Armor:
-		Type: Heavy
+		Type: Medium
 	Mobile:
 		TurnSpeed: 9
 		Speed: 110
 		Locomotor: tracked
 	RevealsShroud:
-		Range: 8c0
+		Range: 8c667
 	Armament:
 		Weapon: DaggerOfNod
 		LocalOffset: 204,31,808, 204,-31,808
