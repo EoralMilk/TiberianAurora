@@ -244,13 +244,13 @@ nstltnk:
 		Prerequisites: ~vehicle.nod, ntpl
 		Description: \n 这种坦克采用了神秘技术令其可以在肉眼和雷达探测中隐形 \n 不攻击且不受攻击时隐形 \n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 1200
+		Cost: 1250
 	Tooltip:
 		Name: 以西结之轮
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 289
+		HP: 285
 	Armor:
 		Type: Heavy
 	Mobile:

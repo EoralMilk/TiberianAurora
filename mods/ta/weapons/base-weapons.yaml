@@ -29,14 +29,15 @@
 
 ^CommonAAMissile:
 	Inherits: ^CommonMissile
+	ReloadDelay: 12
 	ValidTargets: Air
 	Projectile: Missile
 		Arm: 2
 		CruiseAltitude: 8c0
 		RangeLimit: 18c512
 	Warhead@1Dam: SpreadDamage
-		Spread: 240
-		Damage: 75
+		Spread: 0c512
+		Damage: 15
 		ValidTargets: Air
 		Versus:
 			None: 100

@@ -4,7 +4,7 @@ apache:
 	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Valued:
-		Cost: 1150
+		Cost: 1050
 	Tooltip:
 		Name: 阿帕奇武装直升机
 	UpdatesPlayerStatistics:

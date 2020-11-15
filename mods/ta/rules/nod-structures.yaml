@@ -312,16 +312,16 @@ samsite:
 		Prerequisites: infantry_barracks, hq, ~structures.nod
 		Description: 特殊的防空装置，平时发射器处于重装甲的保护之下，当空域内出现敌军飞行器时将自行升起打击敌机。
 	Valued:
-		Cost: 600
+		Cost: 650
 	Tooltip:
 		Name: SAM防空导弹井
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
-		HP: 450
+		HP: 455
 	Armor:
-		Type: Steel
+		Type: Concrete
 	RevealsShroud:
 		Range: 9c0
 	Selectable:

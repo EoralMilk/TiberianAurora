@@ -131,7 +131,7 @@ LightTankCannonAP:
 Devil'sTongue:
 	Inherits: ^FlameWeapon
 	ReloadDelay: 60
-	Burst: 35
+	Burst: 36
 	BurstDelays: 1
 	Range: 4c512
 	Projectile: Bullet
@@ -160,18 +160,18 @@ DaggerOfNod:
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 435
-		Damage: 62
+		Spread: 0c450
+		Damage: 121
 		Versus:
-			None: 40
-			Flak: 40
-			Plate: 40
+			None: 25
+			Flak: 25
+			Plate: 25
 			Light: 100
-			Medium: 45
+			Medium: 30
 			Heavy: 75
-			Wood: 75
-			Steel: 60
-			Concrete: 75
+			Wood: 50
+			Steel: 40
+			Concrete: 40
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -253,7 +253,7 @@ RedEye:
 	Inherits: ^CommonAAMissile
 	Range: 12c0
 	Projectile: Missile
-		Speed: 400
+		Speed: 500
 		Arm: 3
 		RangeLimit: 18c512
 
@@ -263,7 +263,7 @@ ObeliskLaser:
 	Range: 9c512
 	FirstBurstTargetOffset: 0,-1600,0
 	FollowingBurstTargetOffset: 0,150,1
-	Burst: 22
+	Burst: 20
 	BurstDelays: 1
 	StartBurstReport: obelray1.aud
 	TargetActorCenter: true
@@ -275,7 +275,7 @@ ObeliskLaser:
 		HitAnimPalette: effect
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
-		Damage: 68
+		Damage: 69
 		Versus:
 			None: 200
 			Flak: 200
@@ -285,7 +285,7 @@ ObeliskLaser:
 			Heavy: 32
 			Wood: 40
 			Steel: 30
-			Concrete: 22
+			Concrete: 21
 			Drone: 200
 			Rocket: 100
 		DamageTypes: FlameDeath
@@ -375,7 +375,7 @@ HeliAAGun:
 	Projectile: Bullet
 		Inaccuracy: 250
 	Warhead@1Dam: SpreadDamage
-		Damage: 15
+		Damage: 18
 		ValidTargets: Air
 
 AC130VulcanFake:

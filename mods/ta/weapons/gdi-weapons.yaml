@@ -424,7 +424,7 @@ OrcaAGMissiles:
 	ValidTargets: Ground, Water
 	Range: 5c512
 	Burst: 2
-	BurstDelays: 2
+	BurstDelays: 0
 	ReloadDelay: 2
 	Report: bpatatta.wav
 	Projectile: Missile
@@ -450,7 +450,7 @@ OrcaAGMissiles:
 		CruiseAltitude: 5c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
-		Damage: 11
+		Damage: 12
 		Versus:
 			None: 25
 			Flak: 25
@@ -458,9 +458,9 @@ OrcaAGMissiles:
 			Light: 100
 			Medium: 75
 			Heavy: 75
-			Wood: 70
-			Steel: 70
-			Concrete: 77
+			Wood: 65
+			Steel: 55
+			Concrete: 45
 			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
