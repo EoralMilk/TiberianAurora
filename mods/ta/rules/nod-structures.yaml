@@ -319,7 +319,7 @@ samsite:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
-		HP: 455
+		HP: 485
 	Armor:
 		Type: Concrete
 	RevealsShroud:
