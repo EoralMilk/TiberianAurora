@@ -342,7 +342,7 @@ samsite:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 7
 		InitialFacing: 32
 		PreviewFacing: 32
 		RealignDelay: -1
