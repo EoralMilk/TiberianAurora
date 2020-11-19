@@ -29,7 +29,7 @@
 
 ^CommonAAMissile:
 	Inherits: ^CommonMissile
-	ReloadDelay: 70
+	ReloadDelay: 60
 	Burst: 6
 	BurstDelays: 6
 	ValidTargets: Air
