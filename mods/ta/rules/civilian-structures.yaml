@@ -57,3 +57,30 @@ cahosp:
 		Image: c_hospital
 		PlayerPalette: c_hospital
 
+
+cabiot:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^4x4Shape
+	Selectable:
+		Bounds: 220, 180, 0, -35
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Tooltip:
+		Name: 生化实验室
+	ProvidesPrerequisite@heal:
+		Prerequisite: biotech
+	EngineerRepairable:
+	Health:
+		HP: 800
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Concrete
+	TooltipDescription:
+		Description: 为步兵提供免疫泰伯利亚晶矿毒害的能力
+	WithIdleOverlay@lights:
+		Sequence: lights
+	RenderSprites:
+		Image: c_biotech
+		PlayerPalette: c_biotech

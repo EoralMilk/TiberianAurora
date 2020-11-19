@@ -34,3 +34,20 @@ c_hospital:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+c_biotech:
+	Defaults:
+		Offset: 3, -60, 60
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	lights: c_biotech-a
+		Length: 28
+		Tick: 150
+	icon: none_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
