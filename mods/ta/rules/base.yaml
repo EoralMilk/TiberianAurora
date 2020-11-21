@@ -350,6 +350,9 @@
 		DamageInterval: 16
 		DamageTypes: TiberiumDeath
 		RequiresCondition: !hazmatsuits
+	GrantConditionOnPrerequisite@BIOTECH:
+		Condition: hazmatsuits
+		Prerequisites: biotech
 	SelfHealing@HOSPITAL:
 		Step: 1
 		Delay: 20

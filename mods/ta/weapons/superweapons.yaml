@@ -1,29 +1,11 @@
 
 IonCannon:
 	Inherits@WarheadEff: ^HE_WarheadEff_Huge
-	# Projectile: InstantHit
-	# 	Blockable: false
-	Projectile: Missile
-		Blockable: false
-		Inaccuracy: 120
-		Shadow: false
-		CruiseAltitude: 2c0
-		VerticalRateOfTurn: 55
-		HorizontalRateOfTurn: 55
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		Gravity: 10
-		Speed: 300
-		Arm: 0
-		RangeLimit: 30c0
-		ExplodeWhenEmpty: true
-		TerrainHeightAware: true
-		AllowSnapping: true
 	ValidTargets: Ground, Water, Air, Wall
 	Warhead@Air_impact: SpreadDamage
-		Spread: 0c685
+		Spread: 0c800
 		Damage: 10000
-		Falloff: 100, 100, 75, 25
+		Falloff: 1000, 700, 500, 300, 150, 50, 0
 		Versus:
 			None: 100
 			Flak: 100

@@ -218,5 +218,5 @@ Player:
 	CaptureManagerBotModule:
 		RequiresCondition: enable-test-ai
 		CapturingActorTypes: eng
-		CapturableActorTypes: caoild, cahosp, fact, refinery, hq, ntpl, advhq
+		CapturableActorTypes: caoild, cahosp, cabiot, fact, refinery, hq, ntpl, advhq
 		CheckCaptureTargetsForVisibility: false

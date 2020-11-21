@@ -329,7 +329,7 @@ samsite:
 	Armament:
 		Weapon: RedEye
 		MuzzleSequence: muzzle
-		LocalOffset: 450,170,700, 450,0,700, 450,-170,700, 390,170,820, 390,0,820, 390,-170,820
+		LocalOffset: 450,170,760, 450,0,760, 450,-170,760, 390,170,1140, 390,0,1140, 390,-170,1140
 	AttackPopupTurreted:
 		CloseDelay: 125
 		DefaultFacing: 128
@@ -342,7 +342,7 @@ samsite:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 7
 		InitialFacing: 32
 		PreviewFacing: 32
 		RealignDelay: -1

@@ -154,7 +154,6 @@ c130:
 		HP: 1000
 	Armor:
 		Type: Heavy
-	WithFacingSpriteBody:
 	-RenderVoxels:
 	RenderSprites:
 		Image: n_c130
@@ -178,6 +177,7 @@ c130:
 		Sequence: shadow
 		Name: shadow
 		ForceToGround: true
+	WithFacingSpriteBody:
 	# WithShadow:
 	# 	RequiresCondition: airborne
 	# WithShadow@2:

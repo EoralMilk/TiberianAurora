@@ -198,7 +198,7 @@ MammothTankCannon:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Large
 	ReloadDelay: 100
-	Range: 5c768
+	Range: 6c0
 	Burst: 2
 	BurstDelays: 5
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
@@ -233,8 +233,8 @@ MammothTuskMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water, Air
-	Range: 5c896
-	Burst: 2
+	Range: 6c0
+	Burst: 4
 	BurstDelays: 4
 	ReloadDelay: 90
 	Projectile: Missile
