@@ -321,7 +321,7 @@ advgtwr:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 770
+		HP: 660
 	Armor:
 		Type: Concrete
 	RevealsShroud:

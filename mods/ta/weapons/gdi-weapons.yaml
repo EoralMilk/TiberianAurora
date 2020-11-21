@@ -198,7 +198,7 @@ MammothTankCannon:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Large
 	ReloadDelay: 100
-	Range: 5c512
+	Range: 5c768
 	Burst: 2
 	BurstDelays: 5
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
@@ -233,8 +233,8 @@ MammothTuskMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water, Air
-	Range: 7c0
-	Burst: 4
+	Range: 5c896
+	Burst: 2
 	BurstDelays: 4
 	ReloadDelay: 90
 	Projectile: Missile
@@ -249,17 +249,17 @@ MammothTuskMissile:
 		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 500
-		Damage: 12
+		Damage: 22
 		Versus:
 			None: 333
 			Flak: 333
 			Plate: 175
-			Light: 120
-			Medium: 70
-			Heavy: 50
-			Wood: 110
-			Steel: 70
-			Concrete: 70
+			Light: 100
+			Medium: 60
+			Heavy: 40
+			Wood: 100
+			Steel: 60
+			Concrete: 50
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -389,17 +389,17 @@ TowerMissile:
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c332
-		Damage: 30
+		Damage: 25
 		Versus:
 			None: 35
 			Flak: 25
 			Plate: 25
-			Light: 110
+			Light: 100
 			Medium: 85
-			Heavy: 85
+			Heavy: 70
 			Wood: 50
 			Steel: 40
-			Concrete: 30
+			Concrete: 33
 			Drone: 80
 			Rocket: 100
 		ValidTargets: Ground, Water, Air
