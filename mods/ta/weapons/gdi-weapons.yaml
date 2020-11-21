@@ -166,7 +166,7 @@ MediumTankCannonAP:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Medium
 	ReloadDelay: 77
-	Range: 6c0
+	Range: 5c512
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
 		Speed: 682
