@@ -387,6 +387,9 @@ hdstn01:
 		Name: AlringtonStones
 	MapEditorData:
 		Categories: Decoration
+	-ExternalCondition@OnFire:
+	-DamagedByTerrain:
+	-WithIdleOverlay@OnFire:
 
 lt_gen01:
 	Inherits: ^StreetLight
@@ -454,6 +457,9 @@ spkr01:
 		Name: Drive-In Speaker
 	MapEditorData:
 		Categories: Decoration
+	-ExternalCondition@OnFire:
+	-DamagedByTerrain:
+	-WithIdleOverlay@OnFire:
 
 carus02c:
 	Inherits: ^CivBuilding
