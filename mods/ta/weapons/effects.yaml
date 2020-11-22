@@ -65,6 +65,20 @@ ShellCasingDebris:
 
 
 
+^Spark:
+	ReloadDelay: 60
+	Range: 0c764
+	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
+	Projectile: Bullet
+		Blockable: true
+		Speed: 130, 150
+		ContrailLength: 5
+		ContrailWidth: 10
+		ContrailColor: FFD860
+		ContrailDelay: 0
+		LaunchAngle: 180, 230
+		ZOffset: 1024
+		Inaccuracy: 3000
 
 
 
@@ -143,6 +157,12 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: SmallCrater
 		InvalidTargets: Vehicle, Structure, Wall
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 7
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Ground, Water, Air
 
 
 
@@ -169,6 +189,7 @@ ShellCasingDebris:
 		Explosions: tiny_watersplash
 		ImpactSounds: gexpwasa.wav
 	-Warhead@EffSmu:
+	-Warhead@Spark: FireCluster
 
 
 ^AP_WarheadEff_Small:
@@ -194,6 +215,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 3
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
 
 ^AP_WarheadEff_Medium:
 	Inherits@WarheadLight: ^Flash_Medium
@@ -218,6 +244,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 7
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
 
 ^AP_WarheadEff_Large:
 	Inherits@WarheadLight: ^Flash_Large
@@ -242,6 +273,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 11
+		Dimensions: 5,5
+		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 
 ^AP_WarheadEff_Huge:
 	Inherits@WarheadLight: ^Flash_Large
@@ -266,6 +302,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 13
+		Dimensions: 5,5
+		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 
 # HE
 ^HE_WarheadEff_Small:
@@ -291,6 +332,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: SmallCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 3
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
 
 ^HE_WarheadEff_Medium:
 	Inherits@WarheadLight: ^Flash_Medium
@@ -315,6 +361,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 7
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
 
 ^HE_WarheadEff_Large:
 	Inherits@WarheadLight: ^Flash_Large
@@ -339,6 +390,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 11
+		Dimensions: 5,5
+		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 
 ^HE_WarheadEff_Huge:
 	Inherits@WarheadLight: ^Flash_Large
@@ -363,6 +419,11 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: LargeCrater
+	Warhead@Spark: FireCluster
+		Weapon: ^Spark
+		RandomClusterCount: 13
+		Dimensions: 5,5
+		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 
 
 ^Fire_01:
