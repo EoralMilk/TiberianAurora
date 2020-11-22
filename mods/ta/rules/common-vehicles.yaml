@@ -6,7 +6,7 @@ mcv:
 		Prerequisites: ~repairdepot
 		Description: Deploys into a Construction Yard.\n	Unarmed
 	Valued:
-		Cost: 3500
+		Cost: 2000
 	Tooltip:
 		Name: Mobile Construction Vehicle
 	Selectable:
