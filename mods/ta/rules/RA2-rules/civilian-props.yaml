@@ -390,6 +390,7 @@ hdstn01:
 	-ExternalCondition@OnFire:
 	-DamagedByTerrain:
 	-WithIdleOverlay@OnFire:
+	-SpawnActorOnDeath:
 
 lt_gen01:
 	Inherits: ^StreetLight
@@ -460,6 +461,7 @@ spkr01:
 	-ExternalCondition@OnFire:
 	-DamagedByTerrain:
 	-WithIdleOverlay@OnFire:
+	-SpawnActorOnDeath:
 
 carus02c:
 	Inherits: ^CivBuilding
