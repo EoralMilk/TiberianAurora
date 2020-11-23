@@ -115,7 +115,7 @@ HumveeMG_eff_fire:
 	Projectile: Missile
 		RangeLimit: 20c409
 		Inaccuracy: 500
-
+	-Warhead@1Dam:
 
 HumvMG-Casing:
 	Inherits: ^BulletCasing
@@ -351,7 +351,7 @@ HMG-eff_fire:
 	AfterFireSoundDelay: 2
 	AfterFireSound: Shells_falls.wav
 	Projectile: Missile
-		RangeLimit: 20c409
+		CruiseAltitude: 3c512
 		Inaccuracy: 800
 		Blockable: true
 	Warhead@Eff_HitMetel: CreateEffect
@@ -359,6 +359,7 @@ HMG-eff_fire:
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
 		ValidTargets: Metel
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
+	-Warhead@1Dam:
 
 HMG-Casing:
 	Inherits: ^BulletCasing

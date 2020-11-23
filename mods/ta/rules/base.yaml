@@ -95,7 +95,10 @@
 		RequiresCondition: wheelmoving
 	Targetable@materials:
 		TargetTypes: Metel
-
+	ThrowsShrapnel:
+		Weapons: dbris1lg, dbris1sm, dbris5sm, dbris5lg, dbris6sm, dbris6lg
+		Pieces: 2,6
+		Range: 2c0, 5c0
 
 ^TurretedVehicle:
 	Inherits: ^SpiritVehicle
@@ -187,6 +190,10 @@
 	Explodes:
 		Weapon: SmallExplosion
 		EmptyWeapon: SmallExplosion
+	ThrowsShrapnel:
+		Weapons: dbris1lg, dbris1sm, dbris5sm, dbris5lg, dbris6sm, dbris6lg
+		Pieces: 2,6
+		Range: 2c0, 3c0
 
 ^CommonAircraft:
 	Inherits@1: ^ExistsInWorld
@@ -251,7 +258,10 @@
 	Explodes:
 		Weapon: SmallExplosion
 		EmptyWeapon: SmallExplosion
-
+	ThrowsShrapnel:
+		Weapons: dbris1lg, dbris1sm, dbris5sm, dbris5lg, dbris6sm, dbris6lg
+		Pieces: 2,6
+		Range: 2c0, 4c0
 
 ^Helicopter:
 	Inherits: ^CommonAircraft
@@ -310,7 +320,10 @@
 	Explodes:
 		Weapon: SmallExplosion
 		EmptyWeapon: SmallExplosion
-
+	ThrowsShrapnel:
+		Weapons: dbris1lg, dbris1sm, dbris5sm, dbris5lg, dbris6sm, dbris6lg
+		Pieces: 2,6
+		Range: 2c0, 3c0
 
 ^CommonInfantry:
 	Inherits@1: ^ExistsInWorld

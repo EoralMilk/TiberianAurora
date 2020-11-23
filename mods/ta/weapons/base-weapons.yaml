@@ -78,19 +78,22 @@
 	Projectile: Missile
 		Blockable: true
 		Image: bulletsmall
-		# ContrailLength: 8
-		# ContrailWidth: 24
-		CruiseAltitude: 2c0
-		VerticalRateOfTurn: 100
-		HorizontalRateOfTurn: 100
+		ContrailLength: 8
+		ContrailWidth: 24
+		CruiseAltitude: 2c512
+		VerticalRateOfTurn: 50
+		HorizontalRateOfTurn: 50
 		MinimumLaunchAngle: 255
 		MaximumLaunchAngle: 255
+		MinimumLaunchSpeed: 1000
+		MaximumLaunchSpeed: 1000
 		Speed: 1000
+		Acceleration: 0
 		RangeLimit: 20c409
 		TerrainHeightAware: true
 		AllowSnapping: true
 	Warhead@1Dam: SpreadDamage
-		Damage: 30
+		Damage: 0
 		Spread: 0c68
 		Versus:
 			None: 100

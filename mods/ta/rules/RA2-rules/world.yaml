@@ -235,24 +235,27 @@ World:
 		Type: MediumScorch
 		Sequence: mediumscorches
 		SmokeType: mediumfire
-		SmokePercentage: 75
+		SmokePercentage: 50
 	SmudgeLayer@largescorch:
 		Type: LargeScorch
 		Sequence: largescorches
 		SmokeType: largefire
-		SmokePercentage: 100
+		SmokePercentage: 50
 	SmudgeLayer@smallcrater:
 		Type: SmallCrater
 		SmokeType: smallsmoke
 		Sequence: smallcraters
+		SmokePercentage: 0
 	SmudgeLayer@mediumcrater:
 		Type: MediumCrater
 		SmokeType: smallsmoke
 		Sequence: mediumcraters
+		SmokePercentage: 0
 	SmudgeLayer@largecrater:
 		Type: LargeCrater
 		SmokeType: largesmoke
 		Sequence: largecraters
+		SmokePercentage: 0
 	ResourceLayer:
 	ResourceRenderer:
 		RenderTypes: Ore, Gems

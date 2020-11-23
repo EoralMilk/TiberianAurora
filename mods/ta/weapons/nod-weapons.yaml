@@ -54,6 +54,7 @@ BuggyMG_eff_fire:
 	Projectile: Missile
 		Inaccuracy: 500
 		RangeLimit: 20c409
+	-Warhead@1Dam:
 
 Buggy-Casing:
 	Inherits: ^BulletCasing

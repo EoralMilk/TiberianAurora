@@ -172,10 +172,12 @@ zbomb:
 largesmoke:
 	idle: lgrysmk1
 		Length: *
+		Tick: 70
 
 smallsmoke:
 	idle: sgrysmk1
 		Length: *
+		Tick: 70
 
 nukesmoke:
 	idle: nukepuff

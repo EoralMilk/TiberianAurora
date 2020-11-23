@@ -74,12 +74,38 @@ ShellCasingDebris:
 		Speed: 130, 150
 		ContrailLength: 5
 		ContrailWidth: 10
-		ContrailColor: FFD860
+		ContrailColor: FFF0A0
 		ContrailDelay: 0
 		LaunchAngle: 180, 230
 		ZOffset: 1024
-		Inaccuracy: 3000
+		Inaccuracy: 900
+		BounceCount: 2
+		BounceRangeModifier: 10
 
+^Smoke:
+	ReloadDelay: 60
+	Range: 0c764
+	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
+	Projectile: Bullet
+		# TrailImage: smallsmoke
+		# TrailDelay: 1
+		# TrailInterval: 1
+		# TrailPalette: effect80alpha
+		Image: smallsmoke
+		Palette: effect60alpha
+		Blockable: true
+		Speed: 12, 35
+		LaunchAngle: 10, 23
+		ZOffset: 1024
+		Inaccuracy: 500
+
+
+^SmokeBig:
+	Inherits: ^Smoke
+	Projectile: Bullet
+		Image: largesmoke
+		Speed: 10, 30
+		LaunchAngle: 10, 23
 
 
 # piff
@@ -162,7 +188,15 @@ ShellCasingDebris:
 		RandomClusterCount: 7
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Metel
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water
+	Warhead@Smoke: FireCluster
+		Weapon: ^Smoke
+		RandomClusterCount: 7
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Soil
+		InvalidTargets: Metel, Stone, Concrete, Meat, Water
 
 
 
