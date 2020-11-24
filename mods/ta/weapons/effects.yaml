@@ -144,7 +144,7 @@ ShellCasingDebris:
 		Explosions: flash_tiny
 		ExplosionPalette: gray_alpha
 		InvalidTargets: Soil, Water
-		ImpactActors: false
+		ImpactActors: true
 
 
 ^WarheadEff:

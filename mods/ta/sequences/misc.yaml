@@ -10,7 +10,7 @@ flameall:
 		Length: 19
 		Facings: -8
 		Tick: 160
-		ZOffset: 1023
+		ZOffset: 1025
 		BlendMode: Additive
 
 chamall:
@@ -18,7 +18,7 @@ chamall:
 		Length: 19
 		Facings: -8
 		Tick: 160
-		ZOffset: 1023
+		ZOffset: 1025
 		# BlendMode: Additive
 
 v3trail:
@@ -58,27 +58,32 @@ largefire:
 		BlendMode: Additive
 		Tick: 150
 		Length: *
+		ZOffset: 2048
 
 mediumfire:
 	idle: fire02
 		BlendMode: Additive
 		Tick: 150
 		Length: *
+		ZOffset: 2048
 
 smallfire:
 	idle: fire03
 		BlendMode: Additive
 		Tick: 150
 		Length: *
+		ZOffset: 2048
 
 heal:
 	idle:
+		ZOffset: 2048
 
 explosion:
 	Defaults:
 		Length: *
 		Tick: 60
-		Offset: 0, 0, 80
+		Offset: 0, 0, 40
+		ZOffset: 2048
 	building: twlt070
 		Offset: 0, 0, 40
 	ionring: ring1

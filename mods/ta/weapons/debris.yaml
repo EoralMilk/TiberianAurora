@@ -12,7 +12,7 @@
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ReloadDelay: 60
 	Range: 0c764
-	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
+	ValidTargets: Ground, Water
 	Projectile: Bullet
 		Speed: 130, 150
 		Inaccuracy: 3000
@@ -42,8 +42,11 @@
 			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water
 	Warhead@Smoke: FireCluster
 		RandomClusterCount: 1
+		ValidTargets: Ground, Water
+		ImpactActors: false
 
 
 dbris1lg:
@@ -51,10 +54,20 @@ dbris1lg:
 	Projectile: Bullet
 		Image: dbris1lg
 
+dbris1lgAir:
+	Inherits: dbris1lg
+	Projectile: Bullet
+		Inaccuracy: 1000
+
 dbris1sm:
 	Inherits: ^debrisProjectile
 	Projectile: Bullet
 		Image: dbris1sm
+
+dbris1smAir:
+	Inherits: dbris1sm
+	Projectile: Bullet
+		Inaccuracy: 1000
 
 dbris2lg:
 	Inherits: ^debrisProjectile
@@ -91,10 +104,20 @@ dbris5lg:
 	Projectile: Bullet
 		Image: dbris5lg
 
+dbris5lgAir:
+	Inherits: dbris5lg
+	Projectile: Bullet
+		Inaccuracy: 1000
+
 dbris5sm:
 	Inherits: ^debrisProjectile
 	Projectile: Bullet
 		Image: dbris5sm
+
+dbris5smAir:
+	Inherits: dbris5sm
+	Projectile: Bullet
+		Inaccuracy: 1000
 
 dbris6lg:
 	Inherits: ^debrisProjectile

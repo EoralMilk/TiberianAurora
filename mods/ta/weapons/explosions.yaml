@@ -164,6 +164,30 @@ HugeExplosion:
 AirExplosion:
 	Inherits: SmallExplosion
 	-Warhead@Smoke:
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5lgAir
+		RandomClusterCount: 1
+		Dimensions: 1,1
+		Footprint: x
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris5smAir
+		RandomClusterCount: 1
+		Dimensions: 1,1
+		Footprint: x
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris3: FireCluster
+		Weapon: dbris1lgAir
+		RandomClusterCount: 1
+		Dimensions: 1,1
+		Footprint: x
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris4: FireCluster
+		Weapon: dbris1smAir
+		RandomClusterCount: 1
+		Dimensions: 1,1
+		Footprint: x
+		ValidTargets: Ground, Water, Air
 
 
 TiberiumExplosion:
