@@ -94,6 +94,10 @@ bzkier:
 		Weapon: APBazooka
 		LocalOffset: 251,70,1024
 		MuzzleSequence: muzzle
+	Armament@AA:
+		Weapon: APBazookaAA
+		LocalOffset: 251,70,1024
+		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	TakeCover:
 		SpeedModifier: 50

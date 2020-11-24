@@ -90,6 +90,10 @@ ncycle:
 		Weapon: CycleMissile
 		LocalOffset: -141,123,720, -141,-123,720
 		MuzzleSequence: muzzle
+	Armament@AA:
+		Weapon: CycleAAMissile
+		LocalOffset: -141,123,720, -141,-123,720
+		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	RenderSprites:
 		Image: n_cycle
@@ -286,6 +290,10 @@ nstltnk:
 		Range: 8c667
 	Armament:
 		Weapon: DaggerOfNod
+		LocalOffset: 204,31,808, 204,-31,808
+		MuzzleSequence: muzzle
+	Armament@AA:
+		Weapon: DaggerOfNodAA
 		LocalOffset: 204,31,808, 204,-31,808
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:

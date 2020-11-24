@@ -85,7 +85,7 @@ ShellCasingDebris:
 ^Smoke:
 	ReloadDelay: 60
 	Range: 0c764
-	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
+	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water
 	Projectile: Bullet
 		# TrailImage: smallsmoke
 		# TrailDelay: 1
@@ -196,7 +196,7 @@ ShellCasingDebris:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
 		ValidTargets: Soil
-		InvalidTargets: Metel, Stone, Concrete, Meat, Water
+		InvalidTargets: Metel, Stone, Concrete, Meat, Water, Air, AirHit
 
 
 
@@ -224,6 +224,7 @@ ShellCasingDebris:
 		ImpactSounds: gexpwasa.wav
 	-Warhead@EffSmu:
 	-Warhead@Spark: FireCluster
+	-Warhead@Smoke: FireCluster
 
 
 ^AP_WarheadEff_Small:
@@ -254,6 +255,8 @@ ShellCasingDebris:
 		RandomClusterCount: 3
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 1
 
 ^AP_WarheadEff_Medium:
 	Inherits@WarheadLight: ^Flash_Medium
@@ -283,6 +286,8 @@ ShellCasingDebris:
 		RandomClusterCount: 7
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 2
 
 ^AP_WarheadEff_Large:
 	Inherits@WarheadLight: ^Flash_Large
@@ -312,6 +317,8 @@ ShellCasingDebris:
 		RandomClusterCount: 11
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 3
 
 ^AP_WarheadEff_Huge:
 	Inherits@WarheadLight: ^Flash_Large
@@ -341,6 +348,8 @@ ShellCasingDebris:
 		RandomClusterCount: 13
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 5
 
 # HE
 ^HE_WarheadEff_Small:
@@ -371,6 +380,8 @@ ShellCasingDebris:
 		RandomClusterCount: 3
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 2
 
 ^HE_WarheadEff_Medium:
 	Inherits@WarheadLight: ^Flash_Medium
@@ -400,6 +411,8 @@ ShellCasingDebris:
 		RandomClusterCount: 7
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 3
 
 ^HE_WarheadEff_Large:
 	Inherits@WarheadLight: ^Flash_Large
@@ -429,6 +442,8 @@ ShellCasingDebris:
 		RandomClusterCount: 11
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 4
 
 ^HE_WarheadEff_Huge:
 	Inherits@WarheadLight: ^Flash_Large
@@ -458,6 +473,8 @@ ShellCasingDebris:
 		RandomClusterCount: 13
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 6
 
 
 ^Fire_01:

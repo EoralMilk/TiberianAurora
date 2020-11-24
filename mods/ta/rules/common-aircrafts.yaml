@@ -95,6 +95,3 @@ transport.Husk:
 		FactionImages:
 			gdi: g_trans
 			nod: n_trans
-	Explodes:
-		Weapon: LargeExplosion
-		EmptyWeapon: LargeExplosion

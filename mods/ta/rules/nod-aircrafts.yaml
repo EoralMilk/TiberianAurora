@@ -119,9 +119,6 @@ apache.Husk:
 	RenderSprites:
 		Image: n_apache
 		PlayerPalette: n_apache
-	Explodes:
-		Weapon: LargeExplosion
-		EmptyWeapon: LargeExplosion
 
 
 

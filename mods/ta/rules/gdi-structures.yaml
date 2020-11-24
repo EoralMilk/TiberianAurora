@@ -332,6 +332,10 @@ advgtwr:
 		Weapon: TowerMissile
 		MuzzleSequence: muzzle
 		LocalOffset: 190,35,2800, 190,-35,2800, 190,110,2800, 190,-110,2800
+	Armament@AA:
+		Weapon: TowerAAMissile
+		MuzzleSequence: muzzle
+		LocalOffset: 190,35,2800, 190,-35,2800, 190,110,2800, 190,-110,2800
 	WithSpriteTurret@shadow:
 		Sequence: shadow
 		RequiresCondition: !build-incomplete

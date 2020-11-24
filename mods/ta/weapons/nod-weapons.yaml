@@ -70,7 +70,7 @@ Buggy-Casing:
 CycleMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^AP_WarheadEff_Small
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water
 	Range: 6c526
 	MinRange: 0c512
 	Burst: 2
@@ -104,6 +104,12 @@ CycleMissile:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 		ValidTargets: Ground, Water, Air
 
+CycleAAMissile:
+	Inherits: CycleMissile
+	ValidTargets: Air
+	-Warhead@Smoke:
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
 
 LightTankCannonAP:
 	Inherits: ^CommonCannon
@@ -145,7 +151,7 @@ Devil'sTongue:
 DaggerOfNod:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water
 	Range: 6c512
 	Burst: 2
 	BurstDelays: 0
@@ -162,7 +168,7 @@ DaggerOfNod:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c450
-		Damage: 12100
+		Damage: 4000
 		Versus:
 			None: 25
 			Flak: 25
@@ -177,6 +183,13 @@ DaggerOfNod:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 		ValidTargets: Ground, Water, Air
+
+DaggerOfNodAA:
+	Inherits: DaggerOfNod
+	ValidTargets: Air
+	-Warhead@Smoke:
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
 
 HowitzerCannonHE:
 	Inherits: ^CommonCannon
@@ -257,7 +270,9 @@ RedEye:
 		Speed: 500
 		Arm: 3
 		RangeLimit: 18c512
-
+	-Warhead@Smoke:
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
 
 ObeliskLaser:
 	ReloadDelay: 121

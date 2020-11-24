@@ -42,6 +42,8 @@
 			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@Smoke: FireCluster
+		RandomClusterCount: 1
 
 
 dbris1lg:

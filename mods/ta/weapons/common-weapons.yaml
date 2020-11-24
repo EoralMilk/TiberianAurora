@@ -63,7 +63,7 @@ GAU-Casing:
 APBazooka:
 	Inherits: ^CommonMissile
 	Inherits: ^AP_WarheadEff_Small
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water
 	ReloadDelay: 50
 	Range: 6c0
 	MinRange: 0c512
@@ -96,3 +96,10 @@ APBazooka:
 			Rocket: 100
 		ValidTargets: Ground, Water, Air
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+
+
+APBazookaAA:
+	Inherits: APBazooka
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air

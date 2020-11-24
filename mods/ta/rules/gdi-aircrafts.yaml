@@ -104,9 +104,7 @@ orcafighter.Husk:
 	RenderSprites:
 		Image: g_orca
 		PlayerPalette: g_orca
-	Explodes:
-		Weapon: LargeExplosion
-		EmptyWeapon: LargeExplosion
+
 
 
 

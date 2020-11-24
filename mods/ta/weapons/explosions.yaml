@@ -161,6 +161,10 @@ HugeExplosion:
 		ValidTargets: Ground, Water, Air
 
 
+AirExplosion:
+	Inherits: SmallExplosion
+	-Warhead@Smoke:
+
 
 TiberiumExplosion:
 	Inherits: ^DamagingExplosion

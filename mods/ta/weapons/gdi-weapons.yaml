@@ -17,7 +17,7 @@ HEGrenade:
 		ZOffset: 1024
 		ContrailLength: 0
 		ContrailWidth: 0
-		Blockable: false
+		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Damage: 5000
 		Spread: 0c580
@@ -232,7 +232,7 @@ Mammoth-Casing:
 MammothTuskMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water
 	Range: 6c0
 	Burst: 4
 	BurstDelays: 4
@@ -265,6 +265,12 @@ MammothTuskMissile:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 		ValidTargets: Ground, Water, Air
 
+MammothTuskAAMissile:
+	Inherits: MammothTuskMissile
+	ValidTargets: Air
+	-Warhead@Smoke:
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
 
 
 ManyRockets:
@@ -374,7 +380,7 @@ HMG-Casing:
 TowerMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water
 	Range: 9c512
 	ReloadDelay: 11
 	Projectile: Missile
@@ -416,6 +422,13 @@ TowerMissile:
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater
 
+
+TowerAAMissile:
+	Inherits: TowerMissile
+	ValidTargets: Air
+	-Warhead@Smoke:
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
 
 # aircraft
 
@@ -475,7 +488,9 @@ OrcaAAMissiles:
 	Projectile: Missile
 		Arm: 0
 		Speed: 350
-
+	-Warhead@Smoke:
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
 
 A10VulcanFake:
 	ReloadDelay: 100
@@ -628,3 +643,4 @@ GunBoatMissile:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 		ValidTargets: Ground, Water, Air
+	-Warhead@Smoke:

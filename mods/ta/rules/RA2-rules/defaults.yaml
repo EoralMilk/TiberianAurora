@@ -1014,18 +1014,6 @@
 	Targetable@materials:
 		TargetTypes: Metel
 
-^HelicopterHusk:
-	Inherits: ^Husk
-	# SmokeTrailWhenDamaged:
-	# 	Interval: 3
-	# 	Delay: 2
-	# 	Sprite: v3trail
-	# 	Palette: effect
-	# 	MinDamage: Undamaged
-	Aircraft:
-		CanHover: true
-		VTOL: true
-		CanSlide: True
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld

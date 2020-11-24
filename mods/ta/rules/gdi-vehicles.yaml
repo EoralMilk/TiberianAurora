@@ -257,8 +257,11 @@ gmmtnk:
 		Recoil: 170
 		RecoilRecovery: 42
 		MuzzleSequence: muzzle
-	Armament@antiair:
+	Armament@AGtusk:
 		Weapon: MammothTuskMissile
+		LocalOffset: 20,371,866, 20,-371,866
+	Armament@AAtusk:
+		Weapon: MammothTuskAAMissile
 		LocalOffset: 20,371,866, 20,-371,866
 	WithMuzzleOverlay:
 	Turreted:
