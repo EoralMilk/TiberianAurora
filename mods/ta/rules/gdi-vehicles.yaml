@@ -13,7 +13,7 @@ ghumv:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 160
+		HP: 16000
 	Armor:
 		Type: Light
 	Mobile:
@@ -44,6 +44,12 @@ ghumv:
 	RenderSprites:
 		Image: g_humvee
 		PlayerPalette: g_humvee
+	WithIdleOverlay@OnFire1:
+		Offset: -200,120,500
+	WithIdleOverlay@OnFire2:
+		Offset: 230,50,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-130,340
 	GrantConditionOnMovement:
 		Condition: wheelmoving
 	# AmbientSound@idle:
@@ -68,7 +74,7 @@ gapc:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 190
+		HP: 19000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -107,7 +113,12 @@ gapc:
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
-
+	WithIdleOverlay@OnFire1:
+		Offset: -300,120,700
+	WithIdleOverlay@OnFire2:
+		Offset: 440,150,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-130,640
 
 gtank:
 	Inherits: ^TurretedVehicle
@@ -124,7 +135,7 @@ gtank:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 444
+		HP: 44400
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -155,7 +166,12 @@ gtank:
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
-
+	WithIdleOverlay@OnFire1:
+		Offset: -400,320,600
+	WithIdleOverlay@OnFire2:
+		Offset: 430,250,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-260,340
 
 gmlrs:
 	Inherits: ^AtkFrontalVehicle
@@ -172,7 +188,7 @@ gmlrs:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 120
+		HP: 12000
 	Armor:
 		Type: Light
 	Mobile:
@@ -199,6 +215,12 @@ gmlrs:
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: MediumExplosion
+	WithIdleOverlay@OnFire1:
+		Offset: -400,320,600
+	WithIdleOverlay@OnFire2:
+		Offset: 430,250,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-260,340
 
 gmmtnk:
 	Inherits: ^TurretedVehicle
@@ -215,9 +237,9 @@ gmmtnk:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 777
+		HP: 77700
 	SelfHealing:
-		Step: 1
+		Step: 100
 		Delay: 5
 		HealIfBelow: 50
 		DamageCooldown: 200
@@ -251,6 +273,12 @@ gmmtnk:
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: MediumExplosion
+	WithIdleOverlay@OnFire1:
+		Offset: -400,320,600
+	WithIdleOverlay@OnFire2:
+		Offset: 430,250,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-260,340
 
 gunboat:
 	Inherits: ^TurretedVehicle
@@ -267,7 +295,7 @@ gunboat:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 1000
+		HP: 100000
 	Armor:
 		Type: Heavy
 	Mobile:

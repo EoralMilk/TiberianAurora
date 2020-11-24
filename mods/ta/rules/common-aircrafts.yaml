@@ -18,7 +18,7 @@ transport:
 		AltitudeVelocity: 0c100
 		CruiseAltitude: 3c512
 	Health:
-		HP: 100
+		HP: 10000
 	Armor:
 		Type: Light
 	RevealsShroud:

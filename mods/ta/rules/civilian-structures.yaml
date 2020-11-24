@@ -13,7 +13,7 @@ caoild:
 	Tooltip:
 		Name: 油井
 	Health:
-		HP: 500
+		HP: 50000
 	TooltipDescription:
 		Description: 间歇性提供少量资金
 	RevealsShroud:
@@ -44,7 +44,7 @@ cahosp:
 		Prerequisite: hospheal
 	EngineerRepairable:
 	Health:
-		HP: 800
+		HP: 80000
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -72,7 +72,7 @@ cabiot:
 		Prerequisite: biotech
 	EngineerRepairable:
 	Health:
-		HP: 800
+		HP: 80000
 	RevealsShroud:
 		Range: 6c0
 	Armor:

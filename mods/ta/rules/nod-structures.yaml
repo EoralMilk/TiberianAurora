@@ -22,7 +22,7 @@ nhand:
 		Footprint: xxx xxx
 		Dimensions: 3,2
 	Health:
-		HP: 600
+		HP: 60000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -97,7 +97,7 @@ airstrip:
 		Footprint: xxx___ xxx=== xxx=== xxx=== 
 		Dimensions: 6,4
 	Health:
-		HP: 1300
+		HP: 130000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -171,7 +171,7 @@ ntpl:
 		Footprint: xxxx== xxxxx= xxxxx= xxxxx= xxxxx= xxxx==
 		Dimensions: 6,6
 	Health:
-		HP: 3000
+		HP: 300000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -256,7 +256,7 @@ ntur:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 500
+		HP: 50000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -320,7 +320,7 @@ samsite:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
-		HP: 485
+		HP: 48500
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -383,14 +383,14 @@ obelisk:
 	Selectable:
 		Bounds: 44, 102, 0, -40
 	Health:
-		HP: 999
+		HP: 99900
 	Armor:
 		Type: Concrete
 	RevealsShroud:
 		Range: 9c512
 	GrantConditionOnHealth:
 		Condition: heavilydamaged
-		MaxHP: 299
+		MaxHP: 29900
 	ArmamentWithRa2Lase:
 		# Armament:
 		RequiresCondition: !heavilydamaged

@@ -19,7 +19,7 @@ HEGrenade:
 		ContrailWidth: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 50
+		Damage: 5000
 		Spread: 0c580
 		Versus:
 			None: 100
@@ -48,7 +48,7 @@ SniperRF:
 		Speed: 1400
 		LaunchAngle: 5
 	Warhead@1Dam: SpreadDamage
-		Damage: 120
+		Damage: 12000
 		Spread: 0c68
 		Versus:
 			None: 100
@@ -76,7 +76,7 @@ HumveeMG_damage:
 	Projectile: Missile
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
-		Damage: 16
+		Damage: 1600
 		Spread: 0c256
 		Versus:
 			None: 100
@@ -138,7 +138,7 @@ APCCannon:
 		Speed: 382
 		LaunchAngle: 80
 	Warhead@1Dam: SpreadDamage
-		Damage: 35
+		Damage: 3500
 		Spread: 0c512
 		Versus:
 			None: 100
@@ -171,7 +171,7 @@ MediumTankCannonAP:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 70
+		Damage: 7000
 		Versus:
 			None: 25
 			Flak: 25
@@ -205,7 +205,7 @@ MammothTankCannon:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 100
+		Damage: 10000
 		Spread: 0c240
 		Versus:
 			None: 25
@@ -249,7 +249,7 @@ MammothTuskMissile:
 		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 500
-		Damage: 22
+		Damage: 2200
 		Versus:
 			None: 333
 			Flak: 333
@@ -285,7 +285,7 @@ ManyRockets:
 		LaunchAngle: 180
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 90
+		Damage: 9000
 		Spread: 0c512
 		Versus:
 			None: 100
@@ -312,7 +312,7 @@ HMG-damage:
 	Projectile: Missile
 		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
-		Damage: 20
+		Damage: 2000
 		Spread: 0c512
 		Versus:
 			None: 100
@@ -390,7 +390,7 @@ TowerMissile:
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c332
-		Damage: 25
+		Damage: 2500
 		Versus:
 			None: 35
 			Flak: 25
@@ -451,7 +451,7 @@ OrcaAGMissiles:
 		CruiseAltitude: 5c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
-		Damage: 12
+		Damage: 1200
 		Versus:
 			None: 25
 			Flak: 25
@@ -519,7 +519,7 @@ A10Vulcan:
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 60
+		Damage: 6000
 		Spread: 0c366
 		Versus:
 			None: 100
@@ -557,7 +557,7 @@ A10Napalm:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
-		Damage: 170
+		Damage: 17000
 		Versus:
 			None: 100
 			Flak: 100
@@ -613,7 +613,7 @@ GunBoatMissile:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
-		Damage: 75
+		Damage: 7500
 		Versus:
 			None: 100
 			Flak: 100

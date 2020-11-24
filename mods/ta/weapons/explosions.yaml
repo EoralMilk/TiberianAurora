@@ -2,7 +2,7 @@
 ^DamagingExplosion:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
-		Damage: 40
+		Damage: 4000
 		Versus:
 			None: 100
 			Flak: 80
@@ -23,7 +23,7 @@ SmallExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c256
-		Damage: 30
+		Damage: 3000
 		Versus:
 			None: 100
 			Flak: 80
@@ -52,7 +52,7 @@ MediumExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
-		Damage: 70
+		Damage: 7000
 		Versus:
 			None: 100
 			Flak: 80
@@ -87,7 +87,7 @@ LargeExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
-		Damage: 150
+		Damage: 15000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
@@ -124,7 +124,7 @@ HugeExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c625
-		Damage: 200
+		Damage: 20000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
@@ -168,7 +168,7 @@ TiberiumExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c652
-		Damage: 40
+		Damage: 4000
 		Versus:
 			Wood: 70
 			Heavy: 20
@@ -197,7 +197,7 @@ GrdExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
-		Damage: 150
+		Damage: 15000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
@@ -222,7 +222,7 @@ FlameExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
-		Damage: 110
+		Damage: 11000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
@@ -245,7 +245,7 @@ FlameTankExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
-		Damage: 110
+		Damage: 11000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
@@ -288,7 +288,7 @@ FlameCluster:
 		Speed: 110
 		-Image:
 	Warhead@1Dam: SpreadDamage
-		Damage: 15
+		Damage: 1500
 
 
 
@@ -297,7 +297,7 @@ ChamExplosion:
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c368
-		Damage: 8
+		Damage: 8000
 		ValidTargets: Ground, Water, Tree
 		InvalidTargets: Wall
 		Versus:
@@ -326,8 +326,10 @@ ChemCluster:
 		Inaccuracy: 1800
 		Speed: 60
 	Warhead@1Dam: SpreadDamage
-		Damage: 15
+		Damage: 1500
 
+BuildingExplodeTransition:
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
 
 
 BuildingExplode:
@@ -336,7 +338,7 @@ BuildingExplode:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
-		Damage: 10
+		Damage: 1000
 		Versus:
 			None: 100
 			Flak: 80
@@ -413,7 +415,7 @@ FlameSea:
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
-		Damage: 20
+		Damage: 2000
 		Versus:
 			None: 100
 			Flak: 80
@@ -447,7 +449,7 @@ FlameWave:
 		-Image:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 1000
 		Spread: 0c512
 	Warhead@FireWave: FireCluster
 		Weapon: FlameCluster
@@ -470,7 +472,7 @@ FlameInfection:
 		Inaccuracy: 800
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 1000
 		Spread: 0c256
 	Warhead@FireWave: FireCluster
 		Delay: 5

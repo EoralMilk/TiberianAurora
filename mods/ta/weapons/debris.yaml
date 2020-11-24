@@ -27,7 +27,7 @@
 		# ContrailWidth: 45
 		# ContrailColor: FFFFB1
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 500
 		Spread: 0c580
 		Versus:
 			None: 100

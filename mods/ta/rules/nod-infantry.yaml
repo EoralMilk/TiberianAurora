@@ -21,7 +21,7 @@ flamet:
 	Armor:
 		Type: Plate
 	Health:
-		HP: 130
+		HP: 13000
 	Passenger:
 		PipType: Red
 	RevealsShroud:
@@ -31,8 +31,6 @@ flamet:
 	Armament@primary:
 		Weapon: Flamethrower
 		LocalOffset: 300,50,600
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
@@ -75,11 +73,10 @@ chemict:
 		Bounds: 20, 30, 0, -11
 	Armor:
 		Type: Plate
-	GrantConditionOnTerrain@HAZMAT:
+	GrantCondition@HAZMAT:
 		Condition: hazmatsuits
-		TerrainTypes: Ore
 	Health:
-		HP: 150
+		HP: 15000
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -89,8 +86,6 @@ chemict:
 	Armament@primary:
 		Weapon: Chemspray
 		LocalOffset: 300,50,600
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:

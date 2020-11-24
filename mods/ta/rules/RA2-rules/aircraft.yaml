@@ -7,7 +7,7 @@ shad:
 	Selectable:
 		Bounds: 70,60,0,-20
 	Health:
-		HP: 175
+		HP: 17500
 	Armor:
 		Type: Light
 	Armament:
@@ -95,7 +95,7 @@ zep:
 		VTOL: true
 		CanSlide: True
 	Health:
-		HP: 2000
+		HP: 200000
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -163,7 +163,7 @@ orca:
 	Selectable:
 		Bounds: 30,24
 	Health:
-		HP: 150
+		HP: 15000
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -216,7 +216,7 @@ beag:
 	Armament:
 		Weapon: Maverick2
 	Health:
-		HP: 200
+		HP: 20000
 	Voiced:
 		VoiceSet: BlackEagleVoice
 	RenderSprites:
@@ -251,7 +251,7 @@ pdplane:
 		TurnSpeed: 5
 		Speed: 225
 	Health:
-		HP: 400
+		HP: 40000
 	Armor:
 		Type: Light
 	RenderSprites:
@@ -286,7 +286,7 @@ hornet:
 	Interactable:
 		Bounds: 15,12
 	Health:
-		HP: 75
+		HP: 7500
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -342,7 +342,7 @@ asw:
 	Tooltip:
 		Name: Osprey
 	Health:
-		HP: 135
+		HP: 13500
 	Armor:
 		Type: Light
 	RevealsShroud:

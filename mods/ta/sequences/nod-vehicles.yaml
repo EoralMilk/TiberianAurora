@@ -81,6 +81,7 @@ n_stltank:
 
 
 meme_obelisker:
+	Inherits: ^onfire
 	Defaults:
 		Offset: 0,0,15
 		UseTilesetCode: false

@@ -21,7 +21,7 @@ mngunner:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 70
+		HP: 7000
 	Passenger:
 		PipType: Gray
 	RevealsShroud:
@@ -31,29 +31,21 @@ mngunner:
 	Armament@primary:
 		Weapon: GAU-3_damage
 		LocalOffset: 0,0,0
-		FireDelay: 3
 	Armament@primary_eff_bullet:
 		Weapon: GAU-3_eff_bullet
 		LocalOffset: -350,50,850
-		FireDelay: 3
 	Armament@primary_eff_fire:
 		Weapon: GAU-3_eff_fire
 		LocalOffset: 268,50,850
-		FireDelay: 3
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
 	Armament@Casing:
 		Weapon: GAU-Casing
 		LocalOffset: 0,50,800
-		FireDelay: 3
 	TakeCover:
 		SpeedModifier: 50
 		ProneOffset: 443,10,30
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
-	# WithAimAnimation:
-	# 	Sequence: shoot
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
@@ -87,7 +79,7 @@ bzkier:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 70
+		HP: 7000
 	Mobile:
 		Speed: 48
 		Voice: Move
@@ -106,8 +98,6 @@ bzkier:
 	TakeCover:
 		SpeedModifier: 50
 		ProneOffset: 425,10,56
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
@@ -146,7 +136,7 @@ eng:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 57
+		HP: 5700
 	Passenger:
 		PipType: Yellow
 	EngineerRepair:
@@ -163,8 +153,6 @@ eng:
 		Voice: Action
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-	WithInfantryBody:
-		DefaultAttackSequence: stand
 	CaptureManager:
 	RenderSprites:
 		Image: eng
@@ -196,7 +184,7 @@ dog:
 	Selectable:
 		Bounds: 30, 24, 0, -5
 	Health:
-		HP: 50
+		HP: 5000
 	Mobile:
 		Speed: 110
 	-GainsExperience:

@@ -1,4 +1,16 @@
+^onfire:
+	fire: fire04
+		Length: *
+		BlendMode: Additive
+		ZOffset: 512
+		Tick: 100
+	spark: spark
+		Length: *
+		BlendMode: Additive
+
+
 ^CommonTank:
+	Inherits: ^onfire
 	Defaults: 
 		Offset: 0,0,0
 		UseTilesetCode: false

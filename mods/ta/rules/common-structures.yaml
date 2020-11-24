@@ -13,7 +13,7 @@ fact:
 	Selectable:
 		Bounds: 220, 125, 8, -7
 	Health:
-		HP: 2800
+		HP: 280000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -100,7 +100,7 @@ pwrplt:
 		Footprint: xx xx xx
 		Dimensions: 2,3
 	Health:
-		HP: 550
+		HP: 55000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -146,7 +146,7 @@ advpwr:
 		Footprint: xx= xxx =x=
 		Dimensions: 3,3
 	Health:
-		HP: 700
+		HP: 70000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -214,7 +214,7 @@ refinery:
 		SpawnOffset: 1,3
 		Facing: 96
 	Health:
-		HP: 1500
+		HP: 150000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -281,7 +281,7 @@ hq:
 		Footprint: _x_ xxx _x_
 		Dimensions: 3,3
 	Health:
-		HP: 800
+		HP: 80000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -409,7 +409,7 @@ helipad:
 	Selectable:
 		Bounds: 120, 53, 0, -5
 	Health:
-		HP: 600
+		HP: 60000
 	Armor:
 		Type: Steel
 	WithIdleOverlay@anim-lights:
@@ -423,6 +423,10 @@ helipad:
 	Power:
 		Amount: -10
 	Reservable:
+	RepairsUnits:
+		HpPerStep: 2000
+		FinishRepairingNotification: UnitRepaired
+		PlayerExperience: 15
 	Exit@1:
 		SpawnOffset: 0,-256,0
 	Production:
@@ -468,7 +472,7 @@ repairdepot:
 		Prerequisite: repairdepot
 	Reservable:
 	RepairsUnits:
-		HpPerStep: 20
+		HpPerStep: 2000
 		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
 	RallyPoint:
@@ -478,7 +482,7 @@ repairdepot:
 		Footprint: === === ===
 		Dimensions: 3,3
 	Health:
-		HP: 500
+		HP: 50000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -519,7 +523,7 @@ silo:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
-		HP: 200
+		HP: 20000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -588,7 +592,7 @@ a_wall:
 	Valued:
 		Cost: 100
 	Health:
-		HP: 400
+		HP: 40000
 	Armor:
 		Type: Concrete
 	HitShape:

@@ -1,5 +1,6 @@
 
 mcv:
+	Inherits: ^onfire
 	Defaults: 
 		Offset: 0,0,15
 		UseTilesetCode: false
@@ -19,6 +20,7 @@ mcv:
 
 
 g_harv:
+	Inherits: ^onfire
 	Defaults:
 		Offset: 0,0,15
 		UseTilesetCode: false

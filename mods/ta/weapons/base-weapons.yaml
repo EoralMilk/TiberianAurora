@@ -39,7 +39,7 @@
 		RangeLimit: 18c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
-		Damage: 15
+		Damage: 1500
 		ValidTargets: Air
 		Versus:
 			None: 100
@@ -166,7 +166,7 @@
 		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c400
-		Damage: 9
+		Damage: 900
 		ValidTargets: Ground, Water, Tree
 		InvalidTargets: Wall
 		Versus:
@@ -187,7 +187,7 @@
 		InvalidTargets: Vehicle, Structure, Wall
 	Warhead@SetFire: GrantExternalCondition
 		Condition: Burning
-		Duration: 100
+		Duration: 150
 	Warhead@SetFire2: GrantExternalCondition
 		Condition: KeepBurning
 
@@ -214,7 +214,7 @@
 		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c400
-		Damage: 10
+		Damage: 1000
 		ValidTargets: Ground, Water, Tree
 		InvalidTargets: Wall
 		Versus:

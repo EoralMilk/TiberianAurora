@@ -200,7 +200,7 @@ explosion:
 		BlendMode: Additive
 	fire02: fire02
 		Length: *
-		Tick: 320
+		Tick: 150
 		BlendMode: Additive
 	fire03: fire03
 		Length: *

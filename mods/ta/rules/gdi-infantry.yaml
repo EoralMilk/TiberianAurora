@@ -21,7 +21,7 @@ grenader:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 70
+		HP: 7000
 	Passenger:
 		PipType: Red
 	RevealsShroud:
@@ -31,8 +31,6 @@ grenader:
 	Armament@primary:
 		Weapon: HEGrenade
 		LocalOffset: 0,0,512
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
@@ -73,7 +71,7 @@ sniper:
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
-		HP: 65
+		HP: 6500
 	Passenger:
 		PipType: Blue
 	RevealsShroud:
@@ -83,8 +81,6 @@ sniper:
 	Armament@primary:
 		Weapon: SniperRF
 		LocalOffset: 0,0,672
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:

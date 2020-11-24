@@ -6,7 +6,7 @@ DogJaw:
 	TargetActorCenter: true
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
-		Damage: 200
+		Damage: 20000
 		ValidTargets: Infantry
 		Versus:
 			None: 100

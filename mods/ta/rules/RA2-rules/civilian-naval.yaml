@@ -9,7 +9,7 @@ tug:
 		TurnSpeed: 2
 		Speed: 60
 	Health:
-		HP: 200
+		HP: 20000
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -34,7 +34,7 @@ cruise:
 		TurnSpeed: 1
 		Speed: 60
 	Health:
-		HP: 300
+		HP: 30000
 	Armor:
 		Type: Light
 	RevealsShroud:

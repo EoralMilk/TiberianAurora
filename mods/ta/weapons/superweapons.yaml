@@ -4,7 +4,7 @@ IonCannon:
 	ValidTargets: Ground, Water, Air, Wall
 	Warhead@Air_impact: SpreadDamage
 		Spread: 0c800
-		Damage: 10000
+		Damage: 1000000
 		Falloff: 1000, 700, 500, 300, 150, 50, 0
 		Versus:
 			None: 100
@@ -23,7 +23,7 @@ IonCannon:
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	Warhead@1Dam_impact: SpreadDamage
 		Range: 0, 1c1, 2c1, 2c512
-		Damage: 800
+		Damage: 80000
 		Falloff: 100, 100, 25, 10
 		Versus:
 			None: 200
@@ -100,7 +100,7 @@ NukePayload:
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 1c128
-		Damage: 1000
+		Damage: 100000
 		Falloff: 1024, 512, 387, 256, 128, 64, 32, 16, 8, 4, 2
 		ValidTargets: Ground, Water, Air
 		Versus:
@@ -146,7 +146,7 @@ atomic:
 		ValidTargets: Ground, Water, Air
 	Warhead@DestroyWallCore: SpreadDamage
 		ValidTargets: Wall, Tree
-		Damage: 1000
+		Damage: 100000
 		Spread: 0c128
 		Versus:
 			None: 0
@@ -165,7 +165,7 @@ atomic:
 	Warhead@1Dam_impact: SpreadDamage
 		Delay: 25
 		ValidTargets: Air
-		Damage: 10000
+		Damage: 1000000
 	Warhead@2Res_impact: DestroyResource
 		Delay: 25
 	Warhead@3Eff_impact: CreateEffect
@@ -178,7 +178,7 @@ atomic:
 	Warhead@CoreDamage: SpreadDamage
 		Delay: 30
 		Spread: 0c256
-		Damage: 500
+		Damage: 50000
 		Falloff: 1024, 512, 387, 256, 128, 64, 32, 16, 8, 4, 2
 		ValidTargets: Ground, Water, Air
 		Versus:
@@ -374,7 +374,7 @@ IonCannonStorm:
 	# 	AllowSnapping: true
 	# 	Jammable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 1000
 		Versus:
 			None: 100
 			Flak: 100
@@ -410,14 +410,14 @@ BlastFlame:
 	Projectile: InstantHit
 		Inaccuracy: 150c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 1000
 		Spread: 0c512
 
 SuperBlastWave:
 	Inherits: ^BlastWave
 	Inherits@WarheadEff: ^HE_WarheadEff_Huge
 	Warhead@1Dam: SpreadDamage
-		Damage: 150
+		Damage: 15000
 		Spread: 0c640
 	-Warhead@EffSmu:
 	Warhead@Flash: CreateEffect
@@ -428,7 +428,7 @@ StroneBlastWave:
 	Inherits: ^BlastWave
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Warhead@1Dam: SpreadDamage
-		Damage: 100
+		Damage: 10000
 		Spread: 0c512
 	-Warhead@EffSmu:
 	Warhead@Flash: CreateEffect
@@ -439,7 +439,7 @@ OrdinaryBlastWave:
 	Inherits: ^BlastWave
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	Warhead@1Dam: SpreadDamage
-		Damage: 60
+		Damage: 6000
 		Spread: 0c384
 	-Warhead@EffSmu:
 	Warhead@Flash: CreateEffect
@@ -450,7 +450,7 @@ WeakBlastWave:
 	Inherits: ^BlastWave
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	Warhead@1Dam: SpreadDamage
-		Damage: 30
+		Damage: 3000
 		Spread: 0c256
 	-Warhead@EffSmu:
 	Warhead@Flash: CreateEffect
@@ -461,7 +461,7 @@ MicroBlastWave:
 	Inherits: ^BlastWave
 	Inherits@WarheadEff: ^AP_WarheadEff_Tiny
 	Warhead@1Dam: SpreadDamage
-		Damage: 10
+		Damage: 1000
 		Spread: 0c128
 	Warhead@Flash: CreateEffect
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
@@ -471,7 +471,7 @@ SecondaryShockWave:
 	Inherits: ^BlastWave
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Warhead@1Dam: SpreadDamage
-		Damage: 100
+		Damage: 10000
 		Spread: 0c326
 	-Warhead@EffSmu:
 	Warhead@Flash: CreateEffect

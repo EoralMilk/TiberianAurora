@@ -8,7 +8,7 @@ GAU-3_damage:
 	Projectile: Missile
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
-		Damage: 12
+		Damage: 1200
 		Spread: 0c256
 		Versus:
 			None: 100
@@ -79,7 +79,7 @@ APBazooka:
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
-		Damage: 50
+		Damage: 5000
 		Spread: 0c288
 		LaunchAngle: 78
 		Versus:

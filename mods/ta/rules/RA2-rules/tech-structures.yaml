@@ -16,7 +16,7 @@ caairp:
 	Armor:
 		Type: concrete
 	Health:
-		HP: 800
+		HP: 80000
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
@@ -95,7 +95,7 @@ caoutp:
 	Armor:
 		Type: Concrete
 	Health:
-		HP: 2000
+		HP: 200000
 	Building:
 		Dimensions: 4,3
 		Footprint: xx== xx== xx==

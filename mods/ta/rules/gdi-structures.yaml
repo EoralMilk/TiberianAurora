@@ -22,7 +22,7 @@ barracks:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
 	Health:
-		HP: 600
+		HP: 60000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -107,7 +107,7 @@ warfactory:
 		Footprint: xx__ xxx_ xxx= xxx=
 		Dimensions: 4,4
 	Health:
-		HP: 1100
+		HP: 110000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -186,7 +186,7 @@ advhq:
 		Footprint: _x_ xxx _x_
 		Dimensions: 3,3
 	Health:
-		HP: 1600
+		HP: 160000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -258,7 +258,7 @@ guntower:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 420
+		HP: 42000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -321,7 +321,7 @@ advgtwr:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 660
+		HP: 66000
 	Armor:
 		Type: Concrete
 	RevealsShroud:

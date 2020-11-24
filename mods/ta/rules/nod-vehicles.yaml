@@ -13,7 +13,7 @@ nbggy:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 120
+		HP: 12000
 	Armor:
 		Type: Light
 	Mobile:
@@ -55,6 +55,12 @@ nbggy:
 		RequiresCondition: wheelmoving
 	Targetable@materials:
 		TargetTypes: Metel
+	WithIdleOverlay@OnFire1:
+		Offset: -200,220,440
+	WithIdleOverlay@OnFire2:
+		Offset: 230,150,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-160,340
 
 ncycle:
 	Inherits: ^AtkFrontalVehicle
@@ -71,7 +77,7 @@ ncycle:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 110
+		HP: 11000
 	Armor:
 		Type: Light
 	Mobile:
@@ -100,6 +106,7 @@ ncycle:
 	Targetable@materials:
 		TargetTypes: Metel
 
+
 ntank:
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
@@ -115,7 +122,7 @@ ntank:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 333
+		HP: 33300
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -144,6 +151,12 @@ ntank:
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
+	WithIdleOverlay@OnFire1:
+		Offset: -400,310,600
+	WithIdleOverlay@OnFire2:
+		Offset: 430,270,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-270,340
 
 nftnk:
 	Inherits: ^TurretedVehicle
@@ -160,7 +173,7 @@ nftnk:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 300
+		HP: 30000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -186,6 +199,12 @@ nftnk:
 	Explodes:
 		Weapon: FlameTankExplosion
 		EmptyWeapon: FlameTankExplosion
+	WithIdleOverlay@OnFire1:
+		Offset: -400,320,600
+	WithIdleOverlay@OnFire2:
+		Offset: 430,250,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-260,340
 
 
 nhowi:
@@ -203,7 +222,7 @@ nhowi:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 100
+		HP: 10000
 	Armor:
 		Type: Light
 	Mobile:
@@ -233,6 +252,12 @@ nhowi:
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: MediumExplosion
+	WithIdleOverlay@OnFire1:
+		Offset: -400,320,600
+	WithIdleOverlay@OnFire2:
+		Offset: 430,250,550
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-260,340
 
 
 nstltnk:
@@ -250,7 +275,7 @@ nstltnk:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 285
+		HP: 28500
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -286,6 +311,12 @@ nstltnk:
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
+	WithIdleOverlay@OnFire1:
+		Offset: -400,320,400
+	WithIdleOverlay@OnFire2:
+		Offset: 430,250,350
+	WithIdleOverlay@OnFire3:
+		Offset: 330,-260,340
 
 
 meme_obelisker:
@@ -302,7 +333,7 @@ meme_obelisker:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 520
+		HP: 52000
 	Armor:
 		Type: Light
 	Mobile:

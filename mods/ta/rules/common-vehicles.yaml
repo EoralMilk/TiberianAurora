@@ -13,7 +13,7 @@ mcv:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 1000
+		HP: 100000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -78,7 +78,7 @@ harvester:
 		RequiresCondition: !no-tiberium
 		Weapon: TiberiumExplosion
 	Health:
-		HP: 600
+		HP: 60000
 	Armor:
 		Type: Medium
 	Targetable@RadiationImmunity:

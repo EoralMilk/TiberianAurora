@@ -341,11 +341,18 @@
 		DamagedSounds: xplos.aud
 		DestroyedSounds: crumble.aud
 	WithSpriteBody:
+	ExplosionOnDamageTransition:
+		Type: Footprint
+		Weapon: BuildingExplodeTransition 
+		DamageState: Heavy
+		TriggerOnlyOnce: false
 	Explodes:
 		Type: Footprint
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
 	RepairableBuilding:
+		RepairStep: 700
+		PlayerExperience: 25
 		RepairingNotification: Repairing
 	EngineerRepairable:
 	SpawnActorsOnSell@allies:
@@ -394,6 +401,8 @@
 		Adjacent: 3
 	GivesBuildableArea:
 		AreaTypes: building
+	SpawnActorsOnSell:
+		ActorTypes: mngunner
 
 ^SupportBuilding:
 	Inherits: ^BaseBuilding
@@ -405,7 +414,7 @@
 	-GivesBuildableArea:
 	-CapturableProgressBar:
 	-CapturableProgressBlink:
-
+	-SpawnActorsOnSell:
 
 ^CivBuilding:
 	Inherits: ^Building
@@ -418,7 +427,7 @@
 	-GivesExperience:
 	-UpdatesPlayerStatistics:
 	Health:
-		HP: 900
+		HP: 90000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -453,7 +462,7 @@
 	OwnerLostAction:
 		Action: ChangeOwner
 	Health:
-		HP: 900
+		HP: 90000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -478,7 +487,7 @@
 	Tooltip:
 		Name: Flag
 	Health:
-		HP: 20
+		HP: 2000
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -533,7 +542,7 @@
 	Valued:
 		Cost: 100
 	Health:
-		HP: 300
+		HP: 30000
 	Armor:
 		Type: Concrete
 	HitShape:
@@ -551,7 +560,7 @@
 	Valued:
 		Cost: 25
 	Health:
-		HP: 100
+		HP: 10000
 	Armor:
 		Type: Wood
 	Crushable:
@@ -756,7 +765,7 @@
 		GenericVisibility: Enemy, Ally, Neutral
 		GenericStancePrefix: false
 	Health:
-		HP: 50
+		HP: 5000
 	Mobile:
 		Voice: Move
 		Speed: 71
@@ -787,7 +796,7 @@
 	Armor:
 		Type: None
 	Health:
-		HP: 200
+		HP: 20000
 	Targetable:
 		TargetTypes: Ground, Infantry
 	RevealsShroud:
@@ -894,7 +903,7 @@
 	Mobile:
 		Speed: 113
 	Health:
-		HP: 100
+		HP: 10000
 	HitShape:
 	Armor:
 		Type: Light
@@ -995,7 +1004,7 @@
 	Tooltip:
 		GenericName: Destroyed Aircraft
 	Health:
-		HP: 1
+		HP: 100
 	FallsToEarth:
 		Velocity: 86
 	HitShape:
@@ -1004,19 +1013,6 @@
 	Interactable:
 	Targetable@materials:
 		TargetTypes: Metel
-
-^PlaneHusk:
-	Inherits: ^Husk
-	SmokeTrailWhenDamaged:
-		Interval: 2
-		Delay: 1
-		Sprite: v3trail
-		Palette: effect
-		MinDamage: Undamaged
-	FallsToEarth:
-		Explosion: LargeExplosion
-		MaximumSpinSpeed: 0
-		Moves: true
 
 ^HelicopterHusk:
 	Inherits: ^Husk

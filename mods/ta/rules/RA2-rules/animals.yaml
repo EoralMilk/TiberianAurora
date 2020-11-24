@@ -3,7 +3,7 @@ cow:
 	Tooltip:
 		Name: Cow
 	Health:
-		HP: 150
+		HP: 15000
 	RevealsShroud:
 		Range: 4c0
 	Voiced:

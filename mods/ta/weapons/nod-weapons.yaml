@@ -16,7 +16,7 @@ BuggyMG_damage:
 	Projectile: Missile
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
-		Damage: 20
+		Damage: 2000
 		Spread: 0c256
 		Versus:
 			None: 100
@@ -88,7 +88,7 @@ CycleMissile:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c224
-		Damage: 30
+		Damage: 3000
 		Versus:
 			None: 25
 			Flak: 25
@@ -114,7 +114,7 @@ LightTankCannonAP:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 36
+		Damage: 3600
 		Versus:
 			None: 25
 			Flak: 25
@@ -138,7 +138,7 @@ Devil'sTongue:
 	Projectile: Bullet
 		Inaccuracy: 800
 	Warhead@1Dam: SpreadDamage
-		Damage: 9
+		Damage: 900
 		Spread: 0c512
 
 
@@ -162,7 +162,7 @@ DaggerOfNod:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c450
-		Damage: 121
+		Damage: 12100
 		Versus:
 			None: 25
 			Flak: 25
@@ -193,7 +193,7 @@ HowitzerCannonHE:
 		LaunchAngle: 165
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 150
+		Damage: 15000
 		Spread: 0c920
 		Versus:
 			None: 100
@@ -227,7 +227,7 @@ TurretCannon:
 	Projectile: Bullet
 		Speed: 700
 	Warhead@1Dam: SpreadDamage
-		Damage: 75
+		Damage: 7500
 		Versus:
 			None: 30
 			Flak: 30
@@ -276,7 +276,7 @@ ObeliskLaser:
 		HitAnimPalette: effect
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
-		Damage: 69
+		Damage: 6900
 		Versus:
 			None: 200
 			Flak: 200
@@ -348,7 +348,7 @@ HeliAGGun:
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 15
+		Damage: 1500
 		Spread: 0c356
 		Versus:
 			None: 100
@@ -376,7 +376,7 @@ HeliAAGun:
 	Projectile: Bullet
 		Inaccuracy: 250
 	Warhead@1Dam: SpreadDamage
-		Damage: 18
+		Damage: 1800
 		ValidTargets: Air
 
 AC130VulcanFake:
@@ -408,7 +408,7 @@ AC130Vulcan:
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 60
+		Damage: 6000
 		Spread: 0c342
 		Versus:
 			None: 100
@@ -452,7 +452,7 @@ AC130Cannon:
 		ContrailColor: E86400
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 90
+		Damage: 9000
 		Versus:
 			None: 25
 			Flak: 25
