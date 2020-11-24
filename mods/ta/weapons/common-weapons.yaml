@@ -74,7 +74,8 @@ APBazooka:
 		Speed: 370
 		Inaccuracy: 33
 		Acceleration: 20
-		HorizontalRateOfTurn: 35
+		HorizontalRateOfTurn: 23
+		VerticalRateOfTurn: 34
 		RangeLimit: 10c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
@@ -103,3 +104,4 @@ APBazookaAA:
 	ValidTargets: Air
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
+	-Warhead@Smoke:

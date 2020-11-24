@@ -160,6 +160,32 @@ HugeExplosion:
 		Footprint: xxx xxx xxx
 		ValidTargets: Ground, Water, Air
 
+PlaneHuskExplosion:
+	Inherits: LargeExplosion
+	Warhead@SpawnDebris1: FireCluster
+		Weapon: dbris5lg
+		RandomClusterCount: 1
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris2: FireCluster
+		Weapon: dbris5sm
+		RandomClusterCount: 1
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris3: FireCluster
+		Weapon: dbris1lg
+		RandomClusterCount: 1
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnDebris4: FireCluster
+		Weapon: dbris1sm
+		RandomClusterCount: 1
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Ground, Water, Air
 
 AirExplosion:
 	Inherits: SmallExplosion

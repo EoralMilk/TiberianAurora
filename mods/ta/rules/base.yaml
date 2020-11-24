@@ -231,14 +231,11 @@
 		Palette: effect
 		MinDamage: Undamaged
 	FallsToEarth:
-		Explosion: LargeExplosion
-		MaximumSpinSpeed: 0
+		Explosion: PlaneHuskExplosion
+		MaximumSpinSpeed: 1
 		Moves: true
 	-Targetable@materials:
-	ThrowsShrapnel:
-		Weapons: dbris1lg, dbris1sm, dbris5sm, dbris5lg, dbris6sm, dbris6lg
-		Pieces: 1,3
-		Range: 0c12, 2c0
+
 
 
 ^CommonAircraft:
@@ -379,14 +376,11 @@
 		CanSlide: true
 	FallsToEarth:
 		MaximumSpinSpeed: 7
-		Explosion: LargeExplosion
+		Explosion: PlaneHuskExplosion
 		Moves: true
 		Velocity: 40
 	-Targetable@materials:
-	ThrowsShrapnel:
-		Weapons: dbris1lg, dbris1sm, dbris5sm, dbris5lg, dbris6sm, dbris6lg
-		Pieces: 1,3
-		Range: 0c12, 2c0
+
 
 ^CommonInfantry:
 	Inherits@1: ^ExistsInWorld
