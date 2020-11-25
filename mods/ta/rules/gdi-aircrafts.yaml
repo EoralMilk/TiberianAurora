@@ -208,9 +208,6 @@ a10:
 	HitShape:
 	Rearmable:
 		RearmActors: helipad
-	Explodes:
-		Weapon: UnitExplodeSmall
-		EmptyWeapon: UnitExplodeSmall
 	EjectOnDeath:
 		PilotActor: mngunner
 		SuccessRate: 100
@@ -249,7 +246,15 @@ a10husk:
 		TurnSpeed: 5
 		Speed: 210
 	RenderVoxels:
-		Image: a10
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.4,1.4,1.4
+		Image: a10husk
+	-WithVoxelBody:
+	WithVoxelWalkerBody:
+		TickRate: 2
 	Explodes:
 		Weapon: FlameExplosion
 		EmptyWeapon: FlameExplosion

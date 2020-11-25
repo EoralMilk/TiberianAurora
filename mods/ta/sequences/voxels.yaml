@@ -1,2 +1,7 @@
 a10:
 	idle:
+
+a10husk:
+	idle:
+		Length: *
+

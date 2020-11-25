@@ -6,6 +6,10 @@ a10:
 		Offset: 0, 0, 0
 	idle:
 
+a10husk:
+	Inherits: a10
+
+
 
 g_orca:
 	Inherits@Muzzle: ^WithFlakMuzzle
