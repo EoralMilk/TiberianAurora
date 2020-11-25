@@ -111,11 +111,11 @@ apache.Husk:
 		Sequence: shadow
 		Name: shadow
 		ForceToGround: true
+	WithFacingSpriteBody:
 	WithFacingSpriteBody@Rotor:
 		Sequence: rotor
 		Name: rotor
 		ForceToGround: false
-	WithFacingSpriteBody:
 	RenderSprites:
 		Image: n_apache
 		PlayerPalette: n_apache

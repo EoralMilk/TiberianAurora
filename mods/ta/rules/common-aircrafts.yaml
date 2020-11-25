@@ -24,6 +24,11 @@ transport:
 	RevealsShroud:
 		Range: 10c0
 		Type: GroundPosition
+	WithFacingSpriteBody@Shadow:
+		Sequence: shadow
+		Name: shadow
+		ForceToGround: true
+	WithFacingSpriteBody:
 	WithIdleOverlay@ROTOR1AIR:
 		Offset: 716,0,1360
 		Sequence: rotor-f
@@ -40,11 +45,6 @@ transport:
 		Offset: -863,0,1740
 		Sequence: rotor-b_low
 		RequiresCondition: !airborne
-	WithFacingSpriteBody@Shadow:
-		Sequence: shadow
-		Name: shadow
-		ForceToGround: true
-	WithFacingSpriteBody:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 10
@@ -77,18 +77,18 @@ transport.Husk:
 	RevealsShroud:
 		Range: 10c0
 		Type: GroundPosition
-	WithIdleOverlay@ROTOR1AIR:
-		Offset: 716,0,1360
-		Sequence: rotor-f
-	WithIdleOverlay@ROTOR2AIR:
-		Offset: -863,0,1740
-		Sequence: rotor-b
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow
 		Name: shadow
 		ForceToGround: true
 	-WithVoxelBody:
 	WithFacingSpriteBody:
+	WithIdleOverlay@ROTOR1AIR:
+		Offset: 716,0,1360
+		Sequence: rotor-f
+	WithIdleOverlay@ROTOR2AIR:
+		Offset: -863,0,1740
+		Sequence: rotor-b
 	RenderSprites:
 		Image: n_trans
 		PlayerPalette: c_transport
