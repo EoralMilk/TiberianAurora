@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.TA", "OpenRA.Mods.TA\OpenRA.Mods.TA.csproj", "{C1D526FE-C83A-4B6A-BB57-3443A8DA3968}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.AS", "OpenRA.Mods.AS\OpenRA.Mods.AS.csproj", "{6DEEE499-98E5-4977-AAAE-CEAE165F17CF}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.Common", "engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj", "{20034360-3638-489C-80E1-0A1104DBBCE9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.Cnc", "engine\OpenRA.Mods.Cnc\OpenRA.Mods.Cnc.csproj", "{95F49A14-DDCA-4A9D-901D-FCCA4B659069}"
@@ -24,6 +26,14 @@ Global
 		{C1D526FE-C83A-4B6A-BB57-3443A8DA3968}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1D526FE-C83A-4B6A-BB57-3443A8DA3968}.Release-x86|Any CPU.ActiveCfg = Release|Any CPU
 		{C1D526FE-C83A-4B6A-BB57-3443A8DA3968}.Release-x86|Any CPU.Build.0 = Release|Any CPU
+
+		{6DEEE499-98E5-4977-AAAE-CEAE165F17CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEEE499-98E5-4977-AAAE-CEAE165F17CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEEE499-98E5-4977-AAAE-CEAE165F17CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEEE499-98E5-4977-AAAE-CEAE165F17CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEEE499-98E5-4977-AAAE-CEAE165F17CF}.Release-x86|Any CPU.ActiveCfg = Release-x86|Any CPU
+		{6DEEE499-98E5-4977-AAAE-CEAE165F17CF}.Release-x86|Any CPU.Build.0 = Release-x86|Any CPU
+
 		{20034360-3638-489C-80E1-0A1104DBBCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20034360-3638-489C-80E1-0A1104DBBCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20034360-3638-489C-80E1-0A1104DBBCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
