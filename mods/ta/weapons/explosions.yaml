@@ -356,42 +356,37 @@ BuildingExplode:
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
-	Warhead@SpawnDebris1: FireCluster
+	Warhead@SpawnDebris1: FireShrapnel
 		Weapon: dbris1lg
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris2: FireCluster
+		ImpactActors: true
+	Warhead@SpawnDebris2: FireShrapnel
 		Weapon: dbris1sm
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris3: FireCluster
+		ImpactActors: true
+	Warhead@SpawnDebris3: FireShrapnel
 		Weapon: dbris2lg
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris4: FireCluster
+		ImpactActors: true
+	Warhead@SpawnDebris4: FireShrapnel
 		Weapon: dbris2sm
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris5: FireCluster
+		ImpactActors: true
+	Warhead@SpawnDebris5: FireShrapnel
 		Weapon: dbris3lg
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris6: FireCluster
+		ImpactActors: true
+	Warhead@SpawnDebris6: FireShrapnel
 		Weapon: dbris3sm
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+
 
 BuildingExplode3x3:
 	Inherits: BuildingExplode

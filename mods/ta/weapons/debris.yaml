@@ -3,11 +3,11 @@
 ^debrisProjectile:
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ReloadDelay: 60
-	Range: 7c764
+	Range: 5c764
 	MinRange: 1c512
 	ValidTargets: Ground, Water
 	Projectile: Bullet
-		Speed: 110, 150
+		Speed: 130, 170
 		Inaccuracy: 3000
 		LaunchAngle: 180, 230
 		Image: dbris1lg
