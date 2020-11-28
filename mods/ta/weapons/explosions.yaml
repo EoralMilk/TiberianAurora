@@ -228,7 +228,7 @@ FlameExplosion:
 	Inherits@WarheadFire: ^Fire_03
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
-		Damage: 11000
+		Damage: 9000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
@@ -308,20 +308,20 @@ ChamExplosion:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone100Percent, TiberiumDeath
-	Warhead@ChamCluster: FireCluster
+	Warhead@ChamCluster: FireShrapnel
 		Weapon: ChemCluster
-		RandomClusterCount: 2
-		Dimensions: 5,5
-		Footprint: xxXxx xXXXx XXXXX xXXXx xxXxx
+		Amount: 22
 		ValidTargets: Ground, Water, Air
 
 ChemCluster:
 	Inherits: ^TiberiumWeapon
+	Range: 2c0
+	MinRange: 1c512
 	Projectile: Bullet
-		Inaccuracy: 1800
+		Inaccuracy: 320
 		Speed: 60
 	Warhead@1Dam: SpreadDamage
-		Damage: 1500
+		Damage: 1200
 
 BuildingExplodeTransition:
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
