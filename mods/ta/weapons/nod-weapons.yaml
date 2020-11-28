@@ -308,12 +308,14 @@ ObeliskLaser:
 	Warhead@2Eff: CreateEffect
 		Explosions: laserburning
 		ValidTargets: Ground
+		ImpactActors: false
 	# Warhead@3Eff: CreateEffect
 	# 	Explosions: laserburn
 	# 	ValidTargets: Ground
 	Warhead@4Eff: CreateEffect
 		Explosions: laserburnt
 		ValidTargets: Ground
+		ImpactActors: false
 
 
 # aircraft
