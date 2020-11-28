@@ -131,7 +131,7 @@ namespace OpenRA.Mods.AS.Warheads
 				{
 					Weapon = weapon,
 					Facing = shrapnelFacing.Facing,
-					CurrentMuzzleFacing = () => shrapnelFacing,
+					CurrentMuzzleFacing = () => shrapnelFacing.Facing,
 
 					DamageModifiers = !firedBy.IsDead ? firedBy.TraitsImplementing<IFirepowerModifier>()
 						.Select(a => a.GetFirepowerModifier()).ToArray() : new int[0],
