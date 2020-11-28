@@ -39,12 +39,7 @@ SmallExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
-	# Warhead@SpawnDebris1: FireCluster
-	# 	Weapon: dbris5sm
-	# 	RandomClusterCount: 2
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
+
 
 MediumExplosion:
 	Inherits: ^DamagingExplosion
@@ -68,18 +63,7 @@ MediumExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
-	# Warhead@SpawnDebris1: FireCluster
-	# 	Weapon: dbris5lg
-	# 	RandomClusterCount: 1
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
-	# Warhead@SpawnDebris2: FireCluster
-	# 	Weapon: dbris5sm
-	# 	RandomClusterCount: 2
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
+
 
 LargeExplosion:
 	Inherits: ^DamagingExplosion
@@ -104,18 +88,6 @@ LargeExplosion:
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
-	# Warhead@SpawnDebris1: FireCluster
-	# 	Weapon: dbris5lg
-	# 	RandomClusterCount: 2
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
-	# Warhead@SpawnDebris2: FireCluster
-	# 	Weapon: dbris5sm
-	# 	RandomClusterCount: 3
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
 
 
 HugeExplosion:
@@ -147,73 +119,64 @@ HugeExplosion:
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
-	Warhead@SpawnDebris1: FireCluster
+	Warhead@SpawnDebris1: FireShrapnel
 		Weapon: dbris5lg
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris2: FireCluster
+		ImpactActors: true
+	Warhead@SpawnDebris2: FireShrapnel
 		Weapon: dbris5sm
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
+		ImpactActors: true
 
 PlaneHuskExplosion:
 	Inherits: LargeExplosion
-	Warhead@SpawnDebris1: FireCluster
-		Weapon: dbris5lg
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
-		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris2: FireCluster
-		Weapon: dbris5sm
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
-		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris3: FireCluster
+	Warhead@SpawnDebris1: FireShrapnel
 		Weapon: dbris1lg
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris4: FireCluster
+		ImpactActors: true
+	Warhead@SpawnDebris2: FireShrapnel
 		Weapon: dbris1sm
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+	Warhead@SpawnDebris3: FireShrapnel
+		Weapon: dbris5lg
+		Amount: 1
+		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+	Warhead@SpawnDebris4: FireShrapnel
+		Weapon: dbris5sm
+		Amount: 1
+		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+
 
 AirExplosion:
 	Inherits: SmallExplosion
 	-Warhead@Smoke:
-	Warhead@SpawnDebris1: FireCluster
-		Weapon: dbris5lgAir
-		RandomClusterCount: 1
-		Dimensions: 1,1
-		Footprint: x
+	Warhead@SpawnDebris1: FireShrapnel
+		Weapon: dbris1lg
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris2: FireCluster
-		Weapon: dbris5smAir
-		RandomClusterCount: 1
-		Dimensions: 1,1
-		Footprint: x
+		ImpactActors: true
+	Warhead@SpawnDebris2: FireShrapnel
+		Weapon: dbris1sm
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris3: FireCluster
-		Weapon: dbris1lgAir
-		RandomClusterCount: 1
-		Dimensions: 1,1
-		Footprint: x
+		ImpactActors: true
+	Warhead@SpawnDebris3: FireShrapnel
+		Weapon: dbris5lg
+		Amount: 1
 		ValidTargets: Ground, Water, Air
-	Warhead@SpawnDebris4: FireCluster
-		Weapon: dbris1smAir
-		RandomClusterCount: 1
-		Dimensions: 1,1
-		Footprint: x
+		ImpactActors: true
+	Warhead@SpawnDebris4: FireShrapnel
+		Weapon: dbris5sm
+		Amount: 1
 		ValidTargets: Ground, Water, Air
+		ImpactActors: true
 
 
 TiberiumExplosion:
@@ -232,18 +195,7 @@ TiberiumExplosion:
 	Warhead@4Res: CreateResource
 		AddsResourceType: Ore
 		Size: 3,3
-	# Warhead@SpawnDebris1: FireCluster
-	# 	Weapon: dbris5lg
-	# 	RandomClusterCount: 2
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
-	# Warhead@SpawnDebris2: FireCluster
-	# 	Weapon: dbris5sm
-	# 	RandomClusterCount: 3
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
+
 
 GrdExplosion:
 	Inherits: ^DamagingExplosion
@@ -322,18 +274,7 @@ FlameTankExplosion:
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
-	# Warhead@SpawnDebris1: FireCluster
-	# 	Weapon: dbris5lg
-	# 	RandomClusterCount: 1
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
-	# Warhead@SpawnDebris2: FireCluster
-	# 	Weapon: dbris5sm
-	# 	RandomClusterCount: 2
-	# 	Dimensions: 3,3
-	# 	Footprint: xxx xxx xxx
-	# 	ValidTargets: Ground, Water, Air
+
 
 FlameCluster:
 	Inherits: ^FlameWeapon

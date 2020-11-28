@@ -5,6 +5,11 @@ bullet:
 bulletsmall:
 	idle:
 
+blood:
+	idle:
+
+
+
 flameall:
 	idle:
 		Length: 19
@@ -91,6 +96,14 @@ explosion:
 		ZOffset: 2048
 	building: twlt070
 		Offset: 0, 0, 40
+	bloody: blood
+		-Length:
+		Frames: 0, 0
+		Tick: 3000
+		ZOffset: 1025
+	bleed: bleed
+		Tick: 50
+		ZOffset: 1025
 	ionring: ring1
 		Tick: 80
 		BlendMode: Additive
@@ -379,6 +392,7 @@ explosion:
 		ZRamp: 1
 		Tick: 100
 		BlendMode: Additive
+
 
 mslsmoke1:
 	idle:

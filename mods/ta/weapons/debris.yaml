@@ -1,20 +1,13 @@
-^debrisExplode:
-	Warhead@SpawnDebris: FireCluster
-		Weapon: ^debrisProjectile
-		RandomClusterCount: 1
-		Dimensions: 11,11
-		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
-		ValidTargets: Ground, Water, Air
-
 
 
 ^debrisProjectile:
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ReloadDelay: 60
-	Range: 0c764
+	Range: 7c764
+	MinRange: 1c512
 	ValidTargets: Ground, Water
 	Projectile: Bullet
-		Speed: 130, 150
+		Speed: 110, 150
 		Inaccuracy: 3000
 		LaunchAngle: 180, 230
 		Image: dbris1lg
@@ -43,8 +36,8 @@
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 		ValidTargets: Ground, Water
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 1
+	Warhead@Smoke: FireShrapnel
+		Amount: 1
 		ValidTargets: Ground, Water
 		ImpactActors: false
 

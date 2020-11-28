@@ -64,15 +64,31 @@ ShellCasingDebris:
 		Weapon: ShellCasingDebris
 
 
+^Blood:
+	ReloadDelay: 60
+	Range: 0c512
+	MinRange: 0c128
+	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
+	Projectile: Bullet
+		Blockable: false
+		Speed: 50, 70
+		Image: blood
+		LaunchAngle: 0, 240
+		ZOffset: 1024
+		Inaccuracy: 110
+	Warhead@Eff: CreateEffect
+		Explosions: bloody
+		ValidTargets: Ground
+		InvalidTargets: Water
 
 ^Spark:
 	ReloadDelay: 60
-	Range: 2c764
-	MinRange: 1c0
+	Range: 2c128
+	MinRange: 0c768
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
 	Projectile: Bullet
 		Blockable: true
-		Speed: 130, 150
+		Speed: 100, 130
 		ContrailLength: 5
 		ContrailWidth: 10
 		ContrailColor: FFF0A0
@@ -85,7 +101,8 @@ ShellCasingDebris:
 
 ^Smoke:
 	ReloadDelay: 60
-	Range: 0c764
+	Range: 2c768
+	MinRange: 1c512
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water
 	Projectile: Bullet
 		# TrailImage: smallsmoke
@@ -95,7 +112,7 @@ ShellCasingDebris:
 		Image: smallsmoke
 		Palette: effect60alpha
 		Blockable: true
-		Speed: 12, 35
+		Speed: 12, 24
 		LaunchAngle: 10, 23
 		ZOffset: 1024
 		Inaccuracy: 500
@@ -105,7 +122,7 @@ ShellCasingDebris:
 	Inherits: ^Smoke
 	Projectile: Bullet
 		Image: largesmoke
-		Speed: 10, 30
+		Speed: 10, 20
 		LaunchAngle: 10, 23
 
 
@@ -132,7 +149,7 @@ ShellCasingDebris:
 		ValidTargets: Concrete
 		InvalidTargets: Soil, Stone, Metel, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
-		Explosions: piff
+		Explosions: bleed
 		ImpactSounds: impact_body1.wav # , impact_body2.wav, impact_body3.wav, impact_body4.wav
 		ValidTargets: Meat
 		InvalidTargets: Soil, Stone, Metel, Concrete, Water
@@ -190,21 +207,18 @@ ShellCasingDebris:
 		ValidTargets: Metel
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 		ImpactActors: true
-	Warhead@Smoke: FireCluster
+	Warhead@Smoke: FireShrapnel
 		Weapon: ^Smoke
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 1
 		ValidTargets: Soil
 		InvalidTargets: Metel, Stone, Concrete, Meat, Water, Air, AirHit
-	Warhead@SmokeBig: FireCluster
+		ImpactActors: true
+	Warhead@SmokeBig: FireShrapnel
 		Weapon: ^SmokeBig
-		RandomClusterCount: 0
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
+		Amount: 0
 		ValidTargets: Soil
 		InvalidTargets: Metel, Stone, Concrete, Meat, Water, Air, AirHit
-
+		ImpactActors: true
 
 
 
@@ -231,8 +245,8 @@ ShellCasingDebris:
 		Explosions: tiny_watersplash
 		ImpactSounds: gexpwasa.wav
 	-Warhead@EffSmu:
-	-Warhead@Spark: FireCluster
-	-Warhead@Smoke: FireCluster
+	-Warhead@Spark:
+	-Warhead@Smoke:
 
 
 ^AP_WarheadEff_Small:
@@ -259,10 +273,9 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: SmallCrater
 	Warhead@Spark: FireShrapnel
-		Weapon: ^Spark
 		Amount: 3
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 1
+	Warhead@Smoke: FireShrapnel
+		Amount: 1
 
 ^AP_WarheadEff_Medium:
 	Inherits@WarheadLight: ^Flash_Medium
@@ -288,10 +301,9 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
 	Warhead@Spark: FireShrapnel
-		Weapon: ^Spark
 		Amount: 7
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 2
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
 
 ^AP_WarheadEff_Large:
 	Inherits@WarheadLight: ^Flash_Large
@@ -317,12 +329,11 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
 	Warhead@Spark: FireShrapnel
-		Weapon: ^Spark
 		Amount: 11
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 2
-	Warhead@SmokeBig: FireCluster
-		RandomClusterCount: 1
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+	Warhead@SmokeBig: FireShrapnel
+		Amount: 1
 
 
 ^AP_WarheadEff_Huge:
@@ -349,12 +360,11 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
 	Warhead@Spark: FireShrapnel
-		Weapon: ^Spark
 		Amount: 13
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 2
-	Warhead@SmokeBig: FireCluster
-		RandomClusterCount: 2
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+	Warhead@SmokeBig: FireShrapnel
+		Amount: 2
 
 # HE
 ^HE_WarheadEff_Small:
@@ -381,10 +391,9 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: SmallCrater
 	Warhead@Spark: FireShrapnel
-		Weapon: ^Spark
 		Amount: 3
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 2
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
 
 ^HE_WarheadEff_Medium:
 	Inherits@WarheadLight: ^Flash_Medium
@@ -412,10 +421,10 @@ ShellCasingDebris:
 	Warhead@Spark: FireShrapnel
 		Weapon: ^Spark
 		Amount: 7
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 2
-	Warhead@SmokeBig: FireCluster
-		RandomClusterCount: 1
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+	Warhead@SmokeBig: FireShrapnel
+		Amount: 1
 
 ^HE_WarheadEff_Large:
 	Inherits@WarheadLight: ^Flash_Large
@@ -441,12 +450,11 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater
 	Warhead@Spark: FireShrapnel
-		Weapon: ^Spark
 		Amount: 11
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 2
-	Warhead@SmokeBig: FireCluster
-		RandomClusterCount: 2
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+	Warhead@SmokeBig: FireShrapnel
+		Amount: 2
 
 ^HE_WarheadEff_Huge:
 	Inherits@WarheadLight: ^Flash_Large
@@ -472,12 +480,11 @@ ShellCasingDebris:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: LargeCrater
 	Warhead@Spark: FireShrapnel
-		Weapon: ^Spark
 		Amount: 13
-	Warhead@Smoke: FireCluster
-		RandomClusterCount: 2
-	Warhead@SmokeBig: FireCluster
-		RandomClusterCount: 3
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+	Warhead@SmokeBig: FireShrapnel
+		Amount: 3
 
 
 ^Fire_01:

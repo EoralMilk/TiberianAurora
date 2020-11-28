@@ -244,10 +244,6 @@ atomic:
 		Footprint: xxxxxxxXXXxxxxxxx xxxxxXXXXXXXxxxxx xxxXXXXXXXXXXXxxx xxXXXXXXXXXXXXXxx xxXXXXXXXXXXXXXxx xXXXXXXXXXXXXXXXx xXXXXXXXXXXXXXXXx XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX xXXXXXXXXXXXXXXXx xXXXXXXXXXXXXXXXx  xxXXXXXXXXXXXXXxx xxXXXXXXXXXXXXXxx xxxXXXXXXXXXXXxxx xxxxxXXXXXXXxxxxx xxxxxxxXXXxxxxxxx
 		ValidTargets: Ground, Water, Air, Wall
 		ImpactActors: false
-	# Warhead@Smoke: CreateEffect
-	# 	Explosions: nuke_steam
-	# 	Delay: 45
-	# 	ValidTargets: Ground
 	Warhead@BlastShake: ShakeScreen
 		Duration: 30
 		Intensity: 8
