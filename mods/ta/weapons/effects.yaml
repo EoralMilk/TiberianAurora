@@ -192,11 +192,19 @@ ShellCasingDebris:
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Smoke: FireCluster
 		Weapon: ^Smoke
-		RandomClusterCount: 7
+		RandomClusterCount: 1
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
 		ValidTargets: Soil
 		InvalidTargets: Metel, Stone, Concrete, Meat, Water, Air, AirHit
+	Warhead@SmokeBig: FireCluster
+		Weapon: ^SmokeBig
+		RandomClusterCount: 0
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Soil
+		InvalidTargets: Metel, Stone, Concrete, Meat, Water, Air, AirHit
+
 
 
 
@@ -318,7 +326,10 @@ ShellCasingDebris:
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 	Warhead@Smoke: FireCluster
-		RandomClusterCount: 3
+		RandomClusterCount: 2
+	Warhead@SmokeBig: FireCluster
+		RandomClusterCount: 1
+
 
 ^AP_WarheadEff_Huge:
 	Inherits@WarheadLight: ^Flash_Large
@@ -349,7 +360,9 @@ ShellCasingDebris:
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 	Warhead@Smoke: FireCluster
-		RandomClusterCount: 5
+		RandomClusterCount: 2
+	Warhead@SmokeBig: FireCluster
+		RandomClusterCount: 2
 
 # HE
 ^HE_WarheadEff_Small:
@@ -412,7 +425,9 @@ ShellCasingDebris:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
 	Warhead@Smoke: FireCluster
-		RandomClusterCount: 3
+		RandomClusterCount: 2
+	Warhead@SmokeBig: FireCluster
+		RandomClusterCount: 1
 
 ^HE_WarheadEff_Large:
 	Inherits@WarheadLight: ^Flash_Large
@@ -443,7 +458,9 @@ ShellCasingDebris:
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 	Warhead@Smoke: FireCluster
-		RandomClusterCount: 4
+		RandomClusterCount: 2
+	Warhead@SmokeBig: FireCluster
+		RandomClusterCount: 2
 
 ^HE_WarheadEff_Huge:
 	Inherits@WarheadLight: ^Flash_Large
@@ -474,7 +491,9 @@ ShellCasingDebris:
 		Dimensions: 5,5
 		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
 	Warhead@Smoke: FireCluster
-		RandomClusterCount: 6
+		RandomClusterCount: 2
+	Warhead@SmokeBig: FireCluster
+		RandomClusterCount: 3
 
 
 ^Fire_01:

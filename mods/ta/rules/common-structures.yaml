@@ -574,7 +574,7 @@ a_wall:
 	FootprintPlaceBuildingPreview:
 		Palette: effect75alpha
 	BlocksProjectiles:
-		Height: 2c635
+		Height: 2c512
 	LineBuild:
 		Range: 8
 		NodeTypes: wall

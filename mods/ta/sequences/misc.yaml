@@ -28,6 +28,11 @@ v3trail:
 		Tick: 60
 
 
+ssmoke:
+	idle: ssmoke
+		Length: *
+		ZOffset: 2048
+		Tick: 230
 
 atomic:
 	up: nukeup
