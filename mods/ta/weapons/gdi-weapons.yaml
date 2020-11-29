@@ -253,8 +253,8 @@ MammothTuskMissile:
 		Versus:
 			None: 333
 			Flak: 333
-			Plate: 175
-			Light: 100
+			Plate: 200
+			Light: 105
 			Medium: 60
 			Heavy: 40
 			Wood: 100
@@ -386,7 +386,7 @@ TowerMissile:
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
 	ValidTargets: Ground, Water
 	Range: 9c512
-	ReloadDelay: 11
+	ReloadDelay: 8
 	Projectile: Missile
 		ContrailLength: 12
 		# CruiseAltitude: 5c0
@@ -400,17 +400,17 @@ TowerMissile:
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c332
-		Damage: 2500
+		Damage: 3000
 		Versus:
 			None: 35
-			Flak: 25
-			Plate: 25
+			Flak: 30
+			Plate: 30
 			Light: 100
 			Medium: 85
 			Heavy: 70
 			Wood: 50
 			Steel: 40
-			Concrete: 33
+			Concrete: 35
 			Drone: 80
 			Rocket: 100
 		ValidTargets: Ground, Water, Air
@@ -548,7 +548,7 @@ A10Vulcan:
 			Medium: 40
 			Heavy: 40
 			Wood: 30
-			Steel: 40
+			Steel: 35
 			Concrete: 30
 			Drone: 100
 			Rocket: 70
@@ -576,7 +576,7 @@ A10Napalm:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
-		Damage: 17000
+		Damage: 22000
 		Versus:
 			None: 200
 			Flak: 200
@@ -586,7 +586,7 @@ A10Napalm:
 			Heavy: 75
 			Wood: 75
 			Steel: 40
-			Concrete: 20
+			Concrete: 30
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath

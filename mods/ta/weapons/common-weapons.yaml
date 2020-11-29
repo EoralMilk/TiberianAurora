@@ -8,18 +8,18 @@ GAU-3_damage:
 	Projectile: Missile
 		RangeLimit: 20c409
 	Warhead@1Dam: SpreadDamage
-		Damage: 1200
+		Damage: 1000
 		Spread: 0c256
 		Versus:
 			None: 100
-			Flak: 95
-			Plate: 85
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
+			Flak: 100
+			Plate: 95
+			Light: 30
+			Medium: 11
+			Heavy: 11
+			Wood: 20
+			Steel: 10
+			Concrete: 9
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath

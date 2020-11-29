@@ -22,9 +22,9 @@ nhand:
 		Footprint: xxx xxx
 		Dimensions: 3,2
 	Health:
-		HP: 60000
+		HP: 70000
 	Armor:
-		Type: Steel
+		Type: Wood
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
@@ -97,7 +97,7 @@ airstrip:
 		Footprint: xxx___ xxx=== xxx=== xxx=== 
 		Dimensions: 6,4
 	Health:
-		HP: 130000
+		HP: 180000
 	Armor:
 		Type: Steel
 	RevealsShroud:

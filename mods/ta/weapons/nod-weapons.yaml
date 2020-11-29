@@ -291,17 +291,17 @@ ObeliskLaser:
 		HitAnimPalette: effect
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
-		Damage: 6900
+		Damage: 7500
 		Versus:
 			None: 200
 			Flak: 200
 			Plate: 200
-			Light: 40
-			Medium: 35
-			Heavy: 32
+			Light: 55
+			Medium: 50
+			Heavy: 50
 			Wood: 40
 			Steel: 30
-			Concrete: 21
+			Concrete: 12
 			Drone: 200
 			Rocket: 100
 		DamageTypes: FlameDeath
