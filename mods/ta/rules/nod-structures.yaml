@@ -73,7 +73,7 @@ nhand:
 		Image: n_nhand
 		PlayerPalette: n_nhand
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 airstrip:
 	Inherits: ^BaseBuilding
@@ -99,7 +99,7 @@ airstrip:
 	Health:
 		HP: 130000
 	Armor:
-		Type: Wood
+		Type: Steel
 	RevealsShroud:
 		Range: 9c0
 	Power:
@@ -145,7 +145,7 @@ airstrip:
 		Image: n_airstrip
 		PlayerPalette: n_airstrip
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 ntpl:
 	Inherits: ^BaseBuilding
@@ -184,7 +184,7 @@ ntpl:
 		Image: n_ntpl
 		PlayerPalette: n_ntpl
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	NukePower:
 		PauseOnCondition: lowpower
 		Prerequisites: ~techlevel.unrestricted
@@ -300,7 +300,7 @@ ntur:
 		Image: n_ntur
 		PlayerPalette: n_ntur
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 samsite:
 	Inherits: ^DefenceBuilding
@@ -359,7 +359,7 @@ samsite:
 		Image: n_samsite
 		PlayerPalette: n_samsite
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -409,12 +409,12 @@ obelisk:
 		Duration: 9
 		Width: 140
 		InnerWidth: 80
+
 	AttackChargesBursts:
 		PauseOnCondition: lowpower
 		ChargeLevel: 40
 		ChargingCondition: charging
 		TargetFrozenActors: True
-		ForceFireIgnoresActors: True
 	AmbientSound:
 		RequiresCondition: charging && !lowpower
 		SoundFiles: obelpowr.aud

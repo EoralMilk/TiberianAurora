@@ -54,7 +54,7 @@ nbggy:
 		SoundFiles: atv_rev1.wav
 		RequiresCondition: wheelmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	WithIdleOverlay@OnFire1:
 		Offset: -200,220,440
 	WithIdleOverlay@OnFire2:
@@ -108,7 +108,7 @@ ncycle:
 		SoundFiles: atv_rev2.wav
 		RequiresCondition: wheelmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 
 ntank:
@@ -151,7 +151,7 @@ ntank:
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
@@ -199,7 +199,7 @@ nftnk:
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: FlameTankExplosion
 		EmptyWeapon: FlameTankExplosion
@@ -252,7 +252,7 @@ nhowi:
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: MediumExplosion
@@ -315,7 +315,7 @@ nstltnk:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
@@ -382,4 +382,4 @@ meme_obelisker:
 		Image: meme_obelisker
 		PlayerPalette: green_unit
 	Targetable@materials:
-		TargetTypes: Metel, Meat
+		TargetTypes: Metal, Meat

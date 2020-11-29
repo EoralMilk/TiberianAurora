@@ -470,7 +470,7 @@ FlameInfection:
 		RandomClusterCount: 1
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
-		ValidTargets: Soil, Metel, Stone, Concrete, Meat
+		ValidTargets: Soil, Metal, Stone, Concrete, Meat
 		InvalidTargets: Water, Inpassable, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:

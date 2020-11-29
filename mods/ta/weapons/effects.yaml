@@ -132,32 +132,32 @@ ShellCasingDebris:
 		Explosions: soilpiff
 		ImpactSounds: ricochet2.wav
 		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
-	Warhead@Eff_HitMetel: CreateEffect
+		InvalidTargets: Stone, Metal, Concrete, Meat, Water
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_thin_01.wav, metal_thin_02.wav, metal_thin_03.wav, metal_thin_04.wav, metal_thin_05.wav, metal_thin_06.wav, metal_thin_07.wav, metal_thin_08.wav, metal_thin_09.wav
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: piff
 		ImpactSounds: ricochet1.wav, ricochet3.wav, ricochet4.wav, ricochet7.wav
 		ValidTargets: Stone
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
+		InvalidTargets: Soil, Metal, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: piff
 		ImpactSounds: ricochet5.wav, ricochet6.wav
 		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
+		InvalidTargets: Soil, Stone, Metal, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: bleed
 		ImpactSounds: impact_body1.wav # , impact_body2.wav, impact_body3.wav, impact_body4.wav
 		ValidTargets: Meat
-		InvalidTargets: Soil, Stone, Metel, Concrete, Water
+		InvalidTargets: Soil, Stone, Metal, Concrete, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: water_piff
 		ImpactSounds: gexpwasa.wav
 		ValidTargets: Water
-		InvalidTargets: Soil, Stone, Metel, Concrete, Meat
+		InvalidTargets: Soil, Stone, Metal, Concrete, Meat
 	Warhead@Flash: CreateEffect
 		Explosions: flash_tiny
 		ExplosionPalette: gray_alpha
@@ -170,32 +170,32 @@ ShellCasingDebris:
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Soil
-		InvalidTargets: Stone, Metel, Concrete, Meat, Water
-	Warhead@Eff_HitMetel: CreateEffect
+		InvalidTargets: Stone, Metal, Concrete, Meat, Water
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Stone, Air
-		InvalidTargets: Soil, Metel, Concrete, Meat, Water
+		InvalidTargets: Soil, Metal, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metel, Meat, Water
+		InvalidTargets: Soil, Stone, Metal, Meat, Water
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Meat
-		InvalidTargets: Soil, Stone, Metel, Concrete, Water
+		InvalidTargets: Soil, Stone, Metal, Concrete, Water
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: tiny_watersplash
 		ValidTargets: Water
 		ExplosionPalette: effect80alpha
-		InvalidTargets: Soil, Stone, Metel, Concrete, Meat, Ground
+		InvalidTargets: Soil, Stone, Metal, Concrete, Meat, Ground
 	Warhead@Flash: CreateEffect
 		InvalidTargets: Water
 	Warhead@EffSmu: LeaveSmudge
@@ -204,20 +204,20 @@ ShellCasingDebris:
 	Warhead@Spark: FireShrapnel
 		Weapon: ^Spark
 		Amount: 7
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 		ImpactActors: true
 	Warhead@Smoke: FireShrapnel
 		Weapon: ^Smoke
 		Amount: 1
 		ValidTargets: Soil
-		InvalidTargets: Metel, Stone, Concrete, Meat, Water, Air, AirHit
+		InvalidTargets: Metal, Stone, Concrete, Meat, Water, Air, AirHit
 		ImpactActors: true
 	Warhead@SmokeBig: FireShrapnel
 		Weapon: ^SmokeBig
 		Amount: 0
 		ValidTargets: Soil
-		InvalidTargets: Metel, Stone, Concrete, Meat, Water, Air, AirHit
+		InvalidTargets: Metal, Stone, Concrete, Meat, Water, Air, AirHit
 		ImpactActors: true
 
 
@@ -229,7 +229,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: tiny_clsn
 		ImpactSounds: gexp14a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: tiny_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -255,7 +255,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: small_tumu
 		ImpactSounds: gexp14a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: small_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -283,7 +283,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: medium_tumu
 		ImpactSounds: gexp14a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: medium_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -311,7 +311,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: large_tumu
 		ImpactSounds: gexp14a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: large_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -342,7 +342,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: huge_tumu
 		ImpactSounds: gexp14a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: verylarge_clsn
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -373,7 +373,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: small_bang
 		ImpactSounds: gexp14a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: small_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -401,7 +401,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: medium_bang
 		ImpactSounds: gexp10a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: medium_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -432,7 +432,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: large_bang
 		ImpactSounds: gexpcraa.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: large_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
@@ -462,7 +462,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: verylarge_brnl
 		ImpactSounds: gexp14a.wav
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: huge_twlt
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect

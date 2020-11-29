@@ -387,7 +387,7 @@
 	FootprintPlaceBuildingPreview:
 		Palette: effect75alpha
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 ^BaseBuilding:
 	Inherits: ^Building
@@ -569,7 +569,7 @@
 		DamagedSounds: gblacrua.wav, gblacrub.wav
 		DestroyedSounds: gblacrua.wav, gblacrub.wav
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
@@ -888,7 +888,7 @@
 	Voiced:
 		VoiceSet: VehicleVoice
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -966,7 +966,7 @@
 	MapEditorData:
 		Categories: Aircraft
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -1012,7 +1012,7 @@
 		Categories: Husk
 	Interactable:
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 
 ^Ship:
@@ -1077,5 +1077,5 @@
 	MapEditorData:
 		Categories: Naval
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 

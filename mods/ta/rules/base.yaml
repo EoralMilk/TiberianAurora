@@ -94,7 +94,7 @@
 		Interval: 0
 		RequiresCondition: wheelmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	ExternalCondition@OnFire:
 		Condition: Burning
 	DamagedByTerrain:
@@ -219,7 +219,7 @@
 	MapEditorData:
 		Categories: Aircraft
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Voiced:
 		VoiceSet: AircraftVoice
 	Explodes:
@@ -299,7 +299,7 @@
 		AllowUnsuitableCell: true
 		# ChuteSound: chute1.aud
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Voiced:
 		VoiceSet: AircraftVoice
 	Explodes:
@@ -613,7 +613,7 @@
 	MapEditorData:
 		Categories: Decoration
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	-SpawnActorOnDeath:
 	-ExternalCondition@OnFire:
 	-DamagedByTerrain:
@@ -626,7 +626,7 @@
 	MapEditorData:
 		Categories: Decoration
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	-SpawnActorOnDeath:
 	-ExternalCondition@OnFire:
 	-DamagedByTerrain:
@@ -643,7 +643,7 @@
 	MapEditorData:
 		Categories: Decoration
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	-SpawnActorOnDeath:
 	-ExternalCondition@OnFire:
 	-DamagedByTerrain:

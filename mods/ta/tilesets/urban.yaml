@@ -26,7 +26,7 @@ Terrain:
 		Type: Rail
 		AcceptsSmudgeType: SmallScorch, MediumScorch, LargeScorch
 		Color: 745537
-		TargetTypes: Ground, Metel
+		TargetTypes: Ground, Metal
 	TerrainType@Impassable:
 		Type: Impassable
 		Color: 745537

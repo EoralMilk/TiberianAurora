@@ -78,7 +78,7 @@ fact:
 		Image: a_conyard
 		PlayerPalette: a_conyard
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 pwrplt:
 	Inherits: ^BaseBuilding
@@ -119,7 +119,7 @@ pwrplt:
 	ScalePowerWithHealth:
 	PowerTooltip:
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RenderSprites:
@@ -170,7 +170,7 @@ advpwr:
 		Image: a_advpwr
 		PlayerPalette: a_advpwr
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 
 refinery:
@@ -216,7 +216,7 @@ refinery:
 	Health:
 		HP: 150000
 	Armor:
-		Type: Concrete
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	WithDockedOverlay:
@@ -255,7 +255,7 @@ refinery:
 		UseClassicPerspectiveFudge: false
 		CameraPitch: 85
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes@TiberiumBlast:
 		RequiresCondition: !no-tiberium
 		Weapon: TiberiumExplosion
@@ -283,7 +283,7 @@ hq:
 	Health:
 		HP: 80000
 	Armor:
-		Type: Concrete
+		Type: Steel
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@shadow:
@@ -314,7 +314,7 @@ hq:
 		Image: a_hq
 		PlayerPalette: a_hq
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	AirstrikePower@gdi:
 		OrderName: A-10Airstrike
 		Cursor: attackmove
@@ -448,7 +448,7 @@ helipad:
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	RenderSprites:
 		Image: a_helipad
 		PlayerPalette: a_helipad
@@ -484,7 +484,7 @@ repairdepot:
 	Health:
 		HP: 50000
 	Armor:
-		Type: Wood
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	WithRepairOverlay@PLATFORM:
@@ -498,7 +498,7 @@ repairdepot:
 		Image: a_repairdepot
 		PlayerPalette: a_repairdepot
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Type: CenterPosition
 		Weapon: BuildingExplode3x3
@@ -543,7 +543,7 @@ silo:
 		Capacity: 1000
 		EmptyCondition: no-tiberium
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes@TiberiumBlast:
 		RequiresCondition: !no-tiberium
 		Weapon: TiberiumExplosion

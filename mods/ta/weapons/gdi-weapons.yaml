@@ -344,10 +344,10 @@ HMG-eff_bullet:
 	Burst: 6
 	BurstDelays: 4
 	Range: 7c0
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 HMG-eff_fire:
@@ -364,10 +364,10 @@ HMG-eff_fire:
 		CruiseAltitude: 3c512
 		Inaccuracy: 800
 		Blockable: true
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	-Warhead@1Dam:
 
@@ -553,10 +553,10 @@ A10Vulcan:
 			Drone: 100
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 A10Napalm:
@@ -578,15 +578,15 @@ A10Napalm:
 		Spread: 400
 		Damage: 17000
 		Versus:
-			None: 100
-			Flak: 100
+			None: 200
+			Flak: 200
 			Plate: 100
 			Light: 90
 			Medium: 75
 			Heavy: 75
 			Wood: 75
-			Steel: 75
-			Concrete: 35
+			Steel: 40
+			Concrete: 20
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath

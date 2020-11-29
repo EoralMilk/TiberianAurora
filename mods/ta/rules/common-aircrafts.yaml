@@ -64,7 +64,7 @@ transport:
 	GrantConditionOnMovement:
 		Condition: rotormoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 
 transport.Husk:

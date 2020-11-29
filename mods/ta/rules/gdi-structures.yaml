@@ -83,7 +83,7 @@ barracks:
 		Image: g_barr
 		PlayerPalette: g_barr
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 warfactory:
 	Inherits: ^BaseBuilding
@@ -109,7 +109,7 @@ warfactory:
 	Health:
 		HP: 110000
 	Armor:
-		Type: Wood
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
@@ -164,7 +164,7 @@ warfactory:
 		Image: g_wf
 		PlayerPalette: g_wf
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 advhq:
 	Inherits: ^BaseBuilding
@@ -240,7 +240,7 @@ advhq:
 		# EffectPalette: ts_effect80alpha
 	SupportPowerChargeBar:
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 guntower:
 	Inherits: ^DefenceBuilding
@@ -302,7 +302,7 @@ guntower:
 		Image: g_guntwr
 		PlayerPalette: g_guntwr
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 
 advgtwr:
@@ -364,7 +364,7 @@ advgtwr:
 		Image: g_advgtwr
 		PlayerPalette: g_advgtwr
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical

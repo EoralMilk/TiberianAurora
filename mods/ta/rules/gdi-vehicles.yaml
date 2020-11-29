@@ -57,7 +57,7 @@ ghumv:
 	# 	Delay: 0
 	# 	Interval: 0
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 
 gapc:
 	Inherits: ^TurretedVehicle
@@ -109,7 +109,7 @@ gapc:
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
@@ -162,7 +162,7 @@ gtank:
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: MediumExplosion
 		EmptyWeapon: MediumExplosion
@@ -211,7 +211,7 @@ gmlrs:
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: MediumExplosion
@@ -272,7 +272,7 @@ gmmtnk:
 	GrantConditionOnMovement:
 		Condition: trackmoving
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: LargeExplosion
 		EmptyWeapon: MediumExplosion
@@ -320,7 +320,7 @@ gunboat:
 	Voiced:
 		VoiceSet: GunBoatVoice
 	Targetable@materials:
-		TargetTypes: Metel
+		TargetTypes: Metal
 	Explodes:
 		Weapon: HugeExplosion
 		EmptyWeapon: HugeExplosion

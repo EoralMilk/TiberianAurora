@@ -155,7 +155,7 @@ DaggerOfNod:
 	Range: 6c512
 	Burst: 2
 	BurstDelays: 0
-	ReloadDelay: 60
+	ReloadDelay: 48
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2
@@ -168,7 +168,7 @@ DaggerOfNod:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c450
-		Damage: 4000
+		Damage: 4500
 		Versus:
 			None: 25
 			Flak: 25
@@ -318,6 +318,8 @@ ObeliskLaser:
 		ImpactActors: false
 
 
+
+
 # aircraft
 
 HeliGunFake:
@@ -380,10 +382,10 @@ HeliAGGun:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 
@@ -440,10 +442,10 @@ AC130Vulcan:
 			Drone: 100
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-	Warhead@Eff_HitMetel: CreateEffect
+	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metel
+		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 AC130CannonFake:
