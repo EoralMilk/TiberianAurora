@@ -56,6 +56,10 @@ supplycrate:
 	water: supplycrate-water
 
 
+dragon2:
+	idle:
+		Facings: 32
+
 grenade:
 	idle:
 		Length: 10
@@ -83,6 +87,11 @@ smallfire:
 		Tick: 150
 		Length: *
 		ZOffset: 2048
+
+mislflash:
+	idle:
+		BlendMode: Additive
+		Frames: 2
 
 heal:
 	idle:

@@ -14,18 +14,18 @@
 		ContrailColor: FFFFB1
 		Blockable: false
 		Gravity: 8
-		Image: DRAGON
-		Palette: ra
+		Image: dragon2
+		Palette: player
 		Shadow: true
 		VerticalRateOfTurn: 20
 		HorizontalRateOfTurn: 20
 		TerrainHeightAware: true
 		AllowSnapping: true
 		CruiseAltitude: 3c0
-		# TrailImage: mslsmoke1
-		# TrailPalette: effect80alpha
-		# TrailInterval: 0
-		# TrailDelay: 0
+		TrailImage: mislflash
+		TrailPalette: gray_alpha
+		TrailInterval: 0
+		TrailDelay: 0
 
 ^CommonAAMissile:
 	Inherits: ^CommonMissile

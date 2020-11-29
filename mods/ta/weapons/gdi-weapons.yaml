@@ -290,6 +290,10 @@ ManyRockets:
 		Image: DRAGON
 		LaunchAngle: 180
 		Blockable: false
+		TrailImage: mislflash
+		TrailPalette: gray_alpha
+		TrailInterval: 0
+		TrailDelay: 0
 	Warhead@1Dam: SpreadDamage
 		Damage: 9000
 		Spread: 0c512

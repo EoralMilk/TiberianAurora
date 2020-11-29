@@ -150,6 +150,8 @@ dragon:
 	idle:
 		Facings: 32
 
+
+
 smokey2:
 	idle:
 		Length: *
