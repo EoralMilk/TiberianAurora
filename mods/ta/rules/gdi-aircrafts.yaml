@@ -5,7 +5,7 @@ orcafighter:
 	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Valued:
-		Cost: 1200
+		Cost: 1500
 	Tooltip:
 		Name: 奥卡战机
 	UpdatesPlayerStatistics:
@@ -17,7 +17,7 @@ orcafighter:
 		Description: 搭载反装甲火箭的轻型直升机\n\n·强势对抗：载具、建筑\n·弱势对抗：步兵
 	Aircraft:
 		TurnSpeed: 7
-		Speed: 196
+		Speed: 200
 		AltitudeVelocity: 0c200
 		CruiseAltitude: 3c512
 	Health:

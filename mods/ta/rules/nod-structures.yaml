@@ -103,7 +103,7 @@ airstrip:
 	RevealsShroud:
 		Range: 9c0
 	Power:
-		Amount: -30
+		Amount: -40
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
@@ -171,7 +171,7 @@ ntpl:
 		Footprint: xxxx== xxxxx= xxxxx= xxxxx= xxxxx= xxxx==
 		Dimensions: 6,6
 	Health:
-		HP: 300000
+		HP: 390000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -301,7 +301,8 @@ ntur:
 		PlayerPalette: n_ntur
 	Targetable@materials:
 		TargetTypes: Metal
-
+	Power:
+		Amount: -20
 samsite:
 	Inherits: ^DefenceBuilding
 	Inherits@AUTOTARGET: ^AutoTargetAir
@@ -325,6 +326,8 @@ samsite:
 		Type: Concrete
 	RevealsShroud:
 		Range: 9c0
+	Power:
+		Amount: -20
 	Selectable:
 		Bounds: 120, 53, 0, -5
 	Armament:
@@ -374,7 +377,7 @@ obelisk:
 		Prerequisites: ntpl, ~structures.nod
 		Description: Nod的终极地面防御装置，其发射的高能激光可以摧毁一切地面目标。\n 强势对抗：一切地面单位
 	Valued:
-		Cost: 1400
+		Cost: 1800
 	Tooltip:
 		Name: 光明石碑
 	Building:
@@ -383,14 +386,14 @@ obelisk:
 	Selectable:
 		Bounds: 44, 102, 0, -40
 	Health:
-		HP: 99900
+		HP: 99999
 	Armor:
 		Type: Concrete
 	RevealsShroud:
 		Range: 9c512
 	GrantConditionOnHealth:
 		Condition: heavilydamaged
-		MaxHP: 29900
+		MaxHP: 29999
 	ArmamentWithRa2Lase:
 		# Armament:
 		RequiresCondition: !heavilydamaged
@@ -409,7 +412,6 @@ obelisk:
 		Duration: 9
 		Width: 140
 		InnerWidth: 80
-
 	AttackChargesBursts:
 		PauseOnCondition: lowpower
 		ChargeLevel: 40
@@ -424,7 +426,7 @@ obelisk:
 		IsPlayerPalette: true
 		RequiresCondition: !build-incomplete
 	Power:
-		Amount: -75
+		Amount: -130
 	AutoTarget:
 		InitialStance: AttackAnything
 	GrantConditionOnPowerState@LOWPOWER:

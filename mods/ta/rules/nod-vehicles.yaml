@@ -77,12 +77,12 @@ ncycle:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 11000
+		HP: 10000
 	Armor:
 		Type: Light
 	Mobile:
 		TurnSpeed: 16
-		Speed: 213
+		Speed: 215
 		Locomotor: wheeled
 	RevealsShroud:
 		Range: 8c0
@@ -120,13 +120,13 @@ ntank:
 		Prerequisites: ~vehicle.nod, repairdepot
 		Description: \n Nod轻型主战坦克，装有90mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 625
+		Cost: 600
 	Tooltip:
 		Name: 轻型坦克
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 33300
+		HP: 24000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -168,16 +168,16 @@ nftnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
-		Prerequisites: ~vehicle.nod, repairdepot
+		Prerequisites: ~vehicle.nod, hq
 		Description: \n 搭载双联装火焰喷射器和大量燃料的重装甲坦克 \n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
 	Valued:
-		Cost: 775
+		Cost: 850
 	Tooltip:
 		Name: 恶魔之舌
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 30000
+		HP: 40000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -279,7 +279,7 @@ nstltnk:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 28500
+		HP: 29000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -368,7 +368,6 @@ meme_obelisker:
 		MoveSequence: run
 	WithAimAnimation:
 		Sequence: Shoot
-	
 	WithFacingSpriteBody:
 	# WithChargeBurstsOverlay:
 	# 	Sequence: shoot

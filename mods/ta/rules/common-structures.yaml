@@ -13,13 +13,13 @@ fact:
 	Selectable:
 		Bounds: 220, 125, 8, -7
 	Health:
-		HP: 280000
+		HP: 300000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
 	Valued:
-		Cost: 3500
+		Cost: 2000
 	Production:
 		Produces: Building, Support
 	Tooltip:
@@ -91,7 +91,7 @@ pwrplt:
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
-		Cost: 500
+		Cost: 300
 	Tooltip:
 		Name: 发电厂
 	ProvidesPrerequisite:
@@ -100,7 +100,7 @@ pwrplt:
 		Footprint: xx xx xx
 		Dimensions: 2,3
 	Health:
-		HP: 70000
+		HP: 75000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -137,7 +137,7 @@ advpwr:
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
-		Cost: 800
+		Cost: 500
 	Tooltip:
 		Name: 高级发电厂
 	ProvidesPrerequisite:
@@ -191,9 +191,9 @@ refinery:
 		Footprint: xx= xxx xxx ===
 		Dimensions: 3,4
 	Valued:
-		Cost: 1500
+		Cost: 1400
 	CustomSellValue:
-		Value: 500
+		Value: 300
 	Power:
 		Amount: -40
 	StoresResources:
@@ -214,11 +214,11 @@ refinery:
 		SpawnOffset: 1,3
 		Facing: 96
 	Health:
-		HP: 180000
+		HP: 200000
 	Armor:
 		Type: Steel
 	RevealsShroud:
-		Range: 4c0
+		Range: 5c0
 	WithDockedOverlay:
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
@@ -272,7 +272,7 @@ hq:
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
-		Cost: 1000
+		Cost: 1500
 	Tooltip:
 		Name: 指挥中心
 	ProvidesPrerequisite:
@@ -299,7 +299,7 @@ hq:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete || lowpower
 	Power:
-		Amount: -50
+		Amount: -60
 		RequiresCondition: !power-outage
 	ProvidesRadar:
 		RequiresCondition: !lowpower
@@ -421,7 +421,7 @@ helipad:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Power:
-		Amount: -10
+		Amount: -30
 	Reservable:
 	RepairsUnits:
 		HpPerStep: 2000
@@ -465,7 +465,7 @@ repairdepot:
 	Selectable:
 		Bounds: 144, 88, 5, 0
 	Valued:
-		Cost: 500
+		Cost: 1000
 	Tooltip:
 		Name: 维修平台
 	ProvidesPrerequisite:
@@ -487,6 +487,7 @@ repairdepot:
 		Type: Steel
 	RevealsShroud:
 		Range: 4c0
+		Type: GroundPosition
 	WithRepairOverlay@PLATFORM:
 		Sequence: padglow
 		RequiresCondition: !Building-Buildup
@@ -528,6 +529,8 @@ silo:
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
+	Power:
+		Amount: -10
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	RenderSprites:
@@ -590,7 +593,7 @@ a_wall:
 	Sellable:
 		SellSounds: uselbuil.wav
 	Valued:
-		Cost: 100
+		Cost: 150
 	Health:
 		HP: 40000
 	Armor:

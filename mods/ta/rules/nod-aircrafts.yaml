@@ -4,7 +4,7 @@ apache:
 	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Valued:
-		Cost: 1050
+		Cost: 1300
 	Tooltip:
 		Name: 阿帕奇武装直升机
 	UpdatesPlayerStatistics:
@@ -16,7 +16,7 @@ apache:
 		Description: 搭载盖特炮的重型武装直升机\n\n·强势对抗：步兵、轻型载具、飞行器\n·弱势对抗：装甲载具
 	Aircraft:
 		TurnSpeed: 7
-		Speed: 165
+		Speed: 170
 		AltitudeVelocity: 0c150
 		CruiseAltitude: 3c512
 	Health:

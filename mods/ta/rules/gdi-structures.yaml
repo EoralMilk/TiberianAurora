@@ -131,7 +131,6 @@ warfactory:
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
-
 	WithIdleOverlay@back:
 		Sequence: back
 		RequiresCondition: !build-incomplete
@@ -204,7 +203,7 @@ advhq:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: build-incomplete || lowpower
 	Power:
-		Amount: -200
+		Amount: -220
 	ProvidesRadar:
 		RequiresCondition: !lowpower
 	RenderDetectionCircle:
@@ -303,6 +302,8 @@ guntower:
 		PlayerPalette: g_guntwr
 	Targetable@materials:
 		TargetTypes: Metal
+	Power:
+		Amount: -20
 
 
 advgtwr:
@@ -321,9 +322,11 @@ advgtwr:
 		Footprint: x
 		Dimensions: 1, 1
 	Health:
-		HP: 60000
+		HP: 55000
 	Armor:
 		Type: Concrete
+	Power:
+		Amount: -100
 	RevealsShroud:
 		Range: 9c0
 	Selectable:
