@@ -59,7 +59,7 @@ harvester:
 		Prerequisites: refinery
 		Description: 收割泰伯利亚以换取资金
 	Valued:
-		Cost: 1000
+		Cost: 1100
 	Tooltip:
 		Name: 收割机
 	Selectable:
@@ -98,4 +98,8 @@ harvester:
 	WithHarvestAnimation:
 	WithDockingAnimation:
 	HitShape:
-
+	SelfHealing:
+		Step: 100
+		Delay: 3
+		HealIfBelow: 50
+		DamageCooldown: 500

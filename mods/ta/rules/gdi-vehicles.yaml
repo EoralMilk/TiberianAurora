@@ -129,13 +129,13 @@ gtank:
 		Prerequisites: ~vehicle.gdi, repairdepot
 		Description: \n GDI中型主战坦克，装有105mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
 	Valued:
-		Cost: 775
+		Cost: 800
 	Tooltip:
 		Name: 中型坦克
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 44400
+		HP: 48000
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -237,7 +237,7 @@ gmmtnk:
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 77700
+		HP: 77777
 	SelfHealing:
 		Step: 100
 		Delay: 5

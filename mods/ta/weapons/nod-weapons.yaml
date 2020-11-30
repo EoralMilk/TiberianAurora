@@ -74,8 +74,8 @@ CycleMissile:
 	Range: 6c526
 	MinRange: 0c512
 	Burst: 2
-	BurstDelays: 1
-	ReloadDelay: 50
+	BurstDelays: 4
+	ReloadDelay: 24
 	Projectile: Missile
 		ContrailLength: 10
 		Arm: 2
@@ -87,16 +87,16 @@ CycleMissile:
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c224
-		Damage: 3000
+		Spread: 0c300
+		Damage: 1800
 		Versus:
-			None: 25
+			None: 20
 			Flak: 25
 			Plate: 20
-			Light: 100
-			Medium: 80
-			Heavy: 80
-			Wood: 70
+			Light: 110
+			Medium: 100
+			Heavy: 75
+			Wood: 60
 			Steel: 50
 			Concrete: 40
 			Drone: 80
@@ -138,7 +138,7 @@ LightTankCannonAP:
 Devil'sTongue:
 	Inherits: ^FlameWeapon
 	ReloadDelay: 60
-	Burst: 36
+	Burst: 40
 	BurstDelays: 1
 	Range: 4c512
 	Projectile: Bullet
@@ -174,7 +174,7 @@ DaggerOfNod:
 			Flak: 25
 			Plate: 25
 			Light: 100
-			Medium: 30
+			Medium: 55
 			Heavy: 75
 			Wood: 50
 			Steel: 40
@@ -194,20 +194,20 @@ DaggerOfNodAA:
 HowitzerCannonHE:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	ReloadDelay: 120
-	Range: 11c0
-	MinRange: 4c0
+	ReloadDelay: 110
+	Range: 12c256
+	MinRange: 4c256
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
-		Speed: 182
+		Speed: 160
 		ContrailLength: 16
 		ContrailWidth: 28
-		Inaccuracy: 790
+		Inaccuracy: 1000
 		LaunchAngle: 165
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 15000
-		Spread: 0c920
+		Spread: 0c1000
 		Versus:
 			None: 100
 			Flak: 100
@@ -216,7 +216,7 @@ HowitzerCannonHE:
 			Medium: 40
 			Heavy: 40
 			Wood: 100
-			Steel: 90
+			Steel: 70
 			Concrete: 60
 			Drone: 80
 			Rocket: 100
@@ -224,8 +224,8 @@ HowitzerCannonHE:
 Howitzer-Casing:
 	Inherits: ^ShellCasing
 	ReloadDelay: 120
-	Range: 11c0
-	MinRange: 3c0
+	Range: 12c256
+	MinRange: 4c256
 	ValidTargets: Ground, Water
 
 

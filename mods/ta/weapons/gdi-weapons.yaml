@@ -197,7 +197,7 @@ MTank-Casing:
 MammothTankCannon:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Large
-	ReloadDelay: 100
+	ReloadDelay: 120
 	Range: 6c0
 	Burst: 2
 	BurstDelays: 5
@@ -205,7 +205,7 @@ MammothTankCannon:
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 10000
+		Damage: 10500
 		Spread: 0c240
 		Versus:
 			None: 25
@@ -222,8 +222,8 @@ MammothTankCannon:
 
 Mammoth-Casing:
 	Inherits: ^ShellCasing
-	ReloadDelay: 100
-	Range: 5c512
+	ReloadDelay: 120
+	Range: 6c0
 	Burst: 2
 	BurstDelays: 5
 	ValidTargets: Ground, Water
@@ -235,8 +235,8 @@ MammothTuskMissile:
 	ValidTargets: Ground, Water
 	Range: 6c0
 	Burst: 4
-	BurstDelays: 4
-	ReloadDelay: 90
+	BurstDelays: 6
+	ReloadDelay: 80
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2
@@ -253,13 +253,13 @@ MammothTuskMissile:
 		Versus:
 			None: 333
 			Flak: 333
-			Plate: 200
+			Plate: 222
 			Light: 105
 			Medium: 60
-			Heavy: 40
+			Heavy: 20
 			Wood: 100
 			Steel: 60
-			Concrete: 50
+			Concrete: 45
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -276,17 +276,17 @@ MammothTuskAAMissile:
 ManyRockets:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	ReloadDelay: 160
+	ReloadDelay: 120
 	Burst: 6
-	BurstDelays: 3
-	Range: 11c512
+	BurstDelays: 6
+	Range: 13c512
 	MinRange: 4c512
 	Report: rocket_shot.wav
 	Projectile: Bullet
 		Speed: 236
 		ContrailLength: 14
 		ContrailWidth: 30
-		Inaccuracy: 900
+		Inaccuracy: 700
 		Image: DRAGON
 		LaunchAngle: 180
 		Blockable: false
@@ -295,16 +295,16 @@ ManyRockets:
 		TrailInterval: 0
 		TrailDelay: 0
 	Warhead@1Dam: SpreadDamage
-		Damage: 9000
-		Spread: 0c512
+		Damage: 8000
+		Spread: 0c700
 		Versus:
-			None: 100
-			Flak: 90
-			Plate: 70
+			None: 120
+			Flak: 100
+			Plate: 85
 			Light: 75
 			Medium: 35
-			Heavy: 35
-			Wood: 100
+			Heavy: 40
+			Wood: 110
 			Steel: 75
 			Concrete: 75
 			Drone: 60
