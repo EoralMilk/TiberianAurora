@@ -465,7 +465,7 @@ repairdepot:
 	Selectable:
 		Bounds: 144, 88, 5, 0
 	Valued:
-		Cost: 1000
+		Cost: 800
 	Tooltip:
 		Name: 维修平台
 	ProvidesPrerequisite:
