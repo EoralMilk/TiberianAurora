@@ -102,4 +102,4 @@ harvester:
 		Step: 100
 		Delay: 3
 		HealIfBelow: 50
-		DamageCooldown: 500
+		DamageCooldown: 120

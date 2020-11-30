@@ -94,7 +94,7 @@ CycleMissile:
 			Flak: 25
 			Plate: 20
 			Light: 110
-			Medium: 100
+			Medium: 50
 			Heavy: 75
 			Wood: 60
 			Steel: 50
@@ -114,37 +114,37 @@ CycleAAMissile:
 LightTankCannonAP:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Small
-	ReloadDelay: 38
-	Range: 5c256
+	ReloadDelay: 44
+	Range: 5c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 3600
+		Damage: 5000
 		Versus:
 			None: 25
 			Flak: 25
 			Plate: 25
 			Light: 75
-			Medium: 100
-			Heavy: 100
+			Medium: 95
+			Heavy: 80
 			Wood: 100
 			Steel: 85
-			Concrete: 100
+			Concrete: 95
 			Drone: 60
 			Rocket: 100
 
 
 Devil'sTongue:
 	Inherits: ^FlameWeapon
-	ReloadDelay: 60
+	ReloadDelay: 80
 	Burst: 40
 	BurstDelays: 1
 	Range: 4c512
 	Projectile: Bullet
 		Inaccuracy: 800
 	Warhead@1Dam: SpreadDamage
-		Damage: 900
+		Damage: 1000
 		Spread: 0c512
 
 
@@ -174,7 +174,7 @@ DaggerOfNod:
 			Flak: 25
 			Plate: 25
 			Light: 100
-			Medium: 55
+			Medium: 45
 			Heavy: 75
 			Wood: 50
 			Steel: 40
@@ -194,7 +194,7 @@ DaggerOfNodAA:
 HowitzerCannonHE:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	ReloadDelay: 110
+	ReloadDelay: 90
 	Range: 12c256
 	MinRange: 4c256
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
@@ -202,7 +202,7 @@ HowitzerCannonHE:
 		Speed: 160
 		ContrailLength: 16
 		ContrailWidth: 28
-		Inaccuracy: 1000
+		Inaccuracy: 1200
 		LaunchAngle: 165
 		Blockable: false
 	Warhead@1Dam: SpreadDamage

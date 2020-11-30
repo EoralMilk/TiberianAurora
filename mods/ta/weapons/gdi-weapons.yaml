@@ -165,13 +165,13 @@ APC-Casing:
 MediumTankCannonAP:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Medium
-	ReloadDelay: 77
+	ReloadDelay: 66
 	Range: 5c512
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
 		Speed: 682
 	Warhead@1Dam: SpreadDamage
-		Damage: 7000
+		Damage: 7500
 		Versus:
 			None: 25
 			Flak: 25
@@ -180,7 +180,7 @@ MediumTankCannonAP:
 			Medium: 100
 			Heavy: 100
 			Wood: 100
-			Steel: 85
+			Steel: 90	
 			Concrete: 100
 			Drone: 60
 			Rocket: 100
@@ -295,15 +295,15 @@ ManyRockets:
 		TrailInterval: 0
 		TrailDelay: 0
 	Warhead@1Dam: SpreadDamage
-		Damage: 8000
+		Damage: 6000
 		Spread: 0c700
 		Versus:
-			None: 120
-			Flak: 100
-			Plate: 85
-			Light: 75
+			None: 150
+			Flak: 140
+			Plate: 100
+			Light: 80
 			Medium: 35
-			Heavy: 40
+			Heavy: 50
 			Wood: 110
 			Steel: 75
 			Concrete: 75

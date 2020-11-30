@@ -303,7 +303,7 @@ guntower:
 	Targetable@materials:
 		TargetTypes: Metal
 	Power:
-		Amount: -15
+		Amount: -20
 
 
 advgtwr:
@@ -326,7 +326,7 @@ advgtwr:
 	Armor:
 		Type: Concrete
 	Power:
-		Amount: -125
+		Amount: -100
 	RevealsShroud:
 		Range: 9c0
 	Selectable:

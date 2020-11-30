@@ -171,7 +171,7 @@ ntpl:
 		Footprint: xxxx== xxxxx= xxxxx= xxxxx= xxxxx= xxxx==
 		Dimensions: 6,6
 	Health:
-		HP: 300000
+		HP: 390000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -302,7 +302,7 @@ ntur:
 	Targetable@materials:
 		TargetTypes: Metal
 	Power:
-		Amount: -15
+		Amount: -20
 samsite:
 	Inherits: ^DefenceBuilding
 	Inherits@AUTOTARGET: ^AutoTargetAir
@@ -327,7 +327,7 @@ samsite:
 	RevealsShroud:
 		Range: 9c0
 	Power:
-		Amount: -50
+		Amount: -20
 	Selectable:
 		Bounds: 120, 53, 0, -5
 	Armament:
@@ -426,7 +426,7 @@ obelisk:
 		IsPlayerPalette: true
 		RequiresCondition: !build-incomplete
 	Power:
-		Amount: -175
+		Amount: -130
 	AutoTarget:
 		InitialStance: AttackAnything
 	GrantConditionOnPowerState@LOWPOWER:
