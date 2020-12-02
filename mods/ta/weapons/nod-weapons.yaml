@@ -122,12 +122,12 @@ LightTankCannonAP:
 	Warhead@1Dam: SpreadDamage
 		Damage: 4000
 		Versus:
-			None: 25
-			Flak: 25
-			Plate: 25
-			Light: 75
-			Medium: 95
-			Heavy: 80
+			None: 30
+			Flak: 30
+			Plate: 30
+			Light: 60
+			Medium: 90
+			Heavy: 100
 			Wood: 100
 			Steel: 85
 			Concrete: 95
