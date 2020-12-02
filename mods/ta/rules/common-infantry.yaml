@@ -7,7 +7,7 @@ mngunner:
 		Queue: Infantry
 		Prerequisites: ~infantry.any
 		BuildPaletteOrder: 10
-		Description: 装备轻机枪的常规步兵\n\n·强势对抗：步兵\n·弱势对抗：载具
+		Description: 泛用型步兵\n\n·强势对抗：步兵\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 100
 	Armor:
@@ -69,11 +69,11 @@ bzkier:
 		Queue: Infantry
 		Prerequisites: ~infantry.any
 		BuildPaletteOrder: 10
-		Description: 装备反装甲火箭筒的步兵 \n护甲较弱 \n可以对空 \n\n·强势对抗：载具、飞行器 \n·弱势对抗：步兵
+		Description: 反装甲防空步兵\n可以对空\n\n·强势对抗：载具、飞行器\n·弱势对抗：步兵
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: 反装甲兵
+		Name: 导弹兵
 	Armor:
 		Type: None
 	Selectable:

@@ -5,7 +5,7 @@ nhand:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.nod
-		Description: Nod用于训练步兵的建筑
+		Description: 训练Nod步兵
 	Selectable:
 		Bounds: 144, 88, -12, -16
 	Valued:
@@ -82,7 +82,7 @@ airstrip:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, ~structures.nod
-		Description: Nod用于为运送前线购买的载具的运输机短时间着陆并卸载的设施。\n\n 受停电影响很小
+		Description: 获得Nod载具的一片货运机着陆区\n受停电惩罚的影响更小
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -154,7 +154,7 @@ ntpl:
 		Queue: Building
 		BuildPaletteOrder: 100
 		Prerequisites: hq, ~structures.nod
-		Description: Nod极具宗教色彩的巨型指挥中心，提供最高级许可。\n具有完善的弹道核导弹发射设施.\n\n·提供 超级武器：核弹攻击
+		Description: 解锁Nod高级科技\n需要电力才能运转\n\n·提供 超级武器：核弹攻击
 	Selectable:
 		Bounds: 252, 188, 4, -32
 	Valued:
@@ -247,11 +247,11 @@ ntur:
 		Queue: Support
 		BuildPaletteOrder: 20
 		Prerequisites: infantry_barracks, ~structures.nod
-		Description: Nod的常规反装甲防御炮塔，适用于对抗装甲单位。
+		Description: 反装甲防御设施\n可以侦测隐形单位\n\n·强势对抗：载具\n·弱势对抗：步兵、飞行器
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: 定点炮塔
+		Name: 反坦克炮塔
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -312,11 +312,11 @@ samsite:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: infantry_barracks, hq, ~structures.nod
-		Description: 特殊的防空装置，平时发射器处于重装甲的保护之下，当空域内出现敌军飞行器时将自行升起打击敌机。
+		Description: 基地防空设施\n无法攻击地面单位\n需要电力才能运转\n不发动攻击时具有更强的生存能力\n\n·强势对抗：飞行器\n·弱势对抗：地面单位
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: SAM防空导弹井
+		Name: 防空导弹井
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -375,7 +375,7 @@ obelisk:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: ntpl, ~structures.nod
-		Description: Nod的终极地面防御装置，其发射的高能激光可以摧毁一切地面目标。\n 强势对抗：一切地面单位
+		Description: 具有强大攻击与防御能力的终极对地防御设施\n可以侦测隐形单位\n造成范围伤害\n需要电力才能运转\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
 	Valued:
 		Cost: 1800
 	Tooltip:

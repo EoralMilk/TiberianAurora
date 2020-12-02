@@ -114,13 +114,13 @@ CycleAAMissile:
 LightTankCannonAP:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Small
-	ReloadDelay: 44
+	ReloadDelay: 33
 	Range: 5c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
-		Speed: 682
+		Speed: 720
 	Warhead@1Dam: SpreadDamage
-		Damage: 5000
+		Damage: 4000
 		Versus:
 			None: 25
 			Flak: 25

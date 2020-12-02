@@ -5,7 +5,7 @@ barracks:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.gdi
-		Description: GDI用于训练步兵的建筑
+		Description: 训练GDI步兵
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
@@ -92,7 +92,7 @@ warfactory:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, ~structures.gdi
-		Description: GDI用于生产地面载具的建筑
+		Description: 制造GDI载具
 	Selectable:
 		Bounds: 196, 178, -6, -48
 	Valued:
@@ -172,13 +172,13 @@ advhq:
 		Queue: Building
 		BuildPaletteOrder: 100
 		Prerequisites: hq, ~structures.gdi
-		Description: 开启雷达并提供最高级生产许可，同时操控天基离子炮。\n\n·提供 超级武器：离子炮打击
+		Description: 解锁GDI高级科技\n提供战术地图\n需要电力才能运转\n\n·提供 超级武器：离子炮轰炸
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: 高级指挥中心
+		Name: 高级通讯中心
 	ProvidesPrerequisite:
 		Prerequisite: advhq
 	Building:
@@ -223,7 +223,7 @@ advhq:
 		Cursor: attackmove
 		ChargeInterval: 6750
 		Description: 离子炮轰炸
-		LongDesc: 命令天基离子炮轰炸目标区域\n立即对小范围内的一切单位造成高额伤害
+		LongDesc: 向目标区域发射离子炮\n立即对小范围内的一切单位造成高额伤害
 		BeginChargeSpeechNotification: IonCannonCharging
 		EndChargeSpeechNotification: IonCannonReady
 		SelectTargetSpeechNotification: SelectTarget
@@ -248,11 +248,11 @@ guntower:
 		Queue: Support
 		BuildPaletteOrder: 20
 		Prerequisites: infantry_barracks, ~structures.gdi
-		Description: 内置了重机枪的哨塔
+		Description: 反步兵哨塔\n可以侦测隐形单位\n\n·强势对抗：步兵、轻型载具\n·弱势对抗：装甲载具、飞行器
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: 警戒哨塔
+		Name: 机枪岗哨
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -313,11 +313,11 @@ advgtwr:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: infantry_barracks, ~structures.gdi, hq
-		Description: 装载着导弹发射器和整套探测，索敌，瞄准系统的高级防御塔
+		Description: 泛用型先进基地防御\n可以侦测隐形单位\n需要电力才能运转\n可以对空\n\n·强势对抗：载具、飞行器\n·弱势对抗：步兵、建筑
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: 高级防御塔
+		Name: 先进导弹塔
 	Building:
 		Footprint: x
 		Dimensions: 1, 1

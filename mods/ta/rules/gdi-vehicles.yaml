@@ -5,11 +5,11 @@ ghumv:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicle.gdi
-		Description: \n 搭载重机枪的悍马吉普车。\n \n 强势对抗：步兵 \n 弱势对抗：重装甲单位
+		Description: 高机动性反步兵侦察载具\n\n·强势对抗：步兵、轻型载具\n·弱势对抗：装甲载具、飞行器
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: 重机枪悍马
+		Name: 悍马侦察车
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
@@ -66,7 +66,7 @@ gapc:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~vehicle.gdi
-		Description: \n 装有重装甲和榴弹发射器的运兵车。\n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
+		Description: 配备重装甲和榴弹发射器的运输载具\n\n·强势对抗：步兵、轻型载具\n·弱势对抗：装甲载具、飞行器
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -127,7 +127,7 @@ gtank:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
 		Prerequisites: ~vehicle.gdi, repairdepot
-		Description: \n GDI中型主战坦克，装有105mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+		Description: 装备105mm主炮的GDI主战坦克\n\n·强势对抗：载具\n·弱势对抗：步兵、飞行器
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -180,11 +180,11 @@ gmlrs:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
 		Prerequisites: ~vehicle.gdi, hq
-		Description: \n GDI的主力炮兵，能用火箭弹幕对目标区域进行轰炸。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果不佳
+		Description: 机动型长程火箭发射平台\n通过火箭弹幕造成范围伤害\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: 多管火箭发射系统
+		Name: 自行火箭炮
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
@@ -229,7 +229,7 @@ gmmtnk:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
 		Prerequisites: ~vehicle.gdi, advhq, repairdepot
-		Description: \n GDI的重型坦克，装有双联装120mm主炮和猛犸牙飞弹。\n 猛犸牙飞弹可以对空 \n 装甲十分强大。\n \n 强势对抗：一切单位 \n 可以自我修复至生命值的一半
+		Description: 装备双联装120mm主炮和高爆火箭弹的GDI重型移动堡垒\n可以对空\n\n·强势对抗：一切\n·弱势对抗：无\n\n·特殊能力：可以自我回复至最大生命值的50%
 	Valued:
 		Cost: 1500
 	Tooltip:

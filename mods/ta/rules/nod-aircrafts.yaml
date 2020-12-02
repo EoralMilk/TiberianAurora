@@ -13,7 +13,7 @@ apache:
 		BuildPaletteOrder: 20
 		Prerequisites: hq, ~techlevel.medium, aircraft.nod
 		Queue: Aircraft
-		Description: 搭载盖特炮的重型武装直升机\n\n·强势对抗：步兵、轻型载具、飞行器\n·弱势对抗：装甲载具
+		Description: 搭载火神机炮的重型武装直升机\n可以对空\n\n·强势对抗：步兵、轻型载具、飞行器\n·弱势对抗：装甲载具
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 170
@@ -136,7 +136,7 @@ c130:
 	Interactable:
 		Bounds: 100,80
 	Tooltip:
-		Name: C130运输机
+		Name: AC130运输机
 	Aircraft:
 		CanHover: false
 		Repulsable: false
@@ -240,7 +240,7 @@ ac130:
 c130husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: C130运输机
+		Name: AC130运输机
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 100

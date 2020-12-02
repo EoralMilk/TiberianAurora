@@ -7,11 +7,11 @@ flamet:
 		Queue: Infantry
 		Prerequisites: ~infantry.nod
 		BuildPaletteOrder: 10
-		Description: 装备火焰喷射器和坚固护甲的特种部队\n\n·强势对抗：步兵、建筑 \n·弱势对抗：载具
+		Description: 装备火焰喷射器的特种部队\n火焰可以对载具产生灼烧效果\n阵亡时可能殉爆\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 325
 	Tooltip:
-		Name: 喷火部队
+		Name: 火焰兵
 	Mobile:
 		Speed: 75
 		Voice: Move
@@ -60,11 +60,11 @@ chemict:
 		Queue: Infantry
 		Prerequisites: ~infantry.nod, ntpl
 		BuildPaletteOrder: 10
-		Description: 装备先进泰伯利亚武器的精英部队\n免疫泰伯利亚毒害\n\n·强势对抗：地面目标
+		Description: 装备先进泰伯利亚武器的精英步兵\n免疫泰伯利亚\n阵亡时可能殉爆\n\n·强势对抗：地面目标\n·弱势对抗：飞行器
 	Valued:
 		Cost: 375
 	Tooltip:
-		Name: 化学部队
+		Name: 化武军团
 	Mobile:
 		Speed: 80
 		Voice: Move

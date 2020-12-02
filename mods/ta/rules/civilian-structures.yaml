@@ -14,8 +14,12 @@ caoild:
 		Name: 油井
 	Health:
 		HP: 50000
-	TooltipDescription:
-		Description: 间歇性提供少量资金
+	TooltipDescription@ally:
+		Description: 提供额外资金
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: 占领以获取额外资金
+		ValidStances: Neutral, Enemy
 	RevealsShroud:
 		Range: 4c0
 	Armor:
@@ -39,7 +43,7 @@ cahosp:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Tooltip:
-		Name: 医院
+		Name: 市民医院
 	ProvidesPrerequisite@heal:
 		Prerequisite: hospheal
 	EngineerRepairable:
@@ -49,8 +53,12 @@ cahosp:
 		Range: 6c0
 	Armor:
 		Type: Concrete
-	TooltipDescription:
+	TooltipDescription@ally:
 		Description: 为步兵提供自愈能力
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: 占领后为步兵提供自愈能力
+		ValidStances: Neutral, Enemy
 	WithIdleOverlay@lights:
 		Sequence: lights
 	RenderSprites:
@@ -67,7 +75,7 @@ cabiot:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Tooltip:
-		Name: 生化实验室
+		Name: 生物实验室
 	ProvidesPrerequisite@heal:
 		Prerequisite: biotech
 	EngineerRepairable:
@@ -77,8 +85,12 @@ cabiot:
 		Range: 6c0
 	Armor:
 		Type: Concrete
-	TooltipDescription:
-		Description: 为步兵提供免疫泰伯利亚晶矿毒害的能力
+	TooltipDescription@ally:
+		Description: 使步兵免疫泰伯利亚
+		ValidStances: Ally
+	TooltipDescription@other:
+		Description: 占领以使步兵免疫泰伯利亚
+		ValidStances: Neutral, Enemy
 	WithIdleOverlay@lights:
 		Sequence: lights
 	RenderSprites:

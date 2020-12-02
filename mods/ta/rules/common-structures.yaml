@@ -87,7 +87,7 @@ pwrplt:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: structures.any
-		Description: 基础发电设施, 为基地其他建筑提供电力
+		Description: 为基地其他建筑提供电力
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
@@ -133,7 +133,7 @@ advpwr:
 		Queue: Building
 		BuildPaletteOrder: 80
 		Prerequisites: hq, ~techlevel.medium
-		Description: 高级发电设施, 效率是普通发电厂的两倍
+		Description: 为基地其他建筑提供电力，效率是发电厂的两倍
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
@@ -180,11 +180,11 @@ refinery:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power
-		Description: 收集并精炼泰伯利亚晶矿以获取资金\n\n·可以储存1000单位泰伯利亚晶体
+		Description: 收集并精炼泰伯利亚以获取资金\n\n·可以储存1000单位资金
 	Selectable:
 		Bounds: 200, 148, 4, -32
 	Tooltip:
-		Name: 精炼厂
+		Name: 泰伯利亚精炼厂
 	ProvidesPrerequisite:
 		Prerequisite: refinery
 	Building:
@@ -268,13 +268,13 @@ hq:
 		Queue: Building
 		BuildPaletteOrder: 70
 		Prerequisites: refinery
-		Description: 开启雷达并提供高级的生产许可
+		Description: 科技建筑\n提供战场视野和战术地图\n需要电力才能运转\n\n·提供阵营独有支援能力
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: 指挥中心
+		Name: 通讯中心
 	ProvidesPrerequisite:
 		Prerequisite: hq
 	Building:
@@ -325,7 +325,7 @@ hq:
 		SquadSize: 3
 		QuantizedFacings: 8
 		Description: A-10空袭
-		LongDesc: 部署轰炸信标\n对一条直线上的单位与建筑造成伤害
+		LongDesc: 指派三架A-10战机对选中区域发动空袭
 		EndChargeSpeechNotification: AirstrikeReady
 		SelectTargetSpeechNotification: SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -349,7 +349,7 @@ hq:
 		Cursor: praradrop
 		ChargeInterval: 7000
 		Description: 空降部队
-		LongDesc: 派遣AC130炮艇机向目标区域投送空降突击队 \nAC130将在投放部队的同时提供一定的火力支援
+		LongDesc: 派遣AC130炮艇机向目标区域投送空降突击队\nAC130将对目标区域提供火力支援
 		EndChargeSpeechNotification: AirstrikeReady
 		SelectTargetSpeechNotification: SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -388,7 +388,7 @@ helipad:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: refinery
-		Description: 提供一个可以维修飞行器并为其装弹的停机位。\n开启飞行器建造序列。
+		Description: 制造和维护飞行器
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -461,7 +461,7 @@ repairdepot:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: vehicle_factory
-		Description: 消耗资金来快速维修载具与飞行器
+		Description: 消耗资源以高效修复载具和飞行器
 	Selectable:
 		Bounds: 144, 88, 5, 0
 	Valued:
@@ -513,13 +513,13 @@ silo:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: refinery
-		Description: 储存1000单位泰伯利亚晶体
+		Description: 储存额外的资源\n可以储存1000单位资金
 	Selectable:
 		Bounds: 120, 53, 0, -5
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: 泰伯利亚储仓
+		Name: 泰伯利亚矿仓
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -560,7 +560,7 @@ a_wall:
 		Queue: Support
 		BuildPaletteOrder: 5
 		Prerequisites: structures.any
-		Description: 防御用的坚固围墙.\n有效阻挡平射武器抛射物与地面单位通过
+		Description: 防御用的坚固围墙\n有效阻挡枪炮火力与敌方单位通过
 	Tooltip:
 		Name: 混凝土围墙
 	OwnerLostAction:

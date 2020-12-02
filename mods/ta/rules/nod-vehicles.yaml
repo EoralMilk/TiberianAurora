@@ -5,11 +5,11 @@ nbggy:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicle.nod
-		Description: \n 搭载机枪的全地形四驱车。\n 速度很快 \n 装甲很脆弱。\n \n 强势对抗：步兵 \n 弱势对抗：重装甲单位
+		Description: 高机动性反步兵侦察载具\n\n·强势对抗：步兵、轻型载具\n·弱势对抗：装甲载具、飞行器
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: 突击四驱车
+		Name: 越野侦察车
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
@@ -69,11 +69,11 @@ ncycle:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~vehicle.nod
-		Description: \n 搭载"龙"式导弹的突击摩托车 \n 速度飞快 \n 装甲很脆弱。\n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+		Description: 高速反装甲侦察车\n可以对空\n\n·强势对抗：载具、飞行器\n·弱势对抗：步兵
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: 突击摩托车
+		Name: 突击摩托
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
@@ -118,7 +118,7 @@ ntank:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
 		Prerequisites: ~vehicle.nod, repairdepot
-		Description: \n Nod轻型主战坦克，装有90mm主炮和重装甲。\n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+		Description: 装备90mm速射炮的Nod高机动轻装甲主战坦克\n\n·强势对抗：载具\n·弱势对抗：步兵、飞行器
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -169,7 +169,7 @@ nftnk:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
 		Prerequisites: ~vehicle.nod, hq
-		Description: \n 搭载双联装火焰喷射器和大量燃料的重装甲坦克 \n \n 强势对抗：步兵，轻装甲单位，建筑 \n 弱势对抗：重装甲单位
+		Description: 搭载双联装火焰喷射器的重型坦克\n火焰可以对载具产生灼烧效果\n阵亡时可能殉爆\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 850
 	Tooltip:
@@ -218,7 +218,7 @@ nhowi:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
 		Prerequisites: ~vehicle.nod, hq
-		Description: \n Nod的主力炮兵，搭载155mm榴弹炮。\n 装甲比较脆弱。\n 难以命中快速移动的目标 \n \n 强势对抗：地面单位，对重装甲坦克效果欠佳
+		Description: 装备155mm榴弹炮的轻型长程火炮\n可以造成范围伤害\n具有较大的散布\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -271,7 +271,7 @@ nstltnk:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
 		Prerequisites: ~vehicle.nod, ntpl
-		Description: \n 这种坦克采用了神秘技术令其可以在肉眼和雷达探测中隐形 \n 不攻击且不受攻击时隐形 \n 可以对空 \n \n 强势对抗：装甲单位，建筑 \n 弱势对抗：步兵
+		Description: 装备反装甲导弹与隐形力场发生器的高科技坦克\n在不攻击且不受攻击时隐形\n可以对空\n\n·强势对抗：载具、飞行器\n·弱势对抗：步兵
 	Valued:
 		Cost: 1250
 	Tooltip:

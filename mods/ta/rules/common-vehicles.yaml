@@ -4,11 +4,11 @@ mcv:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
 		Prerequisites: ~repairdepot
-		Description: Deploys into a Construction Yard.\n	Unarmed
+		Description: 部署为建筑工厂\n\n·无武装
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Mobile Construction Vehicle
+		Name: 移动基地车
 	Selectable:
 		Priority: 4
 		Bounds: 68, 56, 0, -7
@@ -57,11 +57,11 @@ harvester:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: refinery
-		Description: 收割泰伯利亚以换取资金
+		Description: 采集泰伯利亚以获取资金\n\n·无武装\n\n·特殊能力：自动回复至最大生命值的50%
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: 收割机
+		Name: 采矿车
 	Selectable:
 		Priority: 3
 		Bounds: 64, 52, 0, -6
