@@ -118,7 +118,7 @@ LightTankCannonAP:
 	Range: 5c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
-		Speed: 720
+		Speed: 750
 	Warhead@1Dam: SpreadDamage
 		Damage: 4000
 		Versus:
