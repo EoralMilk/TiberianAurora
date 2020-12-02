@@ -276,17 +276,17 @@ MammothTuskAAMissile:
 ManyRockets:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	ReloadDelay: 120
+	ReloadDelay: 170
 	Burst: 6
-	BurstDelays: 6
+	BurstDelays: 5
 	Range: 13c512
 	MinRange: 4c512
 	Report: rocket_shot.wav
 	Projectile: Bullet
-		Speed: 236
+		Speed: 185
 		ContrailLength: 14
 		ContrailWidth: 30
-		Inaccuracy: 700
+		Inaccuracy: 0c512
 		Image: DRAGON
 		LaunchAngle: 180
 		Blockable: false
@@ -295,17 +295,17 @@ ManyRockets:
 		TrailInterval: 0
 		TrailDelay: 0
 	Warhead@1Dam: SpreadDamage
-		Damage: 6000
-		Spread: 0c700
+		Damage: 5300
+		Spread: 0c512
 		Versus:
 			None: 150
 			Flak: 140
 			Plate: 100
 			Light: 80
-			Medium: 35
+			Medium: 25
 			Heavy: 50
 			Wood: 110
-			Steel: 75
+			Steel: 50
 			Concrete: 75
 			Drone: 60
 			Rocket: 100

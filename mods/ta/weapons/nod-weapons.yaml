@@ -199,24 +199,24 @@ HowitzerCannonHE:
 	MinRange: 4c256
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
-		Speed: 160
+		Speed: 166
 		ContrailLength: 16
 		ContrailWidth: 28
-		Inaccuracy: 1200
+		Inaccuracy: 1c256
 		LaunchAngle: 165
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 15000
-		Spread: 0c1000
+		Spread: 0c768
 		Versus:
 			None: 100
 			Flak: 100
 			Plate: 80
 			Light: 100
-			Medium: 40
-			Heavy: 40
+			Medium: 20
+			Heavy: 30
 			Wood: 100
-			Steel: 70
+			Steel: 60
 			Concrete: 60
 			Drone: 80
 			Rocket: 100
