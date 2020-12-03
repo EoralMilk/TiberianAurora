@@ -486,7 +486,7 @@ repairdepot:
 	Armor:
 		Type: Steel
 	RevealsShroud:
-		Range: 4c0
+		Range: 5c0
 		Type: GroundPosition
 	WithRepairOverlay@PLATFORM:
 		Sequence: padglow
