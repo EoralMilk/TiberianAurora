@@ -316,22 +316,22 @@ ManyRockets:
 HMG-damage:
 	Inherits: ^MGDamageMaker
 	ReloadDelay: 50
-	Burst: 6
-	BurstDelays: 4
+	Burst: 8
+	BurstDelays: 3
 	Range: 7c0
 	Projectile: Missile
 		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
-		Damage: 2000
+		Damage: 1500
 		Spread: 0c512
 		Versus:
 			None: 100
 			Flak: 100
 			Plate: 90
-			Light: 35
-			Medium: 10
-			Heavy: 10
-			Wood: 25
+			Light: 50
+			Medium: 30
+			Heavy: 27
+			Wood: 27
 			Steel: 15
 			Concrete: 15
 			Drone: 100
@@ -341,8 +341,8 @@ HMG-eff_bullet:
 	Inherits: ^MGBulletEff
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
-	Burst: 6
-	BurstDelays: 4
+	Burst: 8
+	BurstDelays: 3
 	Range: 7c0
 	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
@@ -354,8 +354,8 @@ HMG-eff_fire:
 	Inherits: ^MGDamageMaker
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
-	Burst: 6
-	BurstDelays: 4
+	Burst: 8
+	BurstDelays: 3
 	Range: 7c0
 	Report: mg_shot.wav
 	AfterFireSoundDelay: 2
@@ -374,8 +374,8 @@ HMG-eff_fire:
 HMG-Casing:
 	Inherits: ^BulletCasing
 	ReloadDelay: 50
-	Burst: 6
-	BurstDelays: 4
+	Burst: 8
+	BurstDelays: 3
 	Range: 7c0
 	ValidTargets: Ground, Water
 	Projectile: Missile
@@ -392,14 +392,14 @@ TowerMissile:
 		# CruiseAltitude: 5c0
 		Arm: 2
 		Speed: 388
-		Inaccuracy: 300
+		Inaccuracy: 500
 		Acceleration: 12
 		CruiseAltitude: 5c512
 		HorizontalRateOfTurn: 18
 		RangeLimit: 17c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c332
+		Spread: 0c400
 		Damage: 3000
 		Versus:
 			None: 35
@@ -410,7 +410,7 @@ TowerMissile:
 			Heavy: 70
 			Wood: 50
 			Steel: 40
-			Concrete: 35
+			Concrete: 20
 			Drone: 80
 			Rocket: 100
 		ValidTargets: Ground, Water, Air

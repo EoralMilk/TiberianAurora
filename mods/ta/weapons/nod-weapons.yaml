@@ -234,29 +234,29 @@ Howitzer-Casing:
 TurretCannon:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Medium
-	ReloadDelay: 60
-	Range: 7c0
+	ReloadDelay: 55
+	Range: 7c512
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Projectile: Bullet
-		Speed: 700
+		Speed: 900
 	Warhead@1Dam: SpreadDamage
 		Damage: 7500
 		Versus:
-			None: 30
-			Flak: 30
-			Plate: 25
+			None: 40
+			Flak: 35
+			Plate: 30
 			Light: 100
 			Medium: 100
 			Heavy: 100
 			Wood: 65
-			Steel: 90
-			Concrete: 65
+			Steel: 60
+			Concrete: 55
 			Drone: 60
 			Rocket: 100
 
 Turret-Casing:
 	Inherits: ^ShellCasing
-	ReloadDelay: 60
+	ReloadDelay: 55
 	Range: 7c0
 	ValidTargets: Ground, Water
 	Projectile: Missile
