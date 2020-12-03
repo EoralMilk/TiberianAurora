@@ -171,28 +171,28 @@ nftnk:
 		Prerequisites: ~vehicle.nod, hq
 		Description: 搭载双联装火焰喷射器的重型坦克\n火焰可以对载具产生灼烧效果\n阵亡时可能殉爆\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
-		Cost: 850
+		Cost: 900
 	Tooltip:
 		Name: 恶魔之舌
 	Selectable:
 		Bounds: 68, 56, 0, -7
 	Health:
-		HP: 40000
+		HP: 45000
 	Armor:
 		Type: Heavy
 	Mobile:
 		TurnSpeed: 3
-		Speed: 95
+		Speed: 90
 		Locomotor: tracked
 	RevealsShroud:
-		Range: 6c0
+		Range: 5c0
 	Armament:
 		Weapon: Devil'sTongue
 		LocalOffset: 685,300,580, 685,-300,580
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 6
 	RenderSprites:
 		Image: n_ftank
 		PlayerPalette: n_ftank
