@@ -52,7 +52,7 @@ Terrain:
 	TerrainType@Ore:
 		Type: Ore
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
-		Color: 948060
+		Color: 1EC41E
 		TargetTypes: Ground, Stone
 	TerrainType@Gems:
 		Type: Gems

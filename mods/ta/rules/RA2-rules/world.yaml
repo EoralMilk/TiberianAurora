@@ -204,7 +204,7 @@
 		ValuePerUnit: 50
 		Type: Gems
 		Name: 宝石矿
-		PipColor: Red
+		PipColor: Blue
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems
