@@ -284,13 +284,13 @@ gmmtnk:
 		Offset: 330,-260,340
 
 gunboat:
-	Inherits: ^TurretedVehicle
+	Inherits: ^SpiritVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 110
-		Prerequisites: none
-		Description: \n GDI的海军主力
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 110
+	# 	Prerequisites: none
+	# 	Description: \n GDI的海军主力
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -307,13 +307,62 @@ gunboat:
 		Locomotor: naval
 	RevealsShroud:
 		Range: 8c0
-	Armament@antiair:
+	Armament@AG:
+		Turret: MLT
 		Weapon: GunBoatMissile
 		LocalOffset: 217,195,1365, 217,-195,1365
+	Armament@AA:
+		Turret: MLT
+		Weapon: GunBoatAAMissile
+		LocalOffset: 217,195,1365, 217,-195,1365
+	# Armament@VL1:
+	# 	Weapon: VLMisl
+	# 	Turret: VL_fake1
+	# 	LocalOffset: 0, 0, 0
+	# Armament@VL2:
+	# 	Weapon: VLMisl
+	# 	Turret: VL_fake2
+	# 	LocalOffset: 0, 0, 0
+	# Armament@VL3:
+	# 	Weapon: VLMisl
+	# 	Turret: VL_fake3
+	# 	LocalOffset: 0, 0, 0
+	# Armament@VL4:
+	# 	Weapon: VLMisl
+	# 	Turret: VL_fake4
+	# 	LocalOffset: 0, 0, 0
+
+
 	WithMuzzleOverlay:
-	Turreted:
+
+	AttackTurreted@MLT:
+		Turrets: MLT # , VL_fake1, VL_fake2, VL_fake3, VL_fake4
+		Voice: Attack
+	Turreted@MLT:
+		Turret: MLT
 		TurnSpeed: 6
 		Offset: 1281,0,0
+	WithSpriteTurret@MLT:
+		Turret: MLT
+	# Turreted@VL_fake1:
+	# 	Turret: VL_fake1
+	# 	TurnSpeed: 256
+	# 	Offset: 0,0,1288
+	# Turreted@VL_fake2:
+	# 	Turret: VL_fake2
+	# 	TurnSpeed: 256
+	# 	Offset: -300,0,1288
+	# Turreted@VL_fake3:
+	# 	Turret: VL_fake3
+	# 	TurnSpeed: 256
+	# 	Offset: -600,0,1288
+	# Turreted@VL_fake4:
+	# 	Turret: VL_fake4
+	# 	TurnSpeed: 256
+	# 	Offset: -900,0,1288
+
+	AutoTarget:
+
 	RenderSprites:
 		Image: gunboat
 		PlayerPalette: green_unit

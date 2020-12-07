@@ -51,3 +51,105 @@ SummonFlameSea:
 	# 	RandomClusterCount: 1
 	# 	Dimensions: 1,1
 	# 	Footprint: X
+
+
+TestMissile:
+	Inherits: ^CommonMissile
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
+	ValidTargets: Ground, Water, Air
+	Range: 6c512
+	Burst: 2
+	BurstDelays: 0
+	ReloadDelay: 48
+	Projectile: Missile
+		Arm: 4
+		Speed: 280
+		Acceleration: 8
+		Inaccuracy: 700
+		RangeLimit: 20c0
+		ContrailLength: 8
+		ContrailWidth: 25
+		ContrailColor: FFFFB1
+		Blockable: false
+		Gravity: 8
+		Image: dragon2
+		Palette: player
+		Shadow: true
+		VerticalRateOfTurn: 1
+		HorizontalRateOfTurn: 1
+		TerrainHeightAware: false
+		AllowSnapping: false
+		# CruiseAltitude: 3c0
+		TrailImage: mislflash
+		TrailPalette: gray_alpha
+		TrailInterval: 0
+		TrailDelay: 0
+		CloseEnough: 68
+		MinimumLaunchSpeed: 15
+		MaximumLaunchSpeed: 20
+		MinimumLaunchAngle: -64
+		MaximumLaunchAngle: 256
+		LockOnProbability: 0
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c450
+		Damage: 4500
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 100
+			Medium: 45
+			Heavy: 75
+			Wood: 50
+			Steel: 40
+			Concrete: 40
+			Drone: 80
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air
+
+
+
+
+VLMisl:
+	Inherits: ^CommonMissile
+	Inherits@WarheadEff: ^HE_WarheadEff_Medium
+	ValidTargets: Ground, Water
+	Range: 11c512
+	Burst: 2
+	BurstDelays: 0
+	ReloadDelay: 48
+	Projectile: Missile
+		ContrailLength: 12
+		Arm: 2
+		Speed: 400
+		Inaccuracy: 100
+		Acceleration: 22
+		VerticalRateOfTurn: 22
+		HorizontalRateOfTurn: 15
+		HomingActivationDelay: 12
+		MinimumLaunchSpeed: 220
+		MaximumLaunchSpeed: 220
+		MinimumLaunchAngle: 256
+		MaximumLaunchAngle: 256
+
+		RangeLimit: 14c512
+		ContrailColor: D8D8FF
+		CruiseAltitude: 4c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c450
+		Damage: 4500
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 100
+			Medium: 45
+			Heavy: 75
+			Wood: 50
+			Steel: 40
+			Concrete: 40
+			Drone: 80
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air

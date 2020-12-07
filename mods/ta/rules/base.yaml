@@ -57,7 +57,7 @@
 		Voice: Attack
 	Guardable:
 	BodyOrientation:
-		QuantizedFacings: 0
+		QuantizedFacings: 32
 		CameraPitch: 85
 		UseClassicPerspectiveFudge: false
 	Explodes:
@@ -128,7 +128,7 @@
 	# 	Palette: effect80alpha
 	# 	MinDamage: Heavy
 	# 	Offset: -110,0,500
-
+	HitShape:
 
 
 

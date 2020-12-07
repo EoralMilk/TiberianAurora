@@ -329,11 +329,11 @@ nstltnk:
 
 meme_obelisker:
 	Inherits: ^AtkFrontalVehicle
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 120
-		Prerequisites: none
-		Description: \n 一个会动的石碑？
+	# Buildable:
+	# 	Queue: Vehicle
+	# 	BuildPaletteOrder: 120
+	# 	Prerequisites: none
+	# 	Description: \n 一个会动的石碑？
 	Valued:
 		Cost: 1500
 	Tooltip:

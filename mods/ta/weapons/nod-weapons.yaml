@@ -393,7 +393,7 @@ HeliAAGun:
 	Inherits: HeliAGGun
 	ValidTargets: Air
 	Projectile: Bullet
-		Inaccuracy: 250
+		Inaccuracy: 150
 	Warhead@1Dam: SpreadDamage
 		Damage: 1800
 		ValidTargets: Air

@@ -615,7 +615,7 @@ A10Napalm:
 GunBoatMissile:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water
 	Range: 13c512
 	Burst: 4
 	BurstDelays: 5
@@ -647,4 +647,11 @@ GunBoatMissile:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 		ValidTargets: Ground, Water, Air
+
+
+GunBoatAAMissile:
+	Inherits: GunBoatMissile
+	ValidTargets: Air
 	-Warhead@Smoke:
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
