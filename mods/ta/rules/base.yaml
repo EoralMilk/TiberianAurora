@@ -22,6 +22,7 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^ParachutableVehicle
+	Inherits@7: ^SpawnSmoke
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -244,6 +245,7 @@
 
 ^CommonAircraft:
 	Inherits@1: ^ExistsInWorld
+	Inherits@7: ^SpawnSmoke
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -708,3 +710,21 @@
 	Interactable:
 	Targetable@materials:
 		TargetTypes: Concrete, Grass
+
+^SpawnSmoke:
+	GrantConditionOnDamageState@smoke:
+		Condition: smoketrail
+		ValidDamageStates: Critical, Heavy
+	SmokeParticleEmitter:
+		RequiresCondition: smoketrail
+		Sequences: idle
+		SpawnFrequency: 6, 12
+		Speed: 6
+		Gravity: 70
+		Offset: 0,0,0,0,0,0
+		Image: smallsmoke
+		Palette: effect50alpha
+		Duration: 75
+		RandomFacing: True
+	ExternalCondition@smoketrail:
+		Condition: smoketrail
