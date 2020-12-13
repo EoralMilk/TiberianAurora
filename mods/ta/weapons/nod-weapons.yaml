@@ -361,7 +361,7 @@ HeliAGGun:
 	ReloadDelay: 1
 	Report: vulcan_shot.wav
 	Range: 5c640
-	Projectile: Bullet
+	Projectile: SelfGuidedBullet
 		Inaccuracy: 350
 		Speed: 800
 		LaunchAngle: 0
