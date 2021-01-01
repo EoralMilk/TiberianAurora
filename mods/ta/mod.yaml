@@ -113,11 +113,14 @@ MapFolders:
 
 Rules:
 	ta|rules/ai.yaml
-	ta|rules/RA2-rules/player.yaml
-	ta|rules/RA2-rules/world.yaml
-	ta|rules/RA2-rules/palettes.yaml
-	ta|rules/RA2-rules/misc.yaml
-	ta|rules/pal-exclusive.yaml
+	ta|rules/player.yaml
+	ta|rules/world.yaml
+	ta|rules/palettes.yaml
+	ta|rules/misc.yaml
+	ta|rules/pal-effect.yaml
+	ta|rules/pal-unit.yaml
+	ta|rules/pal-others.yaml
+
 
 	ta|rules/base.yaml
 	ta|rules/common-structures.yaml

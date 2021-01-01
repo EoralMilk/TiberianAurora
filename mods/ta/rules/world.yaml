@@ -1,5 +1,9 @@
 ^BaseWorld:
 	Inherits: ^Palettes
+	Inherits: ^Palettes-Unit
+	Inherits: ^Palettes-Effect
+	Inherits: ^Palettes-Others
+
 	AlwaysVisible:
 	MusicPlaylist:
 		VictoryMusic: score
