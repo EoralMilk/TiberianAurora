@@ -363,6 +363,7 @@ if ($command -eq "all" -or $command -eq "clean")
 		# [Net.ServicePointManager]::SecurityProtocol = 'Tls12'
 		# $client.DownloadFile($url, $dlPath)
 		$download = "$pwd" + "\curl.exe"
+		&$download -s -L $url -o $dlPath 
 		Add-Type -assembly "system.io.compression.filesystem"
 		[io.compression.zipfile]::ExtractToDirectory($dlPath, $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY)
 		rm $dlPath
