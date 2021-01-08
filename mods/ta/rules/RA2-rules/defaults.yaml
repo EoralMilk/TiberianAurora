@@ -315,19 +315,26 @@
 		AssaultMoveCondition: assault-move
 		Voice: Attack
 
+^SelectableBuilding:
+	IsometricSelectable:
+		Priority: 2
+	IsometricSelectionDecorations:
+	WithTextControlGroupDecoration:
+		Margin: 1, 1
+	DrawLineToTarget:
+		QueuedLineWidth: 2
+		QueuedMarkerWidth: 3
+
 ^Building:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^IronCurtainable
 	Inherits@shape: ^1x1Shape
+	Inherits@select: ^SelectableBuilding
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
-	SelectionDecorations:
-		Palette: pips
-	Selectable:
-		Priority: 3
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Building:

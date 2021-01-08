@@ -6,8 +6,8 @@ barracks:
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.gdi
 		Description: 训练GDI步兵
-	Selectable:
-		Bounds: 134, 102, -10, -21
+	IsometricSelectable:
+		Height: 48
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -93,8 +93,8 @@ warfactory:
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, ~structures.gdi
 		Description: 制造GDI载具
-	Selectable:
-		Bounds: 196, 178, -6, -48
+	IsometricSelectable:
+		Height: 48
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -173,8 +173,8 @@ advhq:
 		BuildPaletteOrder: 100
 		Prerequisites: hq, ~structures.gdi
 		Description: 解锁GDI高级科技\n提供战术地图\n需要电力才能运转\n\n·提供 超级武器：离子炮轰炸
-	Selectable:
-		Bounds: 134, 102, -10, -21
+	IsometricSelectable:
+		Height: 48
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -262,8 +262,8 @@ guntower:
 		Type: Steel
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 50, 30, 0, -4
+	IsometricSelectable:
+		Height: 48
 	# Armament@shoot1:
 	# 	Weapon: HMG
 	# 	LocalOffset: 500,0,1400
@@ -329,8 +329,8 @@ advgtwr:
 		Amount: -100
 	RevealsShroud:
 		Range: 9c0
-	Selectable:
-		Bounds: 50, 30, 0, -4
+	IsometricSelectable:
+		Height: 48
 	Armament:
 		Weapon: TowerMissile
 		MuzzleSequence: muzzle

@@ -1,8 +1,8 @@
 caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 96, 104, -2, -26
+	IsometricSelectable:
+		Height: 48
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -37,8 +37,8 @@ caoild:
 cahosp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x4Shape
-	Selectable:
-		Bounds: 220, 180, 0, -35
+	IsometricSelectable:
+		Height: 48
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -69,8 +69,8 @@ cahosp:
 cabiot:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x4Shape
-	Selectable:
-		Bounds: 220, 180, 0, -35
+	IsometricSelectable:
+		Height: 48
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4

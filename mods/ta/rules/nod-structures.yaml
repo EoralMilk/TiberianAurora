@@ -6,8 +6,8 @@ nhand:
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.nod
 		Description: 训练Nod步兵
-	Selectable:
-		Bounds: 144, 88, -12, -16
+	IsometricSelectable:
+		Height: 48
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -83,8 +83,8 @@ airstrip:
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, ~structures.nod
 		Description: 获得Nod载具的一片货运机着陆区\n受停电惩罚的影响更小
-	Selectable:
-		Bounds: 252, 188, 4, -32
+	IsometricSelectable:
+		Height: 48
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -155,8 +155,8 @@ ntpl:
 		BuildPaletteOrder: 100
 		Prerequisites: hq, ~structures.nod
 		Description: 解锁Nod高级科技\n需要电力才能运转\n\n·提供 超级武器：核弹攻击
-	Selectable:
-		Bounds: 252, 188, 4, -32
+	IsometricSelectable:
+		Height: 48
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -261,8 +261,8 @@ ntur:
 		Type: Steel
 	RevealsShroud:
 		Range: 8c0
-	Selectable:
-		Bounds: 50, 30, 0, -4
+	IsometricSelectable:
+		Height: 48
 	RenderDetectionCircle:
 	DetectCloaked:
 		Range: 3c0
@@ -328,8 +328,8 @@ samsite:
 		Range: 9c0
 	Power:
 		Amount: -20
-	Selectable:
-		Bounds: 120, 53, 0, -5
+	IsometricSelectable:
+		Height: 48
 	Armament:
 		Weapon: RedEye
 		MuzzleSequence: muzzle
@@ -383,8 +383,8 @@ obelisk:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-	Selectable:
-		Bounds: 44, 102, 0, -40
+	IsometricSelectable:
+		Height: 48
 	Health:
 		HP: 99999
 	Armor:
