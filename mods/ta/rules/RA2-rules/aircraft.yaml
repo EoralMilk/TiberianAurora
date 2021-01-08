@@ -35,7 +35,7 @@ shad:
 	Aircraft:
 		CruiseAltitude: 3072
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
@@ -59,7 +59,7 @@ shadhusk:
 	Tooltip:
 		Name: Night Hawk
 	Aircraft:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 	FallsToEarth:
 		Explosion: UnitExplode
@@ -86,7 +86,7 @@ zep:
 		Bounds: 100,60,0,-10
 	Aircraft:
 		CruiseAltitude: 5600
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
@@ -109,7 +109,7 @@ zep:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512 
 	AutoTarget:
 		ScanRadius: 7
 	RenderSprites:
@@ -133,7 +133,7 @@ zephusk:
 	Tooltip:
 		Name: Kirov Airship
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 25
 	FallsToEarth:
 		Explosion: KirovExplode
@@ -158,7 +158,7 @@ orca:
 	# 	Prerequisites: ~aircraft.harrier
 	# 	Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Aircraft:
-		TurnSpeed: 3
+		TurnSpeed: 12
 		Speed: 210
 	Selectable:
 		Bounds: 30,24
@@ -173,7 +173,7 @@ orca:
 		Weapon: Maverick
 		PauseOnCondition: !ammo
 	AttackAircraft:
-		FacingTolerance: 20
+		FacingTolerance: 80 
 		Voice: Attack
 	Voiced:
 		VoiceSet: HarrierVoice
@@ -199,7 +199,7 @@ orcahusk:
 	Tooltip:
 		Name: Harrier
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 210
 	RenderVoxels:
 		Image: falc
@@ -230,7 +230,7 @@ beaghusk:
 	Tooltip:
 		Name: Black Eagle
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 210
 	RenderVoxels:
 		Image: beag
@@ -248,7 +248,7 @@ pdplane:
 	Aircraft:
 		Repulsable: false
 		CruiseAltitude: 5600
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 225
 	Health:
 		HP: 40000
@@ -270,7 +270,7 @@ pdplanehusk:
 	Tooltip:
 		Name: Cargo Plane
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 100
 	RenderVoxels:
 		Image: pdplane
@@ -308,7 +308,7 @@ hornet:
 		LandingSounds: vhorlana.wav, vhorlanb.wav
 	RenderSprites:
 	AttackAircraft:
-		FacingTolerance: 20
+		FacingTolerance: 80 
 		Voice: Attack
 	AmmoPool:
 		Ammo: 5
@@ -325,7 +325,7 @@ hornethusk:
 	Tooltip:
 		Name: Hornet
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 180
 	RenderVoxels:
 		Image: hornet
@@ -357,12 +357,12 @@ asw:
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-elite
 	AttackAircraft:
-		FacingTolerance: 20
+		FacingTolerance: 80 
 		RequiresCondition: ammo
 	Aircraft:
 		AltitudeVelocity: 240
-		InitialFacing: 192
-		TurnSpeed: 8
+		InitialFacing: 768 
+		TurnSpeed: 32
 		Speed: 180
 		RepulsionSpeed: 40
 		TakeoffSounds: vospstaa.wav
@@ -390,7 +390,7 @@ aswhusk:
 	Tooltip@NoRow:
 		Name: Osprey
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 180
 		AltitudeVelocity: 240
 	RenderVoxels:

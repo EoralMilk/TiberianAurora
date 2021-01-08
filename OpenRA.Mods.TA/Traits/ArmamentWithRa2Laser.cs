@@ -106,14 +106,14 @@ namespace OpenRA.Mods.TA.Traits
 			base.Created(self);
 		}
 
-		protected override void FireBarrel(Actor self, IFacing facing, Target target, Barrel barrel)
+		protected override void FireBarrel(Actor self, IFacing facing, in Target target, Barrel barrel)
 		{
 			foreach (var na in NotifyAttacks)
 				na.PreparingAttack(self, target, this, barrel);
 
 			Func<WPos> muzzlePosition = () => self.CenterPosition + MuzzleOffset(self, barrel);
-			var legacyFacing = MuzzleOrientation(self, barrel).Yaw.Angle / 4;
-			Func<int> legacyMuzzleFacing = () => MuzzleOrientation(self, barrel).Yaw.Angle / 4;
+			var legacyFacing = MuzzleOrientation(self, barrel).Yaw;
+			Func<WAngle> legacyMuzzleFacing = () => MuzzleOrientation(self, barrel).Yaw;
 
 			var passiveTarget = Weapon.TargetActorCenter ? target.CenterPosition : target.Positions.PositionClosestTo(muzzlePosition());
 			var initialOffset = Weapon.FirstBurstTargetOffset;
@@ -121,7 +121,7 @@ namespace OpenRA.Mods.TA.Traits
 			{
 				// We want this to match Armament.LocalOffset, so we need to convert it to forward, right, up
 				initialOffset = new WVec(initialOffset.Y, -initialOffset.X, initialOffset.Z);
-				passiveTarget += initialOffset.Rotate(WRot.FromFacing(legacyFacing));
+				passiveTarget += initialOffset.Rotate(WRot.FromYaw(legacyFacing));
 			}
 
 			var followingOffset = Weapon.FollowingBurstTargetOffset;
@@ -129,7 +129,7 @@ namespace OpenRA.Mods.TA.Traits
 			{
 				// We want this to match Armament.LocalOffset, so we need to convert it to forward, right, up
 				followingOffset = new WVec(followingOffset.Y, -followingOffset.X, followingOffset.Z);
-				passiveTarget += ((Weapon.Burst - Burst) * followingOffset).Rotate(WRot.FromFacing(legacyFacing));
+				passiveTarget += ((Weapon.Burst - Burst) * followingOffset).Rotate(WRot.FromYaw(legacyFacing));
 			}
 
 			targetPos = passiveTarget;
@@ -162,6 +162,7 @@ namespace OpenRA.Mods.TA.Traits
 				GuidedTarget = target
 			};
 
+			var delayedTarget = target;
 			ScheduleDelayedAction(Info.FireDelay, () =>
 			{
 				if (args.Weapon.Projectile != null)
@@ -177,7 +178,7 @@ namespace OpenRA.Mods.TA.Traits
 						Game.Sound.Play(SoundType.World, args.Weapon.StartBurstReport, self.World, self.CenterPosition);
 
 					foreach (var na in NotifyAttacks)
-						na.Attacking(self, target, this, barrel);
+						na.Attacking(self, delayedTarget, this, barrel);
 
 					Recoil = Info.Recoil;
 				}

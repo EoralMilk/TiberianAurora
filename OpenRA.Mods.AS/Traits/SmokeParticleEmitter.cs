@@ -151,7 +151,7 @@ namespace OpenRA.Mods.AS.Traits
 			{
 				ticks = Info.SpawnFrequency.Length == 2 ? random.Next(Info.SpawnFrequency[0], Info.SpawnFrequency[1]) : Info.SpawnFrequency[0];
 
-				var spawnFacing = (!Info.RandomFacing && facing != null) ? facing.Facing : -1;
+				var spawnFacing = (!Info.RandomFacing && facing != null) ? facing.Facing.Facing : -1;
 
 				self.World.AddFrameEndTask(w => w.Add(new SmokeParticle(self, Info, self.CenterPosition + offset, spawnFacing)));
 			}

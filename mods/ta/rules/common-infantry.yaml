@@ -37,7 +37,7 @@ mngunner:
 	Armament@primary_eff_fire:
 		Weapon: GAU-3_eff_fire
 		LocalOffset: 268,50,850
-		MuzzleSequence: muzzle
+		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
 	Armament@Casing:
@@ -200,7 +200,7 @@ dog:
 	-SpeedMultiplier@ELITE:
 	-ReloadDelayMultiplier@VETERAN:
 	-ReloadDelayMultiplier@ELITE:
-	-SelfHealing@ELITE:
+	-ChangesHealth@ELITE:
 	-InaccuracyMultiplier@ELITE:
 	-WithDecoration@VETERAN:
 	-WithDecoration@ELITE:

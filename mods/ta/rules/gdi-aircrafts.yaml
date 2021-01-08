@@ -16,7 +16,7 @@ orcafighter:
 		Queue: Aircraft
 		Description: 装备集束导弹发射器的先进反装甲垂直起降战机\n可以对空\n无需返航补给弹药\n\n·强势对抗：载具、建筑、飞行器\n·弱势对抗：步兵
 	Aircraft:
-		TurnSpeed: 7
+		TurnSpeed: 28
 		Speed: 200
 		AltitudeVelocity: 0c200
 		CruiseAltitude: 3c512
@@ -41,7 +41,7 @@ orcafighter:
 	AutoTarget:
 		ScanRadius: 7
 	AttackAircraft:
-		FacingTolerance: 20
+		FacingTolerance: 80 
 		OpportunityFire: false
 		PersistentTargeting: false
 		AttackType: Hover
@@ -85,7 +85,7 @@ orcafighter.Husk:
 	Tooltip:
 		Name: 奥卡战机
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 80
 		Speed: 90
 	RevealsShroud:
 		Range: 10c0
@@ -132,8 +132,8 @@ a10:
 		# IdleBehavior: None
 		VTOL: false
 		CruiseAltitude: 4800
-		TurnSpeed: 4
-		IdleTurnSpeed: 4
+		TurnSpeed: 16
+		IdleTurnSpeed: 16
 		Speed: 288
 		CanSlide: false
 	Selectable:
@@ -163,7 +163,7 @@ a10:
 		Weapon: A10Napalm
 		LocalOffset: 0,-256,43, 0,256,43
 	AttackAircraft:
-		FacingTolerance: 128
+		FacingTolerance: 512 
 		OpportunityFire: false
 		PersistentTargeting: true
 		AttackType: Strafe
@@ -243,7 +243,7 @@ a10husk:
 	Tooltip:
 		Name: A-10 对地攻击机
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 16
 		Speed: 210
 	RenderVoxels:
 		Scale: 11.7

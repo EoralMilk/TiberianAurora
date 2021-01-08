@@ -78,7 +78,7 @@ namespace OpenRA.Mods.TA.Projectiles
 		public readonly int BounceRangeModifier = 60;
 
 		[Desc("If projectile touches an actor with one of these stances during or after the first bounce, trigger explosion.")]
-		public readonly Stance ValidBounceBlockerStances = Stance.Enemy | Stance.Neutral;
+		public readonly PlayerRelationship ValidBounceBlockerStances = PlayerRelationship.Enemy | PlayerRelationship.Neutral;
 
 		[Desc("Altitude above terrain below which to explode. Zero effectively deactivates airburst.")]
 		public readonly WDist AirburstAltitude = WDist.Zero;
@@ -152,7 +152,7 @@ namespace OpenRA.Mods.TA.Projectiles
 
 			if (!string.IsNullOrEmpty(info.Image))
 			{
-				anim = new Animation(world, info.Image, new Func<int>(GetEffectiveFacing));
+				anim = new Animation(world, info.Image, new Func<WAngle>(GetEffectiveWAngle));
 				anim.PlayRepeating(info.Sequences.Random(world.SharedRandom));
 			}
 
@@ -170,7 +170,7 @@ namespace OpenRA.Mods.TA.Projectiles
 			remainingBounces = info.BounceCount;
 		}
 
-		int GetEffectiveFacing()
+		WAngle GetEffectiveWAngle()
 		{
 			var at = (float)ticks / (length - 1);
 			var attitude = angle.Tan() * (1 - 2 * at) / (4 * 1024);
@@ -178,9 +178,7 @@ namespace OpenRA.Mods.TA.Projectiles
 			var u = (facing % 128) / 128f;
 			var scale = 512 * u * (1 - u);
 
-			return (int)(facing < 128
-				? facing - scale * attitude
-				: facing + scale * attitude);
+			return WAngle.FromFacing((int)(facing < 128 ? facing - scale * attitude : facing + scale * attitude));
 		}
 
 		public void Tick(World world)
@@ -209,8 +207,8 @@ namespace OpenRA.Mods.TA.Projectiles
 			if (!string.IsNullOrEmpty(info.TrailImage) && --smokeTicks < 0)
 			{
 				var delayedPos = WPos.LerpQuadratic(source, target, angle, ticks - info.TrailDelay, length);
-				world.AddFrameEndTask(w => w.Add(new SpriteEffect(delayedPos, w, info.TrailImage, info.TrailSequences.Random(world.SharedRandom),
-					trailPalette, facing: GetEffectiveFacing())));
+				world.AddFrameEndTask(w => w.Add(new SpriteEffect(delayedPos, GetEffectiveWAngle(), w, info.TrailImage, info.TrailSequences.Random(world.SharedRandom),
+					trailPalette)));
 
 				smokeTicks = info.TrailInterval;
 			}
@@ -289,7 +287,7 @@ namespace OpenRA.Mods.TA.Projectiles
 				if (checkTargetType && !Target.FromActor(victim).IsValidFor(firedBy))
 					continue;
 
-				if (!info.ValidBounceBlockerStances.HasStance(victim.Owner.Stances[firedBy.Owner]))
+				if (!info.ValidBounceBlockerStances.HasStance(victim.Owner.RelationshipWith(firedBy.Owner)))
 					continue;
 
 				// If the impact position is within any actor's HitShape, we have a direct hit

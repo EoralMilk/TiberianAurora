@@ -220,7 +220,7 @@ ntpl:
 		ClockSequence: clock
 		SupportPowerPaletteOrder: 30
 	SupportPowerChargeBar:
-	WithNukeLaunchAnimation:
+	WithSupportPowerActivationAnimation:
 		Body: none
 	WithSpriteBody@none:
 		Name: none
@@ -285,9 +285,9 @@ ntur:
 		Voice: Attack
 		RequiresCondition: !build-incomplete
 	Turreted:
-		TurnSpeed: 13
-		InitialFacing: 160
-		PreviewFacing: 160
+		TurnSpeed: 52
+		InitialFacing: 640 
+		PreviewFacing: 640 
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -336,7 +336,7 @@ samsite:
 		LocalOffset: 450,170,760, 450,0,760, 450,-170,760, 390,170,1140, 390,0,1140, 390,-170,1140
 	AttackPopupTurreted:
 		CloseDelay: 125
-		DefaultFacing: 128
+		DefaultFacing: 128 
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: lowpower
 	WithEmbeddedTurretSpriteBody:
@@ -346,9 +346,9 @@ samsite:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 7
-		InitialFacing: 32
-		PreviewFacing: 32
+		TurnSpeed: 28
+		InitialFacing: 128 
+		PreviewFacing: 128 
 		RealignDelay: -1
 	BodyOrientation:
 		QuantizedFacings: 32

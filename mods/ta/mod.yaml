@@ -215,8 +215,8 @@ Chrome:
 	ta|chrome.yaml
 
 Assemblies:
-	common|OpenRA.Mods.Common.dll
-	common|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
 	ta|OpenRA.Mods.TA.dll
 	ta|OpenRA.Mods.AS.dll
 

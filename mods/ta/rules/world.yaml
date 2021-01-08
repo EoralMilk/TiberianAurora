@@ -282,15 +282,15 @@ World:
 		ClassName: 只有MCV
 		Factions: gdi
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 	MPStartUnits@gdilight:
 		Class: light
 		ClassName: MCV与哨兵
 		Factions: gdi
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 		SupportActors: dog,mngunner,mngunner,mngunner
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@gdimedium:
@@ -298,9 +298,9 @@ World:
 		ClassName: MCV与巡逻小队
 		Factions: gdi
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 		SupportActors: dog,mngunner,mngunner,bzkier,ghumv
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@gdiheavy:
@@ -308,9 +308,9 @@ World:
 		ClassName: MCV与防御部队
 		Factions: gdi
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 		SupportActors: dog,mngunner,mngunner,bzkier,bzkier,ghumv,ghumv,ghumv,gtank,gapc
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@nodmcv:
@@ -318,15 +318,15 @@ World:
 		ClassName: 只有MCV
 		Factions: nod
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 	MPStartUnits@nodlight:
 		Class: light
 		ClassName: MCV与哨兵
 		Factions: nod
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 		SupportActors: dog,mngunner,mngunner,mngunner
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@nodmedium:
@@ -334,9 +334,9 @@ World:
 		ClassName: MCV与巡逻小队
 		Factions: nod
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 		SupportActors: dog,mngunner,mngunner,bzkier,mngunner,nbggy
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@nodheavy:
@@ -344,9 +344,9 @@ World:
 		ClassName: MCV与防御部队
 		Factions: nod
 		BaseActor: mcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896 
 		SupportActors: dog,mngunner,mngunner,bzkier,bzkier,mngunner,nbggy,nbggy,ncycle,ntank,ncycle
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	CrateSpawner:

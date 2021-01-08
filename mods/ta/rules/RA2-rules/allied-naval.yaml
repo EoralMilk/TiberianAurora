@@ -17,7 +17,7 @@ lcrf:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 		Locomotor: lcraft
 		PauseOnCondition: notmobile || chronodisable
@@ -27,7 +27,7 @@ lcrf:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
 		PipCount: 12
-		PassengerFacing: 96
+		PreviewFacing: 396 
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
@@ -58,7 +58,7 @@ dest:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 	RevealsShroud:
 		Range: 7c0
@@ -88,7 +88,7 @@ dest:
 	AttackFrontal@Spawner:
 		Voice: Attack
 		Armaments: asw
-		FacingTolerance: 128
+		FacingTolerance: 512 
 	WithMuzzleOverlay:
 	DetectCloaked:
 		CloakTypes: Underwater
@@ -127,7 +127,7 @@ aegis:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 8c0
@@ -135,7 +135,7 @@ aegis:
 		Weapon: Medusa
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512 
 	AutoTarget:
 	Explodes:
 		Weapon: UnitExplode
@@ -166,7 +166,7 @@ dlph:
 	Health:
 		HP: 200
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
@@ -251,13 +251,13 @@ carrier:
 	Selectable:
 		Bounds: 60,80,0,-6
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 7c0
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512 
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -268,6 +268,6 @@ carrier:
 	HitShape:
 	Exit@0:
 		SpawnOffset: 0,0,0
-		Facing: 0
+		Facing: 0 
 	Armament:
 		Weapon: HornetLauncher

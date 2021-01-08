@@ -196,7 +196,7 @@ terror:
 		EmptyWeapon: TerrorBomb
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512 
 	Armament@PRIMARY:
 		Weapon: DemoTruckTargeting
 		PauseOnCondition: chronodisable
@@ -264,7 +264,7 @@ deso:
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: true
 		UndeployOnMove: true
-		Facing: 92
+		Facing: 368 
 		Voice: Deploy
 	WithSpriteBody@DEPLOYED:
 		Sequence: deployed

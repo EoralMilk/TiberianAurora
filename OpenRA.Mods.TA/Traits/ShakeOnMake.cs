@@ -3,12 +3,12 @@ using OpenRA.Mods.Common.Traits;
 
 namespace OpenRA.Mods.TA.Traits
 {
-	public class ShakeOnMakeInfo : ITraitInfo
+	public class ShakeOnMakeInfo : TraitInfo
 	{
 		public readonly int Duration = 10;
 		public readonly int Intensity = 1;
 		public readonly float2 Multiplier = new float2(1, 1);
-		public object Create(ActorInitializer init) { return new ShakeOnMake(this); }
+		public override object Create(ActorInitializer init) { return new ShakeOnMake(this); }
 	}
 
 	public class ShakeOnMake : INotifyCreated, INotifyDeployTriggered

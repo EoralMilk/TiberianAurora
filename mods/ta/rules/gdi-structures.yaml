@@ -278,7 +278,7 @@ guntower:
 	Armament@Effect_fire:
 		Weapon: HMG-eff_fire
 		LocalOffset: 500,0,1400
-		MuzzleSequence: muzzle
+		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
 	Armament@Casing:
 		Weapon: HMG-Casing
@@ -288,7 +288,7 @@ guntower:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -351,9 +351,9 @@ advgtwr:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
-		InitialFacing: 160
-		PreviewFacing: 160
+		TurnSpeed: 60
+		InitialFacing: 640 
+		PreviewFacing: 640 
 		Offset: -160,160,0
 	BodyOrientation:
 		QuantizedFacings: 8

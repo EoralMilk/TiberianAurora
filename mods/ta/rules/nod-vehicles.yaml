@@ -17,7 +17,7 @@ nbggy:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 14
+		TurnSpeed: 56
 		Speed: 170
 		Locomotor: wheeled
 	RevealsShroud:
@@ -33,14 +33,14 @@ nbggy:
 		LocalOffset: 214,0,870
 		Recoil: 35
 		RecoilRecovery: 13
-		MuzzleSequence: muzzle
+		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
 	Armament@Casing:
 		Weapon: Buggy-Casing
 		LocalOffset: 0,0,800
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 60
 	RenderSprites:
 		Image: n_bggy
 		PlayerPalette: n_bggy
@@ -81,7 +81,7 @@ ncycle:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 16
+		TurnSpeed: 56
 		Speed: 215
 		Locomotor: wheeled
 	RevealsShroud:
@@ -130,7 +130,7 @@ ntank:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 7
+		TurnSpeed: 28
 		Speed: 118
 		Locomotor: tracked
 	RevealsShroud:
@@ -143,7 +143,7 @@ ntank:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 13
+		TurnSpeed: 52
 		Offset: -186,0,0
 	RenderSprites:
 		Image: n_ltank
@@ -181,7 +181,7 @@ nftnk:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 3
+		TurnSpeed: 12
 		Speed: 90
 		Locomotor: tracked
 	RevealsShroud:
@@ -192,7 +192,7 @@ nftnk:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 6
+		TurnSpeed: 24
 	RenderSprites:
 		Image: n_ftank
 		PlayerPalette: n_ftank
@@ -230,7 +230,7 @@ nhowi:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 3
+		TurnSpeed: 12
 		Speed: 80
 		Locomotor: tracked
 	RevealsShroud:
@@ -283,7 +283,7 @@ nstltnk:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 9
+		TurnSpeed: 36
 		Speed: 110
 		Locomotor: tracked
 	RevealsShroud:
@@ -298,7 +298,7 @@ nstltnk:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 60
 		Offset: -216,0,0
 	RenderSprites:
 		Image: n_stltank
@@ -345,7 +345,7 @@ meme_obelisker:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 40
 		Locomotor: foot
 	RevealsShroud:

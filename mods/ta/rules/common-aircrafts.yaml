@@ -13,7 +13,7 @@ transport:
 		Queue: Aircraft
 		Description: 用于运输步兵\n\n·无武装
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 150
 		AltitudeVelocity: 0c100
 		CruiseAltitude: 3c512
@@ -72,7 +72,7 @@ transport.Husk:
 	Tooltip:
 		Name: 支努干运输机
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 80
 	RevealsShroud:
 		Range: 10c0

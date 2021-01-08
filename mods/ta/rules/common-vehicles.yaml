@@ -18,7 +18,7 @@ mcv:
 		Type: Heavy
 	Mobile:
 		Speed: 71
-		TurnSpeed: 4
+		TurnSpeed: 16
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 8c0
@@ -29,7 +29,7 @@ mcv:
 		Voice: Move
 		IntoActor: fact
 		Offset: -1,-1
-		Facing: 128
+		Facing: 512 
 		TransformSounds: constru2.aud, hvydoor1.aud
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
@@ -43,7 +43,7 @@ mcv.colorpicker:
 	Inherits: mcv
 	-Buildable:
 	Mobile:
-		InitialFacing: 160
+		InitialFacing: 640 
 	-MapEditorData:
 	RenderSprites:
 		Image: mcv
@@ -85,7 +85,7 @@ harvester:
 		TargetTypes: ImmuneToRadiation
 	Mobile:
 		Speed: 60
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
@@ -98,8 +98,8 @@ harvester:
 	WithHarvestAnimation:
 	WithDockingAnimation:
 	HitShape:
-	SelfHealing:
+	ChangesHealth:
 		Step: 100
 		Delay: 3
-		HealIfBelow: 50
+		StartIfBelow: 50
 		DamageCooldown: 120

@@ -12,7 +12,6 @@
 	DrawLineToTarget:
 	GivesExperience:
 	ScriptTriggers:
-	ConditionManager:
 	Huntable:
 
 ^SpiritVehicle:
@@ -28,7 +27,7 @@
 		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: wheeled
 	SelectionDecorations:
 		Palette: pips
@@ -139,7 +138,7 @@
 	AttackTurreted:
 		Voice: Attack
 	Turreted:
-		TurnSpeed: 20
+		TurnSpeed: 80
 	WithIdleOverlay@OnFire1:
 	WithIdleOverlay@OnFire2:
 	WithIdleOverlay@OnFire3:
@@ -172,7 +171,6 @@
 		Palette: pips
 	Selectable:
 	ActorLostNotification:
-	Interactable:
 	Aircraft:
 		Voice: Move
 		AirborneCondition: airborne
@@ -336,7 +334,7 @@
 		VTOL: true
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Rail, Ore, Gems
 		Crushes: crate, infantry
-		InitialFacing: 160
+		InitialFacing: 640 
 		CanSlide: True
 	HiddenUnderFog:
 		Type: GroundPosition
@@ -430,10 +428,10 @@
 	GrantConditionOnPrerequisite@BIOTECH:
 		Condition: hazmatsuits
 		Prerequisites: biotech
-	SelfHealing@HOSPITAL:
+	ChangesHealth@HOSPITAL:
 		Step: 100
 		Delay: 20
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: hospitalheal
 	GrantConditionOnPrerequisite@HOSPITAL:

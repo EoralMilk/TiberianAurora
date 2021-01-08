@@ -25,7 +25,7 @@ namespace OpenRA.Mods.AS.Warheads
 		public readonly bool ImpactActors = true;
 
 		[Desc("If impact is above this altitude, warheads that would affect terrain ignore terrain target types (and either do nothing or perform their own checks).")]
-		public readonly WDist AirThreshold = new WDist(128);
+		// public readonly WDist AirThreshold = new WDist(128);
 
 		static readonly BitSet<TargetableType> TargetTypeAir = new BitSet<TargetableType>("Air");
 

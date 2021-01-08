@@ -15,7 +15,7 @@ apache:
 		Queue: Aircraft
 		Description: 搭载火神机炮的重型武装直升机\n可以对空\n\n·强势对抗：步兵、轻型载具、飞行器\n·弱势对抗：装甲载具
 	Aircraft:
-		TurnSpeed: 7
+		TurnSpeed: 28
 		Speed: 170
 		AltitudeVelocity: 0c150
 		CruiseAltitude: 3c512
@@ -56,7 +56,7 @@ apache:
 	AutoTarget:
 		ScanRadius: 6
 	AttackAircraft:
-		FacingTolerance: 10
+		FacingTolerance: 40 
 		OpportunityFire: false
 		PersistentTargeting: false
 		AttackType: Hover
@@ -101,7 +101,7 @@ apache.Husk:
 	Tooltip:
 		Name: 阿帕奇武装直升机
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 80
 	RevealsShroud:
 		Range: 10c0
@@ -133,8 +133,6 @@ c130:
 	Selectable:
 		Priority: 5
 		Bounds: 168, 156, 0, -7
-	Interactable:
-		Bounds: 100,80
 	Tooltip:
 		Name: AC130运输机
 	Aircraft:
@@ -143,7 +141,7 @@ c130:
 		VTOL: false
 		CruiseAltitude: 6c0
 		IdleBehavior: LeaveMap
-		TurnSpeed: 3
+		TurnSpeed: 12
 		Speed: 285
 		CanSlide: false
 		MaximumPitch: 40
@@ -196,12 +194,12 @@ ac130:
 		Prerequisites: none
 	Valued:
 		Cost: 3000
-	Interactable:
+	Selectable:
 		Bounds: 100,80
 	Tooltip:
 		Name: AC130炮艇机
 	Aircraft:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 235
 	Armament@Vulcan_fake:
 		Weapon: AC130VulcanFake
@@ -227,7 +225,7 @@ ac130:
 		MinimumScanTimeInterval: 2
 		MaximumScanTimeInterval: 4
 	AttackAircraft:
-		FacingTolerance: 128
+		FacingTolerance: 512 
 		OpportunityFire: true
 		PersistentTargeting: true
 		AttackType: Default
@@ -242,7 +240,7 @@ c130husk:
 	Tooltip:
 		Name: AC130运输机
 	Aircraft:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 100
 	-RenderVoxels:
 	-WithVoxelBody:

@@ -30,7 +30,7 @@ namespace OpenRA.Mods.AS.Warheads
 		public readonly int AimChance = 0;
 
 		[Desc("What diplomatic stances can be targeted by the shrapnel.")]
-		public readonly Stance AimTargetStances = Stance.Ally | Stance.Neutral | Stance.Enemy;
+		public readonly PlayerRelationship AimTargetStances = PlayerRelationship.Ally | PlayerRelationship.Neutral | PlayerRelationship.Enemy;
 
 		[Desc("Allow this shrapnel to be thrown randomly when no targets found.")]
 		public readonly bool ThrowWithoutTarget = true;
@@ -49,7 +49,7 @@ namespace OpenRA.Mods.AS.Warheads
 				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(Weapon.ToLowerInvariant()));
 		}
 
-		public override void DoImpact(Target target, WarheadArgs args)
+		public override void DoImpact(in Target target, WarheadArgs args)
 		{
 			var firedBy = args.SourceActor;
 			if (!target.IsValidFor(firedBy))
@@ -83,7 +83,7 @@ namespace OpenRA.Mods.AS.Warheads
 			var availableTargetActors = world.FindActorsOnCircle(epicenter, weapon.Range)
 				.Where(x => (AllowDirectHit || !directActors.Contains(x))
 					&& weapon.IsValidAgainst(Target.FromActor(x), firedBy.World, firedBy)
-					&& AimTargetStances.HasStance(firedBy.Owner.Stances[x.Owner]))
+					&& AimTargetStances.HasStance(firedBy.Owner.RelationshipWith(x.Owner)))
 				.Where(x =>
 				{
 					var activeShapes = x.TraitsImplementing<HitShape>().Where(Exts.IsTraitEnabled);
@@ -127,11 +127,12 @@ namespace OpenRA.Mods.AS.Warheads
 
 				var shrapnelFacing = (shrapnelTarget.CenterPosition - epicenter).Yaw;
 
+				var inTarget = target;
 				var projectileArgs = new ProjectileArgs
 				{
 					Weapon = weapon,
-					Facing = shrapnelFacing.Facing,
-					CurrentMuzzleFacing = () => shrapnelFacing.Facing,
+					Facing = shrapnelFacing,
+					CurrentMuzzleFacing = () => shrapnelFacing,
 
 					DamageModifiers = !firedBy.IsDead ? firedBy.TraitsImplementing<IFirepowerModifier>()
 						.Select(a => a.GetFirepowerModifier()).ToArray() : new int[0],
@@ -143,7 +144,7 @@ namespace OpenRA.Mods.AS.Warheads
 						.Select(a => a.GetRangeModifier()).ToArray() : new int[0],
 
 					Source = target.CenterPosition,
-					CurrentSource = () => target.CenterPosition,
+					CurrentSource = () => inTarget.CenterPosition,
 					SourceActor = firedBy,
 					GuidedTarget = shrapnelTarget,
 					PassiveTarget = shrapnelTarget.CenterPosition

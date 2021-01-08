@@ -64,7 +64,7 @@ namespace OpenRA.Mods.AS.Traits
 		int burst;
 		AmmoPool ammoPool;
 
-		List<Pair<int, Action>> delayedActions = new List<Pair<int, Action>>();
+		List<(int, Action)> delayedActions = new List<(int, Action)>();
 
 		public ExplodeWeapon(Actor self, ExplodeWeaponInfo info)
 			: base(info)
@@ -88,12 +88,12 @@ namespace OpenRA.Mods.AS.Traits
 			for (var i = 0; i < delayedActions.Count; i++)
 			{
 				var x = delayedActions[i];
-				if (--x.First <= 0)
-					x.Second();
+				if (--x.Item1 <= 0)
+					x.Item2();
 				delayedActions[i] = x;
 			}
 
-			delayedActions.RemoveAll(a => a.First <= 0);
+			delayedActions.RemoveAll(a => a.Item1 <= 0);
 
 			if (IsTraitDisabled)
 				return;
@@ -161,7 +161,7 @@ namespace OpenRA.Mods.AS.Traits
 		protected void ScheduleDelayedAction(int t, Action a)
 		{
 			if (t > 0)
-				delayedActions.Add(Pair.New(t, a));
+				delayedActions.Add((t, a));
 			else
 				a();
 		}

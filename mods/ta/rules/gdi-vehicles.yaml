@@ -17,7 +17,7 @@ ghumv:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 12
+		TurnSpeed: 48
 		Speed: 156
 		Locomotor: wheeled
 	RevealsShroud:
@@ -33,14 +33,14 @@ ghumv:
 		LocalOffset: 300,0,840
 		Recoil: 33
 		RecoilRecovery: 12
-		MuzzleSequence: muzzle
+		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
 	Armament@Casing:
 		Weapon: HumvMG-Casing
 		LocalOffset: -60,30,840
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 60
 	RenderSprites:
 		Image: g_humvee
 		PlayerPalette: g_humvee
@@ -78,14 +78,14 @@ gapc:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 132
 		Locomotor: tracked
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
 		PipCount: 5
-		PassengerFacing: 0
+		PreviewFacing: 0 
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
@@ -102,7 +102,7 @@ gapc:
 		LocalOffset: 60,0,1050
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 	RenderSprites:
 		Image: g_apc
 		PlayerPalette: g_apc
@@ -139,7 +139,7 @@ gtank:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 100
 		Locomotor: tracked
 	RevealsShroud:
@@ -155,7 +155,7 @@ gtank:
 	# 	LocalOffset: 1000,0,608
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 	RenderSprites:
 		Image: g_mtank
 		PlayerPalette: g_mtank
@@ -192,7 +192,7 @@ gmlrs:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 85
 		Locomotor: tracked
 	RevealsShroud:
@@ -238,15 +238,15 @@ gmmtnk:
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 77777
-	SelfHealing:
+	ChangesHealth:
 		Step: 100
 		Delay: 5
-		HealIfBelow: 50
+		StartIfBelow: 50
 		DamageCooldown: 200
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 4
+		TurnSpeed: 16
 		Speed: 65
 		Locomotor: heavytracked
 	RevealsShroud:
@@ -265,7 +265,7 @@ gmmtnk:
 		LocalOffset: 20,371,866, 20,-371,866
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	RenderSprites:
 		Image: g_mmtank
 		PlayerPalette: g_mmtank
@@ -302,7 +302,7 @@ gunboat:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 70
 		Locomotor: naval
 	RevealsShroud:
@@ -340,25 +340,25 @@ gunboat:
 		Voice: Attack
 	Turreted@MLT:
 		Turret: MLT
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Offset: 1281,0,0
 	WithSpriteTurret@MLT:
 		Turret: MLT
 	# Turreted@VL_fake1:
 	# 	Turret: VL_fake1
-	# 	TurnSpeed: 256
+	# 	TurnSpeed: 1023
 	# 	Offset: 0,0,1288
 	# Turreted@VL_fake2:
 	# 	Turret: VL_fake2
-	# 	TurnSpeed: 256
+	# 	TurnSpeed: 1023
 	# 	Offset: -300,0,1288
 	# Turreted@VL_fake3:
 	# 	Turret: VL_fake3
-	# 	TurnSpeed: 256
+	# 	TurnSpeed: 1023
 	# 	Offset: -600,0,1288
 	# Turreted@VL_fake4:
 	# 	Turret: VL_fake4
-	# 	TurnSpeed: 256
+	# 	TurnSpeed: 1023
 	# 	Offset: -900,0,1288
 
 	AutoTarget:

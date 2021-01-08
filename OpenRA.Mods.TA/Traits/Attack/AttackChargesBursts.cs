@@ -36,8 +36,7 @@ namespace OpenRA.Mods.TA.Traits
 	public class AttackChargesBursts : AttackOmni, INotifyAttack, INotifySold
 	{
 		readonly AttackChargesBurstsInfo info;
-		ConditionManager conditionManager;
-		int chargingToken = ConditionManager.InvalidConditionToken;
+		int chargingToken = Actor.InvalidConditionToken;
 		bool charging;
 
 		public int ChargeLevel { get; private set; }
@@ -50,8 +49,6 @@ namespace OpenRA.Mods.TA.Traits
 
 		protected override void Created(Actor self)
 		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
-
 			base.Created(self);
 		}
 
@@ -63,29 +60,29 @@ namespace OpenRA.Mods.TA.Traits
 			var delta = charging ? info.ChargeRate : -info.DischargeRate;
 			ChargeLevel = (ChargeLevel + delta).Clamp(0, info.ChargeLevel);
 
-			if (ChargeLevel > 0 && conditionManager != null && !string.IsNullOrEmpty(info.ChargingCondition)
-					&& chargingToken == ConditionManager.InvalidConditionToken)
-				chargingToken = conditionManager.GrantCondition(self, info.ChargingCondition);
+			if (ChargeLevel > 0 && !string.IsNullOrEmpty(info.ChargingCondition)
+					&& chargingToken == Actor.InvalidConditionToken)
+				chargingToken = self.GrantCondition(info.ChargingCondition);
 
-			if (ChargeLevel == 0 && conditionManager != null && chargingToken != ConditionManager.InvalidConditionToken)
-				chargingToken = conditionManager.RevokeCondition(self, chargingToken);
+			if (ChargeLevel == 0 && chargingToken != Actor.InvalidConditionToken)
+				chargingToken = self.RevokeCondition(chargingToken);
 
 			base.Tick(self);
 		}
 
-		protected override bool CanAttack(Actor self, Target target)
+		protected override bool CanAttack(Actor self, in Target target)
 		{
 			charging = base.CanAttack(self, target) && IsReachableTarget(target, true);
 			return ChargeLevel >= info.ChargeLevel && charging;
 		}
 
-		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel)
+		void INotifyAttack.Attacking(Actor self, in Target target, Armament a, Barrel barrel)
 		{
 			if (a.Burst <= 0)
 				ChargeLevel = 0;
 		}
 
-		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }
 		void INotifySold.Selling(Actor self) { ChargeLevel = 0; }
 		void INotifySold.Sold(Actor self) { }
 	}
