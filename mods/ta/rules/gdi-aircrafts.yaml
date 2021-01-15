@@ -220,6 +220,8 @@ a10b:
 	-Buildable:
 	-Selectable:
 	-RevealsShroud:
+	-SelectionDecorations:
+	Interactable:
 	AttackBomber:
 		Armaments: gun,gun_fake,bombs
 	RejectsOrders:
