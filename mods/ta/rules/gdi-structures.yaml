@@ -289,6 +289,7 @@ guntower:
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 1023
+		RealignDelay: -1
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -355,6 +356,7 @@ advgtwr:
 		InitialFacing: 640 
 		PreviewFacing: 640 
 		Offset: -160,160,0
+		RealignDelay: -1
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:

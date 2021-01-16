@@ -288,6 +288,7 @@ ntur:
 		TurnSpeed: 52
 		InitialFacing: 640 
 		PreviewFacing: 640 
+		RealignDelay: -1
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
