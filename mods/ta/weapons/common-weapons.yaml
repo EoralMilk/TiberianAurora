@@ -31,7 +31,7 @@ GAU-3_eff_bullet:
 	Burst: 4
 	BurstDelays: 3
 	Range: 4c512
-	Projectile: Bullet
+	Projectile: BulletAS
 		ContrailLength: 8
 		ContrailWidth: 10
 		ContrailColor: FFD860

@@ -340,7 +340,7 @@ IonCannonStorm:
 
 ^BlastWave:
 	Range: 30c0
-	Projectile: Bullet
+	Projectile: BulletAS
 		Blockable: true
 		Speed: 170
 		LaunchAngle: 222

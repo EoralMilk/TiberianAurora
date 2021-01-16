@@ -6,7 +6,7 @@
 	Range: 5c764
 	MinRange: 1c512
 	ValidTargets: Ground, Water
-	Projectile: Bullet
+	Projectile: BulletAS
 		Speed: 130, 170
 		Inaccuracy: 3000
 		LaunchAngle: 180, 230
@@ -44,121 +44,121 @@
 
 dbris1lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris1lg
 
 dbris1lgAir:
 	Inherits: dbris1lg
-	Projectile: Bullet
+	Projectile: BulletAS
 		Inaccuracy: 1000
 
 dbris1sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris1sm
 
 dbris1smAir:
 	Inherits: dbris1sm
-	Projectile: Bullet
+	Projectile: BulletAS
 		Inaccuracy: 1000
 
 dbris2lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris2lg
 
 dbris2sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris2sm
 
 dbris3lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris3lg
 
 dbris3sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris3sm
 
 dbris4lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris4lg
 
 dbris4sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris4sm
 
 dbris5lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris5lg
 
 dbris5lgAir:
 	Inherits: dbris5lg
-	Projectile: Bullet
+	Projectile: BulletAS
 		Inaccuracy: 1000
 
 dbris5sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris5sm
 
 dbris5smAir:
 	Inherits: dbris5sm
-	Projectile: Bullet
+	Projectile: BulletAS
 		Inaccuracy: 1000
 
 dbris6lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris6lg
 
 dbris6sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris6sm
 
 dbris7lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris7lg
 
 dbris7sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris7sm
 
 dbris8lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris8lg
 
 dbris8sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris8sm
 
 dbris9lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris9lg
 
 dbris9sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris9sm
 
 dbris10lg:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris10lg
 
 dbris10sm:
 	Inherits: ^debrisProjectile
-	Projectile: Bullet
+	Projectile: BulletAS
 		Image: dbris10sm
 
