@@ -67,14 +67,41 @@ SniperRF:
 
 # vehicle
 
-HumveeMG_damage:
-	Inherits: ^MGDamageMaker
+# HumveeMG_damage:
+# 	Inherits: ^MGDamageMaker
+# 	ReloadDelay: 30
+# 	Burst: 5
+# 	BurstDelays: 3
+# 	Range: 5c128
+# 	Projectile: Missile
+# 		RangeLimit: 20c409
+# 	Warhead@1Dam: SpreadDamage
+# 		Damage: 1600
+# 		Spread: 0c256
+# 		Versus:
+# 			None: 100
+# 			Flak: 85
+# 			Plate: 85
+# 			Light: 30
+# 			Medium: 10
+# 			Heavy: 10
+# 			Wood: 20
+# 			Steel: 15
+# 			Concrete: 15
+# 			Drone: 100
+# 			Rocket: 100
+
+
+HumveeMG_eff_bullet:
+	Inherits: ^MGBulletEff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
 	Range: 5c128
-	Projectile: Missile
-		RangeLimit: 20c409
+	Projectile: BulletAS
+		Inaccuracy: 500
+		Speed: 600
 	Warhead@1Dam: SpreadDamage
 		Damage: 1600
 		Spread: 0c256
@@ -92,29 +119,14 @@ HumveeMG_damage:
 			Rocket: 100
 
 
-HumveeMG_eff_bullet:
-	Inherits: ^MGBulletEff
-	Inherits@WarheadEff: ^MGPiff
-	ReloadDelay: 30
-	Burst: 5
-	BurstDelays: 3
-	Range: 5c128
-	Projectile: BulletAS
-		Inaccuracy: 500
-		Speed: 600
-
 HumveeMG_eff_fire:
-	Inherits: ^MGDamageMaker
-	Inherits@WarheadEff: ^MGPiff
+	Inherits: ^MGFire
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
 	Range: 5c128
 	Report: mg_shot2.wav
 	# AfterFireSound: mg_clip_out.wav
-	Projectile: Missile
-		RangeLimit: 20c409
-		Inaccuracy: 500
 	-Warhead@1Dam:
 
 HumvMG-Casing:
@@ -243,7 +255,7 @@ MammothTuskMissile:
 		Speed: 380
 		Inaccuracy: 128
 		Acceleration: 25
-		HorizontalRateOfTurn: 30
+		HorizontalRateOfTurn: 90
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c512
@@ -273,7 +285,7 @@ MammothTuskAAMissile:
 		ValidTargets: Air
 
 
-ManyRockets:
+M77Rockets:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	ReloadDelay: 170
@@ -313,14 +325,42 @@ ManyRockets:
 
 # structure
 
-HMG-damage:
-	Inherits: ^MGDamageMaker
+# HMG-damage:
+# 	Inherits: ^MGDamageMaker
+# 	ReloadDelay: 50
+# 	Burst: 8
+# 	BurstDelays: 3
+# 	Range: 7c0
+# 	Projectile: Missile
+# 		CruiseAltitude: 3c512
+# 	Warhead@1Dam: SpreadDamage
+# 		Damage: 1500
+# 		Spread: 0c512
+# 		Versus:
+# 			None: 100
+# 			Flak: 100
+# 			Plate: 90
+# 			Light: 50
+# 			Medium: 30
+# 			Heavy: 27
+# 			Wood: 27
+# 			Steel: 15
+# 			Concrete: 15
+# 			Drone: 100
+# 			Rocket: 100
+
+HMG-eff_bullet:
+	Inherits: ^MGBulletEff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
 	Burst: 8
 	BurstDelays: 3
 	Range: 7c0
-	Projectile: Missile
-		CruiseAltitude: 3c512
+	Warhead@Eff_HitMetal: CreateEffect
+		Explosions: piff
+		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
+		ValidTargets: Metal
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@1Dam: SpreadDamage
 		Damage: 1500
 		Spread: 0c512
@@ -337,22 +377,8 @@ HMG-damage:
 			Drone: 100
 			Rocket: 100
 
-HMG-eff_bullet:
-	Inherits: ^MGBulletEff
-	Inherits@WarheadEff: ^MGPiff
-	ReloadDelay: 50
-	Burst: 8
-	BurstDelays: 3
-	Range: 7c0
-	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: piff
-		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
-
 HMG-eff_fire:
-	Inherits: ^MGDamageMaker
-	Inherits@WarheadEff: ^MGPiff
+	Inherits: ^MGFire
 	ReloadDelay: 50
 	Burst: 8
 	BurstDelays: 3
@@ -360,15 +386,6 @@ HMG-eff_fire:
 	Report: mg_shot.wav
 	AfterFireSoundDelay: 2
 	AfterFireSound: Shells_falls.wav
-	Projectile: Missile
-		CruiseAltitude: 3c512
-		Inaccuracy: 800
-		Blockable: true
-	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: piff
-		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	-Warhead@1Dam:
 
 HMG-Casing:
@@ -395,7 +412,7 @@ TowerMissile:
 		Inaccuracy: 500
 		Acceleration: 12
 		CruiseAltitude: 5c512
-		HorizontalRateOfTurn: 18
+		HorizontalRateOfTurn: 58
 		RangeLimit: 17c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
@@ -459,8 +476,8 @@ OrcaAGMissiles:
 		Image: DRAGON
 		Palette: ra
 		Shadow: true
-		VerticalRateOfTurn: 20
-		HorizontalRateOfTurn: 20
+		VerticalRateOfTurn: 70
+		HorizontalRateOfTurn: 46
 		MinimumLaunchAngle: 0
 		MaximumLaunchAngle: 0
 		TerrainHeightAware: true
@@ -626,7 +643,7 @@ GunBoatMissile:
 		Speed: 380
 		Acceleration: 9
 		Inaccuracy: 568
-		HorizontalRateOfTurn: 8
+		HorizontalRateOfTurn: 18
 		RangeLimit: 18c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0

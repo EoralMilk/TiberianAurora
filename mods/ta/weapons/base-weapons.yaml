@@ -17,8 +17,8 @@
 		Image: dragon2
 		Palette: player
 		Shadow: true
-		VerticalRateOfTurn: 20
-		HorizontalRateOfTurn: 20
+		VerticalRateOfTurn: 60
+		HorizontalRateOfTurn: 60
 		TerrainHeightAware: true
 		AllowSnapping: true
 		CruiseAltitude: 3c0
@@ -71,6 +71,27 @@
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+
+^MGFire:
+	Projectile: InstantHit
+		Blockable: true
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+		Spread: 0c68
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 30
+			Medium: 10
+			Heavy: 10
+			Wood: 20
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+		InvalidTargets: Wall
 
 ^MGDamageMaker:
 	ReloadDelay: 20

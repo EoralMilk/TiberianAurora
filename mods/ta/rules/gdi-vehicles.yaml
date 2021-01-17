@@ -22,9 +22,9 @@ ghumv:
 		Locomotor: wheeled
 	RevealsShroud:
 		Range: 9c512
-	Armament@Damage:
-		Weapon: HumveeMG_damage
-		LocalOffset: 300,0,0
+	# Armament@Damage:
+	# 	Weapon: HumveeMG_damage
+	# 	LocalOffset: 300,0,0
 	Armament@Effect_bullet:
 		Weapon: HumveeMG_eff_bullet
 		LocalOffset: -300,0,840
@@ -201,7 +201,7 @@ gmlrs:
 		TargetFrozenActors: True
 		ForceFireIgnoresActors: True
 	Armament:
-		Weapon: ManyRockets
+		Weapon: M77Rockets
 		LocalOffset: 27,150,1300, 27,70,1300, 23,120,1350, 27,-150,1300, 27,-70,1300, 23,-120,1350
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:

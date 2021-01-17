@@ -7,14 +7,40 @@ Chemspray:
 
 # vehicle
 
-BuggyMG_damage:
-	Inherits: ^MGDamageMaker
+# BuggyMG_damage:
+# 	Inherits: ^MGDamageMaker
+# 	ReloadDelay: 25
+# 	Burst: 3
+# 	BurstDelays: 4
+# 	Range: 5c0
+# 	Projectile: Missile
+# 		RangeLimit: 20c409
+# 	Warhead@1Dam: SpreadDamage
+# 		Damage: 2000
+# 		Spread: 0c256
+# 		Versus:
+# 			None: 100
+# 			Flak: 85
+# 			Plate: 85
+# 			Light: 30
+# 			Medium: 10
+# 			Heavy: 10
+# 			Wood: 20
+# 			Steel: 15
+# 			Concrete: 15
+# 			Drone: 100
+# 			Rocket: 100
+
+BuggyMG_eff_bullet:
+	Inherits: ^MGBulletEff
+	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 25
 	Burst: 3
 	BurstDelays: 4
 	Range: 5c0
-	Projectile: Missile
-		RangeLimit: 20c409
+	Projectile: BulletAS
+		Inaccuracy: 500
+		Speed: 600
 	Warhead@1Dam: SpreadDamage
 		Damage: 2000
 		Spread: 0c256
@@ -31,29 +57,14 @@ BuggyMG_damage:
 			Drone: 100
 			Rocket: 100
 
-BuggyMG_eff_bullet:
-	Inherits: ^MGBulletEff
-	Inherits@WarheadEff: ^MGPiff
-	ReloadDelay: 25
-	Burst: 3
-	BurstDelays: 4
-	Range: 5c0
-	Projectile: BulletAS
-		Inaccuracy: 500
-		Speed: 600
-
 BuggyMG_eff_fire:
-	Inherits: ^MGDamageMaker
-	Inherits@WarheadEff: ^MGPiff
+	Inherits: ^MGFire
 	ReloadDelay: 25
 	Burst: 3
 	BurstDelays: 4
 	Range: 5c0
 	Report: buggy_mg_shot.wav
 	# AfterFireSound: pistol2_chamber.wav
-	Projectile: Missile
-		Inaccuracy: 500
-		RangeLimit: 20c409
 	-Warhead@1Dam:
 
 Buggy-Casing:
@@ -82,7 +93,7 @@ CycleMissile:
 		Speed: 376
 		Acceleration: 22
 		Inaccuracy: 128
-		HorizontalRateOfTurn: 26
+		HorizontalRateOfTurn: 46
 		RangeLimit: 10c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
@@ -162,7 +173,7 @@ DaggerOfNod:
 		Speed: 400
 		Inaccuracy: 100
 		Acceleration: 22
-		HorizontalRateOfTurn: 30
+		HorizontalRateOfTurn: 110
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0

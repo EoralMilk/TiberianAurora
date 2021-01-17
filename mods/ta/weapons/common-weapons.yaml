@@ -1,12 +1,41 @@
 
-GAU-3_damage:
-	Inherits: ^MGDamageMaker
+# GAU-3_damage:
+# 	Inherits: ^MGDamageMaker
+# 	ReloadDelay: 30
+# 	Burst: 4
+# 	BurstDelays: 3
+# 	Range: 4c512
+# 	Projectile: Missile
+# 		RangeLimit: 20c409
+# 	Warhead@1Dam: SpreadDamage
+# 		Damage: 1000
+# 		Spread: 0c256
+# 		Versus:
+# 			None: 100
+# 			Flak: 100
+# 			Plate: 95
+# 			Light: 30
+# 			Medium: 11
+# 			Heavy: 11
+# 			Wood: 20
+# 			Steel: 10
+# 			Concrete: 9
+# 			Drone: 100
+# 			Rocket: 100
+# 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+GAU-3_eff_bullet:
+	Inherits: ^MGBulletEff
+	Inherits: ^MGPiff
 	ReloadDelay: 30
 	Burst: 4
 	BurstDelays: 3
 	Range: 4c512
-	Projectile: Missile
-		RangeLimit: 20c409
+	Projectile: BulletAS
+		ContrailLength: 8
+		ContrailWidth: 10
+		ContrailColor: FFD860
+		Inaccuracy: 400
 	Warhead@1Dam: SpreadDamage
 		Damage: 1000
 		Spread: 0c256
@@ -24,30 +53,13 @@ GAU-3_damage:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
-GAU-3_eff_bullet:
-	Inherits: ^MGBulletEff
-	Inherits: ^MGPiff
-	ReloadDelay: 30
-	Burst: 4
-	BurstDelays: 3
-	Range: 4c512
-	Projectile: BulletAS
-		ContrailLength: 8
-		ContrailWidth: 10
-		ContrailColor: FFD860
-		Inaccuracy: 400
-
 GAU-3_eff_fire:
-	Inherits: ^MGDamageMaker
-	Inherits: ^MGPiff
+	Inherits: ^MGFire
 	ReloadDelay: 30
 	Burst: 4
 	BurstDelays: 3
 	Range: 4c512
 	Report: chain_shot.wav
-	Projectile: Missile
-		Inaccuracy: 400
-		RangeLimit: 20c409
 	-Warhead@1Dam:
 
 GAU-Casing:
@@ -74,8 +86,8 @@ APBazooka:
 		Speed: 370
 		Inaccuracy: 33
 		Acceleration: 20
-		HorizontalRateOfTurn: 23
-		VerticalRateOfTurn: 34
+		HorizontalRateOfTurn: 73
+		VerticalRateOfTurn: 112
 		RangeLimit: 10c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0

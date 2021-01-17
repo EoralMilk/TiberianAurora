@@ -125,7 +125,7 @@ VLMisl:
 		Speed: 400
 		Inaccuracy: 100
 		Acceleration: 22
-		VerticalRateOfTurn: 22
+		VerticalRateOfTurn: 42
 		HorizontalRateOfTurn: 15
 		HomingActivationDelay: 12
 		MinimumLaunchSpeed: 220

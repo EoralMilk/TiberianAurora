@@ -269,9 +269,9 @@ guntower:
 	# 	LocalOffset: 500,0,1400
 	# 	MuzzleSequence: muzzle
 	# 	MuzzleSplitFacings: 8
-	Armament@Damage:
-		Weapon: HMG-damage
-		LocalOffset: 500,0,0
+	# Armament@Damage:
+	# 	Weapon: HMG-damage
+	# 	LocalOffset: 500,0,0
 	Armament@Effect_bullet:
 		Weapon: HMG-eff_bullet
 		LocalOffset: -100,0,1400

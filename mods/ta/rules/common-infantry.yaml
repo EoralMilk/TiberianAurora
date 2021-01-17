@@ -28,9 +28,9 @@ mngunner:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
-	Armament@primary:
-		Weapon: GAU-3_damage
-		LocalOffset: 0,0,0
+	# Armament@primary:
+	# 	Weapon: GAU-3_damage
+	# 	LocalOffset: 0,0,0
 	Armament@primary_eff_bullet:
 		Weapon: GAU-3_eff_bullet
 		LocalOffset: -350,50,850
