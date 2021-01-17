@@ -95,6 +95,7 @@ warfactory:
 		Description: 制造GDI载具
 	IsometricSelectable:
 		Height: 70
+		Bounds: 240,120
 	Valued:
 		Cost: 2000
 	Tooltip:
