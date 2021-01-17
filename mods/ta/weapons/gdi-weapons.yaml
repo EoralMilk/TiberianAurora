@@ -329,7 +329,7 @@ M77Rockets:
 # 	Inherits: ^MGDamageMaker
 # 	ReloadDelay: 50
 # 	Burst: 4
-# 	BurstDelays: 6
+# 	BurstDelays: 4
 # 	Range: 7c0
 # 	Projectile: Missile
 # 		CruiseAltitude: 3c512
@@ -354,7 +354,7 @@ HMG-eff_bullet:
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
 	Burst: 4
-	BurstDelays: 6
+	BurstDelays: 4
 	Range: 7c0
 	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
@@ -381,7 +381,7 @@ HMG-eff_fire:
 	Inherits: ^MGFire
 	ReloadDelay: 50
 	Burst: 4
-	BurstDelays: 6
+	BurstDelays: 4
 	Range: 7c0
 	Report: mg_shot.wav
 	AfterFireSoundDelay: 2
