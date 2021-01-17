@@ -60,7 +60,7 @@ GAU-3_eff_fire:
 	BurstDelays: 3
 	Range: 4c512
 	Report: chain_shot.wav
-	-Warhead@1Dam:
+
 
 GAU-Casing:
 	Inherits: ^BulletCasing

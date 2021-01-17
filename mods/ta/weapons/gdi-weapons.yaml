@@ -127,7 +127,7 @@ HumveeMG_eff_fire:
 	Range: 5c128
 	Report: mg_shot2.wav
 	# AfterFireSound: mg_clip_out.wav
-	-Warhead@1Dam:
+
 
 HumvMG-Casing:
 	Inherits: ^BulletCasing
@@ -386,13 +386,13 @@ HMG-eff_fire:
 	Report: mg_shot.wav
 	AfterFireSoundDelay: 2
 	AfterFireSound: Shells_falls.wav
-	-Warhead@1Dam:
+
 
 HMG-Casing:
 	Inherits: ^BulletCasing
 	ReloadDelay: 50
 	Burst: 4
-	BurstDelays: 6
+	BurstDelays: 4
 	Range: 7c0
 	ValidTargets: Ground, Water
 	Projectile: Missile

@@ -94,7 +94,7 @@ warfactory:
 		Prerequisites: refinery, ~structures.gdi
 		Description: 制造GDI载具
 	IsometricSelectable:
-		Height: 48
+		Height: 70
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -174,7 +174,7 @@ advhq:
 		Prerequisites: hq, ~structures.gdi
 		Description: 解锁GDI高级科技\n提供战术地图\n需要电力才能运转\n\n·提供 超级武器：离子炮轰炸
 	IsometricSelectable:
-		Height: 48
+		Height: 55
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -263,7 +263,7 @@ guntower:
 	RevealsShroud:
 		Range: 7c0
 	IsometricSelectable:
-		Height: 48
+		Height: 40
 	# Armament@shoot1:
 	# 	Weapon: HMG
 	# 	LocalOffset: 500,0,1400
@@ -331,7 +331,7 @@ advgtwr:
 	RevealsShroud:
 		Range: 9c0
 	IsometricSelectable:
-		Height: 48
+		Height: 55
 	Armament:
 		Weapon: TowerMissile
 		MuzzleSequence: muzzle

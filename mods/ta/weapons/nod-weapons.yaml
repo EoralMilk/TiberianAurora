@@ -65,7 +65,7 @@ BuggyMG_eff_fire:
 	Range: 5c0
 	Report: buggy_mg_shot.wav
 	# AfterFireSound: pistol2_chamber.wav
-	-Warhead@1Dam:
+
 
 Buggy-Casing:
 	Inherits: ^BulletCasing
