@@ -101,7 +101,7 @@ apache.Husk:
 	Tooltip:
 		Name: 阿帕奇武装直升机
 	Aircraft:
-		TurnSpeed: 8
+		TurnSpeed: 22
 		Speed: 80
 	RevealsShroud:
 		Range: 10c0

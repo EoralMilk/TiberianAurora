@@ -34,6 +34,8 @@ cabhut:
 	MapEditorData:
 		Categories: Bridge
 	Interactable:
+	Targetable@materials:
+		TargetTypes: Stone
 
 ^LowBridge:
 	Inherits: ^LowBridgeRamp
@@ -319,6 +321,9 @@ lobrdg_r_sw:
 		Categories: Bridge
 	Interactable:
 		Bounds: 96, 144
+	Targetable@materials:
+		TargetTypes: Stone
+
 
 bridge1:
 	Inherits: ^ElevatedBridgePlaceholder

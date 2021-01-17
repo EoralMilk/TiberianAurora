@@ -378,7 +378,7 @@
 		VTOL: true
 		CanSlide: true
 	FallsToEarth:
-		MaximumSpinSpeed: 7
+		MaximumSpinSpeed: 24
 		Explosion: PlaneHuskExplosion
 		Moves: true
 		Velocity: 40

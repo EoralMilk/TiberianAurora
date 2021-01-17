@@ -328,13 +328,13 @@ M77Rockets:
 # HMG-damage:
 # 	Inherits: ^MGDamageMaker
 # 	ReloadDelay: 50
-# 	Burst: 8
-# 	BurstDelays: 3
+# 	Burst: 4
+# 	BurstDelays: 6
 # 	Range: 7c0
 # 	Projectile: Missile
 # 		CruiseAltitude: 3c512
 # 	Warhead@1Dam: SpreadDamage
-# 		Damage: 1500
+# 		Damage: 3000
 # 		Spread: 0c512
 # 		Versus:
 # 			None: 100
@@ -353,8 +353,8 @@ HMG-eff_bullet:
 	Inherits: ^MGBulletEff
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
-	Burst: 8
-	BurstDelays: 3
+	Burst: 4
+	BurstDelays: 6
 	Range: 7c0
 	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
@@ -362,7 +362,7 @@ HMG-eff_bullet:
 		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@1Dam: SpreadDamage
-		Damage: 1500
+		Damage: 3000
 		Spread: 0c512
 		Versus:
 			None: 100
@@ -380,8 +380,8 @@ HMG-eff_bullet:
 HMG-eff_fire:
 	Inherits: ^MGFire
 	ReloadDelay: 50
-	Burst: 8
-	BurstDelays: 3
+	Burst: 4
+	BurstDelays: 6
 	Range: 7c0
 	Report: mg_shot.wav
 	AfterFireSoundDelay: 2
@@ -391,8 +391,8 @@ HMG-eff_fire:
 HMG-Casing:
 	Inherits: ^BulletCasing
 	ReloadDelay: 50
-	Burst: 8
-	BurstDelays: 3
+	Burst: 4
+	BurstDelays: 6
 	Range: 7c0
 	ValidTargets: Ground, Water
 	Projectile: Missile

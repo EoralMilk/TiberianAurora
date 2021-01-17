@@ -260,9 +260,11 @@ gmmtnk:
 	Armament@AGtusk:
 		Weapon: MammothTuskMissile
 		LocalOffset: 20,371,866, 20,-371,866
+		MuzzleSequence: muzzle-2
 	Armament@AAtusk:
 		Weapon: MammothTuskAAMissile
 		LocalOffset: 20,371,866, 20,-371,866
+		MuzzleSequence: muzzle-2
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 20

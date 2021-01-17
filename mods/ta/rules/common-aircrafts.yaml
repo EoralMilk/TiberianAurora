@@ -72,7 +72,7 @@ transport.Husk:
 	Tooltip:
 		Name: 支努干运输机
 	Aircraft:
-		TurnSpeed: 8
+		TurnSpeed: 14
 		Speed: 80
 	RevealsShroud:
 		Range: 10c0

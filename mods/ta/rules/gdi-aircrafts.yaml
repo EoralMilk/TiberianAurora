@@ -85,7 +85,7 @@ orcafighter.Husk:
 	Tooltip:
 		Name: 奥卡战机
 	Aircraft:
-		TurnSpeed: 80
+		TurnSpeed: 22
 		Speed: 90
 	RevealsShroud:
 		Range: 10c0

@@ -60,6 +60,7 @@ g_mlrs:
 g_mmtank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
+	Inherits@Muzzle-2: ^WithFlakMuzzle2
 	turret: g_mmtank-tur
 		Facings: -32
 		ShadowStart: 32

@@ -306,3 +306,9 @@
 		Length: *
 		Offset: 0,0
 		UseTilesetCode: false
+
+^WithFlakMuzzle2:
+	muzzle-2: gunfire
+		Length: *
+		Offset: 0,0
+		UseTilesetCode: false
