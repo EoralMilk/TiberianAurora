@@ -2,9 +2,9 @@ MapFormat: 11
 
 RequiresMod: ta
 
-Title: South Pacific
+Title: [Dev] South Pacific
 
-Author: Westwood Studios
+Author: Eoral Milk
 
 Tileset: TEMPERATE
 
@@ -49,106 +49,6 @@ Players:
 		Enemies: Creeps
 
 Actors:
-	Actor0: camiam04
-		Location: 56,8
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor1: camsc03
-		Location: 48,6
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor2: camsc02
-		Location: 51,9
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor3: camsc03
-		Location: 54,9
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor4: camsc05
-		Location: 54,10
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor5: camsc04
-		Location: 47,7
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor6: camsc04
-		Location: 51,10
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor7: camsc05
-		Location: 49,7
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor8: camsc06
-		Location: 49,10
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor9: camsc01
-		Location: 48,3
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor10: cafarm06
-		Location: 105,58
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor11: camsc06
-		Location: 112,50
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor12: camsc08
-		Location: 110,51
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor13: camsc07
-		Location: 108,46
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor14: camsc09
-		Location: 107,50
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor15: camsc09
-		Location: 114,46
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor16: camsc08
-		Location: 114,44
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor17: camsc08
-		Location: 110,46
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor18: caairp
-		Location: 76,15
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor19: caairp
-		Location: 133,-28
-		Owner: Neutral
-		Health: 100
-		Facing: 96
 	Actor20: caoild
 		Location: 120,-57
 		Owner: Neutral
@@ -166,31 +66,6 @@ Actors:
 		Facing: 96
 	Actor23: caoild
 		Location: 54,-23
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor24: camsc07
-		Location: 43,-4
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor25: camsc09
-		Location: 46,-7
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor26: camsc09
-		Location: 42,1
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor27: camsc08
-		Location: 39,-4
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor28: camsc08
-		Location: 42,-6
 		Owner: Neutral
 		Health: 100
 		Facing: 96
@@ -260,9 +135,6 @@ Actors:
 	Actor50: tree21
 		Location: 38,1
 		Owner: Neutral
-	Actor51: tree21
-		Location: 44,2
-		Owner: Neutral
 	Actor52: tree21
 		Location: 45,1
 		Owner: Neutral
@@ -299,6 +171,7 @@ Actors:
 	Actor63: tree22
 		Location: 108,52
 		Owner: Neutral
+		Health: 100
 	Actor64: tree22
 		Location: 109,57
 		Owner: Neutral
