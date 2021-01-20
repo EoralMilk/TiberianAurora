@@ -12,9 +12,9 @@ MapSize: 105,190
 
 Bounds: 5,4,95,178
 
-Visibility: Lobby
+Visibility: Lobby, Shellmap
 
-Categories: Conquest
+Categories: Conquest, Shellmap
 
 Players:
 	PlayerReference@Neutral:
