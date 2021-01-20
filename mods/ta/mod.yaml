@@ -1,12 +1,12 @@
 Metadata:
 	Title: Tiberian Aurora
-	Description: Kane Lives!!!
+	Description: Not only the dawn...
 	Version: {DEV_VERSION}
 	Author: The Tiberian Aurora authors
 
 ModCredits:
-	ModTabTitle: Red Alert 2
-	ModCreditsFile: ta|AUTHORS.RA2 # TODO rename to AUTHORS as stated in the .cs files when OpenRA#17460 is available
+	ModTabTitle: Tiberian Aurora
+	ModCreditsFile: ta|AUTHORS.TA # TODO rename to AUTHORS as stated in the .cs files when OpenRA#17460 is available
 
 PackageFormats: Mix, AudioBag
 
@@ -420,7 +420,7 @@ GameSpeeds:
 		OrderLatency: 6
 
 ModContent:
-	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
+	InstallPromptMessage: Now It still requires artwork and audio from the original Red Alert 2.
 	HeaderMessage: The original game content must be copied from an original game disc.
 	Packages:
 		base: Base Game Files
