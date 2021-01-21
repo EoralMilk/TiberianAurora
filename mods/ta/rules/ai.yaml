@@ -169,6 +169,7 @@ Player:
 		ExcludeFromSquadsTypes: harvester, eng, mcv
 		ConstructionYardTypes: fact
 		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache
+		IgnoredEnemyTargetTypes: Wall
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
