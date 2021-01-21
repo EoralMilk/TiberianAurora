@@ -4,16 +4,6 @@
 		Tileset: TEMPERATE
 		Filename: isotem.pal
 		ShadowIndex: 9,1
-	PaletteFromFile@terrain-snow:
-		Name: terrain
-		Tileset: SNOW
-		Filename: isosno.pal
-		ShadowIndex: 1
-	PaletteFromFile@terrain-urban:
-		Name: terrain
-		Tileset: URBAN
-		Filename: isourb.pal
-		ShadowIndex: 1
 	PlayerColorPalette:
 		BasePalette: player
 		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
@@ -22,50 +12,6 @@
 		Name: player
 		Tileset: TEMPERATE
 		Filename: unittem.pal
-		ShadowIndex: 1
-	PaletteFromFile@temperatecity:
-		Name: city
-		Tileset: TEMPERATE
-		Filename: citytem.pal
-		ShadowIndex: 1
-	PaletteFromFile@snowcity:
-		Name: city
-		Tileset: SNOW
-		Filename: citysno.pal
-		ShadowIndex: 1
-	PaletteFromFile@urbancity:
-		Name: city
-		Tileset: URBAN
-		Filename: cityurb.pal
-		ShadowIndex: 1
-	PaletteFromFile@temperateliberty:
-		Name: liberty
-		Tileset: TEMPERATE
-		Filename: libtem.pal
-		ShadowIndex: 1
-	PaletteFromFile@snowliberty:
-		Name: liberty
-		Tileset: SNOW
-		Filename: libsno.pal
-		ShadowIndex: 1
-	PaletteFromFile@urbanliberty:
-		Name: liberty
-		Tileset: URBAN
-		Filename: liburb.pal
-		ShadowIndex: 1
-	PaletteFromFile@outpost-rubble:
-		Name: outpost-rubble
-		Filename: isosno.pal
-		ShadowIndex: 1
-	PaletteFromFile@playerurb:
-		Name: player
-		Tileset: URBAN
-		Filename: uniturb.pal
-		ShadowIndex: 1
-	PaletteFromFile@playersno:
-		Name: player
-		Tileset: SNOW
-		Filename: unitsno.pal
 		ShadowIndex: 1
 	PaletteFromPaletteWithAlpha@terrainalpha:
 		BasePalette: terrain
@@ -121,10 +67,6 @@
 		G: 0
 		B: 0
 		A: 140
-	#PaletteFromPlayerPaletteWithAlpha@cloak:
-	#	BaseName: cloak
-	#	BasePalette: player
-	#	Alpha: 0.50
 	PaletteFromRGBA@invuln:
 		Name: invuln
 		R: 128

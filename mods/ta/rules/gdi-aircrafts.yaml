@@ -214,6 +214,8 @@ a10:
 		EjectOnGround: false
 		EjectInAir: true
 		AllowUnsuitableCell: true
+	GrantConditionOnMovement:
+		Condition: flying
 
 a10b:
 	Inherits: a10
@@ -260,3 +262,5 @@ a10husk:
 	Explodes:
 		Weapon: FlameExplosion
 		EmptyWeapon: FlameExplosion
+	GrantConditionOnMovement:
+		Condition: flying

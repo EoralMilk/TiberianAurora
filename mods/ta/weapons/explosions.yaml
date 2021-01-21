@@ -1,4 +1,11 @@
 
+unitexplode:
+	Inherits: MediumExplosion
+derrickexplode:
+	Inherits: FlameExplosion
+demolish:
+	Inherits: MediumExplosion
+
 ^DamagingExplosion:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426

@@ -1,3 +1,82 @@
+
+^bridge:
+	Defaults:
+		ZOffset: -1c511
+		UseTilesetExtension: true
+		Start: 1
+		ZRamp: 1
+		Offset: 0, 0, 0.5
+
+^Rock:
+	idle:
+		ShadowStart: 1
+		Offset: 0, 0, 5
+		UseTilesetExtension: true
+
+^Drill:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: -1, -30, 16
+	idle:
+		ShadowStart: 11
+	active:
+		Start: 1
+		Length: 10
+		ShadowStart: 12
+		Tick: 160
+
+^WithMachineGunMuzzle:
+	muzzle0: mgun-n
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+	muzzle1: mgun-nw
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+	muzzle2: mgun-w
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+	muzzle3: mgun-sw
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+	muzzle4: mgun-s
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+	muzzle5: mgun-se
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+	muzzle6: mgun-e
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+	muzzle7: mgun-ne
+		Length: *
+		Offset: 0, 0
+		UseTilesetCode: false
+
+^WithCannonMuzzle:
+	muzzle: gunfire
+		Length: *
+	muzzle-2: vtmuzzle
+		Length: *
+
+^WithFlakMuzzle:
+	muzzle: gunfire
+		Length: *
+		Offset: 0,0
+		UseTilesetCode: false
+
+^WithFlakMuzzle2:
+	muzzle-2: gunfire
+		Length: *
+		Offset: 0,0
+		UseTilesetCode: false
+
 ^onfire:
 	fire: fire04
 		Length: *
@@ -7,7 +86,6 @@
 	spark: spark
 		Length: *
 		BlendMode: Additive
-
 
 ^CommonTank:
 	Inherits: ^onfire
@@ -83,7 +161,6 @@
 		Facings: 8
 		Tick: 80
 	icon: xxicon
-
 
 ^Tree:
 	idle:

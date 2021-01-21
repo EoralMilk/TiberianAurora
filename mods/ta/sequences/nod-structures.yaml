@@ -180,7 +180,6 @@ n_samsite:
 		Offset: 0, 0, 0
 
 n_obelisk:
-	Inherits: ^Structure
 	Defaults:
 		Offset: 1,-15, 15
 		UseTilesetCode: false

@@ -289,7 +289,7 @@ World:
 		Factions: gdi
 		BaseActor: mcv
 		BaseActorFacing: 896 
-		SupportActors: dog,mngunner,mngunner,mngunner
+		SupportActors: mngunner,mngunner,mngunner
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -299,7 +299,7 @@ World:
 		Factions: gdi
 		BaseActor: mcv
 		BaseActorFacing: 896 
-		SupportActors: dog,mngunner,mngunner,bzkier,ghumv
+		SupportActors: mngunner,mngunner,bzkier,ghumv
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -309,7 +309,7 @@ World:
 		Factions: gdi
 		BaseActor: mcv
 		BaseActorFacing: 896 
-		SupportActors: dog,mngunner,mngunner,bzkier,bzkier,ghumv,ghumv,ghumv,gtank,gapc
+		SupportActors: mngunner,mngunner,bzkier,bzkier,ghumv,ghumv,ghumv,gtank,gapc
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -325,7 +325,7 @@ World:
 		Factions: nod
 		BaseActor: mcv
 		BaseActorFacing: 896 
-		SupportActors: dog,mngunner,mngunner,mngunner
+		SupportActors: mngunner,mngunner,mngunner
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -335,7 +335,7 @@ World:
 		Factions: nod
 		BaseActor: mcv
 		BaseActorFacing: 896 
-		SupportActors: dog,mngunner,mngunner,bzkier,mngunner,nbggy
+		SupportActors: mngunner,mngunner,bzkier,mngunner,nbggy
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
@@ -345,7 +345,7 @@ World:
 		Factions: nod
 		BaseActor: mcv
 		BaseActorFacing: 896 
-		SupportActors: dog,mngunner,mngunner,bzkier,bzkier,mngunner,nbggy,nbggy,ncycle,ntank,ncycle
+		SupportActors: mngunner,mngunner,bzkier,bzkier,mngunner,nbggy,nbggy,ncycle,ntank,ncycle
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5

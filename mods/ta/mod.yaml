@@ -11,47 +11,28 @@ ModCredits:
 PackageFormats: Mix, AudioBag
 
 Packages:
-	~^Content/ra2
-	~^Content/cnc
+	# ~^Content/ra2
+	# ~^Content/cnc
 	.
 	$ta: ta
 
 	./mods/common: common
-	~sounds.mix
-	~ra2.mix
-	~language.mix
-	~multi.mix
-	~audio.mix
-	~cache.mix
-	~cameo.mix
-	~conquer.mix: conquer
-	~generic.mix
-	~isogen.mix
-	~isosnow.mix
-	~isotemp.mix
-	~isourb.mix
-	~load.mix
-	~local.mix
-	~neutral.mix
-	~sidec01.mix
-	~sidec02.mix
-	~sno.mix
-	~snow.mix
-	~tem.mix
-	~temperat.mix
-	~theme.mix
-	~urb.mix
-	~urban.mix
-	~audio.bag
+
 
 
 	ta|content
-	ta|content/effect/multiple
 	ta|content/effect
 	ta|content/common-pal
 
 	ta|content/audio
+	ta|content/audio/atmosphere
+	ta|content/audio/effect
+	ta|content/audio/interact
+	ta|content/audio/move
+	ta|content/audio/other
 	ta|content/audio/voice
+
+
 	ta|content/infantrys
 	ta|content/structures
 	ta|content/vehicles
@@ -59,14 +40,19 @@ Packages:
 	ta|content/aircrafts
 	ta|content/aircrafts/NEW
 	ta|content/others
+	ta|content/debris
+	ta|content/projectiles
+
 
 
 	ta|bits
-	ta|bits/structures
 	ta|bits/animations
-	ta|bits/projectiles
+	ta|bits/sounds.mix
+
 	ta|uibits
 	ta|speechs
+
+	ta|content/temperat.mix
 
 	ta|content/structures/a_conyard
 	ta|content/structures/a_pwrplt
@@ -105,7 +91,6 @@ Packages:
 
 
 
-	ta|content/expandmd80.mix
 
 MapFolders:
 	ta|maps: System
@@ -121,7 +106,7 @@ Rules:
 	ta|rules/pal-unit.yaml
 	ta|rules/pal-others.yaml
 
-
+	ta|rules/defaults.yaml
 	ta|rules/base.yaml
 	ta|rules/common-structures.yaml
 	ta|rules/common-infantry.yaml
@@ -140,37 +125,17 @@ Rules:
 	ta|rules/civilian-structures.yaml
 
 
-	ta|rules/RA2-rules/proxy-actors.yaml
-	ta|rules/RA2-rules/defaults.yaml
-	ta|rules/RA2-rules/allied-infantry.yaml
-	ta|rules/RA2-rules/soviet-infantry.yaml
-	ta|rules/RA2-rules/civilians.yaml
-	ta|rules/RA2-rules/bridges.yaml
-	ta|rules/RA2-rules/animals.yaml
-	ta|rules/RA2-rules/allied-structures.yaml
-	ta|rules/RA2-rules/soviet-structures.yaml
-	ta|rules/RA2-rules/civilian-structures.yaml
-	ta|rules/RA2-rules/tech-structures.yaml
-	ta|rules/RA2-rules/allied-vehicles.yaml
-	ta|rules/RA2-rules/soviet-vehicles.yaml
-	ta|rules/RA2-rules/civilian-vehicles.yaml
-	ta|rules/RA2-rules/allied-naval.yaml
-	ta|rules/RA2-rules/soviet-naval.yaml
-	ta|rules/RA2-rules/aircraft.yaml
-	ta|rules/RA2-rules/civilian-props.yaml
-	ta|rules/RA2-rules/trees.yaml
-	ta|rules/RA2-rules/civilian-naval.yaml
+	ta|rules/proxy-actors.yaml
+
+	ta|rules/bridges.yaml
+	ta|rules/trees.yaml
+
 
 
 Sequences:
 	ta|sequences/misc.yaml
 	ta|sequences/base.yaml
-	ta|sequences/RA2-sequence/misc.yaml
-	ta|sequences/RA2-sequence/defaults.yaml
-
 	ta|sequences/debris.yaml
-
-
 
 	ta|sequences/common-structures.yaml
 	ta|sequences/common-infantry.yaml
@@ -188,24 +153,11 @@ Sequences:
 
 	ta|sequences/civilian-structures.yaml
 
+	ta|sequences/bridges.yaml
+	ta|sequences/trees.yaml
 
-	ta|sequences/RA2-sequence/aircraft.yaml
-	ta|sequences/RA2-sequence/allied-infantry.yaml
-	ta|sequences/RA2-sequence/allied-structures.yaml
-	ta|sequences/RA2-sequence/animals.yaml
-	ta|sequences/RA2-sequence/bridges.yaml
-	ta|sequences/RA2-sequence/civilians.yaml
-	ta|sequences/RA2-sequence/civilian-props.yaml
-	ta|sequences/RA2-sequence/civilian-structures.yaml
-
-	ta|sequences/RA2-sequence/soviet-infantry.yaml
-	ta|sequences/RA2-sequence/soviet-structures.yaml
-	ta|sequences/RA2-sequence/tech-structures.yaml
-	ta|sequences/RA2-sequence/trees.yaml
-	ta|sequences/RA2-sequence/vehicles.yaml
 
 ModelSequences:
-	ta|sequences/RA2-sequence/voxels.yaml
 	ta|sequences/voxels.yaml
 
 Cursors:
@@ -262,17 +214,6 @@ ChromeLayout:
 	ta|chrome/editor.yaml
 
 Weapons:
-	ta|weapons/RA2-weapon/bullets.yaml
-	ta|weapons/RA2-weapon/defaults.yaml
-	ta|weapons/RA2-weapon/explosions.yaml
-	ta|weapons/RA2-weapon/flaks.yaml
-	ta|weapons/RA2-weapon/melee.yaml
-	ta|weapons/RA2-weapon/mgs.yaml
-	ta|weapons/RA2-weapon/misc.yaml
-	ta|weapons/RA2-weapon/missiles.yaml
-	ta|weapons/RA2-weapon/zaps.yaml
-
-	####TA weapons
 	ta|weapons/base-weapons.yaml
 	ta|weapons/effects.yaml
 	ta|weapons/explosions.yaml
@@ -283,8 +224,6 @@ Weapons:
 	ta|weapons/nod-weapons.yaml
 
 	ta|weapons/superweapons.yaml
-
-
 
 	####Test Weapons
 	ta|weapons/testweapon.yaml
@@ -297,8 +236,8 @@ Notifications:
 
 TileSets:
 	ta|tilesets/temperat.yaml
-	ta|tilesets/snow.yaml
-	ta|tilesets/urban.yaml
+	# ta|tilesets/snow.yaml
+	# ta|tilesets/urban.yaml
 
 MapGrid:
 	Type: RectangularIsometric
@@ -423,23 +362,8 @@ ModContent:
 	InstallPromptMessage: Now It still requires artwork and audio from the original Red Alert 2.
 	HeaderMessage: The original game content must be copied from an original game disc.
 	Packages:
-		base: Base Game Files
-			TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
-			Sources: ra2, origin, tfd
-			Required: true
-		music: Base Game Music
-			TestFiles: ^Content/ra2/theme.mix
-			Sources: ra2, origin, tfd		
-		cncbase: CNC Base Game Files
-			TestFiles: ^Content/cnc/conquer.mix, ^Content/cnc/desert.mix, ^Content/cnc/sounds.mix, ^Content/cnc/speech.mix, ^Content/cnc/temperat.mix, ^Content/cnc/tempicnh.mix, ^Content/cnc/winter.mix
-			Required: true
-			Download: basefiles
 		cncmusic: CNC Base Game Music
 			TestFiles: ^Content/cnc/scores.mix
 			Download: music
 	Downloads:
 		ta|installer/downloads.yaml
-	Sources:
-		ta|installer/ra2.yaml
-		ta|installer/origin.yaml
-		ta|installer/firstdecade.yaml

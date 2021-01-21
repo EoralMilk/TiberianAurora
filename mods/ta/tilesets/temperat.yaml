@@ -15043,571 +15043,7 @@ Templates:
 				MaxColor: E3C181
 				ZOffset: -15
 				ZRamp: 0
-	Template@806:
-		Categories: RA2 rubble farm
-		Id: 806
-		Images: farm01.tem
-		Size: 2, 3
-		Tiles:
-			0: Rough
-				MinColor: 7D7D71
-				MaxColor: 6D6A55
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 796735
-				MaxColor: 98A24D
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 6A4C38
-				MaxColor: 706959
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 705437
-				MaxColor: 868241
-				ZOffset: -15
-				ZRamp: 0
-			4: Rough
-				MinColor: A2A756
-				MaxColor: 87703C
-				ZOffset: -15
-				ZRamp: 0
-			5: Rough
-				MinColor: 8D9144
-				MaxColor: 8B8345
-				ZOffset: -15
-				ZRamp: 0
-	Template@807:
-		Categories: RA2 rubble farm
-		Id: 807
-		Images: farm02.tem
-		Size: 1, 1
-		Tiles:
-			0: Rough
-				MinColor: 887748
-				MaxColor: 806B3A
-				ZOffset: -15
-				ZRamp: 0
-	Template@808:
-		Categories: RA2 rubble farm
-		Id: 808
-		Images: farm03.tem
-		Size: 1, 1
-		Tiles:
-			0: Rough
-				MinColor: 59493B
-				MaxColor: 79624E
-				ZOffset: -15
-				ZRamp: 0
-	Template@809:
-		Categories: RA2 rubble farm
-		Id: 809
-		Images: farm04.tem
-		Size: 2, 2
-		Tiles:
-			0: Rough
-				MinColor: 7D7743
-				MaxColor: 9A9347
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 6F6E3D
-				MaxColor: 98A44F
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: A0A750
-				MaxColor: 7C7947
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 818641
-				MaxColor: 8A834D
-				ZOffset: -15
-				ZRamp: 0
-	Template@810:
-		Categories: RA2 rubble farm
-		Id: 810
-		Images: farm05.tem
-		Size: 2, 2
-		Tiles:
-			0: Rough
-				MinColor: 928C4E
-				MaxColor: 6D623A
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 3E3A22
-				MaxColor: 888C4E
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 888D4A
-				MaxColor: 4E472E
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 625E37
-				MaxColor: 6F6736
-				ZOffset: -15
-				ZRamp: 0
-	Template@811:
-		Categories: RA2 rubble farm
-		Id: 811
-		Images: farm06.tem
-		Size: 2, 2
-		Tiles:
-			0: Rough
-				MinColor: 59512F
-				MaxColor: 7A7141
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 524830
-				MaxColor: 777B45
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 92964F
-				MaxColor: 3F3523
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 6D6C37
-				MaxColor: 7F783D
-				ZOffset: -15
-				ZRamp: 0
-	Template@812:
-		Categories: RA2 rubble farm
-		Id: 812
-		Images: farm07.tem
-		Size: 2, 2
-		Tiles:
-			0: Rough
-				MinColor: 71695C
-				MaxColor: 7E7262
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 827569
-				MaxColor: 7E7C72
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 93946D
-				MaxColor: 85776B
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 88885E
-				MaxColor: 7F6A50
-				ZOffset: -15
-				ZRamp: 0
-	Template@813:
-		Categories: RA2 rubble farm
-		Id: 813
-		Images: farm08.tem
-		Size: 1, 1
-		Tiles:
-			0: Rough
-				MinColor: 968843
-				MaxColor: 917C3A
-				ZOffset: -15
-				ZRamp: 0
-	Template@814:
-		Categories: RA2 rubble mobile
-		Id: 814
-		Images: mobil01.tem
-		Size: 2, 3
-		Tiles:
-			0: Rough
-				MinColor: 817459
-				MaxColor: 83734A
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 8B904C
-				MaxColor: 98A44F
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 796842
-				MaxColor: 836D54
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 888D58
-				MaxColor: 989F4A
-				ZOffset: -15
-				ZRamp: 0
-			4: Rough
-				MinColor: 9DA44E
-				MaxColor: 636333
-				ZOffset: -15
-				ZRamp: 0
-			5: Rough
-				MinColor: 919A46
-				MaxColor: 98A048
-				ZOffset: -15
-				ZRamp: 0
-	Template@815:
-		Categories: RA2 rubble mobile
-		Id: 815
-		Images: mobil02.tem
-		Size: 2, 2
-		Tiles:
-			0: Rough
-				MinColor: 816248
-				MaxColor: 87704B
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 634E39
-				MaxColor: 90994C
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 899245
-				MaxColor: 908154
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 868941
-				MaxColor: 828149
-				ZOffset: -15
-				ZRamp: 0
-	Template@816:
-		Categories: RA2 rubble mexican
-		Id: 816
-		Images: mex01.tem
-		Size: 3, 2
-		Tiles:
-			0: Rough
-				MinColor: 7E7D7B
-				MaxColor: 777675
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 7D6D5F
-				MaxColor: 76716A
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 939487
-				MaxColor: A2A85B
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 9BA159
-				MaxColor: 756650
-				ZOffset: -15
-				ZRamp: 0
-			4: Rough
-				MinColor: 8E9060
-				MaxColor: 6B4A3E
-				ZOffset: -15
-				ZRamp: 0
-			5: Rough
-				MinColor: 8A8D60
-				MaxColor: 959968
-				ZOffset: -15
-				ZRamp: 0
-	Template@817:
-		Categories: RA2 rubble mexican
-		Id: 817
-		Images: mex02.tem
-		Size: 5, 5
-		Tiles:
-			0: Rough
-				MinColor: B0B1B1
-				MaxColor: A6A7A8
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 60605D
-				MaxColor: 484847
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 969490
-				MaxColor: 72716C
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 5B5247
-				MaxColor: 7D7D7B
-				ZOffset: -15
-				ZRamp: 0
-			4: Rough
-				MinColor: 424039
-				MaxColor: 8F9549
-				ZOffset: -15
-				ZRamp: 0
-			5: Rough
-				MinColor: 979997
-				MaxColor: 8B8C8B
-				ZOffset: -15
-				ZRamp: 0
-			6: Rough
-				MinColor: 89847E
-				MaxColor: 5A5956
-				ZOffset: -15
-				ZRamp: 0
-			7: Rough
-				MinColor: 605E5B
-				MaxColor: 6F6861
-				ZOffset: -15
-				ZRamp: 0
-			8: Rough
-				MinColor: 726456
-				MaxColor: 7B7673
-				ZOffset: -15
-				ZRamp: 0
-			9: Rough
-				MinColor: 454037
-				MaxColor: 5D5943
-				ZOffset: -15
-				ZRamp: 0
-			10: Rough
-				MinColor: 8A8683
-				MaxColor: 8C8884
-				ZOffset: -15
-				ZRamp: 0
-			11: Rough
-				MinColor: 9C9184
-				MaxColor: 908F8D
-				ZOffset: -15
-				ZRamp: 0
-			12: Rough
-				MinColor: 746F69
-				MaxColor: 938984
-				ZOffset: -15
-				ZRamp: 0
-			13: Rough
-				MinColor: A2A1A1
-				MaxColor: A69F98
-				ZOffset: -15
-				ZRamp: 0
-			14: Rough
-				MinColor: 48443A
-				MaxColor: 595A40
-				ZOffset: -15
-				ZRamp: 0
-			15: Rough
-				MinColor: 7B7C7B
-				MaxColor: 888480
-				ZOffset: -15
-				ZRamp: 0
-			16: Rough
-				MinColor: 90867B
-				MaxColor: 8C837B
-				ZOffset: -15
-				ZRamp: 0
-			17: Rough
-				MinColor: 969189
-				MaxColor: 686159
-				ZOffset: -15
-				ZRamp: 0
-			18: Rough
-				MinColor: 8A8B8A
-				MaxColor: 525453
-				ZOffset: -15
-				ZRamp: 0
-			19: Rough
-				MinColor: 696B5A
-				MaxColor: 636249
-				ZOffset: -15
-				ZRamp: 0
-			20: Rough
-				MinColor: 999F5A
-				MaxColor: 797B6C
-				ZOffset: -15
-				ZRamp: 0
-			21: Rough
-				MinColor: 85896B
-				MaxColor: 929390
-				ZOffset: -15
-				ZRamp: 0
-			22: Rough
-				MinColor: 8A8E6F
-				MaxColor: 8B8C89
-				ZOffset: -15
-				ZRamp: 0
-			23: Rough
-				MinColor: 80825C
-				MaxColor: 787A63
-				ZOffset: -15
-				ZRamp: 0
-			24: Rough
-				MinColor: 929A56
-				MaxColor: 979E54
-				ZOffset: -15
-				ZRamp: 0
-	Template@818:
-		Categories: RA2 rubble mexican
-		Id: 818
-		Images: mex03.tem
-		Size: 3, 3
-		Tiles:
-			0: Rough
-				MinColor: 958B94
-				MaxColor: C5BCC2
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 968D93
-				MaxColor: 595153
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 59534D
-				MaxColor: 746E7B
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 453F42
-				MaxColor: 80777F
-				ZOffset: -15
-				ZRamp: 0
-			4: Rough
-				MinColor: 4A4548
-				MaxColor: 50474A
-				ZOffset: -15
-				ZRamp: 0
-			5: Rough
-				MinColor: 565148
-				MaxColor: 605B69
-				ZOffset: -15
-				ZRamp: 0
-			6: Rough
-				MinColor: 90899B
-				MaxColor: 7A7473
-				ZOffset: -15
-				ZRamp: 0
-			7: Rough
-				MinColor: 736D77
-				MaxColor: 888281
-				ZOffset: -15
-				ZRamp: 0
-			8: Rough
-				MinColor: 867F87
-				MaxColor: 6A666E
-				ZOffset: -15
-				ZRamp: 0
-	Template@819:
-		Categories: RA2 rubble mexican
-		Id: 819
-		Images: mex04.tem
-		Size: 4, 4
-		Tiles:
-			0: Rough
-				MinColor: 5C5456
-				MaxColor: 655F61
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 807A7C
-				MaxColor: A0969F
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 564D50
-				MaxColor: 463F3D
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 918D80
-				MaxColor: 918796
-				ZOffset: -15
-				ZRamp: 0
-			4: Rough
-				MinColor: 766E70
-				MaxColor: 585151
-				ZOffset: -15
-				ZRamp: 0
-			5: Rough
-				MinColor: A59E9A
-				MaxColor: ABA1A8
-				ZOffset: -15
-				ZRamp: 0
-			6: Rough
-				MinColor: 4C453F
-				MaxColor: 4C473A
-				ZOffset: -15
-				ZRamp: 0
-			7: Rough
-				MinColor: 8F8B74
-				MaxColor: 837C8D
-				ZOffset: -15
-				ZRamp: 0
-			8: Rough
-				MinColor: 8A8475
-				MaxColor: 5C5652
-				ZOffset: -15
-				ZRamp: 0
-			9: Rough
-				MinColor: 8B886F
-				MaxColor: 666061
-				ZOffset: -15
-				ZRamp: 0
-			10: Rough
-				MinColor: 656351
-				MaxColor: 5C5843
-				ZOffset: -15
-				ZRamp: 0
-			11: Rough
-				MinColor: 9E9789
-				MaxColor: 817985
-				ZOffset: -15
-				ZRamp: 0
-			12: Rough
-				MinColor: 8D8590
-				MaxColor: A49E94
-				ZOffset: -15
-				ZRamp: 0
-			13: Rough
-				MinColor: 817788
-				MaxColor: 9A9587
-				ZOffset: -15
-				ZRamp: 0
-			14: Rough
-				MinColor: 887E87
-				MaxColor: 908E73
-				ZOffset: -15
-				ZRamp: 0
-			15: Rough
-				MinColor: 8C8591
-				MaxColor: 8E8394
-				ZOffset: -15
-				ZRamp: 0
-	Template@820:
-		Categories: RA2 rubble mexican
-		Id: 820
-		Images: mex05.tem
-		Size: 2, 2
-		Tiles:
-			0: Rough
-				MinColor: 938992
-				MaxColor: A29AA5
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: 978E96
-				MaxColor: 8F8893
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: 847D85
-				MaxColor: 938994
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: 938C93
-				MaxColor: 7D7582
-				ZOffset: -15
-				ZRamp: 0
+
 	Template@821:
 		Categories: Wood Bridges
 		Id: 821
@@ -16328,65 +15764,65 @@ Templates:
 				MaxColor: 404256
 				ZOffset: -15
 				ZRamp: 0
-	Template@831:
-		Categories: Wood Bridges
-		Id: 831
-		Images: ovrpsb11.tem
-		Size: 2, 5
-		Tiles:
-			0: Cliff
-				MinColor: 84837F
-				MaxColor: 6D7061
-				ZOffset: -15
-				ZRamp: 0
-			1: Cliff
-				MinColor: 969C53
-				MaxColor: 979F4F
-				ZOffset: -15
-				ZRamp: 0
-			2: Cliff
-				Height: 1
-				MinColor: 83827C
-				MaxColor: 94928D
-				ZOffset: -15
-				ZRamp: 0
-			3: Cliff
-				MinColor: 999F56
-				MaxColor: 7E825C
-				ZOffset: -15
-				ZRamp: 0
-			4: Cliff
-				Height: 1
-				MinColor: 878782
-				MaxColor: 8F8E8A
-				ZOffset: -15
-				ZRamp: 0
-			5: Cliff
-				MinColor: 93A066
-				MaxColor: 80926B
-				ZOffset: -15
-				ZRamp: 0
-			6: Cliff
-				Height: 1
-				MinColor: 8B8A85
-				MaxColor: 83938D
-				ZOffset: -15
-				ZRamp: 0
-			7: Cliff
-				MinColor: 989B62
-				MaxColor: 767B56
-				ZOffset: -15
-				ZRamp: 0
-			8: Cliff
-				MinColor: 979A73
-				MaxColor: 85857A
-				ZOffset: -15
-				ZRamp: 0
-			9: Cliff
-				MinColor: 9EA455
-				MaxColor: 9EA54D
-				ZOffset: -15
-				ZRamp: 0
+	# Template@831:
+	# 	Categories: Wood Bridges
+	# 	Id: 831
+	# 	Images: ovrpsb11.tem
+	# 	Size: 2, 5
+	# 	Tiles:
+	# 		0: Cliff
+	# 			MinColor: 84837F
+	# 			MaxColor: 6D7061
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		1: Cliff
+	# 			MinColor: 969C53
+	# 			MaxColor: 979F4F
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		2: Cliff
+	# 			Height: 1
+	# 			MinColor: 83827C
+	# 			MaxColor: 94928D
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		3: Cliff
+	# 			MinColor: 999F56
+	# 			MaxColor: 7E825C
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		4: Cliff
+	# 			Height: 1
+	# 			MinColor: 878782
+	# 			MaxColor: 8F8E8A
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		5: Cliff
+	# 			MinColor: 93A066
+	# 			MaxColor: 80926B
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		6: Cliff
+	# 			Height: 1
+	# 			MinColor: 8B8A85
+	# 			MaxColor: 83938D
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		7: Cliff
+	# 			MinColor: 989B62
+	# 			MaxColor: 767B56
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		8: Cliff
+	# 			MinColor: 979A73
+	# 			MaxColor: 85857A
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		9: Cliff
+	# 			MinColor: 9EA455
+	# 			MaxColor: 9EA54D
+	# 			ZOffset: -15
+	# 			ZRamp: 0
 	Template@832:
 		Categories: Wood Bridges
 		Id: 832
@@ -16623,158 +16059,62 @@ Templates:
 				MaxColor: 404154
 				ZOffset: -15
 				ZRamp: 0
-	Template@836:
-		Categories: Wood Bridges
-		Id: 836
-		Images: ovrpsb16.tem
-		Size: 5, 2
-		Tiles:
-			0: Cliff
-				MinColor: 808371
-				MaxColor: 908F8A
-				ZOffset: -15
-				ZRamp: 0
-			1: Cliff
-				Height: 1
-				MinColor: A09F9A
-				MaxColor: 86847E
-				ZOffset: -15
-				ZRamp: 0
-			2: Cliff
-				Height: 1
-				MinColor: 979792
-				MaxColor: 918F89
-				ZOffset: -15
-				ZRamp: 0
-			3: Cliff
-				Height: 1
-				MinColor: 86857F
-				MaxColor: 979590
-				ZOffset: -15
-				ZRamp: 0
-			4: Cliff
-				MinColor: 767561
-				MaxColor: 82846C
-				ZOffset: -15
-				ZRamp: 0
-			5: Cliff
-				MinColor: 979F4F
-				MaxColor: 999E56
-				ZOffset: -15
-				ZRamp: 0
-			6: Cliff
-				MinColor: 8C9255
-				MaxColor: 9B9D71
-				ZOffset: -15
-				ZRamp: 0
-			7: Cliff
-				MinColor: 929C57
-				MaxColor: 989B74
-				ZOffset: -15
-				ZRamp: 0
-			8: Cliff
-				MinColor: 8F9355
-				MaxColor: 868864
-				ZOffset: -15
-				ZRamp: 0
-			9: Cliff
-				MinColor: 9EA54D
-				MaxColor: 9EA455
-				ZOffset: -15
-				ZRamp: 0
-	Template@837:
-		Categories: RA2 uss arizona
-		Id: 837
-		Images: ariz01.tem
-		Size: 3, 6
-		Tiles:
-			0: Water
-				MinColor: 404258
-				MaxColor: 404358
-				ZOffset: -15
-				ZRamp: 0
-			1: Water
-				MinColor: 404050
-				MaxColor: 3F4257
-				ZOffset: -15
-				ZRamp: 0
-			2: Water
-				MinColor: 404258
-				MaxColor: 414358
-				ZOffset: -15
-				ZRamp: 0
-			3: Water
-				MinColor: 404258
-				MaxColor: 414458
-				ZOffset: -15
-				ZRamp: 0
-			4: Water
-				MinColor: 474146
-				MaxColor: 413F47
-				ZOffset: -15
-				ZRamp: 0
-			5: Water
-				MinColor: 404258
-				MaxColor: 414459
-				ZOffset: -15
-				ZRamp: 0
-			6: Water
-				MinColor: 404358
-				MaxColor: 414359
-				ZOffset: -15
-				ZRamp: 0
-			7: Water
-				MinColor: 484548
-				MaxColor: 4A4950
-				ZOffset: -15
-				ZRamp: 0
-			8: Water
-				MinColor: 3E4053
-				MaxColor: 3F4257
-				ZOffset: -15
-				ZRamp: 0
-			9: Clear
-				MinColor: 444659
-				MaxColor: 414458
-				ZOffset: -15
-				ZRamp: 0
-			10: Clear
-				MinColor: 4B484B
-				MaxColor: 423F41
-				ZOffset: -15
-				ZRamp: 0
-			11: Clear
-				MinColor: 454757
-				MaxColor: 434559
-				ZOffset: -15
-				ZRamp: 0
-			12: Water
-				MinColor: 3F4258
-				MaxColor: 42455A
-				ZOffset: -15
-				ZRamp: 0
-			13: Water
-				MinColor: 47434B
-				MaxColor: 4A4445
-				ZOffset: -15
-				ZRamp: 0
-			14: Water
-				MinColor: 404256
-				MaxColor: 424459
-				ZOffset: -15
-				ZRamp: 0
-			15: Water
-				MinColor: 3F4158
-				MaxColor: 404259
-				ZOffset: -15
-				ZRamp: 0
-			16: Water
-				MinColor: 404258
-				MaxColor: 41404E
-				ZOffset: -15
-				ZRamp: 0
-			17: Water
-				MinColor: 3F4258
-				MaxColor: 3F4259
-				ZOffset: -15
-				ZRamp: 0
+	# Template@836:
+	# 	Categories: Wood Bridges
+	# 	Id: 836
+	# 	Images: ovrpsb16.tem
+	# 	Size: 5, 2
+	# 	Tiles:
+	# 		0: Cliff
+	# 			MinColor: 808371
+	# 			MaxColor: 908F8A
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		1: Cliff
+	# 			Height: 1
+	# 			MinColor: A09F9A
+	# 			MaxColor: 86847E
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		2: Cliff
+	# 			Height: 1
+	# 			MinColor: 979792
+	# 			MaxColor: 918F89
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		3: Cliff
+	# 			Height: 1
+	# 			MinColor: 86857F
+	# 			MaxColor: 979590
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		4: Cliff
+	# 			MinColor: 767561
+	# 			MaxColor: 82846C
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		5: Cliff
+	# 			MinColor: 979F4F
+	# 			MaxColor: 999E56
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		6: Cliff
+	# 			MinColor: 8C9255
+	# 			MaxColor: 9B9D71
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		7: Cliff
+	# 			MinColor: 929C57
+	# 			MaxColor: 989B74
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		8: Cliff
+	# 			MinColor: 8F9355
+	# 			MaxColor: 868864
+	# 			ZOffset: -15
+	# 			ZRamp: 0
+	# 		9: Cliff
+	# 			MinColor: 9EA54D
+	# 			MaxColor: 9EA455
+	# 			ZOffset: -15
+	# 			ZRamp: 0

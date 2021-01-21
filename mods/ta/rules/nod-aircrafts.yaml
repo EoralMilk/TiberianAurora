@@ -232,6 +232,8 @@ ac130:
 		AbortOnResupply: false
 	SpawnActorOnDeath:
 		Actor: ac130husk
+	GrantConditionOnMovement:
+		Condition: flying
 
 
 
@@ -265,6 +267,8 @@ c130husk:
 	Explodes@Flame:
 		Weapon: FlameSea
 		EmptyWeapon: FlameSea
+	GrantConditionOnMovement:
+		Condition: flying
 
 ac130husk:
 	Inherits: c130husk
