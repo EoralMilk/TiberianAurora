@@ -36,7 +36,7 @@ HEGrenade:
 
 
 SniperRF:
-	Inherits: ^MGBulletEff
+	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 80
 	Range: 12c0
@@ -86,38 +86,15 @@ SniperRF-LongRange:
 
 # vehicle
 
-# HumveeMG_damage:
-# 	Inherits: ^MGDamageMaker
-# 	ReloadDelay: 30
-# 	Burst: 5
-# 	BurstDelays: 3
-# 	Range: 5c128
-# 	Projectile: Missile
-# 		RangeLimit: 20c409
-# 	Warhead@1Dam: SpreadDamage
-# 		Damage: 1600
-# 		Spread: 0c256
-# 		Versus:
-# 			None: 100
-# 			Flak: 85
-# 			Plate: 85
-# 			Light: 30
-# 			Medium: 10
-# 			Heavy: 10
-# 			Wood: 20
-# 			Steel: 15
-# 			Concrete: 15
-# 			Drone: 100
-# 			Rocket: 100
 
-
-HumveeMG_eff_bullet:
-	Inherits: ^MGBulletEff
+HumveeMG:
+	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 30
 	Burst: 5
 	BurstDelays: 3
 	Range: 5c128
+	Report: mg_shot2.wav
 	Projectile: BulletAS2TA
 		Inaccuracy: 500
 		Speed: 900
@@ -136,17 +113,6 @@ HumveeMG_eff_bullet:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-
-
-HumveeMG_eff_fire:
-	Inherits: ^MGFire
-	ReloadDelay: 30
-	Burst: 5
-	BurstDelays: 3
-	Range: 5c128
-	Report: mg_shot2.wav
-	# AfterFireSound: mg_clip_out.wav
-
 
 HumvMG-Casing:
 	Inherits: ^BulletCasing
@@ -347,37 +313,17 @@ M77Rockets:
 
 # structure
 
-# HMG-damage:
-# 	Inherits: ^MGDamageMaker
-# 	ReloadDelay: 50
-# 	Burst: 4
-# 	BurstDelays: 4
-# 	Range: 7c0
-# 	Projectile: Missile
-# 		CruiseAltitude: 3c512
-# 	Warhead@1Dam: SpreadDamage
-# 		Damage: 3000
-# 		Spread: 0c128
-# 		Versus:
-# 			None: 100
-# 			Flak: 100
-# 			Plate: 90
-# 			Light: 50
-# 			Medium: 30
-# 			Heavy: 27
-# 			Wood: 27
-# 			Steel: 15
-# 			Concrete: 15
-# 			Drone: 100
-# 			Rocket: 100
 
-HMG-eff_bullet:
-	Inherits: ^MGBulletEff
+HMG:
+	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 50
 	Burst: 4
 	BurstDelays: 4
 	Range: 7c0
+	Report: mg_shot.wav
+	AfterFireSoundDelay: 2
+	AfterFireSound: Shells_falls.wav
 	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
@@ -398,17 +344,6 @@ HMG-eff_bullet:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-
-HMG-eff_fire:
-	Inherits: ^MGFire
-	ReloadDelay: 50
-	Burst: 4
-	BurstDelays: 4
-	Range: 7c0
-	Report: mg_shot.wav
-	AfterFireSoundDelay: 2
-	AfterFireSound: Shells_falls.wav
-
 
 HMG-Casing:
 	Inherits: ^BulletCasing
@@ -535,40 +470,14 @@ OrcaAAMissiles:
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
 
-A10VulcanFake:
-	ReloadDelay: 100
-	Burst: 30
-	BurstDelays: 1
-	Range: 11c0
-	Report: vulcan_shot.wav
-	FirstBurstTargetOffset: -3000,0,0
-	FollowingBurstTargetOffset: 300,0,0
-	Projectile: InstantHit
-		Blockable: false
-	Warhead@1Dam: SpreadDamage
-		Damage: 0
-		Spread: 0c366
-		Versus:
-			None: 0
-			Flak: 0
-			Plate: 0
-			Light: 0
-			Medium: 0
-			Heavy: 0
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-			Drone: 0
-			Rocket: 0
-
-
 A10Vulcan:
-	Inherits: ^MGBulletEff
+	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 100
 	Burst: 30
 	BurstDelays: 1
 	Range: 11c0
+	Report: vulcan_shot.wav
 	FirstBurstTargetOffset: -3000,0,0
 	FollowingBurstTargetOffset: 300,0,0
 	Projectile: BulletAS2TA
@@ -607,8 +516,6 @@ A10Napalm:
 	FollowingBurstTargetOffset: 400,0,0
 	Report: vkiratta.wav
 	Projectile: GravityBomb
-		# Velocity: 0, 0, -50
-		# Acceleration: 0, 0, -10
 		Image: zbomb
 		Palette: player
 		IsPlayerPalette: true

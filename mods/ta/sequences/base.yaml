@@ -87,7 +87,7 @@
 		Length: *
 		BlendMode: Additive
 
-^CommonTank:
+^CommonVehicale:
 	Inherits: ^onfire
 	Defaults: 
 		Offset: 0,0,0

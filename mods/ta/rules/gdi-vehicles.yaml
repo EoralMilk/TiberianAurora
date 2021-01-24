@@ -1,4 +1,5 @@
 ghumv:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -22,14 +23,8 @@ ghumv:
 		Locomotor: wheeled
 	RevealsShroud:
 		Range: 9c512
-	# Armament@Damage:
-	# 	Weapon: HumveeMG_damage
-	# 	LocalOffset: 300,0,0
-	Armament@Effect_bullet:
-		Weapon: HumveeMG_eff_bullet
-		LocalOffset: -300,0,840
 	Armament@Effect_fire:
-		Weapon: HumveeMG_eff_fire
+		Weapon: HumveeMG
 		LocalOffset: 300,0,840
 		Recoil: 33
 		RecoilRecovery: 12
@@ -60,6 +55,7 @@ ghumv:
 		TargetTypes: Metal
 
 gapc:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -121,6 +117,7 @@ gapc:
 		Offset: 330,-130,640
 
 gtank:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -174,6 +171,7 @@ gtank:
 		Offset: 330,-260,340
 
 gmlrs:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^AtkFrontalVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -223,6 +221,7 @@ gmlrs:
 		Offset: 330,-260,340
 
 gmmtnk:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:

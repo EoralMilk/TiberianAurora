@@ -69,64 +69,8 @@
 		Spread: 0c128
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
-^MGFire:
-	Projectile: InstantHit
-		Blockable: true
-	Warhead@1Dam: SpreadDamage
-		Damage: 0
-		Versus:
-			None: 1
-			Flak: 1
-			Plate: 1
-			Light: 1
-			Medium: 1
-			Heavy: 1
-			Wood: 1
-			Steel: 1
-			Concrete: 1
-			Drone: 1
-			Rocket: 1
-		InvalidTargets: Wall
 
-^MGDamageMaker:
-	ReloadDelay: 20
-	Range: 4c0
-	Projectile: Missile
-		Blockable: true
-		# Image: bulletsmall
-		# ContrailLength: 8
-		# ContrailWidth: 24
-		CruiseAltitude: 2c512
-		VerticalRateOfTurn: 50
-		HorizontalRateOfTurn: 50
-		MinimumLaunchAngle: 255
-		MaximumLaunchAngle: 255
-		MinimumLaunchSpeed: 1000
-		MaximumLaunchSpeed: 1000
-		Speed: 1000
-		Acceleration: 0
-		RangeLimit: 20c409
-		TerrainHeightAware: true
-		AllowSnapping: true
-	Warhead@1Dam: SpreadDamage
-		Damage: 0
-		Spread: 0c68
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 30
-			Medium: 10
-			Heavy: 10
-			Wood: 20
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-		InvalidTargets: Wall
-
-^MGBulletEff:
+^MG:
 	ReloadDelay: 20
 	Range: 4c0
 	Projectile: BulletAS2TA

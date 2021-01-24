@@ -2,7 +2,7 @@
 
 
 n_bggy:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	parachute-turret: n_bggy-tur
 		Facings: -32
@@ -15,7 +15,7 @@ n_bggy:
 		Offset: 0, 0, 0
 
 n_cycle:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithFlakMuzzle
 	icon: ncycle_icon.png
 		UseTilesetCode: false
@@ -23,7 +23,7 @@ n_cycle:
 		Offset: 0, 0, 0
 
 n_ltank:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithCannonMuzzle
 	parachute-turret: n_ltank-tur
 		Facings: -32
@@ -36,7 +36,7 @@ n_ltank:
 		Offset: 0, 0, 0
 
 n_ftank:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithFlakMuzzle
 	parachute-turret: n_ftank-tur
 		Facings: -32
@@ -49,7 +49,7 @@ n_ftank:
 		Offset: 0, 0, 0
 
 n_howi:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithCannonMuzzle
 	idle: n_howi-alert
 		Facings: -32
@@ -74,7 +74,7 @@ n_howi:
 		Offset: 0, 0, 0
 
 n_stltank:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithFlakMuzzle
 	parachute-turret: n_stltank-tur
 		Facings: -32

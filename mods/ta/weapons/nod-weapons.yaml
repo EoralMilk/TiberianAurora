@@ -7,37 +7,14 @@ Chemspray:
 
 # vehicle
 
-# BuggyMG_damage:
-# 	Inherits: ^MGDamageMaker
-# 	ReloadDelay: 25
-# 	Burst: 3
-# 	BurstDelays: 4
-# 	Range: 5c0
-# 	Projectile: Missile
-# 		RangeLimit: 20c409
-# 	Warhead@1Dam: SpreadDamage
-# 		Damage: 2000
-# 		Spread: 0c256
-# 		Versus:
-# 			None: 100
-# 			Flak: 85
-# 			Plate: 85
-# 			Light: 30
-# 			Medium: 10
-# 			Heavy: 10
-# 			Wood: 20
-# 			Steel: 15
-# 			Concrete: 15
-# 			Drone: 100
-# 			Rocket: 100
-
-BuggyMG_eff_bullet:
-	Inherits: ^MGBulletEff
+BuggyMG:
+	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 25
 	Burst: 3
 	BurstDelays: 4
 	Range: 5c0
+	Report: buggy_mg_shot.wav
 	Projectile: BulletAS2TA
 		Inaccuracy: 500
 		Speed: 1000
@@ -56,16 +33,6 @@ BuggyMG_eff_bullet:
 			Concrete: 15
 			Drone: 100
 			Rocket: 100
-
-BuggyMG_eff_fire:
-	Inherits: ^MGFire
-	ReloadDelay: 25
-	Burst: 3
-	BurstDelays: 4
-	Range: 5c0
-	Report: buggy_mg_shot.wav
-	# AfterFireSound: pistol2_chamber.wav
-
 
 Buggy-Casing:
 	Inherits: ^BulletCasing
@@ -333,40 +300,9 @@ ObeliskLaser:
 
 # aircraft
 
-HeliGunFake:
-	ValidTargets: Ground, Water, Air
-	ReloadDelay: 1
-	Range: 5c640
-	Projectile: InstantHit
-		Blockable: false
-	Warhead@1Dam: SpreadDamage
-		Damage: 0
-		Spread: 1
-		Versus:
-			None: 0
-			Flak: 0
-			Plate: 0
-			Light: 0
-			Medium: 0
-			Heavy: 0
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-			Drone: 0
-			Rocket: 0
-
-
-HeliGunCasing:
-	Inherits: ^BulletCasing
-	ReloadDelay: 1
-	Range: 5c640
-	ValidTargets: Ground, Water, Air
-	Projectile: Missile
-		Blockable: false
-
 
 HeliAGGun:
-	Inherits: ^MGBulletEff
+	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ValidTargets: Ground, Water
 	ReloadDelay: 1
@@ -399,7 +335,6 @@ HeliAGGun:
 		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
-
 HeliAAGun:
 	Inherits: HeliAGGun
 	ValidTargets: Air
@@ -408,6 +343,16 @@ HeliAAGun:
 	Warhead@1Dam: SpreadDamage
 		Damage: 1800
 		ValidTargets: Air
+
+HeliGunCasing:
+	Inherits: ^BulletCasing
+	ReloadDelay: 1
+	Range: 5c640
+	ValidTargets: Ground, Water, Air
+	Projectile: Missile
+		Blockable: false
+
+
 
 AC130VulcanFake:
 	ReloadDelay: 20
@@ -422,9 +367,8 @@ AC130VulcanFake:
 	Warhead@Eff_attacksound: CreateEffect
 		ImpactSounds: ac130_hmg_burst.wav
 
-
 AC130Vulcan:
-	Inherits: ^MGBulletEff
+	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ReloadDelay: 20
 	Burst: 19
@@ -466,7 +410,6 @@ AC130CannonFake:
 		Blockable: true
 	Warhead@Eff_attacksound: CreateEffect
 		ImpactSounds: vgriatta.wav, vgriattb.wav, vgriattc.wav
-
 
 AC130Cannon:
 	Inherits: ^CommonCannon

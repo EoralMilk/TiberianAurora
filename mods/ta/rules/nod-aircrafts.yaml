@@ -26,9 +26,14 @@ apache:
 	RevealsShroud:
 		Range: 11c512
 		Type: GroundPosition
-	Armament@fake:
-		Name: fake
-		Weapon: HeliGunFake
+	Armament@aggun:
+		Weapon: HeliAGGun
+		LocalOffset: 940,0,48
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+	Armament@aagun:
+		Name: secondary
+		Weapon: HeliAAGun
 		LocalOffset: 940,0,48
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
@@ -36,22 +41,6 @@ apache:
 		Name: casing
 		Weapon: HeliGunCasing
 		LocalOffset: 750,0,55
-		PauseOnCondition: !ammo
-	# GrantConditionOnAttack@muzzle:
-	# 	Condition: firingmuzzle
-	# WithIdleOverlay@muzzle:
-	# 	Sequence: muzzle
-	# 	Palette: effect80alpha
-	# 	Offset: 940,0,48
-	# 	RequiresCondition: firingmuzzle
-	Armament@aggun:
-		Weapon: HeliAGGun
-		LocalOffset: 400,0,748
-		PauseOnCondition: !ammo
-	Armament@aagun:
-		Name: secondary
-		Weapon: HeliAAGun
-		LocalOffset: 200,0,48
 		PauseOnCondition: !ammo
 	AutoTarget:
 		ScanRadius: 7
@@ -208,7 +197,7 @@ ac130:
 	Armament@Vulcan:
 		Weapon: AC130Vulcan
 		RequiresCondition: airborne
-		LocalOffset: 560,0,600
+		LocalOffset: 0,0,200
 	Armament@Cannon_fake:
 		Weapon: AC130CannonFake
 		RequiresCondition: airborne
@@ -216,7 +205,7 @@ ac130:
 	Armament@Cannon:
 		Weapon: AC130Cannon
 		RequiresCondition: airborne
-		LocalOffset: 560,0,600
+		LocalOffset: 0,0,200
 	AutoTarget:
 		AllowMovement: false
 		InitialStance: Defend

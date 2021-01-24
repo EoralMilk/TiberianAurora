@@ -1,7 +1,7 @@
 
 g_humvee:
 	Inherits@Muzzle: ^WithMachineGunMuzzle
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	parachute-turret: g_humvee-tur
 		Facings: -32
 	turret: g_humvee-tur
@@ -13,7 +13,7 @@ g_humvee:
 		Offset: 0, 0, 0
 
 g_apc:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithFlakMuzzle
 	parachute-turret: g_apc-tur
 		Facings: -32
@@ -26,7 +26,7 @@ g_apc:
 		Offset: 0, 0, 0
 
 g_mtank:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithCannonMuzzle
 	parachute-turret: g_mtank-tur
 		Facings: -32
@@ -39,7 +39,7 @@ g_mtank:
 		Offset: 0, 0, 0
 
 g_mlrs:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithCannonMuzzle
 	idle: g_mlrs-alert
 		Facings: -32
@@ -64,7 +64,7 @@ g_mlrs:
 		Offset: 0, 0, 0
 
 g_mmtank:
-	Inherits: ^CommonTank
+	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithCannonMuzzle
 	Inherits@Muzzle-2: ^WithFlakMuzzle2
 	parachute-turret: g_mmtank-tur

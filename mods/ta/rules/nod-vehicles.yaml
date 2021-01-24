@@ -1,4 +1,5 @@
 nbggy:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -22,14 +23,8 @@ nbggy:
 		Locomotor: wheeled
 	RevealsShroud:
 		Range: 9c512
-	# Armament@Damage:
-	# 	Weapon: BuggyMG_damage
-	# 	LocalOffset: 214,0,0
-	Armament@Effect_bullet:
-		Weapon: BuggyMG_eff_bullet
-		LocalOffset: -386,0,870
-	Armament@Effect_fire:
-		Weapon: BuggyMG_eff_fire
+	Armament@primary:
+		Weapon: BuggyMG
 		LocalOffset: 214,0,870
 		Recoil: 35
 		RecoilRecovery: 13
@@ -63,6 +58,7 @@ nbggy:
 		Offset: 330,-160,340
 
 ncycle:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^AtkFrontalVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
@@ -112,6 +108,7 @@ ncycle:
 
 
 ntank:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -163,6 +160,7 @@ ntank:
 		Offset: 330,-270,340
 
 nftnk:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -212,6 +210,7 @@ nftnk:
 
 
 nhowi:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^AtkFrontalVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
@@ -265,6 +264,7 @@ nhowi:
 
 
 nstltnk:
+	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:

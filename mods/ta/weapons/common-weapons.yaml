@@ -1,36 +1,12 @@
 
-# GAU-3_damage:
-# 	Inherits: ^MGDamageMaker
-# 	ReloadDelay: 30
-# 	Burst: 4
-# 	BurstDelays: 3
-# 	Range: 4c512
-# 	Projectile: Missile
-# 		RangeLimit: 20c409
-# 	Warhead@1Dam: SpreadDamage
-# 		Damage: 1000
-# 		Spread: 0c256
-# 		Versus:
-# 			None: 100
-# 			Flak: 100
-# 			Plate: 95
-# 			Light: 30
-# 			Medium: 11
-# 			Heavy: 11
-# 			Wood: 20
-# 			Steel: 10
-# 			Concrete: 9
-# 			Drone: 100
-# 			Rocket: 100
-# 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-
-GAU-3_eff_bullet:
-	Inherits: ^MGBulletEff
+GAU-3:
+	Inherits: ^MG
 	Inherits: ^MGPiff
 	ReloadDelay: 30
 	Burst: 4
 	BurstDelays: 3
 	Range: 4c512
+	Report: chain_shot.wav
 	Projectile: BulletAS2TA
 		ContrailLength: 5
 		ContrailWidth: 10
@@ -53,15 +29,6 @@ GAU-3_eff_bullet:
 			Drone: 100
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
-
-GAU-3_eff_fire:
-	Inherits: ^MGFire
-	ReloadDelay: 30
-	Burst: 4
-	BurstDelays: 3
-	Range: 4c512
-	Report: chain_shot.wav
-
 
 GAU-Casing:
 	Inherits: ^BulletCasing

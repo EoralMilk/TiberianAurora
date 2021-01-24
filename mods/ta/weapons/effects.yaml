@@ -10,6 +10,8 @@ CasingDebris:
 		Palette: ts-anim
 		Sequences: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 		Shadow: true
+		BounceCount: 2
+		BounceRangeModifier: 10
 	Warhead@: CreateEffect
 		Explosions: casingscorch, casingscorch2, casingscorch3, casingscorch4, casingscorch5, casingscorch6, casingscorch7
 		ExplosionPalette: ts-anim
@@ -30,6 +32,8 @@ ShellCasingDebris:
 		LaunchAngle: 91, 140
 		Image: shellcasing
 		Palette: ts-anim
+		BounceCount: 3
+		BounceRangeModifier: 14
 	Warhead@: CreateEffect
 		ExplosionPalette: ts-anim
 		Explosions: shellcasingscorch, shellcasingscorch2, shellcasingscorch3, shellcasingscorch4, shellcasingscorch5, shellcasingscorch6, shellcasingscorch7

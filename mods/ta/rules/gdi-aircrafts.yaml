@@ -146,22 +146,14 @@ a10:
 	RevealsShroud:
 		Range: 10c0
 		Type: CenterPosition
-	# AttackBomber:
-	# 	Armaments: gun, bombs
-	Armament@GUNS_fake:
-		# Name: gun_fake
-		Weapon: A10VulcanFake
+	Armament@GUNS:
+		Weapon: A10Vulcan
 		LocalOffset: 1510,0,85
 		MuzzleSequence: muzzle
-	Armament@GUNS:
-		# Name: gun
-		Weapon: A10Vulcan
-		LocalOffset: 2260,0,600
-	WithMuzzleOverlay:
 	Armament@BOMBS:
-		# Name: bombs
 		Weapon: A10Napalm
 		LocalOffset: 0,-256,43, 0,256,43
+	WithMuzzleOverlay:
 	AttackAircraft:
 		FacingTolerance: 512 
 		OpportunityFire: false
@@ -169,7 +161,7 @@ a10:
 		AttackType: Strafe
 		StrafeRunLength: 17c0
 	AutoTarget:
-		# ScanRadius: 8
+		ScanRadius: 8
 		InitialStance: ReturnFire
 		InitialStanceAI: ReturnFire
 	Contrail@1:
@@ -184,13 +176,6 @@ a10:
 		Color: FFD860
 		TrailLength: 15
 		ContrailUsePlayerColor: false
-	# AmmoPool:
-	# 	Ammo: 1
-	# 	PipCount: 1
-	# 	PipType: Ammo
-	# 	PipTypeEmpty: AmmoEmpty
-	# 	AmmoCondition: ammo
-	# AutoTarget:
 	AttackMove:
 	RenderSprites:
 		Image: a10
@@ -227,20 +212,10 @@ a10b:
 	AttackBomber:
 		Armaments: gun,gun_fake,bombs
 	RejectsOrders:
-	Armament@GUNS_fake:
-		Name: gun_fake
-		Weapon: A10VulcanFake
-		LocalOffset: 1510,0,85
-		MuzzleSequence: muzzle
 	Armament@GUNS:
 		Name: gun
-		Weapon: A10Vulcan
-		LocalOffset: 2260,0,600
-	WithMuzzleOverlay:
 	Armament@BOMBS:
 		Name: bombs
-		Weapon: A10Napalm
-		LocalOffset: 0,-256,43, 0,256,43
 
 a10husk:
 	Inherits: ^PlaneHusk
