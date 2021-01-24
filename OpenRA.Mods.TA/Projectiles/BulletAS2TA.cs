@@ -14,12 +14,13 @@ using System.Linq;
 using OpenRA.GameRules;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Effects;
-using OpenRA.Mods.Common.Graphics;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Mods.TA.Effects;
+using OpenRA.Mods.TA.Graphics;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.AS.Projectiles
+namespace OpenRA.Mods.TA.Projectiles
 {
 	public class BulletAS2TAInfo : IProjectileInfo
 	{
@@ -105,7 +106,7 @@ namespace OpenRA.Mods.AS.Projectiles
 		public readonly int ContrailZOffset = 2047;
 		public readonly Color ContrailColor = Color.White;
 		public readonly bool ContrailUsePlayerColor = false;
-		public readonly int ContrailDelay = 1;
+		public readonly int ContrailDelay = 0;
 		public readonly WDist ContrailWidth = new WDist(64);
 
 		public IProjectile Create(ProjectileArgs args) { return new BulletAS2TA(this, args); }
@@ -127,7 +128,7 @@ namespace OpenRA.Mods.AS.Projectiles
 		readonly string trailPalette;
 		readonly string palette;
 
-		ContrailRenderable contrail;
+		InstantContrailRenderable contrail;
 
 		[Sync]
 		WPos pos, lastPos, target, source;
@@ -185,8 +186,8 @@ namespace OpenRA.Mods.AS.Projectiles
 
 			if (info.ContrailLength > 0)
 			{
-				var color = info.ContrailUsePlayerColor ? ContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor;
-				contrail = new ContrailRenderable(world, color, info.ContrailWidth, info.ContrailLength, info.ContrailDelay, info.ContrailZOffset);
+				var color = info.ContrailUsePlayerColor ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor;
+				contrail = new InstantContrailRenderable(world, color, info.ContrailWidth, info.ContrailLength, info.ContrailDelay, info.ContrailZOffset);
 			}
 
 			trailPalette = info.TrailPalette;
@@ -313,7 +314,7 @@ namespace OpenRA.Mods.AS.Projectiles
 		void Explode(World world)
 		{
 			if (info.ContrailLength > 0)
-				world.AddFrameEndTask(w => w.Add(new ContrailFader(pos, contrail)));
+				world.AddFrameEndTask(w => w.Add(new InstantContrailFader(pos, contrail)));
 
 			world.AddFrameEndTask(w => w.Remove(this));
 
