@@ -36,6 +36,10 @@
     <AdditionalFiles Include="..\engine\stylecop.json" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Projectiles\" />
+  </ItemGroup>
+
   <Target Name="DisableAnalyzers" BeforeTargets="CoreCompile" Condition="'$(Configuration)'=='Release'">
     <!-- Disable code style analysis on Release builds to improve compile-time performance -->
     <ItemGroup Condition="'$(Configuration)'=='Release'">
