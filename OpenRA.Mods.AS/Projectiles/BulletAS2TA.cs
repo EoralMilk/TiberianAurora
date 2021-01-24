@@ -21,7 +21,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.AS.Projectiles
 {
-	public class BulletASInfo : IProjectileInfo
+	public class BulletAS2TAInfo : IProjectileInfo
 	{
 		[Desc("Projectile speed in WDist / tick, two values indicate variable velocity.")]
 		public readonly WDist[] Speed = { new WDist(17) };
@@ -108,12 +108,12 @@ namespace OpenRA.Mods.AS.Projectiles
 		public readonly int ContrailDelay = 1;
 		public readonly WDist ContrailWidth = new WDist(64);
 
-		public IProjectile Create(ProjectileArgs args) { return new BulletAS(this, args); }
+		public IProjectile Create(ProjectileArgs args) { return new BulletAS2TA(this, args); }
 	}
 
-	public class BulletAS : IProjectile, ISync
+	public class BulletAS2TA : IProjectile, ISync
 	{
-		readonly BulletASInfo info;
+		readonly BulletAS2TAInfo info;
 		readonly ProjectileArgs args;
 		readonly Animation anim;
 
@@ -137,7 +137,7 @@ namespace OpenRA.Mods.AS.Projectiles
 
 		public Actor SourceActor { get { return args.SourceActor; } }
 
-		public BulletAS(BulletASInfo info, ProjectileArgs args)
+		public BulletAS2TA(BulletAS2TAInfo info, ProjectileArgs args)
 		{
 			this.info = info;
 			this.args = args;

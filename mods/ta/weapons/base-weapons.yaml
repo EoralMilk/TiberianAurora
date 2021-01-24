@@ -56,7 +56,7 @@
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
 ^CommonCannon:
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Blockable: true
 		ContrailLength: 8
 		ContrailWidth: 15
@@ -129,7 +129,7 @@
 ^MGBulletEff:
 	ReloadDelay: 20
 	Range: 4c0
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		ContrailLength: 5
 		ContrailWidth: 10
 		ContrailColor: FFD860
@@ -167,7 +167,7 @@
 	BurstDelays: 1
 	InvalidTargets: Wall
 	Report: flamethrower.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		# ContrailLength: 5
 		# ContrailWidth: 25
 		# ContrailColor: DF460C
@@ -215,7 +215,7 @@
 	BurstDelays: 1
 	InvalidTargets: Wall
 	Report: flamethrower.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		# ContrailLength: 5
 		# ContrailWidth: 25
 		# ContrailColor: DF460C
