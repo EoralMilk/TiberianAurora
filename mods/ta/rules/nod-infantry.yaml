@@ -38,7 +38,7 @@ flamet:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	AutoTarget:
-		ScanRadius: 4
+		ScanRadius: 6
 	RenderSprites:
 		Image: flamer
 		PlayerPalette: flamethrower
@@ -93,7 +93,7 @@ chemict:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	AutoTarget:
-		ScanRadius: 4
+		ScanRadius: 6
 	RenderSprites:
 		Image: cmcler
 		PlayerPalette: chamer

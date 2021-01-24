@@ -54,7 +54,7 @@ apache:
 		LocalOffset: 200,0,48
 		PauseOnCondition: !ammo
 	AutoTarget:
-		ScanRadius: 6
+		ScanRadius: 7
 	AttackAircraft:
 		FacingTolerance: 40 
 		OpportunityFire: false

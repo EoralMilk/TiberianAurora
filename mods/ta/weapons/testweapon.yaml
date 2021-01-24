@@ -81,7 +81,7 @@ TestMissile:
 		AllowSnapping: false
 		# CruiseAltitude: 3c0
 		TrailImage: mislflash
-		TrailPalette: gray_alpha
+		TrailPalette: gray_alpha70
 		TrailInterval: 0
 		TrailDelay: 0
 		CloseEnough: 68

@@ -268,6 +268,18 @@
 		AssaultMoveCondition: assault-move
 		Voice: Attack
 
+^AutoTargetInfantry:
+	AutoTarget:
+		AttackAnythingCondition: stance-attackanything
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !stance-attackanything
+		ValidTargets: Infantry
+		InvalidTargets: NoAutoTarget, WaterStructure
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything
+		ValidTargets: Infantry
+		InvalidTargets: NoAutoTarget
+
 ^AutoTargetAir:
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:

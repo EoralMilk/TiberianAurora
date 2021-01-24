@@ -334,12 +334,12 @@ samsite:
 	Armament:
 		Weapon: RedEye
 		MuzzleSequence: muzzle
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !lowpower
 		LocalOffset: 450,170,760, 450,0,760, 450,-170,760, 390,170,1140, 390,0,1140, 390,-170,1140
 	AttackPopupTurreted:
 		CloseDelay: 125
 		DefaultFacing: 128 
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && !lowpower
 		PauseOnCondition: lowpower
 	WithEmbeddedTurretSpriteBody:
 	WithSpriteBody:

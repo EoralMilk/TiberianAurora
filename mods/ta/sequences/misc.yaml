@@ -86,7 +86,14 @@ smallfire:
 mislflash:
 	idle:
 		BlendMode: Additive
-		Frames: 2
+
+mislflash2:
+	idle:
+		BlendMode: Additive
+
+mislflash3:
+	idle:
+		BlendMode: Additive
 
 heal:
 	idle:

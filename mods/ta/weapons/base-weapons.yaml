@@ -22,8 +22,8 @@
 		TerrainHeightAware: true
 		AllowSnapping: true
 		CruiseAltitude: 3c0
-		TrailImage: mislflash
-		TrailPalette: gray_alpha
+		TrailImage: mislflash3
+		TrailPalette: gray_alpha70
 		TrailInterval: 0
 		TrailDelay: 0
 

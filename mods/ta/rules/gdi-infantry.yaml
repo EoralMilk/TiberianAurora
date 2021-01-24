@@ -38,7 +38,7 @@ grenader:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	AutoTarget:
-		ScanRadius: 4
+		ScanRadius: 6
 	RenderSprites:  # TODO: 素材..
 		Image: grenader
 		PlayerPalette: green_infantry
@@ -52,12 +52,12 @@ grenader:
 sniper:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@AUTOTARGET: ^AutoTargetInfantry
 	# Buildable:
 	# 	Queue: Infantry
 	# 	Prerequisites: none
 	# 	BuildPaletteOrder: 10
-	# 	Description: 装备有狙击步枪的专业射手，擅长远距离射杀敌军步兵 \n需要合适的位置和角度才能命中目标 \n不容易击中移动目标 \n\n·强势对抗：步兵\n·弱势对抗：装甲目标
+	# 	Description: 装备有狙击步枪的专业射手，擅长远距离射杀敌军步兵 \n需要有利位置，不擅长近距离作战 \n自动索敌范围小于最远射程 \n\n·强势对抗：步兵\n·弱势对抗：装甲目标
 	Valued:
 		Cost: 400
 	Armor:
@@ -78,7 +78,7 @@ sniper:
 		Range: 7c0
 	AttackFrontal:
 		Voice: Attack
-	Armament@primary:
+	Armament@LongRange:
 		Weapon: SniperRF
 		LocalOffset: 0,0,672
 	ProducibleWithLevel:
@@ -88,7 +88,7 @@ sniper:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	AutoTarget:
-		ScanRadius: 4
+		ScanRadius: 10
 	RenderSprites:  # TODO: 素材..
 		Image: mnguner
 		PlayerPalette: green_infantry

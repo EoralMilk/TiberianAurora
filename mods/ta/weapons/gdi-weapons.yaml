@@ -41,12 +41,10 @@ SniperRF:
 	ReloadDelay: 80
 	Range: 12c0
 	Report: sniper_shot.wav
-	# AfterFireSoundDelay: 2
-	# AfterFireSound: sniper_cycle_out.wav
 	Projectile: BulletAS
 		Inaccuracy: 10
 		Speed: 1400
-		LaunchAngle: 5
+		LaunchAngle: 0
 	Warhead@1Dam: SpreadDamage
 		Damage: 12000
 		Spread: 0c68
@@ -64,6 +62,25 @@ SniperRF:
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
+SniperRF-ShortRange:
+	Inherits: SniperRF
+	ReloadDelay: 40
+	Range: 6c512
+	MinRange: 0c512
+	Projectile: BulletAS
+		Inaccuracy: 230
+		ContrailColor: DF460C
+	Warhead@1Dam: SpreadDamage
+		Damage: 8000
+		Spread: 0c42
+		Versus:
+			None: 90
+			Flak: 90
+			Plate: 80
+
+SniperRF-LongRange:
+	Inherits: SniperRF
+	MinRange: 4c512
 
 # vehicle
 
@@ -147,7 +164,7 @@ APCCannon:
 	Range: 5c0
 	Report: gl_shot.wav
 	Projectile: BulletAS
-		Speed: 382
+		Speed: 482
 		LaunchAngle: 80
 		Image: 120mm
 		Palette: ra
@@ -306,7 +323,7 @@ M77Rockets:
 		LaunchAngle: 180
 		Blockable: false
 		TrailImage: mislflash
-		TrailPalette: gray_alpha
+		TrailPalette: gray_alpha70
 		TrailInterval: 0
 		TrailDelay: 0
 	Warhead@1Dam: SpreadDamage
@@ -338,7 +355,7 @@ M77Rockets:
 # 		CruiseAltitude: 3c512
 # 	Warhead@1Dam: SpreadDamage
 # 		Damage: 3000
-# 		Spread: 0c512
+# 		Spread: 0c128
 # 		Versus:
 # 			None: 100
 # 			Flak: 100
@@ -366,7 +383,7 @@ HMG-eff_bullet:
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@1Dam: SpreadDamage
 		Damage: 3000
-		Spread: 0c512
+		Spread: 0c128
 		Versus:
 			None: 100
 			Flak: 100

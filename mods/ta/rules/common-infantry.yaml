@@ -53,7 +53,7 @@ mngunner:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	AutoTarget:
-		ScanRadius: 4
+		ScanRadius: 6
 	RenderSprites:
 		Image: mnguner
 		FactionImages:
@@ -109,7 +109,7 @@ bzkier:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	AutoTarget:
-		ScanRadius: 4
+		ScanRadius: 6
 	RenderSprites:
 		Image: bzkier-n
 		FactionImages:
