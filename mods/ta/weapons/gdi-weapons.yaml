@@ -7,7 +7,7 @@ HEGrenade:
 	ReloadDelay: 45
 	Range: 4c0
 	Report: grenade_throw.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Image: grenade
 		Palette: player
 		IsPlayerPalette: true
@@ -41,7 +41,9 @@ SniperRF:
 	ReloadDelay: 80
 	Range: 12c0
 	Report: sniper_shot.wav
-	Projectile: BulletAS
+	# AfterFireSoundDelay: 2
+	# AfterFireSound: sniper_cycle_out.wav
+	Projectile: BulletAS2TA
 		Inaccuracy: 10
 		Speed: 1400
 		LaunchAngle: 0
@@ -67,7 +69,7 @@ SniperRF-ShortRange:
 	ReloadDelay: 40
 	Range: 6c512
 	MinRange: 0c512
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 230
 		ContrailColor: DF460C
 	Warhead@1Dam: SpreadDamage
@@ -116,7 +118,7 @@ HumveeMG_eff_bullet:
 	Burst: 5
 	BurstDelays: 3
 	Range: 5c128
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 500
 		Speed: 900
 	Warhead@1Dam: SpreadDamage
@@ -163,7 +165,7 @@ APCCannon:
 	ReloadDelay: 40
 	Range: 5c0
 	Report: gl_shot.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 482
 		LaunchAngle: 80
 		Image: 120mm
@@ -200,7 +202,7 @@ MediumTankCannonAP:
 	ReloadDelay: 66
 	Range: 5c512
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 1012
 	Warhead@1Dam: SpreadDamage
 		Damage: 7500
@@ -234,7 +236,7 @@ MammothTankCannon:
 	Burst: 2
 	BurstDelays: 5
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 962
 	Warhead@1Dam: SpreadDamage
 		Damage: 10500
@@ -314,7 +316,7 @@ M77Rockets:
 	Range: 13c512
 	MinRange: 4c512
 	Report: rocket_shot.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 185
 		ContrailLength: 14
 		ContrailWidth: 30
@@ -569,7 +571,7 @@ A10Vulcan:
 	Range: 11c0
 	FirstBurstTargetOffset: -3000,0,0
 	FollowingBurstTargetOffset: 300,0,0
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 800
 		Speed: 1000
 		LaunchAngle: 0

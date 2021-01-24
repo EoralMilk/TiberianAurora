@@ -285,7 +285,7 @@ FlameTankExplosion:
 
 FlameCluster:
 	Inherits: ^FlameWeapon
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 1800
 		Speed: 110
 		-Image:
@@ -324,7 +324,7 @@ ChemCluster:
 	Inherits: ^TiberiumWeapon
 	Range: 2c0
 	MinRange: 1c512
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 320
 		Speed: 60
 	Warhead@1Dam: SpreadDamage
@@ -440,7 +440,7 @@ FlameWave:
 	Inherits: ^FlameWeapon
 	ReloadDelay: 1
 	Range: 7c512
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 1000
 		Speed: 160
 		-Image:

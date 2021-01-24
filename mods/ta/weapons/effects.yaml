@@ -2,7 +2,7 @@ CasingDebris:
 	ReloadDelay: 60
 	Range: 0c764
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 100, 200
 		Inaccuracy: 256
 		LaunchAngle: 91, 140
@@ -24,7 +24,7 @@ ShellCasingDebris:
 	Inherits: CasingDebris
 	MinRange: 0c512
 	Range: 1c764
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 75, 125
 		Inaccuracy: 256
 		LaunchAngle: 91, 140
@@ -69,7 +69,7 @@ ShellCasingDebris:
 	Range: 0c512
 	MinRange: 0c128
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Blockable: false
 		Speed: 50, 70
 		Image: blood
@@ -86,7 +86,7 @@ ShellCasingDebris:
 	Range: 2c128
 	MinRange: 0c768
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Blockable: true
 		Speed: 100, 130
 		ContrailLength: 5
@@ -104,7 +104,7 @@ ShellCasingDebris:
 	Range: 2c768
 	MinRange: 1c512
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		# TrailImage: smallsmoke
 		# TrailDelay: 1
 		# TrailInterval: 1
@@ -120,7 +120,7 @@ ShellCasingDebris:
 
 ^SmokeBig:
 	Inherits: ^Smoke
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Image: largesmoke
 		Speed: 10, 20
 		LaunchAngle: 10, 23

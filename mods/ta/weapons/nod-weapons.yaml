@@ -38,7 +38,7 @@ BuggyMG_eff_bullet:
 	Burst: 3
 	BurstDelays: 4
 	Range: 5c0
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 500
 		Speed: 1000
 	Warhead@1Dam: SpreadDamage
@@ -128,7 +128,7 @@ LightTankCannonAP:
 	ReloadDelay: 33
 	Range: 5c0
 	Report: gexpshaa.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 1150
 	Warhead@1Dam: SpreadDamage
 		Damage: 4000
@@ -152,7 +152,7 @@ Devil'sTongue:
 	Burst: 40
 	BurstDelays: 1
 	Range: 4c512
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 800
 	Warhead@1Dam: SpreadDamage
 		Damage: 1000
@@ -209,7 +209,7 @@ HowitzerCannonHE:
 	Range: 12c256
 	MinRange: 4c256
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 166
 		ContrailLength: 16
 		ContrailWidth: 28
@@ -248,7 +248,7 @@ TurretCannon:
 	ReloadDelay: 55
 	Range: 7c512
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Speed: 1126
 	Warhead@1Dam: SpreadDamage
 		Damage: 7500
@@ -403,7 +403,7 @@ HeliAGGun:
 HeliAAGun:
 	Inherits: HeliAGGun
 	ValidTargets: Air
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 150
 	Warhead@1Dam: SpreadDamage
 		Damage: 1800
@@ -432,7 +432,7 @@ AC130Vulcan:
 	Range: 11c0
 	FirstBurstTargetOffset: -1500,0,0
 	FollowingBurstTargetOffset: 150,0,0
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 800
 		Speed: 800
 		LaunchAngle: 0
@@ -473,7 +473,7 @@ AC130Cannon:
 	Inherits@WarheadEff: ^AP_WarheadEff_Medium
 	ReloadDelay: 25
 	Range: 11c0
-	Projectile: BulletAS
+	Projectile: BulletAS2TA
 		Inaccuracy: 600
 		Speed: 800
 		LaunchAngle: 0
