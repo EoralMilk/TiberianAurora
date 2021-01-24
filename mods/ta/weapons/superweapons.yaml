@@ -2,6 +2,11 @@
 IonCannon:
 	Inherits@WarheadEff: ^HE_WarheadEff_Huge
 	ValidTargets: Ground, Water, Air, Wall
+	Projectile: GravityBomb
+		Image: ionball
+		Palette: ionball
+		Blockable: false
+		Acceleration: 0,0,-35
 	Warhead@Air_impact: SpreadDamage
 		Spread: 0c800
 		Damage: 1000000
@@ -64,29 +69,9 @@ IonCannon:
 		Dimensions: 17,17
 		Footprint: xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxXxxxxxxxx xxxxxxXXXXXxxxxxx xxxxxXXxxxXXxxxxx xxxxxXxxxxxXxxxxx xxxxXXxxxxxXXxxxx xxxxxXxxxxxXxxxxx xxxxxXXxxxXXxxxxx xxxxxxXXXXXxxxxxx  xxxxxxxxXxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx
 		ValidTargets: Ground, Water, Air, Wall
-	Warhead@4Effect: CreateEffect
-		Explosions: ionbeam
-		ExplosionPalette: ts_effect80alpha
-		AffectsParent: true
-	Warhead@5Effect: CreateEffect
-		Explosions: ionbeam2
-		ExplosionPalette: ts_effect80alpha
-		AffectsParent: true
-	Warhead@6Effect: CreateEffect
-		Explosions: ionbeam3
-		ExplosionPalette: ts_effect80alpha
-		AffectsParent: true
-	Warhead@7Effect: CreateEffect
-		Explosions: ionbeam4
-		ExplosionPalette: ts_effect80alpha
-		AffectsParent: true
-	Warhead@8Effect: CreateEffect
-		Explosions: ionbeam5
-		ExplosionPalette: ts_effect80alpha
-		AffectsParent: true
 	Warhead@EffectRing: CreateEffect
-		Explosions: ionring
-		ExplosionPalette: effect80alpha
+		Explosions: ionblast
+		ExplosionPalette: ionblast
 		AffectsParent: true
 	Warhead@SmuSomke: LeaveSmudge
 		SmokeType: largesmoke
@@ -95,6 +80,30 @@ IonCannon:
 		Duration: 5
 		Intensity: 4
 		Multiplier: 3,3
+
+IonCannonMaker:
+	ValidTargets: Ground, Water, Air, Wall
+	Warhead@Maker: FireShrapnel
+		Weapon: IonCannonMakerUp
+
+IonCannonMakerUp:
+	Range: 0c2
+	MinRange: 0c1
+	ValidTargets: Ground, Water, Air, Wall
+	Projectile: BulletAS2TA
+		Speed: 10000
+		LaunchAngle: 256
+		Blockable: false
+		ZOffset: 4096
+		AirburstAltitude: 30c0
+	Warhead@Maker: FireCluster
+		ImpactActors: false
+		Weapon: IonCannon
+		RandomClusterCount: 0
+		Dimensions: 1,1
+		Footprint: X
+		ValidTargets: Ground, Water, Air, Wall
+
 
 NukePayload:
 	ValidTargets: Ground, Water, Air
@@ -123,18 +132,6 @@ NukePayload:
 		Explosions: nuke_explosion
 		ImpactSounds: snukexpl.wav
 		ValidTargets: Ground, Water, Air
-
-atomic_creater:
-	ValidTargets: Ground, Water, Air, Wall
-	Projectile: InstantHit
-		Blockable: false
-	Warhead@BlastWaveCore: FireCluster
-		Delay: 0
-		Weapon: atomic
-		RandomClusterCount: 0
-		Dimensions: 1,1
-		Footprint: X
-		ValidTargets: Ground, Water, Air, Wall
 
 atomic:
 	ValidTargets: Ground, Water, Air, Wall

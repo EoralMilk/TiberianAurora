@@ -85,3 +85,22 @@
 		Name: fire80alpha
 		BasePalette: fire
 		Alpha: 0.8
+
+
+	PaletteFromFile@ionblast:
+		Name: ionblast
+		Filename: ionblast.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@ionblast80alpha:
+		Name: ionblast80alpha
+		BasePalette: ionblast
+		Alpha: 0.8
+
+	PaletteFromFile@ionball:
+		Name: ionball
+		Filename: ionball.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@ionball80alpha:
+		Name: ionball80alpha
+		BasePalette: ionball
+		Alpha: 0.8

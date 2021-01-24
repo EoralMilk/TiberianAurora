@@ -80,7 +80,7 @@ sniper:
 		Voice: Attack
 	Armament@LongRange:
 		Weapon: SniperRF
-		LocalOffset: 0,0,672
+		LocalOffset: 268,50,850
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:

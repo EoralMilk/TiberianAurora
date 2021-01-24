@@ -1,4 +1,12 @@
 
+moveflsh2:
+	idle: ring
+		Length: *
+		Tick: 30
+		ZOffset: 2047
+		Offset: 0, 0, 48
+		ZRamp: 1
+
 bullet:
 	idle:
 
@@ -23,6 +31,13 @@ chamall:
 		Tick: 160
 		ZOffset: 1025
 		# BlendMode: Additive
+
+ionball:
+	idle:
+		Length: *
+		ZOffset: 1024
+		Tick: 20
+		BlendMode: Additive
 
 v3trail:
 	idle:
@@ -119,6 +134,10 @@ explosion:
 		Tick: 80
 		BlendMode: Additive
 		ZRamp: 1
+	ionblast: ionblast
+		Tick: 120
+		ZOffset: 2052
+		BlendMode: Additive
 	huge_watersplash: h2o_exp1
 		Offset: 0, 0, 39
 	large_watersplash: h2o_exp2
