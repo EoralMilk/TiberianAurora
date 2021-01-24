@@ -32,10 +32,11 @@ GAU-3_eff_bullet:
 	BurstDelays: 3
 	Range: 4c512
 	Projectile: BulletAS
-		ContrailLength: 8
+		ContrailLength: 5
 		ContrailWidth: 10
 		ContrailColor: FFD860
 		Inaccuracy: 400
+		Speed: 800
 	Warhead@1Dam: SpreadDamage
 		Damage: 1000
 		Spread: 0c256
@@ -86,8 +87,8 @@ APBazooka:
 		Speed: 370
 		Inaccuracy: 33
 		Acceleration: 20
-		HorizontalRateOfTurn: 73
-		VerticalRateOfTurn: 112
+		HorizontalRateOfTurn: 83
+		VerticalRateOfTurn: 142
 		RangeLimit: 10c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0

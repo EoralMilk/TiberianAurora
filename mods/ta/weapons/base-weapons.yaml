@@ -17,8 +17,8 @@
 		Image: dragon2
 		Palette: player
 		Shadow: true
-		VerticalRateOfTurn: 60
-		HorizontalRateOfTurn: 60
+		VerticalRateOfTurn: 150
+		HorizontalRateOfTurn: 86
 		TerrainHeightAware: true
 		AllowSnapping: true
 		CruiseAltitude: 3c0
@@ -62,14 +62,11 @@
 		ContrailWidth: 15
 		ContrailColor: FFD860
 		ContrailDelay: 0
-		Speed: 40c0
-		Image: 120mm
-		Palette: ra
-		Shadow: true
-		LaunchAngle: 55
+		Speed: 1100
+		LaunchAngle: 15
 		ZOffset: 1024
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
+		Spread: 0c128
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
 ^MGFire:
@@ -133,19 +130,19 @@
 	ReloadDelay: 20
 	Range: 4c0
 	Projectile: BulletAS
-		ContrailLength: 6
+		ContrailLength: 5
 		ContrailWidth: 10
 		ContrailColor: FFD860
 		ContrailDelay: 0
 		Inaccuracy: 800
-		Speed: 600
+		Speed: 1000
 		LaunchAngle: 0
 		Blockable: true
 		ZOffset: 4096
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
 		Spread: 0
-		Falloff: 100, 100, 60
+		Falloff: 100, 100, 30
 		Versus:
 			None: 0
 			Flak: 0

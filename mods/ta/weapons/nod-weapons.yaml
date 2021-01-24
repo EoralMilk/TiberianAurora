@@ -40,7 +40,7 @@ BuggyMG_eff_bullet:
 	Range: 5c0
 	Projectile: BulletAS
 		Inaccuracy: 500
-		Speed: 600
+		Speed: 1000
 	Warhead@1Dam: SpreadDamage
 		Damage: 2000
 		Spread: 0c256
@@ -129,7 +129,7 @@ LightTankCannonAP:
 	Range: 5c0
 	Report: gexpshaa.wav
 	Projectile: BulletAS
-		Speed: 750
+		Speed: 1150
 	Warhead@1Dam: SpreadDamage
 		Damage: 4000
 		Versus:
@@ -249,7 +249,7 @@ TurretCannon:
 	Range: 7c512
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
 	Projectile: BulletAS
-		Speed: 900
+		Speed: 1126
 	Warhead@1Dam: SpreadDamage
 		Damage: 7500
 		Versus:
@@ -374,7 +374,7 @@ HeliAGGun:
 	Range: 5c640
 	Projectile: SelfGuidedBullet
 		Inaccuracy: 350
-		Speed: 800
+		Speed: 1200
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage

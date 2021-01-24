@@ -101,7 +101,7 @@ HumveeMG_eff_bullet:
 	Range: 5c128
 	Projectile: BulletAS
 		Inaccuracy: 500
-		Speed: 600
+		Speed: 900
 	Warhead@1Dam: SpreadDamage
 		Damage: 1600
 		Spread: 0c256
@@ -149,6 +149,9 @@ APCCannon:
 	Projectile: BulletAS
 		Speed: 382
 		LaunchAngle: 80
+		Image: 120mm
+		Palette: ra
+		Shadow: true
 	Warhead@1Dam: SpreadDamage
 		Damage: 3500
 		Spread: 0c512
@@ -181,7 +184,7 @@ MediumTankCannonAP:
 	Range: 5c512
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
 	Projectile: BulletAS
-		Speed: 682
+		Speed: 1012
 	Warhead@1Dam: SpreadDamage
 		Damage: 7500
 		Versus:
@@ -215,7 +218,7 @@ MammothTankCannon:
 	BurstDelays: 5
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
 	Projectile: BulletAS
-		Speed: 682
+		Speed: 962
 	Warhead@1Dam: SpreadDamage
 		Damage: 10500
 		Spread: 0c240
@@ -255,7 +258,7 @@ MammothTuskMissile:
 		Speed: 380
 		Inaccuracy: 128
 		Acceleration: 25
-		HorizontalRateOfTurn: 90
+		HorizontalRateOfTurn: 75
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 		CruiseAltitude: 3c512
@@ -551,7 +554,7 @@ A10Vulcan:
 	FollowingBurstTargetOffset: 300,0,0
 	Projectile: BulletAS
 		Inaccuracy: 800
-		Speed: 800
+		Speed: 1000
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
