@@ -53,11 +53,11 @@ sniper:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetInfantry
-	# Buildable:
-	# 	Queue: Infantry
-	# 	Prerequisites: none
-	# 	BuildPaletteOrder: 10
-	# 	Description: 装备有狙击步枪的专业射手，擅长远距离射杀敌军步兵 \n需要有利位置，不擅长近距离作战 \n自动索敌范围小于最远射程 \n\n·强势对抗：步兵\n·弱势对抗：装甲目标
+	Buildable:
+		Queue: Infantry
+		Prerequisites: none
+		BuildPaletteOrder: 10
+		Description: 装备有狙击步枪的专业射手，擅长远距离射杀敌军步兵 \n需要有利位置，不擅长近距离作战 \n自动索敌范围小于最远射程 \n\n·强势对抗：步兵\n·弱势对抗：装甲目标
 	Valued:
 		Cost: 400
 	Armor:

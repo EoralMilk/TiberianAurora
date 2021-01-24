@@ -254,9 +254,9 @@
 	Parachutable:
 		FallRate: 26
 		KilledOnImpassableTerrain: true
-		GroundCorpseSequence:
-		GroundCorpsePalette:
-		WaterCorpseSequence:
+		GroundCorpseSequence: die1
+		GroundCorpsePalette: 
+		WaterCorpseSequence: die2
 		WaterCorpsePalette:
 		ParachutingCondition: parachute
 	WithParachute:
@@ -282,6 +282,12 @@
 	# 	RequiresCondition: parachute
 
 ^ParachutableVehicle:
+	WithFacingSpriteBody:
+		RequiresCondition: !parachute
+	WithFacingSpriteBody@Parachute:
+		Name: parachute
+		Sequence: paradrop
+		RequiresCondition: parachute
 	Parachutable:
 		FallRate: 26
 		KilledOnImpassableTerrain: true
@@ -476,6 +482,10 @@
 ^TurretedVehicle:
 	Inherits: ^SpiritVehicle
 	WithSpriteTurret:
+		RequiresCondition: !parachute
+	WithSpriteTurret@parachute:
+		Sequence: parachute-turret
+		RequiresCondition: parachute
 	AttackTurreted:
 		Voice: Attack
 	Turreted:

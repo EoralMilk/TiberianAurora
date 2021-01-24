@@ -4,6 +4,8 @@ mcv:
 	Defaults: 
 		Offset: 0,0,15
 		UseTilesetCode: false
+	paradrop:
+		Facings: -32
 	idle: 
 		Facings: -32
 		ShadowStart: 32
@@ -24,6 +26,8 @@ g_harv:
 	Defaults:
 		Offset: 0,0,15
 		UseTilesetCode: false
+	paradrop:
+		Facings: -32
 	idle:
 		Facings: -32
 		ShadowStart: 32

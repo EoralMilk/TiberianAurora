@@ -4,6 +4,8 @@
 n_bggy:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithMachineGunMuzzle
+	parachute-turret: n_bggy-tur
+		Facings: -32
 	turret: n_bggy-tur
 		Facings: -32
 		ShadowStart: 32
@@ -23,7 +25,9 @@ n_cycle:
 n_ltank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithCannonMuzzle
-  	turret: n_ltank-tur
+	parachute-turret: n_ltank-tur
+		Facings: -32
+	turret: n_ltank-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: ntank_icon.png
@@ -34,6 +38,8 @@ n_ltank:
 n_ftank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithFlakMuzzle
+	parachute-turret: n_ftank-tur
+		Facings: -32
 	turret: n_ftank-tur
 		Facings: -32
 		ShadowStart: 32
@@ -70,7 +76,9 @@ n_howi:
 n_stltank:
 	Inherits: ^CommonTank
 	Inherits@Muzzle: ^WithFlakMuzzle
-  	turret: n_stltank-tur
+	parachute-turret: n_stltank-tur
+		Facings: -32
+	turret: n_stltank-tur
 		Facings: -32
 		ShadowStart: 32
 	icon: nstltnk_icon.png
