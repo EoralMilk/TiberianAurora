@@ -738,6 +738,12 @@ Container@SETTINGS_PANEL:
 											ImageCollection: reload-icon
 											ImageName: enabled
 											IgnoreMouseOver: True
+						Button@OVERRIDE_HOTKEY_BUTTON: ## PlaceHolder
+							X: 15
+							Y: 230
+							Width: PARENT_RIGHT - 30
+							Height: 65
+							TooltipText: Override
 				Container@ADVANCED_PANEL:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
