@@ -396,24 +396,14 @@ obelisk:
 	GrantConditionOnHealth:
 		Condition: heavilydamaged
 		MaxHP: 29999
-	ArmamentWithRa2Lase:
-		# Armament:
-		RequiresCondition: !heavilydamaged
-		Weapon: ObeliskLaser
+	Armament:
+		Weapon: ObeliskLaserSwap
 		LocalOffset: 190,-190,4000
-		ZOffset: 1
-		Duration: 9
-		Width: 140
-		InnerWidth: 80
-	ArmamentWithRa2Lase@heaviyDamaged:
-		# Armament@heaviyDamaged:
-		RequiresCondition: heavilydamaged
-		Weapon: ObeliskLaser
+		RequiresCondition: !heavilydamaged
+	Armament@heaviyDamaged:
+		Weapon: ObeliskLaserSwap
 		LocalOffset: 370,-240,3880
-		ZOffset: 1
-		Duration: 9
-		Width: 140
-		InnerWidth: 80
+		RequiresCondition: heavilydamaged
 	AttackChargesBursts:
 		PauseOnCondition: lowpower
 		ChargeLevel: 40

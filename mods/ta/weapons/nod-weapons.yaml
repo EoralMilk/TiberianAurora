@@ -252,15 +252,40 @@ RedEye:
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
 
+ObeliskLaserSwap:
+	ReloadDelay: 121
+	Range: 9c512
+	StartBurstReport: obelray1.aud
+	TargetActorCenter: true
+	Projectile: WeaponSwapWithRa2LaserFakeP
+		Weapon: ObeliskLaser
+		SwapDuration: 20
+		FirstBurstTargetOffset: -1600,0,1
+		LastBurstTargetOffset: 1600,0,1
+		Bursts: 20
+		ZOffset: 1
+		Width: 140
+		InnerWidth: 80
+	Warhead@Fake: SpreadDamage
+		Spread: 60
+		Damage: 0
+		Versus:
+			None: 200
+			Flak: 200
+			Plate: 200
+			Light: 55
+			Medium: 50
+			Heavy: 50
+			Wood: 40
+			Steel: 30
+			Concrete: 12
+			Drone: 200
+			Rocket: 100
+		DamageTypes: FlameDeath
+
 ObeliskLaser:
 	ReloadDelay: 121
 	Range: 9c512
-	FirstBurstTargetOffset: 0,-1600,0
-	FollowingBurstTargetOffset: 0,150,1
-	Burst: 20
-	BurstDelays: 1
-	StartBurstReport: obelray1.aud
-	TargetActorCenter: true
 	Projectile: LaserZap
 		Width: 0
 		TrackTarget: false

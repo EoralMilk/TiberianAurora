@@ -353,13 +353,9 @@ meme_obelisker:
 	AttackFrontal:
 		TargetFrozenActors: True
 		ForceFireIgnoresActors: True
-	ArmamentWithRa2Lase:
-		Weapon: ObeliskLaser
+	Armament:
+		Weapon: ObeliskLaserSwap
 		LocalOffset: 1347,0,2000
-		ZOffset: 1
-		Duration: 9
-		Width: 140
-		InnerWidth: 80
 	AmbientSound@Charging:
 		RequiresCondition: charging
 		SoundFiles: obelpowr.aud

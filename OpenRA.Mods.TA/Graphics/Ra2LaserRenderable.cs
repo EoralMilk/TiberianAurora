@@ -12,7 +12,7 @@
 using OpenRA.Graphics;
 using OpenRA.Primitives;
 
-namespace OpenRA.Mods.Common.Graphics
+namespace OpenRA.Mods.TA.Graphics
 {
 	public struct Ra2LaserRenderable : IRenderable, IFinalizedRenderable
 	{
