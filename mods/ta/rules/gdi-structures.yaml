@@ -216,7 +216,7 @@ advhq:
 	RenderSprites:
 		Image: g_advhq
 		PlayerPalette: g_advhq
-	IonCannonPower:
+	NukePower: 
 		PauseOnCondition: lowpower
 		Prerequisites: ~techlevel.unrestricted
 		OrderName: IonCannonAttack
@@ -229,13 +229,14 @@ advhq:
 		EndChargeSpeechNotification: IonCannonReady
 		SelectTargetSpeechNotification: SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
-		OnFireSound: ion1.aud
+		# OnFireSound: ion1.aud
 		DisplayRadarPing: True
 		DisplayTimerStances: Ally, Neutral, Enemy
 		CameraActor: camera
 		SupportPowerPaletteOrder: 20
-		Weapon: IonCannonMaker
-		Effect: moveflsh2
+		FlightDelay: 1
+		SkipAscent: True
+		MissileWeapon: IonCannonMaker
 		# EffectSequence: idle
 		# EffectPalette: ts_effect80alpha
 	SupportPowerChargeBar:

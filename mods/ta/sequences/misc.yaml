@@ -7,6 +7,11 @@ moveflsh2:
 		Offset: 0, 0, 48
 		ZRamp: 1
 
+ioncannonmaker:
+	up: bulletsmall
+	down: bulletsmall
+
+
 bullet:
 	idle:
 

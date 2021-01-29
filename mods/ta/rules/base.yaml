@@ -881,7 +881,9 @@
 	RenderSprites:
 		Palette: player
 	HitShape:
-		UseTargetableCellsOffsets: true
+		# UseTargetableCellsOffsets: true
+		Type: Circle
+			Radius: 256
 	MapEditorData:
 		Categories: Resource spawn
 	Interactable:
@@ -1027,13 +1029,14 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
-	HitShape:
-		UseTargetableCellsOffsets: true
 	MapEditorData:
 		Categories: Rock
 	Interactable:
 	Targetable@materials:
 		TargetTypes: Stone
+	HitShape:
+		Type: Circle
+			Radius: 256
 
 ^Crate:
 	Inherits@1: ^SpriteActor

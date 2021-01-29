@@ -2,11 +2,12 @@
 IonCannon:
 	Inherits@WarheadEff: ^HE_WarheadEff_Huge
 	ValidTargets: Ground, Water, Air, Wall
-	Projectile: GravityBomb
+	Projectile: BulletAS2TA
 		Image: ionball
 		Palette: ionball
 		Blockable: false
-		Acceleration: 0,0,-35
+		Speed: 1000
+		# Acceleration: 0,0,-50
 	Warhead@Air_impact: SpreadDamage
 		Spread: 0c800
 		Damage: 1000000
@@ -83,8 +84,12 @@ IonCannon:
 
 IonCannonMaker:
 	ValidTargets: Ground, Water, Air, Wall
-	Warhead@Maker: FireShrapnel
+	Warhead@Maker: FireCluster
 		Weapon: IonCannonMakerUp
+		Dimensions: 1,1
+		Footprint: X
+		ValidTargets: Ground, Water, Air, Wall
+
 
 IonCannonMakerUp:
 	Range: 0c2
