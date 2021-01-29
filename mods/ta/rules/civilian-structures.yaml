@@ -1,3 +1,6 @@
+
+#techbuildings
+
 caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
@@ -38,7 +41,7 @@ cahosp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x4Shape
 	IsometricSelectable:
-		Height: 48
+		Height: 72
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -70,7 +73,7 @@ cabiot:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x4Shape
 	IsometricSelectable:
-		Height: 48
+		Height: 72
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -96,3 +99,354 @@ cabiot:
 	RenderSprites:
 		Image: c_biotech
 		PlayerPalette: c_biotech
+
+
+# civilbuildings
+
+cahos1:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+	Tooltip:
+		Name: 平房
+	Health:
+		HP: 30000
+	RenderSprites:
+		Image: c_hos1
+		Palette: c_hos1
+	SpawnActorOnDeath:
+		Actor: cahos1-ruins
+
+cahos1-ruins:
+	Inherits: cahos1
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的平房
+	Health:
+		HP: 15000
+
+cahos2:
+	Inherits: cahos1
+	RenderSprites:
+		Image: c_hos2
+		Palette: c_hos2
+	SpawnActorOnDeath:
+		Actor: cahos2-ruins
+
+cahos2-ruins:
+	Inherits: cahos2
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的平房
+	Health:
+		HP: 15000
+
+cahos3:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^1x1Shape
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: 小屋
+	IsometricSelectable:
+		Height: 25
+	Health:
+		HP: 15000
+	RenderSprites:
+		Image: c_hos3
+		Palette: c_hos3
+	SpawnActorOnDeath:
+		Actor: cahos3-ruins
+
+cahos3-ruins:
+	Inherits: cahos3
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的小屋
+	Health:
+		HP: 7000
+
+cahos4:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 房屋
+	IsometricSelectable:
+		Height: 38
+	Health:
+		HP: 35000
+	RenderSprites:
+		Image: c_hos4
+		Palette: c_hos4
+	SpawnActorOnDeath:
+		Actor: cahos4-ruins
+
+cahos4-ruins:
+	Inherits: cahos4
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	Health:
+		HP: 20000
+
+cahos5:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 房屋
+	IsometricSelectable:
+		Height: 38
+	Health:
+		HP: 35000
+	RenderSprites:
+		Image: c_hos5
+		Palette: c_hos5
+	SpawnActorOnDeath:
+		Actor: cahos5-ruins
+
+cahos5-ruins:
+	Inherits: cahos5
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	IsometricSelectable:
+		Height: 35
+	Health:
+		HP: 20000
+
+cahos6:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^1x2Shape
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Tooltip:
+		Name: 房屋
+	IsometricSelectable:
+		Height: 38
+	Health:
+		HP: 25000
+	RenderSprites:
+		Image: c_hos6
+		Palette: c_hos6
+	SpawnActorOnDeath:
+		Actor: cahos6-ruins
+
+cahos6-ruins:
+	Inherits: cahos6
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	IsometricSelectable:
+		Height: 25
+	Health:
+		HP: 10000
+
+cahos7:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^1x1Shape
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: 小屋
+	IsometricSelectable:
+		Height: 25
+	Health:
+		HP: 15000
+	RenderSprites:
+		Image: c_hos7
+		Palette: c_hos7
+	SpawnActorOnDeath:
+		Actor: cahos7-ruins
+
+cahos7-ruins:
+	Inherits: cahos7
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的小屋
+	IsometricSelectable:
+		Height: 15
+	Health:
+		HP: 7000
+
+cahos8:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 房屋
+	Health:
+		HP: 22000
+	RenderSprites:
+		Image: c_hos8
+		Palette: c_hos8
+	SpawnActorOnDeath:
+		Actor: cahos8-ruins
+
+cahos8-ruins:
+	Inherits: cahos8
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	IsometricSelectable:
+		Height: 25
+	Health:
+		HP: 13000
+
+
+cagy:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx x_
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 粮仓
+	Health:
+		HP: 25000
+	RenderSprites:
+		Image: c_gy
+		Palette: c_gy
+	SpawnActorOnDeath:
+		Actor: cagy-ruins
+
+cagy-ruins:
+	Inherits: cagy
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的粮仓
+	Health:
+		HP: 10000
+
+camf:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 音乐工厂
+	IsometricSelectable:
+		Height: 45
+	Health:
+		HP: 45000
+	RenderSprites:
+		Image: c_mf
+		Palette: c_mf
+	SpawnActorOnDeath:
+		Actor: camf-ruins
+
+camf-ruins:
+	Inherits: camf
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的音乐工厂
+	IsometricSelectable:
+		Height: 35
+	Health:
+		HP: 20000
+
+catav:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 酒馆
+	Health:
+		HP: 35000
+	RenderSprites:
+		Image: c_tav
+		Palette: c_tav
+	SpawnActorOnDeath:
+		Actor: catav-ruins
+
+catav-ruins:
+	Inherits: catav
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的酒馆
+	IsometricSelectable:
+		Height: 35
+	Health:
+		HP: 12000
+
+catm:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 玩具制造商
+	IsometricSelectable:
+		Height: 50
+	Health:
+		HP: 45000
+	RenderSprites:
+		Image: c_tm
+		Palette: c_tm
+	SpawnActorOnDeath:
+		Actor: catm-ruins
+
+catm-ruins:
+	Inherits: catm
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的玩具制造商
+	Health:
+		HP: 25000
+
+cacrch:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+	Tooltip:
+		Name: 教堂
+	IsometricSelectable:
+		Height: 78
+	Health:
+		HP: 85000
+	RenderSprites:
+		Image: c_crch
+		Palette: c_crch
+	SpawnActorOnDeath:
+		Actor: cacrch-ruins
+
+cacrch-ruins:
+	Inherits: cacrch
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的教堂
+	IsometricSelectable:
+		Height: 35
+	Health:
+		HP: 20000

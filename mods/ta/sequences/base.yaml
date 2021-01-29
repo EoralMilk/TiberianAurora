@@ -1,4 +1,29 @@
 
+^CivBuilding:
+	Defaults:
+		Offset: 0, 0, 60
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	ruins:
+		Start: 2
+		ShadowStart: 5
+
+
+^Props:
+	Defaults:
+		Offset: 0, 0, 30
+		UseTilesetCode: false
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+
+
 ^bridge:
 	Defaults:
 		ZOffset: -1c511

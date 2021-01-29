@@ -1,0 +1,16 @@
+
+cadh:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^1x1Shape
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: 狗屋
+	IsometricSelectable:
+		Height: 13
+	Health:
+		HP: 5000
+	RenderSprites:
+		Image: c_dh
+		Palette: c_dh

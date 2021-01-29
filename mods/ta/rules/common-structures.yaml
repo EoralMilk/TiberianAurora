@@ -520,7 +520,7 @@ silo:
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: 泰伯利亚矿仓
+		Name: 泰伯利亚储仓
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2

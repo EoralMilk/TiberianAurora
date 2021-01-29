@@ -496,3 +496,76 @@
 		UseBasePaletteBrightness: true
 		RemapIndex: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 
+	# Civil Buildings
+	PaletteFromFile@c_hos1:
+		Name: c_hos1
+		Filename: c_hos1.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos2:
+		Name: c_hos2
+		Filename: c_hos2.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos3:
+		Name: c_hos3
+		Filename: c_hos3.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos4:
+		Name: c_hos4
+		Filename: c_hos4.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos5:
+		Name: c_hos5
+		Filename: c_hos5.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos6:
+		Name: c_hos6
+		Filename: c_hos6.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos7:
+		Name: c_hos7
+		Filename: c_hos7.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos8:
+		Name: c_hos8
+		Filename: c_hos8.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_crch:
+		Name: c_crch
+		Filename: c_crch.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_gy:
+		Name: c_gy
+		Filename: c_gy.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_mf:
+		Name: c_mf
+		Filename: c_mf.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_tav:
+		Name: c_tav
+		Filename: c_tav.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_tm:
+		Name: c_tm
+		Filename: c_tm.pal
+		ShadowIndex: 1
+
+
+	# Civil Prop
+
+	PaletteFromFile@c_dh:
+		Name: c_dh
+		Filename: c_dh.pal
+		ShadowIndex: 1

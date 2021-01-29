@@ -67,9 +67,12 @@ Packages:
 	ta|content/structures/n_samsite
 	ta|content/structures/n_obelisk
 
+	ta|content/structures/c_civilbuildings
 	ta|content/structures/c_oildrill
 	ta|content/structures/c_hospital
 	ta|content/structures/c_biotech
+	ta|content/props
+
 
 	ta|content/infantrys/miniguner
 	ta|content/infantrys/bazookier
@@ -110,7 +113,7 @@ Rules:
 	ta|rules/nod-aircrafts.yaml
 
 	ta|rules/civilian-structures.yaml
-
+	ta|rules/props.yaml
 
 	ta|rules/proxy-actors.yaml
 
@@ -139,6 +142,8 @@ Sequences:
 	ta|sequences/nod-aircrafts.yaml
 
 	ta|sequences/civilian-structures.yaml
+	ta|sequences/props.yaml
+
 
 	ta|sequences/bridges.yaml
 	ta|sequences/trees.yaml

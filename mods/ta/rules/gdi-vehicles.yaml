@@ -62,7 +62,7 @@ gapc:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~vehicle.gdi
-		Description: 配备重装甲和榴弹发射器的运输载具\n\n·强势对抗：步兵、轻型载具\n·弱势对抗：装甲载具、飞行器
+		Description: 装备榴弹发射器的装甲运输载具\n\n·强势对抗：步兵、轻型载具\n·弱势对抗：装甲载具、飞行器
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -178,7 +178,7 @@ gmlrs:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
 		Prerequisites: ~vehicle.gdi, hq
-		Description: 机动型长程火箭发射平台\n通过火箭弹幕造成范围伤害\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
+		Description: 机动型长程火箭发射平台\n发射火箭弹幕造成高额范围伤害\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
 	Valued:
 		Cost: 1000
 	Tooltip:

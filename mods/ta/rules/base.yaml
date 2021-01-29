@@ -118,26 +118,28 @@
 	RevealsShroud:
 		Range: 4c0
 	Tooltip:
-		Name: Civilian Building
+		Name: 民用建筑
 	MapEditorData:
 		Categories: Civilian building
+	IsometricSelectable:
+		Height: 31
+	Explodes:
+		Type: Footprint
+		Weapon: CivBuildingExplode
+		EmptyWeapon: CivBuildingExplode
+	Targetable@materials:
+		TargetTypes: Stone
 
-^Rubble:
-	Inherits@1: ^SpriteActor
-	Inherits@shape: ^1x1Shape
-	Building:
-		Dimensions: 1,1
-		Footprint: x
-	RenderSprites:
-		Palette: terrain
-	WithSpriteBody:
-		Sequence: rubble
-	FrozenUnderFog:
-	HitShape:
-		UseTargetableCellsOffsets: true
+^CivRuins:
 	MapEditorData:
-		Categories: Building rubble
-	Interactable:
+		Categories: Civilian Ruins
+	WithSpriteBody:
+		Sequence: ruins
+	Explodes:
+		Type: Footprint
+		Weapon: BuildingExplode
+		EmptyWeapon: BuildingExplode
+
 
 ^TechBuilding:
 	Inherits: ^Building

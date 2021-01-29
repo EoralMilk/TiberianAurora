@@ -11,7 +11,7 @@ flamet:
 	Valued:
 		Cost: 325
 	Tooltip:
-		Name: 火焰兵
+		Name: 喷火兵
 	Mobile:
 		Speed: 75
 		Voice: Move

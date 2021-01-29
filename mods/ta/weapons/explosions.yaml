@@ -2,7 +2,7 @@
 unitexplode:
 	Inherits: MediumExplosion
 derrickexplode:
-	Inherits: FlameExplosion
+	Inherits: FlameTankExplosion
 demolish:
 	Inherits: MediumExplosion
 
@@ -333,7 +333,6 @@ ChemCluster:
 BuildingExplodeTransition:
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 
-
 BuildingExplode:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
@@ -394,6 +393,28 @@ BuildingExplode:
 		ValidTargets: Ground, Water, Air
 		ImpactActors: true
 
+
+CivBuildingExplode:
+	Inherits: ^DamagingExplosion
+	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadFire: ^Fire_03
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c386
+		Damage: 1000
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 25
+			Medium: 10
+			Heavy: 10
+			Wood: 25
+			Steel: 15
+			Concrete: 15
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
+	-Warhead@Flash:
 
 BuildingExplode3x3:
 	Inherits: BuildingExplode

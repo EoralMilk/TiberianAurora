@@ -62,8 +62,8 @@ Actors:
 	Actor22: caoild
 		Location: 83,47
 		Owner: Neutral
-		Health: 100
 		Facing: 96
+		Health: 100
 	Actor23: caoild
 		Location: 54,-23
 		Owner: Neutral
@@ -87,6 +87,7 @@ Actors:
 	Actor34: tree21
 		Location: 120,4
 		Owner: Neutral
+		Health: 100
 	Actor35: tree21
 		Location: 115,2
 		Owner: Neutral
@@ -643,9 +644,6 @@ Actors:
 	Actor251: trock05
 		Location: 94,19
 		Owner: Neutral
-	Actor252: srock02
-		Location: 113,3
-		Owner: Neutral
 	Actor254: srock05
 		Location: 121,3
 		Owner: Neutral
@@ -724,6 +722,105 @@ Actors:
 	Actor281: trock01
 		Location: 152,17
 		Owner: Neutral
+	Actor253: cahos1
+		Owner: Neutral
+		Location: 97,-2
+	Actor271: cahos1-ruins
+		Owner: Neutral
+		Location: 100,-2
+	Actor272: cahos1
+		Owner: Neutral
+		Location: 104,3
+		Health: 36
+	Actor282: cahos2
+		Owner: Neutral
+		Location: 97,0
+		Health: 49
+	Actor283: cahos2-ruins
+		Owner: Neutral
+		Location: 101,5
+	Actor284: cahos3
+		Owner: Neutral
+		Location: 100,1
+		Health: 33
+	Actor285: cahos3-ruins
+		Owner: Neutral
+		Location: 104,5
+	Actor286: cahos4
+		Owner: Neutral
+		Location: 102,8
+		Health: 17
+	Actor287: cahos4-ruins
+		Owner: Neutral
+		Location: 106,-9
+		Health: 100
+	Actor288: cahos6
+		Owner: Neutral
+		Location: 106,-3
+	Actor289: cahos7-ruins
+		Owner: Neutral
+		Location: 110,-2
+	Actor291: cahos8-ruins
+		Owner: Neutral
+		Location: 110,10
+	Actor292: cahos8
+		Owner: Neutral
+		Location: 106,10
+	Actor293: cagy
+		Owner: Neutral
+		Location: 107,3
+	Actor294: cagy-ruins
+		Owner: Neutral
+		Location: 107,6
+	Actor295: camf
+		Owner: Neutral
+		Location: 114,-3
+		Health: 72
+	Actor296: camf-ruins
+		Owner: Neutral
+		Location: 106,-15
+	Actor297: catav
+		Owner: Neutral
+		Location: 110,-11
+	Actor298: catav-ruins
+		Owner: Neutral
+		Location: 112,8
+	Actor299: catm
+		Owner: Neutral
+		Location: 120,1
+	Actor252: cacrch
+		Owner: Neutral
+		Location: 112,1
+	Actor290: cadh
+		Owner: Neutral
+		Location: 110,6
+	Actor300: cahos7
+		Owner: Neutral
+		Location: 106,13
+		Health: 39
+	Actor301: cadh
+		Owner: Neutral
+		Location: 107,-11
+		Health: 30
+	Actor302: cagy
+		Owner: Neutral
+		Location: 118,-3
+	Actor303: cahos7
+		Owner: Neutral
+		Location: 122,-2
+	Actor304: cahos7-ruins
+		Owner: Neutral
+		Location: 117,4
+	Actor305: cahos3-ruins
+		Owner: Neutral
+		Location: 111,5
+		Health: 30
+	Actor306: cahos3
+		Owner: Neutral
+		Location: 103,-1
+	Actor307: cahos8-ruins
+		Owner: Neutral
+		Location: 104,-12
 
 Rules:
 	World:

@@ -53,3 +53,41 @@ c_biotech:
 		Offset: 0, 0, 0
 
 
+c_hos1:
+	Inherits: ^CivBuilding
+
+c_hos2:
+	Inherits: ^CivBuilding
+
+c_hos3:
+	Inherits: ^CivBuilding
+
+c_hos4:
+	Inherits: ^CivBuilding
+
+c_hos5:
+	Inherits: ^CivBuilding
+
+c_hos6:
+	Inherits: ^CivBuilding
+
+c_hos7:
+	Inherits: ^CivBuilding
+
+c_hos8:
+	Inherits: ^CivBuilding
+
+c_gy:
+	Inherits: ^CivBuilding
+
+c_mf:
+	Inherits: ^CivBuilding
+
+c_tav:
+	Inherits: ^CivBuilding
+
+c_tm:
+	Inherits: ^CivBuilding
+
+c_crch:
+	Inherits: ^CivBuilding
