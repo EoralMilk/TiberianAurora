@@ -86,7 +86,7 @@ namespace OpenRA.Mods.TA.Graphics
 					nextPos = Average(smoothparams.ToArray());
 				}
 
-				var nextColor = Color.FromArgb((renderLength - i) * 1000 / renderLength * color.A / 1000, color); // Color.Transparent
+				var nextColor = Color.FromArgb((renderLength - i << 10) / renderLength * color.A >> 10, color);
 
 				if (!world.FogObscures(curPos) && !world.FogObscures(nextPos))
 					wcr.DrawLine(wr.Screen3DPosition(curPos), wr.Screen3DPosition(nextPos), screenWidth, curColor, nextColor);
