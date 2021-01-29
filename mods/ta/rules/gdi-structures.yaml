@@ -229,7 +229,6 @@ advhq:
 		EndChargeSpeechNotification: IonCannonReady
 		SelectTargetSpeechNotification: SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
-		# OnFireSound: ion1.aud
 		DisplayRadarPing: True
 		DisplayTimerStances: Ally, Neutral, Enemy
 		CameraActor: camera
@@ -237,8 +236,6 @@ advhq:
 		FlightDelay: 1
 		SkipAscent: True
 		MissileWeapon: IonCannonMaker
-		# EffectSequence: idle
-		# EffectPalette: ts_effect80alpha
 	SupportPowerChargeBar:
 	Targetable@materials:
 		TargetTypes: Metal

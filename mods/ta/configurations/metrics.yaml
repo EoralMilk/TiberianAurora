@@ -3,15 +3,6 @@ Metrics:
 	ButtonFont: Bold
 	ColorPickerRemapIndices:  2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 	ColorPickerActorType: mcv.colorpicker
-	FactionSuffix-america: gdi
-	FactionSuffix-korea: gdi
-	FactionSuffix-france: gdi
-	FactionSuffix-germany: gdi
-	FactionSuffix-england: gdi
-	FactionSuffix-libya: nod
-	FactionSuffix-cuba: nod
-	FactionSuffix-iraq: nod
-	FactionSuffix-russia: nod
 	FactionSuffix-gdi: gdi
 	FactionSuffix-nod: nod
 	IncompatibleVersionColor: D3D3D3

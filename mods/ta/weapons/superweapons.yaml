@@ -95,6 +95,7 @@ IonCannonMakerUp:
 	Range: 0c2
 	MinRange: 0c1
 	ValidTargets: Ground, Water, Air, Wall
+	Report: ion1.aud
 	Projectile: BulletAS2TA
 		Speed: 10000
 		LaunchAngle: 256

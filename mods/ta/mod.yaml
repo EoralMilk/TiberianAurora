@@ -1,8 +1,8 @@
 Metadata:
 	Title: Tiberian Aurora
-	Description: Not only the dawn...
+	Description: The dawn of a new era
 	Version: {DEV_VERSION}
-	Author: The Tiberian Aurora authors
+	Author: The Tiberian Aurora Authors
 
 ModCredits:
 	ModTabTitle: Tiberian Aurora
@@ -11,14 +11,10 @@ ModCredits:
 PackageFormats: Mix, AudioBag
 
 Packages:
-	# ~^Content/ra2
-	# ~^Content/cnc
 	.
 	$ta: ta
 
 	./mods/common: common
-
-
 
 	ta|content
 	ta|content/effect
@@ -32,7 +28,6 @@ Packages:
 	ta|content/audio/other
 	ta|content/audio/voice
 
-
 	ta|content/infantrys
 	ta|content/structures
 	ta|content/vehicles
@@ -42,8 +37,6 @@ Packages:
 	ta|content/others
 	ta|content/debris
 	ta|content/projectiles
-
-
 
 	ta|bits
 	ta|bits/animations
@@ -78,18 +71,12 @@ Packages:
 	ta|content/structures/c_hospital
 	ta|content/structures/c_biotech
 
-
 	ta|content/infantrys/miniguner
 	ta|content/infantrys/bazookier
 	ta|content/infantrys/engineer
 	ta|content/infantrys/grenader
 	ta|content/infantrys/flamethrower
 	ta|content/infantrys/chemicaler
-
-
-
-
-
 
 
 MapFolders:
@@ -161,16 +148,16 @@ ModelSequences:
 	ta|sequences/voxels.yaml
 
 Cursors:
-	ta|cursors.yaml
+	ta|configurations/cursors.yaml
 
 Chrome:
-	ta|chrome.yaml
+	ta|configurations/chrome.yaml
 
 Assemblies:
 	^BinDir|OpenRA.Mods.Common.dll
 	^BinDir|OpenRA.Mods.Cnc.dll
-	ta|OpenRA.Mods.TA.dll
-	ta|OpenRA.Mods.AS.dll
+	ta|assemblies/OpenRA.Mods.TA.dll
+	ta|assemblies/OpenRA.Mods.AS.dll
 
 ChromeLayout:
 	ta|chrome/mainmenu.yaml
@@ -259,7 +246,7 @@ Hotkeys:
 	common|hotkeys/production-common.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
-	ta|hotkeys.yaml
+	ta|configurations/hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ta|uibits/loadscreen.png
@@ -272,39 +259,39 @@ ServerTraits:
 
 ChromeMetrics:
 	common|metrics.yaml
-	ta|metrics.yaml
+	ta|configurations/metrics.yaml
 
 Fonts:
 	Regular:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 14
 		Ascender: 11
 	Bold:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 14
 		Ascender: 11
 	Title:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 32
 		Ascender: 24
 	BigBold:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 24
 		Ascender: 18
 	MediumBold:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 18
 		Ascender: 14
 	Small:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 12
 		Ascender: 9
 	Tiny:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 10
 		Ascender: 8
 	TinyBold:
-		Font: ta|loli.ttc
+		Font: ta|uibits/loli.ttc
 		Size: 10
 		Ascender: 8
 
