@@ -161,8 +161,8 @@ Chrome:
 Assemblies:
 	^BinDir|OpenRA.Mods.Common.dll
 	^BinDir|OpenRA.Mods.Cnc.dll
-	ta|assemblies/OpenRA.Mods.TA.dll
-	ta|assemblies/OpenRA.Mods.AS.dll
+	ta|OpenRA.Mods.TA.dll
+	ta|OpenRA.Mods.AS.dll
 
 ChromeLayout:
 	ta|chrome/mainmenu.yaml

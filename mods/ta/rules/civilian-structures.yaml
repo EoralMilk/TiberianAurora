@@ -127,6 +127,7 @@ cahos1-ruins:
 		Name: 毁掉的平房
 	Health:
 		HP: 15000
+	-ExplosionOnDamageTransition:
 
 cahos2:
 	Inherits: cahos1
@@ -144,6 +145,7 @@ cahos2-ruins:
 		Name: 毁掉的平房
 	Health:
 		HP: 15000
+	-ExplosionOnDamageTransition:
 
 cahos3:
 	Inherits: ^CivBuilding
@@ -171,6 +173,7 @@ cahos3-ruins:
 		Name: 毁掉的小屋
 	Health:
 		HP: 7000
+	-ExplosionOnDamageTransition:
 
 cahos4:
 	Inherits: ^CivBuilding
@@ -198,6 +201,7 @@ cahos4-ruins:
 		Name: 毁掉的房屋
 	Health:
 		HP: 20000
+	-ExplosionOnDamageTransition:
 
 cahos5:
 	Inherits: ^CivBuilding
@@ -227,6 +231,7 @@ cahos5-ruins:
 		Height: 35
 	Health:
 		HP: 20000
+	-ExplosionOnDamageTransition:
 
 cahos6:
 	Inherits: ^CivBuilding
@@ -256,6 +261,7 @@ cahos6-ruins:
 		Height: 25
 	Health:
 		HP: 10000
+	-ExplosionOnDamageTransition:
 
 cahos7:
 	Inherits: ^CivBuilding
@@ -285,6 +291,7 @@ cahos7-ruins:
 		Height: 15
 	Health:
 		HP: 7000
+	-ExplosionOnDamageTransition:
 
 cahos8:
 	Inherits: ^CivBuilding
@@ -312,6 +319,7 @@ cahos8-ruins:
 		Height: 25
 	Health:
 		HP: 13000
+	-ExplosionOnDamageTransition:
 
 
 cagy:
@@ -338,6 +346,7 @@ cagy-ruins:
 		Name: 毁掉的粮仓
 	Health:
 		HP: 10000
+	-ExplosionOnDamageTransition:
 
 camf:
 	Inherits: ^CivBuilding
@@ -367,6 +376,7 @@ camf-ruins:
 		Height: 35
 	Health:
 		HP: 20000
+	-ExplosionOnDamageTransition:
 
 catav:
 	Inherits: ^CivBuilding
@@ -394,6 +404,7 @@ catav-ruins:
 		Height: 35
 	Health:
 		HP: 12000
+	-ExplosionOnDamageTransition:
 
 catm:
 	Inherits: ^CivBuilding
@@ -421,6 +432,7 @@ catm-ruins:
 		Name: 毁掉的玩具制造商
 	Health:
 		HP: 25000
+	-ExplosionOnDamageTransition:
 
 cacrch:
 	Inherits: ^CivBuilding
@@ -450,3 +462,4 @@ cacrch-ruins:
 		Height: 35
 	Health:
 		HP: 20000
+	-ExplosionOnDamageTransition:

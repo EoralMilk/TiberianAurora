@@ -102,6 +102,7 @@ ShellCasingDebris:
 		Inaccuracy: 900
 		BounceCount: 2
 		BounceRangeModifier: 10
+		InvalidBounceTerrain: Water
 
 ^Smoke:
 	ReloadDelay: 60

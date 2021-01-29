@@ -141,6 +141,7 @@
 		EmptyWeapon: BuildingExplode
 
 
+
 ^TechBuilding:
 	Inherits: ^Building
 	-MustBeDestroyed:
