@@ -439,6 +439,6 @@ obelisk:
 		Image: n_obelisk
 		PlayerPalette: n_obelisk
 	Targetable@materials:
-		TargetTypes: Stone
+		TargetTypes: Concrete
 	RequiresBuildableArea:
 		Adjacent: 4

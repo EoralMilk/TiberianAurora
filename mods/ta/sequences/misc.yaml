@@ -380,17 +380,52 @@ explosion:
 		Length: 1
 		Tick: 9600
 		BlendMode: Additive
+	fireg1-u: fireg1
+		Tick: 70
+		BlendMode: Additive
+	fireg2-u: fireg2
+		Tick: 70
+		BlendMode: Additive
+	fireg3-u: fireg3
+		Tick: 70
+		BlendMode: Additive
 	fireg1: fireg1
 		Tick: 70
 		BlendMode: Additive
+		ZOffset: -56
 	fireg2: fireg2
 		Tick: 70
 		BlendMode: Additive
+		ZOffset: -56
 	fireg3: fireg3
 		Tick: 70
 		BlendMode: Additive
+		ZOffset: -56
 	empty: empty
-
+	blasta1-a: blasta1-a
+		Tick: 40
+		BlendMode: Additive
+	blasta1-b: blasta1-b
+		Tick: 40
+		BlendMode: Additive
+	blasta1-c: blasta1-c
+		Tick: 40
+		BlendMode: Additive
+	blasta1-d: blasta1-d
+		Tick: 40
+		BlendMode: Additive
+	blastg1-a: blastg1-a
+		Tick: 40
+		BlendMode: Additive
+	blastg1-b: blastg1-b
+		Tick: 40
+		BlendMode: Additive
+	blastg1-c: blastg1-c
+		Tick: 40
+		BlendMode: Additive
+	blastg1-d: blastg1-d
+		Tick: 40
+		BlendMode: Additive
 
 
 mslsmoke1:

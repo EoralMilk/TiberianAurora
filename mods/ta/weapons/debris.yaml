@@ -1,7 +1,7 @@
 
 
 ^debrisProjectile:
-	Inherits@WarheadEff: ^HE_WarheadEff_Small
+	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	ReloadDelay: 60
 	Range: 5c764
 	MinRange: 1c512

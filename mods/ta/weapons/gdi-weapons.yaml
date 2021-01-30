@@ -357,7 +357,7 @@ HMG-Casing:
 
 TowerMissile:
 	Inherits: ^CommonMissile
-	Inherits@WarheadEff: ^HE_WarheadEff_Small
+	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	ValidTargets: Ground, Water
 	Range: 9c512
 	ReloadDelay: 8
@@ -412,7 +412,7 @@ TowerAAMissile:
 
 
 OrcaAGMissiles:
-	Inherits@WarheadEff: ^HE_WarheadEff_Small
+	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	ValidTargets: Ground, Water
 	Range: 5c512
 	Burst: 2

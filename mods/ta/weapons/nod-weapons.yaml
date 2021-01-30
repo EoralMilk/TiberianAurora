@@ -47,7 +47,7 @@ Buggy-Casing:
 
 CycleMissile:
 	Inherits: ^CommonMissile
-	Inherits@WarheadEff: ^AP_WarheadEff_Small
+	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	ValidTargets: Ground, Water
 	Range: 6c526
 	MinRange: 0c512
@@ -241,7 +241,7 @@ Turret-Casing:
 		Blockable: true
 
 RedEye:
-	Inherits@WarheadEff: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	Inherits: ^CommonAAMissile
 	Range: 12c0
 	Projectile: Missile
@@ -315,10 +315,7 @@ ObeliskLaser:
 	# Warhead@3Eff: CreateEffect
 	# 	Explosions: laserburn
 	# 	ValidTargets: Ground
-	Warhead@4Eff: CreateEffect
-		Explosions: laserburnt
-		ValidTargets: Ground
-		ImpactActors: false
+
 
 
 

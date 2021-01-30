@@ -128,7 +128,7 @@
 		Weapon: CivBuildingExplode
 		EmptyWeapon: CivBuildingExplode
 	Targetable@materials:
-		TargetTypes: Stone
+		TargetTypes: Concrete
 
 ^CivRuins:
 	MapEditorData:
@@ -139,7 +139,8 @@
 		Type: Footprint
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
-
+	Targetable@materials:
+		TargetTypes: Stone
 
 
 ^TechBuilding:

@@ -118,3 +118,14 @@
 		Name: fire-g1_60alpha
 		BasePalette: fire-g1
 		Alpha: 0.6
+
+	PaletteFromFile@blast1:
+		Name: blast1
+		Filename: blast1.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@blast1_80alpha:
+		Name: blast1_80alpha
+		BasePalette: blast1
+		Alpha: 0.8
+
+

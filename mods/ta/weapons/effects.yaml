@@ -210,7 +210,7 @@ ShellCasingDebris:
 		Weapon: ^Spark
 		Amount: 7
 		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
+		InvalidTargets: Soil, Stone, Concrete, Meat, Water, Air, AirHit
 		ImpactActors: true
 	Warhead@Smoke: FireShrapnel
 		Weapon: ^Smoke
@@ -573,6 +573,18 @@ ShellCasingDebris:
 		ForceDisplayAtGroundLevel: true
 		ImpactSoundChance: 50
 
+^Fire_g1-3-up:
+	# Inherits: ^Light_Small-Dark
+	Warhead@FireEff: CreateEffect
+		Explosions: fireg1-u, fireg2-u, fireg3-u
+		ExplosionPalette: fire-g1
+		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
+		ImpactActors: false
+		ValidTargets: Ground
+		Inaccuracy: 40
+		ForceDisplayAtGroundLevel: true
+		ImpactSoundChance: 50
+
 # Light
 ^Light_Tiny:
 	Warhead@Light: CreateEffect
@@ -608,42 +620,42 @@ ShellCasingDebris:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_tiny
 		ExplosionPalette: gray_alpha50
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
 		ImpactActors: false
 
 ^Flash_Small-Dark:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_small-dark
 		ExplosionPalette: gray_alpha
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
 		ImpactActors: false
 
 ^Flash_Small-Bright:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_small-bright
 		ExplosionPalette: gray_alpha60
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
 		ImpactActors: false
 
 ^Flash_Small-Brighter:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_small-brighter
 		ExplosionPalette: gray_alpha80
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
 		ImpactActors: false
 
 ^Flash_Medium:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_medium
 		ExplosionPalette: gray_alpha50
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
 		ImpactActors: false
 
 ^Flash_Large:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_large
 		ExplosionPalette: gray_alpha80
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
 		ImpactActors: false
 
 
@@ -651,6 +663,39 @@ ShellCasingDebris:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_huge
 		ExplosionPalette: gray_alpha80
-		ValidTargets: Ground, Water, Infantry, Vehicle, Building, Air
+		ValidTargets: Ground, Water, Infantry, Vehicle, Building
 		ImpactActors: false
+
+^Blast_WarheadEff_1:
+	Inherits@WarheadLight: ^Flash_Small-Brighter
+	Inherits: ^WarheadEff
+	Warhead@Eff_HitSoil: CreateEffect
+		Explosions: blastg1-a, blastg1-b, blastg1-c, blastg1-d
+		ExplosionPalette: blast1
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitMetal: CreateEffect
+		Explosions: blasta1-a, blasta1-b, blasta1-c, blasta1-d
+		ExplosionPalette: blast1
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_03.wav
+	Warhead@Eff_HitStone: CreateEffect
+		Explosions: blastg1-a, blastg1-b, blastg1-c, blastg1-d
+		ExplosionPalette: blast1
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitConcrete: CreateEffect
+		Explosions: blasta1-a, blasta1-b, blasta1-c, blasta1-d
+		ExplosionPalette: blast1
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitMeat: CreateEffect
+		Explosions: blastg1-a, blastg1-b, blastg1-c, blastg1-d
+		ExplosionPalette: blast1
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@EffWater_piff: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: SmallCrater
+	Warhead@Spark: FireShrapnel
+		Amount: 3
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
 

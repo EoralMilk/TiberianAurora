@@ -397,7 +397,7 @@ BuildingExplode:
 CivBuildingExplode:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_g1-2
+	Inherits@WarheadFire: ^Fire_g1-3-up
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
 		Damage: 1000
