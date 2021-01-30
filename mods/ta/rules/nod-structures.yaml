@@ -201,7 +201,7 @@ ntpl:
 		IncomingSpeechNotification: NuclearWarheadApproaching
 		MissileWeapon: atomic
 		MissileDelay: 11
-		MissilePalette: player
+		MissilePalette: nukemisl
 		RemoveMissileOnDetonation: false
 		SpawnOffset: 2c0,-1c780, 5c500
 		DisplayTimerStances: Ally, Neutral, Enemy

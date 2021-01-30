@@ -5,7 +5,8 @@
 		Name: supplycrate
 		Filename: supplycrate.pal
 		ShadowIndex: 1
-	PlayerColorPalette@supplycrate:
-		BasePalette: supplycrate
-		BaseName: supplycrate
-		UseBasePaletteBrightness: true
+
+	PaletteFromFile@nukemisl:
+		Name: nukemisl
+		Filename: nukemisl.pal
+

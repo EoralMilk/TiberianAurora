@@ -57,9 +57,12 @@ ssmoke:
 		Tick: 230
 
 atomic:
+	Defaults:
+		Length: *
+		Tick: 100
 	up: nukeup
 	down: nukedown
-		Offset: 0, 70
+
 
 supplycrate:
 	Defaults: supplycrate
