@@ -27,7 +27,7 @@ demolish:
 SmallExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g1
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c256
 		Damage: 3000
@@ -51,7 +51,7 @@ SmallExplosion:
 MediumExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
 		Damage: 7000
@@ -75,7 +75,7 @@ MediumExplosion:
 LargeExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
 		Damage: 15000
@@ -100,7 +100,7 @@ LargeExplosion:
 HugeExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Huge
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g3
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c625
 		Damage: 20000
@@ -189,7 +189,7 @@ AirExplosion:
 TiberiumExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g1
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c652
 		Damage: 4000
@@ -207,7 +207,7 @@ TiberiumExplosion:
 GrdExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
 		Damage: 15000
@@ -232,7 +232,7 @@ GrdExplosion:
 FlameExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g1-2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
 		Damage: 9000
@@ -255,7 +255,7 @@ FlameExplosion:
 FlameTankExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g3
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
 		Damage: 11000
@@ -336,7 +336,7 @@ BuildingExplodeTransition:
 BuildingExplode:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g1-2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
 		Damage: 1000
@@ -397,7 +397,7 @@ BuildingExplode:
 CivBuildingExplode:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	Inherits@WarheadFire: ^Fire_03
+	Inherits@WarheadFire: ^Fire_g1-2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
 		Damage: 1000
@@ -429,7 +429,7 @@ BuildingExplode3x3:
 FlameSea:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Small
-	Inherits@WarheadFire: ^Fire_01
+	Inherits@WarheadFire: ^Fire_g3
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552

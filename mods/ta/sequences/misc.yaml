@@ -83,23 +83,23 @@ grenade:
 		Tick: 60
 
 largefire:
-	idle: fire01
+	idle: fireg3
 		BlendMode: Additive
-		Tick: 150
+		Tick: 70
 		Length: *
 		ZOffset: 2048
 
 mediumfire:
-	idle: fire02
+	idle: fireg2
 		BlendMode: Additive
-		Tick: 150
+		Tick: 70
 		Length: *
 		ZOffset: 2048
 
 smallfire:
-	idle: fire03
+	idle: fireg1
 		BlendMode: Additive
-		Tick: 150
+		Tick: 70
 		Length: *
 		ZOffset: 2048
 
@@ -276,22 +276,6 @@ explosion:
 		Length: *
 		Tick: 150
 		BlendMode: Additive
-	fire-1: fire-1
-		Length: *
-		Tick: 120
-		BlendMode: Additive
-	fire-2: fire-2
-		Length: *
-		Tick: 120
-		BlendMode: Additive
-	fire-3: fire-3
-		Length: *
-		Tick: 120
-		BlendMode: Additive
-	fire-4: fire-4
-		Length: *
-		Tick: 120
-		BlendMode: Additive
 	casingscorch: casing
 		Tick: 1200
 		Start: 10
@@ -376,7 +360,6 @@ explosion:
 		BlendMode: Additive
 	flash_huge: flash_huge
 		BlendMode: Additive
-
 	light_tiny: flash_tiny
 		Start: 2
 		Length: 1
@@ -397,36 +380,18 @@ explosion:
 		Length: 1
 		Tick: 9600
 		BlendMode: Additive
-	ionbeam: ionbeam
-		Offset: 0, -60, 60
-		ZRamp: 1
-		Tick: 100
+	fireg1: fireg1
+		Tick: 70
 		BlendMode: Additive
-	ionbeam2: ionbeam
-		Offset: 0, -180, 60
-		ZRamp: 1
-		Tick: 100
+	fireg2: fireg2
+		Tick: 70
 		BlendMode: Additive
-	ionbeam3: ionbeam
-		Offset: 0, -300, 60
-		ZRamp: 1
-		Tick: 100
+	fireg3: fireg3
+		Tick: 70
 		BlendMode: Additive
-	ionbeam4: ionbeam
-		Offset: 0, -420, 60
-		ZRamp: 1
-		Tick: 100
-		BlendMode: Additive
-	ionbeam5: ionbeam
-		Offset: 0, -540, 60
-		ZRamp: 1
-		Tick: 100
-		BlendMode: Additive
-	ionbeam6: ionbeam
-		Offset: 0, -660, 60
-		ZRamp: 1
-		Tick: 100
-		BlendMode: Additive
+	empty: empty
+
+
 
 mslsmoke1:
 	idle:

@@ -404,6 +404,7 @@ IonCannonStorm:
 
 BlastFlame:
 	Inherits: ^FlameWeapon
+	Inherits@FireEff: ^Fire_g1-2
 	ReloadDelay: 1
 	Range: 7c512
 	Projectile: InstantHit

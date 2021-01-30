@@ -104,3 +104,17 @@
 		Name: ionball80alpha
 		BasePalette: ionball
 		Alpha: 0.8
+
+
+	PaletteFromFile@fire-g1:
+		Name: fire-g1
+		Filename: fire-g1.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@fire-g1_80alpha:
+		Name: fire-g1_80alpha
+		BasePalette: fire-g1
+		Alpha: 0.8
+	PaletteFromPaletteWithAlpha@fire-g1_60alpha:
+		Name: fire-g1_60alpha
+		BasePalette: fire-g1
+		Alpha: 0.6

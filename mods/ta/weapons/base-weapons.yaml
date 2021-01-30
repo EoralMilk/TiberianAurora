@@ -104,7 +104,7 @@
 
 
 ^FlameWeapon:
-	Inherits: ^Fire_03
+	Inherits: ^Fire_g1-2-d
 	ReloadDelay: 60
 	Range: 3c512
 	Burst: 10

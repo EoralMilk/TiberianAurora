@@ -519,14 +519,59 @@ ShellCasingDebris:
 		ImpactActors: false
 		ValidTargets: Ground
 
-# ^Fire_04:
-# 	# Inherits: ^Light_Small-Bright
-# 	Warhead@FireEff: CreateEffect
-# 		Explosions: fire-4
-# 		ExplosionPalette: fire
-# 		ImpactSounds: burn-eff.wav
-# 		ImpactActors: false
-# 		ValidTargets: Ground
+
+^Fire_g1:
+	# Inherits: ^Light_Small-Dark
+	Warhead@FireEff: CreateEffect
+		Explosions: fireg1
+		ExplosionPalette: fire-g1
+		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
+		ImpactActors: false
+		ValidTargets: Ground
+		ForceDisplayAtGroundLevel: true
+
+^Fire_g2:
+	# Inherits: ^Light_Small-Dark
+	Warhead@FireEff: CreateEffect
+		Explosions: fireg2
+		ExplosionPalette: fire-g1
+		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
+		ImpactActors: false
+		ValidTargets: Ground
+		ForceDisplayAtGroundLevel: true
+
+^Fire_g3:
+	# Inherits: ^Light_Small-Dark
+	Warhead@FireEff: CreateEffect
+		Explosions: fireg3
+		ExplosionPalette: fire-g1
+		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
+		ImpactActors: false
+		ValidTargets: Ground
+		ForceDisplayAtGroundLevel: true
+
+^Fire_g1-2:
+	# Inherits: ^Light_Small-Dark
+	Warhead@FireEff: CreateEffect
+		Explosions: fireg1, fireg2
+		ExplosionPalette: fire-g1_60alpha
+		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
+		ImpactActors: false
+		ValidTargets: Ground
+		ForceDisplayAtGroundLevel: true
+		Inaccuracy: 120
+
+^Fire_g1-2-d:
+	# Inherits: ^Light_Small-Dark
+	Warhead@FireEff: CreateEffect
+		Explosions: fireg1, fireg2, empty, empty, empty
+		ExplosionPalette: fire-g1_60alpha
+		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
+		ImpactActors: false
+		ValidTargets: Ground
+		Inaccuracy: 120
+		ForceDisplayAtGroundLevel: true
+		ImpactSoundChance: 50
 
 # Light
 ^Light_Tiny:

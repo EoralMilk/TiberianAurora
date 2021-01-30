@@ -87,14 +87,14 @@ MapFolders:
 	~^maps/ta/{DEV_VERSION}: User
 
 Rules:
-	ta|rules/ai.yaml
-	ta|rules/player.yaml
-	ta|rules/world.yaml
-	ta|rules/palettes.yaml
-	ta|rules/misc.yaml
 	ta|rules/pal-effect.yaml
 	ta|rules/pal-unit.yaml
 	ta|rules/pal-others.yaml
+	ta|rules/palettes.yaml
+	ta|rules/world.yaml
+	ta|rules/misc.yaml
+	ta|rules/ai.yaml
+	ta|rules/player.yaml
 
 	ta|rules/defaults.yaml
 	ta|rules/base.yaml
