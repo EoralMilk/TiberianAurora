@@ -248,6 +248,10 @@ RedEye:
 		Speed: 500
 		Arm: 3
 		RangeLimit: 18c512
+		TrailPalette: redlight_alpha80
+		ContrailLength: 10
+		ContrailWidth: 30
+		ContrailColor: FFFFFF
 	-Warhead@Smoke:
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
@@ -332,7 +336,7 @@ HeliAGGun:
 	Range: 5c640
 	Projectile: SelfGuidedBullet
 		Inaccuracy: 350
-		Speed: 1200
+		Speed: 1100
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
@@ -363,7 +367,7 @@ HeliAAGun:
 	Projectile: BulletAS2TA
 		Inaccuracy: 150
 	Warhead@1Dam: SpreadDamage
-		Damage: 1800
+		Damage: 1700
 		ValidTargets: Air
 
 HeliGunCasing:

@@ -91,3 +91,40 @@ c_tm:
 
 c_crch:
 	Inherits: ^CivBuilding
+
+
+c_hos1-f:
+	Inherits: ^CivBuilding
+
+c_hos2-f:
+	Inherits: ^CivBuilding
+
+c_hos3-f:
+	Inherits: ^CivBuilding
+
+c_hos4:
+	Inherits: ^CivBuilding
+
+c_hos5-f:
+	Inherits: ^CivBuilding
+
+c_hos6-f:
+	Inherits: ^CivBuilding
+
+c_hos7-f:
+	Inherits: ^CivBuilding
+
+c_hos8-f:
+	Inherits: ^CivBuilding
+
+c_gy-f:
+	Inherits: ^CivBuilding
+
+c_mf-f:
+	Inherits: ^CivBuilding
+
+c_tav-f:
+	Inherits: ^CivBuilding
+
+c_tm-f:
+	Inherits: ^CivBuilding

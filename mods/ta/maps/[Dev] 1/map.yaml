@@ -736,16 +736,10 @@ Actors:
 		Owner: Neutral
 		Location: 97,0
 		Health: 49
-	Actor283: cahos2-ruins
-		Owner: Neutral
-		Location: 101,5
 	Actor284: cahos3
 		Owner: Neutral
 		Location: 100,1
 		Health: 33
-	Actor285: cahos3-ruins
-		Owner: Neutral
-		Location: 104,5
 	Actor286: cahos4
 		Owner: Neutral
 		Location: 102,8
@@ -769,9 +763,6 @@ Actors:
 	Actor293: cagy
 		Owner: Neutral
 		Location: 107,3
-	Actor294: cagy-ruins
-		Owner: Neutral
-		Location: 107,6
 	Actor295: camf
 		Owner: Neutral
 		Location: 114,-3
@@ -815,12 +806,79 @@ Actors:
 		Owner: Neutral
 		Location: 111,5
 		Health: 30
-	Actor306: cahos3
-		Owner: Neutral
-		Location: 103,-1
 	Actor307: cahos8-ruins
 		Owner: Neutral
 		Location: 104,-12
+	Actor309: cahos1
+		Owner: Neutral
+		Location: 76,16
+		Health: 100
+	Actor294: cagy-f-ruins
+		Owner: Neutral
+		Location: 107,6
+	Actor308: cahos7
+		Owner: Neutral
+		Location: 78,19
+	Actor310: cahos3-f
+		Owner: Neutral
+		Location: 76,18
+	Actor311: cadh
+		Owner: Neutral
+		Location: 78,17
+	Actor312: catav-f
+		Owner: Neutral
+		Location: 75,12
+	Actor313: catm-f
+		Owner: Neutral
+		Location: 129,-28
+	Actor314: camf
+		Owner: Neutral
+		Location: 133,-29
+	Actor315: cagy-f
+		Owner: Neutral
+		Location: 124,-30
+	Actor316: cahos5-f
+		Owner: Neutral
+		Location: 129,-33
+	Actor318: cahos4
+		Owner: Neutral
+		Location: 136,-25
+	Actor306: cahos3-f
+		Owner: Neutral
+		Location: 103,-1
+	Actor283: cahos1-f
+		Owner: Neutral
+		Location: 102,4
+	Actor285: cahos7-f
+		Owner: Neutral
+		Location: 109,13
+	Actor317: cahos7-ruins
+		Owner: Neutral
+		Location: 110,-7
+	Actor319: cahos7-f-ruins
+		Owner: Neutral
+		Location: 108,-6
+	Actor320: cahos8-f
+		Owner: Neutral
+		Location: 106,-19
+	Actor321: cahos8-f-ruins
+		Owner: Neutral
+		Location: 89,-2
+	Actor322: cagy-f
+		Owner: Neutral
+		Location: 106,20
+	Actor323: catav-f
+		Owner: Neutral
+		Location: 105,16
+	Actor324: cahos7-f
+		Owner: Neutral
+		Location: 93,-1
+	Actor325: cahos3-f
+		Owner: Neutral
+		Location: 133,-25
+	Actor326: cahos7
+		Owner: Neutral
+		Location: 132,-23
 
 Rules:
 	World:

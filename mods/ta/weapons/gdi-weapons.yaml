@@ -481,13 +481,13 @@ A10Vulcan:
 	FirstBurstTargetOffset: -3000,0,0
 	FollowingBurstTargetOffset: 300,0,0
 	Projectile: BulletAS2TA
-		Inaccuracy: 800
+		Inaccuracy: 1000
 		Speed: 1000
 		LaunchAngle: 0
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 6000
-		Spread: 0c366
+		Spread: 0c372
 		Versus:
 			None: 100
 			Flak: 85

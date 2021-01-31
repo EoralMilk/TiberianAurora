@@ -563,6 +563,66 @@
 		ShadowIndex: 1
 
 
+	PaletteFromFile@c_hos1-f:
+		Name: c_hos1-f
+		Filename: c_hos1-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos2-f:
+		Name: c_hos2-f
+		Filename: c_hos2-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos3-f:
+		Name: c_hos3-f
+		Filename: c_hos3-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos4-f:
+		Name: c_hos4-f
+		Filename: c_hos4-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos5-f:
+		Name: c_hos5-f
+		Filename: c_hos5-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos6-f:
+		Name: c_hos6-f
+		Filename: c_hos6-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos7-f:
+		Name: c_hos7-f
+		Filename: c_hos7-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_hos8-f:
+		Name: c_hos8-f
+		Filename: c_hos8-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_gy-f:
+		Name: c_gy-f
+		Filename: c_gy-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_mf-f:
+		Name: c_mf-f
+		Filename: c_mf-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_tav-f:
+		Name: c_tav-f
+		Filename: c_tav-f.pal
+		ShadowIndex: 1
+
+	PaletteFromFile@c_tm-f:
+		Name: c_tm-f
+		Filename: c_tm-f.pal
+		ShadowIndex: 1
+
 	# Civil Prop
 
 	PaletteFromFile@c_dh:

@@ -119,6 +119,18 @@ cahos1:
 	SpawnActorOnDeath:
 		Actor: cahos1-ruins
 
+cahos1-f:
+	Inherits: cahos1
+	Inherits@shape: ^1x2Shape
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	RenderSprites:
+		Image: c_hos1-f
+		Palette: c_hos1-f
+	SpawnActorOnDeath:
+		Actor: cahos1-f-ruins
+
 cahos1-ruins:
 	Inherits: cahos1
 	Inherits@Ruins: ^CivRuins
@@ -129,6 +141,17 @@ cahos1-ruins:
 		HP: 15000
 	-ExplosionOnDamageTransition:
 
+cahos1-f-ruins:
+	Inherits: cahos1-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的平房
+	Health:
+		HP: 15000
+	-ExplosionOnDamageTransition:
+
+#
 cahos2:
 	Inherits: cahos1
 	RenderSprites:
@@ -136,6 +159,14 @@ cahos2:
 		Palette: c_hos2
 	SpawnActorOnDeath:
 		Actor: cahos2-ruins
+
+cahos2-f:
+	Inherits: cahos1-f
+	RenderSprites:
+		Image: c_hos2-f
+		Palette: c_hos2-f
+	SpawnActorOnDeath:
+		Actor: cahos2-f-ruins
 
 cahos2-ruins:
 	Inherits: cahos2
@@ -147,6 +178,17 @@ cahos2-ruins:
 		HP: 15000
 	-ExplosionOnDamageTransition:
 
+cahos2-f-ruins:
+	Inherits: cahos2-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的平房
+	Health:
+		HP: 15000
+	-ExplosionOnDamageTransition:
+
+#
 cahos3:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^1x1Shape
@@ -165,6 +207,14 @@ cahos3:
 	SpawnActorOnDeath:
 		Actor: cahos3-ruins
 
+cahos3-f:
+	Inherits: cahos3
+	RenderSprites:
+		Image: c_hos3-f
+		Palette: c_hos3-f
+	SpawnActorOnDeath:
+		Actor: cahos3-f-ruins
+
 cahos3-ruins:
 	Inherits: cahos3
 	Inherits@Ruins: ^CivRuins
@@ -175,6 +225,17 @@ cahos3-ruins:
 		HP: 7000
 	-ExplosionOnDamageTransition:
 
+cahos3-f-ruins:
+	Inherits: cahos3-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的小屋
+	Health:
+		HP: 7000
+	-ExplosionOnDamageTransition:
+
+#
 cahos4:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
@@ -193,6 +254,14 @@ cahos4:
 	SpawnActorOnDeath:
 		Actor: cahos4-ruins
 
+cahos4-f:
+	Inherits: cahos4
+	RenderSprites:
+		Image: c_hos4-f
+		Palette: c_hos4-f
+	SpawnActorOnDeath:
+		Actor: cahos4-f-ruins
+
 cahos4-ruins:
 	Inherits: cahos4
 	Inherits@Ruins: ^CivRuins
@@ -203,6 +272,17 @@ cahos4-ruins:
 		HP: 20000
 	-ExplosionOnDamageTransition:
 
+cahos4-f-ruins:
+	Inherits: cahos4-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	Health:
+		HP: 20000
+	-ExplosionOnDamageTransition:
+
+#
 cahos5:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
@@ -221,6 +301,14 @@ cahos5:
 	SpawnActorOnDeath:
 		Actor: cahos5-ruins
 
+cahos5-f:
+	Inherits: cahos5
+	RenderSprites:
+		Image: c_hos5-f
+		Palette: c_hos5-f
+	SpawnActorOnDeath:
+		Actor: cahos5-f-ruins
+
 cahos5-ruins:
 	Inherits: cahos5
 	Inherits@Ruins: ^CivRuins
@@ -233,6 +321,19 @@ cahos5-ruins:
 		HP: 20000
 	-ExplosionOnDamageTransition:
 
+cahos5-f-ruins:
+	Inherits: cahos5-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	IsometricSelectable:
+		Height: 35
+	Health:
+		HP: 20000
+	-ExplosionOnDamageTransition:
+
+#
 cahos6:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^1x2Shape
@@ -251,6 +352,18 @@ cahos6:
 	SpawnActorOnDeath:
 		Actor: cahos6-ruins
 
+cahos6-f:
+	Inherits: cahos6
+	Inherits@shape: ^2x1Shape
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+	RenderSprites:
+		Image: c_hos6-f
+		Palette: c_hos6-f
+	SpawnActorOnDeath:
+		Actor: cahos6-f-ruins
+
 cahos6-ruins:
 	Inherits: cahos6
 	Inherits@Ruins: ^CivRuins
@@ -263,6 +376,19 @@ cahos6-ruins:
 		HP: 10000
 	-ExplosionOnDamageTransition:
 
+cahos6-f-ruins:
+	Inherits: cahos6-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	IsometricSelectable:
+		Height: 25
+	Health:
+		HP: 10000
+	-ExplosionOnDamageTransition:
+
+#
 cahos7:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^1x1Shape
@@ -281,6 +407,14 @@ cahos7:
 	SpawnActorOnDeath:
 		Actor: cahos7-ruins
 
+cahos7-f:
+	Inherits: cahos7
+	RenderSprites:
+		Image: c_hos7-f
+		Palette: c_hos7-f
+	SpawnActorOnDeath:
+		Actor: cahos7-f-ruins
+
 cahos7-ruins:
 	Inherits: cahos7
 	Inherits@Ruins: ^CivRuins
@@ -293,6 +427,19 @@ cahos7-ruins:
 		HP: 7000
 	-ExplosionOnDamageTransition:
 
+cahos7-f-ruins:
+	Inherits: cahos7-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的小屋
+	IsometricSelectable:
+		Height: 15
+	Health:
+		HP: 7000
+	-ExplosionOnDamageTransition:
+
+#
 cahos8:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
@@ -309,6 +456,14 @@ cahos8:
 	SpawnActorOnDeath:
 		Actor: cahos8-ruins
 
+cahos8-f:
+	Inherits: cahos8
+	RenderSprites:
+		Image: c_hos8-f
+		Palette: c_hos8-f
+	SpawnActorOnDeath:
+		Actor: cahos8-f-ruins
+
 cahos8-ruins:
 	Inherits: cahos8
 	Inherits@Ruins: ^CivRuins
@@ -321,7 +476,19 @@ cahos8-ruins:
 		HP: 13000
 	-ExplosionOnDamageTransition:
 
+cahos8-f-ruins:
+	Inherits: cahos8-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的房屋
+	IsometricSelectable:
+		Height: 25
+	Health:
+		HP: 13000
+	-ExplosionOnDamageTransition:
 
+#
 cagy:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
@@ -338,6 +505,14 @@ cagy:
 	SpawnActorOnDeath:
 		Actor: cagy-ruins
 
+cagy-f:
+	Inherits: cagy
+	RenderSprites:
+		Image: c_gy-f
+		Palette: c_gy-f
+	SpawnActorOnDeath:
+		Actor: cagy-f-ruins
+
 cagy-ruins:
 	Inherits: cagy
 	Inherits@Ruins: ^CivRuins
@@ -348,6 +523,17 @@ cagy-ruins:
 		HP: 10000
 	-ExplosionOnDamageTransition:
 
+cagy-f-ruins:
+	Inherits: cagy-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的粮仓
+	Health:
+		HP: 10000
+	-ExplosionOnDamageTransition:
+
+#
 camf:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
@@ -366,6 +552,14 @@ camf:
 	SpawnActorOnDeath:
 		Actor: camf-ruins
 
+camf-f:
+	Inherits: camf
+	RenderSprites:
+		Image: c_mf-f
+		Palette: c_mf-f
+	SpawnActorOnDeath:
+		Actor: camf-f-ruins
+
 camf-ruins:
 	Inherits: camf
 	Inherits@Ruins: ^CivRuins
@@ -378,6 +572,19 @@ camf-ruins:
 		HP: 20000
 	-ExplosionOnDamageTransition:
 
+camf-f-ruins:
+	Inherits: camf-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的音乐工厂
+	IsometricSelectable:
+		Height: 35
+	Health:
+		HP: 20000
+	-ExplosionOnDamageTransition:
+
+#
 catav:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
@@ -394,6 +601,14 @@ catav:
 	SpawnActorOnDeath:
 		Actor: catav-ruins
 
+catav-f:
+	Inherits: catav
+	RenderSprites:
+		Image: c_tav-f
+		Palette: c_tav-f
+	SpawnActorOnDeath:
+		Actor: catav-f-ruins
+
 catav-ruins:
 	Inherits: catav
 	Inherits@Ruins: ^CivRuins
@@ -406,6 +621,19 @@ catav-ruins:
 		HP: 12000
 	-ExplosionOnDamageTransition:
 
+catav-f-ruins:
+	Inherits: catav-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的酒馆
+	IsometricSelectable:
+		Height: 35
+	Health:
+		HP: 12000
+	-ExplosionOnDamageTransition:
+
+#
 catm:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
@@ -424,6 +652,14 @@ catm:
 	SpawnActorOnDeath:
 		Actor: catm-ruins
 
+catm-f:
+	Inherits: catm
+	RenderSprites:
+		Image: c_tm-f
+		Palette: c_tm-f
+	SpawnActorOnDeath:
+		Actor: catm-f-ruins
+
 catm-ruins:
 	Inherits: catm
 	Inherits@Ruins: ^CivRuins
@@ -434,6 +670,18 @@ catm-ruins:
 		HP: 25000
 	-ExplosionOnDamageTransition:
 
+catm-f-ruins:
+	Inherits: catm-f
+	Inherits@Ruins: ^CivRuins
+	-SpawnActorOnDeath:
+	Tooltip:
+		Name: 毁掉的玩具制造商
+	Health:
+		HP: 25000
+	-ExplosionOnDamageTransition:
+
+
+#
 cacrch:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x3Shape

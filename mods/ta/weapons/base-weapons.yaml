@@ -29,9 +29,9 @@
 
 ^CommonAAMissile:
 	Inherits: ^CommonMissile
-	ReloadDelay: 60
-	Burst: 6
-	BurstDelays: 6
+	ReloadDelay: 45
+	Burst: 1
+	# BurstDelays: 6
 	ValidTargets: Air
 	Projectile: Missile
 		Arm: 2
@@ -39,7 +39,7 @@
 		RangeLimit: 18c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c512
-		Damage: 1500
+		Damage: 7000
 		ValidTargets: Air
 		Versus:
 			None: 100

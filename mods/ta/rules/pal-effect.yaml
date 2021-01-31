@@ -41,6 +41,45 @@
 		BasePalette: gray
 		# Premultiply: true
 
+	PaletteFromFile@redlight:
+		Name: redlight
+		Filename: redlight.pal
+	PaletteFromPaletteWithAlpha@redlightAlpha:
+		Name: redlight_alpha
+		Alpha: 0.3
+		BasePalette: redlight
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@redlightAlpha40:
+		Name: redlight_alpha40
+		Alpha: 0.4
+		BasePalette: redlight
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@redlightAlpha50:
+		Name: redlight_alpha50
+		Alpha: 0.5
+		BasePalette: redlight
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@redlightAlpha60:
+		Name: redlight_alpha60
+		Alpha: 0.6
+		BasePalette: redlight
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@redlightAlpha70:
+		Name: redlight_alpha70
+		Alpha: 0.7
+		BasePalette: redlight
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@redlightAlpha80:
+		Name: redlight_alpha80
+		Alpha: 0.8
+		BasePalette: redlight
+		# Premultiply: true
+	PaletteFromPaletteWithAlpha@redlightAlpha90:
+		Name: redlight_alpha90
+		Alpha: 0.8
+		BasePalette: redlight
+		# Premultiply: true
+
 	PaletteFromPaletteWithAlpha@effect40alpha:
 		Name: effect40alpha
 		BasePalette: effect
