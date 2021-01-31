@@ -733,3 +733,37 @@ ShellCasingDebris:
 	Warhead@Smoke: FireShrapnel
 		Amount: 2
 
+
+^exp_unit_WarheadEff:
+	Inherits@WarheadLight: ^Flash_Small-Brighter
+	Inherits: ^WarheadEff
+	Warhead@Eff_HitSoil: CreateEffect
+		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
+		ExplosionPalette: exp_unit
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitMetal: CreateEffect
+		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
+		ExplosionPalette: exp_unit
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_03.wav
+	Warhead@Eff_HitStone: CreateEffect
+		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
+		ExplosionPalette: exp_unit
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitConcrete: CreateEffect
+		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
+		ExplosionPalette: exp_unit
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitMeat: CreateEffect
+		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
+		ExplosionPalette: exp_unit
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@EffWater_piff: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: SmallCrater
+	Warhead@Spark: FireShrapnel
+		Amount: 3
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+

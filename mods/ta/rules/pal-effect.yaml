@@ -176,4 +176,13 @@
 		BasePalette: blast2
 		Alpha: 0.8
 
+	PaletteFromFile@exp_unit:
+		Name: exp_unit
+		Filename: exp_unit.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@exp_unit_80alpha:
+		Name: exp_unit_80alpha
+		BasePalette: exp_unit
+		Alpha: 0.8
+
 

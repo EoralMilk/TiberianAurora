@@ -453,7 +453,18 @@ explosion:
 	blastg2-d: blastg2-d
 		Tick: 40
 		BlendMode: Additive
-
+	exp_unit-a: exp_unit-a
+		Tick: 40
+		BlendMode: Additive
+	exp_unit-b: exp_unit-b
+		Tick: 40
+		BlendMode: Additive
+	exp_unit-c: exp_unit-c
+		Tick: 40
+		BlendMode: Additive
+	exp_unit-d: exp_unit-d
+		Tick: 40
+		BlendMode: Additive
 
 mslsmoke1:
 	idle:
