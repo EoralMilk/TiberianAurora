@@ -42,7 +42,7 @@ GAU-Casing:
 
 APBazooka:
 	Inherits: ^CommonMissile
-	Inherits: ^Blast_WarheadEff_1
+	Inherits: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
 	ReloadDelay: 50
 	Range: 6c0

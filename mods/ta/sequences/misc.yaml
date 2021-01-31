@@ -429,6 +429,30 @@ explosion:
 	blastg1-d: blastg1-d
 		Tick: 40
 		BlendMode: Additive
+	blasta2-a: blasta2-a
+		Tick: 40
+		BlendMode: Additive
+	blasta2-b: blasta2-b
+		Tick: 40
+		BlendMode: Additive
+	blasta2-c: blasta2-c
+		Tick: 40
+		BlendMode: Additive
+	blasta2-d: blasta2-d
+		Tick: 40
+		BlendMode: Additive
+	blastg2-a: blastg2-a
+		Tick: 40
+		BlendMode: Additive
+	blastg2-b: blastg2-b
+		Tick: 40
+		BlendMode: Additive
+	blastg2-c: blastg2-c
+		Tick: 40
+		BlendMode: Additive
+	blastg2-d: blastg2-d
+		Tick: 40
+		BlendMode: Additive
 
 
 mslsmoke1:

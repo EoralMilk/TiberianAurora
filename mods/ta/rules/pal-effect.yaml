@@ -167,4 +167,13 @@
 		BasePalette: blast1
 		Alpha: 0.8
 
+	PaletteFromFile@blast2:
+		Name: blast2
+		Filename: blast2.pal
+		AllowModifiers: false
+	PaletteFromPaletteWithAlpha@blast2_80alpha:
+		Name: blast2_80alpha
+		BasePalette: blast2
+		Alpha: 0.8
+
 

@@ -389,16 +389,6 @@ TowerMissile:
 			Rocket: 100
 		ValidTargets: Ground, Water, Air
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: small_grey_explosion
-		ImpactSounds: gexpifva.wav
-		ValidTargets: Ground, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidTargets: Water
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallCrater
 
 
 TowerAAMissile:
@@ -469,6 +459,7 @@ OrcaAAMissiles:
 	-Warhead@Smoke:
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
+
 
 A10Vulcan:
 	Inherits: ^MG
@@ -547,7 +538,9 @@ A10Napalm:
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumScorch
 	Warhead@FireEff: CreateEffect
-		Explosions: fire01
+		Explosions: fireg3
+		Delay: 2
+		ExplosionPalette: fire-g1
 		ImpactSounds: burn-eff.wav
 		ImpactActors: false
 	Warhead@FireEff2: FireCluster

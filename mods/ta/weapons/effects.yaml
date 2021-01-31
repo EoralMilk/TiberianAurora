@@ -554,7 +554,7 @@ ShellCasingDebris:
 	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
 		Explosions: fireg1, fireg2
-		ExplosionPalette: fire-g1_60alpha
+		ExplosionPalette: fire-g1_80alpha
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -565,7 +565,7 @@ ShellCasingDebris:
 	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
 		Explosions: fireg1, fireg2, empty, empty, empty
-		ExplosionPalette: fire-g1_60alpha
+		ExplosionPalette: fire-g1_80alpha
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -688,6 +688,40 @@ ShellCasingDebris:
 	Warhead@Eff_HitMeat: CreateEffect
 		Explosions: blastg1-a, blastg1-b, blastg1-c, blastg1-d
 		ExplosionPalette: blast1
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@EffWater_piff: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: SmallCrater
+	Warhead@Spark: FireShrapnel
+		Amount: 3
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+
+
+^Blast_WarheadEff_2:
+	Inherits@WarheadLight: ^Flash_Small-Brighter
+	Inherits: ^WarheadEff
+	Warhead@Eff_HitSoil: CreateEffect
+		Explosions: blastg2-a, blastg2-b, blastg2-c, blastg2-d
+		ExplosionPalette: blast2
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitMetal: CreateEffect
+		Explosions: blasta2-a, blasta2-b, blasta2-c, blasta2-d
+		ExplosionPalette: blast2
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_03.wav
+	Warhead@Eff_HitStone: CreateEffect
+		Explosions: blastg2-a, blastg2-b, blastg2-c, blastg2-d
+		ExplosionPalette: blast2
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitConcrete: CreateEffect
+		Explosions: blasta2-a, blasta2-b, blasta2-c, blasta2-d
+		ExplosionPalette: blast2
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+	Warhead@Eff_HitMeat: CreateEffect
+		Explosions: blastg2-a, blastg2-b, blastg2-c, blastg2-d
+		ExplosionPalette: blast2
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash

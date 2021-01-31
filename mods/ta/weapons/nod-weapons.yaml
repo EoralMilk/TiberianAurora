@@ -128,7 +128,7 @@ Devil'sTongue:
 
 DaggerOfNod:
 	Inherits: ^CommonMissile
-	Inherits@WarheadEff: ^HE_WarheadEff_Medium
+	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
 	Range: 6c512
 	Burst: 2
@@ -268,7 +268,7 @@ ObeliskLaserSwap:
 	Projectile: WeaponSwapWithRa2LaserFakeP
 		Weapon: ObeliskLaser
 		SwapDuration: 20
-		FirstBurstTargetOffset: -1600,0,1
+		FirstBurstTargetOffset: -1600,0,0
 		LastBurstTargetOffset: 1600,0,1
 		Bursts: 20
 		ZOffset: 1
