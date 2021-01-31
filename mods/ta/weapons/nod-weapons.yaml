@@ -248,10 +248,14 @@ RedEye:
 		Speed: 500
 		Arm: 3
 		RangeLimit: 18c512
-		TrailPalette: redlight_alpha80
-		ContrailLength: 10
-		ContrailWidth: 30
-		ContrailColor: FFFFFF
+		CruiseAltitude: 5c0
+		TerrainHeightAware: true
+		VerticalRateOfTurn: 210
+		HorizontalRateOfTurn: 86
+		TrailPalette: redlight
+		ContrailLength: 12
+		ContrailWidth: 40
+		ContrailColor: FFAAAA
 	-Warhead@Smoke:
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air
