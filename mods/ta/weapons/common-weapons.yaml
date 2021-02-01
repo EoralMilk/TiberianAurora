@@ -44,7 +44,7 @@ APBazooka:
 	Inherits: ^CommonMissile
 	Inherits: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
-	ReloadDelay: 50
+	ReloadDelay: 1 # 50 using ammo pool
 	Range: 6c0
 	MinRange: 0c512
 	Report: bazooka_shot.wav

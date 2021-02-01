@@ -85,11 +85,23 @@ ncycle:
 	Armament:
 		Weapon: CycleMissile
 		LocalOffset: -141,123,720, -141,-123,720
+		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
 	Armament@AA:
 		Weapon: CycleAAMissile
 		LocalOffset: -141,123,720, -141,-123,720
+		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
+
+	AmmoPool@misl:
+		Ammo: 1
+		PipCount: 0
+		AmmoCondition: ammo
+		Armaments: primary,secondary
+	ReloadAmmoPool@misl:
+		Delay: 25
+		Count: 1
+
 	WithMuzzleOverlay:
 	RenderSprites:
 		Image: n_cycle
@@ -290,12 +302,24 @@ nstltnk:
 		Range: 8c667
 	Armament:
 		Weapon: DaggerOfNod
+		PauseOnCondition: !ammo
 		LocalOffset: 204,31,808, 204,-31,808
 		MuzzleSequence: muzzle
 	Armament@AA:
 		Weapon: DaggerOfNodAA
+		PauseOnCondition: !ammo
 		LocalOffset: 204,31,808, 204,-31,808
 		MuzzleSequence: muzzle
+
+	AmmoPool@misl:
+		Ammo: 2
+		PipCount: 0
+		AmmoCondition: ammo
+		Armaments: primary,secondary
+	ReloadAmmoPool@misl:
+		Delay: 48
+		Count: 2
+
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 60

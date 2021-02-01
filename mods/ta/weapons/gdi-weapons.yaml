@@ -234,9 +234,9 @@ MammothTuskMissile:
 	Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ValidTargets: Ground, Water
 	Range: 6c0
-	Burst: 4
-	BurstDelays: 6
-	ReloadDelay: 80
+	# Burst: 4
+	# BurstDelays: 6
+	ReloadDelay: 6 # 80 using ammo pool
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2
@@ -360,7 +360,7 @@ TowerMissile:
 	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	ValidTargets: Ground, Water
 	Range: 9c512
-	ReloadDelay: 8
+	ReloadDelay: 1 # 8 using ammo pool
 	Projectile: Missile
 		ContrailLength: 12
 		# CruiseAltitude: 5c0

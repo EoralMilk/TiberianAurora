@@ -175,27 +175,27 @@ ShellCasingDebris:
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Soil
-		InvalidTargets: Stone, Metal, Concrete, Meat, Water
+		InvalidTargets: Stone, Metal, Concrete, Water
 	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
+		InvalidTargets: Soil, Stone, Concrete, Water
 	Warhead@Eff_HitStone: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
-		ValidTargets: Stone, Air
-		InvalidTargets: Soil, Metal, Concrete, Meat, Water
+		ValidTargets: Stone
+		InvalidTargets: Soil, Metal, Concrete, Water
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Concrete
-		InvalidTargets: Soil, Stone, Metal, Meat, Water
-	Warhead@Eff_HitMeat: CreateEffect
+		InvalidTargets: Soil, Stone, Metal, Water
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
-		ValidTargets: Meat
-		InvalidTargets: Soil, Stone, Metal, Concrete, Water
+		ValidTargets: Air
+		InvalidTargets: Soil, Stone, Metal, Concrete, Water, AirHit
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: tiny_watersplash
 		ValidTargets: Water
@@ -243,7 +243,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: tiny_clsn
 		ImpactSounds: gexp06a.wav, gexp07a.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: tiny_clsn
 		ImpactSounds: gexp06a.wav, gexp07a.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -269,7 +269,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: small_tumu
 		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: small_clsn
 		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -297,7 +297,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: medium_tumu
 		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: medium_clsn
 		ImpactSounds: gexp14a.wav, gexp14b.wav, gexp14c.wav, gexp14d.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -325,7 +325,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: large_tumu
 		ImpactSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: large_clsn
 		ImpactSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -356,7 +356,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: huge_tumu
 		ImpactSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: verylarge_clsn
 		ImpactSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -387,7 +387,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: small_bang
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: small_twlt
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -415,7 +415,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: medium_bang
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: medium_twlt
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -446,7 +446,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: large_bang
 		ImpactSounds: gexpcraa.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: large_twlt
 		ImpactSounds: gexpcraa.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -476,7 +476,7 @@ ShellCasingDebris:
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: verylarge_brnl
 		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: huge_twlt
 		ImpactSounds: ggexpbara.wav, gexpbarb.wav, gexpbarc.wav
 	Warhead@EffWater_piff: CreateEffect
@@ -685,7 +685,7 @@ ShellCasingDebris:
 		Explosions: blasta1-a, blasta1-b, blasta1-c, blasta1-d
 		ExplosionPalette: blast1
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: blastg1-a, blastg1-b, blastg1-c, blastg1-d
 		ExplosionPalette: blast1
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
@@ -719,7 +719,7 @@ ShellCasingDebris:
 		Explosions: blasta2-a, blasta2-b, blasta2-c, blasta2-d
 		ExplosionPalette: blast2
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
-	Warhead@Eff_HitMeat: CreateEffect
+	Warhead@Eff_HitAir: CreateEffect
 		Explosions: blastg2-a, blastg2-b, blastg2-c, blastg2-d
 		ExplosionPalette: blast2
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
@@ -734,28 +734,28 @@ ShellCasingDebris:
 		Amount: 2
 
 
-^exp_unit_WarheadEff:
+^exp_smallunit_WarheadEff:
 	Inherits@WarheadLight: ^Flash_Small-Brighter
 	Inherits: ^WarheadEff
 	Warhead@Eff_HitSoil: CreateEffect
-		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
-		ExplosionPalette: exp_unit
+		Explosions: exp_smallunit-a, exp_smallunit-b, exp_smallunit-c, exp_smallunit-d
+		ExplosionPalette: exp_smallunit
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
-		ExplosionPalette: exp_unit
+		Explosions: exp_smallunitair-a, exp_smallunitair-b, exp_smallunitair-c, exp_smallunitair-d
+		ExplosionPalette: exp_smallunit
 		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_03.wav
 	Warhead@Eff_HitStone: CreateEffect
-		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
-		ExplosionPalette: exp_unit
+		Explosions: exp_smallunit-a, exp_smallunit-b, exp_smallunit-c, exp_smallunit-d
+		ExplosionPalette: exp_smallunit
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@Eff_HitConcrete: CreateEffect
-		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
-		ExplosionPalette: exp_unit
+		Explosions: exp_smallunitair-a, exp_smallunitair-b, exp_smallunitair-c, exp_smallunitair-d
+		ExplosionPalette: exp_smallunit
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
-	Warhead@Eff_HitMeat: CreateEffect
-		Explosions: exp_unit-a, exp_unit-b, exp_unit-c, exp_unit-d
-		ExplosionPalette: exp_unit
+	Warhead@Eff_HitAir: CreateEffect
+		Explosions: exp_smallunitair-a, exp_smallunitair-b, exp_smallunitair-c, exp_smallunitair-d
+		ExplosionPalette: exp_smallunit
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: small_watersplash

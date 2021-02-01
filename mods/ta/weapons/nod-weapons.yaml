@@ -51,9 +51,9 @@ CycleMissile:
 	ValidTargets: Ground, Water
 	Range: 6c526
 	MinRange: 0c512
-	Burst: 2
-	BurstDelays: 4
-	ReloadDelay: 24
+	# Burst: 2
+	# BurstDelays: 4
+	ReloadDelay: 1 #25
 	Projectile: Missile
 		ContrailLength: 10
 		Arm: 2
@@ -66,7 +66,7 @@ CycleMissile:
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c300
-		Damage: 1800
+		Damage: 3500
 		Versus:
 			None: 20
 			Flak: 25
@@ -131,9 +131,9 @@ DaggerOfNod:
 	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
 	Range: 6c512
-	Burst: 2
-	BurstDelays: 0
-	ReloadDelay: 48
+	# Burst: 2
+	# BurstDelays: 1
+	ReloadDelay: 1 #48
 	Projectile: Missile
 		ContrailLength: 12
 		Arm: 2

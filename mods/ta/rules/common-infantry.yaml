@@ -87,11 +87,23 @@ bzkier:
 	Armament@primary:
 		Weapon: APBazooka
 		LocalOffset: 251,70,1024
+		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
 	Armament@AA:
 		Weapon: APBazookaAA
 		LocalOffset: 251,70,1024
+		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
+
+	AmmoPool@misl:
+		Ammo: 1
+		PipCount: 0
+		AmmoCondition: ammo
+		Armaments: primary,secondary
+	ReloadAmmoPool@misl:
+		Delay: 50
+		Count: 1
+
 	WithMuzzleOverlay:
 	TakeCover:
 		SpeedModifier: 50

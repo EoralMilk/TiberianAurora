@@ -26,7 +26,7 @@ demolish:
 
 SmallExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits@WarheadEff: ^exp_unit_WarheadEff
+	Inherits@WarheadEff: ^exp_smallunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g1
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c256
@@ -50,7 +50,7 @@ SmallExplosion:
 
 MediumExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits@WarheadEff: ^exp_unit_WarheadEff
+	Inherits@WarheadEff: ^exp_smallunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325

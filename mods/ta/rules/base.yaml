@@ -863,6 +863,9 @@
 		Categories: Infantry
 	Targetable@materials:
 		TargetTypes: Meat
+	DetectCloaked:
+		Range: 1c0
+
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor

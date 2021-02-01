@@ -453,16 +453,28 @@ explosion:
 	blastg2-d: blastg2-d
 		Tick: 40
 		BlendMode: Additive
-	exp_unit-a: exp_unit-a
+	exp_smallunit-a: exp_smallunit-a
 		Tick: 40
 		BlendMode: Additive
-	exp_unit-b: exp_unit-b
+	exp_smallunit-b: exp_smallunit-b
 		Tick: 40
 		BlendMode: Additive
-	exp_unit-c: exp_unit-c
+	exp_smallunit-c: exp_smallunit-c
 		Tick: 40
 		BlendMode: Additive
-	exp_unit-d: exp_unit-d
+	exp_smallunit-d: exp_smallunit-d
+		Tick: 40
+		BlendMode: Additive
+	exp_smallunitair-a: exp_smallunitair-a
+		Tick: 40
+		BlendMode: Additive
+	exp_smallunitair-b: exp_smallunitair-b
+		Tick: 40
+		BlendMode: Additive
+	exp_smallunitair-c: exp_smallunitair-c
+		Tick: 40
+		BlendMode: Additive
+	exp_smallunitair-d: exp_smallunitair-d
 		Tick: 40
 		BlendMode: Additive
 

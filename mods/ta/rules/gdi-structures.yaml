@@ -323,13 +323,25 @@ advgtwr:
 	Armament:
 		Weapon: TowerMissile
 		RequiresCondition: !build-incomplete && !lowpower
+		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
 		LocalOffset: 190,35,2800, 190,-35,2800, 190,110,2800, 190,-110,2800
 	Armament@AA:
 		Weapon: TowerAAMissile
 		RequiresCondition: !build-incomplete && !lowpower
+		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
 		LocalOffset: 190,35,2800, 190,-35,2800, 190,110,2800, 190,-110,2800
+
+	AmmoPool@misl:
+		Ammo: 1
+		PipCount: 0
+		AmmoCondition: ammo
+		Armaments: primary,secondary
+	ReloadAmmoPool@misl:
+		Delay: 8
+		Count: 1
+
 	WithSpriteTurret@shadow:
 		Sequence: shadow
 		RequiresCondition: !build-incomplete

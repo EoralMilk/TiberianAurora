@@ -252,18 +252,33 @@ gmmtnk:
 		Range: 8c0
 	Armament:
 		Weapon: MammothTankCannon
+		Name: primary
 		LocalOffset: 1227,168,800, 1227,-168,800
 		Recoil: 170
 		RecoilRecovery: 42
 		MuzzleSequence: muzzle
 	Armament@AGtusk:
 		Weapon: MammothTuskMissile
+		Name: secondary
+		PauseOnCondition: !mislammo
 		LocalOffset: 20,371,866, 20,-371,866
 		MuzzleSequence: muzzle-2
 	Armament@AAtusk:
 		Weapon: MammothTuskAAMissile
+		Name: secondary
+		PauseOnCondition: !mislammo
 		LocalOffset: 20,371,866, 20,-371,866
 		MuzzleSequence: muzzle-2
+
+	AmmoPool@misl:
+		Ammo: 4
+		PipCount: 0
+		AmmoCondition: mislammo
+		Armaments: secondary
+	ReloadAmmoPool@misl:
+		Delay: 80
+		Count: 4
+
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 20
