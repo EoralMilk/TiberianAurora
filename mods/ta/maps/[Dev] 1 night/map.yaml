@@ -2,7 +2,7 @@ MapFormat: 11
 
 RequiresMod: ta
 
-Title: [Dev] South Pacific (Day)
+Title: [Dev] South Pacific (Night)
 
 Author: Eoral Milk
 
@@ -883,6 +883,6 @@ Actors:
 Rules:
 	World:
 		GlobalLightingPaletteEffect:
-			Ambient: 0.75
+			Ambient: 0.40
 			Red: 1.12
 			Green: 1.12

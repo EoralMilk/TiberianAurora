@@ -5,6 +5,7 @@
 	PaletteFromFile@Gray:
 		Name: gray
 		Filename: gray.pal
+		AllowModifiers: false
 	PaletteFromPaletteWithAlpha@GrayAlpha:
 		Name: gray_alpha
 		Alpha: 0.3
@@ -44,6 +45,7 @@
 	PaletteFromFile@redlight:
 		Name: redlight
 		Filename: redlight.pal
+		AllowModifiers: false
 	PaletteFromPaletteWithAlpha@redlightAlpha:
 		Name: redlight_alpha
 		Alpha: 0.3
@@ -110,7 +112,6 @@
 	PaletteFromFile@chamall:
 		Name: chamall
 		Filename: chamall.pal
-		AllowModifiers: false
 	PaletteFromPaletteWithAlpha@chamall60alpha:
 		Name: chamall60alpha
 		BasePalette: chamall
@@ -171,18 +172,14 @@
 		Name: blast2
 		Filename: blast2.pal
 		AllowModifiers: false
-	PaletteFromPaletteWithAlpha@blast2_80alpha:
-		Name: blast2_80alpha
-		BasePalette: blast2
-		Alpha: 0.8
 
 	PaletteFromFile@exp_smallunit:
 		Name: exp_smallunit
 		Filename: exp_smallunit.pal
 		AllowModifiers: false
-	PaletteFromPaletteWithAlpha@exp_smallunit_80alpha:
-		Name: exp_smallunit_80alpha
-		BasePalette: exp_smallunit
-		Alpha: 0.8
 
+	PaletteFromFile@exp_fireunit:
+		Name: exp_fireunit
+		Filename: exp_fireunit.pal
+		AllowModifiers: false
 

@@ -405,78 +405,46 @@ explosion:
 		BlendMode: Additive
 		ZOffset: -56
 	empty: empty
+
+
+
+
+blasts:
+	Defaults:
+		Length: *
+		Tick: 50
+		Offset: 0, 0, 1
+		ZOffset: 2048
+		BlendMode: Screen
 	blasta1-a: blasta1-a
-		Tick: 40
-		BlendMode: Additive
 	blasta1-b: blasta1-b
-		Tick: 40
-		BlendMode: Additive
 	blasta1-c: blasta1-c
-		Tick: 40
-		BlendMode: Additive
 	blasta1-d: blasta1-d
-		Tick: 40
-		BlendMode: Additive
 	blastg1-a: blastg1-a
-		Tick: 40
-		BlendMode: Additive
 	blastg1-b: blastg1-b
-		Tick: 40
-		BlendMode: Additive
 	blastg1-c: blastg1-c
-		Tick: 40
-		BlendMode: Additive
 	blastg1-d: blastg1-d
-		Tick: 40
-		BlendMode: Additive
 	blasta2-a: blasta2-a
-		Tick: 40
-		BlendMode: Additive
 	blasta2-b: blasta2-b
-		Tick: 40
-		BlendMode: Additive
 	blasta2-c: blasta2-c
-		Tick: 40
-		BlendMode: Additive
 	blasta2-d: blasta2-d
-		Tick: 40
-		BlendMode: Additive
 	blastg2-a: blastg2-a
-		Tick: 40
-		BlendMode: Additive
 	blastg2-b: blastg2-b
-		Tick: 40
-		BlendMode: Additive
 	blastg2-c: blastg2-c
-		Tick: 40
-		BlendMode: Additive
 	blastg2-d: blastg2-d
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunit-a: exp_smallunit-a
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunit-b: exp_smallunit-b
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunit-c: exp_smallunit-c
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunit-d: exp_smallunit-d
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunitair-a: exp_smallunitair-a
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunitair-b: exp_smallunitair-b
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunitair-c: exp_smallunitair-c
-		Tick: 40
-		BlendMode: Additive
 	exp_smallunitair-d: exp_smallunitair-d
-		Tick: 40
-		BlendMode: Additive
+	exp_fireunit-a: exp_fireunit-a
+	exp_fireunit-b: exp_fireunit-b
+	exp_fireunit-c: exp_fireunit-c
+	exp_fireunit-d: exp_fireunit-d
+
 
 mslsmoke1:
 	idle:
