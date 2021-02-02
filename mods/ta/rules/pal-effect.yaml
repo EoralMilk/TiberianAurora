@@ -183,3 +183,7 @@
 		Filename: exp_fireunit.pal
 		AllowModifiers: false
 
+	PaletteFromFile@exp_midunit:
+		Name: exp_midunit
+		Filename: exp_midunit.pal
+		AllowModifiers: false

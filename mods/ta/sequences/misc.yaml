@@ -444,7 +444,7 @@ blasts:
 	exp_fireunit-b: exp_fireunit-b
 	exp_fireunit-c: exp_fireunit-c
 	exp_fireunit-d: exp_fireunit-d
-
+	exp_midunit-a: exp_midunit-a
 
 mslsmoke1:
 	idle:

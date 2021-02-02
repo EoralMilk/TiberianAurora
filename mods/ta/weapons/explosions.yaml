@@ -50,7 +50,7 @@ SmallExplosion:
 
 MediumExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits@WarheadEff: ^exp_smallunit_WarheadEff
+	Inherits@WarheadEff: ^exp_midunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
@@ -332,11 +332,11 @@ ChemCluster:
 		Damage: 1200
 
 BuildingExplodeTransition:
-	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^exp_midunit_WarheadEff
 
 BuildingExplode:
 	Inherits: ^DamagingExplosion
-	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^exp_midunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g1-2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
@@ -397,7 +397,7 @@ BuildingExplode:
 
 CivBuildingExplode:
 	Inherits: ^DamagingExplosion
-	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^exp_midunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g1-3-up
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
