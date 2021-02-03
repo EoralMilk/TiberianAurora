@@ -86,21 +86,21 @@ grenade:
 		Tick: 60
 
 largefire:
-	idle: fireg3
+	idle: fire_g3-b
 		BlendMode: Additive
 		Tick: 70
 		Length: *
 		ZOffset: 2048
 
 mediumfire:
-	idle: fireg2
+	idle: fire_g2-b
 		BlendMode: Additive
 		Tick: 70
 		Length: *
 		ZOffset: 2048
 
 smallfire:
-	idle: fireg1
+	idle: fire_g1-b
 		BlendMode: Additive
 		Tick: 70
 		Length: *
@@ -127,7 +127,7 @@ explosion:
 		Length: *
 		Tick: 60
 		Offset: 0, 0, 40
-		ZOffset: 2048
+		ZOffset: 1024
 	building: twlt070
 		Offset: 0, 0, 40
 	bloody: blood
@@ -383,30 +383,45 @@ explosion:
 		Length: 1
 		Tick: 9600
 		BlendMode: Additive
-	fireg1-u: fireg1
-		Tick: 70
-		BlendMode: Additive
-	fireg2-u: fireg2
-		Tick: 70
-		BlendMode: Additive
-	fireg3-u: fireg3
-		Tick: 70
-		BlendMode: Additive
-	fireg1: fireg1
-		Tick: 70
-		BlendMode: Additive
-		ZOffset: -56
-	fireg2: fireg2
-		Tick: 70
-		BlendMode: Additive
-		ZOffset: -56
-	fireg3: fireg3
-		Tick: 70
-		BlendMode: Additive
-		ZOffset: -56
 	empty: empty
 
 
+fires-g:
+	Defaults:
+		Length: *
+		Tick: 75
+		Offset: 0, 0, 1
+		ZOffset: -35
+		BlendMode: Additive
+	fire_g1-a: fire_g1-a
+	fire_g1-b: fire_g1-b
+	fire_g1-c: fire_g1-c
+	fire_g2-a: fire_g2-a
+	fire_g2-b: fire_g2-b
+	fire_g2-c: fire_g2-c
+	fire_g3-a: fire_g3-a
+	fire_g3-b: fire_g3-b
+	fire_g3-c: fire_g3-c
+	empty: empty
+
+
+fires-u:
+	Defaults:
+		Length: *
+		Tick: 75
+		Offset: 0, 0, 1
+		ZOffset: 2048
+		BlendMode: Additive
+	fire_g1-a: fire_g1-a
+	fire_g1-b: fire_g1-b
+	fire_g1-c: fire_g1-c
+	fire_g2-a: fire_g2-a
+	fire_g2-b: fire_g2-b
+	fire_g2-c: fire_g2-c
+	fire_g3-a: fire_g3-a
+	fire_g3-b: fire_g3-b
+	fire_g3-c: fire_g3-c
+	empty: empty
 
 
 blasts:
@@ -414,8 +429,8 @@ blasts:
 		Length: *
 		Tick: 50
 		Offset: 0, 0, 1
-		ZOffset: 2048
-		BlendMode: Screen
+		ZOffset: 1024
+		BlendMode: Additive
 	blasta1-a: blasta1-a
 	blasta1-b: blasta1-b
 	blasta1-c: blasta1-c
@@ -445,6 +460,28 @@ blasts:
 	exp_fireunit-c: exp_fireunit-c
 	exp_fireunit-d: exp_fireunit-d
 	exp_midunit-a: exp_midunit-a
+	huge_watersplash: h2o_exp1
+		Offset: 0, 0, 39
+		BlendMode: None
+	large_watersplash: h2o_exp2
+		BlendMode: None
+	small_watersplash: h2o_exp3
+		BlendMode: None
+	tiny_watersplash: h2o_exp4
+		BlendMode: None
+	piff-a: piff-a
+	piff-b: piff-b
+	piff-c: piff-c
+	piff-d: piff-d
+
+	piff-f: piff-f
+	piff-g: piff-g
+	piff-h: piff-h
+
+
+
+
+
 
 mslsmoke1:
 	idle:

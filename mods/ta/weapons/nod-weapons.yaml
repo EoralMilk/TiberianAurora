@@ -62,7 +62,6 @@ CycleMissile:
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 46
 		RangeLimit: 10c512
-		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c300
@@ -135,14 +134,16 @@ DaggerOfNod:
 	# BurstDelays: 1
 	ReloadDelay: 1 #48
 	Projectile: Missile
+		TrailPalette: redlight
 		ContrailLength: 12
+		ContrailWidth: 40
+		ContrailColor: FFAAAA
 		Arm: 2
 		Speed: 400
 		Inaccuracy: 100
 		Acceleration: 22
 		HorizontalRateOfTurn: 110
 		RangeLimit: 14c512
-		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c450
@@ -338,7 +339,7 @@ HeliAGGun:
 	ReloadDelay: 1
 	Report: vulcan_shot.wav
 	Range: 5c640
-	Projectile: SelfGuidedBullet
+	Projectile: BulletAS2TA
 		Inaccuracy: 350
 		Speed: 1100
 		LaunchAngle: 0

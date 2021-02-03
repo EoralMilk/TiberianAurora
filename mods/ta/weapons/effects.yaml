@@ -139,17 +139,23 @@ ShellCasingDebris:
 		ValidTargets: Soil
 		InvalidTargets: Stone, Metal, Concrete, Meat, Water
 	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: piff
+		Explosions: piff-a, piff-b, piff-c, piff-d, piff-f, piff-g, piff-h
+		Image: blasts
+		ExplosionPalette: exp_midunit
 		ImpactSounds: sirodefc.wav, metal_thin_01.wav, metal_thin_02.wav, metal_thin_03.wav, metal_thin_04.wav, metal_thin_05.wav, metal_thin_06.wav, metal_thin_07.wav, metal_thin_08.wav, metal_thin_09.wav, dumpster_bullet_01.wav, dumpster_bullet_02.wav
 		ValidTargets: Metal
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@Eff_HitStone: CreateEffect
-		Explosions: piff
+		Explosions: piff-a, piff-b, piff-c, piff-d, piff-f, piff-g, piff-h
+		Image: blasts
+		ExplosionPalette: exp_midunit
 		ImpactSounds: sirodefa.wav, ricochet1.wav, ricochet3.wav, ricochet4.wav, ricochet7.wav
 		ValidTargets: Stone
 		InvalidTargets: Soil, Metal, Concrete, Meat, Water
 	Warhead@Eff_HitConcrete: CreateEffect
-		Explosions: piff
+		Explosions: piff-a, piff-b, piff-c, piff-d, piff-f, piff-g, piff-h
+		Image: blasts
+		ExplosionPalette: exp_midunit
 		ImpactSounds: ricochet5.wav, ricochet6.wav
 		ValidTargets: Concrete
 		InvalidTargets: Soil, Stone, Metal, Meat, Water
@@ -174,8 +180,8 @@ ShellCasingDebris:
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
-		ValidTargets: Soil
-		InvalidTargets: Stone, Metal, Concrete, Water
+		ValidTargets: Soil, Meat
+		InvalidTargets: Stone, Metal, Concrete, Water, Air, AirHit
 	Warhead@Eff_HitMetal: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
@@ -185,7 +191,7 @@ ShellCasingDebris:
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
 		ValidTargets: Stone
-		InvalidTargets: Soil, Metal, Concrete, Water
+		InvalidTargets: Soil, Metal, Concrete, Water, Air, AirHit
 	Warhead@Eff_HitConcrete: CreateEffect
 		Explosions: tiny_clsn
 		ExplosionPalette: effect
@@ -521,30 +527,30 @@ ShellCasingDebris:
 
 
 ^Fire_g1:
-	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
-		Explosions: fireg1
-		ExplosionPalette: fire-g1
+		Explosions: fire_g1-a, fire_g1-b, fire_g1-c
+		ExplosionPalette: fire-g
+		Image: fires-g
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
 		ForceDisplayAtGroundLevel: true
 
 ^Fire_g2:
-	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
-		Explosions: fireg2
-		ExplosionPalette: fire-g1
+		Explosions: fire_g2-a, fire_g2-b, fire_g2-c
+		ExplosionPalette: fire-g
+		Image: fires-g
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
 		ForceDisplayAtGroundLevel: true
 
 ^Fire_g3:
-	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
-		Explosions: fireg3
-		ExplosionPalette: fire-g1
+		Explosions: fire_g3-a, fire_g3-b, fire_g3-c
+		ExplosionPalette: fire-g
+		Image: fires-g
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -553,8 +559,9 @@ ShellCasingDebris:
 ^Fire_g1-2:
 	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
-		Explosions: fireg1, fireg2
-		ExplosionPalette: fire-g1
+		Explosions: fire_g1-a, fire_g1-b, fire_g1-c, fire_g2-a, fire_g2-b, fire_g2-c
+		ExplosionPalette: fire-g
+		Image: fires-g
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -564,8 +571,9 @@ ShellCasingDebris:
 ^Fire_g1-2-d:
 	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
-		Explosions: fireg1, fireg2, empty, empty, empty
-		ExplosionPalette: fire-g1
+		Explosions: fire_g1-a, fire_g1-b, fire_g1-c, fire_g2-a, fire_g2-b, fire_g2-c, empty, empty, empty, empty, empty, empty, empty, empty, empty
+		ExplosionPalette: fire-g
+		Image: fires-g
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -576,8 +584,9 @@ ShellCasingDebris:
 ^Fire_g1-3-up:
 	# Inherits: ^Light_Small-Dark
 	Warhead@FireEff: CreateEffect
-		Explosions: fireg1-u, fireg2-u, fireg3-u
-		ExplosionPalette: fire-g1
+		Explosions: fire_g1-a, fire_g1-b, fire_g1-c, fire_g2-a, fire_g2-b, fire_g2-c, fire_g3-a, fire_g3-b, fire_g3-c, fire_g2-a, fire_g2-b, fire_g2-c, fire_g3-a, fire_g3-b, fire_g3-c
+		ExplosionPalette: fire-g
+		Image: fires-u
 		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
 		ImpactActors: false
 		ValidTargets: Ground
@@ -683,6 +692,9 @@ ShellCasingDebris:
 		Image: blasts
 	Warhead@Eff_HitAir: CreateEffect
 		Image: blasts
+	Warhead@EffWater_piff: CreateEffect
+		Image: blasts
+
 
 ^Blast_WarheadEff_1:
 	Inherits@WarheadLight: ^Flash_Small-Brighter

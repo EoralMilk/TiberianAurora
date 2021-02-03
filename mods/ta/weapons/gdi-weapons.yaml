@@ -245,7 +245,6 @@ MammothTuskMissile:
 		Acceleration: 25
 		HorizontalRateOfTurn: 75
 		RangeLimit: 14c512
-		ContrailColor: D8D8FF
 		CruiseAltitude: 3c512
 	Warhead@1Dam: SpreadDamage
 		Spread: 500
@@ -371,7 +370,6 @@ TowerMissile:
 		CruiseAltitude: 5c512
 		HorizontalRateOfTurn: 58
 		RangeLimit: 17c512
-		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c400
 		Damage: 3000
@@ -423,13 +421,13 @@ OrcaAGMissiles:
 		Image: DRAGON
 		Palette: ra
 		Shadow: true
-		VerticalRateOfTurn: 70
-		HorizontalRateOfTurn: 46
+		VerticalRateOfTurn: 120
+		HorizontalRateOfTurn: 86
 		MinimumLaunchAngle: 0
 		MaximumLaunchAngle: 0
 		TerrainHeightAware: true
 		AllowSnapping: false
-		CruiseAltitude: 5c512
+		CruiseAltitude: 0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
 		Damage: 1200
@@ -499,6 +497,7 @@ A10Vulcan:
 		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 A10Napalm:
+	Inherits@WarheadFire: ^Fire_g3
 	ReloadDelay: 100
 	Range: 4c0
 	Burst: 10
@@ -537,12 +536,6 @@ A10Napalm:
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumScorch
-	Warhead@FireEff: CreateEffect
-		Explosions: fireg3
-		Delay: 2
-		ExplosionPalette: fire-g1
-		ImpactSounds: burn-eff.wav
-		ImpactActors: false
 	Warhead@FireEff2: FireCluster
 		Weapon: Flamethrower
 		RandomClusterCount: 6

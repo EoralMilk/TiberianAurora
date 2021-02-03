@@ -178,7 +178,7 @@ gmlrs:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
 		Prerequisites: ~vehicle.gdi, hq
-		Description: 机动型长程火箭发射平台\n发射火箭弹幕造成高额范围伤害\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
+		Description: 机动型长程火箭发射平台\n发射火箭弹幕造成高额范围伤害\n装弹就绪时阵亡会产生殉爆\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
 	Valued:
 		Cost: 1000
 	Tooltip:

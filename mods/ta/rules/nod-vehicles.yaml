@@ -229,7 +229,7 @@ nhowi:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
 		Prerequisites: ~vehicle.nod, hq
-		Description: 装备155mm榴弹炮的轻型长程火炮\n造成高额范围伤害\n具有较大的散布\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
+		Description: 装备155mm榴弹炮的轻型长程火炮\n造成高额范围伤害\n不够精准\n装弹就绪时阵亡会产生殉爆\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 700
 	Tooltip:

@@ -11,7 +11,7 @@
 		RangeLimit: 10c512
 		ContrailLength: 8
 		ContrailWidth: 25
-		ContrailColor: FFFFB1
+		ContrailColor: FFF2CD
 		Blockable: false
 		Gravity: 8
 		Image: dragon2

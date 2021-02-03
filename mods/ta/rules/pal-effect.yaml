@@ -117,16 +117,6 @@
 		BasePalette: chamall
 		Alpha: 0.6
 
-	PaletteFromFile@fire:
-		Name: fire
-		Filename: fire.pal
-		AllowModifiers: false
-	PaletteFromPaletteWithAlpha@fire80alpha:
-		Name: fire80alpha
-		BasePalette: fire
-		Alpha: 0.8
-
-
 	PaletteFromFile@ionblast:
 		Name: ionblast
 		Filename: ionblast.pal
@@ -146,17 +136,17 @@
 		Alpha: 0.8
 
 
-	PaletteFromFile@fire-g1:
-		Name: fire-g1
-		Filename: fire-g1.pal
+	PaletteFromFile@fire-g:
+		Name: fire-g
+		Filename: fire-g.pal
 		AllowModifiers: false
-	PaletteFromPaletteWithAlpha@fire-g1_80alpha:
-		Name: fire-g1_80alpha
-		BasePalette: fire-g1
+	PaletteFromPaletteWithAlpha@fire-g_80alpha:
+		Name: fire-g_80alpha
+		BasePalette: fire-g
 		Alpha: 0.8
-	PaletteFromPaletteWithAlpha@fire-g1_60alpha:
-		Name: fire-g1_60alpha
-		BasePalette: fire-g1
+	PaletteFromPaletteWithAlpha@fire-g_60alpha:
+		Name: fire-g_60alpha
+		BasePalette: fire-g
 		Alpha: 0.6
 
 	PaletteFromFile@blast1:

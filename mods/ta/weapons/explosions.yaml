@@ -12,7 +12,7 @@ demolish:
 		Damage: 4000
 		Versus:
 			None: 100
-			Flak: 80
+			Flak: 90
 			Plate: 70
 			Light: 25
 			Medium: 10
@@ -29,21 +29,8 @@ SmallExplosion:
 	Inherits@WarheadEff: ^exp_smallunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g1
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c256
+		Spread: 0c312
 		Damage: 3000
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
 
@@ -53,21 +40,8 @@ MediumExplosion:
 	Inherits@WarheadEff: ^exp_midunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c325
+		Spread: 0c385
 		Damage: 7000
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
 
@@ -77,22 +51,9 @@ LargeExplosion:
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c512
-		Damage: 15000
+		Spread: 0c782
+		Damage: 18000
 		Falloff: 100, 73, 47, 20, 0
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
 
@@ -102,22 +63,9 @@ HugeExplosion:
 	Inherits@WarheadEff: ^HE_WarheadEff_Huge
 	Inherits@WarheadFire: ^Fire_g3
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c625
-		Damage: 20000
+		Spread: 1c125
+		Damage: 37000
 		Falloff: 100, 73, 47, 20, 0
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff2: FireCluster
 		Weapon: FlameWave
 		RandomClusterCount: 6
@@ -140,6 +88,9 @@ HugeExplosion:
 PlaneHuskExplosion:
 	Inherits: LargeExplosion
 	Inherits@WarheadEff: ^exp_fireunit_WarheadEff
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c812
+		Damage: 22000
 	Warhead@SpawnDebris1: FireShrapnel
 		Weapon: dbris1lg
 		Amount: 1
@@ -160,6 +111,12 @@ PlaneHuskExplosion:
 		Amount: 1
 		ValidTargets: Ground, Water, Air
 		ImpactActors: true
+	Warhead@FireWave: FireCluster
+		Weapon: FlameWave
+		RandomClusterCount: 3
+		Dimensions: 1,1
+		Footprint: xxx xxx xxx
+		ValidTargets: Ground, Water, Air
 
 
 AirExplosion:
@@ -210,20 +167,20 @@ GrdExplosion:
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c512
+		Spread: 0c662
 		Damage: 15000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
-			Flak: 80
+			Flak: 90
 			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
+			Light: 75
+			Medium: 30
+			Heavy: 30
+			Wood: 85
+			Steel: 75
+			Concrete: 45
+			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@FireEff: CreateEffect
@@ -235,20 +192,20 @@ FlameExplosion:
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Inherits@WarheadFire: ^Fire_g1-2
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c552
+		Spread: 0c586
 		Damage: 9000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
-			Flak: 80
+			Flak: 90
 			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
+			Light: 75
+			Medium: 30
+			Heavy: 30
+			Wood: 85
+			Steel: 75
+			Concrete: 45
+			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 
@@ -258,20 +215,20 @@ FlameTankExplosion:
 	Inherits@WarheadEff: ^exp_fireunit_WarheadEff
 	Inherits@WarheadFire: ^Fire_g3
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c552
+		Spread: 0c782
 		Damage: 11000
 		Falloff: 100, 73, 47, 20, 0
 		Versus:
 			None: 100
-			Flak: 80
+			Flak: 90
 			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
+			Light: 75
+			Medium: 30
+			Heavy: 30
+			Wood: 85
+			Steel: 75
+			Concrete: 45
+			Drone: 60
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	Warhead@FireEff2: FireCluster
@@ -299,7 +256,7 @@ ChamExplosion:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^HE_WarheadEff_Large
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c368
+		Spread: 0c468
 		Damage: 8000
 		ValidTargets: Ground, Water, Tree
 		InvalidTargets: Wall
@@ -341,18 +298,6 @@ BuildingExplode:
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
 		Damage: 1000
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	-Warhead@Flash:
 	Warhead@FireEff2: FireCluster
@@ -402,18 +347,6 @@ CivBuildingExplode:
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c386
 		Damage: 1000
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	-Warhead@Flash:
 
@@ -435,18 +368,6 @@ FlameSea:
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c552
 		Damage: 2000
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 25
-			Medium: 10
-			Heavy: 10
-			Wood: 25
-			Steel: 15
-			Concrete: 15
-			Drone: 100
-			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	Warhead@FireWave: FireCluster
 		Weapon: FlameWave
@@ -476,30 +397,5 @@ FlameWave:
 		Dimensions: 3,3
 		Footprint: xxx xXx xxx
 		ValidTargets: Ground, Water, Air
-	Warhead@FireEff: CreateEffect
-		-ImpactSounds:
-
-
-FlameInfection:
-	Inherits: ^FlameWeapon
-	ValidTargets: Ground
-	# InvalidTargets: Water, Inpassable
-	ReloadDelay: 15
-	Range: 7c512
-	-Report:
-	Projectile: InstantHit
-		Inaccuracy: 800
-		Blockable: false
-	Warhead@1Dam: SpreadDamage
-		Damage: 1000
-		Spread: 0c256
-	Warhead@FireWave: FireCluster
-		Delay: 5
-		Weapon: FlameInfection
-		RandomClusterCount: 1
-		Dimensions: 3,3
-		Footprint: xxx xxx xxx
-		ValidTargets: Soil, Metal, Stone, Concrete, Meat
-		InvalidTargets: Water, Inpassable, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:

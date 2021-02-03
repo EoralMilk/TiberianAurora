@@ -57,7 +57,6 @@ APBazooka:
 		HorizontalRateOfTurn: 83
 		VerticalRateOfTurn: 142
 		RangeLimit: 10c512
-		ContrailColor: D8D8FF
 		CruiseAltitude: 3c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 5000
