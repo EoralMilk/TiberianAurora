@@ -424,7 +424,7 @@ OrcaAGMissiles:
 		MaximumLaunchAngle: 0
 		TerrainHeightAware: true
 		AllowSnapping: false
-		CruiseAltitude: 0
+		CruiseAltitude: 5c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c325
 		Damage: 1200
