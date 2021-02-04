@@ -831,18 +831,23 @@ Actors:
 	Actor313: catm-f
 		Owner: Neutral
 		Location: 129,-28
+		Health: 27
 	Actor314: camf
 		Owner: Neutral
 		Location: 133,-29
+		Health: 87
 	Actor315: cagy-f
 		Owner: Neutral
 		Location: 124,-30
+		Health: 72
 	Actor316: cahos5-f
 		Owner: Neutral
 		Location: 129,-33
+		Health: 76
 	Actor318: cahos4
 		Owner: Neutral
 		Location: 136,-25
+		Health: 16
 	Actor306: cahos3-f
 		Owner: Neutral
 		Location: 103,-1
@@ -876,9 +881,32 @@ Actors:
 	Actor325: cahos3-f
 		Owner: Neutral
 		Location: 133,-25
+		Health: 18
 	Actor326: cahos7
 		Owner: Neutral
 		Location: 132,-23
+		Health: 67
+	Actor327: tibtre02
+		Owner: Neutral
+		Location: 89,-49
+	Actor328: tibtre03
+		Owner: Neutral
+		Location: 166,-9
+	Actor329: cahos2-ruins
+		Owner: Neutral
+		Location: 131,-10
+	Actor330: cahos2-f-ruins
+		Owner: Neutral
+		Location: 110,-19
+	Actor331: cahos3-f-ruins
+		Owner: Neutral
+		Location: 126,1
+	Actor332: cahos1-ruins
+		Owner: Neutral
+		Location: 132,-3
+	Actor333: cahos4-ruins
+		Owner: Neutral
+		Location: 132,1
 
 Rules:
 	World:
