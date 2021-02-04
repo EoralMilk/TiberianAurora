@@ -324,10 +324,7 @@ HMG:
 	AfterFireSoundDelay: 2
 	AfterFireSound: Shells_falls.wav
 	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 	Warhead@1Dam: SpreadDamage
 		Damage: 3000
 		Spread: 0c128
@@ -491,10 +488,7 @@ A10Vulcan:
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 A10Napalm:
 	Inherits@WarheadFire: ^Fire_g3

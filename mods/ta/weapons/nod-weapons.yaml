@@ -361,10 +361,7 @@ HeliAGGun:
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 HeliAAGun:
 	Inherits: HeliAGGun
@@ -429,10 +426,7 @@ AC130Vulcan:
 			Rocket: 70
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@Eff_HitMetal: CreateEffect
-		Explosions: piff
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
-		ValidTargets: Metal
-		InvalidTargets: Soil, Stone, Concrete, Meat, Water
 
 AC130CannonFake:
 	ReloadDelay: 25
