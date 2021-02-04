@@ -23,7 +23,7 @@ grenader:
 	Health:
 		HP: 7000
 	Passenger:
-		PipType: Red
+		CustomPipType: yellow
 	RevealsShroud:
 		Range: 7c0
 	AttackFrontal:
@@ -73,7 +73,7 @@ sniper:
 	Health:
 		HP: 6500
 	Passenger:
-		PipType: Blue
+		CustomPipType: red
 	RevealsShroud:
 		Range: 7c0
 	AttackFrontal:

@@ -8,7 +8,6 @@ GAU-3:
 	Range: 4c512
 	Report: chain_shot.wav
 	Projectile: BulletAS2TA
-		ContrailLength: 5
 		ContrailWidth: 10
 		ContrailColor: FFD860
 		Inaccuracy: 400

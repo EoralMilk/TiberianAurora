@@ -893,6 +893,7 @@ cameo-chevron:
 		AddExtension: false
 
 pips:
+	Defaults:
 	medic:
 		Start: 6
 	groups: pipsra #TODO: backfall to RA asset
@@ -928,6 +929,21 @@ pips:
 		Length: *
 		Tick: 300
 		Offset: 6, -2
+	pip-crew-emtpy:
+		Start: 6
+	pip-crew-green:
+		Start: 7
+	pip-crew-yellow:
+		Start: 8
+	pip-crew-gray:
+		Start: 9
+	pip-crew-red:
+		Start: 10
+	pip-crew-blue:
+		Start: 11
+
+
+
 
 chrono:
 	warpin: warpin

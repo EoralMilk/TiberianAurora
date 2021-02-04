@@ -1,6 +1,7 @@
 
 transport:
 	Inherits: ^Helicopter
+	Inherits@WithCargoPips: ^WithCargoPips
 	Valued:
 		Cost: 800
 	Tooltip:

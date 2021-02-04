@@ -23,7 +23,7 @@ mngunner:
 	Health:
 		HP: 7000
 	Passenger:
-		PipType: Gray
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -79,7 +79,7 @@ bzkier:
 		Voice: Move
 		Locomotor: foot
 	Passenger:
-		PipType: Blue
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -148,7 +148,7 @@ eng:
 	Health:
 		HP: 5700
 	Passenger:
-		PipType: Yellow
+		CustomPipType: blue
 	EngineerRepair:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired

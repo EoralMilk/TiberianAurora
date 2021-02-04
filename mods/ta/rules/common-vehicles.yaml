@@ -53,6 +53,7 @@ mcv.colorpicker:
 
 harvester:
 	Inherits: ^SpiritVehicle
+	Inherits@WithHarvesterPips: ^WithHarvesterPips
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10

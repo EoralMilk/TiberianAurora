@@ -51,12 +51,12 @@ apache:
 		AttackType: Hover
 		Armaments: primary, secondary, fake, casing
 	AmmoPool@real:
-		Ammo: 25
-		PipCount: 5
+		Ammo: 1
+		PipCount: 0
 		AmmoCondition: ammo
 		Armaments: primary,secondary
 	ReloadAmmoPool@real:
-		Delay: 4
+		Delay: 3
 		Count: 1
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow

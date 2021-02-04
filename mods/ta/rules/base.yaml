@@ -404,6 +404,7 @@
 		Voice: Move
 		CargoType: Vehicle
 		Weight: 3
+		CustomPipType: gray
 	HiddenUnderFog:
 	WithTextControlGroupDecoration:
 	ActorLostNotification:
@@ -830,6 +831,7 @@
 	Passenger:
 		Voice: Move
 		CargoType: Infantry
+		CustomPipType: gray
 	HiddenUnderFog:
 	ActorLostNotification:
 	ProximityCaptor:
@@ -1082,3 +1084,56 @@
 		RandomFacing: True
 	ExternalCondition@smoketrail:
 		Condition: smoketrail
+
+
+^WithCargoPips:
+	WithCargoPipsDecoration:
+		FullSequence: pip-crew-gray
+		EmptySequence: pip-crew-emtpy
+		Position: BottomLeft
+		Palette: pips
+		PipStride: 6,0
+		Margin: 5, 8
+		RequiresSelection: true
+		CustomPipSequences:
+			green: pip-crew-green
+			blue: pip-crew-blue
+			yellow: pip-crew-yellow
+			red: pip-crew-red
+			gray: pip-crew-gray
+
+^WithHarvesterPips:
+	WithHarvesterPipsDecoration:
+		PipCount: 10
+		PipStride: 5,0
+		Palette: pips
+		Margin: 5, -8
+		RequiresSelection: true
+		ResourceSequences: 
+			Gems: pip-blue
+
+^WithResourceStoragePips:
+	WithResourceStoragePipsDecoration:
+		PipCount: 10
+		Palette: pips
+		EmptySequence: pip-empty-building
+		FullSequence: pip-green-building
+		Position: TopLeft
+		RequiresSelection: true
+		Margin: 16, 1
+		PipStride: 4, -2
+		CustomPipSequences:
+			red: pip-red-building
+			green: pip-green-building
+			yellow: pip-yellow-building
+			blue: pip-blue-building
+			gray: pip-gray-building
+
+^WithAmmoPips:
+	WithAmmoPipsDecoration:
+		FullSequence: pip-ammo
+		EmptySequence: pip-ammoempty
+		Palette: pips
+		PipStride: 6,0
+		Margin: 5, 8
+		RequiresSelection: true

@@ -4,6 +4,7 @@ orcafighter:
 	Inherits: ^Helicopter
 	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@WithAmmoPips: ^WithAmmoPips
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -46,9 +47,12 @@ orcafighter:
 		PersistentTargeting: false
 		AttackType: Hover
 	AmmoPool:
-		Ammo: 16
-		PipCount: 2
+		Ammo: 6
+		PipCount: 6
 		AmmoCondition: ammo
+	ReloadAmmoPool:
+		Delay: 60
+		Count: 2
 	SpawnActorOnDeath:
 		Actor: orcafighter.Husk
 	WithFacingSpriteBody@hover-Shadow:
@@ -71,9 +75,6 @@ orcafighter:
 	RenderSprites:
 		Image: g_orca
 		PlayerPalette: g_orca
-	ReloadAmmoPool:
-		Delay: 120
-		Count: 8
 	Selectable:
 		Bounds: 68, 56, 0, -7
 

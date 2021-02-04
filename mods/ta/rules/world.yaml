@@ -118,65 +118,6 @@
 		Name: Random
 		InternalName: Random
 		RandomFactionMembers: nod, gdi
-		# Side: Nod/GDI
-		Description: 随机选择Nod或者是GDI
-	# Faction@allies:
-	# 	Name: Allies
-	# 	InternalName: random-allies
-	# 	RandomFactionMembers: america, germany, england, france, korea
-	# 	Side: Randoms
-	# 	Description: Random Allied Country\nA random Allied country will be chosen when the game starts.
-	# Faction@soviets:
-	# 	Name: Soviets
-	# 	InternalName: random-soviets
-	# 	RandomFactionMembers: cuba, libya, iraq, russia
-	# 	Side: Randoms
-	# 	Description: Random Soviet Country\nA random Soviet country will be chosen when the game starts.
-	# Faction@1:
-	# 	Name: America
-	# 	InternalName: america
-	# 	Side: Allies
-	# 	Description: America\nSpecial Ability: Paratroopers
-	# Faction@2:
-	# 	Name: Germany
-	# 	InternalName: germany
-	# 	Side: Allies
-	# 	Description: Germany\nSpecial Vehicle: Tank Destroyer
-	# Faction@3:
-	# 	Name: England
-	# 	InternalName: england
-	# 	Side: Allies
-	# 	Description: England\nSpecial Infantry: Sniper
-	# Faction@4:
-	# 	Name: France
-	# 	InternalName: france
-	# 	Side: Allies
-	# 	Description: France\nSpecial Building: Grand Cannon
-	# Faction@5:
-	# 	Name: Korea
-	# 	InternalName: korea
-	# 	Side: Allies
-	# 	Description: Korea\nSpecial Aircraft: Black Eagle
-	# Faction@6:
-	# 	Name: Cuba
-	# 	InternalName: cuba
-	# 	Side: Soviets
-	# 	Description: Cuba\nSpecial Infantry: Terrorist
-	# Faction@7:
-	# 	Name: Libya
-	# 	InternalName: libya
-	# 	Side: Soviets
-	# 	Description: Libya\nSpecial Vehicle: Demolition Truck
-	# Faction@8:
-	# 	Name: Iraq
-	# 	InternalName: iraq
-	# 	Side: Soviets
-	# 	Description: Iraq\nSpecial Infantry: Desolator
-	# Faction@9:
-	# 	Name: Russia
-	# 	InternalName: russia
-	# 	Side: Soviets
-	# 	Description: Russia\nSpecial Vehicle: Tesla Tank
 	Faction@gdi:
 		Name: GDI
 		InternalName: gdi
@@ -196,6 +137,7 @@
 		Type: Ore
 		Name: 泰伯利亚晶体
 		PipColor: Green
+		CustomPipType: green
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Ore
@@ -209,6 +151,7 @@
 		Type: Gems
 		Name: 宝石矿
 		PipColor: Blue
+		CustomPipType: blue
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems

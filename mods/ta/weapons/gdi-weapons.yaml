@@ -397,20 +397,20 @@ TowerAAMissile:
 
 
 OrcaAGMissiles:
-	Inherits@WarheadEff: ^Blast_WarheadEff_1
+	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
-	Range: 5c512
+	Range: 6c0
 	Burst: 2
-	BurstDelays: 0
-	ReloadDelay: 2
+	BurstDelays: 5
+	ReloadDelay: 15
 	Report: bpatatta.wav
 	Projectile: Missile
-		Arm: 4
-		Speed: 280
-		Acceleration: 8
+		Arm: 2
+		Speed: 330
+		Acceleration: 12
 		Inaccuracy: 400
-		RangeLimit: 10c512
-		ContrailLength: 8
+		RangeLimit: 14c512
+		ContrailLength: 11
 		ContrailWidth: 25
 		ContrailColor: FFFFB1
 		Blockable: false
@@ -425,9 +425,13 @@ OrcaAGMissiles:
 		TerrainHeightAware: true
 		AllowSnapping: false
 		CruiseAltitude: 5c0
+		TrailImage: mislflash3
+		TrailPalette: gray_alpha80
+		TrailInterval: 0
+		TrailDelay: 0
 	Warhead@1Dam: SpreadDamage
-		Spread: 0c325
-		Damage: 1200
+		Spread: 0c428
+		Damage: 3200
 		Versus:
 			None: 25
 			Flak: 25

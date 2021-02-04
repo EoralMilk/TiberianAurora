@@ -96,6 +96,7 @@ LightTankCannonAP:
 	Report: gexpshaa.wav
 	Projectile: BulletAS2TA
 		Speed: 1150
+		ContrailLength: 4
 	Warhead@1Dam: SpreadDamage
 		Damage: 4000
 		Versus:
@@ -338,7 +339,7 @@ HeliAGGun:
 	ValidTargets: Ground, Water
 	ReloadDelay: 1
 	Report: vulcan_shot.wav
-	Range: 5c640
+	Range: 6c128
 	Projectile: BulletAS2TA
 		Inaccuracy: 350
 		Speed: 1100

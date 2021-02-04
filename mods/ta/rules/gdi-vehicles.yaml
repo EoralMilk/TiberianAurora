@@ -58,6 +58,7 @@ gapc:
 	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@WithCargoPips: ^WithCargoPips
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30

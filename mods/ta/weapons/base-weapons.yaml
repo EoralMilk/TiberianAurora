@@ -58,7 +58,7 @@
 ^CommonCannon:
 	Projectile: BulletAS2TA
 		Blockable: true
-		ContrailLength: 8
+		ContrailLength: 5
 		ContrailWidth: 15
 		ContrailColor: FFD860
 		ContrailDelay: 0
@@ -74,7 +74,7 @@
 	ReloadDelay: 20
 	Range: 4c0
 	Projectile: BulletAS2TA
-		ContrailLength: 5
+		ContrailLength: 2
 		ContrailWidth: 10
 		ContrailColor: FFD860
 		ContrailDelay: 0

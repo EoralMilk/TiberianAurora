@@ -176,6 +176,7 @@ advpwr:
 refinery:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x4Shape
+	Inherits@WithResourceStoragePips: ^WithResourceStoragePips
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -198,8 +199,10 @@ refinery:
 		Amount: -40
 	StoresResources:
 		PipColor: Green
-		PipCount: 10
+		PipCount: 20
 		Capacity: 1000
+	WithResourceStoragePipsDecoration:
+		PipCount: 20
 	Refinery:
 		ShowTicks: True
 		TickLifetime: 30
@@ -510,6 +513,7 @@ repairdepot:
 silo:
 	Inherits: ^SupportBuilding
 	Inherits@shape: ^2x2Shape
+	Inherits@WithResourceStoragePips: ^WithResourceStoragePips
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 10

@@ -23,7 +23,7 @@ flamet:
 	Health:
 		HP: 13000
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -78,7 +78,7 @@ chemict:
 	Health:
 		HP: 15000
 	Passenger:
-		PipType: Green
+		CustomPipType: red
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
