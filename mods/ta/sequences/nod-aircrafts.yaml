@@ -10,7 +10,7 @@ n_apache:
 	shadow:
 		Start: 32
 		Facings: -32
-		ZOffset: -15
+		ZOffset: -25
 	rotor: apache-rotor
 		Length: 10
 		Facings: -32
@@ -37,6 +37,7 @@ n_c130:
 	shadow:
 		Start: 64
 		Facings: -64
+		ZOffset: -35
 	screw: n_c130-screw
 		Facings: 64
 		Length: 5
