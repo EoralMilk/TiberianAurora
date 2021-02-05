@@ -623,6 +623,12 @@
 		Filename: c_tm-f.pal
 		ShadowIndex: 1
 
+	PaletteFromFile@c_st:
+		Name: c_st
+		Filename: c_st.pal
+		ShadowIndex: 1
+
+
 	# Civil Prop
 
 	PaletteFromFile@c_dh:

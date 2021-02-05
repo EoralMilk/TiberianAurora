@@ -35,12 +35,6 @@
 		PlayerExperience: 25
 		RepairingNotification: Repairing
 	EngineerRepairable:
-	SpawnActorsOnSell@allies:
-		ActorTypes: e1, e1, e1
-		Factions: america, germany, england, france, korea
-	SpawnActorsOnSell@soviets:
-		ActorTypes: e2, e2, e2, e2
-		Factions: cuba, libya, iraq, russia
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	CaptureNotification:
@@ -57,7 +51,7 @@
 	WithBuildingRepairDecoration:
 		Image: allyrepair
 		Sequence: repair
-		ReferencePoint: Center
+		Position: Center
 		Palette: mouse
 	CaptureManager:
 	Capturable:

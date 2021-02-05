@@ -791,7 +791,7 @@ ShellCasingDebris:
 		Explosions: large_watersplash
 		ImpactSounds: gexpwasa.wav
 	Warhead@EffSmu: LeaveSmudge
-		SmudgeType: MediumCrater
+		SmudgeType: MediumCrater, MediumScorch
 	Warhead@Spark: FireShrapnel
 		Amount: 3
 	Warhead@Smoke: FireShrapnel
@@ -826,7 +826,7 @@ ShellCasingDebris:
 		ExplosionPalette: exp_fireunit
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@EffSmu: LeaveSmudge
-		SmudgeType: LargeCrater
+		SmudgeType: LargeScorch
 	Warhead@Spark: FireShrapnel
 		Amount: 5
 	Warhead@Smoke: FireShrapnel
@@ -861,7 +861,7 @@ ShellCasingDebris:
 		ExplosionPalette: exp_midunit
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@EffSmu: LeaveSmudge
-		SmudgeType: LargeCrater
+		SmudgeType: LargeCrater, MediumScorch
 	Warhead@Spark: FireShrapnel
 		Amount: 5
 	Warhead@Smoke: FireShrapnel

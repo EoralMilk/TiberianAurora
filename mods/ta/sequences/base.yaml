@@ -1,7 +1,7 @@
 
 ^CivBuilding:
 	Defaults:
-		Offset: 0, 0, 60
+		Offset: 0, 0, 5
 		UseTilesetCode: false
 	idle:
 		ShadowStart: 3
