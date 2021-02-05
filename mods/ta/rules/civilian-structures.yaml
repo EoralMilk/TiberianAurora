@@ -733,12 +733,55 @@ cast:
 		Image: c_st
 		Palette: c_st
 	SpawnActorOnDeath:
-		Actor: cast-ruins
+		Actor: cast-trans
+		SkipMakeAnimations: false
 		Offset: 0, -1
+	Explodes:
+		Type: Footprint
+		Weapon: TowerTrans
+		EmptyWeapon: TowerTrans
+
+cast-trans:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Inherits@Ruins: ^CivRuins
+	Building:
+		Footprint: __ x_
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 半倒的信号塔
+	IsometricSelectable:
+		Height: 48
+	Health:
+		HP: 9999900
+	WithSpriteBody@Shadow:
+		Sequence: trans-shadow
+		Name: shadow
+		ForceToGround: true
+	WithSpriteBody:
+		Sequence: trans
+	RenderSprites:
+		Image: c_st
+		Palette: c_st
+	SpawnActorOnDeath:
+		Actor: cast-ruins
+		SkipMakeAnimations: false
+		Offset: 0, 0
 	Explodes:
 		Type: Footprint
 		Weapon: TowerDown
 		EmptyWeapon: TowerDown
+	WithMakeAnimation@shadow:
+		Condition: build-incomplete
+		Sequence: down-1-shadow
+		BodyNames: shadow
+	WithMakeAnimation:
+		Condition: build-incomplete
+		Sequence: down-1
+	KillsSelf:
+		RequiresCondition: !build-incomplete
+	MapEditorData:
+		Categories: temporary
 
 cast-ruins:
 	Inherits: cast
@@ -758,5 +801,12 @@ cast-ruins:
 	IsometricSelectable:
 		Height: 48
 	Health:
-		HP: 200000
+		HP: 250000
 	-ExplosionOnDamageTransition:
+	WithMakeAnimation@shadow:
+		Condition: build-incomplete
+		Sequence: down-2-shadow
+		BodyNames: shadow
+	WithMakeAnimation:
+		Condition: build-incomplete
+		Sequence: down-2

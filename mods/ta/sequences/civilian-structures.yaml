@@ -95,6 +95,7 @@ c_crch:
 c_st:
 	Defaults:
 		Offset: 0, 0, 5
+		ZOffset: 128
 		UseTilesetCode: false
 	idle:
 	damaged-idle:
@@ -112,6 +113,28 @@ c_st:
 		Start: 5
 		Offset: -30, 0, 5
 		ZOffset: 256
+	down-1: c_st-down
+		Length: 25
+		Offset: -30, 0, 5
+	down-1-shadow: c_st-down
+		Length: 25
+		Offset: -30, 0, 5
+		Start: 30
+	trans: c_st-down
+		Offset: -30, 0, 5
+		Start: 24
+	trans-shadow: c_st-down
+		Start: 54
+		Offset: -30, 0, 5
+	down-2: c_st-down
+		Start: 24
+		Length: 5
+		Offset: -30, 0, 5
+	down-2-shadow: c_st-down
+		Start: 54
+		Length: 5
+		Offset: -30, 0, 5
+
 
 c_hos1-f:
 	Inherits: ^CivBuilding

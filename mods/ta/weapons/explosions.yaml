@@ -353,7 +353,23 @@ CivBuildingExplode:
 		DamageTypes: Prone50Percent, TriggerProne, FlameDeath
 	-Warhead@Flash:
 
+TowerTrans:
+	Inherits: BuildingExplode
+	Warhead@3x3: FireCluster
+		Weapon: TowerSnap
+		RandomClusterCount: 0
+		Dimensions: 1,1
+		Footprint: X
+		ValidTargets: Ground, Water, Air
 
+TowerSnap:
+	Inherits@WarheadEff: ^exp_midunit_WarheadEff
+	Projectile: BulletAS2TA
+		Speed: 10000
+		LaunchAngle: 256
+		Blockable: false
+		ZOffset: 4096
+		AirburstAltitude: 2c0
 
 TowerDown:
 	Inherits: BuildingExplode
@@ -371,7 +387,7 @@ TowerCrush:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c256
-		Damage: 129000
+		Damage: 100000
 		Versus:
 			None: 100
 			Flak: 100
