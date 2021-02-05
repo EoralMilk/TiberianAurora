@@ -10,6 +10,10 @@ n_apache:
 	shadow:
 		Start: 32
 		Facings: -32
+		ZOffset: 128
+	shadow-ground:
+		Start: 32
+		Facings: -32
 		ZOffset: -25
 	rotor: apache-rotor
 		Length: 10

@@ -36,6 +36,10 @@
 		Filename: palette.pal
 		AllowModifiers: false
 		ShadowIndex: 4
+	PaletteFromPaletteWithAlpha@pips80alpha:
+		Name: pips80alpha
+		BasePalette: pips
+		Alpha: 0.8
 	PaletteFromFile@ra:
 		Name: ra
 		Filename: palette.pal

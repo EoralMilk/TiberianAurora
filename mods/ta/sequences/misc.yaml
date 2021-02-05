@@ -942,7 +942,19 @@ pips:
 	pip-crew-blue:
 		Start: 11
 
-
+profession:
+	Defaults:
+	ammo:
+	grenade:
+		Start: 1
+	rocket:
+		Start: 2
+	shovel:
+		Start: 3
+	flamethrower:
+		Start: 4
+	chemistry:
+		Start: 5
 
 
 chrono:

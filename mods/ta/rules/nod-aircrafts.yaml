@@ -58,9 +58,15 @@ apache:
 	ReloadAmmoPool@real:
 		Delay: 3
 		Count: 1
+	WithFacingSpriteBody@GroundShadow:
+		Sequence: shadow-ground
+		Name: shadow-ground
+		RequiresCondition: !airborne
+		ForceToGround: true
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow
 		Name: shadow
+		RequiresCondition: airborne
 		ForceToGround: true
 	WithFacingSpriteBody:
 	WithFacingSpriteBody@Rotor:

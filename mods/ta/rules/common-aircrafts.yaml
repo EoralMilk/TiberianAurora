@@ -25,10 +25,16 @@ transport:
 	RevealsShroud:
 		Range: 10c0
 		Type: GroundPosition
+	WithFacingSpriteBody@GroundShadow:
+		Sequence: shadow-ground
+		Name: shadow-ground
+		ForceToGround: true
+		RequiresCondition: !airborne
 	WithFacingSpriteBody@Shadow:
 		Sequence: shadow
 		Name: shadow
 		ForceToGround: true
+		RequiresCondition: airborne
 	WithFacingSpriteBody:
 	WithIdleOverlay@ROTOR1AIR:
 		Offset: 716,0,1360

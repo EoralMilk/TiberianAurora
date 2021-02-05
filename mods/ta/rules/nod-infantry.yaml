@@ -3,6 +3,7 @@ flamet:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.nod
@@ -51,11 +52,15 @@ flamet:
 		EmptyWeapon: FlameExplosion
 		Chance: 66
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
+	WithDecoration@Profession:
+		Sequence: flamethrower
+
 
 chemict:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.nod, ntpl
@@ -106,3 +111,5 @@ chemict:
 		EmptyWeapon: ChamExplosion
 		Chance: 75
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
+	WithDecoration@Profession:
+		Sequence: chemistry

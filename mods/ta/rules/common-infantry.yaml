@@ -3,6 +3,7 @@ mngunner:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.any
@@ -54,11 +55,14 @@ mngunner:
 			gdi: mnguner-g
 			nod: mnguner
 		PlayerPalette: green_infantry
+	WithDecoration@Profession:
+		Margin: -12, 10
 
 bzkier:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.any
@@ -94,7 +98,6 @@ bzkier:
 		LocalOffset: 251,70,1024
 		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
-
 	AmmoPool@misl:
 		Ammo: 1
 		PipCount: 0
@@ -103,7 +106,6 @@ bzkier:
 	ReloadAmmoPool@misl:
 		Delay: 50
 		Count: 1
-
 	WithMuzzleOverlay:
 	TakeCover:
 		SpeedModifier: 50
@@ -122,10 +124,14 @@ bzkier:
 			gdi: bzkier-g
 			nod: bzkier-n
 		PlayerPalette: green_infantry
+	WithDecoration@Profession:
+		Sequence: rocket
+		Margin: -7, 10
 
 eng:
 	Inherits: ^CommonInfantry
 	Inherits@2: ^Parachutable
+	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.any
@@ -171,3 +177,6 @@ eng:
 		DeathSequencePalette: engineer
 	WithDeathAnimation@effect:
 		DeathSequencePalette: engineer
+	WithDecoration@Profession:
+		Sequence: shovel
+		Margin: -7, 10

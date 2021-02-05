@@ -3,6 +3,7 @@ grenader:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.gdi
@@ -47,12 +48,16 @@ grenader:
 		EmptyWeapon: GrdExplosion
 		Chance: 50
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
+	WithDecoration@Profession:
+		Sequence: grenade
+		Margin: -8, 10
 
 
 sniper:
 	Inherits@1: ^CommonInfantry
 	Inherits@2: ^Parachutable
 	Inherits@AUTOTARGET: ^AutoTargetInfantry
+	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
 		Prerequisites: none

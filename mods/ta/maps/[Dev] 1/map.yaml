@@ -485,9 +485,6 @@ Actors:
 	Actor167: tree10
 		Location: 129,-9
 		Owner: Neutral
-	Actor168: tibtre01
-		Location: 132,-19
-		Owner: Neutral
 	Actor169: tibtre01
 		Location: 123,-22
 		Owner: Neutral
@@ -907,6 +904,24 @@ Actors:
 	Actor333: cahos4-ruins
 		Owner: Neutral
 		Location: 132,1
+	Actor334: tibtre02
+		Owner: Neutral
+		Location: 62,-19
+	Actor335: tibtre03
+		Owner: Neutral
+		Location: 83,53
+	Actor336: tibtre02
+		Owner: Neutral
+		Location: 135,-26
+	Actor337: tibtre02
+		Owner: Neutral
+		Location: 132,-19
+	Actor338: tibtre01
+		Owner: Neutral
+		Location: 105,5
+	Actor339: tibtre02
+		Owner: Neutral
+		Location: 111,-5
 
 Rules:
 	World:

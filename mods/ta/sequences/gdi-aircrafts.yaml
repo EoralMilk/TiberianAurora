@@ -16,18 +16,27 @@ g_orca:
 	Defaults: 
 		Offset: 0,0,0
 		UseTilesetCode: false
+	ground:
+		Length: 3
+		Facings: -32
+		ZOffset: 5
 	hover:
 		Length: 3
 		Facings: -32
+		ZOffset: 622
 	move: g_orca-move
 		Length: 3
 		Facings: -32
+		ZOffset: 622
+	ground-shadow: g_orca-shadow
+		Facings: -32
+		ZOffset: -15
 	hover-shadow: g_orca-shadow
 		Facings: -32
-		ZOffset: -15
+		ZOffset: 512
 	move-shadow: g_orca-move-shadow
 		Facings: -32
-		ZOffset: -15
+		ZOffset: 512
 	icon: orca_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

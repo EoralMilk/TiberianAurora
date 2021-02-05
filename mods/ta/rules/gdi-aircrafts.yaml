@@ -55,22 +55,33 @@ orcafighter:
 		Count: 2
 	SpawnActorOnDeath:
 		Actor: orcafighter.Husk
+	WithFacingSpriteBody@ground-Shadow:
+		Sequence: ground-shadow
+		Name: ground-shadow
+		ForceToGround: true
+		RequiresCondition: !airborne
 	WithFacingSpriteBody@hover-Shadow:
 		Sequence: hover-shadow
 		Name: hover-shadow
 		ForceToGround: true
-		RequiresCondition: !moving
+		RequiresCondition: !moving && airborne
 	WithFacingSpriteBody@move-Shadow:
 		Sequence: move-shadow
 		Name: move-shadow
 		ForceToGround: true
-		RequiresCondition: moving
+		RequiresCondition: moving && airborne
 	WithFacingSpriteBody:
+		Sequence: ground
+		Name: body-ground
+		RequiresCondition: !airborne
+	WithFacingSpriteBody@body-air:
 		Sequence: hover
-		Name: body
+		Name: body-air
+		RequiresCondition: airborne
 	WithMoveAnimation:
-		Body: body
+		Body: body-air
 		MoveSequence: move
+		RequiresCondition: airborne
 	SelectionDecorations:
 	RenderSprites:
 		Image: g_orca

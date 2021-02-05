@@ -11,6 +11,10 @@ n_trans:
 		Facings: -32
 	shadow:
 		Start: 32
+		ZOffset: 128
+		Facings: -32
+	shadow-ground:
+		Start: 32
 		ZOffset: -15
 		Facings: -32
 	rotor-f: transrotor-nm

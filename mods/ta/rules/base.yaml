@@ -1137,3 +1137,13 @@
 		PipStride: 6,0
 		Margin: 5, 8
 		RequiresSelection: true
+
+^WithProfessionDecoration:
+	WithDecoration@Profession:
+		Image: profession
+		Sequence: ammo
+		Palette: pips80alpha
+		Margin: -15, 10
+		Position: TopRight
+		ZOffset: 256
+		RequiresSelection: true

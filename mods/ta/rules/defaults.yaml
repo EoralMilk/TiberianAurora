@@ -207,7 +207,7 @@
 		Modifier: 75
 	ChangesHealth@ELITE:
 		Step: 10
-		Delay: 100
+		Delay: 60
 		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: rank-elite
@@ -218,14 +218,16 @@
 		Image: rank
 		Sequence: veteran
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Margin: 6, 7
+		Position: BottomRight
 		RequiresCondition: rank-veteran && !rank-elite
 		ZOffset: 256
 	WithDecoration@ELITE:
 		Image: rank
 		Sequence: elite
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Margin: 6, 7
+		Position: BottomRight
 		RequiresCondition: rank-elite
 		ZOffset: 256
 
