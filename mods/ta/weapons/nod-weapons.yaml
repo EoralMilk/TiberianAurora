@@ -203,7 +203,7 @@ HowitzerCannonHE:
 
 Howitzer-Casing:
 	Inherits: ^ShellCasing
-	ReloadDelay: 120
+	ReloadDelay: 90
 	Range: 12c256
 	MinRange: 4c256
 	ValidTargets: Ground, Water
@@ -309,9 +309,9 @@ ObeliskLaser:
 			None: 200
 			Flak: 200
 			Plate: 200
-			Light: 55
-			Medium: 50
-			Heavy: 50
+			Light: 100
+			Medium: 100
+			Heavy: 100
 			Wood: 40
 			Steel: 30
 			Concrete: 12

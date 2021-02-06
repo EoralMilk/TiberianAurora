@@ -764,7 +764,7 @@ cast-trans:
 		Image: c_st
 		Palette: c_st
 	SpawnActorOnDeath:
-		Actor: cast-ruins
+		Actor: cast-trans2
 		SkipMakeAnimations: false
 		Offset: 0, 0
 	Explodes:
@@ -782,6 +782,41 @@ cast-trans:
 		RequiresCondition: !build-incomplete
 	MapEditorData:
 		Categories: temporary
+
+cast-trans2:
+	Inherits: cast
+	Inherits@shape: ^2x2Shape
+	Inherits@Ruins: ^CivRuins
+	Building:
+		Footprint: _x x_
+		Dimensions: 2, 2
+	SpawnActorOnDeath:
+		Actor: cast-ruins
+		SkipMakeAnimations: false
+		Offset: 0, 0
+	WithSpriteBody@Shadow:
+		Sequence: ruins-shadow
+		Name: shadow
+		ForceToGround: true
+	WithSpriteBody:
+	Tooltip:
+		Name: 毁掉的信号塔
+	IsometricSelectable:
+		Height: 48
+	Health:
+		HP: 9999900
+	-ExplosionOnDamageTransition:
+	WithMakeAnimation@shadow:
+		Condition: build-incomplete
+		Sequence: down-2-shadow
+		BodyNames: shadow
+	WithMakeAnimation:
+		Condition: build-incomplete
+		Sequence: down-2
+	KillsSelf:
+		RequiresCondition: !build-incomplete
+	-Explodes:
+
 
 cast-ruins:
 	Inherits: cast
@@ -801,12 +836,38 @@ cast-ruins:
 	IsometricSelectable:
 		Height: 48
 	Health:
-		HP: 250000
+		HP: 50000
 	-ExplosionOnDamageTransition:
-	WithMakeAnimation@shadow:
-		Condition: build-incomplete
-		Sequence: down-2-shadow
-		BodyNames: shadow
-	WithMakeAnimation:
-		Condition: build-incomplete
-		Sequence: down-2
+
+
+xtest:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^1x1Shape
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: X
+	IsometricSelectable:
+		Height: 78
+	Health:
+		HP: 85000
+	RenderSprites:
+		Image: xtest
+
+
+xtest-scale:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^1x1Shape
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Xs
+	IsometricSelectable:
+		Height: 78
+	Health:
+		HP: 85000
+	RenderSprites:
+		Image: xtest
+		Scale: .1

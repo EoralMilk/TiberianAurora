@@ -419,7 +419,6 @@
 		Categories: Vehicle
 	Voiced:
 		VoiceSet: VehicleVoice
-
 	AmbientSound@tank:
 		SoundFiles: tank_rev0.wav
 		Delay: 0
@@ -435,7 +434,6 @@
 		Delay: 0
 		Interval: 0
 		RequiresCondition: wheelmoving
-
 	ExternalCondition@OnFire:
 		Condition: Burning
 	DamagedByTerrain:
@@ -444,10 +442,8 @@
 		DamageInterval: 5
 		DamageTypes: FlameDeath
 		RequiresCondition: Burning
-
 	Targetable@materials:
 		TargetTypes: Metal
-
 	WithFacingSpriteBody:
 	RenderSprites:
 	WithIdleOverlay@OnFire1:
@@ -482,6 +478,7 @@
 		RequiresCondition: parachute
 	AttackTurreted:
 		Voice: Attack
+		Armaments: primary, secondary, casing
 	Turreted:
 		TurnSpeed: 80
 	WithIdleOverlay@OnFire1:
@@ -494,6 +491,7 @@
 	Inherits: ^SpiritVehicle
 	AttackFrontal:
 		Voice: Attack
+		Armaments: primary, secondary, casing
 		AutoTarget:
 	HitShape:
 

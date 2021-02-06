@@ -249,13 +249,15 @@ nhowi:
 	AttackFrontal:
 		TargetFrozenActors: True
 		ForceFireIgnoresActors: True
-	Armament@Casing:
+	Armament:
 		Weapon: HowitzerCannonHE
 		LocalOffset: 843,0,1900
 		MuzzleSequence: muzzle
-	Armament:
+	Armament@Casing:
 		Weapon: Howitzer-Casing
+		Name: casing
 		LocalOffset: -233,0,600
+	ReloadArmamentsBar:
 	WithMuzzleOverlay:
 	RenderSprites:
 		Image: n_howi
@@ -310,7 +312,6 @@ nstltnk:
 		PauseOnCondition: !ammo
 		LocalOffset: 204,31,808, 204,-31,808
 		MuzzleSequence: muzzle
-
 	AmmoPool@misl:
 		Ammo: 2
 		PipCount: 0

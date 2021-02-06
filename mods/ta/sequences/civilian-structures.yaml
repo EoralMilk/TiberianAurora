@@ -173,3 +173,7 @@ c_tav-f:
 
 c_tm-f:
 	Inherits: ^CivBuilding
+
+xtest:
+	idle:
+		ZOffset: 256

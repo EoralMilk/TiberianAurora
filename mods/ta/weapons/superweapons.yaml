@@ -101,7 +101,7 @@ IonCannonMakerUp:
 		LaunchAngle: 256
 		Blockable: false
 		ZOffset: 4096
-		AirburstAltitude: 30c0
+		AirburstAltitude: 40c0
 	Warhead@Maker: FireCluster
 		ImpactActors: false
 		Weapon: IonCannon
@@ -257,87 +257,87 @@ atomic:
 IonCannonStorm:
 	ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm1: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 0
 		Dimensions: 1,1
 		Footprint: X
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm2: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 20
-		RandomClusterCount: 2
+		RandomClusterCount: 1
 		Dimensions: 9,9
 		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm3: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 40
-		RandomClusterCount: 2
+		RandomClusterCount: 1
 		Dimensions: 9,9
 		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm4: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 60
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm5: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 80
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm6: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 100
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm7: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 120
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm8: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 140
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm9: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 160
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm10: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 180
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm11: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 200
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 	Warhead@IonCannonStorm12: FireCluster
-		Weapon: IonCannon
+		Weapon: IonCannonMakerUp
 		Delay: 220
-		RandomClusterCount: 2
-		Dimensions: 9,9
-		Footprint: xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx
+		RandomClusterCount: 1
+		Dimensions: 11,11
+		Footprint: xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx
 		ValidTargets: Ground, Water, Air
 
 

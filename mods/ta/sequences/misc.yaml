@@ -11,6 +11,10 @@ ioncannonmaker:
 	up: bulletsmall
 	down: bulletsmall
 
+ioncannonstorm:
+	up: bulletsmall
+	down: bulletsmall
+
 
 bullet:
 	idle:

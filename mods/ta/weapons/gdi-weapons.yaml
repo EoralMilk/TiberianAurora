@@ -24,8 +24,8 @@ HEGrenade:
 		Versus:
 			None: 100
 			Flak: 90
-			Plate: 70
-			Light: 75
+			Plate: 80
+			Light: 85
 			Medium: 30
 			Heavy: 30
 			Wood: 85

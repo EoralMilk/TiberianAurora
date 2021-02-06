@@ -203,6 +203,7 @@ gmlrs:
 		Weapon: M77Rockets
 		LocalOffset: 27,150,1300, 27,70,1300, 23,120,1350, 27,-150,1300, 27,-70,1300, 23,-120,1350
 		MuzzleSequence: muzzle
+	ReloadArmamentsBar:
 	WithMuzzleOverlay:
 	RenderSprites:
 		Image: g_mlrs

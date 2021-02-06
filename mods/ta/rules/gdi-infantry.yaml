@@ -8,7 +8,7 @@ grenader:
 		Queue: Infantry
 		Prerequisites: ~infantry.gdi
 		BuildPaletteOrder: 10
-		Description: 配备高爆手雷的突击步兵\n阵亡时可能殉爆\n高速移动的目标有概率躲避攻击\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
+		Description: 配备高爆手雷的突击步兵\n阵亡时可能殉爆\n难以命中高速移动的目标\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 160
 	Armor:
@@ -46,7 +46,7 @@ grenader:
 	Explodes:
 		Weapon: GrdExplosion
 		EmptyWeapon: GrdExplosion
-		Chance: 50
+		Chance: 35
 		DeathTypes: ExplosionDeath, BulletDeath, FlameDeath
 	WithDecoration@Profession:
 		Sequence: grenade
