@@ -354,8 +354,8 @@ CivBuildingExplode:
 	-Warhead@Flash:
 
 TowerTrans:
-	Inherits: BuildingExplode
-	Warhead@3x3: FireCluster
+	ValidTargets: Ground, Water, Air, Wall
+	Warhead@1x1: FireCluster
 		Weapon: TowerSnap
 		RandomClusterCount: 0
 		Dimensions: 1,1
@@ -372,7 +372,7 @@ TowerSnap:
 		AirburstAltitude: 2c0
 
 TowerDown:
-	Inherits: BuildingExplode
+	ValidTargets: Ground, Water, Air, Wall
 	Warhead@3x3: FireCluster
 		Weapon: TowerCrush
 		RandomClusterCount: 0
@@ -411,12 +411,6 @@ TowerCrush:
 		Amount: 1
 		ValidTargets: Ground, Water, Air
 		ImpactActors: true
-	Warhead@FireWave: FireCluster
-		Weapon: FlameWave
-		RandomClusterCount: 3
-		Dimensions: 1,1
-		Footprint: xxx xxx xxx
-		ValidTargets: Ground, Water, Air
 
 
 BuildingExplode3x3:

@@ -95,7 +95,7 @@ c_crch:
 c_st:
 	Defaults:
 		Offset: 0, 0, 5
-		ZOffset: 128
+		ZOffset: 386
 		UseTilesetCode: false
 	idle:
 	damaged-idle:
@@ -129,10 +129,12 @@ c_st:
 	down-2: c_st-down
 		Start: 24
 		Length: 5
+		Tick: 70
 		Offset: -30, 0, 5
 	down-2-shadow: c_st-down
 		Start: 54
 		Length: 5
+		Tick: 70
 		Offset: -30, 0, 5
 
 
