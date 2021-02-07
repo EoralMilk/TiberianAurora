@@ -102,6 +102,20 @@ namespace OpenRA.Mods.TA.Projectiles
 		[Desc("Use the Player Palette to render the trail sequence.")]
 		public readonly bool TrailUsePlayerPalette = false;
 
+		[Desc("Image that contains the jet animation")]
+		public readonly string JetImage = null;
+
+		[SequenceReference(nameof(JetImage), allowNullImage: true)]
+		[Desc("Loop a randomly chosen sequence of JetImage from this list while this projectile is moving.")]
+		public readonly string[] JetSequence = { "idle" };
+
+		[PaletteReference(nameof(JetUsePlayerPalette))]
+		[Desc("Palette used to render the jet sequence. ")]
+		public readonly string JetPalette = "effect";
+
+		[Desc("Use the Player Palette to render the jet sequence.")]
+		public readonly bool JetUsePlayerPalette = false;
+
 		public readonly int ContrailLength = 0;
 		public readonly int ContrailZOffset = 2047;
 		public readonly Color ContrailColor = Color.White;
@@ -117,6 +131,7 @@ namespace OpenRA.Mods.TA.Projectiles
 		readonly BulletAS2TAInfo info;
 		readonly ProjectileArgs args;
 		readonly Animation anim;
+		readonly Animation jetanim;
 
 		[Sync]
 		readonly WAngle angle;
@@ -184,6 +199,12 @@ namespace OpenRA.Mods.TA.Projectiles
 				anim.PlayRepeating(info.Sequences.Random(world.SharedRandom));
 			}
 
+			if (!string.IsNullOrEmpty(info.JetImage))
+			{
+				jetanim = new Animation(world, info.JetImage);
+				jetanim.PlayRepeating(info.Sequences.Random(world.SharedRandom));
+			}
+
 			if (info.ContrailLength > 0)
 			{
 				var color = info.ContrailUsePlayerColor ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor;
@@ -215,8 +236,8 @@ namespace OpenRA.Mods.TA.Projectiles
 
 		public void Tick(World world)
 		{
-			if (anim != null)
-				anim.Tick();
+			anim?.Tick();
+			jetanim?.Tick();
 
 			lastPos = pos;
 			pos = WPos.LerpQuadratic(source, target, angle, ticks, length);
@@ -292,22 +313,30 @@ namespace OpenRA.Mods.TA.Projectiles
 			if (info.ContrailLength > 0)
 				yield return contrail;
 
-			if (anim == null || ticks >= length)
-				yield break;
-
 			var world = args.SourceActor.World;
 			if (!world.FogObscures(pos))
 			{
-				if (info.Shadow)
+				if (anim != null)
 				{
-					var dat = world.Map.DistanceAboveTerrain(pos);
-					var shadowPos = pos - new WVec(0, 0, dat.Length);
-					foreach (var r in anim.Render(shadowPos, wr.Palette(info.ShadowPalette)))
+					var palette = wr.Palette(info.Palette + (info.IsPlayerPalette ? args.SourceActor.Owner.InternalName : ""));
+					foreach (var r in anim.Render(pos, palette))
 						yield return r;
+
+					if (info.Shadow)
+					{
+						var dat = world.Map.DistanceAboveTerrain(pos);
+						var shadowPos = pos - new WVec(0, 0, dat.Length);
+						foreach (var r in anim.Render(shadowPos, wr.Palette("shadow")))
+							yield return r;
+					}
 				}
 
-				foreach (var r in anim.Render(pos, wr.Palette(palette)))
-					yield return r;
+				if (jetanim != null)
+				{
+					var palette = wr.Palette(info.JetPalette + (info.JetUsePlayerPalette ? args.SourceActor.Owner.InternalName : ""));
+					foreach (var r in jetanim.Render(pos, palette))
+						yield return r;
+				}
 			}
 		}
 
