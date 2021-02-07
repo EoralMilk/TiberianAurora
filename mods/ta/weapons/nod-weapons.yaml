@@ -127,15 +127,16 @@ Devil'sTongue:
 
 
 DaggerOfNod:
-	Inherits: ^CommonMissile
+	Inherits: ^CommonMissileTA
 	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
 	Range: 6c512
 	# Burst: 2
 	# BurstDelays: 1
 	ReloadDelay: 1 #48
-	Projectile: Missile
-		TrailPalette: redlight
+	Projectile: MissileTA
+		#TrailPalette: redlight
+		JetPalette: redlight
 		ContrailLength: 12
 		ContrailWidth: 40
 		ContrailColor: FFAAAA

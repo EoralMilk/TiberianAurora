@@ -27,6 +27,36 @@
 		TrailInterval: 0
 		TrailDelay: 0
 
+
+^CommonMissileTA:
+	ReloadDelay: 60
+	Range: 12c0
+	Report: bpatatta.wav
+	Projectile: Missile
+		Arm: 4
+		Speed: 280
+		Acceleration: 8
+		Inaccuracy: 400
+		RangeLimit: 10c512
+		ContrailLength: 8
+		ContrailWidth: 25
+		ContrailColor: FFF2CD
+		Blockable: false
+		Gravity: 8
+		Image: dragon2
+		Palette: player
+		Shadow: true
+		VerticalRateOfTurn: 150
+		HorizontalRateOfTurn: 86
+		TerrainHeightAware: true
+		AllowSnapping: true
+		CruiseAltitude: 3c0
+		JetImage: mislflash3
+		JetPalette: gray_alpha70
+		TrailImage: smallsmoke
+		TrailPalette: effect60alpha
+		ExplodeUnderThisAltitude: -2c512 ##Terrain height tolerance
+
 ^CommonAAMissile:
 	Inherits: ^CommonMissile
 	ReloadDelay: 45
