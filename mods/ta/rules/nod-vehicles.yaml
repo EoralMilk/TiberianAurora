@@ -331,12 +331,12 @@ nstltnk:
 	Armament:
 		Weapon: DaggerOfNod
 		PauseOnCondition: !ammo
-		LocalOffset: 204,31,808, 204,-31,808
+		LocalOffset: 204,100,808, 204,-100,808
 		MuzzleSequence: muzzle
 	Armament@AA:
 		Weapon: DaggerOfNodAA
 		PauseOnCondition: !ammo
-		LocalOffset: 204,31,808, 204,-31,808
+		LocalOffset: 204,100,808, 204,-100,808
 		MuzzleSequence: muzzle
 	AmmoPool@misl:
 		Ammo: 2
