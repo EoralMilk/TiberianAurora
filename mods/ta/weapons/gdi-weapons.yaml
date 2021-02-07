@@ -283,10 +283,8 @@ M77Rockets:
 		Image: DRAGON
 		LaunchAngle: 180
 		Blockable: false
-		TrailImage: mislflash
-		TrailPalette: gray_alpha70
-		TrailInterval: 0
-		TrailDelay: 0
+		JetImage: mislflash
+		JetPalette: gray_alpha70
 	Warhead@1Dam: SpreadDamage
 		Damage: 5300
 		Spread: 0c512
