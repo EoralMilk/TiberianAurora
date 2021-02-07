@@ -56,6 +56,13 @@ nbggy:
 		Offset: 230,150,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-160,340
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 468
+			VerticalBottomOffset: 0
+			TopLeft: -212, -422
+			BottomRight: 212, 422
+
 
 ncycle:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -92,7 +99,6 @@ ncycle:
 		LocalOffset: -141,123,720, -141,-123,720
 		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
-
 	AmmoPool@misl:
 		Ammo: 1
 		PipCount: 0
@@ -101,7 +107,6 @@ ncycle:
 	ReloadAmmoPool@misl:
 		Delay: 25
 		Count: 1
-
 	WithMuzzleOverlay:
 	RenderSprites:
 		Image: n_cycle
@@ -117,7 +122,12 @@ ncycle:
 		RequiresCondition: wheelmoving
 	Targetable@materials:
 		TargetTypes: Metal
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 468
+			VerticalBottomOffset: 0
+			TopLeft: -168, -366
+			BottomRight: 168, 366
 
 ntank:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -170,6 +180,12 @@ ntank:
 		Offset: 430,270,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-270,340
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 468
+			VerticalBottomOffset: 0
+			TopLeft: -342, -512
+			BottomRight: 342, 512
 
 nftnk:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -219,7 +235,12 @@ nftnk:
 		Offset: 430,250,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-260,340
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 672
+			VerticalBottomOffset: 0
+			TopLeft: -462, -512
+			BottomRight: 462, 512
 
 nhowi:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -275,7 +296,12 @@ nhowi:
 		Offset: 430,250,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-260,340
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 762
+			VerticalBottomOffset: 0
+			TopLeft: -372, -512
+			BottomRight: 372, 512
 
 nstltnk:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -320,7 +346,6 @@ nstltnk:
 	ReloadAmmoPool@misl:
 		Delay: 48
 		Count: 2
-
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 60
@@ -350,7 +375,12 @@ nstltnk:
 		Offset: 430,250,350
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-260,340
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 544
+			VerticalBottomOffset: 0
+			TopLeft: -396, -512
+			BottomRight: 396, 512
 
 meme_obelisker:
 	Inherits: ^AtkFrontalVehicle

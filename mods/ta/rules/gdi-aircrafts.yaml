@@ -88,7 +88,12 @@ orcafighter:
 		PlayerPalette: g_orca
 	Selectable:
 		Bounds: 68, 56, 0, -7
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 544
+			VerticalBottomOffset: 0
+			TopLeft: -288, -486
+			BottomRight: 288, 526
 
 
 
@@ -213,6 +218,19 @@ a10:
 		AllowUnsuitableCell: true
 	GrantConditionOnMovement:
 		Condition: flying
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 544
+			VerticalBottomOffset: 0
+			TopLeft: -288, -797
+			BottomRight: 288, 797
+	HitShape@wings:
+		Type: Rectangle
+			VerticalTopOffset: 572
+			VerticalBottomOffset: 412
+			TopLeft: -1122, -273
+			BottomRight: 1122, 273
+
 
 a10b:
 	Inherits: a10

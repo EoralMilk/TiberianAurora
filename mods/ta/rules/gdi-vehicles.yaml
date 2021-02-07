@@ -53,6 +53,13 @@ ghumv:
 	# 	Interval: 0
 	Targetable@materials:
 		TargetTypes: Metal
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 512
+			VerticalBottomOffset: 0
+			TopLeft: -212, -423
+			BottomRight: 212, 423
+
 
 gapc:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -116,6 +123,12 @@ gapc:
 		Offset: 440,150,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-130,640
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 544
+			VerticalBottomOffset: 0
+			TopLeft: -322, -488
+			BottomRight: 322, 488
 
 gtank:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -170,6 +183,13 @@ gtank:
 		Offset: 430,250,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-260,340
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 512
+			VerticalBottomOffset: 0
+			TopLeft: -366, -612
+			BottomRight: 366, 612
+
 
 gmlrs:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -221,6 +241,13 @@ gmlrs:
 		Offset: 430,250,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-260,340
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 726
+			VerticalBottomOffset: 0
+			TopLeft: -256, -512
+			BottomRight: 256, 512
+
 
 gmmtnk:
 	Inherits@ParaDrop: ^ParachutableVehicle
@@ -271,7 +298,6 @@ gmmtnk:
 		PauseOnCondition: !mislammo
 		LocalOffset: 20,371,866, 20,-371,866
 		MuzzleSequence: muzzle-2
-
 	AmmoPool@misl:
 		Ammo: 4
 		PipCount: 0
@@ -280,7 +306,6 @@ gmmtnk:
 	ReloadAmmoPool@misl:
 		Delay: 80
 		Count: 4
-
 	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 20
@@ -300,6 +325,13 @@ gmmtnk:
 		Offset: 430,250,550
 	WithIdleOverlay@OnFire3:
 		Offset: 330,-260,340
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 628
+			VerticalBottomOffset: 0
+			TopLeft: -512, -672
+			BottomRight: 512, 672
+
 
 gunboat:
 	Inherits: ^SpiritVehicle

@@ -37,7 +37,14 @@ mcv:
 		PlayerPalette: mcv
 	Voiced:
 		VoiceSet: MCVVoice
+	GrantConditionOnMovement:
+		Condition: trackmoving
 	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 622
+			VerticalBottomOffset: 0
+			TopLeft: -542, -762
+			BottomRight: 542, 812
 
 mcv.colorpicker:
 	Inherits: mcv
@@ -99,6 +106,11 @@ harvester:
 	WithHarvestAnimation:
 	WithDockingAnimation:
 	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 544
+			VerticalBottomOffset: 0
+			TopLeft: -312, -512
+			BottomRight: 312, 512
 	ChangesHealth:
 		Step: 100
 		Delay: 3

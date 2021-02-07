@@ -88,7 +88,12 @@ apache:
 		PlayerPalette: n_apache
 	Selectable:
 		Bounds: 68, 56, 0, -7
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 644
+			VerticalBottomOffset: 0
+			TopLeft: -322, -826
+			BottomRight: 322, 826
 
 
 apache.Husk:
@@ -155,7 +160,6 @@ c130:
 		ChuteSound: sparadra.wav
 	SpawnActorOnDeath:
 		Actor: c130husk
-	HitShape:
 	BodyOrientation:
 		QuantizedFacings: 64
 	QuantizeFacingsFromSequence:
@@ -175,8 +179,18 @@ c130:
 	# 	RequiresCondition: !airborne
 	# 	ZOffset: -1000
 	RejectsOrders:
-
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 882
+			VerticalBottomOffset: 0
+			TopLeft: -512, -2048
+			BottomRight: 512, 2048
+	HitShape@wings:
+		Type: Rectangle
+			VerticalTopOffset: 882
+			VerticalBottomOffset: 512
+			TopLeft: -2578, -488
+			BottomRight: 2578, 488
 
 ac130:
 	Inherits: c130

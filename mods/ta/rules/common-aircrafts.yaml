@@ -72,7 +72,12 @@ transport:
 		Condition: rotormoving
 	Targetable@materials:
 		TargetTypes: Metal
-
+	HitShape:
+		Type: Rectangle
+			VerticalTopOffset: 882
+			VerticalBottomOffset: 0
+			TopLeft: -355, -828
+			BottomRight: 355, 828
 
 transport.Husk:
 	Inherits: ^HelicopterHusk
