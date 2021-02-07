@@ -100,6 +100,7 @@ mnguner:
 		Facings: 8
 		Tick: 40
 		ShadowStart: 280
+	paradrop-shadow: paradrop-shadow
 	icon: miniguner_icon.png
 		UseTilesetCode: false
 	 	AddExtension: false

@@ -121,6 +121,11 @@
 		UseTilesetCode: false
 	paradrop:
 		Facings: -32
+		ZOffset: 256
+	paradrop-shadow:
+		Start: 32
+		ZOffset: 128
+		Facings: -32
 	idle: 
 		Facings: -32
 		ShadowStart: 32
@@ -134,6 +139,7 @@
 ^BasicInfantry:
 	Defaults:
 		Offset: 0, 0, 16
+	paradrop-shadow: paradrop-shadow
 	stand:
 		Facings: 8
 	run:

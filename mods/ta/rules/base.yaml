@@ -245,6 +245,11 @@
 		TargetTypes: Metal
 
 ^Parachutable:
+	WithSpriteBody@Parachute:
+		Name: parachute-shadow
+		ForceToGround: true
+		Sequence: paradrop-shadow
+		RequiresCondition: parachute
 	WithFacingSpriteBody@Parachute:
 		Name: parachute
 		Sequence: paradrop
@@ -282,6 +287,15 @@
 ^ParachutableVehicle:
 	WithFacingSpriteBody:
 		RequiresCondition: !parachute
+	WithParachute:
+		RequiresCondition: parachute
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
+	# WithShadow@Parachute:
+	# 	RequiresCondition: parachute
+	# 	ZOffset: -5
 	WithFacingSpriteBody@Parachute:
 		Name: parachute
 		Sequence: paradrop
@@ -294,12 +308,7 @@
 		WaterCorpseSequence:
 		WaterCorpsePalette:
 		ParachutingCondition: parachute
-	WithParachute:
-		RequiresCondition: parachute
-		Image: parach
-		OpeningSequence: open
-		Sequence: idle
-		ClosingSequence: close
+
 	Targetable:
 		RequiresCondition: !parachute
 	Targetable@airborne:

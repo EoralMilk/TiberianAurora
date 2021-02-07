@@ -357,7 +357,7 @@ hq:
 		SelectTargetSpeechNotification: SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: EnemyPlanesApproaching
-		DropItems: mngunner,bzkier,bzkier,mngunner,nbggy
+		DropItems: mngunner,bzkier,bzkier,mngunner,flamet
 		QuantizedFacings: 8
 		UnitType: ac130
 		DisplayBeacon: True
