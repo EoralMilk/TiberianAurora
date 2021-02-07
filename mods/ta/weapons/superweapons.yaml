@@ -349,29 +349,6 @@ IonCannonStorm:
 		LaunchAngle: 222
 		ZOffset: 1024
 		Inaccuracy: 600
-	# Projectile: Missile
-	# 	Blockable: true
-	# 	Shadow: false
-	# 	CruiseAltitude: 3c0
-	# 	VerticalRateOfTurn: 55
-	# 	HorizontalRateOfTurn: 55
-	# 	MinimumLaunchAngle: 255
-	# 	MaximumLaunchAngle: 255
-	# 	MinimumLaunchSpeed: 170
-	# 	MaximumLaunchSpeed: 170
-	# 	ContrailLength: 8
-	# 	ContrailWidth: 25
-	# 	ContrailColor: FFFFB1
-	# 	Inaccuracy: 400
-	# 	Acceleration: 0
-	# 	Gravity: 10
-	# 	Speed: 170
-	# 	Arm: 1
-	# 	RangeLimit: 30c0
-	# 	ExplodeWhenEmpty: true
-	# 	TerrainHeightAware: true
-	# 	AllowSnapping: true
-	# 	Jammable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 1000
 		Versus:

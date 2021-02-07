@@ -41,7 +41,7 @@ Buggy-Casing:
 	BurstDelays: 4
 	Range: 5c0
 	ValidTargets: Ground, Water
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: true
 
 
@@ -54,7 +54,7 @@ CycleMissile:
 	# Burst: 2
 	# BurstDelays: 4
 	ReloadDelay: 1 #25
-	Projectile: Missile
+	Projectile: MissileTA
 		ContrailLength: 10
 		Arm: 2
 		Speed: 376
@@ -127,7 +127,7 @@ Devil'sTongue:
 
 
 DaggerOfNod:
-	Inherits: ^CommonMissileTA
+	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
 	Range: 6c512
@@ -240,14 +240,14 @@ Turret-Casing:
 	ReloadDelay: 55
 	Range: 7c0
 	ValidTargets: Ground, Water
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: true
 
 RedEye:
 	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	Inherits: ^CommonAAMissile
 	Range: 12c0
-	Projectile: Missile
+	Projectile: MissileTA
 		Speed: 500
 		Arm: 3
 		RangeLimit: 18c512
@@ -379,7 +379,7 @@ HeliGunCasing:
 	ReloadDelay: 1
 	Range: 5c640
 	ValidTargets: Ground, Water, Air
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: false
 
 

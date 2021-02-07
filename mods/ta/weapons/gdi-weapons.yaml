@@ -121,7 +121,7 @@ HumvMG-Casing:
 	BurstDelays: 3
 	Range: 5c128
 	ValidTargets: Ground, Water
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: true
 
 
@@ -158,7 +158,7 @@ APC-Casing:
 	ReloadDelay: 40
 	Range: 5c0
 	ValidTargets: Ground, Water
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: true
 
 
@@ -190,7 +190,7 @@ MTank-Casing:
 	ReloadDelay: 77
 	Range: 5c512
 	ValidTargets: Ground, Water
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: true
 
 
@@ -237,7 +237,7 @@ MammothTuskMissile:
 	# Burst: 4
 	# BurstDelays: 6
 	ReloadDelay: 6 # 80 using ammo pool
-	Projectile: Missile
+	Projectile: MissileTA
 		ContrailLength: 12
 		Arm: 2
 		Speed: 380
@@ -348,7 +348,7 @@ HMG-Casing:
 	BurstDelays: 4
 	Range: 7c0
 	ValidTargets: Ground, Water
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: true
 
 TowerMissile:
@@ -357,7 +357,7 @@ TowerMissile:
 	ValidTargets: Ground, Water
 	Range: 9c512
 	ReloadDelay: 1 # 8 using ammo pool
-	Projectile: Missile
+	Projectile: MissileTA
 		ContrailLength: 12
 		# CruiseAltitude: 5c0
 		Arm: 2
@@ -404,7 +404,7 @@ OrcaAGMissiles:
 	BurstDelays: 5
 	ReloadDelay: 15
 	Report: bpatatta.wav
-	Projectile: Missile
+	Projectile: MissileTA
 		Arm: 2
 		Speed: 330
 		Acceleration: 12
@@ -425,10 +425,10 @@ OrcaAGMissiles:
 		TerrainHeightAware: true
 		AllowSnapping: false
 		CruiseAltitude: 5c0
-		TrailImage: mislflash3
-		TrailPalette: gray_alpha80
-		TrailInterval: 0
-		TrailDelay: 0
+		JetImage: mislflash3
+		JetSequence: idle
+		JetPalette: gray_alpha70
+		ExplodeUnderThisAltitude: -2c512 ##Terrain height tolerance
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c428
 		Damage: 3200
@@ -452,7 +452,7 @@ OrcaAAMissiles:
 	Inherits: OrcaAGMissiles
 	ValidTargets: Air
 	MinRange: 1c256
-	Projectile: Missile
+	Projectile: MissileTA
 		Arm: 0
 		Speed: 350
 	-Warhead@Smoke:
@@ -551,7 +551,7 @@ GunBoatMissile:
 	BurstDelays: 5
 	ReloadDelay: 120
 	Report: gflare.wav
-	Projectile: Missile
+	Projectile: MissileTA
 		ContrailLength: 15
 		Arm: 2
 		Speed: 380

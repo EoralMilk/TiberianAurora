@@ -36,7 +36,7 @@ GAU-Casing:
 	BurstDelays: 3
 	Range: 4c512
 	ValidTargets: Ground, Water
-	Projectile: Missile
+	Projectile: MissileTA
 		Blockable: true
 
 APBazooka:
@@ -47,7 +47,7 @@ APBazooka:
 	Range: 6c0
 	MinRange: 0c512
 	Report: bazooka_shot.wav
-	Projectile: Missile
+	Projectile: MissileTA
 		ContrailLength: 12
 		Arm: 2
 		Speed: 370

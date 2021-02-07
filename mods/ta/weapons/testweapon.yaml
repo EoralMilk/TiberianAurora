@@ -61,7 +61,7 @@ TestMissile:
 	Burst: 2
 	BurstDelays: 0
 	ReloadDelay: 48
-	Projectile: Missile
+	Projectile: MissileTA
 		Arm: 4
 		Speed: 280
 		Acceleration: 8
@@ -119,7 +119,7 @@ VLMisl:
 	Burst: 2
 	BurstDelays: 0
 	ReloadDelay: 48
-	Projectile: Missile
+	Projectile: MissileTA
 		ContrailLength: 12
 		Arm: 2
 		Speed: 400

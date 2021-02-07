@@ -44,7 +44,7 @@ ShellCasingDebris:
 
 ^BulletCasing:
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
-	Projectile: Missile
+	Projectile: MissileTA
 		# Blockable: true
 		# Width: 10000
 		Speed: 1
