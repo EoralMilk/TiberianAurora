@@ -44,17 +44,7 @@ ShellCasingDebris:
 
 ^BulletCasing:
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
-	Projectile: MissileTA
-		# Blockable: true
-		# Width: 10000
-		Speed: 1
-		Inaccuracy: 0
-		VerticalRateOfTurn: 15
-		HorizontalRateOfTurn: 15
-		RangeLimit: 0c1
-		TerrainHeightAware: false
-		AllowSnapping: false
-		CruiseAltitude: 0
+	Projectile: InstantExplode
 	Warhead@SpawnCasing: FireCluster
 		Weapon: CasingDebris
 		RandomClusterCount: 0

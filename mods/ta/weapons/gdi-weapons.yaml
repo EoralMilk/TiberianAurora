@@ -121,8 +121,6 @@ HumvMG-Casing:
 	BurstDelays: 3
 	Range: 5c128
 	ValidTargets: Ground, Water
-	Projectile: MissileTA
-		Blockable: true
 
 
 APCCannon:
@@ -158,8 +156,6 @@ APC-Casing:
 	ReloadDelay: 40
 	Range: 5c0
 	ValidTargets: Ground, Water
-	Projectile: MissileTA
-		Blockable: true
 
 
 MediumTankCannonAP:
@@ -190,8 +186,6 @@ MTank-Casing:
 	ReloadDelay: 77
 	Range: 5c512
 	ValidTargets: Ground, Water
-	Projectile: MissileTA
-		Blockable: true
 
 
 MammothTankCannon:
@@ -348,8 +342,6 @@ HMG-Casing:
 	BurstDelays: 4
 	Range: 7c0
 	ValidTargets: Ground, Water
-	Projectile: MissileTA
-		Blockable: true
 
 TowerMissile:
 	Inherits: ^CommonMissile

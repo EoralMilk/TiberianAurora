@@ -36,8 +36,7 @@ GAU-Casing:
 	BurstDelays: 3
 	Range: 4c512
 	ValidTargets: Ground, Water
-	Projectile: MissileTA
-		Blockable: true
+
 
 APBazooka:
 	Inherits: ^CommonMissile

@@ -41,8 +41,6 @@ Buggy-Casing:
 	BurstDelays: 4
 	Range: 5c0
 	ValidTargets: Ground, Water
-	Projectile: MissileTA
-		Blockable: true
 
 
 CycleMissile:
@@ -240,8 +238,6 @@ Turret-Casing:
 	ReloadDelay: 55
 	Range: 7c0
 	ValidTargets: Ground, Water
-	Projectile: MissileTA
-		Blockable: true
 
 RedEye:
 	Inherits@WarheadEff: ^Blast_WarheadEff_1
@@ -379,9 +375,6 @@ HeliGunCasing:
 	ReloadDelay: 1
 	Range: 5c640
 	ValidTargets: Ground, Water, Air
-	Projectile: MissileTA
-		Blockable: false
-
 
 
 AC130VulcanFake:
