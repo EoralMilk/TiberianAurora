@@ -79,28 +79,6 @@ transport:
 			TopLeft: -355, -828
 			BottomRight: 355, 828
 
-	ProvidesPrerequisite@default:
-		Prerequisite: infantry.any
-	ProvidesPrerequisite@gdi:
-		Prerequisite: infantry.gdi
-	Exit@right:
-		SpawnOffset: 0,0,0
-		ExitCell: 0, 0
-		Facing: 512
-	Production:
-		Produces: Infantry
-	ProductionBar:
-		ProductionType: Infantry
-	PrimaryBuilding:
-		PrimaryCondition: primary
-		SelectionNotification: PrimaryBuildingSelected
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
-
 
 
 transport.Husk:

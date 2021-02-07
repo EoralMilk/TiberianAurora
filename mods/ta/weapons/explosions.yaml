@@ -114,7 +114,7 @@ PlaneHuskExplosion:
 	Warhead@FireWave: FireCluster
 		Weapon: FlameWave
 		RandomClusterCount: 3
-		Dimensions: 1,1
+		Dimensions: 3,3
 		Footprint: xxx xxx xxx
 		ValidTargets: Ground, Water, Air
 
@@ -462,3 +462,39 @@ FlameWave:
 		ValidTargets: Ground, Water, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+
+
+
+SuperPlaneHuskExplosion:
+	Inherits: LargeExplosion
+	Inherits@WarheadEff: ^exp_fireunit_WarheadEff
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c812
+		Damage: 30000
+	Warhead@SpawnDebris1: FireShrapnel
+		Weapon: dbris1lg
+		Amount: 1
+		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+	Warhead@SpawnDebris2: FireShrapnel
+		Weapon: dbris1sm
+		Amount: 1
+		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+	Warhead@SpawnDebris3: FireShrapnel
+		Weapon: dbris5lg
+		Amount: 1
+		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+	Warhead@SpawnDebris4: FireShrapnel
+		Weapon: dbris5sm
+		Amount: 1
+		ValidTargets: Ground, Water, Air
+		ImpactActors: true
+	Warhead@FireWave: FireCluster
+		Weapon: FlameWave
+		RandomClusterCount: 9
+		Dimensions: 5,5
+		Footprint: xxxxx xxxxx xxxxx xxxxx xxxxx
+		ValidTargets: Ground, Water, Air
+

@@ -95,7 +95,7 @@ c_crch:
 c_st:
 	Defaults:
 		Offset: 0, 0, 5
-		ZOffset: 386
+		ZOffset: 0
 		UseTilesetCode: false
 	idle:
 	damaged-idle:

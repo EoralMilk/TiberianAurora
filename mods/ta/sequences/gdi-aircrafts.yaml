@@ -41,3 +41,37 @@ g_orca:
 		UseTilesetCode: false
 	 	AddExtension: false
 		Offset: 0, 0, 0
+
+
+g_orcags:
+	Inherits@Muzzle: ^WithMachineGunMuzzle
+	Inherits@Muzzle2: ^WithFlakMuzzle2
+	Defaults: 
+		Offset: 0,0,0
+		UseTilesetCode: false
+	ground:
+		Length: 3
+		Facings: -32
+		ZOffset: 15
+	hover:
+		Length: 3
+		Facings: -32
+		ZOffset: 622
+	ground-shadow:
+		Start: 96
+		Length: 3
+		Facings: -32
+		ZOffset: -15
+	hover-shadow:
+		Start: 96
+		Length: 3
+		Facings: -32
+		ZOffset: 512
+	turret-cannon: g_orcags-tur1
+		Facings: -32
+	turret-mg: g_orcags-tur2
+		Facings: -32
+	icon: orcags_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
