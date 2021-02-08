@@ -110,10 +110,6 @@ Player:
 		BeaconSequence: idle
 		ArrowSequence:
 		CircleSequence:
-	ProvidesTechPrerequisite@infonly:
-		Name: Infantry Only
-		Prerequisites: techlevel.infonly
-		Id: infantryonly
 	ProvidesTechPrerequisite@low:
 		Name: Low
 		Prerequisites: techlevel.infonly, techlevel.low
@@ -122,9 +118,13 @@ Player:
 		Name: Medium
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium
 		Id: medium
+	ProvidesTechPrerequisite@high:
+		Name: High
+		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high
+		Id: High
 	ProvidesTechPrerequisite@unrestricted:
 		Name: Unrestricted
-		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.unrestricted
+		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high, techlevel.unrestricted
 		Id: unrestricted
 	GrantConditionOnPrerequisiteManager:
 	VeteranProductionIconOverlay:

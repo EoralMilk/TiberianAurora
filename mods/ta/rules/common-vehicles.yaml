@@ -3,7 +3,7 @@ mcv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: ~repairdepot
+		Prerequisites: ~repairdepot, ~techlevel.medium
 		Description: 部署为建筑工厂\n\n·无武装
 	Valued:
 		Cost: 2000

@@ -582,7 +582,7 @@ GunBoatAAMissile:
 ORCAGSCannonAP:
 	Inherits: ^CommonCannon
 	Inherits@WarheadEff: ^AP_WarheadEff_Large
-	ValidTargets: Ground, Water, Air
+	ValidTargets: Ground, Water
 	ReloadDelay: 66
 	Range: 7c512
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
@@ -605,7 +605,7 @@ ORCAGSCannonAP:
 			Concrete: 100
 			Drone: 60
 			Rocket: 100
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water
 
 
 ORCAGSCannon-Casing:

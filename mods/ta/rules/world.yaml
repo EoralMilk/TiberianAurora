@@ -219,6 +219,7 @@ World:
 		TechLevelDropdownDisplayOrder: 3
 		GameSpeedDropdownDisplayOrder: 4
 		GameSpeed: faster
+		TechLevel: unrestricted
 	CreateMPPlayers:
 	MPStartUnits@gdimcv:
 		Class: none
@@ -302,6 +303,7 @@ World:
 	MPStartLocations:
 		SeparateTeamSpawnsCheckboxDisplayOrder: 6
 	SpawnMPUnits:
+		StartingUnitsClass: none
 		DropdownDisplayOrder: 2
 	PathFinder:
 	ValidateOrder:

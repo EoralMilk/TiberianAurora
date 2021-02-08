@@ -376,7 +376,7 @@ obelisk:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
-		Prerequisites: ntpl, ~structures.nod
+		Prerequisites: ntpl, ~structures.nod, ~techlevel.high
 		Description: 具有强大攻击与防御能力的终极对地防御设施\n可以侦测隐形单位\n造成范围伤害\n需要电力才能运转\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
 	Valued:
 		Cost: 1800

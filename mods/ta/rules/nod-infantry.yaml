@@ -63,7 +63,7 @@ chemict:
 	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:
 		Queue: Infantry
-		Prerequisites: ~infantry.nod, ntpl
+		Prerequisites: ~infantry.nod, ~techlevel.high, ntpl
 		BuildPaletteOrder: 10
 		Description: 装备先进泰伯利亚武器的精英步兵\n免疫泰伯利亚\n阵亡时可能殉爆\n\n·强势对抗：地面目标\n·弱势对抗：飞行器
 	Valued:

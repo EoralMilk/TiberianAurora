@@ -137,7 +137,7 @@ gtank:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
-		Prerequisites: ~vehicle.gdi, repairdepot
+		Prerequisites: ~vehicle.gdi, repairdepot, ~techlevel.medium
 		Description: 装备105mm主炮的GDI主战坦克\n\n·强势对抗：载具\n·弱势对抗：步兵、飞行器
 	Valued:
 		Cost: 800
@@ -198,7 +198,7 @@ gmlrs:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: ~vehicle.gdi, hq
+		Prerequisites: ~vehicle.gdi, hq, ~techlevel.medium
 		Description: 机动型长程火箭发射平台\n发射火箭弹幕造成高额范围伤害\n装弹就绪时阵亡会产生殉爆\n\n·强势对抗：地面单位\n·弱势对抗：飞行器
 	Valued:
 		Cost: 1000
@@ -256,7 +256,7 @@ gmmtnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: ~vehicle.gdi, advhq, repairdepot
+		Prerequisites: ~vehicle.gdi, advhq, repairdepot, ~techlevel.high
 		Description: 装备双联装120mm主炮和高爆火箭弹的GDI重型移动堡垒\n可以对空\n\n·强势对抗：一切\n·弱势对抗：无\n\n·特殊能力：可以自我回复至最大生命值的50%
 	Valued:
 		Cost: 1500

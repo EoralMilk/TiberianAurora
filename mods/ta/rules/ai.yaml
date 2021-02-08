@@ -120,9 +120,9 @@ Player:
 		ConstructionYardTypes: fact
 		RefineryTypes: refinery
 		PowerTypes: pwrplt, advpwr
-		BarracksTypes: barracks, nhand
+		BarracksTypes: barracks, nhand, orcags
 		VehiclesFactoryTypes: warfactory, airstrip
-		ProductionTypes: barracks, nhand, warfactory, airstrip, helipad
+		ProductionTypes: barracks, nhand, warfactory, airstrip, helipad, orcags
 		SiloTypes: silo
 		MinimumExcessPower: 30
 		MaximumExcessPower: 150
@@ -134,9 +134,9 @@ Player:
 			pwrplt: 8
 			advpwr: 8
 			barracks: 2
-			nhand: 2
-			warfactory: 2
-			airstrip: 2
+			nhand: 3
+			warfactory: 3
+			airstrip: 3
 			silo: 4
 			repairdepot: 1
 			helipad: 1
@@ -168,7 +168,7 @@ Player:
 		SquadSize: 15
 		ExcludeFromSquadsTypes: harvester, eng, mcv
 		ConstructionYardTypes: fact
-		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache
+		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache, orcags
 		IgnoredEnemyTargetTypes: Wall
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
@@ -196,6 +196,7 @@ Player:
 			# aircraft
 			orcafighter: 8
 			apache: 6
+			orcags: 6
 		UnitLimits:
 			gmmtnk: 7
 			nstltnk: 15
@@ -203,6 +204,7 @@ Player:
 			gmlrs: 9
 			harvester: 8
 			eng: 1
+			orcags: 1
 
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai

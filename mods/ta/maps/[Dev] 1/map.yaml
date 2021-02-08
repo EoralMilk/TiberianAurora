@@ -873,6 +873,7 @@ Actors:
 	Actor324: cahos7-f
 		Owner: Neutral
 		Location: 93,-1
+		Health: 100
 	Actor325: cahos3-f
 		Owner: Neutral
 		Location: 133,-25
@@ -920,75 +921,15 @@ Actors:
 	Actor339: tibtre02
 		Owner: Neutral
 		Location: 111,-5
-	Actor340: cast
-		Owner: Neutral
-		Location: 96,1
-	Actor342: cast-ruins
-		Owner: Neutral
-		Location: 123,-6
-		Health: 100
 	Actor343: cast
 		Owner: Neutral
 		Location: 125,2
-	Actor344: cast
-		Owner: Neutral
-		Location: 80,0
-	Actor341: cast-ruins
-		Owner: Neutral
-		Location: 127,-4
-		Health: 100
 	Actor345: cast
 		Owner: Neutral
 		Location: 111,3
-	Actor346: cast
+	Actor340: cast
 		Owner: Neutral
-		Location: 109,-41
-		Health: 100
-	Actor347: fact
-		Owner: Neutral
-		Location: 109,-45
-	Actor349: fact
-		Owner: Neutral
-		Location: 154,-3
-	Actor348: cast-ruins
-		Owner: Neutral
-		Location: 154,-1
-	Actor350: cast
-		Owner: Neutral
-		Location: 99,53
-	Actor351: cast
-		Owner: Neutral
-		Location: 100,52
-	Actor352: cast
-		Owner: Neutral
-		Location: 101,51
-	Actor353: cast
-		Owner: Neutral
-		Location: 102,50
-	Actor354: cast
-		Owner: Neutral
-		Location: 103,49
-	Actor355: cast
-		Owner: Neutral
-		Location: 104,48
-	Actor356: cast
-		Owner: Neutral
-		Location: 105,47
-	Actor357: cast
-		Owner: Neutral
-		Location: 106,46
-	Actor358: cast
-		Owner: Neutral
-		Location: 107,45
-	Actor359: cast
-		Owner: Neutral
-		Location: 108,44
-	Actor360: cast
-		Owner: Neutral
-		Location: 98,54
-	Actor361: advhq
-		Owner: Neutral
-		Location: 108,41
+		Location: 97,-1
 
 Rules:
 	World:

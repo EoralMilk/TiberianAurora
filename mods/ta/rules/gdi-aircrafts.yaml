@@ -13,7 +13,7 @@ orcafighter:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: hq, ~techlevel.medium, aircraft.gdi
+		Prerequisites: hq, aircraft.gdi, ~techlevel.medium
 		Queue: Aircraft
 		Description: 装备集束导弹发射器的先进反装甲垂直起降战机\n可以对空\n无需返航补给弹药\n\n·强势对抗：载具、建筑、飞行器\n·弱势对抗：步兵
 	Aircraft:
@@ -278,18 +278,18 @@ orcags:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 100
-		Prerequisites: hq, ~techlevel.medium, aircraft.gdi
+		Prerequisites: hq, aircraft.gdi, advhq, ~techlevel.high
 		Queue: Aircraft
-		Description: 装备一门主炮与两挺重机枪的支援型炮艇机\n可以生产步兵单位\n可以对空\n\n·强势对抗：一切
+		Description: 装备一门主炮与两挺重机枪的支援型炮艇机\n可以对空\n\n·强势对抗：一切\n\n·特殊能力：可以自我回复至最大生命值的50%\n·特殊能力：可以生产步兵单位
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 150
 		AltitudeVelocity: 0c200
 		CruiseAltitude: 4c128
 	Health:
-		HP: 135000
+		HP: 105000
 	Armor:
-		Type: Heavy
+		Type: Light
 	RevealsShroud:
 		Range: 13c512
 		Type: GroundPosition
@@ -414,7 +414,11 @@ orcags:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-
+	ChangesHealth:
+		Step: 100
+		Delay: 5
+		StartIfBelow: 50
+		DamageCooldown: 200
 
 
 

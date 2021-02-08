@@ -136,7 +136,7 @@ ntank:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
-		Prerequisites: ~vehicle.nod, repairdepot
+		Prerequisites: ~vehicle.nod, repairdepot, ~techlevel.medium
 		Description: 装备70mm速射炮的Nod高机动轻装甲主战坦克\n\n·强势对抗：载具\n·弱势对抗：步兵、飞行器
 	Valued:
 		Cost: 600
@@ -194,7 +194,7 @@ nftnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
-		Prerequisites: ~vehicle.nod, hq
+		Prerequisites: ~vehicle.nod, hq, ~techlevel.medium
 		Description: 搭载双联装火焰喷射器的重型坦克\n火焰可以对载具产生灼烧效果\n阵亡时殉爆\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 900
@@ -249,7 +249,7 @@ nhowi:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: ~vehicle.nod, hq
+		Prerequisites: ~vehicle.nod, hq, ~techlevel.medium
 		Description: 装备155mm榴弹炮的轻型长程火炮\n造成高额范围伤害\n不够精准\n装弹就绪时阵亡会产生殉爆\n\n·强势对抗：步兵、建筑\n·弱势对抗：载具、飞行器
 	Valued:
 		Cost: 700
@@ -310,7 +310,7 @@ nstltnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: ~vehicle.nod, ntpl
+		Prerequisites: ~vehicle.nod, ntpl, ~techlevel.high
 		Description: 装备反装甲导弹与隐形力场发生器的高科技坦克\n在不攻击且不受攻击时隐形\n严重损坏时不能隐形\n可以对空\n\n·强势对抗：载具、飞行器\n·弱势对抗：步兵
 	Valued:
 		Cost: 1250
