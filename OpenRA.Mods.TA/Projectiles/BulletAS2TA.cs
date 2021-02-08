@@ -123,6 +123,9 @@ namespace OpenRA.Mods.TA.Projectiles
 		public readonly int ContrailDelay = 0;
 		public readonly WDist ContrailWidth = new WDist(64);
 
+		[Desc("How long this projectile can live, LifeTime < 0 means lives forever if not hit the target.")]
+		public readonly int[] LifeTime = { -1 };
+
 		public IProjectile Create(ProjectileArgs args) { return new BulletAS2TA(this, args); }
 	}
 
@@ -148,7 +151,7 @@ namespace OpenRA.Mods.TA.Projectiles
 		[Sync]
 		WPos pos, lastPos, target, source;
 		int length;
-		int ticks, smokeTicks;
+		int ticks, smokeTicks, liveTicks, lifetime;
 		int remainingBounces;
 
 		public Actor SourceActor { get { return args.SourceActor; } }
@@ -217,6 +220,10 @@ namespace OpenRA.Mods.TA.Projectiles
 
 			smokeTicks = info.TrailDelay;
 			remainingBounces = info.BounceCount;
+			lifetime = info.LifeTime.Length == 2
+					? world.SharedRandom.Next(info.LifeTime[0], info.LifeTime[1])
+					: info.LifeTime[0];
+			liveTicks = 0;
 		}
 
 		WAngle GetEffectiveFacing()
@@ -244,10 +251,17 @@ namespace OpenRA.Mods.TA.Projectiles
 
 			if (ShouldExplode(world))
 				Explode(world);
+
+			liveTicks++;
 		}
 
 		bool ShouldExplode(World world)
 		{
+			if (lifetime > 0 && liveTicks > lifetime)
+			{
+				return true;
+			}
+
 			if (info.Blockable && BlocksProjectiles.AnyBlockingActorsBetween(world, lastPos, pos, info.Width,
 				out var blockedPos))
 			{
