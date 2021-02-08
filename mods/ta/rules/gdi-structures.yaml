@@ -332,7 +332,6 @@ advgtwr:
 		PauseOnCondition: !ammo
 		MuzzleSequence: muzzle
 		LocalOffset: 190,35,2800, 190,-35,2800, 190,110,2800, 190,-110,2800
-
 	AmmoPool@misl:
 		Ammo: 1
 		PipCount: 0
@@ -341,7 +340,6 @@ advgtwr:
 	ReloadAmmoPool@misl:
 		Delay: 8
 		Count: 1
-
 	WithSpriteTurret@shadow:
 		Sequence: shadow
 		RequiresCondition: !build-incomplete
@@ -375,3 +373,8 @@ advgtwr:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	Explodes:
+		Type: Footprint
+		Weapon: HighBuildingExplode
+		EmptyWeapon: HighBuildingExplode
+

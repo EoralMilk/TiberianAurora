@@ -343,6 +343,28 @@ BuildingExplode:
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 
+
+HighBuildingExplode:
+	Inherits: BuildingExplode
+	Warhead@UpExplode: FireCluster
+		Weapon: HighBuildingSnap
+		RandomClusterCount: 0
+		Dimensions: 1,1
+		Footprint: X
+		ValidTargets: Ground, Water, Air
+
+
+HighBuildingSnap:
+	Inherits: BuildingExplode
+	ValidTargets: Ground, Water, Air
+	Projectile: BulletAS2TA
+		Speed: 10000
+		LaunchAngle: 0
+		Blockable: false
+		ZOffset: 4096
+		AirburstAltitude: 1c512
+
+
 CivBuildingExplode:
 	Inherits: ^DamagingExplosion
 	Inherits@WarheadEff: ^exp_midunit_WarheadEff

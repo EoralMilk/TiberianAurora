@@ -260,7 +260,7 @@ RedEye:
 		ValidTargets: Air
 
 ObeliskLaserSwap:
-	ReloadDelay: 100
+	ReloadDelay: 120
 	Range: 9c512
 	StartBurstReport: obelray1.aud
 	TargetActorCenter: true
@@ -291,7 +291,7 @@ ObeliskLaserSwap:
 		DamageTypes: FlameDeath
 
 ObeliskLaser:
-	ReloadDelay: 100
+	ReloadDelay: 120
 	Range: 9c512
 	Projectile: LaserZap
 		Width: 0

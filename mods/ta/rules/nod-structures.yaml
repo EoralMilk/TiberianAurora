@@ -442,3 +442,7 @@ obelisk:
 		TargetTypes: Concrete
 	RequiresBuildableArea:
 		Adjacent: 4
+	Explodes:
+		Type: Footprint
+		Weapon: HighBuildingExplode
+		EmptyWeapon: HighBuildingExplode
