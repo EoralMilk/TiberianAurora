@@ -316,7 +316,18 @@ orcags:
 		RecoilRecovery: 12
 		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
-
+	Armament@cannon-Casing:
+		Weapon: ORCAGSCannon-Casing
+		Turret: cannon
+		LocalOffset: 0,0,256
+	Armament@mg1-Casing:
+		Weapon: ORCAGSHMG-Casing
+		Turret: mg1
+		LocalOffset: 0,0,271
+	Armament@mg2-Casing:
+		Weapon: ORCAGSHMG-Casing
+		Turret: mg2
+		LocalOffset: 0,0,271
 	WithMuzzleOverlay:
 	AutoTarget:
 		ScanRadius: 10
@@ -411,6 +422,8 @@ orcags.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
 		Name: 奥卡炮艇机
+	AutoTarget:
+		ScanRadius: 10
 	Aircraft:
 		TurnSpeed: 2
 		Speed: 90
@@ -444,6 +457,18 @@ orcags.Husk:
 		RecoilRecovery: 12
 		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
+	Armament@cannon-Casing:
+		Weapon: ORCAGSCannon-Casing
+		Turret: cannon
+		LocalOffset: 0,0,256
+	Armament@mg1-Casing:
+		Weapon: ORCAGSHMG-Casing
+		Turret: mg1
+		LocalOffset: 0,0,271
+	Armament@mg2-Casing:
+		Weapon: ORCAGSHMG-Casing
+		Turret: mg2
+		LocalOffset: 0,0,271
 	WithMuzzleOverlay:
 	AutoTarget:
 		ScanRadius: 10

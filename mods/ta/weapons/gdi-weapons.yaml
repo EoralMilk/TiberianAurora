@@ -608,6 +608,13 @@ ORCAGSCannonAP:
 		ValidTargets: Ground, Water, Air
 
 
+ORCAGSCannon-Casing:
+	Inherits: ^ShellCasing
+	ReloadDelay: 66
+	Range: 7c512
+	ValidTargets: Ground, Water
+
+
 ORCAGSHMG:
 	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
@@ -637,3 +644,11 @@ ORCAGSHMG:
 		ValidTargets: Ground, Water, Air
 
 
+
+ORCAGSHMG-Casing:
+	Inherits: ^BulletCasing
+	ReloadDelay: 30
+	Burst: 5
+	BurstDelays: 3
+	Range: 7c512
+	ValidTargets: Ground, Water

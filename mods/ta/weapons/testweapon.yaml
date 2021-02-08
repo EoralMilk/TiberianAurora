@@ -180,3 +180,96 @@ FlameInfection:
 		InvalidTargets: Water, Inpassable, Air
 	Warhead@FireEff: CreateEffect
 		-ImpactSounds:
+
+^fireworkfrag:
+	Inherits@WarheadEff: ^Blast_WarheadEff_1
+	ValidTargets: Ground, Water, Air
+	ReloadDelay: 10
+	Range: 6c512
+	MinRange: 4c512
+	Projectile: BulletAS2TA
+		Speed: 255
+		ContrailLength: 10
+		ContrailWidth: 30
+		Inaccuracy: 1c512
+		LaunchAngle: 30, 230
+		ContrailColor: EF0C0C
+		LifeTime: 15, 20
+
+
+Firework:
+	Inherits@WarheadEff: ^Blast_WarheadEff_2
+	Inherits@WarheadFireWork: ^FireworkWarhead
+	ValidTargets: Ground, Water, Air
+	ReloadDelay: 100
+	Range: 13c512
+	Report: rocket_shot.wav
+	Projectile: BulletAS2TA
+		AirburstAltitude: 15c0
+		Speed: 220
+		ContrailLength: 10
+		ContrailWidth: 30
+		Inaccuracy: 0c512
+		LaunchAngle: 0
+		JetImage: mislflash
+		JetPalette: gray_alpha70
+		Blockable: true
+
+
+
+^FireworkWarhead:
+	Warhead@SpawnRed: FireShrapnel
+		Weapon: Redfrag
+		Amount: 2
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnBlue: FireShrapnel
+		Weapon: Bluefrag
+		Amount: 2
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnGreen: FireShrapnel
+		Weapon: Greenfrag
+		Amount: 2
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnYellow: FireShrapnel
+		Weapon: Yellowfrag
+		Amount: 2
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnPurple: FireShrapnel
+		Weapon: Purplefrag
+		Amount: 2
+		ValidTargets: Ground, Water, Air
+	Warhead@SpawnCyan: FireShrapnel
+		Weapon: Cyanfrag
+		Amount: 2
+		ValidTargets: Ground, Water, Air
+
+
+Redfrag:
+	Inherits: ^fireworkfrag
+	Projectile: BulletAS2TA
+		ContrailColor: FF4C4C
+
+Bluefrag:
+	Inherits: ^fireworkfrag
+	Projectile: BulletAS2TA
+		ContrailColor: 4C4CFF
+
+Greenfrag:
+	Inherits: ^fireworkfrag
+	Projectile: BulletAS2TA
+		ContrailColor: 4CFF4C
+
+Yellowfrag:
+	Inherits: ^fireworkfrag
+	Projectile: BulletAS2TA
+		ContrailColor: FFFF4C
+
+Purplefrag:
+	Inherits: ^fireworkfrag
+	Projectile: BulletAS2TA
+		ContrailColor: FF4CFF
+
+Cyanfrag:
+	Inherits: ^fireworkfrag
+	Projectile: BulletAS2TA
+		ContrailColor: 4CFFFF

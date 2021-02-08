@@ -1,5 +1,6 @@
 
 ^CommonMissile:
+	Inherits@WarheadFireWork: ^FireworkWarhead
 	ReloadDelay: 60
 	Range: 12c0
 	Report: bpatatta.wav
@@ -57,6 +58,7 @@
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
 ^CommonCannon:
+	Inherits@WarheadFireWork: ^FireworkWarhead
 	Projectile: BulletAS2TA
 		Blockable: true
 		ContrailLength: 5

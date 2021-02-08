@@ -3,14 +3,14 @@ CasingDebris:
 	Range: 0c764
 	ValidTargets: Infantry, Vehicle, Building, Wall, Ground, Water, Air, AirHit
 	Projectile: BulletAS2TA
-		Speed: 100, 200
+		Speed: 170, 200
 		Inaccuracy: 256
 		LaunchAngle: 91, 140
 		Image: casing
 		Palette: ts-anim
 		Sequences: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 		Shadow: true
-		BounceCount: 2
+		BounceCount: 1
 		BounceRangeModifier: 20
 	Warhead@: CreateEffect
 		Explosions: casingscorch, casingscorch2, casingscorch3, casingscorch4, casingscorch5, casingscorch6, casingscorch7
@@ -27,12 +27,12 @@ ShellCasingDebris:
 	MinRange: 0c512
 	Range: 1c764
 	Projectile: BulletAS2TA
-		Speed: 75, 125
+		Speed: 160, 175
 		Inaccuracy: 256
 		LaunchAngle: 91, 140
 		Image: shellcasing
 		Palette: ts-anim
-		BounceCount: 3
+		BounceCount: 1
 		BounceRangeModifier: 20
 	Warhead@: CreateEffect
 		ExplosionPalette: ts-anim
@@ -93,6 +93,8 @@ ShellCasingDebris:
 		BounceCount: 2
 		BounceRangeModifier: 10
 		InvalidBounceTerrain: Water
+		LifeTime: 5,20
+
 
 ^Smoke:
 	ReloadDelay: 60
@@ -111,6 +113,7 @@ ShellCasingDebris:
 		LaunchAngle: 10, 23
 		ZOffset: 1024
 		Inaccuracy: 500
+		LifeTime: 50,100
 
 
 ^SmokeBig:
