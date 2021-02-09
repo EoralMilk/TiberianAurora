@@ -202,10 +202,9 @@ Firework:
 	Inherits@WarheadFireWork: ^FireworkWarhead
 	ValidTargets: Ground, Water, Air
 	ReloadDelay: 100
-	Range: 13c512
-	Report: rocket_shot.wav
+	Range: 0c2
 	Projectile: BulletAS2TA
-		AirburstAltitude: 15c0
+		AirburstAltitude: 30c0
 		Speed: 220
 		ContrailLength: 10
 		ContrailWidth: 30
@@ -213,9 +212,14 @@ Firework:
 		LaunchAngle: 0
 		JetImage: mislflash
 		JetPalette: gray_alpha70
+		LifeTime: 55, 80
 		Blockable: true
 
-
+^FireworkSpawner:
+	Warhead@FireworkSpawner: FireShrapnel
+		Weapon: Firework
+		Amount: 1
+		ValidTargets: Ground, Water, Air
 
 ^FireworkWarhead:
 	Warhead@SpawnRed: FireShrapnel
