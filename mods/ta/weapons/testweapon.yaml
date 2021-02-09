@@ -182,7 +182,6 @@ FlameInfection:
 		-ImpactSounds:
 
 ^fireworkfrag:
-	Inherits@WarheadEff: ^Blast_WarheadEff_1
 	ValidTargets: Ground, Water, Air
 	ReloadDelay: 10
 	Range: 6c512
@@ -202,23 +201,25 @@ Firework:
 	Inherits@WarheadFireWork: ^FireworkWarhead
 	ValidTargets: Ground, Water, Air
 	ReloadDelay: 100
-	Range: 0c2
+	Range: 0c512
 	Projectile: BulletAS2TA
 		AirburstAltitude: 30c0
 		Speed: 220
 		ContrailLength: 10
 		ContrailWidth: 30
 		Inaccuracy: 0c512
-		LaunchAngle: 0
+		LaunchAngle: 15
 		JetImage: mislflash
-		JetPalette: gray_alpha70
+		JetPalette: gray_alpha60
 		LifeTime: 55, 80
 		Blockable: true
 
 ^FireworkSpawner:
-	Warhead@FireworkSpawner: FireShrapnel
+	Warhead@UpExplode: FireCluster
 		Weapon: Firework
-		Amount: 1
+		RandomClusterCount: 0
+		Dimensions: 1,1
+		Footprint: X
 		ValidTargets: Ground, Water, Air
 
 ^FireworkWarhead:

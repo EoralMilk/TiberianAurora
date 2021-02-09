@@ -352,7 +352,12 @@ HighBuildingExplode:
 		Dimensions: 1,1
 		Footprint: X
 		ValidTargets: Ground, Water, Air
-
+	Warhead@UpExplode2: FireCluster
+		Weapon: HighBuildingSnap2
+		RandomClusterCount: 0
+		Dimensions: 1,1
+		Footprint: X
+		ValidTargets: Ground, Water, Air
 
 HighBuildingSnap:
 	Inherits: BuildingExplode
@@ -364,6 +369,15 @@ HighBuildingSnap:
 		ZOffset: 4096
 		AirburstAltitude: 1c512
 
+HighBuildingSnap2:
+	Inherits: BuildingExplode
+	ValidTargets: Ground, Water, Air
+	Projectile: BulletAS2TA
+		Speed: 10000
+		LaunchAngle: 0
+		Blockable: false
+		ZOffset: 4096
+		AirburstAltitude: 2c512
 
 CivBuildingExplode:
 	Inherits: ^DamagingExplosion
