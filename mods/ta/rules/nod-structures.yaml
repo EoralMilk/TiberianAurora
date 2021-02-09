@@ -149,7 +149,12 @@ airstrip:
 
 ntpl:
 	Inherits: ^BaseBuilding
-	Inherits@shape: ^6x4Shape
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -3072, -2048
+			BottomRight: 2048, 2048
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 100
@@ -168,7 +173,7 @@ ntpl:
 		Range: 5c0
 		RequiresCondition: !lowpower
 	Building:
-		Footprint: xxxx== xxxxx= xxxxx= xxxxx= xxxxx= xxxx==
+		Footprint: XXXX== xxxxx= xxxxx= xxxxx= xxxxx= XXXX==
 		Dimensions: 6,6
 	Health:
 		HP: 390000
