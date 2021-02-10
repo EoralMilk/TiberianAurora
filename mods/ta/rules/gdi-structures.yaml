@@ -304,7 +304,7 @@ advgtwr:
 		Prerequisites: infantry_barracks, ~structures.gdi, hq, ~techlevel.medium
 		Description: 泛用型先进基地防御\n可以侦测隐形单位\n需要电力才能运转\n可以对空\n\n·强势对抗：载具、飞行器\n·弱势对抗：步兵、建筑
 	Valued:
-		Cost: 1000
+		Cost: 1300
 	Tooltip:
 		Name: 先进导弹塔
 	Building:

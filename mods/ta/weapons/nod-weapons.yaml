@@ -335,7 +335,7 @@ HeliAGGun:
 	Inherits@WarheadEff: ^MGPiff
 	ValidTargets: Ground, Water
 	ReloadDelay: 1
-	Report: vulcan_shot.wav
+	Report: mg_shot4.wav
 	Range: 6c128
 	Projectile: BulletAS2TA
 		Inaccuracy: 350

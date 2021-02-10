@@ -208,7 +208,7 @@ Firework:
 		ContrailLength: 10
 		ContrailWidth: 30
 		Inaccuracy: 0c512
-		LaunchAngle: 15
+		LaunchAngle: 30
 		JetImage: mislflash
 		JetPalette: gray_alpha60
 		LifeTime: 55, 80

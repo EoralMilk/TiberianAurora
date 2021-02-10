@@ -40,7 +40,7 @@ orcafighter:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	AutoTarget:
-		ScanRadius: 7
+		ScanRadius: 9
 	AttackAircraft:
 		FacingTolerance: 80 
 		OpportunityFire: false
@@ -138,13 +138,19 @@ a10:
 	Aircraft:
 		CanHover: false
 		Repulsable: false
-		# IdleBehavior: None
+		IdleBehavior: Land
 		VTOL: false
 		CruiseAltitude: 4800
 		TurnSpeed: 16
-		IdleTurnSpeed: 16
+		IdleTurnSpeed: 12
+		Pitch: 0
+		PitchSpeed: 30
+		Roll: 100
+		RollSpeed: 10
 		Speed: 288
 		CanSlide: false
+		CanForceLand: false
+		AltitudeVelocity: 0c200
 	Selectable:
 		Bounds: 30,24
 		Priority: 5
@@ -309,7 +315,7 @@ orcags:
 		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
 	Armament@mg2:
-		Weapon: ORCAGSHMG
+		Weapon: ORCAGSHMG2
 		Turret: mg2
 		LocalOffset: 236,0,271
 		Recoil: 33
@@ -325,7 +331,7 @@ orcags:
 		Turret: mg1
 		LocalOffset: 0,0,271
 	Armament@mg2-Casing:
-		Weapon: ORCAGSHMG-Casing
+		Weapon: ORCAGSHMG2-Casing
 		Turret: mg2
 		LocalOffset: 0,0,271
 	WithMuzzleOverlay:

@@ -6,7 +6,7 @@ GAU-3:
 	Burst: 4
 	BurstDelays: 3
 	Range: 4c512
-	Report: chain_shot.wav
+	Report: mg_shot3.wav
 	Projectile: BulletAS2TA
 		ContrailWidth: 10
 		ContrailColor: FFD860

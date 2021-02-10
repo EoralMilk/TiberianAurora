@@ -319,7 +319,7 @@ HMG:
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 3000
-		Spread: 0c128
+		Spread: 0c274
 		Versus:
 			None: 100
 			Flak: 100
@@ -585,11 +585,12 @@ ORCAGSCannonAP:
 	ValidTargets: Ground, Water
 	ReloadDelay: 66
 	Range: 7c512
-	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
+	Report: air_cannon_shot.wav
 	Projectile: BulletAS2TA
 		Speed: 1012
 		Inaccuracy: 300
 		ContrailColor: E86400
+		LaunchAngle: 0
 	Warhead@1Dam: SpreadDamage
 		Damage: 9400
 		Spread: 0c362
@@ -623,12 +624,12 @@ ORCAGSHMG:
 	Burst: 5
 	BurstDelays: 3
 	Range: 7c512
-	Report: mg_shot.wav
+	Report: mg_shot7.wav
 	Warhead@Eff_HitMetal: CreateEffect
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 3000
-		Spread: 0c128
+		Damage: 2500
+		Spread: 0c274
 		Versus:
 			None: 100
 			Flak: 100
@@ -644,6 +645,11 @@ ORCAGSHMG:
 		ValidTargets: Ground, Water, Air
 
 
+ORCAGSHMG2:
+	Inherits: ORCAGSHMG
+	ReloadDelay: 26
+	Burst: 5
+	BurstDelays: 4
 
 ORCAGSHMG-Casing:
 	Inherits: ^BulletCasing
@@ -652,3 +658,9 @@ ORCAGSHMG-Casing:
 	BurstDelays: 3
 	Range: 7c512
 	ValidTargets: Ground, Water
+
+ORCAGSHMG2-Casing:
+	Inherits: ORCAGSHMG-Casing
+	ReloadDelay: 26
+	Burst: 5
+	BurstDelays: 4
