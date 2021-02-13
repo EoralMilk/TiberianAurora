@@ -53,7 +53,7 @@ CycleMissile:
 	# BurstDelays: 4
 	ReloadDelay: 1 #25
 	Projectile: MissileTA
-		ContrailLength: 10
+		ContrailLength2: 10
 		Arm: 2
 		Speed: 376
 		Acceleration: 22
@@ -135,7 +135,7 @@ DaggerOfNod:
 	Projectile: MissileTA
 		#TrailPalette: redlight
 		JetPalette: redlight
-		ContrailLength: 12
+		ContrailLength2: 12
 		ContrailWidth: 40
 		ContrailColor: FFAAAA
 		Arm: 2
@@ -252,7 +252,7 @@ RedEye:
 		VerticalRateOfTurn: 210
 		HorizontalRateOfTurn: 86
 		TrailPalette: redlight
-		ContrailLength: 12
+		ContrailLength2: 13
 		ContrailWidth: 40
 		ContrailColor: FFAAAA
 	-Warhead@Smoke:

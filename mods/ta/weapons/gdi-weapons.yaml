@@ -232,7 +232,7 @@ MammothTuskMissile:
 	# BurstDelays: 6
 	ReloadDelay: 6 # 80 using ammo pool
 	Projectile: MissileTA
-		ContrailLength: 12
+		ContrailLength2: 12
 		Arm: 2
 		Speed: 380
 		Inaccuracy: 128
@@ -348,7 +348,7 @@ TowerMissile:
 	Range: 9c512
 	ReloadDelay: 1 # 8 using ammo pool
 	Projectile: MissileTA
-		ContrailLength: 12
+		ContrailLength2: 12
 		# CruiseAltitude: 5c0
 		Arm: 2
 		Speed: 388

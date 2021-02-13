@@ -10,9 +10,14 @@
 		Acceleration: 8
 		Inaccuracy: 400
 		RangeLimit: 10c512
-		ContrailLength: 8
-		ContrailWidth: 25
-		ContrailColor: FFF2CD
+		ContrailLength: 3
+		ContrailWidth: 27
+		ContrailColor: FFFF0D
+
+		ContrailZOffset2: 2000
+		ContrailLength2: 20
+		ContrailWidth2: 30
+		ContrailColor2: FFFFFF
 		Blockable: false
 		Gravity: 8
 		Image: dragon2

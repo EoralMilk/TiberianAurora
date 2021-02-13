@@ -143,16 +143,18 @@ namespace OpenRA.Mods.Common.Projectiles
 		public readonly bool TrailWhenDeactivated = false;
 
 		public readonly int ContrailLength = 0;
-
 		public readonly int ContrailZOffset = 2047;
-
 		public readonly WDist ContrailWidth = new WDist(64);
-
 		public readonly Color ContrailColor = Color.White;
-
 		public readonly bool ContrailUsePlayerColor = false;
-
 		public readonly int ContrailDelay = 0;
+
+		public readonly int ContrailLength2 = 0;
+		public readonly int ContrailZOffset2 = 2000;
+		public readonly WDist ContrailWidth2 = new WDist(64);
+		public readonly Color ContrailColor2 = Color.White;
+		public readonly bool ContrailUsePlayerColor2 = false;
+		public readonly int ContrailDelay2 = 0;
 
 		[Desc("Should missile targeting be thrown off by nearby actors with JamsMissiles.")]
 		public readonly bool Jammable = true;
@@ -205,6 +207,8 @@ namespace OpenRA.Mods.Common.Projectiles
 
 		int ticksToNextSmoke;
 		InstantContrailRenderable contrail;
+		InstantContrailRenderable contrail2;
+
 		string trailPalette;
 
 		States state;
@@ -286,6 +290,13 @@ namespace OpenRA.Mods.Common.Projectiles
 			{
 				var color = info.ContrailUsePlayerColor ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor;
 				contrail = new InstantContrailRenderable(world, color, info.ContrailWidth, info.ContrailLength, info.ContrailDelay, info.ContrailZOffset);
+			}
+
+
+			if (info.ContrailLength2 > 0)
+			{
+				var color2 = info.ContrailUsePlayerColor2 ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor2;
+				contrail2 = new InstantContrailRenderable(world, color2, info.ContrailWidth2, info.ContrailLength2, info.ContrailDelay2, info.ContrailZOffset2);
 			}
 
 			trailPalette = info.TrailPalette;
@@ -895,6 +906,9 @@ namespace OpenRA.Mods.Common.Projectiles
 			if (info.ContrailLength > 0)
 				contrail.Update(pos);
 
+			if (info.ContrailLength2 > 0)
+				contrail2.Update(pos);
+
 			distanceCovered += new WDist(speed);
 			var cell = world.Map.CellContaining(pos);
 			var height = world.Map.DistanceAboveTerrain(pos);
@@ -913,6 +927,8 @@ namespace OpenRA.Mods.Common.Projectiles
 		{
 			if (info.ContrailLength > 0)
 				world.AddFrameEndTask(w => w.Add(new InstantContrailFader(pos, contrail)));
+			if (info.ContrailLength2 > 0)
+				world.AddFrameEndTask(w => w.Add(new InstantContrailFader(pos, contrail2)));
 
 			world.AddFrameEndTask(w => w.Remove(this));
 
@@ -933,6 +949,8 @@ namespace OpenRA.Mods.Common.Projectiles
 		{
 			if (info.ContrailLength > 0)
 				yield return contrail;
+			if (info.ContrailLength2 > 0)
+				yield return contrail2;
 
 			var world = args.SourceActor.World;
 

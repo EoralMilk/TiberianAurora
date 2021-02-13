@@ -140,7 +140,7 @@ a10:
 		Repulsable: false
 		IdleBehavior: Land
 		VTOL: false
-		CruiseAltitude: 4800
+		CruiseAltitude: 4c512
 		TurnSpeed: 16
 		IdleTurnSpeed: 12
 		Pitch: 0
