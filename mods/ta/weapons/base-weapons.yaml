@@ -6,18 +6,20 @@
 	Report: bpatatta.wav
 	Projectile: MissileTA
 		Arm: 4
-		Speed: 280
+		Speed: 240
 		Acceleration: 8
 		Inaccuracy: 400
 		RangeLimit: 10c512
 		ContrailLength: 3
 		ContrailWidth: 27
-		ContrailColor: FFFF0D
+		ContrailColor: FFC00D
+		ContrailDelay: 0
 
 		ContrailZOffset2: 2000
-		ContrailLength2: 20
+		ContrailLength2: 12
 		ContrailWidth2: 30
-		ContrailColor2: FFFFFF
+		ContrailColor2: FFFFFFA0
+		ContrailDelay2: 0
 		Blockable: false
 		Gravity: 8
 		Image: dragon2
@@ -66,10 +68,15 @@
 	Inherits@WarheadFireWork: ^FireworkSpawner
 	Projectile: BulletAS2TA
 		Blockable: true
-		ContrailLength: 5
-		ContrailWidth: 15
+		ContrailLength: 4
+		ContrailWidth: 22
 		ContrailColor: FFD860
 		ContrailDelay: 0
+		ContrailZOffset2: 2000
+		ContrailLength2: 15
+		ContrailWidth2: 12
+		ContrailColor2: FFFFFFA0
+		ContrailDelay2: 0
 		Speed: 1100
 		LaunchAngle: 15
 		ZOffset: 1024
@@ -83,9 +90,14 @@
 	Range: 4c0
 	Projectile: BulletAS2TA
 		ContrailLength: 2
-		ContrailWidth: 10
+		ContrailWidth: 11
 		ContrailColor: FFD860
 		ContrailDelay: 0
+		ContrailZOffset2: 2000
+		ContrailLength2: 11
+		ContrailWidth2: 9
+		ContrailColor2: FFFFFFA0
+		ContrailDelay2: 0
 		Inaccuracy: 800
 		Speed: 1000
 		LaunchAngle: 0

@@ -123,6 +123,13 @@ namespace OpenRA.Mods.TA.Projectiles
 		public readonly int ContrailDelay = 0;
 		public readonly WDist ContrailWidth = new WDist(64);
 
+		public readonly int ContrailLength2 = 0;
+		public readonly int ContrailZOffset2 = 2047;
+		public readonly Color ContrailColor2 = Color.White;
+		public readonly bool ContrailUsePlayerColor2 = false;
+		public readonly int ContrailDelay2 = 0;
+		public readonly WDist ContrailWidth2 = new WDist(64);
+
 		[Desc("How long this projectile can live, LifeTime < 0 means lives forever if not hit the target.")]
 		public readonly int[] LifeTime = { -1 };
 
@@ -147,6 +154,8 @@ namespace OpenRA.Mods.TA.Projectiles
 		readonly string palette;
 
 		InstantContrailRenderable contrail;
+		InstantContrailRenderable contrail2;
+
 
 		[Sync]
 		WPos pos, lastPos, target, source;
@@ -212,6 +221,13 @@ namespace OpenRA.Mods.TA.Projectiles
 			{
 				var color = info.ContrailUsePlayerColor ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor;
 				contrail = new InstantContrailRenderable(world, color, info.ContrailWidth, info.ContrailLength, info.ContrailDelay, info.ContrailZOffset);
+			}
+
+
+			if (info.ContrailLength2 > 0)
+			{
+				var color2 = info.ContrailUsePlayerColor2 ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor2;
+				contrail2 = new InstantContrailRenderable(world, color2, info.ContrailWidth2, info.ContrailLength2, info.ContrailDelay2, info.ContrailZOffset2);
 			}
 
 			trailPalette = info.TrailPalette;
@@ -281,6 +297,9 @@ namespace OpenRA.Mods.TA.Projectiles
 			if (info.ContrailLength > 0)
 				contrail.Update(pos);
 
+			if (info.ContrailLength2 > 0)
+				contrail2.Update(pos);
+
 			var flightLengthReached = ticks++ >= length;
 			var shouldBounce = remainingBounces > 0;
 
@@ -327,6 +346,9 @@ namespace OpenRA.Mods.TA.Projectiles
 			if (info.ContrailLength > 0)
 				yield return contrail;
 
+			if (info.ContrailLength2 > 0)
+				yield return contrail2;
+
 			var world = args.SourceActor.World;
 			if (!world.FogObscures(pos))
 			{
@@ -358,6 +380,8 @@ namespace OpenRA.Mods.TA.Projectiles
 		{
 			if (info.ContrailLength > 0)
 				world.AddFrameEndTask(w => w.Add(new InstantContrailFader(pos, contrail)));
+			if (info.ContrailLength2 > 0)
+				world.AddFrameEndTask(w => w.Add(new InstantContrailFader(pos, contrail2)));
 
 			world.AddFrameEndTask(w => w.Remove(this));
 

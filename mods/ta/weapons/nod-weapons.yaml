@@ -179,8 +179,10 @@ HowitzerCannonHE:
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
 	Projectile: BulletAS2TA
 		Speed: 166
-		ContrailLength: 16
-		ContrailWidth: 28
+		ContrailLength: 6
+		ContrailWidth: 34
+		ContrailLength2: 16
+		ContrailWidth2: 25
 		Inaccuracy: 1c256
 		LaunchAngle: 165
 		Blockable: false
@@ -254,7 +256,7 @@ RedEye:
 		TrailPalette: redlight
 		ContrailLength2: 13
 		ContrailWidth: 40
-		ContrailColor: FFAAAA
+		ContrailColor: FF5A5A
 	-Warhead@Smoke:
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air

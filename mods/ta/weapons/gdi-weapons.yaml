@@ -16,7 +16,7 @@ HEGrenade:
 		Shadow: true
 		ZOffset: 1024
 		ContrailLength: 0
-		ContrailWidth: 0
+		ContrailLength2: 0
 		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Damage: 5000
@@ -198,6 +198,7 @@ MammothTankCannon:
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
 	Projectile: BulletAS2TA
 		Speed: 962
+		ContrailColor: E88400
 	Warhead@1Dam: SpreadDamage
 		Damage: 10500
 		Spread: 0c240
@@ -277,8 +278,14 @@ M77Rockets:
 	Report: rocket_shot.wav
 	Projectile: BulletAS2TA
 		Speed: 185
-		ContrailLength: 14
+		ContrailLength: 4
 		ContrailWidth: 30
+		ContrailColor: FFC00D
+		ContrailDelay: 0
+		ContrailZOffset2: 2000
+		ContrailLength2: 14
+		ContrailWidth2: 33
+		ContrailDelay2: 0
 		Inaccuracy: 0c512
 		Image: DRAGON
 		LaunchAngle: 180
@@ -348,7 +355,6 @@ TowerMissile:
 	Range: 9c512
 	ReloadDelay: 1 # 8 using ammo pool
 	Projectile: MissileTA
-		ContrailLength2: 12
 		# CruiseAltitude: 5c0
 		Arm: 2
 		Speed: 388
@@ -387,6 +393,7 @@ TowerAAMissile:
 
 
 OrcaAGMissiles:
+	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	ValidTargets: Ground, Water
 	Range: 6c0
@@ -400,14 +407,10 @@ OrcaAGMissiles:
 		Acceleration: 12
 		Inaccuracy: 400
 		RangeLimit: 14c512
-		ContrailLength: 11
-		ContrailWidth: 25
 		ContrailColor: FFFFB1
 		Blockable: false
-		Gravity: 8
 		Image: DRAGON
 		Palette: ra
-		Shadow: true
 		VerticalRateOfTurn: 120
 		HorizontalRateOfTurn: 86
 		MinimumLaunchAngle: 0
