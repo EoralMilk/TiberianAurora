@@ -9,7 +9,7 @@ if "!MOD_ID!" == "" goto badconfig
 if "!ENGINE_VERSION!" == "" goto badconfig
 if "!ENGINE_DIRECTORY!" == "" goto badconfig
 
-title OpenRA.Utility.exe %MOD_ID%
+title bin\OpenRA.Utility.exe %MOD_ID%
 
 set TEMPLATE_DIR=%CD%
 if not exist %ENGINE_DIRECTORY%\bin\OpenRA.exe goto noengine
@@ -24,13 +24,13 @@ echo Enter a utility command or --exit to exit.
 echo Press enter to view a list of valid utility commands.
 echo.
 
-set /P command=Please enter a command: bin/OpenRA.Utility.exe %MOD_ID% 
+set /P command=Please enter a command: OpenRA.Utility.exe %MOD_ID% 
 if /I "%command%" EQU "--exit" (cd %TEMPLATE_DIR% & exit /b)
 echo.
 echo ----------------------------------------
 echo.
-echo bin/OpenRA.Utility.exe %MOD_ID% %command%
-call bin/OpenRA.Utility.exe %MOD_ID% %command%
+echo OpenRA.Utility.exe %MOD_ID% %command%
+call "./bin/OpenRA.Utility.exe" %MOD_ID% %command%
 goto loop
 
 :noengine

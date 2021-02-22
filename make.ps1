@@ -48,14 +48,14 @@ function Clean-Command
 	rm ./*/bin -r
 	rm ./*/obj -r
 
-	rm $env:ENGINE_DIRECTORY/*.dll
+	rm $env:ENGINE_DIRECTORY/bin/*.dll
 	rm $env:ENGINE_DIRECTORY/mods/*/*.dll
-	rm env:ENGINE_DIRECTORY/*.config
-	rm env:ENGINE_DIRECTORY/*.pdb
+	rm env:ENGINE_DIRECTORY/bin/*.config
+	rm env:ENGINE_DIRECTORY/bin/*.pdb
 	rm mods/*/*.pdb
-	rm env:ENGINE_DIRECTORY/*.exe
-	rm env:ENGINE_DIRECTORY/*/bin -r
-	rm env:ENGINE_DIRECTORY/*/obj -r
+	rm env:ENGINE_DIRECTORY/bin/*.exe
+	rm env:ENGINE_DIRECTORY/bin/*/bin -r
+	rm env:ENGINE_DIRECTORY/bin/*/obj -r
 	if (Test-Path env:ENGINE_DIRECTORY/thirdparty/download/)
 	{
 		rmdir env:ENGINE_DIRECTORY/thirdparty/download -Recurse -Force
@@ -117,7 +117,10 @@ function Test-Command
 	}
 
 	Write-Host "Testing $modID mod MiniYAML..." -ForegroundColor Cyan
-	Invoke-Expression "$utilityPath $modID --check-yaml"
+	echo "$utilityPath $modID --check-yaml"
+	cd engine
+	Invoke-Expression "../$utilityPath $modID --check-yaml"
+	cd ..
 }
 
 function Check-Command
@@ -382,8 +385,8 @@ if ($command -eq "all" -or $command -eq "clean")
 	}
 }
 
-$utilityPath = $env:ENGINE_DIRECTORY + "/OpenRA.Utility.exe"
-$styleCheckPath = $env:ENGINE_DIRECTORY + "/OpenRA.StyleCheck.exe"
+$utilityPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.Utility.exe"
+$styleCheckPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.StyleCheck.exe"
 
 $execute = $command
 if ($command.Length -gt 1)
