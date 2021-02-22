@@ -11,7 +11,7 @@ apache:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: hq, ~techlevel.medium, aircraft.nod
+		Prerequisites: hq, ~techlevel.medium, ~aircraft.nod
 		Queue: Aircraft
 		Description: 搭载火神机炮的重型武装直升机\n可以对空\n\n·强势对抗：步兵、轻型载具、飞行器\n·弱势对抗：装甲载具
 	Aircraft:
@@ -200,7 +200,7 @@ ac130:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 100
-		Prerequisites: none
+		Prerequisites: ~none
 	Valued:
 		Cost: 3000
 	Selectable:

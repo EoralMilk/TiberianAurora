@@ -98,6 +98,13 @@ Player:
 		Enabled: True
 		DisplayOrder: 7
 		Prerequisites: global-factundeploy
+	LobbyPrerequisiteCheckbox@supertech:
+		ID: supertech
+		Label: Experimental Tech
+		Description: Allow to use the experimental technology.
+		Enabled: False
+		DisplayOrder: 10
+		Prerequisites: supertech
 	FrozenActorLayer:
 	BaseAttackNotifier:
 		AllyNotification: OurAllyIsUnderAttack
@@ -126,6 +133,10 @@ Player:
 		Name: Unrestricted
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high, techlevel.unrestricted
 		Id: unrestricted
+	# ProvidesTechPrerequisite@supertech:
+	# 	Name: Experimental technology
+	# 	Prerequisites: supertech
+	# 	Id: supertech
 	GrantConditionOnPrerequisiteManager:
 	VeteranProductionIconOverlay:
 		Image: cameo-chevron

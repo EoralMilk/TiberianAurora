@@ -13,7 +13,7 @@ orcafighter:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: hq, aircraft.gdi, ~techlevel.medium
+		Prerequisites: hq, ~aircraft.gdi, ~techlevel.medium
 		Queue: Aircraft
 		Description: 装备集束导弹发射器的先进反装甲垂直起降战机\n可以对空\n无需返航补给弹药\n\n·强势对抗：载具、建筑、飞行器\n·弱势对抗：步兵
 	Aircraft:
@@ -133,7 +133,7 @@ a10:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
-		Prerequisites: none
+		Prerequisites: ~none
 		Description: 快速对地攻击机\n\n 强势对抗：地面单位
 	Aircraft:
 		CanHover: false
@@ -284,7 +284,7 @@ orcags:
 		AddToArmyValue: true
 	Buildable:
 		BuildPaletteOrder: 100
-		Prerequisites: hq, aircraft.gdi, advhq, ~techlevel.high
+		Prerequisites: hq, ~aircraft.gdi, advhq, ~techlevel.high, ~supertech
 		Queue: Aircraft
 		Description: 装备一门主炮与两挺重机枪的支援型炮艇机\n可以对空\n\n·强势对抗：一切\n\n·特殊能力：可以自我回复至最大生命值的50%\n·特殊能力：可以生产步兵单位
 	Aircraft:
