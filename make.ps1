@@ -117,7 +117,10 @@ function Test-Command
 	}
 
 	Write-Host "Testing $modID mod MiniYAML..." -ForegroundColor Cyan
-	Invoke-Expression "$utilityPath $modID --check-yaml"
+	echo "$utilityPath $modID --check-yaml"
+	cd engine
+	Invoke-Expression "../$utilityPath $modID --check-yaml"
+	cd ..
 }
 
 function Check-Command
