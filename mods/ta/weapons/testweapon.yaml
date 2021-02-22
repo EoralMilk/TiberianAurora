@@ -197,6 +197,7 @@ FlameInfection:
 
 
 ClusterSpawner:
+	ValidTargets: Ground, Water, Air
 	# Inherits: ^CommonCannon
 	# Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ReloadDelay: 80
@@ -239,7 +240,7 @@ ClusterMislPop:
 ClusterMislFire:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^Blast_WarheadEff_2
-	ValidTargets: Ground, Water, Air
+	InvalidTargets: Wall
 	Range: 4c512
 	ReloadDelay: 1
 	-Report:
