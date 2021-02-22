@@ -129,6 +129,36 @@ ncycle:
 			TopLeft: -168, -366
 			BottomRight: 168, 366
 
+ncycleb:
+	Inherits: ncycle
+	# AttackFrontal:
+	AttackTurreted:
+		Voice: Attack
+		Armaments: primary, secondary, casing
+	Turreted:
+		TurnSpeed: 9999
+		Offset: -277,0,942
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		Prerequisites: ~vehicle.nod, hq, ~techlevel.medium, ~supertech
+		Description: 使用奇怪改装的突击摩托\n随机弹射自主索敌的导弹\n\n·强势对抗：载具, 建筑\n·弱势对抗：步兵
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: 改装摩托
+	Armament:
+		Weapon: ClusterSpawner
+		LocalOffset: 0,0,0
+		-PauseOnCondition:
+		MuzzleSequence: muzzle
+	-Armament@AA:
+	-AmmoPool@misl:
+	-ReloadAmmoPool@misl:
+	RenderSprites:
+		Image: n_cycle-b
+		PlayerPalette: n_cycle
+
 ntank:
 	Inherits@ParaDrop: ^ParachutableVehicle
 	Inherits: ^TurretedVehicle

@@ -168,7 +168,7 @@ Player:
 		SquadSize: 15
 		ExcludeFromSquadsTypes: harvester, eng, mcv
 		ConstructionYardTypes: fact
-		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache, orcags
+		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache, orcags, ncycleb
 		IgnoredEnemyTargetTypes: Wall
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
@@ -197,6 +197,7 @@ Player:
 			orcafighter: 8
 			apache: 6
 			orcags: 6
+			ncycleb: 15
 		UnitLimits:
 			gmmtnk: 7
 			nstltnk: 15
