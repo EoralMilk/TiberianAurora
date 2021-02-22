@@ -196,6 +196,84 @@ FlameInfection:
 		LifeTime: 15, 20
 
 
+ClusterSpawner:
+	# Inherits: ^CommonCannon
+	# Inherits@WarheadEff: ^HE_WarheadEff_Medium
+	ReloadDelay: 80
+	Range: 5c0
+	Report: gl_shot.wav
+	Projectile: InstantExplode
+	Warhead@Spawn: FireShrapnel
+		Weapon: ClusterMislPop
+		Amount: 4
+		ValidTargets: Ground, Water, Air
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+		Spread: 0c0
+
+
+ClusterMislPop:
+	ValidTargets: Ground, Water, Air
+	ReloadDelay: 100
+	Range: 3c0
+	MinRange: 2c0
+	Projectile: BulletAS2TA
+		# AirburstAltitude: 30c0
+		Speed: 60
+		ContrailLength: 0
+		LaunchAngle: 240
+		LifeTime: 20
+		Image: dragonrot
+		Palette: player
+		Shadow: true
+		Blockable: false
+	Warhead@Spawn: FireShrapnel
+		Weapon: ClusterMislFire
+		Amount: 1
+		AimChance: 100
+		AimTargetStances: Enemy
+		AllowDirectHit: true
+		ValidTargets: Ground, Water, Air
+
+
+ClusterMislFire:
+	Inherits: ^CommonMissile
+	Inherits@WarheadEff: ^Blast_WarheadEff_2
+	ValidTargets: Ground, Water, Air
+	Range: 4c512
+	ReloadDelay: 1
+	-Report:
+	Projectile: MissileTA
+		#TrailPalette: redlight
+		JetPalette: redlight
+		ContrailLength2: 12
+		ContrailWidth: 40
+		ContrailColor: FFAAAA
+		Arm: 2
+		Speed: 400
+		Inaccuracy: 100
+		Acceleration: 22
+		HorizontalRateOfTurn: 80
+		RangeLimit: 14c512
+		CruiseAltitude: 3c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c450
+		Damage: 4500
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 100
+			Medium: 45
+			Heavy: 75
+			Wood: 50
+			Steel: 40
+			Concrete: 40
+			Drone: 80
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Ground, Water, Air
+
 Firework:
 	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	Inherits@WarheadFireWork: ^FireworkWarhead

@@ -22,6 +22,14 @@ n_cycle:
 	 	AddExtension: false
 		Offset: 0, 0, 0
 
+n_cycle-b:
+	Inherits: ^CommonVehicale
+	Inherits@Muzzle: ^WithFlakMuzzle
+	icon: ncycle_icon.png
+		UseTilesetCode: false
+	 	AddExtension: false
+		Offset: 0, 0, 0
+
 n_ltank:
 	Inherits: ^CommonVehicale
 	Inherits@Muzzle: ^WithCannonMuzzle
