@@ -1,0 +1,3 @@
+test_s:
+	blasta1-a: blasta1-a.mcs
+		AddExtension: false
