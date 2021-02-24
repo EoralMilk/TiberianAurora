@@ -645,3 +645,8 @@
 		Name: c_dh
 		Filename: c_dh.pal
 		ShadowIndex: 1
+
+	PaletteFromFile@c_td:
+		Name: c_td
+		Filename: c_td.pal
+		ShadowIndex: 1

@@ -359,6 +359,7 @@
 	BodyOrientation:
 		QuantizedFacings: 0
 		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
 	Aircraft:
 	HiddenUnderFog:
 		Type: CenterPosition
@@ -665,6 +666,11 @@
 		Delay: 0
 		Interval: 0
 		RequiresCondition: flying
+	BodyOrientation:
+		QuantizedFacings: 32
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
+
 
 ^Helicopter:
 	Inherits: ^CommonAircraft
@@ -869,7 +875,9 @@
 		TargetTypes: Meat
 	DetectCloaked:
 		Range: 1c0
-
+	BodyOrientation:
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor

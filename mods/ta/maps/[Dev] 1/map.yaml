@@ -930,6 +930,34 @@ Actors:
 	Actor340: cast
 		Owner: Neutral
 		Location: 97,-1
+	Actor341: catd
+		Owner: Neutral
+		Location: 101,-28
+		Health: 100
+		TurretFacing: 0
+	Actor342: catd
+		Owner: Neutral
+		Location: 101,-32
+		Health: 100
+		TurretFacing: 207
+	Actor344: catd
+		Owner: Neutral
+		Location: 104,-8
+		Health: 100
+		TurretFacing: 289
+	Actor346: catd
+		Owner: Neutral
+		Location: 98,-5
+		Health: 100
+		TurretFacing: 481
+	Actor347: catd
+		Owner: Neutral
+		Location: 115,9
+	Actor348: catd
+		Owner: Neutral
+		Location: 123,3
+		Health: 100
+		TurretFacing: 771
 
 Rules:
 	World:

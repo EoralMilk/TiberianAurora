@@ -177,3 +177,16 @@ c_tm-f:
 xtest:
 	idle:
 		ZOffset: 256
+
+
+c_td:
+	Defaults:
+		Offset: 0, 0, 5
+		ZOffset: 0
+		UseTilesetCode: false
+	idle:
+		Facings: 4
+		ShadowStart: 4
+	turret: 
+		Facings: 4
+		ShadowStart: 4

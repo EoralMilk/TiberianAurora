@@ -839,3 +839,32 @@ cast-ruins:
 		HP: 50000
 	-ExplosionOnDamageTransition:
 
+
+
+
+
+
+catd:
+	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: 塔吊
+	Health:
+		HP: 35000
+	-WithSpriteBody:
+	WithSpriteTurret:
+	Turreted:
+		TurnSpeed: 0
+	BodyOrientation:
+		QuantizedFacings: 4
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
+	RenderSprites:
+		Image: c_td
+		Palette: c_td
+	Armament:
+		Weapon: TurretCannon
+	AttackTurreted:
