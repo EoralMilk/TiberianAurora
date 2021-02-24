@@ -201,7 +201,7 @@ ClusterSpawner:
 	# Inherits: ^CommonCannon
 	# Inherits@WarheadEff: ^HE_WarheadEff_Medium
 	ReloadDelay: 80
-	Range: 5c0
+	Range: 4c512
 	Report: gl_shot.wav
 	Projectile: InstantExplode
 	Warhead@Spawn: FireShrapnel
@@ -216,8 +216,8 @@ ClusterSpawner:
 ClusterMislPop:
 	ValidTargets: Ground, Water, Air
 	ReloadDelay: 100
-	Range: 3c0
-	MinRange: 2c0
+	Range: 4c0
+	MinRange: 3c0
 	Projectile: BulletAS2TA
 		# AirburstAltitude: 30c0
 		Speed: 60
@@ -241,7 +241,8 @@ ClusterMislFire:
 	Inherits: ^CommonMissile
 	Inherits@WarheadEff: ^Blast_WarheadEff_2
 	InvalidTargets: Wall
-	Range: 4c512
+	ValidTargets: Ground, Water, Air
+	Range: 5c512
 	ReloadDelay: 1
 	-Report:
 	Projectile: MissileTA
@@ -273,7 +274,25 @@ ClusterMislFire:
 			Drone: 80
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-		ValidTargets: Ground, Water, Air
+		ValidTargets: Ground, Water
+	Warhead@1DamAir: SpreadDamage
+		Spread: 0c450
+		Damage: 3000
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 100
+			Medium: 45
+			Heavy: 75
+			Wood: 50
+			Steel: 40
+			Concrete: 40
+			Drone: 80
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Air
+
 
 Firework:
 	Inherits@WarheadEff: ^Blast_WarheadEff_2

@@ -47,7 +47,6 @@ APBazooka:
 	MinRange: 0c512
 	Report: bazooka_shot.wav
 	Projectile: MissileTA
-		ContrailLength: 12
 		Arm: 2
 		Speed: 370
 		Inaccuracy: 33
