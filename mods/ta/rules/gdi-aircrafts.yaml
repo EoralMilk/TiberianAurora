@@ -52,6 +52,7 @@ orcafighter:
 		AmmoCondition: ammo
 	ReloadAmmoPool:
 		Delay: 60
+		ResetOnFire: True
 		Count: 2
 	SpawnActorOnDeath:
 		Actor: orcafighter.Husk

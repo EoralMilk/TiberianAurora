@@ -624,7 +624,7 @@ ORCAGSHMG:
 	Inherits: ^MG
 	Inherits@WarheadEff: ^MGPiff
 	ValidTargets: Ground, Water, Air
-	ReloadDelay: 30
+	ReloadDelay: 35
 	Burst: 5
 	BurstDelays: 3
 	Range: 7c512
@@ -632,7 +632,7 @@ ORCAGSHMG:
 	Warhead@Eff_HitMetal: CreateEffect
 		ImpactSounds: metal_heavy_01.wav, metal_heavy_02.wav, metal_heavy_03.wav
 	Warhead@1Dam: SpreadDamage
-		Damage: 2500
+		Damage: 2000
 		Spread: 0c274
 		Versus:
 			None: 100
@@ -651,13 +651,13 @@ ORCAGSHMG:
 
 ORCAGSHMG2:
 	Inherits: ORCAGSHMG
-	ReloadDelay: 26
+	ReloadDelay: 31
 	Burst: 5
 	BurstDelays: 4
 
 ORCAGSHMG-Casing:
 	Inherits: ^BulletCasing
-	ReloadDelay: 30
+	ReloadDelay: 35
 	Burst: 5
 	BurstDelays: 3
 	Range: 7c512
@@ -665,6 +665,6 @@ ORCAGSHMG-Casing:
 
 ORCAGSHMG2-Casing:
 	Inherits: ORCAGSHMG-Casing
-	ReloadDelay: 26
+	ReloadDelay: 31
 	Burst: 5
 	BurstDelays: 4
