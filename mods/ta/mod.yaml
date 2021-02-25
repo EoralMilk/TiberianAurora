@@ -304,10 +304,10 @@ SupportsMapsFrom: ta
 
 SoundFormats: Aud, Wav
 
-SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet, Mcs
 
 AssetBrowser:
-	SupportedExtensions: .shp, .tem, .urb, .sno
+	SupportedExtensions: .shp, .tem, .urb, .sno, .mcs
 
 SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 	TilesetExtensions:
