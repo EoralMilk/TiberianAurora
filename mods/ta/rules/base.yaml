@@ -759,9 +759,6 @@
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
-	HitShape:
-		Type: Circle
-			Radius: 128
 	Armor:
 		Type: None
 	RevealsShroud: 
@@ -828,6 +825,23 @@
 	SpawnActorOnDeath@flames:
 		Actor: FLAMEGUY
 		DeathType: FlameDeath
+
+	HitShape:
+		Type: Circle
+			Radius: 128
+			VerticalTopOffset: 1128
+			VerticalBottomOffset: 0
+		TargetableOffsets: 0,0,300, 0,0,500
+		RequiresCondition: !prone
+	HitShape@prone:
+		Type: Circle
+			Radius: 128
+			VerticalTopOffset: 200
+			VerticalBottomOffset: 0
+		TargetableOffsets: 0,0,100
+		RequiresCondition: prone
+	ExternalCondition@Prone:
+		Condition: prone
 	TakeCover:
 		SpeedModifier: 50
 		ProneOffset: 443,10,100
@@ -836,6 +850,7 @@
 			Prone70Percent: 70
 			Prone100Percent: 100
 		DamageTriggers: TriggerProne
+
 	Passenger:
 		Voice: Move
 		CargoType: Infantry

@@ -31,13 +31,25 @@ mngunner:
 		Voice: Attack
 	Armament@primary:
 		Weapon: GAU-3
+		RequiresCondition: !prone
 		LocalOffset: 268,50,850
 		MuzzleSequence: muzzle0
 		MuzzleSplitFacings: 8
-	WithMuzzleOverlay:
 	Armament@Casing:
 		Weapon: GAU-Casing
+		RequiresCondition: !prone
 		LocalOffset: 0,50,800
+	Armament@primary-prone:
+		Weapon: GAU-3
+		RequiresCondition: prone
+		LocalOffset: 303,10,30
+		MuzzleSequence: muzzle0
+		MuzzleSplitFacings: 8
+	Armament@Casing-prone:
+		Weapon: GAU-Casing
+		RequiresCondition: prone
+		LocalOffset: 40,10,30
+	WithMuzzleOverlay:
 	TakeCover:
 		SpeedModifier: 50
 		ProneOffset: 443,10,30
