@@ -429,11 +429,13 @@ fires-u:
 
 
 mcsexp1:
-	oilexp1: oilexp1.mcs
+	Defaults:
 		Length: *
 		Tick: 50
 		ZOffset: 1024
 		AddExtension: false
+	oilexp1: oilexp1.mcs
+	oilexp2: oilexp2.mcs
 
 blasts:
 	Defaults:

@@ -518,7 +518,7 @@ A10Napalm:
 			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: oilexp1
+		Explosions: oilexp1, oilexp2
 		Image: mcsexp1
 		ImpactSounds: gexp14a.wav
 		ValidTargets: Ground, Air
