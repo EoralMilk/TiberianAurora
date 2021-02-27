@@ -23,7 +23,7 @@ require_variables() {
 
 TEMPLATE_LAUNCHER=$(${PYTHON} -c "import os; print(os.path.realpath('$0'))")
 TEMPLATE_ROOT=$(dirname "${TEMPLATE_LAUNCHER}")
-MOD_SEARCH_PATHS="${TEMPLATE_ROOT}/mods,${TEMPLATE_ROOT}/engine/mods"
+MOD_SEARCH_PATHS="${TEMPLATE_ROOT}/mods,./mods"
 
 # shellcheck source=mod.config
 . "${TEMPLATE_ROOT}/mod.config"
@@ -36,12 +36,17 @@ fi
 require_variables "MOD_ID" "ENGINE_VERSION" "ENGINE_DIRECTORY"
 
 cd "${TEMPLATE_ROOT}"
-if [ ! -f "${ENGINE_DIRECTORY}/bin/OpenRA.exe" ] || [ "$(cat "${ENGINE_DIRECTORY}/VERSION")" != "${ENGINE_VERSION}" ]; then
+if [ ! -f "${ENGINE_DIRECTORY}/bin/OpenRA.dll" ] || [ "$(cat "${ENGINE_DIRECTORY}/VERSION")" != "${ENGINE_VERSION}" ]; then
 	echo "Required engine files not found."
 	echo "Run \`make\` in the mod directory to fetch and build the required files, then try again.";
 	exit 1
 fi
 
+if command -v mono >/dev/null 2>&1 && [ "$(grep -c .NETCoreApp,Version= ${ENGINE_DIRECTORY}/bin/OpenRA.dll)" = "0" ]; then
+	RUNTIME_LAUNCHER="mono --debug"
+else
+	RUNTIME_LAUNCHER="dotnet"
+fi
+
 cd "${ENGINE_DIRECTORY}"
-echo ${MOD_SEARCH_PATHS}
-mono bin/OpenRA.exe Engine.EngineDir="${TEMPLATE_ROOT}/engine" Engine.LaunchPath="${TEMPLATE_LAUNCHER}" "Engine.ModSearchPaths=${MOD_SEARCH_PATHS}" Game.Mod="${MOD_ID}" "$@"
+${RUNTIME_LAUNCHER} bin/OpenRA.dll Engine.EngineDir=".." Engine.LaunchPath="${TEMPLATE_LAUNCHER}" "Engine.ModSearchPaths=${MOD_SEARCH_PATHS}" Game.Mod="${MOD_ID}" "$@"

@@ -220,14 +220,14 @@ World:
 		GameSpeedDropdownDisplayOrder: 4
 		GameSpeed: faster
 		TechLevel: unrestricted
-	CreateMPPlayers:
-	MPStartUnits@gdimcv:
+	CreateMapPlayers:
+	StartingUnits@gdimcv:
 		Class: none
 		ClassName: 只有MCV
 		Factions: gdi
 		BaseActor: mcv
 		BaseActorFacing: 896 
-	MPStartUnits@gdilight:
+	StartingUnits@gdilight:
 		Class: light
 		ClassName: MCV与哨兵
 		Factions: gdi
@@ -237,7 +237,7 @@ World:
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@gdimedium:
+	StartingUnits@gdimedium:
 		Class: medium
 		ClassName: MCV与巡逻小队
 		Factions: gdi
@@ -247,7 +247,7 @@ World:
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@gdiheavy:
+	StartingUnits@gdiheavy:
 		Class: heavy
 		ClassName: MCV与防御部队
 		Factions: gdi
@@ -257,13 +257,13 @@ World:
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@nodmcv:
+	StartingUnits@nodmcv:
 		Class: none
 		ClassName: 只有MCV
 		Factions: nod
 		BaseActor: mcv
 		BaseActorFacing: 896 
-	MPStartUnits@nodlight:
+	StartingUnits@nodlight:
 		Class: light
 		ClassName: MCV与哨兵
 		Factions: nod
@@ -273,7 +273,7 @@ World:
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@nodmedium:
+	StartingUnits@nodmedium:
 		Class: medium
 		ClassName: MCV与巡逻小队
 		Factions: nod
@@ -283,7 +283,7 @@ World:
 		SupportActorsFacing: 896 
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@nodheavy:
+	StartingUnits@nodheavy:
 		Class: heavy
 		ClassName: MCV与防御部队
 		Factions: nod
@@ -300,9 +300,9 @@ World:
 		WaterChance: 25
 		InitialSpawnDelay: 1000
 		CheckboxDisplayOrder: 1
-	MPStartLocations:
+	MapStartingLocations:
 		SeparateTeamSpawnsCheckboxDisplayOrder: 6
-	SpawnMPUnits:
+	SpawnStartingUnits:
 		StartingUnitsClass: none
 		DropdownDisplayOrder: 2
 	PathFinder:

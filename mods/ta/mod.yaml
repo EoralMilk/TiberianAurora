@@ -306,6 +306,10 @@ SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet, Mcs
 
+VideoFormats: Vqa
+
+TerrainFormat: DefaultTerrain
+
 AssetBrowser:
 	SupportedExtensions: .shp, .tem, .urb, .sno, .mcs
 
