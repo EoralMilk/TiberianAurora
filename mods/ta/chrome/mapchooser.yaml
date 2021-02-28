@@ -64,7 +64,7 @@ Container@MAPCHOOSER_PANEL:
 						ScrollPanel@MAP_LIST:
 							Width: PARENT_RIGHT
 							Height: PARENT_BOTTOM
-							Children:
+							ItemSpacing: 1
 				Container@USER_MAPS_TAB:
 					X: 15
 					Y: 45
@@ -74,7 +74,7 @@ Container@MAPCHOOSER_PANEL:
 						ScrollPanel@MAP_LIST:
 							Width: PARENT_RIGHT
 							Height: PARENT_BOTTOM
-							Children:
+							ItemSpacing: 1
 				ScrollItem@MAP_TEMPLATE:
 					Width: 183
 					Height: 232
