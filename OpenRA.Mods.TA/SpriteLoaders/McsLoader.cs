@@ -21,7 +21,7 @@ namespace OpenRA.Mods.TA.SpriteLoaders
 	{
 		class McsFrame : ISpriteFrame
 		{
-			public SpriteFrameType Type => SpriteFrameType.BGRA;
+			public SpriteFrameType Type => SpriteFrameType.Rgba32;
 			public Size Size { get; private set; }
 			public Size FrameSize { get; private set; }
 			public float2 Offset { get; private set; }

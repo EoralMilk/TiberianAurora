@@ -359,9 +359,11 @@ if ($command -eq "all" -or $command -eq "clean" -or $command -eq "check")
 		$dlPath = Join-Path $pwd (Split-Path -leaf $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY)
 		$dlPath = Join-Path $dlPath (Split-Path -leaf $env:AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME)
 
-		$client = new-object System.Net.WebClient
-		[Net.ServicePointManager]::SecurityProtocol = 'Tls12'
-		$client.DownloadFile($url, $dlPath)
+		# $client = new-object System.Net.WebClient 
+		# [Net.ServicePointManager]::SecurityProtocol = 'Tls12' 
+		# $client.DownloadFile($url, $dlPath) 
+		$download = "$pwd" + "\curl.exe" 
+		&$download -s -L $url -o $dlPath 
 
 		Add-Type -assembly "system.io.compression.filesystem"
 		[io.compression.zipfile]::ExtractToDirectory($dlPath, $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY)
