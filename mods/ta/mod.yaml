@@ -19,7 +19,7 @@ Packages:
 
 
 	$ta: ta
-	./mods/common: common
+	^EngineDir|mods/common: common
 
 	ta|content
 	ta|content/effect
@@ -46,6 +46,8 @@ Packages:
 	ta|bits
 	ta|bits/animations
 	ta|bits/sounds.mix
+	ta|bits/scores.mix
+	ta|bits/transit.mix
 
 	ta|uibits
 	ta|speechs
@@ -372,13 +374,3 @@ GameSpeeds:
 		Name: Fastest
 		Timestep: 20
 		OrderLatency: 6
-
-ModContent:
-	InstallPromptMessage: Now It still requires artwork and audio from the original Red Alert 2.
-	HeaderMessage: The original game content must be copied from an original game disc.
-	Packages:
-		cncmusic: CNC Base Game Music
-			TestFiles: ^Content/cnc/scores.mix
-			Download: music
-	Downloads:
-		ta|installer/downloads.yaml

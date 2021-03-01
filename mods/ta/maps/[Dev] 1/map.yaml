@@ -965,3 +965,6 @@ Rules:
 			Ambient: 0.75
 			Red: 1.12
 			Green: 1.12
+		MusicPlaylist:
+			BackgroundMusic: map1
+			DisableWorldSounds: true

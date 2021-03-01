@@ -1,6 +1,0 @@
-
-music: Freeware Music
-	SHA1: c7f220aa59024f02932d5713b1aa6201113c03b5
-	MirrorList: http://www.openra.net/packages/cnc-music-mirrors.txt
-	Extract:
-		^Content/cnc/scores.mix: scores.mix
