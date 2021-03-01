@@ -25,6 +25,7 @@
 			Bridge: 100
 			DirtRoad: 100
 			Ore: 90
+				PathingCost: 300
 			Gems: 80
 	Locomotor@SWIMSUIT:
 		Name: swimsuit
@@ -38,6 +39,7 @@
 			Bridge: 100
 			DirtRoad: 100
 			Ore: 90
+				PathingCost: 300
 			Gems: 80
 			Water: 70
 	Locomotor@FLAMEGUY:
