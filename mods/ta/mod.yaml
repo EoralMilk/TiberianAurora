@@ -203,6 +203,11 @@ ChromeLayout:
 	ta|chrome/ingame-debuginfo.yaml
 	ta|chrome/music.yaml
 	ta|chrome/settings.yaml
+	ta|chrome/settings-display.yaml
+	ta|chrome/settings-audio.yaml
+	ta|chrome/settings-input.yaml
+	ta|chrome/settings-hotkeys.yaml
+	ta|chrome/settings-advanced.yaml
 	ta|chrome/credits.yaml
 	ta|chrome/dialogs.yaml
 	ta|chrome/tooltips.yaml
@@ -243,6 +248,15 @@ MapGrid:
 	SubCellOffsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
 	DefaultSubCell: 2
 	MaximumTerrainHeight: 16
+
+WorldViewportSizes:
+	CloseWindowHeights: 480, 600
+	MediumWindowHeights: 600, 900
+	FarWindowHeights: 900, 1300
+	MaxZoomScale: 2
+	MaxZoomWindowHeight: 240
+	AllowNativeZoom: true
+	MinEffectiveResolution: 1024, 720
 
 Music:
 	ta|audio/music.yaml
@@ -310,6 +324,10 @@ SupportsMapsFrom: ta
 SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet, Mcs
+
+VideoFormats: Vqa
+
+TerrainFormat: DefaultTerrain
 
 AssetBrowser:
 	SupportedExtensions: .shp, .tem, .urb, .sno, .mcs

@@ -15,7 +15,7 @@ function All-Command
 		return
 	}
 
-	dotnet build /p:Configuration=Release /nologo
+	dotnet build -c Release --nologo -p:TargetPlatform=win-x64
 	if ($lastexitcode -ne 0)
 	{
 		Write-Host "Build failed. If just the development tools failed to build, try installing Visual Studio. You may also still be able to run the game." -ForegroundColor Red
@@ -48,14 +48,14 @@ function Clean-Command
 	rm ./*/bin -r
 	rm ./*/obj -r
 
-	rm $env:ENGINE_DIRECTORY/bin/*.dll
+	rm $env:ENGINE_DIRECTORY/*.dll
 	rm $env:ENGINE_DIRECTORY/mods/*/*.dll
-	rm env:ENGINE_DIRECTORY/bin/*.config
-	rm env:ENGINE_DIRECTORY/bin/*.pdb
+	rm env:ENGINE_DIRECTORY/*.config
+	rm env:ENGINE_DIRECTORY/*.pdb
 	rm mods/*/*.pdb
-	rm env:ENGINE_DIRECTORY/bin/*.exe
-	rm env:ENGINE_DIRECTORY/bin/*/bin -r
-	rm env:ENGINE_DIRECTORY/bin/*/obj -r
+	rm env:ENGINE_DIRECTORY/*.exe
+	rm env:ENGINE_DIRECTORY/*/bin -r
+	rm env:ENGINE_DIRECTORY/*/obj -r
 	if (Test-Path env:ENGINE_DIRECTORY/thirdparty/download/)
 	{
 		rmdir env:ENGINE_DIRECTORY/thirdparty/download -Recurse -Force
@@ -117,10 +117,7 @@ function Test-Command
 	}
 
 	Write-Host "Testing $modID mod MiniYAML..." -ForegroundColor Cyan
-	echo "$utilityPath $modID --check-yaml"
-	cd engine
-	Invoke-Expression "../$utilityPath $modID --check-yaml"
-	cd ..
+	Invoke-Expression "$utilityPath $modID --check-yaml"
 }
 
 function Check-Command
@@ -132,7 +129,7 @@ function Check-Command
 	}
 
 	Write-Host "Compiling in debug configuration..." -ForegroundColor Cyan
-	dotnet build /p:Configuration=Debug /nologo
+	dotnet build -c Debug --nologo -p:TargetPlatform=win-x64
 	if ($lastexitcode -ne 0)
 	{
 		Write-Host "Build failed." -ForegroundColor Red
@@ -194,7 +191,7 @@ function CheckForDotnet
 {
 	if ((Get-Command "dotnet" -ErrorAction SilentlyContinue) -eq $null) 
 	{
-		Write-Host "The 'dotnet' tool is required to compile OpenRA. Please install the .NET Core SDK or Visual Studio and try again. https://dotnet.microsoft.com/download" -ForegroundColor Red
+		Write-Host "The 'dotnet' tool is required to compile OpenRA. Please install the .NET 5.0 SDK and try again. https://dotnet.microsoft.com/download/dotnet/5.0" -ForegroundColor Red
 		return 1
 	}
 
@@ -304,8 +301,8 @@ $modID = $env:MOD_ID
 
 $env:MOD_SEARCH_PATHS = (Get-Item -Path ".\" -Verbose).FullName + "\mods,./mods"
 
-# Run the same command on the engine's make file
-if ($command -eq "all" -or $command -eq "clean")
+# Fetch the engine if required
+if ($command -eq "all" -or $command -eq "clean" -or $command -eq "check")
 {
 	$templateDir = $pwd.Path
 	$versionFile = $env:ENGINE_DIRECTORY + "/VERSION"
@@ -362,11 +359,12 @@ if ($command -eq "all" -or $command -eq "clean")
 		$dlPath = Join-Path $pwd (Split-Path -leaf $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY)
 		$dlPath = Join-Path $dlPath (Split-Path -leaf $env:AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME)
 
-		# $client = new-object System.Net.WebClient
-		# [Net.ServicePointManager]::SecurityProtocol = 'Tls12'
-		# $client.DownloadFile($url, $dlPath)
-		$download = "$pwd" + "\curl.exe"
+		# $client = new-object System.Net.WebClient 
+		# [Net.ServicePointManager]::SecurityProtocol = 'Tls12' 
+		# $client.DownloadFile($url, $dlPath) 
+		$download = "$pwd" + "\curl.exe" 
 		&$download -s -L $url -o $dlPath 
+
 		Add-Type -assembly "system.io.compression.filesystem"
 		[io.compression.zipfile]::ExtractToDirectory($dlPath, $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY)
 		rm $dlPath
@@ -376,7 +374,16 @@ if ($command -eq "all" -or $command -eq "clean")
 		Rename-Item $extractedDir.Name (Split-Path -leaf $env:ENGINE_DIRECTORY)
 
 		rm $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY -r
+	}
+}
 
+
+
+# Run the same command on the engine's make file
+if ($command -eq "all" -or $command -eq "clean")
+{
+	if (Test-Path $env:ENGINE_DIRECTORY)
+	{
 		cd $env:ENGINE_DIRECTORY
 		Invoke-Expression ".\make.cmd version $env:ENGINE_VERSION"
 		Invoke-Expression ".\make.cmd $command"
@@ -385,8 +392,8 @@ if ($command -eq "all" -or $command -eq "clean")
 	}
 }
 
-$utilityPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.Utility.exe"
-$styleCheckPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.StyleCheck.exe"
+$utilityPath = $env:ENGINE_DIRECTORY + "/OpenRA.Utility.exe"
+$styleCheckPath = $env:ENGINE_DIRECTORY + "/OpenRA.StyleCheck.exe"
 
 $execute = $command
 if ($command.Length -gt 1)

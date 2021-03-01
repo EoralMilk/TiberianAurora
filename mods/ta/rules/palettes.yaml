@@ -7,7 +7,6 @@
 	PlayerColorPalette:
 		BasePalette: player
 		RemapIndex: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
-	PlayerHighlightPalette:
 	PaletteFromFile@playertem:
 		Name: player
 		Tileset: TEMPERATE
@@ -77,7 +76,7 @@
 		G: 0
 		B: 0
 		A: 128
-	PaletteFromRGBA@highlight:
+	PaletteFromRGBA@highlight: ##maybe deprecated
 		Name: highlight
 		R: 255
 		G: 255
@@ -89,12 +88,6 @@
 		G: 255
 		B: 255
 		A: 64
-	PaletteFromRGBA@disabled:
-		Name: disabled
-		R: 0
-		G: 0
-		B: 0
-		A: 180
 	TSShroudPalette@shroud:
 		Name: shroud
 	ShroudRenderer:

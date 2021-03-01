@@ -401,7 +401,7 @@ namespace OpenRA.Mods.TA.Projectiles
 				if (checkTargetType && !Target.FromActor(victim).IsValidFor(firedBy))
 					continue;
 
-				if (!info.ValidBounceBlockerStances.HasStance(firedBy.Owner.RelationshipWith(victim.Owner)))
+				if (!info.ValidBounceBlockerStances.HasRelationship(firedBy.Owner.RelationshipWith(victim.Owner)))
 					continue;
 
 				// If the impact position is within any actor's HitShape, we have a direct hit

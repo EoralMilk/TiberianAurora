@@ -27,7 +27,6 @@ namespace OpenRA.Mods.AS.Effects
 		readonly WDist[] speed;
 		readonly WDist[] gravity;
 		readonly bool visibleThroughFog;
-		readonly bool scaleSizeWithZoom;
 		readonly bool canDamage;
 		readonly int turnRate;
 
@@ -37,7 +36,7 @@ namespace OpenRA.Mods.AS.Effects
 
 		int facing;
 
-		public SmokeParticle(Actor invoker, ISmokeParticleInfo smoke, WPos pos, int facing = -1, bool visibleThroughFog = false, bool scaleSizeWithZoom = false)
+		public SmokeParticle(Actor invoker, ISmokeParticleInfo smoke, WPos pos, int facing = -1, bool visibleThroughFog = false)
 		{
 			this.invoker = invoker;
 			world = invoker.World;
@@ -45,7 +44,6 @@ namespace OpenRA.Mods.AS.Effects
 			this.smoke = smoke;
 			speed = smoke.Speed;
 			gravity = smoke.Gravity;
-			this.scaleSizeWithZoom = scaleSizeWithZoom;
 			this.visibleThroughFog = visibleThroughFog;
 
 			this.facing = facing > -1
@@ -113,8 +111,7 @@ namespace OpenRA.Mods.AS.Effects
 			if (world.FogObscures(pos) && !visibleThroughFog)
 				return SpriteRenderable.None;
 
-			var zoom = scaleSizeWithZoom ? 1f / wr.Viewport.Zoom : 1f;
-			return anim.Render(pos, WVec.Zero, 0, wr.Palette(smoke.Palette), zoom);
+			return anim.Render(pos, WVec.Zero, 0, wr.Palette(smoke.Palette));
 		}
 	}
 }
