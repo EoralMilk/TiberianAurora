@@ -750,7 +750,7 @@
 	-Targetable@materials:
 
 
-^CommonInfantry:
+^Infantry:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
@@ -825,7 +825,6 @@
 	SpawnActorOnDeath@flames:
 		Actor: FLAMEGUY
 		DeathType: FlameDeath
-
 	HitShape:
 		Type: Circle
 			Radius: 128
@@ -850,7 +849,6 @@
 			Prone70Percent: 70
 			Prone100Percent: 100
 		DamageTriggers: TriggerProne
-
 	Passenger:
 		Voice: Move
 		CargoType: Infantry
@@ -893,6 +891,16 @@
 	BodyOrientation:
 		CameraPitch: 85
 		UseClassicPerspectiveFudge: false
+
+^CommonInfantry:
+	Inherits@1: ^Infantry
+	AttackFrontal:
+		Voice: Attack
+		Armaments: primary, secondary, casing
+		AutoTarget:
+	AutoTarget:
+		ScanRadius: 7
+
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor

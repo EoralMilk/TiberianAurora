@@ -66,7 +66,7 @@ nbggy:
 
 ncycle:
 	Inherits@ParaDrop: ^ParachutableVehicle
-	Inherits: ^AtkFrontalVehicle
+	Inherits: ^SpiritVehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -89,6 +89,15 @@ ncycle:
 		Locomotor: wheeled
 	RevealsShroud:
 		Range: 8c0
+
+	AttackFollow:
+		Voice: Attack
+		Armaments: primary, secondary, casing
+		AutoTarget:
+		OpportunityFire: True
+		FacingTolerance: 60
+	AutoTarget:
+		ScanRadius: 7
 	Armament:
 		Weapon: CycleMissile
 		LocalOffset: -141,123,720, -141,-123,720

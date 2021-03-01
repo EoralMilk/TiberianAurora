@@ -27,8 +27,6 @@ mngunner:
 		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
-	AttackFrontal:
-		Voice: Attack
 	Armament@primary:
 		Weapon: GAU-3
 		RequiresCondition: !prone
@@ -59,8 +57,6 @@ mngunner:
 		Sequence: stand
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
-	AutoTarget:
-		ScanRadius: 6
 	RenderSprites:
 		Image: mnguner
 		FactionImages:
@@ -98,8 +94,6 @@ bzkier:
 		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
-	AttackFrontal:
-		Voice: Attack
 	Armament@primary:
 		Weapon: APBazooka
 		LocalOffset: 251,70,1024
@@ -128,8 +122,6 @@ bzkier:
 		Sequence: stand
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
-	AutoTarget:
-		ScanRadius: 6
 	RenderSprites:
 		Image: bzkier-n
 		FactionImages:
@@ -141,7 +133,7 @@ bzkier:
 		Margin: -7, 10
 
 eng:
-	Inherits: ^CommonInfantry
+	Inherits: ^Infantry
 	Inherits@2: ^Parachutable
 	Inherits@WithProfessionDecoration: ^WithProfessionDecoration
 	Buildable:

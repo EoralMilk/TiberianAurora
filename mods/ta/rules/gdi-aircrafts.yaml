@@ -43,9 +43,10 @@ orcafighter:
 		ScanRadius: 9
 	AttackAircraft:
 		FacingTolerance: 80 
-		OpportunityFire: false
+		OpportunityFire: True
 		PersistentTargeting: false
-		AttackType: Hover
+		# AttackType: Hover
+		RangeMargin: 2c0
 	AmmoPool:
 		Ammo: 6
 		PipCount: 6

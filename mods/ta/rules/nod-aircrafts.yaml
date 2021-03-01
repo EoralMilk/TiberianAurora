@@ -45,10 +45,11 @@ apache:
 	AutoTarget:
 		ScanRadius: 9
 	AttackAircraft:
-		FacingTolerance: 40 
-		OpportunityFire: false
+		FacingTolerance: 60 
+		OpportunityFire: True
 		PersistentTargeting: false
-		AttackType: Hover
+		# AttackType: Hover
+		RangeMargin: 1c512
 		Armaments: primary, secondary, fake, casing
 	AmmoPool@real:
 		Ammo: 1

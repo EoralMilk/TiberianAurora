@@ -27,8 +27,6 @@ flamet:
 		CustomPipType: red
 	RevealsShroud:
 		Range: 5c0
-	AttackFrontal:
-		Voice: Attack
 	Armament@primary:
 		Weapon: Flamethrower
 		LocalOffset: 300,50,600
@@ -38,8 +36,6 @@ flamet:
 		Sequence: stand
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
-	AutoTarget:
-		ScanRadius: 6
 	RenderSprites:
 		Image: flamer
 		PlayerPalette: flamethrower
@@ -86,8 +82,6 @@ chemict:
 		CustomPipType: red
 	RevealsShroud:
 		Range: 5c0
-	AttackFrontal:
-		Voice: Attack
 	Armament@primary:
 		Weapon: Chemspray
 		LocalOffset: 300,50,600
@@ -97,8 +91,6 @@ chemict:
 		Sequence: stand
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
-	AutoTarget:
-		ScanRadius: 6
 	RenderSprites:
 		Image: cmcler
 		PlayerPalette: chamer

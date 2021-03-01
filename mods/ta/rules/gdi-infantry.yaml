@@ -27,8 +27,6 @@ grenader:
 		CustomPipType: yellow
 	RevealsShroud:
 		Range: 7c0
-	AttackFrontal:
-		Voice: Attack
 	Armament@primary:
 		Weapon: HEGrenade
 		LocalOffset: 0,0,512
@@ -38,8 +36,6 @@ grenader:
 		Sequence: stand
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
-	AutoTarget:
-		ScanRadius: 6
 	RenderSprites:  # TODO: 素材..
 		Image: grenader
 		PlayerPalette: green_infantry
@@ -81,8 +77,6 @@ sniper:
 		CustomPipType: red
 	RevealsShroud:
 		Range: 7c0
-	AttackFrontal:
-		Voice: Attack
 	Armament@LongRange:
 		Weapon: SniperRF
 		LocalOffset: 268,50,850

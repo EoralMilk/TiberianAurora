@@ -12,8 +12,13 @@ PackageFormats: Mix, AudioBag
 
 Packages:
 	.
-	$ta: ta
+	~^SupportDir|Content/cnc
+	^EngineDir
+	~sounds.mix
+	~scores.mix
 
+
+	$ta: ta
 	./mods/common: common
 
 	ta|content
