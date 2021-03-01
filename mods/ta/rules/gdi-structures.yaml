@@ -84,6 +84,8 @@ barracks:
 		PlayerPalette: g_barr
 	Targetable@materials:
 		TargetTypes: Metal
+	ProvidesPrerequisite@AIantiRush:
+		Prerequisite: AIantiRush ## Hack: AI Building control. AI build refinary only when it has a combat producing line.
 
 warfactory:
 	Inherits: ^BaseBuilding
@@ -165,6 +167,8 @@ warfactory:
 		PlayerPalette: g_wf
 	Targetable@materials:
 		TargetTypes: Metal
+	ProvidesPrerequisite@AIantiRush:
+		Prerequisite: AIantiRush ## Hack: AI Building control. AI build refinary only when it has a combat producing line.
 
 advhq:
 	Inherits: ^BaseBuilding

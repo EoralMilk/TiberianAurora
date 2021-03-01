@@ -319,3 +319,8 @@
 	DrawLineToTarget:
 		QueuedLineWidth: 2
 		QueuedMarkerWidth: 3
+
+^AIbuildingMicroControl:
+	GrantConditionOnBotOwner@AIbuildingMicroControl:
+		Condition: AIbuildingMicroControl
+		Bots: test

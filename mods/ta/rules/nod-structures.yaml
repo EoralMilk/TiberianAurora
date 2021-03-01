@@ -74,6 +74,8 @@ nhand:
 		PlayerPalette: n_nhand
 	Targetable@materials:
 		TargetTypes: Metal
+	ProvidesPrerequisite@AIantiRush:
+		Prerequisite: AIantiRush ## Hack: AI Building control. AI build refinary only when it has a combat producing line.
 
 airstrip:
 	Inherits: ^BaseBuilding
@@ -146,6 +148,8 @@ airstrip:
 		PlayerPalette: n_airstrip
 	Targetable@materials:
 		TargetTypes: Metal
+	ProvidesPrerequisite@AIantiRush:
+		Prerequisite: AIantiRush ## Hack: AI Building control. AI build refinary only when it has a combat producing line.
 
 ntpl:
 	Inherits: ^BaseBuilding

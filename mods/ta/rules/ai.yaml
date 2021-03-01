@@ -5,6 +5,9 @@ Player:
 	GrantConditionOnBotOwner@test:
 		Condition: enable-test-ai
 		Bots: test
+	ProvidesPrerequisite@AISpecialProduce:
+		RequiresCondition: enable-test-ai
+		Prerequisite: AIOnly
 	SupportPowerBotModule@test:
 		RequiresCondition: enable-test-ai
 		Decisions:
@@ -165,11 +168,20 @@ Player:
 			silo: 1
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
-		SquadSize: 15
 		ExcludeFromSquadsTypes: harvester, eng, mcv
 		ConstructionYardTypes: fact
 		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache, orcags, ncycleb
 		IgnoredEnemyTargetTypes: Wall
+		SquadSize: 25
+		SquadSizeRandomBonus: 3
+		DangerScanRadius: 18
+		AttackForceInterval: 59
+		MinimumAttackForceDelay: 2500
+		ProtectUnitScanRadius: 25
+		AssignRolesInterval: 73
+		IdleScanRadius: 15
+		AttackScanRadius: 15
+		ProtectionScanRadius: 15
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
@@ -206,7 +218,6 @@ Player:
 			harvester: 8
 			eng: 1
 			orcags: 1
-
 	McvManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		McvTypes: mcv

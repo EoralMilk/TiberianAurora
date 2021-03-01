@@ -2,6 +2,7 @@
 fact:
 	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
+	Inherits@AIbuilding: ^AIbuildingMicroControl
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 1000
@@ -79,6 +80,9 @@ fact:
 		PlayerPalette: a_conyard
 	Targetable@materials:
 		TargetTypes: Metal
+	ProvidesPrerequisite@AIantiRush:
+		RequiresCondition: !AIbuildingMicroControl
+		Prerequisite: AIantiRush ## Hack: AI Building control. AI build refinary only when it has a combat producing line.
 
 pwrplt:
 	Inherits: ^BaseBuilding
@@ -180,7 +184,7 @@ refinery:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
-		Prerequisites: power
+		Prerequisites: power, ~AIantiRush
 		Description: 收集并精炼泰伯利亚以获取资金\n\n·可以储存1000单位资金
 	IsometricSelectable:
 		Height: 60
