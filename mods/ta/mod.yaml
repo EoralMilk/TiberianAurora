@@ -252,13 +252,7 @@ MapGrid:
 	MaximumTerrainHeight: 16
 
 WorldViewportSizes:
-	CloseWindowHeights: 480, 600
-	MediumWindowHeights: 600, 900
-	FarWindowHeights: 900, 1300
-	MaxZoomScale: 2
-	MaxZoomWindowHeight: 240
-	AllowNativeZoom: true
-	MinEffectiveResolution: 1024, 720
+	ZoomScale: 0.5
 
 Music:
 	ta|audio/music.yaml
