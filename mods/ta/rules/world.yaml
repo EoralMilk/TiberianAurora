@@ -332,6 +332,8 @@ EditorWorld:
 	EditorActorLayer:
 	EditorCursorLayer:
 	EditorResourceLayer:
+	ResourceRenderer:
+		RenderTypes: Ore, Gems
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
 	EditorActionManager:
