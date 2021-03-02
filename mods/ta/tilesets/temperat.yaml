@@ -70,8 +70,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: A2A850
-				MaxColor: A3A750
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@1:
@@ -1134,24 +1134,24 @@ Templates:
 		Images: shore01.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: DBBA7B
-				MaxColor: E5BF77
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: DDBC7C
-				MaxColor: E4BD75
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4F565B
-				MaxColor: 787C5D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 51545A
-				MaxColor: 7D7C5D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@90:
@@ -1160,24 +1160,24 @@ Templates:
 		Images: shore02.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: DCC694
-				MaxColor: E3C385
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: DBBF89
-				MaxColor: E2C181
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4E555B
-				MaxColor: 858567
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 53585D
-				MaxColor: 797C5E
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@91:
@@ -1186,24 +1186,24 @@ Templates:
 		Images: shore03.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: E0C287
-				MaxColor: E4BF79
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: DABB7D
-				MaxColor: E3BE78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4F565C
-				MaxColor: 9B9568
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 78795F
-				MaxColor: 7F8360
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@92:
@@ -1212,14 +1212,14 @@ Templates:
 		Images: shore04.tem
 		Size: 1, 2
 		Tiles:
-			0: Rough
-				MinColor: DAB979
-				MaxColor: E5BD74
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 4E555B
-				MaxColor: 77795D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@93:
@@ -1228,34 +1228,34 @@ Templates:
 		Images: shore05.tem
 		Size: 2, 3
 		Tiles:
-			0: Rough
-				MinColor: DBBC7E
-				MaxColor: E4BF78
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: E1C083
-				MaxColor: E7BE71
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 545C5C
-				MaxColor: 798762
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: 9A9A6E
-				MaxColor: C2AA75
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			4: Water
-				MinColor: 404258
-				MaxColor: 4A4F5A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			5: Water
-				MinColor: 474B59
-				MaxColor: 636F5F
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@94:
@@ -1264,34 +1264,34 @@ Templates:
 		Images: shore06.tem
 		Size: 2, 3
 		Tiles:
-			0: Rough
-				MinColor: BFAC71
-				MaxColor: DEBC79
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D4B97F
-				MaxColor: E3BE78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: C1A96D
-				MaxColor: AFA674
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 697761
-				MaxColor: 737D61
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			4: Water
-				MinColor: 535C5D
-				MaxColor: 778667
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			5: Water
-				MinColor: 535C5D
-				MaxColor: 59655E
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@95:
@@ -1300,24 +1300,24 @@ Templates:
 		Images: shore07.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: DCBB7B
-				MaxColor: D8B879
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 767D5E
-				MaxColor: 4F565C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4E555B
-				MaxColor: 928E61
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 6B725F
-				MaxColor: 4E575B
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@96:
@@ -1326,24 +1326,24 @@ Templates:
 		Images: shore08.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: D2B577
-				MaxColor: D1B272
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 727F65
-				MaxColor: 4F565C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4F565B
-				MaxColor: 7B8763
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 4E565A
-				MaxColor: 4C535A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@97:
@@ -1352,24 +1352,24 @@ Templates:
 		Images: shore09.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: CDB172
-				MaxColor: C2AB71
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 6D7C63
-				MaxColor: 4D545A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E2BC75
-				MaxColor: AFA171
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 727E62
-				MaxColor: 4C545A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@98:
@@ -1378,24 +1378,24 @@ Templates:
 		Images: shore10.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: D8B773
-				MaxColor: CAAE71
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 748163
-				MaxColor: 4F565B
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E2BC75
-				MaxColor: C1A972
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 79815F
-				MaxColor: 565F5D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@99:
@@ -1404,24 +1404,24 @@ Templates:
 		Images: shore11.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: D2B16F
-				MaxColor: CAAF73
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 6A7563
-				MaxColor: 4E555B
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E2BC75
-				MaxColor: BCA772
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Water
-				MinColor: 737F61
-				MaxColor: 4C535B
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@100:
@@ -1430,14 +1430,14 @@ Templates:
 		Images: shore12.tem
 		Size: 2, 1
 		Tiles:
-			0: Rough
-				MinColor: E3BD77
-				MaxColor: D2B378
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 798160
-				MaxColor: 50585C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@101:
@@ -1446,34 +1446,34 @@ Templates:
 		Images: shore13.tem
 		Size: 3, 2
 		Tiles:
-			0: Rough
-				MinColor: E2BF7E
-				MaxColor: E0BE7D
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: C2B17F
-				MaxColor: B4A870
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 6A7864
-				MaxColor: 4E565C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: E3BE78
-				MaxColor: D5B982
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			4: Water
-				MinColor: 7F8461
-				MaxColor: A19D71
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			5: Water
-				MinColor: 687463
-				MaxColor: 51595E
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@102:
@@ -1482,34 +1482,34 @@ Templates:
 		Images: shore14.tem
 		Size: 3, 2
 		Tiles:
-			0: Rough
-				MinColor: E1BC78
-				MaxColor: D7B97D
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 778466
-				MaxColor: 525A5D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 414457
-				MaxColor: 3F4257
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: E7BE73
-				MaxColor: CCB17A
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			4: Rough
-				MinColor: BCB181
-				MaxColor: 6B7A65
+			4: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			5: Water
-				MinColor: 59635D
-				MaxColor: 454959
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@103:
@@ -1519,23 +1519,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 757C60
-				MaxColor: 4C535A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 464B58
-				MaxColor: 3F4257
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: DFBC78
-				MaxColor: BEA873
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 686F5F
-				MaxColor: 494E5A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@104:
@@ -1545,23 +1545,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 747D60
-				MaxColor: 4B515A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 494F58
-				MaxColor: 3F4257
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E0BC79
-				MaxColor: AA9E68
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 6A7860
-				MaxColor: 4D545A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@105:
@@ -1571,23 +1571,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 737E63
-				MaxColor: 50585D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 717E65
-				MaxColor: 545E5C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E3BC76
-				MaxColor: D0B47D
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: DEBB78
-				MaxColor: CEB379
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@106:
@@ -1597,23 +1597,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 6B7763
-				MaxColor: 4B525B
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 596660
-				MaxColor: 4A505B
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E3BC76
-				MaxColor: C7AC74
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: D4B270
-				MaxColor: AAA06B
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@107:
@@ -1623,23 +1623,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 7E8A68
-				MaxColor: 59625E
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Water
-				MinColor: 758065
-				MaxColor: 4F565B
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E3BC76
-				MaxColor: D1B57D
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: E1BE7C
-				MaxColor: D5B77C
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@108:
@@ -1649,13 +1649,13 @@ Templates:
 		Size: 1, 2
 		Tiles:
 			0: Water
-				MinColor: 717D64
-				MaxColor: 57625D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: E3BD76
-				MaxColor: CFB37A
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@109:
@@ -1665,33 +1665,33 @@ Templates:
 		Size: 2, 3
 		Tiles:
 			0: Water
-				MinColor: 555E5F
-				MaxColor: 535D5E
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 6B7863
-				MaxColor: 4D555C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 7B8868
-				MaxColor: 838E66
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: C0A970
-				MaxColor: BFA96D
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			4: Rough
-				MinColor: E1BD78
-				MaxColor: D2B77D
+			4: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			5: Rough
-				MinColor: E1BF7E
-				MaxColor: DEC086
+			5: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@110:
@@ -1701,33 +1701,33 @@ Templates:
 		Size: 2, 3
 		Tiles:
 			0: Water
-				MinColor: 59645E
-				MaxColor: 414459
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 434759
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: BEAF7D
-				MaxColor: 718369
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Water
-				MinColor: 778667
-				MaxColor: 56605D
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			4: Rough
-				MinColor: E7BE73
-				MaxColor: D4B77F
+			4: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			5: Rough
-				MinColor: D4B675
-				MaxColor: CDB67B
+			5: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@111:
@@ -1737,23 +1737,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 4B5259
-				MaxColor: 4C535A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 708164
-				MaxColor: 4F565C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 515A5C
-				MaxColor: 6E7A61
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: D2B474
-				MaxColor: CBB074
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@112:
@@ -1763,23 +1763,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 4E565A
-				MaxColor: 4A515A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 708263
-				MaxColor: 51595C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 525A5C
-				MaxColor: 727F63
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: C7AE72
-				MaxColor: BFA96D
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@113:
@@ -1789,23 +1789,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 4D4F59
-				MaxColor: 6D715E
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D6B679
-				MaxColor: E3BE78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4C525A
-				MaxColor: 787961
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: DCBE83
-				MaxColor: E4BF7A
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@114:
@@ -1815,23 +1815,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 50575E
-				MaxColor: 737A62
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D3B77E
-				MaxColor: E3BE78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4C535A
-				MaxColor: 798266
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: D6BA84
-				MaxColor: E2C181
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@115:
@@ -1841,23 +1841,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 54595C
-				MaxColor: 6E7562
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D7B980
-				MaxColor: E3BE78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 4F565B
-				MaxColor: 83876A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: D8BE8B
-				MaxColor: E2C284
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@116:
@@ -1867,13 +1867,13 @@ Templates:
 		Size: 2, 1
 		Tiles:
 			0: Water
-				MinColor: 4C535A
-				MaxColor: 717A63
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D4B983
-				MaxColor: E4BF7C
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@117:
@@ -1883,33 +1883,33 @@ Templates:
 		Size: 3, 2
 		Tiles:
 			0: Water
-				MinColor: 444958
-				MaxColor: 686D5D
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: BCA873
-				MaxColor: DDBA78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: DEBE84
-				MaxColor: E5BE76
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 3F4257
-				MaxColor: 444858
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			4: Water
-				MinColor: 5A665D
-				MaxColor: 989D70
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			5: Rough
-				MinColor: D7BE8A
-				MaxColor: E2C284
+			5: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@118:
@@ -1919,33 +1919,33 @@ Templates:
 		Size: 3, 2
 		Tiles:
 			0: Water
-				MinColor: 4A5158
-				MaxColor: 4C5459
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 7A8969
-				MaxColor: 778065
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: D6B980
-				MaxColor: E3BD78
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 4C525A
-				MaxColor: 767F65
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			4: Rough
-				MinColor: D7BD89
-				MaxColor: DABD85
+			4: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			5: Rough
-				MinColor: E2C283
-				MaxColor: E1C286
+			5: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@119:
@@ -1955,23 +1955,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 474C58
-				MaxColor: 737B5F
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: BBA56C
-				MaxColor: DBB877
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 404358
-				MaxColor: 494F59
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 4B515A
-				MaxColor: 717B5F
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@120:
@@ -1981,23 +1981,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 484D59
-				MaxColor: 727D63
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: C1AA71
-				MaxColor: DFBC7B
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 404358
-				MaxColor: 474C59
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 4A505A
-				MaxColor: 717B60
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@121:
@@ -2006,24 +2006,24 @@ Templates:
 		Images: shore33.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: E5C07B
-				MaxColor: E3C285
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: DABF89
-				MaxColor: E1C081
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E4BD74
-				MaxColor: DCBB7C
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 7F815F
-				MaxColor: 767F61
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@122:
@@ -2032,24 +2032,24 @@ Templates:
 		Images: shore34.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: E5C07B
-				MaxColor: E3C285
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D9C08C
-				MaxColor: E1C081
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E4BD74
-				MaxColor: DCBD80
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 8F8F69
-				MaxColor: 8B8F6B
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@123:
@@ -2058,24 +2058,24 @@ Templates:
 		Images: shore35.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: D0B06F
-				MaxColor: C8AE74
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 798E68
-				MaxColor: 5C685F
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E5BD74
-				MaxColor: C6AD73
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: D5B573
-				MaxColor: C2AC73
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@124:
@@ -2084,24 +2084,24 @@ Templates:
 		Images: shore36.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: DCB878
-				MaxColor: CDB177
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Water
-				MinColor: 7F926D
-				MaxColor: 5D6A5F
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E5BD74
-				MaxColor: D2B47C
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: DDBB79
-				MaxColor: D9BC84
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@125:
@@ -2110,24 +2110,24 @@ Templates:
 		Images: shore37.tem
 		Size: 2, 2
 		Tiles:
-			0: Water
-				MinColor: 7E8361
-				MaxColor: 7B8261
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D9BA7D
-				MaxColor: E3BE78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E2C181
-				MaxColor: DBC089
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: E3C385
-				MaxColor: E4C17F
+			3: Water
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@126:
@@ -2137,23 +2137,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 818563
-				MaxColor: 868A67
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: D6B97E
-				MaxColor: E3BE78
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E2C181
-				MaxColor: CFB783
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: E3C385
-				MaxColor: E4C17F
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@127:
@@ -2162,24 +2162,24 @@ Templates:
 		Images: shore39.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: DCC693
-				MaxColor: E3C385
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: E1C38B
-				MaxColor: E5C27F
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 5B675E
-				MaxColor: 999B67
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: DBB978
-				MaxColor: E4BF78
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@128:
@@ -2188,24 +2188,24 @@ Templates:
 		Images: shore40.tem
 		Size: 2, 2
 		Tiles:
-			0: Rough
-				MinColor: DBC08B
-				MaxColor: E1C184
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
-				MinColor: E0C48D
-				MaxColor: E5C27F
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 5B675E
-				MaxColor: 999B6B
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: DCBB7B
-				MaxColor: E1C081
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@129:
@@ -2214,109 +2214,119 @@ Templates:
 		Images: shore41.tem
 		Size: 6, 4
 		Tiles:
-			1: Rough
-				MinColor: E3BD74
-				MaxColor: E5BE74
+			0: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
-				MinColor: E5C07C
-				MaxColor: E4BE77
+			1: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
-				MinColor: E0C288
-				MaxColor: E5BE72
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			6: Rough
-				MinColor: E6C077
-				MaxColor: E5BE72
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			7: Water
-				MinColor: E4C385
-				MaxColor: E3C07D
+			4: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
+				ZOffset: -15
+				ZRamp: 0
+			6: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
+				ZOffset: -15
+				ZRamp: 0
+			7: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			8: Water
-				MinColor: CEB47C
-				MaxColor: C9AD76
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			9: Water
-				MinColor: A39B69
-				MaxColor: B6A575
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			10: Water
-				MinColor: 8F9268
-				MaxColor: C3AA70
+			10: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			11: Water
-				MinColor: 717E64
-				MaxColor: 4E555B
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			12: Water
-				MinColor: E6BF75
-				MaxColor: E4C17F
+			12: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			13: Water
-				MinColor: D2BB87
-				MaxColor: D6BE8B
+			13: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			14: Water
-				MinColor: 989E71
-				MaxColor: 93996D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			15: Water
-				MinColor: 657A5E
-				MaxColor: 6D8666
+			15: Impassable
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			16: Water
-				MinColor: 56625A
-				MaxColor: 718566
+			16: Clear
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			17: Water
-				MinColor: 5A6560
-				MaxColor: 4C545B
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			18: Water
-				MinColor: E5BE72
-				MaxColor: DEBB77
+			18: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			19: Water
-				MinColor: 7F815E
-				MaxColor: 7A8767
+			19: Clear
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			20: Water
-				MinColor: 50595A
-				MaxColor: 55605A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			21: Water
-				MinColor: 464A57
-				MaxColor: 474C57
+			21: Impassable
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			22: Water
-				MinColor: 404457
-				MaxColor: 414557
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			23: Water
-				MinColor: 3E4152
-				MaxColor: 404357
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@130:
@@ -2325,154 +2335,204 @@ Templates:
 		Images: shore42.tem
 		Size: 9, 5
 		Tiles:
-			2: Water
-				MinColor: C8AD71
-				MaxColor: A69462
+			1: Water
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: Water
-				MinColor: C6AD7C
-				MaxColor: E1BB70
+			2: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
+				ZOffset: -15
+				ZRamp: 0
+			3: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
+				ZOffset: -15
+				ZRamp: 0
+			4: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			5: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			6: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			9: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			10: Water
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			11: Water
-				MinColor: C8AA69
-				MaxColor: A09766
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			12: Water
-				MinColor: 7A885F
-				MaxColor: C0AA7A
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			13: Rough
-				MinColor: D1B077
-				MaxColor: DFB96F
+			13: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
-			18: Rough
-				MinColor: DCB977
-				MaxColor: CDAC6D
+			14: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			15: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			16: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			18: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			19: Water
-				MinColor: A39263
-				MaxColor: 938A5B
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			20: Water
-				MinColor: 616F54
-				MaxColor: 6C7957
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			21: Water
-				MinColor: 5F6C56
-				MaxColor: 74845C
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			22: Water
-				MinColor: 999667
-				MaxColor: CBAF75
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			23: Water
-				MinColor: B49657
-				MaxColor: D9B46D
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			24: Water
-				MinColor: AE9457
-				MaxColor: D0AE68
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			25: Water
-				MinColor: C1A868
-				MaxColor: D0B171
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			26: Water
-				MinColor: 717D63
-				MaxColor: 4E545A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			28: Water
-				MinColor: D8B672
-				MaxColor: C4AA6E
+			27: Water
+				MinColor: 000000
+				MaxColor: 000000
+				ZOffset: -15
+				ZRamp: 0
+			28: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			29: Water
-				MinColor: 737A58
-				MaxColor: 586355
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			30: Water
-				MinColor: 525B56
-				MaxColor: 576257
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			31: Water
-				MinColor: 525B56
-				MaxColor: 63745A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			32: Water
-				MinColor: 5A6758
-				MaxColor: 646F52
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			33: Water
-				MinColor: 5C6858
-				MaxColor: 6E7B55
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			34: Water
-				MinColor: 5F6D59
-				MaxColor: 738462
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			35: Water
-				MinColor: 505959
-				MaxColor: 494F59
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			37: Water
-				MinColor: E1BB74
-				MaxColor: C0A871
+			37: Clear
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			38: Water
-				MinColor: 777F5E
-				MaxColor: 555E5B
+				MinColor: 2E382C
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			39: Water
-				MinColor: 414455
-				MaxColor: 434755
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			40: Water
-				MinColor: 404356
-				MaxColor: 434756
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			41: Water
-				MinColor: 404257
-				MaxColor: 454957
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			42: Water
-				MinColor: 434755
-				MaxColor: 4A5055
+			42: Impassable
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			43: Water
-				MinColor: 424655
-				MaxColor: 484E55
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			44: Water
-				MinColor: 424655
-				MaxColor: 424657
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@131:
@@ -2482,8 +2542,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 808831
-				MaxColor: 828830
+				MinColor: 22261F
+				MaxColor: 22261F
 				ZOffset: -15
 				ZRamp: 0
 	Template@132:
@@ -2493,8 +2553,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 909740
-				MaxColor: 8F973C
+				MinColor: 292F26
+				MaxColor: 292F26
 				ZOffset: -15
 				ZRamp: 0
 	Template@133:
@@ -2504,8 +2564,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 838C34
-				MaxColor: 90963E
+				MinColor: 262C23
+				MaxColor: 262C23
 				ZOffset: -15
 				ZRamp: 0
 	Template@134:
@@ -2515,8 +2575,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 7D882F
-				MaxColor: 8D963C
+				MinColor: 252A22
+				MaxColor: 252A22
 				ZOffset: -15
 				ZRamp: 0
 	Template@135:
@@ -2526,8 +2586,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8A903A
-				MaxColor: 9EA64B
+				MinColor: 2B3227
+				MaxColor: 2B3227
 				ZOffset: -15
 				ZRamp: 0
 	Template@136:
@@ -2537,8 +2597,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8F9741
-				MaxColor: 7B8431
+				MinColor: 262B22
+				MaxColor: 262B22
 				ZOffset: -15
 				ZRamp: 0
 	Template@137:
@@ -2548,8 +2608,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8C9441
-				MaxColor: 88923F
+				MinColor: 282F25
+				MaxColor: 282F25
 				ZOffset: -15
 				ZRamp: 0
 	Template@138:
@@ -2559,8 +2619,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8E963F
-				MaxColor: 8F953D
+				MinColor: 292F25
+				MaxColor: 292F25
 				ZOffset: -15
 				ZRamp: 0
 	Template@139:
@@ -2570,8 +2630,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8D983F
-				MaxColor: 9BA44A
+				MinColor: 2B3329
+				MaxColor: 2B3329
 				ZOffset: -15
 				ZRamp: 0
 	Template@140:
@@ -2581,8 +2641,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 949B46
-				MaxColor: 848E39
+				MinColor: 282F24
+				MaxColor: 282F24
 				ZOffset: -15
 				ZRamp: 0
 	Template@141:
@@ -2592,8 +2652,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8F9744
-				MaxColor: 87913C
+				MinColor: 292F25
+				MaxColor: 292F25
 				ZOffset: -15
 				ZRamp: 0
 	Template@142:
@@ -2603,8 +2663,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8C953F
-				MaxColor: 909740
+				MinColor: 293026
+				MaxColor: 293026
 				ZOffset: -15
 				ZRamp: 0
 	Template@143:
@@ -2614,8 +2674,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 8C973E
-				MaxColor: 9AA349
+				MinColor: 2C3329
+				MaxColor: 2C3329
 				ZOffset: -15
 				ZRamp: 0
 	Template@144:
@@ -2625,8 +2685,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 9DA54F
-				MaxColor: 818B37
+				MinColor: 2A3127
+				MaxColor: 2A3127
 				ZOffset: -15
 				ZRamp: 0
 	Template@145:
@@ -2636,8 +2696,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 9CA451
-				MaxColor: 969C46
+				MinColor: 2D3629
+				MaxColor: 2D3629
 				ZOffset: -15
 				ZRamp: 0
 	Template@146:
@@ -2647,8 +2707,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 9CA451
-				MaxColor: 8F9946
+				MinColor: 2D362A
+				MaxColor: 2D362A
 				ZOffset: -15
 				ZRamp: 0
 	Template@147:
@@ -2658,8 +2718,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 9AA04B
-				MaxColor: 979E44
+				MinColor: 2E352B
+				MaxColor: 2E352B
 				ZOffset: -15
 				ZRamp: 0
 	Template@148:
@@ -3257,7 +3317,7 @@ Templates:
 				MaxColor: 7B6636
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
+			1: Clear
 				MinColor: CFB674
 				MaxColor: C4924B
 				ZOffset: -15
@@ -3289,7 +3349,7 @@ Templates:
 				MaxColor: 967143
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
+			2: Clear
 				MinColor: CBB56A
 				MaxColor: B78A4A
 				ZOffset: -15
@@ -3369,24 +3429,24 @@ Templates:
 		Images: droadc02.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A6AB53
-				MaxColor: B29847
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: AE9044
-				MaxColor: B09649
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: 9AA44C
-				MaxColor: 9DA64C
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A3A84F
-				MaxColor: A99544
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@178:
@@ -3395,24 +3455,24 @@ Templates:
 		Images: droadc03.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A4A14C
-				MaxColor: AE9444
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: B09543
-				MaxColor: A5A34C
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A0A852
-				MaxColor: A1A24A
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: AE9449
-				MaxColor: A29A4A
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@179:
@@ -3442,24 +3502,24 @@ Templates:
 		Images: droadc05.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: AF8F42
-				MaxColor: B89546
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: A99546
-				MaxColor: A7A54D
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A39C48
-				MaxColor: AE8F41
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: AFA655
-				MaxColor: ADAA59
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@181:
@@ -3530,24 +3590,24 @@ Templates:
 		Images: droadc08.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A4A64F
-				MaxColor: 999B4C
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: AF8A3E
-				MaxColor: BE8D41
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A7AB55
-				MaxColor: AEA14E
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: AC9347
-				MaxColor: B49445
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@184:
@@ -3556,24 +3616,24 @@ Templates:
 		Images: droadc09.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: AAA350
-				MaxColor: ACA450
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: B6883D
-				MaxColor: BD8A3F
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A5A049
-				MaxColor: B08F41
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: AF9543
-				MaxColor: B19F4C
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@185:
@@ -3582,24 +3642,24 @@ Templates:
 		Images: droadc10.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: AF9647
-				MaxColor: AEA953
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: AC8C3F
-				MaxColor: B98F42
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A7A14D
-				MaxColor: AB9C46
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A39F4D
-				MaxColor: A39C4C
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@186:
@@ -3706,24 +3766,24 @@ Templates:
 		Images: droadc14.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: 9BA14A
-				MaxColor: 9FA24B
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: A99247
-				MaxColor: 9C9F4D
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A3A34C
-				MaxColor: A49746
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: B49849
-				MaxColor: B89B49
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@190:
@@ -3831,24 +3891,24 @@ Templates:
 		Images: droadc19.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A89B46
-				MaxColor: A6A650
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: A0A14F
-				MaxColor: 99A353
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: AAA252
-				MaxColor: B89145
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: B39344
-				MaxColor: A8A24B
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@195:
@@ -3888,24 +3948,24 @@ Templates:
 		Images: droadc21.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: AB9A46
-				MaxColor: A6A852
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: A8A958
-				MaxColor: A9AC5A
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: AA9647
-				MaxColor: B48D3F
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: AE9747
-				MaxColor: 9AA252
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@197:
@@ -3992,24 +4052,24 @@ Templates:
 		Images: droadj01.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A2A04D
-				MaxColor: AC9645
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: AD8A3E
-				MaxColor: AF9948
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A29B4A
-				MaxColor: A88C42
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: B69549
-				MaxColor: B69C4D
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@201:
@@ -4018,24 +4078,24 @@ Templates:
 		Images: droadj02.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A7974A
-				MaxColor: 9E9C4B
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: AC9244
-				MaxColor: A09749
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: AC9847
-				MaxColor: B79444
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A29A44
-				MaxColor: AB9643
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@202:
@@ -4044,24 +4104,24 @@ Templates:
 		Images: droadj03.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A98F3F
-				MaxColor: A99443
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: B09748
-				MaxColor: A3A54C
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A99947
-				MaxColor: AC8F42
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A69445
-				MaxColor: A29F4E
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@203:
@@ -4070,24 +4130,24 @@ Templates:
 		Images: droadj04.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: AB8F41
-				MaxColor: B19244
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: B29043
-				MaxColor: AB984A
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: ACA756
-				MaxColor: B59D4F
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A7A44C
-				MaxColor: AE9645
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@204:
@@ -4096,24 +4156,24 @@ Templates:
 		Images: droadj05.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A78F43
-				MaxColor: AE9446
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: B38B3F
-				MaxColor: B29845
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: AB9948
-				MaxColor: B78F3F
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: B39D48
-				MaxColor: A69849
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@205:
@@ -5324,24 +5384,24 @@ Templates:
 		Images: droads22.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: B29447
-				MaxColor: A9A453
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: B9974A
-				MaxColor: A2984B
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A8A44F
-				MaxColor: BA9341
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: ABA04A
-				MaxColor: B39848
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@233:
@@ -5418,24 +5478,24 @@ Templates:
 		Images: droads26.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: B09A4A
-				MaxColor: 9B9E4C
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: A39D48
-				MaxColor: A0A54D
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A7A153
-				MaxColor: AC9A4A
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A7A14D
-				MaxColor: A49F48
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@237:
@@ -5521,24 +5581,24 @@ Templates:
 		Images: droads29.tem
 		Size: 2, 2
 		Tiles:
-			0: Clear
-				MinColor: A1A751
-				MaxColor: A2A54D
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: A69D4A
-				MaxColor: 9F9B4A
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: Clear
-				MinColor: 9EA551
-				MaxColor: 9BA050
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A7A857
-				MaxColor: AE9E50
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@240:
@@ -5547,24 +5607,24 @@ Templates:
 		Images: droads30.tem
 		Size: 2, 2
 		Tiles:
-			0: Clear
-				MinColor: A8A652
-				MaxColor: AFAC54
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: A69D47
-				MaxColor: A8A44F
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: Clear
-				MinColor: 9AA44C
-				MaxColor: A0A149
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: A19F52
-				MaxColor: A1994A
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@241:
@@ -6647,24 +6707,24 @@ Templates:
 		Images: droads55.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A7A455
-				MaxColor: B5994B
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: B49746
-				MaxColor: 9F9F4D
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: A4A24E
-				MaxColor: AE9344
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: AB9A4A
-				MaxColor: 9FA050
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@266:
@@ -6910,24 +6970,24 @@ Templates:
 		Images: droads63.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: A8A756
-				MaxColor: B19B4E
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: AD9747
-				MaxColor: A1A252
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: Clear
-				MinColor: A1A551
-				MaxColor: A2A44C
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: Clear
-				MinColor: A5A44C
-				MaxColor: A8A24E
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@274:
@@ -8134,18 +8194,18 @@ Templates:
 		Size: 1, 3
 		Tiles:
 			0: Road
-				MinColor: 535557
-				MaxColor: 838480
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 434542
-				MaxColor: 414343
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 7D7E7C
-				MaxColor: 4B4F52
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@294:
@@ -8155,18 +8215,18 @@ Templates:
 		Size: 3, 1
 		Tiles:
 			0: Road
-				MinColor: 828380
-				MaxColor: 515456
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 424444
-				MaxColor: 454642
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 4C5052
-				MaxColor: 7E7F7D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@295:
@@ -8176,48 +8236,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 545758
-				MaxColor: 525557
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 45494D
-				MaxColor: 474A4D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 54585D
-				MaxColor: 5D5F5E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 40464C
-				MaxColor: 41464C
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 3B4045
-				MaxColor: 444749
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 41474E
-				MaxColor: 43484D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 5A5C5B
-				MaxColor: 53575A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 45494D
-				MaxColor: 41474D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 54585A
-				MaxColor: 57595B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@296:
@@ -8227,48 +8287,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 555553
-				MaxColor: 525454
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 424442
-				MaxColor: 414340
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 464A4D
-				MaxColor: 5C5E5B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 4A4B4B
-				MaxColor: 48494B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 4C4D4B
-				MaxColor: 474743
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 43474A
-				MaxColor: 46494B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 585A58
-				MaxColor: 484C4E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 3E4141
-				MaxColor: 474742
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 4C4F51
-				MaxColor: 515253
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@297:
@@ -8278,48 +8338,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 4E5254
-				MaxColor: 505252
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 484A4C
-				MaxColor: 424649
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 484B4E
-				MaxColor: 565959
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 414340
-				MaxColor: 424342
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 444542
-				MaxColor: 424343
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 444541
-				MaxColor: 424443
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 5A5D5B
-				MaxColor: 44484C
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 44474A
-				MaxColor: 44474A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 525353
-				MaxColor: 4D4F51
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@298:
@@ -8329,48 +8389,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 4D5154
-				MaxColor: 7F807B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 545555
-				MaxColor: 85847F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 525556
-				MaxColor: 7F807D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 3F4241
-				MaxColor: 3F4141
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 434441
-				MaxColor: 3E4141
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 424441
-				MaxColor: 3E4141
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 575B5A
-				MaxColor: 41464C
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 474A4C
-				MaxColor: 44484B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 4E5153
-				MaxColor: 474C50
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@299:
@@ -8380,48 +8440,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 494D4F
-				MaxColor: 4D5153
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 3E4141
-				MaxColor: 434441
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 484D51
-				MaxColor: 787B78
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 414549
-				MaxColor: 44474B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 3F4242
-				MaxColor: 404240
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 494C4F
-				MaxColor: 767978
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 555756
-				MaxColor: 43484D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 3E4141
-				MaxColor: 404340
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 4B4E50
-				MaxColor: 7A7C7A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@300:
@@ -8431,48 +8491,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 4E5254
-				MaxColor: 4E5151
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 47494C
-				MaxColor: 424548
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 43484D
-				MaxColor: 525556
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 424441
-				MaxColor: 3E4141
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 484A48
-				MaxColor: 434443
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 454642
-				MaxColor: 424442
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 777A78
-				MaxColor: 4C4F51
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 787A79
-				MaxColor: 494C50
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 7C7E7A
-				MaxColor: 4C4F51
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@301:
@@ -8482,48 +8542,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 7F807B
-				MaxColor: 4F5254
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 3E4041
-				MaxColor: 3F4240
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 464A4D
-				MaxColor: 595C5A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 84837E
-				MaxColor: 4E5154
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 454644
-				MaxColor: 464642
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 414549
-				MaxColor: 44474A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 7F807C
-				MaxColor: 515455
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 404342
-				MaxColor: 484743
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 454B50
-				MaxColor: 474B4F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@302:
@@ -8572,7 +8632,7 @@ Templates:
 				MaxColor: 3E403F
 				ZOffset: -15
 				ZRamp: 0
-			8: DirtRoad
+			8: Clear
 				MinColor: 9DA451
 				MaxColor: 9EA564
 				ZOffset: -15
@@ -8613,7 +8673,7 @@ Templates:
 				MaxColor: A1A674
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
+			3: Clear
 				MinColor: A2A960
 				MaxColor: 97A14B
 				ZOffset: -15
@@ -8785,7 +8845,7 @@ Templates:
 				MaxColor: 717365
 				ZOffset: -15
 				ZRamp: 0
-			11: DirtRoad
+			11: Clear
 				MinColor: A2A75F
 				MaxColor: A1A75A
 				ZOffset: -15
@@ -8796,7 +8856,7 @@ Templates:
 		Images: proad14.tem
 		Size: 3, 4
 		Tiles:
-			0: DirtRoad
+			0: Clear
 				MinColor: 9BA457
 				MaxColor: 9DA456
 				ZOffset: -15
@@ -9425,23 +9485,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 414358
-				MaxColor: 414358
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 424559
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 414359
-				MaxColor: 424459
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@315:
@@ -9451,23 +9511,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 414359
-				MaxColor: 424459
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 414358
-				MaxColor: 414358
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@316:
@@ -9477,23 +9537,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 414358
-				MaxColor: 414358
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@317:
@@ -9503,23 +9563,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 414359
-				MaxColor: 424459
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 424559
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 404359
-				MaxColor: 414359
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@318:
@@ -9529,23 +9589,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 424459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 424459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 424559
-				MaxColor: 424459
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 404359
-				MaxColor: 414359
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@319:
@@ -9555,23 +9615,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Water
-				MinColor: 414359
-				MaxColor: 424459
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			1: Water
-				MinColor: 424559
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			2: Water
-				MinColor: 414358
-				MaxColor: 414358
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 			3: Water
-				MinColor: 424459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@320:
@@ -9580,24 +9640,24 @@ Templates:
 		Images: water07.tem
 		Size: 2, 2
 		Tiles:
-			0: Cliff
-				MinColor: 806758
-				MaxColor: 695954
+			0: Impassable
+				MinColor: 0D6793
+				MaxColor: 4A3F06
 				ZOffset: -15
 				ZRamp: 0
-			1: Cliff
-				MinColor: 474653
-				MaxColor: 424559
+			1: Impassable
+				MinColor: 4A3F06
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Cliff
-				MinColor: 414359
-				MaxColor: 565055
+			2: Impassable
+				MinColor: 0D6793
+				MaxColor: 4A3F06
 				ZOffset: -15
 				ZRamp: 0
-			3: Cliff
-				MinColor: 454657
-				MaxColor: 424458
+			3: Water
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@321:
@@ -9606,24 +9666,24 @@ Templates:
 		Images: water08.tem
 		Size: 2, 2
 		Tiles:
-			0: Cliff
-				MinColor: 77675D
-				MaxColor: 595056
+			0: Impassable
+				MinColor: 0D6793
+				MaxColor: 4A3F06
 				ZOffset: -15
 				ZRamp: 0
-			1: Cliff
-				MinColor: 77695E
-				MaxColor: 424559
+			1: Impassable
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
-			2: Cliff
-				MinColor: 424559
-				MaxColor: 555159
+			2: Impassable
+				MinColor: 0D6793
+				MaxColor: 4A3F06
 				ZOffset: -15
 				ZRamp: 0
-			3: Cliff
-				MinColor: 474758
-				MaxColor: 504F5C
+			3: Impassable
+				MinColor: 4A3F06
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@322:
@@ -9633,8 +9693,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Water
-				MinColor: 414359
-				MaxColor: 42455A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@323:
@@ -9644,8 +9704,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Water
-				MinColor: 414359
-				MaxColor: 414359
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@324:
@@ -9655,8 +9715,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Water
-				MinColor: 414459
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@325:
@@ -9666,8 +9726,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Water
-				MinColor: 424559
-				MaxColor: 424559
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@326:
@@ -9677,8 +9737,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Water
-				MinColor: 42445A
-				MaxColor: 42455A
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@327:
@@ -9687,9 +9747,9 @@ Templates:
 		Images: water14.tem
 		Size: 1, 1
 		Tiles:
-			0: Cliff
-				MinColor: 595156
-				MaxColor: 504C56
+			0: Impassable
+				MinColor: 0D6793
+				MaxColor: 0D6793
 				ZOffset: -15
 				ZRamp: 0
 	Template@368:
@@ -10460,7 +10520,7 @@ Templates:
 		Images: w-a-02.tem
 		Size: 1, 4
 		Tiles:
-			0: Cliff
+			0: Water
 				Height: 4
 				MinColor: 323541
 				MaxColor: 323542
@@ -10477,7 +10537,7 @@ Templates:
 				MaxColor: A5763C
 				ZOffset: -15
 				ZRamp: 0
-			3: Cliff
+			3: Water
 				MinColor: 404357
 				MaxColor: 444857
 				ZOffset: -15
@@ -10488,13 +10548,13 @@ Templates:
 		Images: w-a-03.tem
 		Size: 2, 4
 		Tiles:
-			0: Cliff
+			0: Water
 				Height: 4
 				MinColor: 363942
 				MaxColor: 333641
 				ZOffset: -15
 				ZRamp: 0
-			1: Cliff
+			1: Water
 				Height: 4
 				MinColor: 39373D
 				MaxColor: 303341
@@ -10522,12 +10582,12 @@ Templates:
 				MaxColor: 7A5E39
 				ZOffset: -15
 				ZRamp: 0
-			6: Cliff
+			6: Water
 				MinColor: 424557
 				MaxColor: 464A59
 				ZOffset: -15
 				ZRamp: 0
-			7: Cliff
+			7: Water
 				MinColor: 414457
 				MaxColor: 434758
 				ZOffset: -15
@@ -10544,7 +10604,7 @@ Templates:
 				MaxColor: 525446
 				ZOffset: -15
 				ZRamp: 0
-			1: Cliff
+			1: Clear
 				Height: 4
 				MinColor: 9A8757
 				MaxColor: 978852
@@ -10577,7 +10637,7 @@ Templates:
 				MaxColor: 787861
 				ZOffset: -15
 				ZRamp: 0
-			7: Rough
+			7: Clear
 				MinColor: DCBE83
 				MaxColor: BBAF6B
 				ZOffset: -15
@@ -10588,9 +10648,9 @@ Templates:
 		Images: sandy01.tem, sandy01a.tem, sandy01b.tem, sandy01c.tem, sandy01d.tem, sandy01e.tem, sandy01f.tem, sandy01g.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: 9F974B
-				MaxColor: 9C9147
+			0: Clear
+				MinColor: 2C2F22
+				MaxColor: 2C2F22
 				ZOffset: -15
 				ZRamp: 0
 	Template@419:
@@ -10600,8 +10660,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: A59849
-				MaxColor: A09147
+				MinColor: 353B2F
+				MaxColor: 353B2F
 				ZOffset: -15
 				ZRamp: 0
 	Template@420:
@@ -10611,8 +10671,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: 9F994B
-				MaxColor: A59846
+				MinColor: 323A2D
+				MaxColor: 323A2D
 				ZOffset: -15
 				ZRamp: 0
 	Template@421:
@@ -10622,8 +10682,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: B49F4A
-				MaxColor: A29647
+				MinColor: 373A2D
+				MaxColor: 373A2D
 				ZOffset: -15
 				ZRamp: 0
 	Template@422:
@@ -10633,8 +10693,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: BCA14B
-				MaxColor: A9A64F
+				MinColor: 3A3F31
+				MaxColor: 3A3F31
 				ZOffset: -15
 				ZRamp: 0
 	Template@423:
@@ -10644,8 +10704,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: A4994C
-				MaxColor: 9E8F49
+				MinColor: 323529
+				MaxColor: 323529
 				ZOffset: -15
 				ZRamp: 0
 	Template@424:
@@ -10655,8 +10715,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: AF9F49
-				MaxColor: AA9C4C
+				MinColor: 33372A
+				MaxColor: 33372A
 				ZOffset: -15
 				ZRamp: 0
 	Template@425:
@@ -10666,8 +10726,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: 908D46
-				MaxColor: AD9A49
+				MinColor: 2C3124
+				MaxColor: 2C3124
 				ZOffset: -15
 				ZRamp: 0
 	Template@426:
@@ -10677,8 +10737,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: B19C4C
-				MaxColor: A59B4D
+				MinColor: 33372A
+				MaxColor: 33372A
 				ZOffset: -15
 				ZRamp: 0
 	Template@427:
@@ -10688,8 +10748,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: AC9E4F
-				MaxColor: A2944C
+				MinColor: 323528
+				MaxColor: 323528
 				ZOffset: -15
 				ZRamp: 0
 	Template@428:
@@ -10699,8 +10759,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: B9A954
-				MaxColor: AE9E4D
+				MinColor: 393C2E
+				MaxColor: 393C2E
 				ZOffset: -15
 				ZRamp: 0
 	Template@429:
@@ -10710,8 +10770,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: A8A14E
-				MaxColor: ADA14E
+				MinColor: 34382B
+				MaxColor: 34382B
 				ZOffset: -15
 				ZRamp: 0
 	Template@430:
@@ -10721,8 +10781,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: A79A4C
-				MaxColor: 9FA04E
+				MinColor: 303527
+				MaxColor: 303527
 				ZOffset: -15
 				ZRamp: 0
 	Template@431:
@@ -10732,8 +10792,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: A3A050
-				MaxColor: B5974A
+				MinColor: 3A3D31
+				MaxColor: 3A3D31
 				ZOffset: -15
 				ZRamp: 0
 	Template@432:
@@ -10743,8 +10803,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: ADA350
-				MaxColor: A49947
+				MinColor: 313629
+				MaxColor: 313629
 				ZOffset: -15
 				ZRamp: 0
 	Template@433:
@@ -10754,8 +10814,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: 9DA148
-				MaxColor: A69A49
+				MinColor: 2F3528
+				MaxColor: 2F3528
 				ZOffset: -15
 				ZRamp: 0
 	Template@434:
@@ -10765,8 +10825,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Rough
-				MinColor: A69B4C
-				MaxColor: 9F994B
+				MinColor: 2F3528
+				MaxColor: 2F3528
 				ZOffset: -15
 				ZRamp: 0
 	Template@435:
@@ -10776,143 +10836,143 @@ Templates:
 		Size: 7, 4
 		Tiles:
 			0: Rough
-				MinColor: 8F9053
-				MaxColor: 828749
+				MinColor: 303D26
+				MaxColor: 303D26
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: 6C784B
-				MaxColor: 7F8348
+				MinColor: 313F26
+				MaxColor: 313F26
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: 70744C
-				MaxColor: 88884C
+				MinColor: 324027
+				MaxColor: 324027
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: 72774B
-				MaxColor: 878948
+				MinColor: 2F3D24
+				MaxColor: 2F3D24
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: 737847
-				MaxColor: 858747
+				MinColor: 313E25
+				MaxColor: 313E25
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: 717749
-				MaxColor: 85864A
+				MinColor: 303D25
+				MaxColor: 303D25
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: 7B7D4B
-				MaxColor: A6A04A
+				MinColor: 2E3B25
+				MaxColor: 2E3B25
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: 8B894F
-				MaxColor: 6E754D
+				MinColor: 303C25
+				MaxColor: 303C25
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: 686D49
-				MaxColor: 686D4E
+				MinColor: 2F3B22
+				MaxColor: 2F3B22
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: 676E4A
-				MaxColor: 6B734C
+				MinColor: 303D23
+				MaxColor: 303D23
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: 656E48
-				MaxColor: 66704B
+				MinColor: 2E3C23
+				MaxColor: 2E3C23
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: 687147
-				MaxColor: 66704D
+				MinColor: 303A22
+				MaxColor: 303A22
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: 697149
-				MaxColor: 69714A
+				MinColor: 303D24
+				MaxColor: 303D24
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: 747949
-				MaxColor: 958E4C
+				MinColor: 2E3A23
+				MaxColor: 2E3A23
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: 8B874C
-				MaxColor: 6C6D49
+				MinColor: 2F3B24
+				MaxColor: 2F3B24
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: 666745
-				MaxColor: 666A4A
+				MinColor: 2C3921
+				MaxColor: 2C3921
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: 676C44
-				MaxColor: 69704C
+				MinColor: 313E24
+				MaxColor: 313E24
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: 676C46
-				MaxColor: 656C4B
+				MinColor: 303D24
+				MaxColor: 303D24
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: 697048
-				MaxColor: 69704B
+				MinColor: 334126
+				MaxColor: 334126
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: 6F714A
-				MaxColor: 76774D
+				MinColor: 303E25
+				MaxColor: 303E25
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: 807D4B
-				MaxColor: 9A904D
+				MinColor: 2F3D25
+				MaxColor: 2F3D25
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: 9D9B4D
-				MaxColor: 73764B
+				MinColor: 2D3823
+				MaxColor: 2D3823
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: 84864B
-				MaxColor: 686B4B
+				MinColor: 2B3821
+				MaxColor: 2B3821
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: 87854C
-				MaxColor: 6B6E4A
+				MinColor: 2E3721
+				MaxColor: 2E3721
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: 868648
-				MaxColor: 72764A
+				MinColor: 2F3C24
+				MaxColor: 2F3C24
 				ZOffset: -15
 				ZRamp: 0
 			25: Rough
-				MinColor: 8D8C4A
-				MaxColor: 787C4C
+				MinColor: 2D3722
+				MaxColor: 2D3722
 				ZOffset: -15
 				ZRamp: 0
 			26: Rough
-				MinColor: 8D8B49
-				MaxColor: 838354
+				MinColor: 2E3C24
+				MaxColor: 2E3C24
 				ZOffset: -15
 				ZRamp: 0
 			27: Rough
-				MinColor: 85894E
-				MaxColor: 979353
+				MinColor: 2D3823
+				MaxColor: 2D3823
 				ZOffset: -15
 				ZRamp: 0
 	Template@436:
@@ -10922,143 +10982,143 @@ Templates:
 		Size: 7, 4
 		Tiles:
 			0: Rough
-				MinColor: 979552
-				MaxColor: 8C8F4A
+				MinColor: 2E3925
+				MaxColor: 2E3925
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: 7B834A
-				MaxColor: 8E8E49
+				MinColor: 2C3721
+				MaxColor: 2C3721
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: 81804C
-				MaxColor: 97934C
+				MinColor: 303C24
+				MaxColor: 303C24
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: 84824A
-				MaxColor: 969347
+				MinColor: 303C25
+				MaxColor: 303C25
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: 858347
-				MaxColor: 919045
+				MinColor: 2D3A23
+				MaxColor: 2D3A23
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: 838449
-				MaxColor: 938F49
+				MinColor: 303C25
+				MaxColor: 303C25
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: 8C884B
-				MaxColor: ABA44B
+				MinColor: 2E3A24
+				MaxColor: 2E3A24
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: 95904F
-				MaxColor: 7D7F4C
+				MinColor: 2C3623
+				MaxColor: 2C3623
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: 777749
-				MaxColor: 76764D
+				MinColor: 293520
+				MaxColor: 293520
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: 75784A
-				MaxColor: 7A7C4C
+				MinColor: 2C3621
+				MaxColor: 2C3621
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: 747848
-				MaxColor: 757B4B
+				MinColor: 2B3621
+				MaxColor: 2B3621
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: 787D47
-				MaxColor: 757A4C
+				MinColor: 293320
+				MaxColor: 293320
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: 797B49
-				MaxColor: 797C4A
+				MinColor: 2B3722
+				MaxColor: 2B3722
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: 838349
-				MaxColor: 9D944C
+				MinColor: 2B3523
+				MaxColor: 2B3523
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: 968D4B
-				MaxColor: 7C7547
+				MinColor: 2E3825
+				MaxColor: 2E3825
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: 757043
-				MaxColor: 747247
+				MinColor: 2A3521
+				MaxColor: 2A3521
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: 777543
-				MaxColor: 77784A
+				MinColor: 2D3823
+				MaxColor: 2D3823
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: 757544
-				MaxColor: 737549
+				MinColor: 2B3722
+				MaxColor: 2B3722
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: 787946
-				MaxColor: 797849
+				MinColor: 2E3A24
+				MaxColor: 2E3A24
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: 7C7949
-				MaxColor: 847F4C
+				MinColor: 2D3823
+				MaxColor: 2D3823
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: 8D8449
-				MaxColor: A5954C
+				MinColor: 2E3925
+				MaxColor: 2E3925
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: A29F4C
-				MaxColor: 848049
+				MinColor: 2C3723
+				MaxColor: 2C3723
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: 8E8E4A
-				MaxColor: 77764C
+				MinColor: 2B3821
+				MaxColor: 2B3821
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: 938E4D
-				MaxColor: 797849
+				MinColor: 2D3621
+				MaxColor: 2D3621
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: 918E48
-				MaxColor: 82814B
+				MinColor: 2E3C24
+				MaxColor: 2E3C24
 				ZOffset: -15
 				ZRamp: 0
 			25: Rough
-				MinColor: 98944B
-				MaxColor: 85854D
+				MinColor: 2D3721
+				MaxColor: 2D3721
 				ZOffset: -15
 				ZRamp: 0
 			26: Rough
-				MinColor: 98934A
-				MaxColor: 8F8A54
+				MinColor: 2E3B23
+				MaxColor: 2E3B23
 				ZOffset: -15
 				ZRamp: 0
 			27: Rough
-				MinColor: 979550
-				MaxColor: 9F9853
+				MinColor: 2C3723
+				MaxColor: 2C3723
 				ZOffset: -15
 				ZRamp: 0
 	Template@437:
@@ -11068,143 +11128,143 @@ Templates:
 		Size: 7, 4
 		Tiles:
 			0: Rough
-				MinColor: BB9C4F
-				MaxColor: AC9147
+				MinColor: 2F3A25
+				MaxColor: 2F3A25
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: A78246
-				MaxColor: B39548
+				MinColor: 2D3922
+				MaxColor: 2D3922
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: B18B4B
-				MaxColor: B9984A
+				MinColor: 2F3A23
+				MaxColor: 2F3A23
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: AC8546
-				MaxColor: B49444
+				MinColor: 2F3C25
+				MaxColor: 2F3C25
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: AF8644
-				MaxColor: AD8F42
+				MinColor: 2C3922
+				MaxColor: 2C3922
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: CA9B4B
-				MaxColor: D5AA4F
+				MinColor: 322E29
+				MaxColor: 322E29
 				ZOffset: -15
 				ZRamp: 0
-			6: DirtRoad
-				MinColor: DEAB50
-				MaxColor: C5AB4C
+			6: Rough
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: AB924C
-				MaxColor: A08044
+				MinColor: 2C3624
+				MaxColor: 2C3624
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: 9A7842
-				MaxColor: 9C7A43
+				MinColor: 293420
+				MaxColor: 293420
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: 997745
-				MaxColor: A88548
+				MinColor: 2B3421
+				MaxColor: 2B3421
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: A07C43
-				MaxColor: A27D43
+				MinColor: 2B3622
+				MaxColor: 2B3622
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: A27D45
-				MaxColor: 977640
+				MinColor: 293321
+				MaxColor: 293321
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: CC9D50
-				MaxColor: DFA954
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
-			13: DirtRoad
-				MinColor: E0AC54
-				MaxColor: C7A54E
+			13: Rough
+				MinColor: 37312C
+				MaxColor: 37312C
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: AF904A
-				MaxColor: 9E733C
+				MinColor: 2D3825
+				MaxColor: 2D3825
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: 9A733D
-				MaxColor: 9A703C
+				MinColor: 2A3521
+				MaxColor: 2A3521
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: A17A40
-				MaxColor: A37740
+				MinColor: 2C3722
+				MaxColor: 2C3722
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: A37A43
-				MaxColor: A67C43
+				MinColor: 2B3722
+				MaxColor: 2B3722
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: 9F7942
-				MaxColor: A07742
+				MinColor: 2B3722
+				MaxColor: 2B3722
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: BA8946
-				MaxColor: E4AF56
+				MinColor: 342F2A
+				MaxColor: 342F2A
 				ZOffset: -15
 				ZRamp: 0
-			20: DirtRoad
-				MinColor: E3AA52
-				MaxColor: DBAD54
+			20: Rough
+				MinColor: 37322D
+				MaxColor: 37322D
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: AEA14B
-				MaxColor: A78641
+				MinColor: 2D3824
+				MaxColor: 2D3824
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: A48E45
-				MaxColor: 997942
+				MinColor: 2B3822
+				MaxColor: 2B3822
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: A58D49
-				MaxColor: 907340
+				MinColor: 2D3722
+				MaxColor: 2D3722
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: A08A43
-				MaxColor: 937440
+				MinColor: 2E3C24
+				MaxColor: 2E3C24
 				ZOffset: -15
 				ZRamp: 0
 			25: Rough
-				MinColor: A28D46
-				MaxColor: 8E733F
+				MinColor: 2C3722
+				MaxColor: 2C3722
 				ZOffset: -15
 				ZRamp: 0
 			26: Rough
-				MinColor: B09548
-				MaxColor: DBA34C
+				MinColor: 312E29
+				MaxColor: 312E29
 				ZOffset: -15
 				ZRamp: 0
-			27: DirtRoad
-				MinColor: C29B49
-				MaxColor: CAA24B
+			27: Rough
+				MinColor: 34312C
+				MaxColor: 34312C
 				ZOffset: -15
 				ZRamp: 0
 	Template@438:
@@ -11214,143 +11274,143 @@ Templates:
 		Size: 7, 4
 		Tiles:
 			0: Rough
-				MinColor: B0994C
-				MaxColor: B49B48
+				MinColor: 332F2A
+				MaxColor: 332F2A
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: B29243
-				MaxColor: A69145
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: AC8C43
-				MaxColor: AF9847
+				MinColor: 352F2A
+				MaxColor: 352F2A
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: A98A3F
-				MaxColor: AB9341
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: AC8C40
-				MaxColor: A68F3F
+				MinColor: 342F2A
+				MaxColor: 342F2A
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: A98A40
-				MaxColor: A28F42
+				MinColor: 36302B
+				MaxColor: 36302B
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: AC8D41
-				MaxColor: B4A449
+				MinColor: 312E29
+				MaxColor: 312E29
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: AA984E
-				MaxColor: A78C44
+				MinColor: 3A342E
+				MaxColor: 3A342E
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: B18F48
-				MaxColor: A38642
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: AC8D45
-				MaxColor: 9E823E
+				MinColor: 3C342E
+				MaxColor: 3C342E
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: A78940
-				MaxColor: 9B813D
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: A68A41
-				MaxColor: 9C7F3C
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: A88945
-				MaxColor: 9E843E
+				MinColor: 3E3630
+				MaxColor: 3E3630
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: A98B40
-				MaxColor: AB9144
+				MinColor: 39342E
+				MaxColor: 39342E
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: AA9247
-				MaxColor: A58540
+				MinColor: 38322D
+				MaxColor: 38322D
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: A1803F
-				MaxColor: 9A7E3B
+				MinColor: 3E3631
+				MaxColor: 3E3631
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: 967D3C
-				MaxColor: 9B7F3B
+				MinColor: 3E3630
+				MaxColor: 3E3630
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: 997A38
-				MaxColor: 9B7D39
+				MinColor: 3E3731
+				MaxColor: 3E3731
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: 957B37
-				MaxColor: 987B39
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: 9C7D3A
-				MaxColor: 977B3A
+				MinColor: 3D352F
+				MaxColor: 3D352F
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: 9B7E3A
-				MaxColor: AD8E42
+				MinColor: 37322D
+				MaxColor: 37322D
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: A89D49
-				MaxColor: 9A853F
+				MinColor: 33302A
+				MaxColor: 33302A
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: 96893D
-				MaxColor: 9E8641
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: A08F46
-				MaxColor: A38A44
+				MinColor: 36322C
+				MaxColor: 36322C
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: 9A8B41
-				MaxColor: 9C843F
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			25: Rough
-				MinColor: 988A42
-				MaxColor: A58940
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			26: Rough
-				MinColor: 978841
-				MaxColor: 99813C
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			27: Rough
-				MinColor: 9A8944
-				MaxColor: AB9648
+				MinColor: 33302A
+				MaxColor: 33302A
 				ZOffset: -15
 				ZRamp: 0
 	Template@439:
@@ -11360,143 +11420,143 @@ Templates:
 		Size: 7, 4
 		Tiles:
 			0: Rough
-				MinColor: D0A950
-				MaxColor: CCA448
+				MinColor: 34312B
+				MaxColor: 34312B
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: DEA349
-				MaxColor: C8A249
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: E1A84B
-				MaxColor: CBA248
+				MinColor: 35312B
+				MaxColor: 35312B
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: DFA649
-				MaxColor: CCA447
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: E0A649
-				MaxColor: C6A045
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: E2AA50
-				MaxColor: D5AA4F
+				MinColor: 37322D
+				MaxColor: 37322D
 				ZOffset: -15
 				ZRamp: 0
-			6: DirtRoad
-				MinColor: DEAA50
-				MaxColor: C4AA4C
+			6: Rough
+				MinColor: 34312B
+				MaxColor: 34312B
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: C7A650
-				MaxColor: DAA74A
+				MinColor: 3A352F
+				MaxColor: 3A352F
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: DDA247
-				MaxColor: DDA74A
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: E1A84D
-				MaxColor: DDA74A
+				MinColor: 3C342E
+				MaxColor: 3C342E
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: DDA448
-				MaxColor: DDA54A
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: E0A84B
-				MaxColor: D79F46
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: E5AE53
-				MaxColor: E3AB55
+				MinColor: 3C342F
+				MaxColor: 3C342F
 				ZOffset: -15
 				ZRamp: 0
-			13: DirtRoad
-				MinColor: E0AC54
-				MaxColor: C7A44E
+			13: Rough
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: C8A04C
-				MaxColor: D8953F
+				MinColor: 38332E
+				MaxColor: 38332E
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: D79740
-				MaxColor: DA963F
+				MinColor: 3E3631
+				MaxColor: 3E3631
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: DC9E40
-				MaxColor: E09B42
+				MinColor: 3E3630
+				MaxColor: 3E3630
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: D7953F
-				MaxColor: DB963F
+				MinColor: 3E3731
+				MaxColor: 3E3731
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: DD9E41
-				MaxColor: DF9A42
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: E09F47
-				MaxColor: E8B156
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
-			20: DirtRoad
-				MinColor: E3AA52
-				MaxColor: DBAC54
+			20: Rough
+				MinColor: 36322D
+				MaxColor: 36322D
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: B3A44B
-				MaxColor: CC9D45
+				MinColor: 33312B
+				MaxColor: 33312B
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: C2A147
-				MaxColor: D8A24A
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: CCA850
-				MaxColor: D4A24A
+				MinColor: 37322D
+				MaxColor: 37322D
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: C8A64D
-				MaxColor: DAA54B
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			25: Rough
-				MinColor: C9A84F
-				MaxColor: D5A249
+				MinColor: 37322C
+				MaxColor: 37322C
 				ZOffset: -15
 				ZRamp: 0
 			26: Rough
-				MinColor: CAA64C
-				MaxColor: E1A64C
+				MinColor: 38332E
+				MaxColor: 38332E
 				ZOffset: -15
 				ZRamp: 0
-			27: DirtRoad
-				MinColor: C29B49
-				MaxColor: CAA24A
+			27: Rough
+				MinColor: 34312C
+				MaxColor: 34312C
 				ZOffset: -15
 				ZRamp: 0
 	Template@440:
@@ -11506,143 +11566,143 @@ Templates:
 		Size: 4, 7
 		Tiles:
 			0: Rough
-				MinColor: A69447
-				MaxColor: AE984D
+				MinColor: 332F2A
+				MaxColor: 332F2A
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: BC9948
-				MaxColor: AC984E
+				MinColor: 3A342E
+				MaxColor: 3A342E
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: AB863F
-				MaxColor: B39649
+				MinColor: 38322D
+				MaxColor: 38322D
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: A68C42
-				MaxColor: A89D49
+				MinColor: 33302A
+				MaxColor: 33302A
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: A49146
-				MaxColor: A68C42
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: B68F43
-				MaxColor: B39147
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: A7833C
-				MaxColor: AD853F
+				MinColor: 3E3631
+				MaxColor: 3E3631
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: A98B43
-				MaxColor: 9C8B3F
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: A59145
-				MaxColor: B29145
+				MinColor: 352F2A
+				MaxColor: 352F2A
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: B79244
-				MaxColor: B59246
+				MinColor: 3C342E
+				MaxColor: 3C342E
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: AC863D
-				MaxColor: AD893E
+				MinColor: 3E3630
+				MaxColor: 3E3630
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: AF9044
-				MaxColor: A79247
+				MinColor: 36322C
+				MaxColor: 36322C
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: 9F8E41
-				MaxColor: A1873D
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: B79042
-				MaxColor: B19042
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: B4863B
-				MaxColor: A97F39
+				MinColor: 3E3731
+				MaxColor: 3E3731
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: AE8D42
-				MaxColor: A79344
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: 9E8B40
-				MaxColor: A3873E
+				MinColor: 342F2A
+				MaxColor: 342F2A
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: BB9142
-				MaxColor: BB9444
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: AE853C
-				MaxColor: B2863B
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: AD9144
-				MaxColor: A59045
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: C6A14A
-				MaxColor: B09043
+				MinColor: 36302B
+				MaxColor: 36302B
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: D4A350
-				MaxColor: BC974A
+				MinColor: 3E3630
+				MaxColor: 3E3630
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: C49A4A
-				MaxColor: B78A3D
+				MinColor: 3D352F
+				MaxColor: 3D352F
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: BF9644
-				MaxColor: A59144
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: C4AA4C
-				MaxColor: DDAA50
+				MinColor: 312E29
+				MaxColor: 312E29
 				ZOffset: -15
 				ZRamp: 0
-			25: DirtRoad
-				MinColor: C6A44E
-				MaxColor: E0AC54
+			25: Rough
+				MinColor: 39342E
+				MaxColor: 39342E
 				ZOffset: -15
 				ZRamp: 0
-			26: DirtRoad
-				MinColor: DBAD54
-				MaxColor: E3AA52
+			26: Rough
+				MinColor: 37322D
+				MaxColor: 37322D
 				ZOffset: -15
 				ZRamp: 0
-			27: DirtRoad
-				MinColor: CAA24B
-				MaxColor: C29B49
+			27: Rough
+				MinColor: 33302A
+				MaxColor: 33302A
 				ZOffset: -15
 				ZRamp: 0
 	Template@441:
@@ -11652,143 +11712,143 @@ Templates:
 		Size: 4, 7
 		Tiles:
 			0: Rough
-				MinColor: 938745
-				MaxColor: 9E8F4D
+				MinColor: 34312B
+				MaxColor: 34312B
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: 8F7B44
-				MaxColor: 9D8D4C
+				MinColor: 3A352F
+				MaxColor: 3A352F
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: 8C6F3F
-				MaxColor: 9E8C4A
+				MinColor: 38332E
+				MaxColor: 38332E
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: 8D7B42
-				MaxColor: A49D4C
+				MinColor: 33312B
+				MaxColor: 33312B
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: 968746
-				MaxColor: 8A7443
+				MinColor: 36312B
+				MaxColor: 36312B
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: 897242
-				MaxColor: 856E40
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: 866C3E
-				MaxColor: 836C3E
+				MinColor: 3E3631
+				MaxColor: 3E3631
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: 837042
-				MaxColor: 958845
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: 9E8C47
-				MaxColor: 917A45
+				MinColor: 35312B
+				MaxColor: 35312B
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: 8C7643
-				MaxColor: 836E41
+				MinColor: 3C342E
+				MaxColor: 3C342E
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: 886E3E
-				MaxColor: 856E3D
+				MinColor: 3E3630
+				MaxColor: 3E3630
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: 806D40
-				MaxColor: 97894A
+				MinColor: 37322D
+				MaxColor: 37322D
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: 9D8D45
-				MaxColor: 937A44
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: 877342
-				MaxColor: 837041
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: 7F683C
-				MaxColor: 7F693C
+				MinColor: 3E3731
+				MaxColor: 3E3731
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: 806E3F
-				MaxColor: 918545
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: 998A43
-				MaxColor: 967D43
+				MinColor: 35302B
+				MaxColor: 35302B
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: 826E3F
-				MaxColor: 857242
+				MinColor: 3F3832
+				MaxColor: 3F3832
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: 826B3E
-				MaxColor: 816B3C
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: 82703E
-				MaxColor: 948846
+				MinColor: 37322C
+				MaxColor: 37322C
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: 988A47
-				MaxColor: 927A43
+				MinColor: 37322D
+				MaxColor: 37322D
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: 9E8046
-				MaxColor: 887442
+				MinColor: 3C342F
+				MaxColor: 3C342F
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: B28C49
-				MaxColor: 856C3D
+				MinColor: 3C352F
+				MaxColor: 3C352F
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: A88744
-				MaxColor: 988B45
+				MinColor: 38332E
+				MaxColor: 38332E
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: ACA24A
-				MaxColor: 978042
+				MinColor: 34312B
+				MaxColor: 34312B
 				ZOffset: -15
 				ZRamp: 0
-			25: DirtRoad
-				MinColor: C2A451
-				MaxColor: DCA751
+			25: Rough
+				MinColor: 36312C
+				MaxColor: 36312C
 				ZOffset: -15
 				ZRamp: 0
-			26: DirtRoad
-				MinColor: D7A952
-				MaxColor: E2A953
+			26: Rough
+				MinColor: 36322D
+				MaxColor: 36322D
 				ZOffset: -15
 				ZRamp: 0
-			27: DirtRoad
-				MinColor: C8A34C
-				MaxColor: BE9A4A
+			27: Rough
+				MinColor: 34312C
+				MaxColor: 34312C
 				ZOffset: -15
 				ZRamp: 0
 	Template@442:
@@ -11797,144 +11857,144 @@ Templates:
 		Images: rough08.tem
 		Size: 4, 7
 		Tiles:
-			0: DirtRoad
-				MinColor: DBAF52
-				MaxColor: D3A851
+			0: Rough
+				MinColor: 36332D
+				MaxColor: 36332D
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: E6B057
-				MaxColor: E4B15A
+			1: Rough
+				MinColor: 39332E
+				MaxColor: 39332E
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: E0A952
-				MaxColor: D7A04C
+			2: Rough
+				MinColor: 3A342F
+				MaxColor: 3A342F
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: CD9D47
-				MaxColor: B2A54D
+			3: Rough
+				MinColor: 2A3124
+				MaxColor: 2A3124
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: A49547
-				MaxColor: B09044
+				MinColor: 2D3923
+				MaxColor: 2D3923
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: AA8C45
-				MaxColor: B79145
+				MinColor: 2D3A23
+				MaxColor: 2D3A23
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: A6833F
-				MaxColor: B18D42
+				MinColor: 2E3A24
+				MaxColor: 2E3A24
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: A18840
-				MaxColor: A79544
+				MinColor: 2C3821
+				MaxColor: 2C3821
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: A99647
-				MaxColor: A48B42
+				MinColor: 2F3B24
+				MaxColor: 2F3B24
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: A88944
-				MaxColor: AD8F46
+				MinColor: 313E25
+				MaxColor: 313E25
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: A0813E
-				MaxColor: A48540
+				MinColor: 2E3922
+				MaxColor: 2E3922
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: A38840
-				MaxColor: A29346
+				MinColor: 2D3923
+				MaxColor: 2D3923
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: AA9845
-				MaxColor: A88C43
+				MinColor: 2E3B24
+				MaxColor: 2E3B24
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: A88A43
-				MaxColor: AB8B44
+				MinColor: 2F3D24
+				MaxColor: 2F3D24
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: 9D7E3B
-				MaxColor: 9E803D
+				MinColor: 2E3D23
+				MaxColor: 2E3D23
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: A38941
-				MaxColor: A59345
+				MinColor: 2D3A22
+				MaxColor: 2D3A22
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: A39342
-				MaxColor: A2883F
+				MinColor: 303C24
+				MaxColor: 303C24
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: A0833D
-				MaxColor: AD8E44
+				MinColor: 313E24
+				MaxColor: 313E24
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: A2823C
-				MaxColor: A1843B
+				MinColor: 303B22
+				MaxColor: 303B22
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: A48A41
-				MaxColor: A39446
+				MinColor: 2D3620
+				MaxColor: 2D3620
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: 9E9043
-				MaxColor: 9F863E
+				MinColor: 303C25
+				MaxColor: 303C25
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: A48840
-				MaxColor: A88A42
+				MinColor: 2F3D24
+				MaxColor: 2F3D24
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: A0833C
-				MaxColor: A2823B
+				MinColor: 2E3A22
+				MaxColor: 2E3A22
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: A58940
-				MaxColor: A29344
+				MinColor: 2E3B23
+				MaxColor: 2E3B23
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: ACA349
-				MaxColor: A78B40
+				MinColor: 2E3A24
+				MaxColor: 2E3A24
 				ZOffset: -15
 				ZRamp: 0
 			25: Rough
-				MinColor: B09847
-				MaxColor: B09044
+				MinColor: 2F3D25
+				MaxColor: 2F3D25
 				ZOffset: -15
 				ZRamp: 0
 			26: Rough
-				MinColor: B29746
-				MaxColor: A6853D
+				MinColor: 2E3C24
+				MaxColor: 2E3C24
 				ZOffset: -15
 				ZRamp: 0
 			27: Rough
-				MinColor: AB9848
-				MaxColor: A29347
+				MinColor: 2B3722
+				MaxColor: 2B3722
 				ZOffset: -15
 				ZRamp: 0
 	Template@443:
@@ -11944,143 +12004,143 @@ Templates:
 		Size: 4, 7
 		Tiles:
 			0: Rough
-				MinColor: AB9547
-				MaxColor: AE974B
+				MinColor: 2E3A25
+				MaxColor: 2E3A25
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: B39347
-				MaxColor: AB984E
+				MinColor: 2F3C24
+				MaxColor: 2F3C24
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: A5853F
-				MaxColor: AB9348
+				MinColor: 2F3D25
+				MaxColor: 2F3D25
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: AC8F42
-				MaxColor: A59B48
+				MinColor: 2D3924
+				MaxColor: 2D3924
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: A49145
-				MaxColor: AB8C41
+				MinColor: 2F3B24
+				MaxColor: 2F3B24
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: B08E44
-				MaxColor: B48F48
+				MinColor: 2F3D23
+				MaxColor: 2F3D23
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: A07F3B
-				MaxColor: AE8740
+				MinColor: 313F25
+				MaxColor: 313F25
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: B18E43
-				MaxColor: A19040
+				MinColor: 2C3721
+				MaxColor: 2C3721
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: A39045
-				MaxColor: AE8D43
+				MinColor: 2F3A23
+				MaxColor: 2F3A23
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: A78740
-				MaxColor: AD8C45
+				MinColor: 2F3A22
+				MaxColor: 2F3A22
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: AA863D
-				MaxColor: AA853C
+				MinColor: 313E25
+				MaxColor: 313E25
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: A98C43
-				MaxColor: A99448
+				MinColor: 2D3922
+				MaxColor: 2D3922
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: A08F41
-				MaxColor: A6893E
+				MinColor: 2F3C25
+				MaxColor: 2F3C25
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: AB8940
-				MaxColor: B08D41
+				MinColor: 303E24
+				MaxColor: 303E24
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: B0843B
-				MaxColor: A7803A
+				MinColor: 313F24
+				MaxColor: 313F24
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: A88B42
-				MaxColor: A79144
+				MinColor: 2D3821
+				MaxColor: 2D3821
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: 9B8A3F
-				MaxColor: A4883E
+				MinColor: 303D25
+				MaxColor: 303D25
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: A6843C
-				MaxColor: AB8C41
+				MinColor: 303E25
+				MaxColor: 303E25
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: A8823B
-				MaxColor: A98339
+				MinColor: 314026
+				MaxColor: 314026
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: A78B41
-				MaxColor: A49246
+				MinColor: 2D3822
+				MaxColor: 2D3822
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: A28F42
-				MaxColor: A2853E
+				MinColor: 2F3D26
+				MaxColor: 2F3D26
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: B28E42
-				MaxColor: C19749
+				MinColor: 2E3C23
+				MaxColor: 2E3C23
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: B6883E
-				MaxColor: B2873C
+				MinColor: 314126
+				MaxColor: 314126
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: AD8B3E
-				MaxColor: A59043
+				MinColor: 2E3A23
+				MaxColor: 2E3A23
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: B4A248
-				MaxColor: C89843
+				MinColor: 34362B
+				MaxColor: 34362B
 				ZOffset: -15
 				ZRamp: 0
-			25: DirtRoad
-				MinColor: D9B055
-				MaxColor: DFA951
+			25: Rough
+				MinColor: 35352A
+				MaxColor: 35352A
 				ZOffset: -15
 				ZRamp: 0
-			26: DirtRoad
-				MinColor: E0B157
-				MaxColor: E5AE54
+			26: Rough
+				MinColor: 37382C
+				MaxColor: 37382C
 				ZOffset: -15
 				ZRamp: 0
-			27: DirtRoad
-				MinColor: D5A950
-				MaxColor: D1A74F
+			27: Rough
+				MinColor: 323429
+				MaxColor: 323429
 				ZOffset: -15
 				ZRamp: 0
 	Template@444:
@@ -12090,143 +12150,143 @@ Templates:
 		Size: 4, 7
 		Tiles:
 			0: Rough
-				MinColor: AB9547
-				MaxColor: AE974C
+				MinColor: 303D26
+				MaxColor: 303D26
 				ZOffset: -15
 				ZRamp: 0
 			1: Rough
-				MinColor: B09146
-				MaxColor: B09A4E
+				MinColor: 303C25
+				MaxColor: 303C25
 				ZOffset: -15
 				ZRamp: 0
 			2: Rough
-				MinColor: BE8D40
-				MaxColor: AE9548
+				MinColor: 2F3B24
+				MaxColor: 2F3B24
 				ZOffset: -15
 				ZRamp: 0
 			3: Rough
-				MinColor: AD9043
-				MaxColor: A59B48
+				MinColor: 2D3823
+				MaxColor: 2D3823
 				ZOffset: -15
 				ZRamp: 0
 			4: Rough
-				MinColor: A49145
-				MaxColor: A88B41
+				MinColor: 313F26
+				MaxColor: 313F26
 				ZOffset: -15
 				ZRamp: 0
 			5: Rough
-				MinColor: AC8B43
-				MaxColor: BB9448
+				MinColor: 2F3B22
+				MaxColor: 2F3B22
 				ZOffset: -15
 				ZRamp: 0
 			6: Rough
-				MinColor: AB843C
-				MaxColor: A9833F
+				MinColor: 2C3921
+				MaxColor: 2C3921
 				ZOffset: -15
 				ZRamp: 0
 			7: Rough
-				MinColor: B99447
-				MaxColor: A79241
+				MinColor: 2B3821
+				MaxColor: 2B3821
 				ZOffset: -15
 				ZRamp: 0
 			8: Rough
-				MinColor: A39044
-				MaxColor: B08F44
+				MinColor: 324027
+				MaxColor: 324027
 				ZOffset: -15
 				ZRamp: 0
 			9: Rough
-				MinColor: AC893F
-				MaxColor: BC9547
+				MinColor: 303D23
+				MaxColor: 303D23
 				ZOffset: -15
 				ZRamp: 0
 			10: Rough
-				MinColor: A9843D
-				MaxColor: A3833D
+				MinColor: 313E24
+				MaxColor: 313E24
 				ZOffset: -15
 				ZRamp: 0
 			11: Rough
-				MinColor: B89244
-				MaxColor: AC9548
+				MinColor: 2E3721
+				MaxColor: 2E3721
 				ZOffset: -15
 				ZRamp: 0
 			12: Rough
-				MinColor: A39041
-				MaxColor: AC8E40
+				MinColor: 2F3D24
+				MaxColor: 2F3D24
 				ZOffset: -15
 				ZRamp: 0
 			13: Rough
-				MinColor: 9D813D
-				MaxColor: A78940
+				MinColor: 2E3C23
+				MaxColor: 2E3C23
 				ZOffset: -15
 				ZRamp: 0
 			14: Rough
-				MinColor: A58039
-				MaxColor: A37D38
+				MinColor: 303D24
+				MaxColor: 303D24
 				ZOffset: -15
 				ZRamp: 0
 			15: Rough
-				MinColor: A78A43
-				MaxColor: A99345
+				MinColor: 2F3C24
+				MaxColor: 2F3C24
 				ZOffset: -15
 				ZRamp: 0
 			16: Rough
-				MinColor: 9D8B3F
-				MaxColor: B08E40
+				MinColor: 313E25
+				MaxColor: 313E25
 				ZOffset: -15
 				ZRamp: 0
 			17: Rough
-				MinColor: A6843C
-				MaxColor: B69244
+				MinColor: 303A22
+				MaxColor: 303A22
 				ZOffset: -15
 				ZRamp: 0
 			18: Rough
-				MinColor: 9D7E3A
-				MaxColor: A3813A
+				MinColor: 334126
+				MaxColor: 334126
 				ZOffset: -15
 				ZRamp: 0
 			19: Rough
-				MinColor: AA8D42
-				MaxColor: A59246
+				MinColor: 2D3722
+				MaxColor: 2D3722
 				ZOffset: -15
 				ZRamp: 0
 			20: Rough
-				MinColor: A18E41
-				MaxColor: A3863E
+				MinColor: 303D25
+				MaxColor: 303D25
 				ZOffset: -15
 				ZRamp: 0
 			21: Rough
-				MinColor: AA893F
-				MaxColor: C1984A
+				MinColor: 303D24
+				MaxColor: 303D24
 				ZOffset: -15
 				ZRamp: 0
 			22: Rough
-				MinColor: A27C38
-				MaxColor: A7823B
+				MinColor: 303E25
+				MaxColor: 303E25
 				ZOffset: -15
 				ZRamp: 0
 			23: Rough
-				MinColor: A0833C
-				MaxColor: AD9645
+				MinColor: 2E3C24
+				MaxColor: 2E3C24
 				ZOffset: -15
 				ZRamp: 0
 			24: Rough
-				MinColor: BAA64A
-				MaxColor: B89041
+				MinColor: 2E3B25
+				MaxColor: 2E3B25
 				ZOffset: -15
 				ZRamp: 0
-			25: DirtRoad
-				MinColor: AF9344
-				MaxColor: B39142
+			25: Rough
+				MinColor: 2E3A23
+				MaxColor: 2E3A23
 				ZOffset: -15
 				ZRamp: 0
-			26: DirtRoad
-				MinColor: B49243
-				MaxColor: A88039
+			26: Rough
+				MinColor: 2F3D25
+				MaxColor: 2F3D25
 				ZOffset: -15
 				ZRamp: 0
-			27: DirtRoad
-				MinColor: B19949
-				MaxColor: A08C45
+			27: Rough
+				MinColor: 2D3823
+				MaxColor: 2D3823
 				ZOffset: -15
 				ZRamp: 0
 	Template@445:
@@ -12320,8 +12380,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B6AF9F
-				MaxColor: B4AE9F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@450:
@@ -12331,8 +12391,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B6AD99
-				MaxColor: BBB1A0
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@451:
@@ -12342,8 +12402,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B6AC99
-				MaxColor: B2A995
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@452:
@@ -12353,8 +12413,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B6AEA1
-				MaxColor: B7AE9E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@453:
@@ -12364,23 +12424,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: A9A297
-				MaxColor: B0A798
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 9C978D
-				MaxColor: B8B0A2
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: B6AD9C
-				MaxColor: A9A296
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: ADA597
-				MaxColor: AAA395
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@454:
@@ -12390,23 +12450,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: A6A096
-				MaxColor: AFA799
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 9D9991
-				MaxColor: B7B0A2
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: B1AB9D
-				MaxColor: A4A095
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: ABA496
-				MaxColor: AEA79A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@455:
@@ -12416,23 +12476,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: B09C82
-				MaxColor: B5A085
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: B39D82
-				MaxColor: BDB4A5
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: B5AC9B
-				MaxColor: AF9372
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: BAAA94
-				MaxColor: B4A38D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@456:
@@ -12442,23 +12502,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: B3AB9A
-				MaxColor: C0B8A7
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: AFABA2
-				MaxColor: B7B1A4
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: BDB5A8
-				MaxColor: BBB5A9
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: BBB19E
-				MaxColor: B6AE9F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@457:
@@ -12468,23 +12528,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: B8AD9C
-				MaxColor: BDB2A0
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: B6AEA1
-				MaxColor: B9B2A4
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: BEB6A9
-				MaxColor: B7AD9D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: BAAE9A
-				MaxColor: BCB09E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@458:
@@ -12494,23 +12554,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: BBB1A1
-				MaxColor: B8AF9E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: B5AC9D
-				MaxColor: BBB2A0
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: BBB2A4
-				MaxColor: A9A193
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: AFA89A
-				MaxColor: AAA497
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@459:
@@ -12520,23 +12580,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: BAB0A2
-				MaxColor: B5AB9C
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: B6AFA2
-				MaxColor: BDB5A6
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: B9AF9C
-				MaxColor: BEB4A3
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: B4AB9A
-				MaxColor: B5AB99
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@460:
@@ -12546,23 +12606,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: B7AC98
-				MaxColor: BBB19F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: A49C90
-				MaxColor: BCB2A0
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: BAAF9C
-				MaxColor: BCB19F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: ABA291
-				MaxColor: BAB09E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@461:
@@ -12571,24 +12631,24 @@ Templates:
 		Images: pave13.tem
 		Size: 2, 2
 		Tiles:
-			0: DirtRoad
-				MinColor: BBB09E
-				MaxColor: BFB6A5
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			1: DirtRoad
-				MinColor: ACA598
-				MaxColor: BDB6A7
+			1: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			2: DirtRoad
-				MinColor: B8B1A2
-				MaxColor: B5AEA0
+			2: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
-			3: DirtRoad
-				MinColor: ABA397
-				MaxColor: BAB09E
+			3: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@462:
@@ -12598,23 +12658,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: B4AC9D
-				MaxColor: B0A99A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 9F9687
-				MaxColor: BDB3A1
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: BDB5A7
-				MaxColor: B2AA9B
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: A69E8D
-				MaxColor: B7AD9C
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@463:
@@ -12624,8 +12684,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: AEAA92
-				MaxColor: ABA78E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@464:
@@ -12635,8 +12695,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: BBB4A8
-				MaxColor: B8B59D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@465:
@@ -12646,8 +12706,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B7AE9D
-				MaxColor: B4AE90
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@466:
@@ -12657,8 +12717,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B2AA9E
-				MaxColor: 9FA45F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@467:
@@ -12668,8 +12728,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: ACA58C
-				MaxColor: B5AC9D
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@468:
@@ -12679,8 +12739,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: ABA58A
-				MaxColor: B7B096
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@469:
@@ -12690,8 +12750,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: A2A179
-				MaxColor: ABA986
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@470:
@@ -12701,8 +12761,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B4ADA2
-				MaxColor: B1AD90
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@471:
@@ -12712,8 +12772,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B9B49E
-				MaxColor: B8B1A4
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@472:
@@ -12723,8 +12783,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: ACAA7B
-				MaxColor: ACAB80
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@473:
@@ -12734,8 +12794,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B6B19D
-				MaxColor: B2AC98
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@474:
@@ -12745,8 +12805,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: B9B19C
-				MaxColor: B1AC81
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@475:
@@ -12756,8 +12816,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 9AA355
-				MaxColor: B1AC9E
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@476:
@@ -12767,8 +12827,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: AAAA7C
-				MaxColor: B8B395
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@477:
@@ -12778,8 +12838,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: A9AA76
-				MaxColor: ADA88A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@478:
@@ -12789,8 +12849,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: ADAC82
-				MaxColor: B2B08A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@479:
@@ -12799,9 +12859,9 @@ Templates:
 		Images: proadc01.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 4D4E42
-				MaxColor: 575942
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@480:
@@ -12810,9 +12870,9 @@ Templates:
 		Images: proadc02.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 4D4E3D
-				MaxColor: 555742
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@481:
@@ -12821,9 +12881,9 @@ Templates:
 		Images: proadc03.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 4D4D3D
-				MaxColor: 4B4D42
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@482:
@@ -12832,9 +12892,9 @@ Templates:
 		Images: proadc04.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 4A4C42
-				MaxColor: 4D4D3C
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@483:
@@ -12843,9 +12903,9 @@ Templates:
 		Images: proadc05.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 53553F
-				MaxColor: 4C4D3C
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@484:
@@ -12854,9 +12914,9 @@ Templates:
 		Images: proadc06.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 565841
-				MaxColor: 4C4C40
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@485:
@@ -12865,9 +12925,9 @@ Templates:
 		Images: proadc07.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 626361
-				MaxColor: 64665E
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@486:
@@ -12876,9 +12936,9 @@ Templates:
 		Images: proadc08.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 63635C
-				MaxColor: 60615B
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@487:
@@ -12887,9 +12947,9 @@ Templates:
 		Images: proadc09.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 60615A
-				MaxColor: 5A5C5A
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@488:
@@ -12898,9 +12958,9 @@ Templates:
 		Images: proadc10.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 595A59
-				MaxColor: 63645C
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@489:
@@ -12909,9 +12969,9 @@ Templates:
 		Images: proadc11.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 5E605A
-				MaxColor: 63635B
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@490:
@@ -12920,9 +12980,9 @@ Templates:
 		Images: proadc12.tem
 		Size: 1, 1
 		Tiles:
-			0: DirtRoad
-				MinColor: 64655E
-				MaxColor: 636461
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@491:
@@ -12932,18 +12992,18 @@ Templates:
 		Size: 1, 3
 		Tiles:
 			0: Road
-				MinColor: 7A7A76
-				MaxColor: 82807A
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 6F6D67
-				MaxColor: 696863
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 8C8B84
-				MaxColor: 6F706F
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@492:
@@ -12953,18 +13013,18 @@ Templates:
 		Size: 3, 1
 		Tiles:
 			0: Road
-				MinColor: 82807B
-				MaxColor: 7A7A76
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 696863
-				MaxColor: 6F6D67
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 6F706F
-				MaxColor: 8C8B84
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@493:
@@ -12973,9 +13033,9 @@ Templates:
 		Images: green01.tem, green01a.tem, green01b.tem, green01c.tem, green01d.tem, green01e.tem, green01f.tem, green01g.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E5BF73
-				MaxColor: E6BD70
+			0: Clear
+				MinColor: 2F3A2C
+				MaxColor: 2F3A2C
 				ZOffset: -15
 				ZRamp: 0
 	Template@494:
@@ -12984,9 +13044,9 @@ Templates:
 		Images: glat01.tem, glat01a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C8B463
-				MaxColor: C9B061
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@495:
@@ -12995,9 +13055,9 @@ Templates:
 		Images: glat02.tem, glat02a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E0BC70
-				MaxColor: B7A958
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@496:
@@ -13006,9 +13066,9 @@ Templates:
 		Images: glat03.tem, glat03a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E5BE73
-				MaxColor: CCB664
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@497:
@@ -13017,9 +13077,9 @@ Templates:
 		Images: glat04.tem, glat04a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E6BE73
-				MaxColor: BCB05C
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@498:
@@ -13028,9 +13088,9 @@ Templates:
 		Images: glat05.tem, glat05a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C5B365
-				MaxColor: D7B568
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@499:
@@ -13039,9 +13099,9 @@ Templates:
 		Images: glat06.tem, glat06a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C6B463
-				MaxColor: C3AE5E
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@500:
@@ -13050,9 +13110,9 @@ Templates:
 		Images: glat07.tem, glat07a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C9B565
-				MaxColor: BCAF5E
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@501:
@@ -13061,9 +13121,9 @@ Templates:
 		Images: glat08.tem, glat08a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C9B666
-				MaxColor: A4A755
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@502:
@@ -13072,9 +13132,9 @@ Templates:
 		Images: glat09.tem, glat09a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: BEAE60
-				MaxColor: DCB86B
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@503:
@@ -13083,9 +13143,9 @@ Templates:
 		Images: glat10.tem, glat10a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C9B165
-				MaxColor: C9B162
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@504:
@@ -13094,9 +13154,9 @@ Templates:
 		Images: glat11.tem, glat11a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C1AE62
-				MaxColor: CFB768
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@505:
@@ -13105,9 +13165,9 @@ Templates:
 		Images: glat12.tem, glat12a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C0AF60
-				MaxColor: ADA956
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@506:
@@ -13116,9 +13176,9 @@ Templates:
 		Images: glat13.tem, glat13a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: B3AB59
-				MaxColor: E7BB6E
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@507:
@@ -13127,9 +13187,9 @@ Templates:
 		Images: glat14.tem, glat14a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: A9A758
-				MaxColor: BBAB5D
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@508:
@@ -13138,9 +13198,9 @@ Templates:
 		Images: glat15.tem, glat15a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: A7A953
-				MaxColor: C7B562
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@509:
@@ -13149,9 +13209,9 @@ Templates:
 		Images: glat16.tem, glat16a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: B0AC58
-				MaxColor: B7AE5A
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@510:
@@ -13304,9 +13364,9 @@ Templates:
 		Images: pvclr01.tem, pvclr01a.tem, pvclr01b.tem, pvclr01c.tem, pvclr01d.tem, pvclr01e.tem, pvclr01f.tem, pvclr01g.tem
 		Size: 1, 1
 		Tiles:
-			0: Clear
-				MinColor: B7B09F
-				MaxColor: B2AA9B
+			0: Road
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@535:
@@ -13433,7 +13493,7 @@ Templates:
 				MaxColor: 51585B
 				ZOffset: -15
 				ZRamp: 0
-			4: Rough
+			4: Clear
 				Height: 4
 				MinColor: 9D8952
 				MaxColor: 8E7D53
@@ -13450,7 +13510,7 @@ Templates:
 				MaxColor: AC743F
 				ZOffset: -15
 				ZRamp: 0
-			7: Rough
+			7: Clear
 				MinColor: C3B46A
 				MaxColor: D4B77C
 				ZOffset: -15
@@ -13461,7 +13521,7 @@ Templates:
 		Images: w-b-02.tem
 		Size: 4, 1
 		Tiles:
-			0: Cliff
+			0: Water
 				Height: 4
 				MinColor: 323541
 				MaxColor: 353841
@@ -13478,7 +13538,7 @@ Templates:
 				MaxColor: 86633C
 				ZOffset: -15
 				ZRamp: 0
-			3: Cliff
+			3: Water
 				MinColor: 444857
 				MaxColor: 444859
 				ZOffset: -15
@@ -13489,7 +13549,7 @@ Templates:
 		Images: w-b-03.tem
 		Size: 4, 2
 		Tiles:
-			0: Cliff
+			0: Water
 				Height: 4
 				MinColor: 333640
 				MaxColor: 353942
@@ -13506,12 +13566,12 @@ Templates:
 				MaxColor: 78603B
 				ZOffset: -15
 				ZRamp: 0
-			3: Cliff
+			3: Water
 				MinColor: 464B57
 				MaxColor: 434757
 				ZOffset: -15
 				ZRamp: 0
-			4: Cliff
+			4: Water
 				Height: 4
 				MinColor: 323541
 				MaxColor: 373B41
@@ -13528,7 +13588,7 @@ Templates:
 				MaxColor: 7F5C35
 				ZOffset: -15
 				ZRamp: 0
-			7: Cliff
+			7: Water
 				MinColor: 444857
 				MaxColor: 434658
 				ZOffset: -15
@@ -13556,7 +13616,7 @@ Templates:
 				MaxColor: B18650
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
+			3: Clear
 				MinColor: D5BC84
 				MaxColor: CFB874
 				ZOffset: -15
@@ -13601,7 +13661,7 @@ Templates:
 				MaxColor: 685433
 				ZOffset: -15
 				ZRamp: 0
-			2: Rough
+			2: Clear
 				Height: 4
 				MinColor: 83784F
 				MaxColor: 7A7151
@@ -13625,7 +13685,7 @@ Templates:
 				MaxColor: 624F34
 				ZOffset: -15
 				ZRamp: 0
-			1: Cliff
+			1: Water
 				Height: 4
 				MinColor: 323542
 				MaxColor: 363A42
@@ -13649,13 +13709,13 @@ Templates:
 				MaxColor: 57472C
 				ZOffset: -15
 				ZRamp: 0
-			2: Cliff
+			2: Water
 				Height: 4
 				MinColor: 303139
 				MaxColor: 33363B
 				ZOffset: -15
 				ZRamp: 0
-			3: Cliff
+			3: Water
 				Height: 4
 				MinColor: 30323A
 				MaxColor: 32353B
@@ -13685,7 +13745,7 @@ Templates:
 				MaxColor: 505145
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
+			3: Clear
 				Height: 4
 				MinColor: 917E5D
 				MaxColor: 767149
@@ -13715,7 +13775,7 @@ Templates:
 				MaxColor: 897443
 				ZOffset: -15
 				ZRamp: 0
-			3: Rough
+			3: Clear
 				Height: 4
 				MinColor: 90814E
 				MaxColor: 81784F
@@ -13733,7 +13793,7 @@ Templates:
 				MaxColor: 474C38
 				ZOffset: -15
 				ZRamp: 0
-			1: Cliff
+			1: Water
 				Height: 4
 				MinColor: 373B42
 				MaxColor: 333643
@@ -13751,7 +13811,7 @@ Templates:
 				MaxColor: 5C5636
 				ZOffset: -15
 				ZRamp: 0
-			1: Cliff
+			1: Water
 				Height: 4
 				MinColor: 353942
 				MaxColor: 333643
@@ -13763,7 +13823,7 @@ Templates:
 				MaxColor: 565138
 				ZOffset: -15
 				ZRamp: 0
-			3: Cliff
+			3: Water
 				Height: 4
 				MinColor: 373A42
 				MaxColor: 353842
@@ -13781,7 +13841,7 @@ Templates:
 				MaxColor: 7E7037
 				ZOffset: -15
 				ZRamp: 0
-			1: Rough
+			1: Clear
 				Height: 4
 				MinColor: 9C895B
 				MaxColor: 968853
@@ -14770,9 +14830,9 @@ Templates:
 		Images: green01.tem, green01a.tem, green01b.tem, green01c.tem, green01d.tem, green01e.tem, green01f.tem, green01g.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E5BF73
-				MaxColor: E6BD70
+			0: Clear
+				MinColor: 2F3A2C
+				MaxColor: 2F3A2C
 				ZOffset: -15
 				ZRamp: 0
 	Template@788:
@@ -14781,9 +14841,9 @@ Templates:
 		Images: glat01.tem, glat01a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C8B463
-				MaxColor: C9B061
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@789:
@@ -14792,9 +14852,9 @@ Templates:
 		Images: glat02.tem, glat02a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E0BC70
-				MaxColor: B7A958
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@790:
@@ -14803,9 +14863,9 @@ Templates:
 		Images: glat03.tem, glat03a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E5BE73
-				MaxColor: CCB664
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@791:
@@ -14814,9 +14874,9 @@ Templates:
 		Images: glat04.tem, glat04a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: E6BE73
-				MaxColor: BCB05C
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@792:
@@ -14825,9 +14885,9 @@ Templates:
 		Images: glat05.tem, glat05a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C5B365
-				MaxColor: D7B568
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@793:
@@ -14836,9 +14896,9 @@ Templates:
 		Images: glat06.tem, glat06a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C6B463
-				MaxColor: C3AE5E
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@794:
@@ -14847,9 +14907,9 @@ Templates:
 		Images: glat07.tem, glat07a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C9B565
-				MaxColor: BCAF5E
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@795:
@@ -14858,9 +14918,9 @@ Templates:
 		Images: glat08.tem, glat08a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C9B666
-				MaxColor: A4A755
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@796:
@@ -14869,9 +14929,9 @@ Templates:
 		Images: glat09.tem, glat09a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: BEAE60
-				MaxColor: DCB86B
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@797:
@@ -14880,9 +14940,9 @@ Templates:
 		Images: glat10.tem, glat10a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C9B165
-				MaxColor: C9B162
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@798:
@@ -14891,9 +14951,9 @@ Templates:
 		Images: glat11.tem, glat11a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C1AE62
-				MaxColor: CFB768
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@799:
@@ -14902,9 +14962,9 @@ Templates:
 		Images: glat12.tem, glat12a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: C0AF60
-				MaxColor: ADA956
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@800:
@@ -14913,9 +14973,9 @@ Templates:
 		Images: glat13.tem, glat13a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: B3AB59
-				MaxColor: E7BB6E
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@801:
@@ -14924,9 +14984,9 @@ Templates:
 		Images: glat14.tem, glat14a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: A9A758
-				MaxColor: BBAB5D
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@802:
@@ -14935,9 +14995,9 @@ Templates:
 		Images: glat15.tem, glat15a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: A7A953
-				MaxColor: C7B562
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@803:
@@ -14946,9 +15006,9 @@ Templates:
 		Images: glat16.tem, glat16a.tem
 		Size: 1, 1
 		Tiles:
-			0: Rough
-				MinColor: B0AC58
-				MaxColor: B7AE5A
+			0: Clear
+				MinColor: 000000
+				MaxColor: 000000
 				ZOffset: -15
 				ZRamp: 0
 	Template@804:
@@ -15043,7 +15103,6 @@ Templates:
 				MaxColor: E3C181
 				ZOffset: -15
 				ZRamp: 0
-
 	Template@821:
 		Categories: Wood Bridges
 		Id: 821
@@ -15228,11 +15287,6 @@ Templates:
 		Images: ovrpsb03.tem, ovrpsb03a.tem
 		Size: 2, 5
 		Tiles:
-			0: Cliff
-				MinColor: 000000
-				MaxColor: 000000
-				ZOffset: -15
-				ZRamp: 0
 			1: Cliff
 				Height: 4
 				MinColor: 583F25
@@ -15470,11 +15524,6 @@ Templates:
 		Images: ovrpsb06.tem, ovrpsb06a.tem
 		Size: 5, 2
 		Tiles:
-			0: Cliff
-				MinColor: 000000
-				MaxColor: 000000
-				ZOffset: -15
-				ZRamp: 0
 			1: Road
 				Height: 4
 				MinColor: 533C2A
@@ -15764,65 +15813,6 @@ Templates:
 				MaxColor: 404256
 				ZOffset: -15
 				ZRamp: 0
-	# Template@831:
-	# 	Categories: Wood Bridges
-	# 	Id: 831
-	# 	Images: ovrpsb11.tem
-	# 	Size: 2, 5
-	# 	Tiles:
-	# 		0: Cliff
-	# 			MinColor: 84837F
-	# 			MaxColor: 6D7061
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		1: Cliff
-	# 			MinColor: 969C53
-	# 			MaxColor: 979F4F
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		2: Cliff
-	# 			Height: 1
-	# 			MinColor: 83827C
-	# 			MaxColor: 94928D
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		3: Cliff
-	# 			MinColor: 999F56
-	# 			MaxColor: 7E825C
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		4: Cliff
-	# 			Height: 1
-	# 			MinColor: 878782
-	# 			MaxColor: 8F8E8A
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		5: Cliff
-	# 			MinColor: 93A066
-	# 			MaxColor: 80926B
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		6: Cliff
-	# 			Height: 1
-	# 			MinColor: 8B8A85
-	# 			MaxColor: 83938D
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		7: Cliff
-	# 			MinColor: 989B62
-	# 			MaxColor: 767B56
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		8: Cliff
-	# 			MinColor: 979A73
-	# 			MaxColor: 85857A
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		9: Cliff
-	# 			MinColor: 9EA455
-	# 			MaxColor: 9EA54D
-	# 			ZOffset: -15
-	# 			ZRamp: 0
 	Template@832:
 		Categories: Wood Bridges
 		Id: 832
@@ -15950,317 +15940,4 @@ Templates:
 			0: Cliff
 				MinColor: 3B3237
 				MaxColor: 2A1C15
-				ZOffset: -15
-				ZRamp: 0
-			1: Road
-				Height: 4
-				MinColor: 402C1E
-				MaxColor: 403023
-				ZOffset: -15
-				ZRamp: 0
-			2: Road
-				Height: 4
-				MinColor: 4D3726
-				MaxColor: 4E3828
-				ZOffset: -15
-				ZRamp: 0
-			3: Road
-				Height: 4
-				MinColor: 3B2B1F
-				MaxColor: 5B442F
-				ZOffset: -15
-				ZRamp: 0
-			4: Cliff
-				MinColor: 292222
-				MaxColor: 352620
-				ZOffset: -15
-				ZRamp: 0
-			5: Cliff
-				MinColor: 414459
-				MaxColor: 424355
-				ZOffset: -15
-				ZRamp: 0
-			6: Cliff
-				MinColor: 404356
-				MaxColor: 3D3539
-				ZOffset: -15
-				ZRamp: 0
-			7: Cliff
-				MinColor: 414358
-				MaxColor: 342724
-				ZOffset: -15
-				ZRamp: 0
-			8: Cliff
-				MinColor: 3F4157
-				MaxColor: 312725
-				ZOffset: -15
-				ZRamp: 0
-			9: Cliff
-				MinColor: 404157
-				MaxColor: 404154
-				ZOffset: -15
-				ZRamp: 0
-	Template@835:
-		Categories: Wood Bridges
-		Id: 835
-		Images: ovrpsb15.tem
-		Size: 5, 2
-		Tiles:
-			0: Cliff
-				MinColor: 3B3237
-				MaxColor: 2A1C15
-				ZOffset: -15
-				ZRamp: 0
-			1: Road
-				Height: 4
-				MinColor: 3F2B1E
-				MaxColor: 34261C
-				ZOffset: -15
-				ZRamp: 0
-			2: Road
-				Height: 4
-				MinColor: 4A3424
-				MaxColor: 463022
-				ZOffset: -15
-				ZRamp: 0
-			3: Road
-				Height: 4
-				MinColor: 39291D
-				MaxColor: 4F3927
-				ZOffset: -15
-				ZRamp: 0
-			4: Cliff
-				MinColor: 282222
-				MaxColor: 352720
-				ZOffset: -15
-				ZRamp: 0
-			5: Cliff
-				MinColor: 414459
-				MaxColor: 424355
-				ZOffset: -15
-				ZRamp: 0
-			6: Cliff
-				MinColor: 404356
-				MaxColor: 3D3539
-				ZOffset: -15
-				ZRamp: 0
-			7: Cliff
-				MinColor: 414358
-				MaxColor: 342724
-				ZOffset: -15
-				ZRamp: 0
-			8: Cliff
-				MinColor: 3F4157
-				MaxColor: 312725
-				ZOffset: -15
-				ZRamp: 0
-			9: Cliff
-				MinColor: 404157
-				MaxColor: 404154
-				ZOffset: -15
-				ZRamp: 0
-	# Template@836:
-	# 	Categories: Wood Bridges
-	# 	Id: 836
-	# 	Images: ovrpsb16.tem
-	# 	Size: 5, 2
-	# 	Tiles:
-	# 		0: Cliff
-	# 			MinColor: 808371
-	# 			MaxColor: 908F8A
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		1: Cliff
-	# 			Height: 1
-	# 			MinColor: A09F9A
-	# 			MaxColor: 86847E
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		2: Cliff
-	# 			Height: 1
-	# 			MinColor: 979792
-	# 			MaxColor: 918F89
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		3: Cliff
-	# 			Height: 1
-	# 			MinColor: 86857F
-	# 			MaxColor: 979590
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		4: Cliff
-	# 			MinColor: 767561
-	# 			MaxColor: 82846C
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		5: Cliff
-	# 			MinColor: 979F4F
-	# 			MaxColor: 999E56
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		6: Cliff
-	# 			MinColor: 8C9255
-	# 			MaxColor: 9B9D71
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		7: Cliff
-	# 			MinColor: 929C57
-	# 			MaxColor: 989B74
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		8: Cliff
-	# 			MinColor: 8F9355
-	# 			MaxColor: 868864
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	# 		9: Cliff
-	# 			MinColor: 9EA54D
-	# 			MaxColor: 9EA455
-	# 			ZOffset: -15
-	# 			ZRamp: 0
-	Template@837:
-		Categories: Tile Test
-		Id: 837
-		Images: tile-test.shp
-		Size: 7, 4
-		Tiles:
-			0: Rough
-				MinColor: BB9C4F
-				MaxColor: AC9147
-				ZOffset: -15
-				ZRamp: 0
-			1: Rough
-				MinColor: A78246
-				MaxColor: B39548
-				ZOffset: -15
-				ZRamp: 0
-			2: Rough
-				MinColor: B18B4B
-				MaxColor: B9984A
-				ZOffset: -15
-				ZRamp: 0
-			3: Rough
-				MinColor: AC8546
-				MaxColor: B49444
-				ZOffset: -15
-				ZRamp: 0
-			4: Rough
-				MinColor: AF8644
-				MaxColor: AD8F42
-				ZOffset: -15
-				ZRamp: 0
-			5: Rough
-				MinColor: CA9B4B
-				MaxColor: D5AA4F
-				ZOffset: -15
-				ZRamp: 0
-			6: DirtRoad
-				MinColor: DEAB50
-				MaxColor: C5AB4C
-				ZOffset: -15
-				ZRamp: 0
-			7: Rough
-				MinColor: AB924C
-				MaxColor: A08044
-				ZOffset: -15
-				ZRamp: 0
-			8: Rough
-				MinColor: 9A7842
-				MaxColor: 9C7A43
-				ZOffset: -15
-				ZRamp: 0
-			9: Rough
-				MinColor: 997745
-				MaxColor: A88548
-				ZOffset: -15
-				ZRamp: 0
-			10: Rough
-				MinColor: A07C43
-				MaxColor: A27D43
-				ZOffset: -15
-				ZRamp: 0
-			11: Rough
-				MinColor: A27D45
-				MaxColor: 977640
-				ZOffset: -15
-				ZRamp: 0
-			12: Rough
-				MinColor: CC9D50
-				MaxColor: DFA954
-				ZOffset: -15
-				ZRamp: 0
-			13: DirtRoad
-				MinColor: E0AC54
-				MaxColor: C7A54E
-				ZOffset: -15
-				ZRamp: 0
-			14: Rough
-				MinColor: AF904A
-				MaxColor: 9E733C
-				ZOffset: -15
-				ZRamp: 0
-			15: Rough
-				MinColor: 9A733D
-				MaxColor: 9A703C
-				ZOffset: -15
-				ZRamp: 0
-			16: Rough
-				MinColor: A17A40
-				MaxColor: A37740
-				ZOffset: -15
-				ZRamp: 0
-			17: Rough
-				MinColor: A37A43
-				MaxColor: A67C43
-				ZOffset: -15
-				ZRamp: 0
-			18: Rough
-				MinColor: 9F7942
-				MaxColor: A07742
-				ZOffset: -15
-				ZRamp: 0
-			19: Rough
-				MinColor: BA8946
-				MaxColor: E4AF56
-				ZOffset: -15
-				ZRamp: 0
-			20: DirtRoad
-				MinColor: E3AA52
-				MaxColor: DBAD54
-				ZOffset: -15
-				ZRamp: 0
-			21: Rough
-				MinColor: AEA14B
-				MaxColor: A78641
-				ZOffset: -15
-				ZRamp: 0
-			22: Rough
-				MinColor: A48E45
-				MaxColor: 997942
-				ZOffset: -15
-				ZRamp: 0
-			23: Rough
-				MinColor: A58D49
-				MaxColor: 907340
-				ZOffset: -15
-				ZRamp: 0
-			24: Rough
-				MinColor: A08A43
-				MaxColor: 937440
-				ZOffset: -15
-				ZRamp: 0
-			25: Rough
-				MinColor: A28D46
-				MaxColor: 8E733F
-				ZOffset: -15
-				ZRamp: 0
-			26: Rough
-				MinColor: B09548
-				MaxColor: DBA34C
-				ZOffset: -15
-				ZRamp: 0
-			27: DirtRoad
-				MinColor: C29B49
-				MaxColor: CAA24B
-				ZOffset: -15
-				ZRamp: 0
+				ZOf
