@@ -835,9 +835,6 @@
 	HitShape@prone:
 		Type: Circle
 			Radius: 128
-			VerticalTopOffset: 200
-			VerticalBottomOffset: 0
-		# TargetableOffsets: 0,0,0
 		RequiresCondition: prone
 	ExternalCondition@Prone:
 		Condition: prone

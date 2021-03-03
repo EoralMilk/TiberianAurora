@@ -190,12 +190,12 @@ HowitzerCannonHE:
 		Damage: 15000
 		Spread: 0c768
 		Versus:
-			None: 100
-			Flak: 100
+			None: 140
+			Flak: 140
 			Plate: 80
 			Light: 100
 			Medium: 20
-			Heavy: 30
+			Heavy: 60
 			Wood: 100
 			Steel: 60
 			Concrete: 60
