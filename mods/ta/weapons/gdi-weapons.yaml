@@ -368,12 +368,12 @@ TowerMissile:
 		Damage: 3000
 		Versus:
 			None: 35
-			Flak: 30
-			Plate: 30
+			Flak: 20
+			Plate: 20
 			Light: 100
-			Medium: 85
-			Heavy: 70
-			Wood: 50
+			Medium: 60
+			Heavy: 60
+			Wood: 40
 			Steel: 40
 			Concrete: 20
 			Drone: 80
