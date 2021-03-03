@@ -967,4 +967,4 @@ Rules:
 			Green: 1.12
 		MusicPlaylist:
 			BackgroundMusic: map1
-			DisableWorldSounds: true
+			# DisableWorldSounds: true

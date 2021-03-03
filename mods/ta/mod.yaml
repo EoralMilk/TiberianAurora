@@ -253,6 +253,8 @@ MapGrid:
 
 WorldViewportSizes:
 	ZoomScale: 0.5
+	MaxZoomScale: 5
+
 
 Music:
 	ta|audio/music.yaml

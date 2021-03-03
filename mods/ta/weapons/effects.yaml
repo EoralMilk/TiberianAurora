@@ -623,42 +623,42 @@ ShellCasingDebris:
 		Explosions: flash_tiny
 		ExplosionPalette: gray_alpha50
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
-		ImpactActors: false
+		ImpactActors: True
 
 ^Flash_Small-Dark:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_small-dark
 		ExplosionPalette: gray_alpha
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
-		ImpactActors: false
+		ImpactActors: True
 
 ^Flash_Small-Bright:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_small-bright
 		ExplosionPalette: gray_alpha60
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
-		ImpactActors: false
+		ImpactActors: True
 
 ^Flash_Small-Brighter:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_small-brighter
 		ExplosionPalette: gray_alpha80
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
-		ImpactActors: false
+		ImpactActors: True
 
 ^Flash_Medium:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_medium
 		ExplosionPalette: gray_alpha50
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
-		ImpactActors: false
+		ImpactActors: True
 
 ^Flash_Large:
 	Warhead@Flash: CreateEffect
 		Explosions: flash_large
 		ExplosionPalette: gray_alpha80
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
-		ImpactActors: false
+		ImpactActors: True
 
 
 ^Flash_Huge:
@@ -666,7 +666,7 @@ ShellCasingDebris:
 		Explosions: flash_huge
 		ExplosionPalette: gray_alpha80
 		ValidTargets: Ground, Water, Infantry, Vehicle, Building
-		ImpactActors: false
+		ImpactActors: True
 
 
 
