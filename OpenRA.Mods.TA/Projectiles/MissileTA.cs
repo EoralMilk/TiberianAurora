@@ -113,7 +113,7 @@ namespace OpenRA.Mods.Common.Projectiles
 
 		[SequenceReference(nameof(JetImage), allowNullImage: true)]
 		[Desc("Loop a randomly chosen sequence of JetImage from this list while this projectile is moving.")]
-		public readonly string[] JetSequence = { "idle" };
+		public readonly string[] JetSequences = { "idle" };
 
 		[PaletteReference(nameof(JetUsePlayerPalette))]
 		[Desc("Palette used to render the jet sequence. ")]
@@ -283,7 +283,7 @@ namespace OpenRA.Mods.Common.Projectiles
 			if (!string.IsNullOrEmpty(info.JetImage))
 			{
 				jetanim = new Animation(world, info.JetImage);
-				jetanim.PlayRepeating(info.Sequences.Random(world.SharedRandom));
+				jetanim.PlayRepeating(info.JetSequences.Random(world.SharedRandom));
 			}
 
 			if (info.ContrailLength > 0)
