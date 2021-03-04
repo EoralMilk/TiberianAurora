@@ -419,7 +419,7 @@ OrcaAGMissiles:
 		AllowSnapping: false
 		CruiseAltitude: 5c0
 		JetImage: mislflash3
-		JetSequence: idle
+		JetSequences: idle
 		JetPalette: gray_alpha70
 		ExplodeUnderThisAltitude: -2c512 ##Terrain height tolerance
 	Warhead@1Dam: SpreadDamage

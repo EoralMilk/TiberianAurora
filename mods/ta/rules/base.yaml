@@ -938,7 +938,7 @@
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-	AppearsOnRadar:
+	-AppearsOnRadar:
 	BodyOrientation:
 	Tooltip:
 		Name: 树
@@ -1061,7 +1061,7 @@
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-	AppearsOnRadar:
+	# AppearsOnRadar:
 	BodyOrientation:
 	Tooltip:
 		Name: 岩石

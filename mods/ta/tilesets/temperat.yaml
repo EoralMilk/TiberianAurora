@@ -93,8 +93,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 1
-				MinColor: BDB954
-				MaxColor: B9B659
+				# MinColor: BDB954
+				# MaxColor: B9B659
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@30:
@@ -105,8 +107,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 2
-				MinColor: 93993F
-				MaxColor: 949842
+				# MinColor: 93993F
+				# MaxColor: 949842
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@31:
@@ -117,8 +121,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 3
-				MinColor: 8E9440
-				MaxColor: 909340
+				# MinColor: 8E9440
+				# MaxColor: 909340
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@32:
@@ -129,8 +135,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 4
-				MinColor: B7B855
-				MaxColor: B9B856
+				# MinColor: B7B855
+				# MaxColor: B9B856
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@33:
@@ -141,8 +149,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 5
-				MinColor: AAAF53
-				MaxColor: 959844
+				# MinColor: AAAF53
+				# MaxColor: 959844
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@34:
@@ -153,8 +163,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 6
-				MinColor: 909440
-				MaxColor: A0A84E
+				# MinColor: 909440
+				# MaxColor: A0A84E
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@35:
@@ -165,8 +177,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 7
-				MinColor: AFB454
-				MaxColor: 9DA146
+				# MinColor: AFB454
+				# MaxColor: 9DA146
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@36:
@@ -177,8 +191,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 8
-				MinColor: A7AC53
-				MaxColor: BAB856
+				# MinColor: A7AC53
+				# MaxColor: BAB856
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@37:
@@ -189,8 +205,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 9
-				MinColor: A7AC55
-				MaxColor: B1AF55
+				# MinColor: A7AC55
+				# MaxColor: B1AF55
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@38:
@@ -201,8 +219,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 10
-				MinColor: A4A951
-				MaxColor: 91923F
+				# MinColor: A4A951
+				# MaxColor: 91923F
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@39:
@@ -213,8 +233,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 11
-				MinColor: A2A84B
-				MaxColor: B4B555
+				# MinColor: A2A84B
+				# MaxColor: B4B555
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@40:
@@ -225,8 +247,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 12
-				MinColor: BAB856
-				MaxColor: ADAD53
+				# MinColor: BAB856
+				# MaxColor: ADAD53
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@41:
@@ -237,8 +261,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 13
-				MinColor: C0B468
-				MaxColor: C4AE4C
+				MinColor: 2E382C
+				MaxColor: 2E382C
+				# MinColor: C0B468
+				# MaxColor: C4AE4C
 				ZOffset: -15
 				ZRamp: 0
 	Template@42:
@@ -249,8 +275,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 14
-				MinColor: 939641
-				MaxColor: 8F8E3D
+				# MinColor: 939641
+				# MaxColor: 8F8E3D
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@43:
@@ -261,8 +289,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 15
-				MinColor: B5B754
-				MaxColor: B9B756
+				# MinColor: B5B754
+				# MaxColor: B9B756
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@44:
@@ -273,8 +303,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 16
-				MinColor: BCBA57
-				MaxColor: B9B857
+				# MinColor: BCBA57
+				# MaxColor: B9B857
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@45:
@@ -285,8 +317,10 @@ Templates:
 		Tiles:
 			0: Rough
 				RampType: 17
-				MinColor: 90933F
-				MaxColor: B9B755
+				# MinColor: 90933F
+				# MaxColor: B9B755
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@46:
@@ -297,8 +331,10 @@ Templates:
 		Tiles:
 			0: Rough
 				RampType: 18
-				MinColor: B5B553
-				MaxColor: 91923F
+				# MinColor: B5B553
+				# MaxColor: 91923F
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@47:
@@ -309,8 +345,10 @@ Templates:
 		Tiles:
 			0: Rough
 				RampType: 19
-				MinColor: 90933F
-				MaxColor: B9B755
+				# MinColor: 90933F
+				# MaxColor: B9B755
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@48:
@@ -321,8 +359,10 @@ Templates:
 		Tiles:
 			0: Rough
 				RampType: 20
-				MinColor: B5B553
-				MaxColor: 91923F
+				# MinColor: B5B553
+				# MaxColor: 91923F
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@49:
@@ -2280,8 +2320,10 @@ Templates:
 				ZOffset: -15
 				ZRamp: 0
 			14: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			15: Impassable
@@ -2336,8 +2378,10 @@ Templates:
 		Size: 9, 5
 		Tiles:
 			1: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			2: Clear
@@ -2351,28 +2395,38 @@ Templates:
 				ZOffset: -15
 				ZRamp: 0
 			4: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			5: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			6: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			9: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			10: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			11: Water
@@ -2391,18 +2445,24 @@ Templates:
 				ZOffset: -15
 				ZRamp: 0
 			14: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			15: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			16: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			18: Clear
@@ -2451,8 +2511,10 @@ Templates:
 				ZOffset: -15
 				ZRamp: 0
 			27: Water
-				MinColor: 000000
-				MaxColor: 000000
+				# MinColor: 000000
+				# MaxColor: 000000
+				MinColor: 0D6793
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			28: Clear
@@ -3430,23 +3492,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@178:
@@ -3456,23 +3518,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@179:
@@ -3503,23 +3565,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@181:
@@ -3591,23 +3653,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@184:
@@ -3617,23 +3679,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@185:
@@ -3643,23 +3705,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@186:
@@ -3767,23 +3829,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@190:
@@ -3892,23 +3954,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@195:
@@ -3949,23 +4011,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@197:
@@ -4053,23 +4115,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@201:
@@ -4079,23 +4141,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@202:
@@ -4105,23 +4167,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@203:
@@ -4131,23 +4193,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@204:
@@ -4157,23 +4219,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@205:
@@ -5385,23 +5447,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@233:
@@ -5479,23 +5541,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@237:
@@ -5582,23 +5644,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@240:
@@ -5608,23 +5670,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@241:
@@ -6708,23 +6770,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@266:
@@ -6971,23 +7033,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@274:
@@ -7298,8 +7360,8 @@ Templates:
 		Size: 2, 5
 		Tiles:
 			0: Cliff
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Cliff
@@ -7540,8 +7602,8 @@ Templates:
 		Size: 5, 2
 		Tiles:
 			0: Cliff
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
@@ -8194,18 +8256,18 @@ Templates:
 		Size: 1, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@294:
@@ -8215,18 +8277,18 @@ Templates:
 		Size: 3, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@295:
@@ -8236,48 +8298,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@296:
@@ -8287,48 +8349,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@297:
@@ -8338,48 +8400,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@298:
@@ -8389,48 +8451,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@299:
@@ -8440,48 +8502,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@300:
@@ -8491,48 +8553,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@301:
@@ -8542,48 +8604,48 @@ Templates:
 		Size: 3, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			4: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			5: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			6: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			7: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			8: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@302:
@@ -10371,8 +10433,10 @@ Templates:
 			9: Clear
 				Height: 1
 				RampType: 1
-				MinColor: BCB75A
-				MaxColor: C1B456
+				# MinColor: BCB75A
+				# MaxColor: C1B456
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			10: Clear
@@ -10411,15 +10475,19 @@ Templates:
 			2: Clear
 				Height: 2
 				RampType: 1
-				MinColor: C4BF52
-				MaxColor: C5BE5A
+				# MinColor: C4BF52
+				# MaxColor: C5BE5A
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			3: Clear
 				Height: 3
 				RampType: 1
-				MinColor: B8B951
-				MaxColor: C0BC55
+				# MinColor: B8B951
+				# MaxColor: C0BC55
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 			4: Clear
@@ -12380,8 +12448,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@450:
@@ -12391,8 +12459,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@451:
@@ -12402,8 +12470,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@452:
@@ -12413,8 +12481,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@453:
@@ -12424,23 +12492,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@454:
@@ -12450,23 +12518,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@455:
@@ -12476,23 +12544,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@456:
@@ -12502,23 +12570,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@457:
@@ -12528,23 +12596,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@458:
@@ -12554,23 +12622,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@459:
@@ -12580,23 +12648,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@460:
@@ -12606,23 +12674,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@461:
@@ -12632,23 +12700,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@462:
@@ -12658,23 +12726,23 @@ Templates:
 		Size: 2, 2
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			3: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@463:
@@ -12684,8 +12752,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@464:
@@ -12695,8 +12763,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@465:
@@ -12706,8 +12774,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@466:
@@ -12717,8 +12785,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@467:
@@ -12728,8 +12796,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@468:
@@ -12739,8 +12807,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@469:
@@ -12750,8 +12818,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@470:
@@ -12761,8 +12829,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@471:
@@ -12772,8 +12840,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@472:
@@ -12783,8 +12851,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@473:
@@ -12794,8 +12862,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@474:
@@ -12805,8 +12873,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@475:
@@ -12816,8 +12884,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@476:
@@ -12827,8 +12895,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@477:
@@ -12838,8 +12906,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@478:
@@ -12849,8 +12917,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@479:
@@ -12860,8 +12928,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@480:
@@ -12871,8 +12939,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@481:
@@ -12882,8 +12950,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@482:
@@ -12893,8 +12961,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@483:
@@ -12904,8 +12972,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@484:
@@ -12915,8 +12983,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@485:
@@ -12926,8 +12994,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@486:
@@ -12937,8 +13005,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@487:
@@ -12948,8 +13016,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@488:
@@ -12959,8 +13027,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@489:
@@ -12970,8 +13038,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@490:
@@ -12981,8 +13049,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@491:
@@ -12992,18 +13060,18 @@ Templates:
 		Size: 1, 3
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@492:
@@ -13013,18 +13081,18 @@ Templates:
 		Size: 3, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			1: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 			2: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@493:
@@ -13045,8 +13113,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@495:
@@ -13056,8 +13124,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@496:
@@ -13067,8 +13135,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@497:
@@ -13078,8 +13146,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@498:
@@ -13089,8 +13157,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@499:
@@ -13100,8 +13168,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@500:
@@ -13111,8 +13179,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@501:
@@ -13122,8 +13190,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@502:
@@ -13133,8 +13201,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@503:
@@ -13144,8 +13212,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@504:
@@ -13155,8 +13223,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@505:
@@ -13166,8 +13234,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@506:
@@ -13177,8 +13245,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@507:
@@ -13188,8 +13256,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@508:
@@ -13199,8 +13267,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@509:
@@ -13210,8 +13278,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@510:
@@ -13222,8 +13290,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 1
-				MinColor: B4B457
-				MaxColor: C9BF65
+				# MinColor: B4B457
+				# MaxColor: C9BF65
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@511:
@@ -13234,8 +13304,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 1
-				MinColor: BFBC5B
-				MaxColor: C1BB5F
+				# MinColor: BFBC5B
+				# MaxColor: C1BB5F
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@512:
@@ -13246,8 +13318,10 @@ Templates:
 		Tiles:
 			0: Clear
 				RampType: 1
-				MinColor: B1B357
-				MaxColor: C1BA5F
+				# MinColor: B1B357
+				# MaxColor: C1BA5F
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@513:
@@ -13365,8 +13439,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Road
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@535:
@@ -13511,8 +13585,10 @@ Templates:
 				ZOffset: -15
 				ZRamp: 0
 			7: Clear
-				MinColor: C3B46A
-				MaxColor: D4B77C
+				# MinColor: C3B46A
+				# MaxColor: D4B77C
+				MinColor: 2E382C
+				MaxColor: 2E382C
 				ZOffset: -15
 				ZRamp: 0
 	Template@540:
@@ -14842,8 +14918,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@789:
@@ -14853,8 +14929,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@790:
@@ -14864,8 +14940,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@791:
@@ -14875,8 +14951,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@792:
@@ -14886,8 +14962,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@793:
@@ -14897,8 +14973,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@794:
@@ -14908,8 +14984,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@795:
@@ -14919,8 +14995,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@796:
@@ -14930,8 +15006,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@797:
@@ -14941,8 +15017,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@798:
@@ -14952,8 +15028,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@799:
@@ -14963,8 +15039,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@800:
@@ -14974,8 +15050,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@801:
@@ -14985,8 +15061,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@802:
@@ -14996,8 +15072,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@803:
@@ -15007,8 +15083,8 @@ Templates:
 		Size: 1, 1
 		Tiles:
 			0: Clear
-				MinColor: 000000
-				MaxColor: 000000
+				MinColor: 111111
+				MaxColor: 111111
 				ZOffset: -15
 				ZRamp: 0
 	Template@804:
@@ -15938,6 +16014,55 @@ Templates:
 		Size: 5, 2
 		Tiles:
 			0: Cliff
-				MinColor: 3B3237
-				MaxColor: 2A1C15
-				ZOf
+				MinColor: 3D3438
+				MaxColor: 38261C
+				ZOffset: -15
+				ZRamp: 0
+			1: Road
+				Height: 4
+				MinColor: 4B3627
+				MaxColor: 38291F
+				ZOffset: -15
+				ZRamp: 0
+			2: Road
+				Height: 4
+				MinColor: 4D3727
+				MaxColor: 493323
+				ZOffset: -15
+				ZRamp: 0
+			3: Road
+				Height: 4
+				MinColor: 433226
+				MaxColor: 4B3625
+				ZOffset: -15
+				ZRamp: 0
+			4: Cliff
+				MinColor: 282222
+				MaxColor: 372821
+				ZOffset: -15
+				ZRamp: 0
+			5: Cliff
+				MinColor: 414459
+				MaxColor: 424355
+				ZOffset: -15
+				ZRamp: 0
+			6: Cliff
+				MinColor: 404356
+				MaxColor: 3D353A
+				ZOffset: -15
+				ZRamp: 0
+			7: Cliff
+				MinColor: 414358
+				MaxColor: 3C2D28
+				ZOffset: -15
+				ZRamp: 0
+			8: Cliff
+				MinColor: 3F4157
+				MaxColor: 3A2E2A
+				ZOffset: -15
+				ZRamp: 0
+			9: Cliff
+				MinColor: 404157
+				MaxColor: 404154
+				ZOffset: -15
+				ZRamp: 0
