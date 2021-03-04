@@ -477,9 +477,18 @@ namespace OpenRA.Mods.TA.UtilityCommands
 				{
 					if (!terrainInfo.Templates.ContainsKey(tilenum))
 						tilenum = subtile = 0;
-
-					map.Tiles[cell] = new TerrainTile(tilenum, subtile);
 					map.Height[cell] = z;
+					try
+					{
+						map.Tiles[cell] = new TerrainTile(tilenum, subtile);
+					}
+					catch (Exception e)
+					{
+						tilenum = subtile = 0;
+						map.Tiles[cell] = new TerrainTile(tilenum, subtile);
+						Console.WriteLine("{0} at cell: {1},{2},{3}, tilenum: {4}, subtile:{5}".F(e.Message, cell.X, cell.Y, cell.Layer, tilenum, subtile));
+						continue;
+					}
 				}
 			}
 		}
