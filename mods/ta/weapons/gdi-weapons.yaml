@@ -269,8 +269,8 @@ MammothTuskAAMissile:
 
 M77Rockets:
 	Inherits: ^CommonCannon
-	Inherits@WarheadEff: ^HE_WarheadEff_Large
-	ReloadDelay: 170
+	Inherits@WarheadEff: ^MLRSHE_WarheadEff
+	ReloadDelay: 190
 	Burst: 6
 	BurstDelays: 5
 	Range: 13c512
@@ -286,22 +286,22 @@ M77Rockets:
 		ContrailLength2: 14
 		ContrailWidth2: 33
 		ContrailDelay2: 0
-		Inaccuracy: 0c512
+		Inaccuracy: 0c728
 		Image: DRAGON
 		LaunchAngle: 180
 		Blockable: false
 		JetImage: mislflash
 		JetPalette: gray_alpha70
 	Warhead@1Dam: SpreadDamage
-		Damage: 5300
+		Damage: 6200
 		Spread: 0c512
 		Versus:
 			None: 150
 			Flak: 140
-			Plate: 100
-			Light: 80
-			Medium: 25
-			Heavy: 50
+			Plate: 80
+			Light: 100
+			Medium: 35
+			Heavy: 55
 			Wood: 110
 			Steel: 50
 			Concrete: 75

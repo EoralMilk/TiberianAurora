@@ -431,7 +431,7 @@ fires-u:
 mcsexp1:
 	Defaults:
 		Length: *
-		Tick: 55
+		Tick: 60
 		ZOffset: 1024
 		AddExtension: false
 		IgnoreWorldTint: True
@@ -450,6 +450,14 @@ mcsexp1:
 	UnitExpLarge01: UnitExpLarge01.mcs
 	UnitExpLarge02: UnitExpLarge02.mcs
 	UnitExpLarge03: UnitExpLarge03.mcs
+	MLRSHE01: MLRSHE01.mcs
+	MLRSHE02: MLRSHE02.mcs
+	MLRSHE03: MLRSHE03.mcs
+	MLRSHE04: MLRSHE04.mcs
+	MLRSHE-Hit01: MLRSHE-Hit01.mcs
+	MLRSHE-Hit02: MLRSHE-Hit02.mcs
+	MLRSHE-Hit03: MLRSHE-Hit03.mcs
+
 
 
 

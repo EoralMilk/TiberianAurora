@@ -187,17 +187,32 @@ HowitzerCannonHE:
 		LaunchAngle: 165
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 15000
+		Damage: 10000
 		Spread: 0c768
 		Versus:
-			None: 140
-			Flak: 140
+			None: 100
+			Flak: 100
 			Plate: 80
-			Light: 100
+			Light: 80
 			Medium: 20
-			Heavy: 60
+			Heavy: 35
+			Wood: 50
+			Steel: 35
+			Concrete: 30
+			Drone: 80
+			Rocket: 100
+	Warhead@2Dam: SpreadDamage
+		Damage: 10000
+		Spread: 0c225
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
 			Wood: 100
-			Steel: 60
+			Steel: 80
 			Concrete: 60
 			Drone: 80
 			Rocket: 100
