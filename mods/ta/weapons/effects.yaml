@@ -477,7 +477,7 @@ ShellCasingDebris:
 		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
 	Warhead@Eff_HitAir: CreateEffect
 		Explosions: huge_twlt
-		ImpactSounds: ggexpbara.wav, gexpbarb.wav, gexpbarc.wav
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
 	Warhead@EffWater_piff: CreateEffect
 		Explosions: huge_watersplash
 		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
@@ -827,7 +827,7 @@ ShellCasingDebris:
 
 
 ^exp_midunit_WarheadEff:
-	Inherits@WarheadLight: ^Flash_Small-Brighter
+	Inherits@WarheadLight: ^Flash_Large
 	Inherits: ^WarheadEff-Blast
 	Warhead@Eff_HitSoil: CreateEffect
 		Explosions: exp_midunit-a
@@ -855,6 +855,49 @@ ShellCasingDebris:
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 	Warhead@EffSmu: LeaveSmudge
 		SmudgeType: LargeCrater, MediumScorch
+	Warhead@Spark: FireShrapnel
+		Amount: 5
+	Warhead@Smoke: FireShrapnel
+		Amount: 2
+
+
+^WarheadEff-mcsexp1:
+	Inherits: ^WarheadEff
+	Warhead@Eff_HitSoil: CreateEffect
+		Image: mcsexp1
+	Warhead@Eff_HitMetal: CreateEffect
+		Image: mcsexp1
+	Warhead@Eff_HitStone: CreateEffect
+		Image: mcsexp1
+	Warhead@Eff_HitConcrete: CreateEffect
+		Image: mcsexp1
+	Warhead@Eff_HitAir: CreateEffect
+		Image: mcsexp1
+
+
+^HowiHE_WarheadEff:
+	Inherits@WarheadLight: ^Flash_Large
+	Inherits: ^WarheadEff-mcsexp1
+	Warhead@Eff_HitSoil: CreateEffect
+		Explosions: HowiHE01, HowiHE02, HowiHE03, HowiHE04
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+	Warhead@Eff_HitMetal: CreateEffect
+		Explosions: HowiHE-Hit01, HowiHE-Hit02, HowiHE-Hit03
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav, blast_metal_hit_02.wav
+	Warhead@Eff_HitStone: CreateEffect
+		Explosions: HowiHE01, HowiHE02, HowiHE03, HowiHE04
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+	Warhead@Eff_HitConcrete: CreateEffect
+		Explosions: HowiHE-Hit01, HowiHE-Hit02, HowiHE-Hit03
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+	Warhead@Eff_HitAir: CreateEffect
+		Explosions: HowiHE-Hit01, HowiHE-Hit02, HowiHE-Hit03
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+	Warhead@EffWater_piff: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwasa.wav
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: MediumCrater
 	Warhead@Spark: FireShrapnel
 		Amount: 5
 	Warhead@Smoke: FireShrapnel

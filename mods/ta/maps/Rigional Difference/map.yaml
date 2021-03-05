@@ -379,12 +379,6 @@ Actors:
 	Actor107: tree04
 		Location: 162,-42
 		Owner: Neutral
-	Actor108: tree22
-		Location: 80,-41
-		Owner: Neutral
-	Actor109: tree22
-		Location: 81,-41
-		Owner: Neutral
 	Actor110: tree04
 		Location: 114,-41
 		Owner: Neutral
@@ -393,9 +387,6 @@ Actors:
 		Owner: Neutral
 	Actor112: tree22
 		Location: 173,-41
-		Owner: Neutral
-	Actor113: tree22
-		Location: 79,-40
 		Owner: Neutral
 	Actor114: tree03
 		Location: 131,-40
@@ -988,12 +979,6 @@ Actors:
 	Actor310: tree22
 		Location: 166,11
 		Owner: Neutral
-	Actor311: tree22
-		Location: 170,12
-		Owner: Neutral
-	Actor312: tree22
-		Location: 171,12
-		Owner: Neutral
 	Actor313: tree01
 		Location: 198,12
 		Owner: Neutral
@@ -1008,9 +993,6 @@ Actors:
 		Owner: Neutral
 	Actor317: tree11
 		Location: 96,13
-		Owner: Neutral
-	Actor318: tree22
-		Location: 172,13
 		Owner: Neutral
 	Actor319: tree05
 		Location: 135,14
@@ -1765,9 +1747,6 @@ Actors:
 	Actor569: tree13
 		Location: 110,82
 		Owner: Neutral
-	Actor570: tree22
-		Location: 201,82
-		Owner: Neutral
 	Actor571: tree02
 		Location: 217,82
 		Owner: Neutral
@@ -1782,9 +1761,6 @@ Actors:
 		Owner: Neutral
 	Actor575: tree07
 		Location: 149,83
-		Owner: Neutral
-	Actor576: tree22
-		Location: 201,83
 		Owner: Neutral
 	Actor577: tree22
 		Location: 88,84
@@ -2440,9 +2416,6 @@ Actors:
 	Actor794: trock04
 		Location: 111,96
 		Owner: Neutral
-	Actor795: srock03
-		Location: 196,12
-		Owner: Neutral
 	Actor796: trock01
 		Location: 168,42
 		Owner: Neutral
@@ -2593,12 +2566,118 @@ Actors:
 	Actor845: caoild
 		Owner: Neutral
 		Location: 118,39
+	Actor846: lobrdg_r_nw
+		Owner: Neutral
+		Location: 68,-43
+	Actor847: lobrdg_b
+		Owner: Neutral
+		Location: 69,-43
+	Actor848: lobrdg_b
+		Owner: Neutral
+		Location: 70,-43
+	Actor849: lobrdg_b
+		Owner: Neutral
+		Location: 71,-43
+	Actor850: lobrdg_b
+		Owner: Neutral
+		Location: 72,-43
+	Actor851: lobrdg_b
+		Owner: Neutral
+		Location: 73,-43
+	Actor852: lobrdg_b
+		Owner: Neutral
+		Location: 74,-43
+	Actor853: lobrdg_b
+		Owner: Neutral
+		Location: 75,-43
+	Actor854: lobrdg_b
+		Owner: Neutral
+		Location: 76,-43
+	Actor855: lobrdg_b
+		Owner: Neutral
+		Location: 77,-43
+	Actor856: lobrdg_b
+		Owner: Neutral
+		Location: 78,-43
+	Actor857: lobrdg_b
+		Owner: Neutral
+		Location: 79,-43
+	Actor858: lobrdg_b
+		Owner: Neutral
+		Location: 80,-43
+	Actor859: lobrdg_r_se
+		Owner: Neutral
+		Location: 81,-43
+	Actor860: lobrdg_r_se
+		Owner: Neutral
+		Location: 199,82
+	Actor861: lobrdg_b
+		Owner: Neutral
+		Location: 198,82
+	Actor862: lobrdg_b
+		Owner: Neutral
+		Location: 196,82
+	Actor863: lobrdg_b
+		Owner: Neutral
+		Location: 197,82
+	Actor864: lobrdg_b
+		Owner: Neutral
+		Location: 195,82
+	Actor865: lobrdg_b
+		Owner: Neutral
+		Location: 194,82
+	Actor866: lobrdg_b
+		Owner: Neutral
+		Location: 193,82
+	Actor867: lobrdg_b
+		Owner: Neutral
+		Location: 192,82
+	Actor868: lobrdg_b
+		Owner: Neutral
+		Location: 191,82
+	Actor869: lobrdg_b
+		Owner: Neutral
+		Location: 189,82
+	Actor870: lobrdg_b
+		Owner: Neutral
+		Location: 190,82
+	Actor871: lobrdg_b
+		Owner: Neutral
+		Location: 188,82
+	Actor872: lobrdg_b
+		Owner: Neutral
+		Location: 186,82
+	Actor873: lobrdg_b
+		Owner: Neutral
+		Location: 187,82
+	Actor874: lobrdg_b
+		Owner: Neutral
+		Location: 184,82
+	Actor875: lobrdg_b
+		Owner: Neutral
+		Location: 185,82
+	Actor876: lobrdg_b
+		Owner: Neutral
+		Location: 183,82
+	Actor877: lobrdg_b
+		Owner: Neutral
+		Location: 182,82
+	Actor878: lobrdg_r_nw
+		Owner: Neutral
+		Location: 180,82
+	Actor879: lobrdg_b
+		Owner: Neutral
+		Location: 181,82
 
 Rules:
 	World:
 		TerrainLighting:
 			RedTint: 1.08
-			GreenTint: 0.94
-			BlueTint: 0.68
+			GreenTint: 1.0
+			BlueTint: 0.92
 			Intensity: 0.7
 			HeightStep: 0.032
+	^LowBridge:
+		DamageMultiplier:
+			Modifier: 0
+

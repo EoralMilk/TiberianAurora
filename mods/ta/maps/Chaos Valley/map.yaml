@@ -3715,3 +3715,6 @@ Rules:
 			Ambient: 0.75
 			Red: 1.12
 			Green: 1.12
+		TerrainLighting:
+			Intensity: 0.75
+			HeightStep: 0.032

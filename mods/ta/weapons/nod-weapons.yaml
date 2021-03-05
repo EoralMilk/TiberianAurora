@@ -172,7 +172,7 @@ DaggerOfNodAA:
 
 HowitzerCannonHE:
 	Inherits: ^CommonCannon
-	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^HowiHE_WarheadEff
 	ReloadDelay: 90
 	Range: 12c256
 	MinRange: 4c256

@@ -47,6 +47,9 @@ cabhut:
 	Armor:
 		Type: Concrete
 	HitShape:
+	Explodes:
+		Type: CenterPosition
+		Weapon: BuildingExplode
 
 lobrdb_a:
 	Inherits: ^LowBridge

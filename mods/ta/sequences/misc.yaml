@@ -434,8 +434,22 @@ mcsexp1:
 		Tick: 50
 		ZOffset: 1024
 		AddExtension: false
+		IgnoreWorldTint: True
+		Scale: 0.5 #to change
 	oilexp1: oilexp1.mcs
+		Scale: 1 #to change
 	oilexp2: oilexp2.mcs
+		Scale: 1 #to change
+	HowiHE01: HowiHE01.mcs
+	HowiHE02: HowiHE02.mcs
+	HowiHE03: HowiHE03.mcs
+	HowiHE04: HowiHE04.mcs
+	HowiHE-Hit01: HowiHE-Hit01.mcs
+	HowiHE-Hit02: HowiHE-Hit02.mcs
+	HowiHE-Hit03: HowiHE-Hit03.mcs
+
+
+
 
 blasts:
 	Defaults:
