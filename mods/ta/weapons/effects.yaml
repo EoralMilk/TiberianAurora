@@ -902,3 +902,32 @@ ShellCasingDebris:
 		Amount: 5
 	Warhead@Smoke: FireShrapnel
 		Amount: 2
+
+
+^UnitExpLarge_WarheadEff:
+	Inherits@WarheadLight: ^Flash_Large
+	Inherits: ^WarheadEff-mcsexp1
+	Warhead@Eff_HitSoil: CreateEffect
+		Explosions: UnitExpLarge01, UnitExpLarge02, UnitExpLarge03
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav, blast_metal_hit_02.wav
+	Warhead@Eff_HitMetal: CreateEffect
+		Explosions: HowiHE-Hit01, HowiHE-Hit02, HowiHE-Hit03
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav, blast_metal_hit_02.wav
+	Warhead@Eff_HitStone: CreateEffect
+		Explosions: UnitExpLarge01, UnitExpLarge02, UnitExpLarge03
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav, blast_metal_hit_02.wav
+	Warhead@Eff_HitConcrete: CreateEffect
+		Explosions: UnitExpLarge01, UnitExpLarge02, UnitExpLarge03
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav, blast_metal_hit_02.wav
+	Warhead@Eff_HitAir: CreateEffect
+		Explosions: UnitExpLarge01, UnitExpLarge02, UnitExpLarge03
+		ImpactSounds: blast_metal_hit_01.wav, blast_metal_hit_02.wav, gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav, blast_metal_hit_02.wav
+	Warhead@EffWater_piff: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwasa.wav
+	Warhead@EffSmu: LeaveSmudge
+		SmudgeType: MediumCrater
+	Warhead@Spark: FireShrapnel
+		Amount: 5
+	Warhead@Smoke: FireShrapnel
+		Amount: 2

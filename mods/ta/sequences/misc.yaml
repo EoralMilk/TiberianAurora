@@ -431,7 +431,7 @@ fires-u:
 mcsexp1:
 	Defaults:
 		Length: *
-		Tick: 50
+		Tick: 55
 		ZOffset: 1024
 		AddExtension: false
 		IgnoreWorldTint: True
@@ -447,7 +447,9 @@ mcsexp1:
 	HowiHE-Hit01: HowiHE-Hit01.mcs
 	HowiHE-Hit02: HowiHE-Hit02.mcs
 	HowiHE-Hit03: HowiHE-Hit03.mcs
-
+	UnitExpLarge01: UnitExpLarge01.mcs
+	UnitExpLarge02: UnitExpLarge02.mcs
+	UnitExpLarge03: UnitExpLarge03.mcs
 
 
 

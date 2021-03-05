@@ -48,7 +48,7 @@ MediumExplosion:
 
 LargeExplosion:
 	Inherits: ^DamagingExplosion
-	Inherits@WarheadEff: ^HE_WarheadEff_Large
+	Inherits@WarheadEff: ^UnitExpLarge_WarheadEff
 	Inherits@WarheadFire: ^Fire_g2
 	Warhead@1Dam: SpreadDamage
 		Spread: 0c782
