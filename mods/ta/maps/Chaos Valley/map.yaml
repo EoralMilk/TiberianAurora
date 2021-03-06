@@ -3712,7 +3712,7 @@ Actors:
 Rules:
 	World:
 		GlobalLightingPaletteEffect:
-			Ambient: 0.75
+			Ambient: 0.85
 			Red: 1.12
 			Green: 1.12
 		TerrainLighting:
