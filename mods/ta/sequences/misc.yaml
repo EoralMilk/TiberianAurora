@@ -1044,3 +1044,61 @@ nukesmoke:
 	idle: nukepuff
 		Length: *
 		BlendMode: Additive
+
+cloud:
+	cloud1: cloud1.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud2: cloud2.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud3: cloud3.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud4: cloud4.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud5: cloud5.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud6: cloud6.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud7: cloud7.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud5: cloud5.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud8: cloud8.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud9: cloud9.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud10: cloud10.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud11: cloud11.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud12: cloud12.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
+	cloud13: cloud13.png
+		AddExtension: false
+		UseTilesetExtension: false
+		BlendMode: DoubleMultiplicative
