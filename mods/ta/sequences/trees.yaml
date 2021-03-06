@@ -90,3 +90,25 @@ tree27:
 
 tree28:
 	Inherits: ^Tree
+
+
+
+
+mcstree:
+	Defaults:
+		Length: *
+		Offset: 0, 0, 16
+		Tick: 100
+		ZOffset: 1024
+		AddExtension: false
+	idle: tree001.mcs
+		Length: 30
+		ShadowStart: 30
+	burnt: tree001.mcs
+		Length: 30
+		ShadowStart: 30
+	fire: fire01
+		AddExtension: true
+		BlendMode: Additive
+		Scale: 1
+		Offset: 0, -22, 50
