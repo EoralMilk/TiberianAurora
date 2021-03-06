@@ -160,7 +160,7 @@ APC-Casing:
 
 MediumTankCannonAP:
 	Inherits: ^CommonCannon
-	Inherits@WarheadEff: ^AP_WarheadEff_Medium
+	# Inherits@WarheadEff: ^AP_WarheadEff_Medium
 	ReloadDelay: 66
 	Range: 5c512
 	Report: tank_shot_1.wav, tank_shot_2.wav, tank_shot.wav
@@ -180,6 +180,14 @@ MediumTankCannonAP:
 			Concrete: 100
 			Drone: 60
 			Rocket: 100
+	Warhead@Eff_ad: CreateEffect
+		Explosions: adtest
+		Image: mcstest
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+	Warhead@Eff_smoke: CreateEffect
+		Explosions: adtest-smoke
+		Image: mcstest
+
 
 MTank-Casing:
 	Inherits: ^ShellCasing

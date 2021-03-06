@@ -458,6 +458,20 @@ mcsexp1:
 	MLRSHE-Hit02: MLRSHE-Hit02.mcs
 	MLRSHE-Hit03: MLRSHE-Hit03.mcs
 
+mcstest:
+	Defaults:
+		Length: *
+		Tick: 60
+		ZOffset: 1024
+		AddExtension: false
+		Scale: 0.5 #to change
+	adtest: adtest.mcs
+		BlendMode: Additive
+		ZOffset: 1224
+	adtest-smoke: adtest-smoke.mcs
+		IgnoreWorldTint: false
+
+
 
 
 
