@@ -303,6 +303,7 @@ M77Rockets:
 	Warhead@1Dam: SpreadDamage
 		Damage: 6200
 		Spread: 0c512
+		Falloff: 100, 67, 35, 11, 0
 		Versus:
 			None: 150
 			Flak: 140
