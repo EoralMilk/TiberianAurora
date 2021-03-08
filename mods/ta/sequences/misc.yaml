@@ -428,6 +428,27 @@ fires-u:
 	empty: empty
 
 
+mcssmokey:
+	Defaults:
+		Length: *
+		Tick: 50
+		ZOffset: 1024
+		AddExtension: false
+		IgnoreWorldTint: True
+		Scale: 0.5 #to change
+	idle: smokey.mcs
+
+
+mcssmokey2:
+	Defaults:
+		Length: *
+		Tick: 40
+		ZOffset: 1024
+		AddExtension: false
+		IgnoreWorldTint: True
+		Scale: 0.3 #to change
+	idle: smokey.mcs
+
 mcsexp1:
 	Defaults:
 		Length: *

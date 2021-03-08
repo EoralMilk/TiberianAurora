@@ -582,9 +582,9 @@
 ^PlaneHusk:
 	Inherits: ^Husk
 	SmokeTrailWhenDamaged:
-		Interval: 2
-		Sprite: v3trail
-		Palette: effect
+		Interval: 4
+		Sprite: mcssmokey
+		# Palette: effect
 		MinDamage: Undamaged
 	FallsToEarth:
 		Explosion: PlaneHuskExplosion
@@ -735,8 +735,8 @@
 	Inherits: ^Husk
 	SmokeTrailWhenDamaged:
 		Interval: 5
-		Sprite: v3trail
-		Palette: effect
+		Sprite: mcssmokey
+		# Palette: effect
 		MinDamage: Undamaged
 	Aircraft:
 		CanHover: true
@@ -830,8 +830,8 @@
 			Radius: 128
 			VerticalTopOffset: 1128
 			VerticalBottomOffset: 0
-		TargetableOffsets: 0,0,300, 0,0,500
-		RequiresCondition: !prone
+		# TargetableOffsets: 0,0,300, 0,0,500
+		# # RequiresCondition: !prone
 	HitShape@prone:
 		Type: Circle
 			Radius: 128

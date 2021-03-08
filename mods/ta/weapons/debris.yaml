@@ -13,7 +13,7 @@
 		Image: dbris1lg
 		Palette: effect
 		Shadow: true
-		TrailImage: smokey2
+		TrailImage: mcssmokey2
 		TrailDelay: 1
 		TrailInterval: 1
 		# ContrailLength: 8
