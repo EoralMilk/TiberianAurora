@@ -101,6 +101,7 @@ mcstree:
 		Tick: 100
 		ZOffset: 1024
 		AddExtension: false
+		Scale: 1
 	idle: tree001.mcs
 		Length: 30
 		ShadowStart: 30

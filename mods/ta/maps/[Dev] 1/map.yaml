@@ -52,22 +52,18 @@ Actors:
 	Actor20: caoild
 		Location: 120,-57
 		Owner: Neutral
-		Health: 100
 		Facing: 96
 	Actor21: caoild
 		Location: 155,8
 		Owner: Neutral
-		Health: 100
 		Facing: 96
 	Actor22: caoild
 		Location: 83,47
 		Owner: Neutral
 		Facing: 96
-		Health: 100
 	Actor23: caoild
 		Location: 54,-23
 		Owner: Neutral
-		Health: 100
 		Facing: 96
 	Actor29: tree21
 		Location: 111,-3
@@ -87,7 +83,6 @@ Actors:
 	Actor34: tree21
 		Location: 120,4
 		Owner: Neutral
-		Health: 100
 	Actor35: tree21
 		Location: 115,2
 		Owner: Neutral
@@ -169,7 +164,6 @@ Actors:
 	Actor63: tree22
 		Location: 108,52
 		Owner: Neutral
-		Health: 100
 	Actor64: tree22
 		Location: 109,57
 		Owner: Neutral
@@ -482,7 +476,6 @@ Actors:
 	Actor167: tree10
 		Location: 129,-9
 		Owner: Neutral
-		Health: 100
 	Actor169: tibtre01
 		Location: 123,-22
 		Owner: Neutral
@@ -742,7 +735,6 @@ Actors:
 	Actor287: cahos4-ruins
 		Owner: Neutral
 		Location: 106,-9
-		Health: 100
 	Actor288: cahos6
 		Owner: Neutral
 		Location: 106,-3
@@ -807,7 +799,6 @@ Actors:
 	Actor309: cahos1
 		Owner: Neutral
 		Location: 76,16
-		Health: 100
 	Actor294: cagy-f-ruins
 		Owner: Neutral
 		Location: 107,6
@@ -873,7 +864,6 @@ Actors:
 	Actor324: cahos7-f
 		Owner: Neutral
 		Location: 93,-1
-		Health: 100
 	Actor325: cahos3-f
 		Owner: Neutral
 		Location: 133,-25
@@ -933,22 +923,18 @@ Actors:
 	Actor341: catd
 		Owner: Neutral
 		Location: 101,-28
-		Health: 100
 		TurretFacing: 0
 	Actor342: catd
 		Owner: Neutral
 		Location: 101,-32
-		Health: 100
 		TurretFacing: 207
 	Actor344: catd
 		Owner: Neutral
 		Location: 104,-8
-		Health: 100
 		TurretFacing: 289
 	Actor346: catd
 		Owner: Neutral
 		Location: 98,-5
-		Health: 100
 		TurretFacing: 481
 	Actor347: catd
 		Owner: Neutral
@@ -956,7 +942,6 @@ Actors:
 	Actor348: catd
 		Owner: Neutral
 		Location: 123,3
-		Health: 100
 		TurretFacing: 771
 
 Rules:
@@ -967,4 +952,3 @@ Rules:
 			Green: 1.12
 		MusicPlaylist:
 			BackgroundMusic: map1
-			# DisableWorldSounds: true

@@ -152,7 +152,7 @@ a10:
 		Speed: 288
 		CanSlide: false
 		CanForceLand: false
-		AltitudeVelocity: 0c200
+		AltitudeVelocity: 0c400
 	Selectable:
 		Bounds: 30,24
 		Priority: 5

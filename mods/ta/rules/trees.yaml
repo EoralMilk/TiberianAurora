@@ -9,9 +9,10 @@ TIBTRE03:
 
 TREE01:
 	Inherits: ^Tree
-	SpawnActorOnDeath:
-		Actor: TREE01burnt
-
+	# SpawnActorOnDeath:
+	# 	Actor: TREE01burnt
+	RenderSprites:
+		Image: mcstree
 
 TREE01burnt:
 	Inherits: ^TreeBurnt
