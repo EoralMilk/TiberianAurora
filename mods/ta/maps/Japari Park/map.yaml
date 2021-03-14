@@ -2958,3 +2958,6 @@ Rules:
 	World:
 		TerrainLighting:
 			HeightStep: 0.032
+	^LowBridge:
+		DamageMultiplier:
+			Modifier: 0
