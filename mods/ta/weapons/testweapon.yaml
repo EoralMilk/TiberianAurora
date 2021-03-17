@@ -29,6 +29,15 @@ testweapon:
 		ImpactSounds: gexp14a.wav
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater, SmallScorch
+	Warhead@FireEff: CreateMultipleEffect	#示例, 每次调用会从Explosions的1, 2, 3...中选一组一起播放
+		Explosions: 
+			1: blastg2-a, blastg2-b, blastg2-c, blastg2-d
+			2: blasta2-a, blasta2-b, blasta2-c, blasta2-d
+		ExplosionPalette: blast2
+		Image: blasts
+		ImpactSounds: gfirlo1a.wav, gfirlo1b.wav, gfirlo1c.wav, gfirlo1d.wav, gfirlo1e.wav, gfirlo1f.wav, gfirlo1g.wav
+		ImpactActors: false
+		ValidTargets: Ground
 
 SummonFlameSea:
 	Inherits: FlameSea
