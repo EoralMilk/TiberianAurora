@@ -11,9 +11,9 @@
 
 using System.Collections.Generic;
 using OpenRA.Mods.Common.Lint;
-using OpenRA.Widgets;
 using OpenRA.Mods.Common.Orders;
 using OpenRA.Mods.Common.Widgets.Logic;
+using OpenRA.Widgets;
 
 namespace OpenRA.Mods.TA.Widgets.Logic.Ingame
 {

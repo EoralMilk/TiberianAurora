@@ -11,9 +11,9 @@
 
 using System.Collections.Generic;
 using OpenRA.GameRules;
-using OpenRA.Primitives;
 using OpenRA.Graphics;
 using OpenRA.Mods.TA.Graphics;
+using OpenRA.Primitives;
 
 namespace OpenRA.Mods.TA.Projectiles
 {
@@ -56,7 +56,8 @@ namespace OpenRA.Mods.TA.Projectiles
 		private int ticks = 0;
 		private WVec swapFirstOffset;
 		private WVec swapStepOffset;
-		public WeaponSwapWithRa2LaserFakeP(WeaponSwapWithRa2LaserFakePInfo info, ProjectileArgs args) : base(info, args)
+		public WeaponSwapWithRa2LaserFakeP(WeaponSwapWithRa2LaserFakePInfo info, ProjectileArgs args)
+			: base(info, args)
 		{
 			if (info.UsePlayerColor)
 			{
@@ -72,7 +73,6 @@ namespace OpenRA.Mods.TA.Projectiles
 				outerColor = info.OuterColor;
 			}
 
-
 			var yawFormTargetToSelf = WRot.FromYaw((args.PassiveTarget - args.Source).Yaw);
 			swapFirstOffset = info.FirstBurstTargetOffset.Rotate(yawFormTargetToSelf);
 			swapStepOffset = ((info.LastBurstTargetOffset - info.FirstBurstTargetOffset) / info.Bursts).Rotate(yawFormTargetToSelf);
@@ -87,7 +87,7 @@ namespace OpenRA.Mods.TA.Projectiles
 		public override void Tick(World world)
 		{
 			base.Tick(world);
-			target = args.PassiveTarget + swapFirstOffset + swapStepOffset * ticks;
+			target = Args.PassiveTarget + swapFirstOffset + swapStepOffset * ticks;
 			++ticks;
 		}
 
@@ -106,7 +106,6 @@ namespace OpenRA.Mods.TA.Projectiles
 				var orc = Color.FromArgb(255, diffTick * outerColor.R / duration, diffTick * outerColor.G / duration, diffTick * outerColor.B / duration);
 				yield return new Ra2LaserRenderable(source, zOffset, target - source, diffTick * width / duration, diffTick * innerWidth / duration, irc, orc);
 			}
-			yield break;
 		}
 	}
 }

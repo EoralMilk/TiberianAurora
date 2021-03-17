@@ -81,14 +81,14 @@ namespace OpenRA.Mods.TA.FileFormats
             return true;
         }
 
-        enum FrameInfo : byte
+	    enum FrameInfo : byte
         {
             Shadow = 0x01,
             Remap = 0x02,
             Depth = 0x04,
         }
 
-        public class McsHead
+	    public class McsHead
         {
             private byte mcsType;
             public int Width { get; private set; }
@@ -135,7 +135,7 @@ namespace OpenRA.Mods.TA.FileFormats
             }
         }
 
-        public class McsFrame
+	    public class McsFrame
         {
             public List<MultChannel> MultChannels { get; private set; }
 
@@ -196,6 +196,7 @@ namespace OpenRA.Mods.TA.FileFormats
                 {
                     i.TryDump(s);
                 }
+
                 return true;
             }
 
@@ -208,7 +209,7 @@ namespace OpenRA.Mods.TA.FileFormats
             }
         }
 
-        public class MultChannel
+	    public class MultChannel
         {
             public List<byte[]> Channels { get; private set; }
             private MultChannelHead head;
@@ -243,6 +244,7 @@ namespace OpenRA.Mods.TA.FileFormats
                 {
                     Channels.Add(s.ReadBytes(cLength));
                 }
+
                 return true;
             }
 
@@ -253,6 +255,7 @@ namespace OpenRA.Mods.TA.FileFormats
                 {
                     s.WriteArray(i);
                 }
+
                 return true;
             }
 
@@ -266,7 +269,7 @@ namespace OpenRA.Mods.TA.FileFormats
             }
         }
 
-        public enum McType : byte
+	    public enum McType : byte
         {
             Body = 0,
             Shadow = 1,
@@ -274,7 +277,7 @@ namespace OpenRA.Mods.TA.FileFormats
             Depth = 3,
         }
 
-        public class MultChannelHead
+	    public class MultChannelHead
         {
             public int X { get; private set; }
             public int Y { get; private set; }

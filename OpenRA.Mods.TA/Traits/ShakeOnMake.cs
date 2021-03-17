@@ -1,5 +1,5 @@
-using OpenRA.Traits;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Traits;
 
 namespace OpenRA.Mods.TA.Traits
 {
@@ -31,9 +31,10 @@ namespace OpenRA.Mods.TA.Traits
 			{
 				return;
 			}
+
 			self.World.WorldActor.Trait<ScreenShaker>().AddEffect(info.Duration, self.CenterPosition, info.Intensity, info.Multiplier);
 		}
 
-		void INotifyDeployTriggered.Undeploy(Actor self, bool skipMakeAnim){}
+		void INotifyDeployTriggered.Undeploy(Actor self, bool skipMakeAnim) { }
 	}
 }

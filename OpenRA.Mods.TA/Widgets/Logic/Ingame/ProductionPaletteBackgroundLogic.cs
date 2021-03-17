@@ -21,7 +21,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
         public ProductionPaletteBackgroundLogic(Widget widget, World world)
         {
             var background = widget.GetOrNull("PRODUCTION_BACKGROUND");
-			if (background != null)
+            if (background != null)
 			{
 				var palette = widget.Get<ProductionPaletteWidget>("PRODUCTION_PALETTE");
 				var icontemplate = background.Get("ICON_TEMPLATE");
@@ -50,5 +50,3 @@ namespace OpenRA.Mods.Common.Widgets.Logic
         }
     }
 }
-        
-        

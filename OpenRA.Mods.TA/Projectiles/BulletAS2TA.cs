@@ -156,7 +156,6 @@ namespace OpenRA.Mods.TA.Projectiles
 		InstantContrailRenderable contrail;
 		InstantContrailRenderable contrail2;
 
-
 		[Sync]
 		WPos pos, lastPos, target, source;
 		int length;
@@ -222,7 +221,6 @@ namespace OpenRA.Mods.TA.Projectiles
 				var color = info.ContrailUsePlayerColor ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor;
 				contrail = new InstantContrailRenderable(world, color, info.ContrailWidth, info.ContrailLength, info.ContrailDelay, info.ContrailZOffset);
 			}
-
 
 			if (info.ContrailLength2 > 0)
 			{

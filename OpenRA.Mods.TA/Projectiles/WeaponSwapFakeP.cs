@@ -21,7 +21,6 @@ namespace OpenRA.Mods.TA.Projectiles
 	[Desc("Fake projectile, swap target with other weapon.")]
 	public class WeaponSwapFakePInfo : IProjectileInfo, IRulesetLoaded<WeaponInfo>
 	{
-
 		[WeaponReference]
 		[FieldLoader.Require]
 		[Desc("Has to be defined in weapons.yaml as well.")]
@@ -56,7 +55,7 @@ namespace OpenRA.Mods.TA.Projectiles
 	public class WeaponSwapFakeP : IProjectile
 	{
 		WeaponSwapFakePInfo info;
-		public ProjectileArgs args;
+		protected readonly ProjectileArgs Args;
 
 		WeaponInfo weapon;
 
@@ -67,7 +66,7 @@ namespace OpenRA.Mods.TA.Projectiles
 		public WeaponSwapFakeP(WeaponSwapFakePInfo info, ProjectileArgs args)
 		{
 			this.info = info;
-			this.args = args;
+			Args = args;
 			weapon = info.WeaponInfo;
 			source = args.SourceActor;
 
@@ -75,7 +74,7 @@ namespace OpenRA.Mods.TA.Projectiles
 			var yawFormTargetToSelf = WRot.FromYaw((args.PassiveTarget - args.Source).Yaw);
 			var swapFirstOffset = info.FirstBurstTargetOffset.Rotate(yawFormTargetToSelf);
 			var swapStepOffset = ((info.LastBurstTargetOffset - info.FirstBurstTargetOffset) / info.Bursts).Rotate(yawFormTargetToSelf);
-			for(int i = 0; i <= info.Bursts; i++)
+			for (int i = 0; i <= info.Bursts; i++)
 			{
 				var newArgs = new ProjectileArgs
 				{
@@ -118,7 +117,8 @@ namespace OpenRA.Mods.TA.Projectiles
 
 		public virtual void Tick(World world)
 		{
-			world.AddFrameEndTask(w => {
+			world.AddFrameEndTask(w =>
+			{
 				for (var i = 0; i < delayedActions.Count; i++)
 				{
 					var x = delayedActions[i];
@@ -128,7 +128,7 @@ namespace OpenRA.Mods.TA.Projectiles
 				}
 
 				delayedActions.RemoveAll(a => a.Ticks <= 0);
-				if(delayedActions.Count == 0)
+				if (delayedActions.Count == 0)
 					w.Remove(this);
 			});
 		}
@@ -146,5 +146,4 @@ namespace OpenRA.Mods.TA.Projectiles
 				a();
 		}
 	}
-
 }

@@ -1,5 +1,5 @@
-using OpenRA.Traits;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Traits;
 
 namespace OpenRA.Mods.TA.Traits
 {
@@ -19,11 +19,12 @@ namespace OpenRA.Mods.TA.Traits
 		{
 			this.info = info;
 		}
-		void INotifySold.Selling(Actor self) 
+
+		void INotifySold.Selling(Actor self)
 		{
 			self.World.WorldActor.Trait<ScreenShaker>().AddEffect(info.Duration, self.CenterPosition, info.Intensity, info.Multiplier);
 		}
-		void INotifySold.Sold(Actor self) { }
 
+		void INotifySold.Sold(Actor self) { }
 	}
 }

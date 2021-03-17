@@ -292,7 +292,6 @@ namespace OpenRA.Mods.Common.Projectiles
 				contrail = new InstantContrailRenderable(world, color, info.ContrailWidth, info.ContrailLength, info.ContrailDelay, info.ContrailZOffset);
 			}
 
-
 			if (info.ContrailLength2 > 0)
 			{
 				var color2 = info.ContrailUsePlayerColor2 ? InstantContrailRenderable.ChooseColor(args.SourceActor) : info.ContrailColor2;

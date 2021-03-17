@@ -41,6 +41,7 @@ namespace OpenRA.Mods.TA.UtilityCommands
 			// { 0x03, "gawall" },
 			{ 0x18, "bridge1" },
 			{ 0x19, "bridge2" },
+
 			// { 0x1A, "nawall" },
 			{ 0x27, "tracks01" },
 			{ 0x28, "tracks02" },
@@ -173,6 +174,7 @@ namespace OpenRA.Mods.TA.UtilityCommands
 			// { 0xF0, "cakrmw" }, // kremlin walls
 			// { 0xF1, "cafncp" }, // prison camp fence
 			{ 0xF2, "crate" }, // water crate
+
 			// { 0xF3, "yawall" } // citadel walls
 		};
 

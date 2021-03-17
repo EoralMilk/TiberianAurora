@@ -74,7 +74,7 @@ namespace OpenRA.Mods.TA.SpriteLoaders
 					}
 
 					frames[i] = new McsFrame(new Size(body.Head.W, body.Head.H),
-						new Size(mcs.Head.Width, mcs.Head.Height), 
+						new Size(mcs.Head.Width, mcs.Head.Height),
 						new float2(((float)(body.Head.W + (body.Head.X * 2) - mcs.Head.Width)) / 2f, ((float)(body.Head.H + (body.Head.Y * 2) - mcs.Head.Height)) / 2f),
 						bodyData);
 				}
@@ -98,7 +98,7 @@ namespace OpenRA.Mods.TA.SpriteLoaders
 						}
 
 						frames[i + mcs.Head.FrameCount] = new McsFrame(new Size(shadow.Head.W, shadow.Head.H),
-							new Size(mcs.Head.Width, mcs.Head.Height), 
+							new Size(mcs.Head.Width, mcs.Head.Height),
 							new float2(((float)(shadow.Head.W + (shadow.Head.X * 2) - mcs.Head.Width)) / 2f, ((float)(shadow.Head.H + (shadow.Head.Y * 2) - mcs.Head.Height)) / 2f),
 							shadowData);
 					}
