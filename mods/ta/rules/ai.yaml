@@ -225,10 +225,10 @@ Player:
 		ConstructionYardTypes: fact
 		McvFactoryTypes: warfactory, airstrip
 		MinimumConstructionYardCount: 3
-	HarvesterBotModule:
-		RequiresCondition: enable-test-ai
-		HarvesterTypes: harvester
-		RefineryTypes: refinery
+	#HarvesterBotModule:
+	#	RequiresCondition: enable-test-ai
+	#	HarvesterTypes: harvester
+	#	RefineryTypes: refinery
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
 	CaptureManagerBotModule:
