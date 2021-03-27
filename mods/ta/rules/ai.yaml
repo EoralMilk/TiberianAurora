@@ -171,6 +171,7 @@ Player:
 		ExcludeFromSquadsTypes: harvester, eng, mcv
 		ConstructionYardTypes: fact
 		GuerrillaTypes: nbggy, ncycle, ntank, nhowi, nstltnk, ghumv, gapc, gmlrs, orcafighter, apache, orcags, ncycleb
+		SuggestedLeaderLocomotor: foot, wheeled, tracked, heavytracked
 		IgnoredEnemyTargetTypes: Wall
 		SquadSize: 25
 		SquadSizeRandomBonus: 3
