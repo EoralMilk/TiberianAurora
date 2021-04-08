@@ -272,7 +272,7 @@ Hotkeys:
 	ta|configurations/hotkeys.yaml
 
 LoadScreen: TALoadScreen
-	Image: ta|uibits/logo.png
+	Image: ta|uibits/logo2.png
 	Text: 正在打理猫耳..., 正在压下呆毛..., 正在吐槽OpenRA引擎..., 正在崩溃..., 正在因愚蠢的问题而愤怒..., 正在重新开始..., 正在祈祷..., 正在加入彩蛋..., 正在期待曙光降临...
 
 ServerTraits:
