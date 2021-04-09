@@ -1,6 +1,6 @@
 Metadata:
 	Title: Tiberian Aurora
-	Description: The dawn of a new era
+	Description: Access Denied...
 	Version: {DEV_VERSION}
 	Author: The Tiberian Aurora Authors
 
@@ -273,7 +273,7 @@ Hotkeys:
 
 LoadScreen: TALoadScreen
 	Image: ta|uibits/logo2.png
-	Text: 正在打理猫耳..., 正在压下呆毛..., 正在吐槽OpenRA引擎..., 正在崩溃..., 正在因愚蠢的问题而愤怒..., 正在重新开始..., 正在祈祷..., 正在加入彩蛋..., 正在期待曙光降临...
+	Text: 正在尝试访问..., 正在尝试访问..., 正在尝试访问..., 正在阻止崩溃...,  正在安抚监视进程..., 正在重启模拟...,  正在祈祷..., 正在计算信念...,  正在钳制情绪..., 正在扩张差异...,  正在执行死刑...
 
 ServerTraits:
 	LobbyCommands
