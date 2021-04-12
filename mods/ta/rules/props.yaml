@@ -8,7 +8,7 @@ cadh:
 	Tooltip:
 		Name: 狗屋
 	IsometricSelectable:
-		Height: 13
+		Height: 628 #13
 	Health:
 		HP: 5000
 	RenderSprites:

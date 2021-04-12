@@ -5,7 +5,7 @@ caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
 	IsometricSelectable:
-		Height: 48
+		Height: 2316 #48
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -41,7 +41,7 @@ cahosp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x4Shape
 	IsometricSelectable:
-		Height: 72
+		Height: 3474 #72
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -73,7 +73,7 @@ cabiot:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x4Shape
 	IsometricSelectable:
-		Height: 72
+		Height: 3474 #72
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -198,7 +198,7 @@ cahos3:
 	Tooltip:
 		Name: 小屋
 	IsometricSelectable:
-		Height: 25
+		Height: 1206 #25
 	Health:
 		HP: 15000
 	RenderSprites:
@@ -245,7 +245,7 @@ cahos4:
 	Tooltip:
 		Name: 房屋
 	IsometricSelectable:
-		Height: 38
+		Height: 1834 #38
 	Health:
 		HP: 35000
 	RenderSprites:
@@ -292,7 +292,7 @@ cahos5:
 	Tooltip:
 		Name: 房屋
 	IsometricSelectable:
-		Height: 38
+		Height: 1834 #38
 	Health:
 		HP: 35000
 	RenderSprites:
@@ -316,7 +316,7 @@ cahos5-ruins:
 	Tooltip:
 		Name: 毁掉的房屋
 	IsometricSelectable:
-		Height: 35
+		Height: 1688 #35
 	Health:
 		HP: 20000
 	-ExplosionOnDamageTransition:
@@ -328,7 +328,7 @@ cahos5-f-ruins:
 	Tooltip:
 		Name: 毁掉的房屋
 	IsometricSelectable:
-		Height: 35
+		Height: 1688 #35
 	Health:
 		HP: 20000
 	-ExplosionOnDamageTransition:
@@ -343,7 +343,7 @@ cahos6:
 	Tooltip:
 		Name: 房屋
 	IsometricSelectable:
-		Height: 38
+		Height: 1834 #38
 	Health:
 		HP: 25000
 	RenderSprites:
@@ -371,7 +371,7 @@ cahos6-ruins:
 	Tooltip:
 		Name: 毁掉的房屋
 	IsometricSelectable:
-		Height: 25
+		Height: 1206 #25
 	Health:
 		HP: 10000
 	-ExplosionOnDamageTransition:
@@ -383,7 +383,7 @@ cahos6-f-ruins:
 	Tooltip:
 		Name: 毁掉的房屋
 	IsometricSelectable:
-		Height: 25
+		Height: 1206 #25
 	Health:
 		HP: 10000
 	-ExplosionOnDamageTransition:
@@ -398,7 +398,7 @@ cahos7:
 	Tooltip:
 		Name: 小屋
 	IsometricSelectable:
-		Height: 25
+		Height: 1206 #25
 	Health:
 		HP: 15000
 	RenderSprites:
@@ -422,7 +422,7 @@ cahos7-ruins:
 	Tooltip:
 		Name: 毁掉的小屋
 	IsometricSelectable:
-		Height: 15
+		Height: 724 #15
 	Health:
 		HP: 7000
 	-ExplosionOnDamageTransition:
@@ -434,7 +434,7 @@ cahos7-f-ruins:
 	Tooltip:
 		Name: 毁掉的小屋
 	IsometricSelectable:
-		Height: 15
+		Height: 724 #15
 	Health:
 		HP: 7000
 	-ExplosionOnDamageTransition:
@@ -471,7 +471,7 @@ cahos8-ruins:
 	Tooltip:
 		Name: 毁掉的房屋
 	IsometricSelectable:
-		Height: 25
+		Height: 1206 #25
 	Health:
 		HP: 13000
 	-ExplosionOnDamageTransition:
@@ -483,7 +483,7 @@ cahos8-f-ruins:
 	Tooltip:
 		Name: 毁掉的房屋
 	IsometricSelectable:
-		Height: 25
+		Height: 1206 #25
 	Health:
 		HP: 13000
 	-ExplosionOnDamageTransition:
@@ -543,7 +543,7 @@ camf:
 	Tooltip:
 		Name: 音乐工厂
 	IsometricSelectable:
-		Height: 45
+		Height: 1085 #45
 	Health:
 		HP: 45000
 	RenderSprites:
@@ -567,7 +567,7 @@ camf-ruins:
 	Tooltip:
 		Name: 毁掉的音乐工厂
 	IsometricSelectable:
-		Height: 35
+		Height: 1688 #35
 	Health:
 		HP: 20000
 	-ExplosionOnDamageTransition:
@@ -579,7 +579,7 @@ camf-f-ruins:
 	Tooltip:
 		Name: 毁掉的音乐工厂
 	IsometricSelectable:
-		Height: 35
+		Height: 1688 #35
 	Health:
 		HP: 20000
 	-ExplosionOnDamageTransition:
@@ -616,7 +616,7 @@ catav-ruins:
 	Tooltip:
 		Name: 毁掉的酒馆
 	IsometricSelectable:
-		Height: 35
+		Height: 1688 #35
 	Health:
 		HP: 12000
 	-ExplosionOnDamageTransition:
@@ -628,7 +628,7 @@ catav-f-ruins:
 	Tooltip:
 		Name: 毁掉的酒馆
 	IsometricSelectable:
-		Height: 35
+		Height: 1688 #35
 	Health:
 		HP: 12000
 	-ExplosionOnDamageTransition:
@@ -643,7 +643,7 @@ catm:
 	Tooltip:
 		Name: 玩具制造商
 	IsometricSelectable:
-		Height: 50
+		Height: 2412 #50
 	Health:
 		HP: 45000
 	RenderSprites:
@@ -691,7 +691,7 @@ cacrch:
 	Tooltip:
 		Name: 教堂
 	IsometricSelectable:
-		Height: 78
+		Height: 3764 #78
 	Health:
 		HP: 85000
 	RenderSprites:
@@ -707,7 +707,7 @@ cacrch-ruins:
 	Tooltip:
 		Name: 毁掉的教堂
 	IsometricSelectable:
-		Height: 35
+		Height: 1688 #35
 	Health:
 		HP: 20000
 	-ExplosionOnDamageTransition:
@@ -721,7 +721,7 @@ cast:
 	Tooltip:
 		Name: 信号塔
 	IsometricSelectable:
-		Height: 153
+		Height: 7384 #153
 	Health:
 		HP: 65000
 	WithSpriteBody@Shadow:
@@ -751,7 +751,7 @@ cast-trans:
 	Tooltip:
 		Name: 半倒的信号塔
 	IsometricSelectable:
-		Height: 48
+		Height: 2316 #48
 	Health:
 		HP: 9999900
 	WithSpriteBody@Shadow:
@@ -802,7 +802,7 @@ cast-trans2:
 	Tooltip:
 		Name: 毁掉的信号塔
 	IsometricSelectable:
-		Height: 48
+		Height: 2316 #48
 	Health:
 		HP: 9999900
 	-ExplosionOnDamageTransition:
@@ -834,7 +834,7 @@ cast-ruins:
 	Tooltip:
 		Name: 毁掉的信号塔
 	IsometricSelectable:
-		Height: 48
+		Height: 2316 #48
 	Health:
 		HP: 50000
 	-ExplosionOnDamageTransition:

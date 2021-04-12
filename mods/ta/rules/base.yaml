@@ -116,7 +116,7 @@
 	MapEditorData:
 		Categories: Civilian building
 	IsometricSelectable:
-		Height: 31
+		Height: 1496 #31
 	Explodes:
 		Type: Footprint
 		Weapon: CivBuildingExplode
