@@ -543,7 +543,7 @@ camf:
 	Tooltip:
 		Name: 音乐工厂
 	IsometricSelectable:
-		Height: 1085 #45
+		Height: 2170 #45
 	Health:
 		HP: 45000
 	RenderSprites:
@@ -593,6 +593,8 @@ catav:
 		Dimensions: 2, 2
 	Tooltip:
 		Name: 酒馆
+	IsometricSelectable:
+		Height: 1834 #38
 	Health:
 		HP: 35000
 	RenderSprites:
@@ -852,6 +854,8 @@ catd:
 		Dimensions: 2, 2
 	Tooltip:
 		Name: 塔吊
+	IsometricSelectable:
+		Height: 4368
 	Health:
 		HP: 35000
 	-WithSpriteBody:
