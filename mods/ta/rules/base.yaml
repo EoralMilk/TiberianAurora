@@ -779,7 +779,7 @@
 		IdleSequences: idle1,idle2
 		DefaultAttackSequence: shoot
 	DamagedByTerrain:
-		Terrain: Ore
+		Terrain: Ore, Gems
 		Damage: 50
 		DamageInterval: 5
 		DamageTypes: TiberiumDeath

@@ -695,14 +695,14 @@ beacon:
 
 resources:
 	Defaults:
-		UseTilesetExtension: true
+		UseTilesetExtension: false
 		Length: 12
 		ShadowStart: 12
-		Offset: 0, -15, 2
+		Offset: 0, -30, 2
+		Scale: 0.5
 		ZRamp: 1
 	tib01: tib01
 	tib02: tib02
-		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
 	tib03: tib03
 	tib04: tib04
 	tib05: tib05
@@ -713,27 +713,7 @@ resources:
 	tib10: tib10
 	tib11: tib11
 	tib12: tib12
-	tib13: tib13
-	tib14: tib14
-		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
-	tib15: tib15
-	tib16: tib16
-	tib17: tib17
-	tib18: tib18
-	tib19: tib19
-	tib20: tib20
-	gem01: gem01
-	gem02: gem02
-	gem03: gem03
-	gem04: gem04
-	gem05: gem05
-	gem06: gem06
-	gem07: gem07
-	gem08: gem08
-	gem09: gem09
-	gem10: gem10
-	gem11: gem11
-	gem12: gem12
+
 
 shroud:
 	Defaults:

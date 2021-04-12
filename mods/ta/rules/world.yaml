@@ -3,7 +3,8 @@
 	Inherits: ^Palettes-Unit
 	Inherits: ^Palettes-Effect
 	Inherits: ^Palettes-Others
-
+	CliffBackImpassabilityLayer:
+	Selection:
 	AlwaysVisible:
 	MusicPlaylist:
 		VictoryMusic: score
@@ -132,10 +133,10 @@
 		Description: Nod兄弟会\n兄弟会狂热地崇拜着他们的伟大先知凯恩，\n以及泰伯利亚这一神奇而独特的外星存在。\n作为神秘的政教合一的军阀组织，\n兄弟会借由隐形与匿踪科技，\n通过多种多样的游击战法惩戒那些胆敢反抗他们的异教徒。
 	ResourceType@Tiberium:
 		ResourceType: 1
-		Palette: resource
-		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+		Palette: tibgreen
+		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12
 		MaxDensity: 12
-		ValuePerUnit: 35
+		ValuePerUnit: 30
 		Type: Ore
 		Name: 泰伯利亚晶体
 		PipColor: Green
@@ -146,22 +147,18 @@
 
 	ResourceType@Gems:
 		ResourceType: 2
-		Palette: resource
-		Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+		Palette: tibblue
+		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12
 		MaxDensity: 12
 		ValuePerUnit: 50
 		Type: Gems
-		Name: 宝石矿
+		Name: 泰伯利亚蓝色晶体
 		PipColor: Blue
 		CustomPipType: blue
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems
-		SeedsResource:
-			ResourceType: Ore
-			Interval: 75
-	CliffBackImpassabilityLayer:
-	Selection:
+
 
 World:
 	Inherits: ^BaseWorld

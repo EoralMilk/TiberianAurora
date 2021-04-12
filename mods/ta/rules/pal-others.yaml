@@ -10,3 +10,10 @@
 		Name: nukemisl
 		Filename: nukemisl.pal
 
+	PaletteFromFile@tibgreen:
+		Name: tibgreen
+		Filename: tibgreen.pal
+
+	PaletteFromFile@tibblue:
+		Name: tibblue
+		Filename: tibblue.pal
